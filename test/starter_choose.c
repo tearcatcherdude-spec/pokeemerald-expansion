@@ -1,5 +1,11 @@
 #include "global.h"
 #include "event_data.h"
+#include "battle.h"
+#include "battle_setup.h"
+#include "dma3.h"
+#include "main.h"
+#include "pokemon.h"
+#include "task.h"
 #include "starter_choose.h"
 #include "test/test.h"
 
@@ -40,4 +46,63 @@ TEST("Expanded starter identity survives separately from the rival branch")
     EXPECT_EQ(GetPlayerStarterPokemon(), IS_FRLG ? SPECIES_CHARMANDER : SPECIES_TORCHIC);
     VarSet(VAR_CHOSEN_STARTER_SPECIES, oldSpecies);
     VarSet(VAR_STARTER_MON, oldStory);
+}
+
+static void RunStarterFrame(u16 keys)
+{
+    gMain.newKeys = keys;
+    gMain.newAndRepeatedKeys = keys;
+    gMain.callback2();
+    // Drive the same palette-transfer acknowledgement as the real VBlank.
+    // Do not transfer palettes directly: that would hide a missing callback.
+    if (gMain.vblankCallback != NULL)
+        gMain.vblankCallback();
+    ProcessDma3Requests();
+}
+
+static void CheckStarterRescueTransition(bool32 chooseBeldum)
+{
+    struct Main oldMain = gMain;
+    u32 oldBattleTypeFlags = gBattleTypeFlags;
+    u32 i;
+
+    if (IS_FRLG)
+        return;
+
+    ZeroPlayerPartyMons();
+    gBattleTypeFlags = 0;
+    ChooseStarter();
+    for (i = 0; i < 80; i++)
+        RunStarterFrame(0);
+
+    if (chooseBeldum)
+        for (i = 0; i < 3; i++)
+            RunStarterFrame(DPAD_DOWN);
+
+    RunStarterFrame(A_BUTTON); // Open confirmation.
+    RunStarterFrame(0);
+    RunStarterFrame(A_BUTTON); // Confirm Yes.
+    for (i = 0; i < 300 && !(gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE); i++)
+        RunStarterFrame(0);
+
+    EXPECT(gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE);
+    EXPECT_EQ(GetPlayerStarterPokemon(), chooseBeldum ? SPECIES_BELDUM : SPECIES_BULBASAUR);
+    EXPECT_EQ(GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_SPECIES), chooseBeldum ? SPECIES_BELDUM : SPECIES_BULBASAUR);
+    EXPECT_EQ(GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_LEVEL), 5);
+    if (chooseBeldum)
+        EXPECT_EQ(GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE1), MOVE_TACKLE);
+
+    ResetTasks();
+    gMain = oldMain;
+    gBattleTypeFlags = oldBattleTypeFlags;
+}
+
+TEST("Expanded starter Beldum confirmation reaches the rescue battle")
+{
+    CheckStarterRescueTransition(TRUE);
+}
+
+TEST("Expanded starter Bulbasaur confirmation reaches the rescue battle")
+{
+    CheckStarterRescueTransition(FALSE);
 }

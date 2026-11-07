@@ -127,7 +127,10 @@ static void CloseExpandedStarter(u8 taskId)
     sPreviewId = 0xFFFF;
     FreeAllWindowBuffers();
     DestroyTask(taskId);
-    SetVBlankCallback(NULL);
+    // The rescue-battle transition also updates palette fades. It must keep
+    // transferring palettes in VBlank, or UpdatePaletteFade waits forever
+    // for sPlttBufferTransferPending to clear. Battle initialization installs
+    // its own VBlank callback after the transition completes.
     SetMainCallback2(gMain.savedCallback);
 }
 
