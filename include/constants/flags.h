@@ -51,9 +51,9 @@
 
 #else
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
+#define FLAG_HIDE_COZY_COMPANION 0x20 // Set while the Littleroot companion follows you
+#define FLAG_COZY_WELCOME_GIFT 0x21 // Received the welcome committee Potion
+#define FLAG_COZY_BERRY_TRADE 0x22 // Completed the gardening neighbors request
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
 #define FLAG_UNUSED_0x025    0x25 // Unused Flag
