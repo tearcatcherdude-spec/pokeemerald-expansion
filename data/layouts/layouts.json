@@ -9323,6 +9323,39 @@
       "border_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/border.bin",
       "blockdata_filepath": "data/layouts/OneIsland_KindleRoad_EmberSpa_Frlg/map.bin",
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_ECHO_LITTLEROOT_TOWN",
+      "name": "EchoLittlerootTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/EchoLittlerootTown/border.bin",
+      "blockdata_filepath": "data/layouts/EchoLittlerootTown/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ECHO_ROUTE101",
+      "name": "EchoRoute101_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/EchoRoute101/border.bin",
+      "blockdata_filepath": "data/layouts/EchoRoute101/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_ECHO_ABANDONED_LAB",
+      "name": "EchoAbandonedLab_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/EchoAbandonedLab/border.bin",
+      "blockdata_filepath": "data/layouts/EchoAbandonedLab/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }
