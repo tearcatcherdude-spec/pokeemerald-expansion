@@ -101,7 +101,7 @@ EWRAM_DATA static u8 *sTrainerBattleEndScript = NULL;
 EWRAM_DATA static bool8 sShouldCheckTrainerBScript = FALSE;
 EWRAM_DATA static u8 sNoOfPossibleTrainerRetScripts = 0;
 
-// The first transition is used if the enemy PokÃ©mon are lower level than our PokÃ©mon.
+// The first transition is used if the enemy Pokémon are lower level than our Pokémon.
 // Otherwise, the second transition is used.
 static const u8 sBattleTransitionTable_Wild[][2] =
 {
@@ -932,7 +932,7 @@ enum BattleTransition GetTrainerBattleTransition(void)
         minPartyCount = 1;
         break;
     case TRAINER_BATTLE_TYPE_DOUBLES:
-        minPartyCount = 2; // double battles always at least have 2 PokÃ©mon.
+        minPartyCount = 2; // double battles always at least have 2 Pokémon.
         break;
     }
 

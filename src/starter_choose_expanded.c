@@ -23,13 +23,13 @@
 #define GRID_COLUMNS 4
 #define CHOICE_COUNT 14
 #define PREVIEW_X 184
-#define PREVIEW_Y 55
+#define PREVIEW_Y 48
 
 // Display generations in order, while preserving the original saved indices.
 static const u8 sChoiceIds[CHOICE_COUNT] = {3, 4, 5, 6, 7, 8, 0, 1, 2, 9, 10, 11, 12, 13};
 static const u8 sText_Help[] = _("A: Choose");
 static const u8 sText_Confirm[] = _("Choose {STR_VAR_1}?");
-static const u8 sText_Return[] = _("Choose a POKÃ©MON to help BIRCH!");
+static const u8 sText_Return[] = _("Choose a POKéMON to help BIRCH!");
 static const u8 sTextColors[] = {TEXT_COLOR_WHITE, TEXT_COLOR_DARK_GRAY, TEXT_COLOR_LIGHT_GRAY};
 
 static const struct BgTemplate sBgs[] =
@@ -48,7 +48,7 @@ static const struct WindowTemplate sWindows[] =
 
 static const struct WindowTemplate sConfirmWindow =
 {
-    .bg = 0, .tilemapLeft = 23, .tilemapTop = 10, .width = 6, .height = 4,
+    .bg = 0, .tilemapLeft = 23, .tilemapTop = 12, .width = 6, .height = 4,
     .paletteNum = 14, .baseBlock = 325,
 };
 

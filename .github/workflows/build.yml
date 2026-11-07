@@ -57,7 +57,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pokemon-emerald-build
-          path: pokeemerald.gba
+          path: |
+            pokeemerald.gba
+            pokeemerald.map
           if-no-files-found: error
 
   build-firered:

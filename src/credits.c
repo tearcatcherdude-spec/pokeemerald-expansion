@@ -31,7 +31,7 @@
 
 #define TAG_MON_BG 1001
 
-// Positions for the PokÃ©mon images
+// Positions for the Pokémon images
 enum {
     POS_LEFT,
     POS_CENTER,
@@ -66,12 +66,12 @@ enum {
 
 struct CreditsData
 {
-    u16 monToShow[NUM_MON_SLIDES]; // List of PokÃ©mon species ids that will show during the credits
+    u16 monToShow[NUM_MON_SLIDES]; // List of Pokémon species ids that will show during the credits
     u16 imgCounter; //how many mon images have been shown
     u16 nextImgPos; //if the next image spawns left/center/right
     u16 currShownMon; //index into monToShow
-    u16 numMonToShow; //number of PokÃ©mon to show, always NUM_MON_SLIDES after determine function
-    u16 caughtMonIds[NATIONAL_DEX_COUNT]; //temporary location to hold a condensed array of all caught PokÃ©mon
+    u16 numMonToShow; //number of Pokémon to show, always NUM_MON_SLIDES after determine function
+    u16 caughtMonIds[NATIONAL_DEX_COUNT]; //temporary location to hold a condensed array of all caught Pokémon
     u16 numCaughtMon; //count of filled spaces in caughtMonIds
     u16 unused[7];
 };
@@ -478,7 +478,7 @@ static void Task_CreditsMain(u8 taskId)
     }
     else if (gTasks[taskId].tNextMode == MODE_SHOW_MONS)
     {
-        // Start a PokÃ©mon interlude
+        // Start a Pokémon interlude
         gTasks[taskId].tCurrentMode = mode;
         gTasks[taskId].tNextMode = MODE_NONE;
         BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
@@ -818,7 +818,7 @@ static void Task_UpdatePage(u8 taskId)
 
 #undef tDelay
 
-#define PAGE_INTERVAL (PAGE_COUNT / 9) // 9 scenes (5 bike scenes, 4 PokÃ©mon interludes)
+#define PAGE_INTERVAL (PAGE_COUNT / 9) // 9 scenes (5 bike scenes, 4 Pokémon interludes)
 
 static u8 CheckChangeScene(u8 page, u8 taskId)
 {
@@ -826,7 +826,7 @@ static u8 CheckChangeScene(u8 page, u8 taskId)
 
     if (page == PAGE_INTERVAL * 1)
     {
-        // PokÃ©mon interlude
+        // Pokémon interlude
         gTasks[taskId].tNextMode = MODE_SHOW_MONS;
     }
 
@@ -839,7 +839,7 @@ static u8 CheckChangeScene(u8 page, u8 taskId)
 
     if (page == PAGE_INTERVAL * 3)
     {
-        // PokÃ©mon interlude
+        // Pokémon interlude
         gTasks[taskId].tNextMode = MODE_SHOW_MONS;
     }
 
@@ -852,7 +852,7 @@ static u8 CheckChangeScene(u8 page, u8 taskId)
 
     if (page == PAGE_INTERVAL * 5)
     {
-        // PokÃ©mon interlude
+        // Pokémon interlude
         gTasks[taskId].tNextMode = MODE_SHOW_MONS;
     }
 
@@ -865,7 +865,7 @@ static u8 CheckChangeScene(u8 page, u8 taskId)
 
     if (page == PAGE_INTERVAL * 7)
     {
-        // PokÃ©mon interlude
+        // Pokémon interlude
         gTasks[taskId].tNextMode = MODE_SHOW_MONS;
     }
 
@@ -1531,7 +1531,7 @@ static void SpriteCB_CreditsMonBg(struct Sprite *sprite)
         return;
     }
 
-    // Copy sprite data from the associated PokÃ©mon
+    // Copy sprite data from the associated Pokémon
     sprite->invisible = gSprites[sprite->sMonSpriteId].invisible;
     sprite->oam.objMode = gSprites[sprite->sMonSpriteId].oam.objMode;
     sprite->oam.affineMode = gSprites[sprite->sMonSpriteId].oam.affineMode;
@@ -1547,8 +1547,8 @@ static void DeterminePokemonToShow(void)
     u16 dexNum;
     u16 j;
 
-    // Go through the PokÃ©dex, and anything that has gotten caught we put into our massive array.
-    // This basically packs all of the caught PokÃ©mon into the front of the array
+    // Go through the Pokédex, and anything that has gotten caught we put into our massive array.
+    // This basically packs all of the caught Pokémon into the front of the array
     for (dexNum = 1, j = 0; dexNum < NATIONAL_DEX_COUNT; dexNum++)
     {
         if (GetSetPokedexFlag(dexNum, FLAG_GET_CAUGHT))
@@ -1562,14 +1562,14 @@ static void DeterminePokemonToShow(void)
     for (dexNum = j; dexNum < NATIONAL_DEX_COUNT; dexNum++)
         sCreditsData->caughtMonIds[dexNum] = NATIONAL_DEX_NONE;
 
-    // Cap the number of PokÃ©mon we care about to NUM_MON_SLIDES, the max we show in the credits scene (-1 for the starter)
+    // Cap the number of Pokémon we care about to NUM_MON_SLIDES, the max we show in the credits scene (-1 for the starter)
     sCreditsData->numCaughtMon = j;
     if (sCreditsData->numCaughtMon < NUM_MON_SLIDES)
         sCreditsData->numMonToShow = j;
     else
         sCreditsData->numMonToShow = NUM_MON_SLIDES;
 
-    // Loop through our list of caught PokÃ©mon and select randomly from it to fill the images to show
+    // Loop through our list of caught Pokémon and select randomly from it to fill the images to show
     j = 0;
     do
     {
@@ -1590,7 +1590,7 @@ static void DeterminePokemonToShow(void)
     }
     while (sCreditsData->numCaughtMon != 0 && j < NUM_MON_SLIDES);
 
-    // If we don't have enough PokÃ©mon in the dex to fill everything, copy the selected mon into the end of the array, so it loops
+    // If we don't have enough Pokémon in the dex to fill everything, copy the selected mon into the end of the array, so it loops
     if (sCreditsData->numMonToShow < NUM_MON_SLIDES)
     {
         for (j = sCreditsData->numMonToShow, page = 0; j < NUM_MON_SLIDES; j++)
@@ -1601,7 +1601,7 @@ static void DeterminePokemonToShow(void)
             if (page == sCreditsData->numMonToShow)
                 page = 0;
         }
-        // Ensure the last PokÃ©mon is our starter
+        // Ensure the last Pokémon is our starter
         sCreditsData->monToShow[NUM_MON_SLIDES - 1] = starter;
     }
     else
@@ -1609,7 +1609,7 @@ static void DeterminePokemonToShow(void)
         // Check to see if our starter has already appeared in this list, break if it has
         for (dexNum = 0; sCreditsData->monToShow[dexNum] != starter && dexNum < NUM_MON_SLIDES; dexNum++);
 
-        // If it has, swap it with the last PokÃ©mon, to ensure our starter is the last image
+        // If it has, swap it with the last Pokémon, to ensure our starter is the last image
         if (dexNum < sCreditsData->numMonToShow - 1)
         {
             sCreditsData->monToShow[dexNum] = sCreditsData->monToShow[NUM_MON_SLIDES-1];
@@ -1617,7 +1617,7 @@ static void DeterminePokemonToShow(void)
         }
         else
         {
-            // Ensure the last PokÃ©mon is our starter
+            // Ensure the last Pokémon is our starter
             sCreditsData->monToShow[NUM_MON_SLIDES - 1] = starter;
         }
     }
