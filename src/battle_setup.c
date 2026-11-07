@@ -101,7 +101,7 @@ EWRAM_DATA static u8 *sTrainerBattleEndScript = NULL;
 EWRAM_DATA static bool8 sShouldCheckTrainerBScript = FALSE;
 EWRAM_DATA static u8 sNoOfPossibleTrainerRetScripts = 0;
 
-// The first transition is used if the enemy Pokémon are lower level than our Pokémon.
+// The first transition is used if the enemy PokÃ©mon are lower level than our PokÃ©mon.
 // Otherwise, the second transition is used.
 static const u8 sBattleTransitionTable_Wild[][2] =
 {
@@ -932,7 +932,7 @@ enum BattleTransition GetTrainerBattleTransition(void)
         minPartyCount = 1;
         break;
     case TRAINER_BATTLE_TYPE_DOUBLES:
-        minPartyCount = 2; // double battles always at least have 2 Pokémon.
+        minPartyCount = 2; // double battles always at least have 2 PokÃ©mon.
         break;
     }
 
@@ -1008,9 +1008,14 @@ static void CB2_GiveStarter(void)
 {
     u16 starterMon;
 
-    *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterMon = GetStarterPokemon(gSpecialVar_Result);
+    VarSet(VAR_STARTER_MON, IS_FRLG ? gSpecialVar_Result : GetStarterStoryId(gSpecialVar_Result));
+    if (!IS_FRLG)
+        VarSet(VAR_CHOSEN_STARTER_SPECIES, starterMon);
     ScriptGiveMon(starterMon, 5, ITEM_NONE);
+    // A starter Beldum must not be forced to use recoil for the rescue battle.
+    if (!IS_FRLG && starterMon == SPECIES_BELDUM)
+        SetMonMoveSlot(&gParties[B_TRAINER_PLAYER][0], MOVE_TACKLE, 0);
     ResetTasks();
     PlayBattleBGM();
     SetMainCallback2(CB2_StartFirstBattle);

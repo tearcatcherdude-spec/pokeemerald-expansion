@@ -26,7 +26,7 @@
 
 #define STARTER_MON_COUNT   3
 
-// Position of the sprite of the selected starter Pokémon
+// Position of the sprite of the selected starter PokÃ©mon
 #define STARTER_PKMN_POS_X (DISPLAY_WIDTH / 2)
 #define STARTER_PKMN_POS_Y 64
 
@@ -119,6 +119,16 @@ static const u16 sStarterMon[STARTER_MON_COUNT] =
     GRASS_STARTER,
     FIRE_STARTER,
     WATER_STARTER,
+};
+
+// Keep the original three indices for compatibility with existing saves.
+static const u16 sExpandedStarters[] =
+{
+    SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP,
+    SPECIES_BULBASAUR, SPECIES_CHARMANDER, SPECIES_SQUIRTLE,
+    SPECIES_CHIKORITA, SPECIES_CYNDAQUIL, SPECIES_TOTODILE,
+    SPECIES_TURTWIG, SPECIES_CHIMCHAR, SPECIES_PIPLUP,
+    SPECIES_BELDUM, SPECIES_LARVITAR,
 };
 
 static const struct BgTemplate sBgTemplates[3] =
@@ -349,9 +359,32 @@ static const struct SpriteTemplate sSpriteTemplate_StarterCircle =
 // .text
 u16 GetStarterPokemon(u16 chosenStarterId)
 {
-    if (chosenStarterId > STARTER_MON_COUNT)
+    if (!IS_FRLG)
+    {
+        if (chosenStarterId >= ARRAY_COUNT(sExpandedStarters))
+            chosenStarterId = 0;
+        return sExpandedStarters[chosenStarterId];
+    }
+    if (chosenStarterId >= STARTER_MON_COUNT)
         chosenStarterId = 0;
     return sStarterMon[chosenStarterId];
+}
+
+u16 GetStarterStoryId(u16 chosenStarterId)
+{
+    // Grass -> rival Torchic, fire -> rival Mudkip, water -> rival Treecko.
+    // Both bonus starters use the fire branch, giving the rival Mudkip.
+    if (chosenStarterId >= 12)
+        return 1;
+    return chosenStarterId % 3;
+}
+
+u16 GetPlayerStarterPokemon(void)
+{
+    u16 species = VarGet(VAR_CHOSEN_STARTER_SPECIES);
+    if (!IS_FRLG && species != SPECIES_NONE && species < NUM_SPECIES)
+        return species;
+    return GetStarterPokemon(VarGet(VAR_STARTER_MON));
 }
 
 static void VblankCB_StarterChoose(void)
@@ -374,6 +407,12 @@ void CB2_ChooseStarter(void)
 {
     u8 taskId;
     u8 spriteId;
+
+    if (!IS_FRLG)
+    {
+        CB2_ChooseExpandedStarter();
+        return;
+    }
 
     SetVBlankCallback(NULL);
 
@@ -445,7 +484,7 @@ void CB2_ChooseStarter(void)
     spriteId = CreateSprite(&sSpriteTemplate_Hand, 120, 56, 2);
     gSprites[spriteId].data[0] = taskId;
 
-    // Create three Poké Ball sprites
+    // Create three PokÃ© Ball sprites
     spriteId = CreateSprite(&sSpriteTemplate_Pokeball, sPokeballCoords[0][0], sPokeballCoords[0][1], 2);
     gSprites[spriteId].sTaskId = taskId;
     gSprites[spriteId].sBallId = 0;
@@ -494,7 +533,7 @@ static void Task_HandleStarterChooseInput(u8 taskId)
         spriteId = CreateSprite(&sSpriteTemplate_StarterCircle, sPokeballCoords[selection][0], sPokeballCoords[selection][1], 1);
         gTasks[taskId].tCircleSpriteId = spriteId;
 
-        // Create Pokémon sprite
+        // Create PokÃ©mon sprite
         spriteId = CreatePokemonFrontSprite(GetStarterPokemon(gTasks[taskId].tStarterSelection), sPokeballCoords[selection][0], sPokeballCoords[selection][1]);
         gSprites[spriteId].affineAnims = &sAffineAnims_StarterPokemon;
         gSprites[spriteId].callback = SpriteCB_StarterPokemon;
@@ -636,7 +675,7 @@ static u8 CreatePokemonFrontSprite(enum Species species, u8 x, u8 y)
 
 static void SpriteCB_SelectionHand(struct Sprite *sprite)
 {
-    // Float up and down above selected Poké Ball
+    // Float up and down above selected PokÃ© Ball
     sprite->x = sCursorCoords[gTasks[sprite->data[0]].tStarterSelection][0];
     sprite->y = sCursorCoords[gTasks[sprite->data[0]].tStarterSelection][1];
     sprite->y2 = Sin(sprite->data[1], 8);
@@ -645,7 +684,7 @@ static void SpriteCB_SelectionHand(struct Sprite *sprite)
 
 static void SpriteCB_Pokeball(struct Sprite *sprite)
 {
-    // Animate Poké Ball if currently selected
+    // Animate PokÃ© Ball if currently selected
     if (gTasks[sprite->sTaskId].tStarterSelection == sprite->sBallId)
         StartSpriteAnimIfDifferent(sprite, 1);
     else
