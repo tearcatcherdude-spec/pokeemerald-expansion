@@ -22,7 +22,11 @@ Enabling `FNPC_ENABLE_NPC_FOLLOWERS` changes `SaveBlock3` layout. Old-save migra
 
 The follower engine supports stairs, doors, cycling and water movement, but its tutorial warns that vanilla scripted movements are not universally follower-aware. Recruitment is gated until after the opening/running-shoes scenes. Later story scenes still need emulator review; use the dismissal option before testing them. No custom cycling/surfing sprite frames are supplied yet.
 
-Static checks verified NPC collision tiles and approach reachability, door approaches and north exit, script label/macro references, text character encoding and line widths, and byte-for-byte preservation of starter selection and the town's terrain. ROM compilation and emulator tests have **not** been run: GNU make and the ARM compiler are not installed in this environment.
+Static checks verified NPC collision tiles and approach reachability, door approaches and north exit, script label/macro references, text character encoding and line widths, and byte-for-byte preservation of starter selection and the town's terrain.
+
+The first CI builds compiled successfully. Local checks using mGBA's Libretro core verified recruitment gating, following in Littleroot, walking into Route 101 and back, house entry/exit, optional town-sign commentary, dismissal, the one-time Potion, missing/full-bag reward handling, and the one-time berry exchange. A fresh in-memory game was advanced through character creation to arriving in Littleroot; later story flags and inventory were set directly for these focused checks. This is not a full story playthrough or a test of both player genders.
+
+The full CI suite found one failure in the original SaveBlock3 size guard (5,439 tests passed, including the Bulbasaur and Beldum rescue-transition regressions). Follower storage now appends after the legacy four-byte prefix, and the guard checks the unchanged legacy offset, follower offset, and deliberate new 28-byte size. Rebuild and runtime checks of this storage correction are pending.
 
 ## Runtime acceptance checks still required
 

@@ -259,9 +259,6 @@ struct SaveBlock3
 #if OW_USE_FAKE_RTC
     struct SiiRtcInfo fakeRTC;
 #endif
-#if FNPC_ENABLE_NPC_FOLLOWERS
-    struct NPCFollower NPCfollower;
-#endif
 #if OW_SHOW_ITEM_DESCRIPTIONS == OW_ITEM_DESCRIPTIONS_FIRST_TIME
     u8 itemFlags[ITEM_FLAGS_COUNT];
 #endif
@@ -271,6 +268,11 @@ struct SaveBlock3
     u8 dexNavChain;
 #if APRICORN_TREE_COUNT > 0
     u8 apricornTrees[NUM_APRICORN_TREE_BYTES];
+#endif
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    // Append new state so enabling companions preserves the starter build's
+    // legacy SaveBlock3 prefix. Old save sectors zero-fill the unused tail.
+    struct NPCFollower NPCfollower;
 #endif
 }; /* max size 1624 bytes */
 
