@@ -49,12 +49,16 @@ TEST("Expanded starter identity survives separately from the rival branch")
     VarSet(VAR_STARTER_MON, oldStory);
 }
 
+static u32 sStarterFrame;
+
 static void CheckStarterHeap(void)
 {
     const struct MemBlock *head = HeapHead();
     const struct MemBlock *block = head;
     do
     {
+        if (block->magic != MALLOC_SYSTEM_ID)
+            Test_MgbaPrintf("Starter frame %u: bad heap block %p magic %x size %u next %p", sStarterFrame, block, block->magic, block->size, block->next);
         EXPECT_EQ(block->magic, MALLOC_SYSTEM_ID);
         EXPECT(EWRAM_START <= (uintptr_t)block->next && (uintptr_t)block->next < EWRAM_END);
         EXPECT(block->next > block || block->next == head);
@@ -64,6 +68,7 @@ static void CheckStarterHeap(void)
 
 static void RunStarterFrame(u16 keys)
 {
+    sStarterFrame++;
     gMain.newKeys = keys;
     gMain.newAndRepeatedKeys = keys;
     gMain.callback2();
@@ -84,6 +89,8 @@ static void CheckStarterRescueTransition(bool32 chooseBeldum)
     if (IS_FRLG)
         return;
 
+    sStarterFrame = 0;
+    CheckStarterHeap();
     ZeroPlayerPartyMons();
     gBattleTypeFlags = 0;
     ChooseStarter();
