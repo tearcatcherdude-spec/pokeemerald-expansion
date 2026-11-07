@@ -4,6 +4,7 @@
 #include "battle_setup.h"
 #include "dma3.h"
 #include "main.h"
+#include "malloc.h"
 #include "pokemon.h"
 #include "task.h"
 #include "starter_choose.h"
@@ -48,6 +49,19 @@ TEST("Expanded starter identity survives separately from the rival branch")
     VarSet(VAR_STARTER_MON, oldStory);
 }
 
+static void CheckStarterHeap(void)
+{
+    const struct MemBlock *head = HeapHead();
+    const struct MemBlock *block = head;
+    do
+    {
+        EXPECT_EQ(block->magic, MALLOC_SYSTEM_ID);
+        EXPECT(EWRAM_START <= (uintptr_t)block->next && (uintptr_t)block->next < EWRAM_END);
+        EXPECT(block->next > block || block->next == head);
+        block = block->next;
+    } while (block != head);
+}
+
 static void RunStarterFrame(u16 keys)
 {
     gMain.newKeys = keys;
@@ -58,6 +72,7 @@ static void RunStarterFrame(u16 keys)
     if (gMain.vblankCallback != NULL)
         gMain.vblankCallback();
     ProcessDma3Requests();
+    CheckStarterHeap();
 }
 
 static void CheckStarterRescueTransition(bool32 chooseBeldum)

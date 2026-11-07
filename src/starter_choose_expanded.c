@@ -1,5 +1,6 @@
 #include "global.h"
 #include "bg.h"
+#include "decompress.h"
 #include "gpu_regs.h"
 #include "event_data.h"
 #include "international_string_util.h"
@@ -102,9 +103,18 @@ static void DrawSelection(u8 selection)
     for (i = 0; i < CHOICE_COUNT; i++)
         gSprites[sIconIds[i]].y2 = (i == selection) ? -2 : 0;
 
-    if (sPreviewId != 0xFFFF)
-        FreeAndDestroyMonPicSprite(sPreviewId);
-    sPreviewId = CreateMonPicSprite(species, FALSE, 0, TRUE, PREVIEW_X, PREVIEW_Y, 14, TAG_NONE);
+    if (sPreviewId == 0xFFFF)
+    {
+        sPreviewId = CreateMonPicSprite(species, FALSE, 0, TRUE, PREVIEW_X, PREVIEW_Y, 14, TAG_NONE);
+    }
+    else
+    {
+        // Keep the preview's graphics buffer alive while sprite copies can
+        // still refer to it. All choices use the same 64x64 front-pic format.
+        LoadSpecialPokePic((void *)gSprites[sPreviewId].images[0].data, species, 0, TRUE);
+        LoadPalette(GetMonSpritePalFromSpeciesAndPersonality(species, FALSE, 0), OBJ_PLTT_ID(14), PLTT_SIZE_4BPP);
+        StartSpriteAnim(&gSprites[sPreviewId], 0);
+    }
     if (sPreviewId != 0xFFFF)
         gSprites[sPreviewId].oam.priority = 0;
 

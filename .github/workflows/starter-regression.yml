@@ -28,4 +28,4 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi libpng-dev python3
       - name: Check starter selection and rescue transitions
-        run: make -j$(nproc) check TESTS=test/starter_choose.c
+        run: make -j$(nproc) check TESTS=test/starter_choose.c TEST_SRCS="$(find test -maxdepth 1 -name '*.c' -print)"
