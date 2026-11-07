@@ -72,11 +72,10 @@ static void RunStarterFrame(u16 keys)
     gMain.newKeys = keys;
     gMain.newAndRepeatedKeys = keys;
     gMain.callback2();
-    // Drive the same palette-transfer acknowledgement as the real VBlank.
-    // Do not transfer palettes directly: that would hide a missing callback.
-    if (gMain.vblankCallback != NULL)
-        gMain.vblankCallback();
-    ProcessDma3Requests();
+    // Use the actual interrupt. Calling the VBlank/DMA handlers here would
+    // let the hardware interrupt re-enter them and corrupt the test heap.
+    // A missing palette callback must still prevent the transition finishing.
+    VBlankIntrWait();
     CheckStarterHeap();
 }
 
