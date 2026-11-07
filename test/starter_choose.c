@@ -58,7 +58,7 @@ static void CheckStarterHeap(void)
     do
     {
         if (block->magic != MALLOC_SYSTEM_ID)
-            Test_MgbaPrintf("Starter frame %u: bad heap block %p magic %x size %u next %p", sStarterFrame, block, block->magic, block->size, block->next);
+            Test_MgbaPrintf("Starter frame %d: bad heap block %p magic %d size %d next %p", sStarterFrame, block, block->magic, block->size, block->next);
         EXPECT_EQ(block->magic, MALLOC_SYSTEM_ID);
         EXPECT(EWRAM_START <= (uintptr_t)block->next && (uintptr_t)block->next < EWRAM_END);
         EXPECT(block->next > block || block->next == head);
@@ -82,7 +82,10 @@ static void RunStarterFrame(u16 keys)
 
 static void CheckStarterRescueTransition(bool32 chooseBeldum)
 {
-    struct Main oldMain = gMain;
+    MainCallback oldCallback = gMain.callback2;
+    MainCallback oldSavedCallback = gMain.savedCallback;
+    IntrCallback oldVBlank = gMain.vblankCallback;
+    u8 oldState = gMain.state;
     u32 oldBattleTypeFlags = gBattleTypeFlags;
     u32 i;
 
@@ -115,7 +118,12 @@ static void CheckStarterRescueTransition(bool32 chooseBeldum)
         EXPECT_EQ(GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE1), MOVE_TACKLE);
 
     ResetTasks();
-    gMain = oldMain;
+    gMain.callback2 = oldCallback;
+    gMain.savedCallback = oldSavedCallback;
+    gMain.state = oldState;
+    gMain.newKeys = 0;
+    gMain.newAndRepeatedKeys = 0;
+    SetVBlankCallback(oldVBlank);
     gBattleTypeFlags = oldBattleTypeFlags;
 }
 
