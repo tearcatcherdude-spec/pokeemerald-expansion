@@ -1008,9 +1008,14 @@ static void CB2_GiveStarter(void)
 {
     u16 starterMon;
 
-    *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterMon = GetStarterPokemon(gSpecialVar_Result);
+    VarSet(VAR_STARTER_MON, IS_FRLG ? gSpecialVar_Result : GetStarterStoryId(gSpecialVar_Result));
+    if (!IS_FRLG)
+        VarSet(VAR_CHOSEN_STARTER_SPECIES, starterMon);
     ScriptGiveMon(starterMon, 5, ITEM_NONE);
+    // A starter Beldum must not be forced to use recoil for the rescue battle.
+    if (!IS_FRLG && starterMon == SPECIES_BELDUM)
+        SetMonMoveSlot(&gParties[B_TRAINER_PLAYER][0], MOVE_TACKLE, 0);
     ResetTasks();
     PlayBattleBGM();
     SetMainCallback2(CB2_StartFirstBattle);

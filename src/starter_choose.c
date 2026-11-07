@@ -121,6 +121,16 @@ static const u16 sStarterMon[STARTER_MON_COUNT] =
     WATER_STARTER,
 };
 
+// Keep the original three indices for compatibility with existing saves.
+static const u16 sExpandedStarters[] =
+{
+    SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP,
+    SPECIES_BULBASAUR, SPECIES_CHARMANDER, SPECIES_SQUIRTLE,
+    SPECIES_CHIKORITA, SPECIES_CYNDAQUIL, SPECIES_TOTODILE,
+    SPECIES_TURTWIG, SPECIES_CHIMCHAR, SPECIES_PIPLUP,
+    SPECIES_BELDUM, SPECIES_LARVITAR,
+};
+
 static const struct BgTemplate sBgTemplates[3] =
 {
     {
@@ -349,9 +359,32 @@ static const struct SpriteTemplate sSpriteTemplate_StarterCircle =
 // .text
 u16 GetStarterPokemon(u16 chosenStarterId)
 {
-    if (chosenStarterId > STARTER_MON_COUNT)
+    if (!IS_FRLG)
+    {
+        if (chosenStarterId >= ARRAY_COUNT(sExpandedStarters))
+            chosenStarterId = 0;
+        return sExpandedStarters[chosenStarterId];
+    }
+    if (chosenStarterId >= STARTER_MON_COUNT)
         chosenStarterId = 0;
     return sStarterMon[chosenStarterId];
+}
+
+u16 GetStarterStoryId(u16 chosenStarterId)
+{
+    // Grass -> rival Torchic, fire -> rival Mudkip, water -> rival Treecko.
+    // Both bonus starters use the fire branch, giving the rival Mudkip.
+    if (chosenStarterId >= 12)
+        return 1;
+    return chosenStarterId % 3;
+}
+
+u16 GetPlayerStarterPokemon(void)
+{
+    u16 species = VarGet(VAR_CHOSEN_STARTER_SPECIES);
+    if (!IS_FRLG && species != SPECIES_NONE && species < NUM_SPECIES)
+        return species;
+    return GetStarterPokemon(VarGet(VAR_STARTER_MON));
 }
 
 static void VblankCB_StarterChoose(void)
@@ -374,6 +407,12 @@ void CB2_ChooseStarter(void)
 {
     u8 taskId;
     u8 spriteId;
+
+    if (!IS_FRLG)
+    {
+        CB2_ChooseExpandedStarter();
+        return;
+    }
 
     SetVBlankCallback(NULL);
 

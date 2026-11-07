@@ -34,9 +34,7 @@ PetalburgCity_PokemonCenter_1F_EventScript_Woman::
 	end
 
 PetalburgCity_PokemonCenter_1F_EventScript_SayStarterTypeInfo::
-	call_if_eq VAR_STARTER_MON, 0, PetalburgCity_PokemonCenter_1F_EventScript_SayTreeckoType
-	call_if_eq VAR_STARTER_MON, 1, PetalburgCity_PokemonCenter_1F_EventScript_SayTorchicType
-	call_if_eq VAR_STARTER_MON, 2, PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType
+	msgbox PetalburgCity_PokemonCenter_1F_Text_StarterTypes, MSGBOX_DEFAULT
 	release
 	end
 
@@ -92,3 +90,9 @@ PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
 	.string "But, it's weak against GRASS-type\n"
 	.string "and ELECTRIC-type POKéMON.$"
 
+
+PetalburgCity_PokemonCenter_1F_Text_StarterTypes:
+	.string "Your starter has its own strengths\n"
+	.string "and weaknesses, too.\p"
+	.string "Check its types on the SUMMARY\n"
+	.string "screen and try different moves!$"
