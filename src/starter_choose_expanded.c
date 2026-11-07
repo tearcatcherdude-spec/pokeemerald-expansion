@@ -2,6 +2,7 @@
 #include "bg.h"
 #include "gpu_regs.h"
 #include "event_data.h"
+#include "international_string_util.h"
 #include "main.h"
 #include "menu.h"
 #include "palette.h"
@@ -53,7 +54,7 @@ static const struct WindowTemplate sConfirmWindow =
 };
 
 static EWRAM_DATA u8 sIconIds[CHOICE_COUNT] = {0};
-static EWRAM_DATA u16 sPreviewId = 0xFFFF;
+static EWRAM_DATA u16 sPreviewId = 0;
 
 static void Task_ExpandedStarter(u8 taskId);
 
