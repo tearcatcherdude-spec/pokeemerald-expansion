@@ -7,6 +7,7 @@
 #include "sprite.h"
 #include "string_util.h"
 #include "test/test.h"
+#include "constants/event_objects.h"
 #include "constants/region_map_sections.h"
 
 #if FNPC_ENABLE_NPC_FOLLOWERS
@@ -109,7 +110,7 @@ TEST("Pip steps aside for scripted actors without blocking their tiles")
     gObjectEvents[15].localId = OBJ_EVENT_ID_NPC_FOLLOWER;
     Pip_BeforeScriptedMovement(LOCALID_PLAYER);
     EXPECT_EQ(Pip_IsSceneSuspended(), TRUE);
-    EXPECT_EQ(gObjectEvents[15].invisible, TRUE);
+    EXPECT(gObjectEvents[15].invisible);
     EXPECT_EQ(FollowerNPC_IsCollisionExempt(&gObjectEvents[15], &gObjectEvents[1]), TRUE);
     Pip_ResetSceneState();
     EXPECT_EQ(Pip_IsSceneSuspended(), FALSE);
