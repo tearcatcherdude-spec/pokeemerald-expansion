@@ -28,7 +28,7 @@ Continue from that integrated branch when extending this game, not the earlier
 are now guarded in `data/project_baseline.json`; append, never reorder or reuse.
 
 SaveBlock3 keeps the released 180-byte Pip/watch prefix. Kanto version 1 occupies
-an additional 820 bytes (total 1000). Its flags, variables and per-world healing
+an additional 824 bytes (total 1004, including ARM struct padding). Its flags, variables and per-world healing
 locations have fixed offsets tested in `test/save.c`. Extend saves by appending
 and migrating new fields. Do not increment the Kanto version and clear the whole
 bank: that would erase the user's regional story, trainer and scene progress.

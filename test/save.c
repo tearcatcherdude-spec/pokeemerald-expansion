@@ -7,7 +7,7 @@
 #define T_SAVEBLOCK1_SIZE 15568
 #define T_SAVEBLOCK2_SIZE 3884
 #define T_SAVEBLOCK3_SIZE 4
-#define T_SAVEBLOCK3_WITH_FOLLOWER_SIZE 1000
+#define T_SAVEBLOCK3_WITH_FOLLOWER_SIZE 1004
 #define T_POKEMONSTORAGE_SIZE 34144
 
 TEST("SaveBlock1 is backwards compatible")
@@ -34,11 +34,12 @@ TEST("SaveBlock3 is backwards compatible")
     EXPECT_EQ(offsetof(struct SaveBlock3, watchAnchors), 164);
     EXPECT_EQ(sizeof(struct ParallelWatchAnchor), 8);
     EXPECT_EQ(offsetof(struct SaveBlock3, kanto), 180);
-    EXPECT_EQ(sizeof(struct KantoProgress), 820);
+    // ARM build rounds nested structs to four-byte alignment. Preserve the actual ABI.
+    EXPECT_EQ(sizeof(struct KantoProgress), 824);
     EXPECT_EQ(offsetof(struct KantoProgress, flags), 2);
     EXPECT_EQ(offsetof(struct KantoProgress, vars), 290);
-    EXPECT_EQ(offsetof(struct KantoProgress, healLocations), 802);
-    EXPECT_EQ(offsetof(struct KantoProgress, healValid), 818);
+    EXPECT_EQ(offsetof(struct KantoProgress, healLocations), 804);
+    EXPECT_EQ(offsetof(struct KantoProgress, healValid), 820);
     EXPECT_EQ(sizeof(struct SaveBlock3), T_SAVEBLOCK3_WITH_FOLLOWER_SIZE);
 #else
     EXPECT_EQ(sizeof(struct SaveBlock3), T_SAVEBLOCK3_SIZE);

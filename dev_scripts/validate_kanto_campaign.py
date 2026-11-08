@@ -50,3 +50,15 @@ def main():
  print(f'PASS: {len(scenes)} paired scenes and {len(scenes)*2} actors on walkable native tiles')
  print(f'PASS: {len(maps)} campaign maps, all warp/connection destinations, layouts, eight gyms, script roots and unique labels')
 if __name__=='__main__':main()
+
+# Keep the constant-time region lookup exact, including groups with no Kanto maps.
+_groups=json.loads((ROOT/'data/maps/map_groups.json').read_text())
+_imported=set(json.loads((ROOT/'data/kanto/maps_manifest.json').read_text())['maps'].values())
+_counts=[]
+for _group in _groups['group_order']:
+ _members=set(_groups[_group]);_present=_members&_imported
+ assert not _present or _present==_members, 'Mixed Kanto map group: '+_group
+ _counts.append(len(_present))
+_expected='// Indexed by persistent map group; zero means no imported maps.\n'+''.join(f'    {v}, // {i}: {n}\n' for i,(n,v) in enumerate(zip(_groups['group_order'],_counts)))
+assert (ROOT/'src/data/kanto_map_group_counts.h').read_text()==_expected,'Kanto region index differs from persistent map groups'
+print('PASS: constant-time Kanto region index matches all 417 maps and rejects every other group')

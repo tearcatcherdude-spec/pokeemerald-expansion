@@ -31,13 +31,15 @@ TEST("Parallel Watch rejects corrupt positions and anchors from the wrong world"
     a.facing = DIR_SOUTH; a.mapGroup = 127;
     EXPECT(!ParallelWatch_IsSafeAnchor(&a, 1));
 }
-TEST("Parallel Watch never lands on a door or a closed trial boundary")
+TEST("Parallel Watch rejects doors and map edges while permitting the opened Kanto boundary")
 {
     struct ParallelWatchAnchor a = {MAP_GROUP(MAP_WATCH_PALLET), MAP_NUM(MAP_WATCH_PALLET), 6, 7, DIR_SOUTH, TRUE};
     EXPECT(!ParallelWatch_IsSafeAnchor(&a, 1));
     a.x = 12; a.y = 19;
     EXPECT(!ParallelWatch_IsSafeAnchor(&a, 1));
     a.mapNum = MAP_NUM(MAP_WATCH_VIRIDIAN); a.x = 20; a.y = 0;
+    EXPECT(ParallelWatch_IsSafeAnchor(&a, 1));
+    a.y = -1;
     EXPECT(!ParallelWatch_IsSafeAnchor(&a, 1));
 }
 TEST("Parallel Watch has a safe fallback in Hoenn")

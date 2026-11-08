@@ -65,6 +65,13 @@ u16 *KantoProgress_GetVarPointer(u16 id)
 u16 KantoProgress_RegionalFlagId(u16 id)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
+    // Battle AI reads many ordinary event flags. Only these engine-owned
+    // flags are regional; skip map lookup entirely for every other ID.
+    if (!(id >= FLAG_BADGE01_GET && id <= FLAG_BADGE08_GET)
+     && id != FLAG_SYS_GAME_CLEAR && id != FLAG_SYS_SAFARI_MODE
+     && id != FLAG_SYS_USE_STRENGTH && id != FLAG_SYS_USE_FLASH
+     && id != FLAG_SYS_CRUISE_MODE && id != FLAG_SYS_CTRL_OBJ_DELETE)
+        return id;
     if (gSaveBlock1Ptr != NULL && ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
     {
         switch (id)

@@ -23,15 +23,15 @@ static EWRAM_DATA u8 sArrivalFacing = 0;
 static const u16 sKantoOutdoorMaps[] = {
 #include "data/kanto_outdoors.h"
 };
-static const u16 sKantoMaps[] = {
-#include "data/kanto_maps.h"
+// All members of an imported map group belong to Kanto. The topology validator
+// checks this compact index against the complete manifest before every build.
+static const u8 sKantoMapGroupCounts[] = {
+#include "data/kanto_map_group_counts.h"
 };
 bool32 ParallelWatch_IsKanto(u32 group, u32 num)
 {
-    for (u32 i = 0; i < ARRAY_COUNT(sKantoMaps); i++)
-        if (MAP_GROUP(sKantoMaps[i]) == group && MAP_NUM(sKantoMaps[i]) == num)
-            return TRUE;
-    return FALSE;
+    return group < ARRAY_COUNT(sKantoMapGroupCounts)
+        && num < sKantoMapGroupCounts[group];
 }
 
 bool32 ParallelWatch_IsOutdoor(u32 group, u32 num)
