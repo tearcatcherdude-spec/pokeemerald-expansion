@@ -31,7 +31,7 @@ TEST("SaveBlock3 is backwards compatible")
     EXPECT_EQ(offsetof(struct SaveBlock3, pipHeard), 30);
     EXPECT_EQ(offsetof(struct SaveBlock3, pipOffered), 94);
     EXPECT_EQ(offsetof(struct SaveBlock3, watchMemoryVersion), 160);
-    EXPECT_EQ(offsetof(struct SaveBlock3, watchAnchors), 162);
+    EXPECT_EQ(offsetof(struct SaveBlock3, watchAnchors), 164);
     EXPECT_EQ(sizeof(struct ParallelWatchAnchor), 8);
     EXPECT_EQ(sizeof(struct SaveBlock3), T_SAVEBLOCK3_WITH_FOLLOWER_SIZE);
 #else

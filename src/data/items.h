@@ -16103,7 +16103,7 @@ const struct ItemInfo gItemsInfo[] =
     {
         .name = ITEM_NAME("Parallel Watch"),
         .price = 0,
-        .description = COMPOUND_STRING("Remembers two worlds.\nUse outside, on foot,\nwith a healthy Pokémon."),
+        .description = COMPOUND_STRING("Cross worlds.\nUse outdoors\nwhile on foot."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
