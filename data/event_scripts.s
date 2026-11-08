@@ -1,3 +1,4 @@
+#include "constants/kanto_symbols.h"
 #include "config/general.h"
 #include "config/battle.h"
 #include "config/item.h"
@@ -1049,11 +1050,19 @@ gStdScripts_End::
 
 .endif
 
+.if !IS_FRLG
+	.include "data/kanto/campaign.inc"
+.endif
+
 	.include "data/scripts/std_msgbox.inc"
 	.include "data/scripts/trainer_battle.inc"
 	.include "data/scripts/new_game.inc"
 	.include "data/scripts/hall_of_fame.inc"
+.if IS_FRLG
 	.include "data/scripts/hall_of_fame_frlg.inc"
+.else
+	.include "data/kanto/scripts/hall_of_fame_frlg.inc"
+.endif
 
 	.include "data/scripts/config.inc"
 	.include "data/scripts/debug.inc"
@@ -1200,7 +1209,11 @@ EventScript_BackupMrBrineyLocation::
 
 	.include "data/scripts/surf.inc"
 	.include "data/scripts/rival_graphics.inc"
+.if IS_FRLG
 	.include "data/scripts/set_gym_trainers.inc"
+.else
+	.include "data/kanto/scripts/set_gym_trainers.inc"
+.endif
 
 EventScript_CancelMessageBox::
 	special UseBlankMessageToCancelPokemonPic
@@ -1745,16 +1758,16 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 
 .if !IS_FRLG
 	.include "data/scripts/parallel_watch.inc"
-	.include "data/maps/WatchPallet/scripts.inc"
-	.include "data/maps/WatchRoute1/scripts.inc"
-	.include "data/maps/WatchViridian/scripts.inc"
-	.include "data/maps/WatchHouse1F/scripts.inc"
-	.include "data/maps/WatchHouse2F/scripts.inc"
-	.include "data/maps/WatchNeighbor/scripts.inc"
-	.include "data/maps/WatchLab/scripts.inc"
-	.include "data/maps/WatchCenter/scripts.inc"
-	.include "data/maps/WatchMart/scripts.inc"
-	.include "data/maps/WatchHouse/scripts.inc"
-	.include "data/maps/WatchSchool/scripts.inc"
+
+
+
+
+
+
+
+
+
+
+
 
 .endif

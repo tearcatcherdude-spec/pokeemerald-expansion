@@ -2,6 +2,7 @@
 #define GUARD_DATA_H
 
 #include "constants/moves.h"
+#include "constants/kanto_progress.h"
 #include "constants/trainers.h"
 #include "constants/battle.h"
 #include "constants/pokeball.h"
@@ -218,6 +219,18 @@ extern const union AnimCmd *const gAnims_Trainer[];
 extern const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT];
 
 extern const struct Trainer gTrainers[DIFFICULTY_COUNT][TRAINERS_COUNT];
+#if !IS_FRLG
+extern const struct Trainer gKantoTrainers[DIFFICULTY_COUNT][KANTO_TRAINER_COUNT];
+#endif
+
+static inline bool32 IsKantoTrainerId(u32 trainerId)
+{
+#if !IS_FRLG
+    return trainerId > KANTO_TRAINER_BASE && trainerId < KANTO_TRAINER_BASE + KANTO_TRAINER_COUNT;
+#else
+    return FALSE;
+#endif
+}
 extern const struct Trainer gBattlePartners[DIFFICULTY_COUNT][PARTNER_COUNT];
 
 extern const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT];
@@ -282,6 +295,13 @@ static inline const struct Trainer *GetTrainerStructFromId(u16 trainerId)
 {
     if (gIsDebugBattle) return GetDebugAiTrainer();
     enum DifficultyLevel difficulty;
+#if !IS_FRLG
+    if (IsKantoTrainerId(trainerId))
+    {
+        difficulty = GetTrainerDifficultyLevel(trainerId);
+        return &gKantoTrainers[difficulty][trainerId - KANTO_TRAINER_BASE];
+    }
+#endif
 
     if (IsPartnerTrainerId(trainerId))
     {

@@ -1,0 +1,169 @@
+Common_EventScript_SetGymTrainers::
+	switch VAR_0x8008
+	case 1, RustboroCity_Gym_SetGymTrainers
+	case 2, DewfordTown_Gym_SetGymTrainers
+	case 3, MauvilleCity_Gym_SetGymTrainers
+	case 4, LavaridgeTown_Gym_SetGymTrainers
+	case 5, PetalburgCity_Gym_SetGymTrainers
+	case 6, FortreeCity_Gym_SetGymTrainers
+	case 7, MossdeepCity_Gym_SetGymTrainers
+	case 8, SootopolisCity_Gym_SetGymTrainers
+	end
+
+Common_EventScript_SetGymTrainers_Frlg::
+	switch VAR_0x8008
+	case 1, EventScript_SetPewterGymTrainers
+	case 2, EventScript_SetCeruleanGymTrainers
+	case 3, EventScript_SetVermilionGymTrainers
+	case 4, EventScript_SetCeladonGymTrainers
+	case 5, EventScript_SetFuchsiaGymTrainers
+	case 6, EventScript_SetSaffronGymTrainers
+	case 7, EventScript_SetCinnabarGymTrainers
+	case 8, EventScript_SetViridianGymTrainers
+	end
+
+RustboroCity_Gym_SetGymTrainers::
+	settrainerflag TRAINER_JOSH
+	settrainerflag TRAINER_TOMMY
+	settrainerflag TRAINER_MARC
+	return
+
+DewfordTown_Gym_SetGymTrainers::
+	settrainerflag TRAINER_TAKAO
+	settrainerflag TRAINER_JOCELYN
+	settrainerflag TRAINER_LAURA
+	settrainerflag TRAINER_BRENDEN
+	settrainerflag TRAINER_CRISTIAN
+	settrainerflag TRAINER_LILITH
+	return
+
+MauvilleCity_Gym_SetGymTrainers::
+	settrainerflag TRAINER_KIRK
+	settrainerflag TRAINER_SHAWN
+	settrainerflag TRAINER_BEN
+	settrainerflag TRAINER_VIVIAN
+	settrainerflag TRAINER_ANGELO
+	return
+
+LavaridgeTown_Gym_SetGymTrainers::
+	settrainerflag TRAINER_COLE
+	settrainerflag TRAINER_AXLE
+	settrainerflag TRAINER_KEEGAN
+	settrainerflag TRAINER_GERALD
+	settrainerflag TRAINER_DANIELLE
+	settrainerflag TRAINER_JACE
+	settrainerflag TRAINER_JEFF
+	settrainerflag TRAINER_ELI
+	return
+
+PetalburgCity_Gym_SetGymTrainers::
+	settrainerflag TRAINER_RANDALL
+	settrainerflag TRAINER_PARKER
+	settrainerflag TRAINER_GEORGE
+	settrainerflag TRAINER_BERKE
+	settrainerflag TRAINER_MARY
+	settrainerflag TRAINER_ALEXIA
+	settrainerflag TRAINER_JODY
+	return
+
+FortreeCity_Gym_SetGymTrainers::
+	settrainerflag TRAINER_JARED
+	settrainerflag TRAINER_FLINT
+	settrainerflag TRAINER_ASHLEY
+	settrainerflag TRAINER_EDWARDO
+	settrainerflag TRAINER_HUMBERTO
+	settrainerflag TRAINER_DARIUS
+	return
+
+MossdeepCity_Gym_SetGymTrainers::
+	settrainerflag TRAINER_PRESTON
+	settrainerflag TRAINER_VIRGIL
+	settrainerflag TRAINER_BLAKE
+	settrainerflag TRAINER_HANNAH
+	settrainerflag TRAINER_SAMANTHA
+	settrainerflag TRAINER_MAURA
+	settrainerflag TRAINER_SYLVIA
+	settrainerflag TRAINER_NATE
+	settrainerflag TRAINER_KATHLEEN
+	settrainerflag TRAINER_CLIFFORD
+	settrainerflag TRAINER_MACEY
+	settrainerflag TRAINER_NICHOLAS
+	return
+
+SootopolisCity_Gym_SetGymTrainers::
+	settrainerflag TRAINER_ANDREA
+	settrainerflag TRAINER_CRISSY
+	settrainerflag TRAINER_BRIANNA
+	settrainerflag TRAINER_CONNIE
+	settrainerflag TRAINER_BRIDGET
+	settrainerflag TRAINER_OLIVIA
+	settrainerflag TRAINER_TIFFANY
+	settrainerflag TRAINER_BETHANY
+	settrainerflag TRAINER_ANNIKA
+	settrainerflag TRAINER_DAPHNE
+	return
+
+EventScript_SetPewterGymTrainers::
+	settrainerflag KANTO_TRAINER_CAMPER_LIAM
+	return
+
+EventScript_SetCeruleanGymTrainers::
+	settrainerflag KANTO_TRAINER_PICNICKER_DIANA
+	settrainerflag KANTO_TRAINER_SWIMMER_MALE_LUIS
+	return
+
+EventScript_SetVermilionGymTrainers::
+	settrainerflag KANTO_TRAINER_SAILOR_DWAYNE
+	settrainerflag KANTO_TRAINER_ENGINEER_BAILY
+	settrainerflag KANTO_TRAINER_GENTLEMAN_TUCKER
+	return
+
+EventScript_SetCeladonGymTrainers::
+	settrainerflag KANTO_TRAINER_LASS_KAY
+	settrainerflag KANTO_TRAINER_LASS_LISA
+	settrainerflag KANTO_TRAINER_PICNICKER_TINA
+	settrainerflag KANTO_TRAINER_BEAUTY_BRIDGET
+	settrainerflag KANTO_TRAINER_BEAUTY_TAMIA
+	settrainerflag KANTO_TRAINER_BEAUTY_LORI
+	settrainerflag KANTO_TRAINER_COOLTRAINER_MARY
+	return
+
+EventScript_SetFuchsiaGymTrainers::
+	settrainerflag KANTO_TRAINER_TAMER_PHIL
+	settrainerflag KANTO_TRAINER_TAMER_EDGAR
+	settrainerflag KANTO_TRAINER_JUGGLER_KIRK
+	settrainerflag KANTO_TRAINER_JUGGLER_SHAWN
+	settrainerflag KANTO_TRAINER_JUGGLER_KAYDEN
+	settrainerflag KANTO_TRAINER_JUGGLER_NATE
+	return
+
+EventScript_SetSaffronGymTrainers::
+	settrainerflag KANTO_TRAINER_PSYCHIC_JOHAN
+	settrainerflag KANTO_TRAINER_PSYCHIC_TYRON
+	settrainerflag KANTO_TRAINER_PSYCHIC_CAMERON
+	settrainerflag KANTO_TRAINER_PSYCHIC_PRESTON
+	settrainerflag KANTO_TRAINER_CHANNELER_AMANDA
+	settrainerflag KANTO_TRAINER_CHANNELER_STACY
+	settrainerflag KANTO_TRAINER_CHANNELER_TASHA
+	return
+
+EventScript_SetCinnabarGymTrainers::
+	settrainerflag KANTO_TRAINER_SUPER_NERD_ERIK
+	settrainerflag KANTO_TRAINER_SUPER_NERD_AVERY
+	settrainerflag KANTO_TRAINER_SUPER_NERD_DEREK
+	settrainerflag KANTO_TRAINER_SUPER_NERD_ZAC
+	settrainerflag KANTO_TRAINER_BURGLAR_QUINN
+	settrainerflag KANTO_TRAINER_BURGLAR_RAMON
+	settrainerflag KANTO_TRAINER_BURGLAR_DUSTY
+	return
+
+EventScript_SetViridianGymTrainers::
+	settrainerflag KANTO_TRAINER_TAMER_JASON
+	settrainerflag KANTO_TRAINER_TAMER_COLE
+	settrainerflag KANTO_TRAINER_BLACK_BELT_ATSUSHI
+	settrainerflag KANTO_TRAINER_BLACK_BELT_KIYO
+	settrainerflag KANTO_TRAINER_BLACK_BELT_TAKASHI
+	settrainerflag KANTO_TRAINER_COOLTRAINER_SAMUEL
+	settrainerflag KANTO_TRAINER_COOLTRAINER_YUJI
+	settrainerflag KANTO_TRAINER_COOLTRAINER_WARREN
+	return

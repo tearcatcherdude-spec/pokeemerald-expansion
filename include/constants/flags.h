@@ -2449,4 +2449,6 @@
 #endif // TESTING
 
 
+#include "constants/kanto_flags_aliases.h"
+
 #endif // GUARD_CONSTANTS_FLAGS_H

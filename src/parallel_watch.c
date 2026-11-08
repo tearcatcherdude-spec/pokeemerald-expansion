@@ -16,13 +16,25 @@
 #if FNPC_ENABLE_NPC_FOLLOWERS
 #define WATCH_VERSION 1
 static EWRAM_DATA u8 sArrivalFacing = 0;
+static const u16 sKantoOutdoorMaps[] = {
+#include "data/kanto_outdoors.h"
+};
+static const u16 sKantoMaps[] = {
+#include "data/kanto_maps.h"
+};
+bool32 ParallelWatch_IsKanto(u32 group, u32 num)
+{
+    for (u32 i = 0; i < ARRAY_COUNT(sKantoMaps); i++)
+        if (MAP_GROUP(sKantoMaps[i]) == group && MAP_NUM(sKantoMaps[i]) == num)
+            return TRUE;
+    return FALSE;
+}
 
 bool32 ParallelWatch_IsOutdoor(u32 group, u32 num)
 {
-    // Only ordinary Hoenn towns/routes and the three trial outdoor maps.
-    // No facilities, interiors, caves, boats, link rooms or story-only maps.
-    if (group == MAP_GROUP(MAP_WATCH_PALLET))
-        return num <= MAP_NUM(MAP_WATCH_VIRIDIAN);
+    for (u32 i = 0; i < ARRAY_COUNT(sKantoOutdoorMaps); i++)
+        if (MAP_GROUP(sKantoOutdoorMaps[i]) == group && MAP_NUM(sKantoOutdoorMaps[i]) == num)
+            return TRUE;
     return group == MAP_GROUP(MAP_LITTLEROOT_TOWN)
         && num <= MAP_NUM(MAP_ROUTE134)
         && IsMapTypeOutdoors(Overworld_GetMapHeaderByGroupAndId(group, num)->mapType);
@@ -35,7 +47,7 @@ bool32 ParallelWatch_IsSafeAnchor(const struct ParallelWatchAnchor *a, u32 world
     const struct Tileset *t;
     u32 id, behavior, block;
     if (!a->valid || world > 1 || !ParallelWatch_IsOutdoor(a->mapGroup, a->mapNum)
-     || (a->mapGroup == MAP_GROUP(MAP_WATCH_PALLET)) != world
+     || ParallelWatch_IsKanto(a->mapGroup, a->mapNum) != world
      || a->facing < DIR_SOUTH || a->facing > DIR_EAST)
         return FALSE;
     h = Overworld_GetMapHeaderByGroupAndId(a->mapGroup, a->mapNum);
@@ -106,7 +118,7 @@ static bool32 CanSwitch(void)
         return Deny(COMPOUND_STRING("The hands are still.$"));
     if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT))
         return Deny(COMPOUND_STRING("The hands will not turn.$"));
-    if (!ParallelWatch_IsSafeAnchor(&a, a.mapGroup == MAP_GROUP(MAP_WATCH_PALLET)))
+    if (!ParallelWatch_IsSafeAnchor(&a, ParallelWatch_IsKanto(a.mapGroup, a.mapNum)))
         return Deny(COMPOUND_STRING("The hands will not turn here.$"));
     return TRUE;
 }
@@ -123,7 +135,7 @@ void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
 {
     struct ParallelWatchAnchor from = CurrentAnchor();
     struct ParallelWatchAnchor target;
-    u32 world = from.mapGroup == MAP_GROUP(MAP_WATCH_PALLET);
+    u32 world = ParallelWatch_IsKanto(from.mapGroup, from.mapNum);
     gSpecialVar_Result = FALSE;
     if (!CanSwitch())
         return;
@@ -156,6 +168,7 @@ void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
     ResetInitialPlayerAvatarState();
 }
 #else
+bool32 ParallelWatch_IsKanto(u32 group, u32 num) { return FALSE; }
 bool32 ParallelWatch_IsOutdoor(u32 group, u32 num) { return FALSE; }
 bool32 ParallelWatch_IsSafeAnchor(const struct ParallelWatchAnchor *a, u32 world) { return FALSE; }
 void Script_ParallelWatchCheck(struct ScriptContext *ctx) { gSpecialVar_Result = FALSE; }

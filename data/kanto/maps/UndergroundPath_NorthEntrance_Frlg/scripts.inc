@@ -1,0 +1,36 @@
+KantoUndergroundPath_NorthEntrance_MapScripts::
+	.byte 0
+
+UndergroundPath_NorthEntrance_EventScript_Saige::
+	lock
+	faceplayer
+	setvar KANTO_VAR_0x8008, INGAME_TRADE_NIDORAN
+	call EventScript_GetInGameTradeSpeciesInfo
+	goto_if_set KANTO_FLAG_DID_MS_NIDO_TRADE, UndergroundPath_NorthEntrance_EventScript_AlreadyTraded
+	msgbox Trade_Text_DoYouHaveMonWantToTradeForMon, MSGBOX_YESNO
+	goto_if_eq KANTO_VAR_RESULT, NO, UndergroundPath_NorthEntrance_EventScript_DeclineTrade
+	call EventScript_ChooseMonForInGameTrade
+	goto_if_ge KANTO_VAR_0x8004, PARTY_SIZE, UndergroundPath_NorthEntrance_EventScript_DeclineTrade
+	call EventScript_GetInGameTradeSpecies
+	goto_if_ne KANTO_VAR_RESULT, KANTO_VAR_0x8009, UndergroundPath_NorthEntrance_EventScript_NotRequestedMon
+	call EventScript_DoInGameTrade
+	msgbox Trade_Text_ThanksYoureAPal
+	setflag KANTO_FLAG_DID_MS_NIDO_TRADE
+	release
+	end
+
+UndergroundPath_NorthEntrance_EventScript_DeclineTrade::
+	msgbox Trade_Text_ThatsTooBad
+	release
+	end
+
+UndergroundPath_NorthEntrance_EventScript_NotRequestedMon::
+	bufferspeciesname STR_VAR_1, KANTO_VAR_0x8009
+	msgbox Trade_Text_ThisIsNoMon
+	release
+	end
+
+UndergroundPath_NorthEntrance_EventScript_AlreadyTraded::
+	msgbox Trade_Text_HowIsMyOldMon
+	release
+	end

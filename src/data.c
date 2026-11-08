@@ -10,6 +10,7 @@
 #include "constants/moves.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
+#include "constants/kanto_symbols.h"
 #include "constants/battle_ai.h"
 
 const u16 gMinigameDigits_Pal[] = INCGFX_U16("graphics/link/minigame_digits.png", ".gbapal");
@@ -235,6 +236,13 @@ const struct Trainer gTrainers[DIFFICULTY_COUNT][TRAINERS_COUNT] =
 #else
 #include "data/trainers.h"
 #endif
+};
+#endif
+
+#if !IS_FRLG
+const struct Trainer gKantoTrainers[DIFFICULTY_COUNT][KANTO_TRAINER_COUNT] =
+{
+#include "data/trainers_kanto.h"
 };
 #endif
 

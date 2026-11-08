@@ -1,5 +1,6 @@
 #include "global.h"
 #include "pip.h"
+#include "parallel_watch.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "field_player_avatar.h"
@@ -35,6 +36,7 @@ struct PipLocationDialogue
 
 #include "data/pip_dialogue.h"
 #include "data/pip_living_dialogue.h"
+#include "data/pip_kanto_dialogue.h"
 #include "data/pip_memory_catalogue.h"
 
 static struct ObjectEvent *GetPipObject(void)
@@ -83,8 +85,20 @@ static const u8 *Fresh(const u8 *text)
 {
     return text != NULL && !Pip_HasHeard(text) ? text : NULL;
 }
+static const u8 *FreshKantoLocation(void)
+{
+    for (u32 i = 0; i < ARRAY_COUNT(sPipAdventureLocations); i++)
+        if (sPipAdventureLocations[i].section == gMapHeader.regionMapSectionId)
+            for (u32 j = 0; j < 2; j++)
+                if (Fresh(sPipAdventureLocations[i].lines[j]) != NULL)
+                    return sPipAdventureLocations[i].lines[j];
+    return NULL;
+}
 static const u8 *FreshLocation(void)
 {
+    const u8 *kanto = FreshKantoLocation();
+    if (kanto != NULL)
+        return kanto;
     for (u32 i = 0; i < ARRAY_COUNT(sPipLocations); i++)
         if (sPipLocations[i].section == gMapHeader.regionMapSectionId)
             for (u32 j = 0; j < 2; j++)
@@ -287,6 +301,25 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
     case OBJ_EVENT_GFX_SCIENTIST_1:
     case OBJ_EVENT_GFX_SCIENTIST_2: text = sPipScientist; break;
     case OBJ_EVENT_GFX_NURSE: text = sPipNurse; break;
+    }
+    if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+        switch (sReactionGraphics)
+        {
+        case OBJ_EVENT_GFX_BROCK: text = sPipAdventure_BROCK; break;
+        case OBJ_EVENT_GFX_MISTY: text = sPipAdventure_MISTY; break;
+        case OBJ_EVENT_GFX_LT_SURGE: text = sPipAdventure_LT_SURGE; break;
+        case OBJ_EVENT_GFX_ERIKA: text = sPipAdventure_ERIKA; break;
+        case OBJ_EVENT_GFX_KOGA: text = sPipAdventure_KOGA; break;
+        case OBJ_EVENT_GFX_SABRINA: text = sPipAdventure_SABRINA; break;
+        case OBJ_EVENT_GFX_BLAINE: text = sPipAdventure_BLAINE; break;
+        case OBJ_EVENT_GFX_GIOVANNI: text = sPipAdventure_GIOVANNI; break;
+        case OBJ_EVENT_GFX_PROF_OAK: text = sPipAdventure_PROF_OAK; break;
+        case OBJ_EVENT_GFX_BLUE: text = sPipAdventure_BLUE; break;
+        default:
+            if (Fresh(text) == NULL) text = FreshKantoLocation();
+            break;
+        }
     }
     OfferReaction(text);
 #else

@@ -26,6 +26,9 @@ jobs:
       - name: Validate accepted project baseline
         run: python3 dev_scripts/validate_project_baseline.py
 
+      - name: Validate Kanto campaign topology
+        run: python3 dev_scripts/validate_kanto_campaign.py
+
       - name: Install binutils
         run: |
           sudo apt-get update
