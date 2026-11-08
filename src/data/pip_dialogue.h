@@ -2,7 +2,7 @@
 static const u8 sPip_LITTLEROOT_TOWN_0[] = _("PIP: Home. The only place where a\nshrub has more neighbors than we do.$");
 static const u8 sPip_LITTLEROOT_TOWN_1[] = _("PIP: We set out from here. I was much\nbetter rested then.$");
 static const u8 sPip_OLDALE_TOWN_0[] = _("PIP: Two shops and a crossroads. This\ntown knows how to delegate.$");
-static const u8 sPip_OLDALE_TOWN_1[] = _("PIP: The lab does not have beds. The\nPOKÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©MON CENTER does. Excellent\lresearch.$");
+static const u8 sPip_OLDALE_TOWN_1[] = _("PIP: The lab does not have beds. The\nPOKéMON CENTER does. Excellent\lresearch.$");
 static const u8 sPip_PETALBURG_CITY_0[] = _("PIP: Your dad runs a GYM. My family\njust asks if I have eaten.$");
 static const u8 sPip_PETALBURG_CITY_1[] = _("PIP: That pond looks peaceful. I bet\nit has never had a schedule.$");
 static const u8 sPip_RUSTBORO_CITY_0[] = _("PIP: A school AND a GYM. Even the\nbuildings have homework.$");
@@ -65,7 +65,7 @@ static const u8 sPip_ROUTE_115_0[] = _("PIP: Cliffs, sea, more cliffs. Land\nrea
 static const u8 sPip_ROUTE_115_1[] = _("PIP: A path that ends at the sea is\njust asking for an ambitious boat.$");
 static const u8 sPip_ROUTE_116_0[] = _("PIP: A tunnel through a mountain.\nSomeone took a shortcut very\lseriously.$");
 static const u8 sPip_ROUTE_116_1[] = _("PIP: That tunnel was somebody\nchoosing to see a person sooner. I\llike that.$");
-static const u8 sPip_ROUTE_117_0[] = _("PIP: A nursery! Some POKÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©MON are\nhaving a much quieter adventure.$");
+static const u8 sPip_ROUTE_117_0[] = _("PIP: A nursery! Some POKéMON are\nhaving a much quieter adventure.$");
 static const u8 sPip_ROUTE_117_1[] = _("PIP: The daycare looks peaceful. I\nassume the eggs handle the\lpaperwork.$");
 static const u8 sPip_ROUTE_118_0[] = _("PIP: Two shores and a river. The map\nhas a very literal sense of division.$");
 static const u8 sPip_ROUTE_118_1[] = _("PIP: The river divides the route. The\nfishermen seem to have accepted\ljoint custody.$");
