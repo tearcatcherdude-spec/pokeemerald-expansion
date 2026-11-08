@@ -116,7 +116,7 @@ void Script_ParallelWatchCheck(struct ScriptContext *ctx)
 }
 static void WatchArrival(void)
 {
-    FieldCB_WarpExitFadeFromBlack();
+    FieldCB_DefaultWarpExit(); // Includes the normal companion warp-end hook.
     PlayerFaceDirection(sArrivalFacing);
 }
 void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
