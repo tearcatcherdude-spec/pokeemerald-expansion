@@ -1,0 +1,108 @@
+Route5_PokemonDayCare_EventScript_DaycareMan::
+	lock
+	faceplayer
+	showmoneybox 0, 0
+	specialvar KANTO_VAR_RESULT, IsThereMonInRoute5Daycare
+	goto_if_eq KANTO_VAR_RESULT, TRUE, Route5_PokemonDayCare_EventScript_CheckOnMon
+	msgbox Route5_PokemonDayCare_Text_WantMeToRaiseMon, MSGBOX_YESNO
+	goto_if_eq KANTO_VAR_RESULT, YES, Route5_PokemonDayCare_EventScript_TryGiveMon
+	msgbox Route5_PokemonDayCare_Text_ComeAgain
+	goto Route5_PokemonDayCare_EventScript_CloseMoneyBox
+	end
+
+Route5_PokemonDayCare_EventScript_TryGiveMon::
+	specialvar KANTO_VAR_RESULT, CountPartyNonEggMons
+	goto_if_eq KANTO_VAR_RESULT, 1, Route5_PokemonDayCare_EventScript_OnlyOneMonInParty
+	msgbox Route5_PokemonDayCare_Text_WhichMonShouldIRaise
+	fadescreen FADE_TO_BLACK
+	hidemoneybox
+	special ChooseSendDaycareMon
+	showmoneybox 0, 0
+	goto_if_ge KANTO_VAR_0x8004, PARTY_SIZE, Route5_PokemonDayCare_EventScript_ComeAgain
+	specialvar KANTO_VAR_RESULT, CountPartyAliveNonEggMons_IgnoreVar0x8004Slot
+	goto_if_eq KANTO_VAR_RESULT, 0, Route5_PokemonDayCare_EventScript_OnlyOneAliveMonInParty
+	specialvar KANTO_VAR_0x8005, GetSelectedMonNicknameAndSpecies
+	msgbox Route5_PokemonDayCare_Text_LookAfterMonForAWhile
+	waitse
+	playmoncry KANTO_VAR_0x8005, CRY_MODE_NORMAL
+	msgbox Route5_PokemonDayCare_Text_ComeSeeMeInAWhile
+	waitmoncry
+	special PutMonInRoute5Daycare
+	callnative UpdateFollowingPokemon
+	incrementgamestat GAME_STAT_USED_DAYCARE
+	goto Route5_PokemonDayCare_EventScript_CloseMoneyBox
+	end
+
+Route5_PokemonDayCare_EventScript_ComeAgain::
+	msgbox Route5_PokemonDayCare_Text_ComeAnytimeYouLike
+	goto Route5_PokemonDayCare_EventScript_CloseMoneyBox
+	end
+
+Route5_PokemonDayCare_EventScript_OnlyOneMonInParty::
+	msgbox Route5_PokemonDayCare_Text_OnlyHaveOneMonWithYou
+	goto Route5_PokemonDayCare_EventScript_CloseMoneyBox
+	end
+
+Route5_PokemonDayCare_EventScript_OnlyOneAliveMonInParty::
+	msgbox Route5_PokemonDayCare_Text_WhatWillYouBattleWith
+	goto Route5_PokemonDayCare_EventScript_CloseMoneyBox
+	end
+
+Route5_PokemonDayCare_EventScript_CheckOnMon::
+	setvar KANTO_VAR_0x8004, 0
+	specialvar KANTO_VAR_RESULT, GetNumLevelsGainedForRoute5DaycareMon
+	call_if_ne KANTO_VAR_RESULT, 0, Route5_PokemonDayCare_EventScript_MonHasGrownByXLevels
+	call_if_eq KANTO_VAR_RESULT, 0, Route5_PokemonDayCare_EventScript_NotEnoughTime
+	special GetCostToWithdrawRoute5DaycareMon
+	msgbox Route5_PokemonDayCare_Text_OweMeXForMonsReturn, MSGBOX_YESNO
+	goto_if_eq KANTO_VAR_RESULT, YES, Route5_PokemonDayCare_EventScript_TryRetrieveMon
+	goto Route5_PokemonDayCare_EventScript_ComeAgain
+	end
+
+Route5_PokemonDayCare_EventScript_MonHasGrownByXLevels::
+	msgbox Route5_PokemonDayCare_Text_MonHasGrownByXLevels
+	return
+
+Route5_PokemonDayCare_EventScript_NotEnoughTime::
+	msgbox Route5_PokemonDayCare_Text_MonNeedsToSpendMoreTime
+	return
+
+Route5_PokemonDayCare_EventScript_TryRetrieveMon::
+	specialvar KANTO_VAR_RESULT, CalculatePlayerPartyCount
+	goto_if_eq KANTO_VAR_RESULT, PARTY_SIZE, Route5_PokemonDayCare_EventScript_NoRoomInParty
+	specialvar KANTO_VAR_RESULT, IsEnoughForCostInVar0x8005
+	goto_if_eq KANTO_VAR_RESULT, TRUE, Route5_PokemonDayCare_EventScript_RetrieveMon
+	msgbox Route5_PokemonDayCare_Text_DontHaveEnoughMoney
+	goto Route5_PokemonDayCare_EventScript_CloseMoneyBox
+	end
+
+Route5_PokemonDayCare_EventScript_RetrieveMon::
+	setvar KANTO_VAR_0x8004, 0
+	specialvar KANTO_VAR_RESULT, TakePokemonFromRoute5Daycare
+	special SubtractMoneyFromVar0x8005
+	updatemoneybox
+	copyvar KANTO_VAR_0x8008, KANTO_VAR_RESULT
+	getpartysize
+	subvar KANTO_VAR_RESULT, 1
+	bufferpartymonnick STR_VAR_1, KANTO_VAR_RESULT
+	copyvar KANTO_VAR_RESULT, KANTO_VAR_0x8008
+	msgbox Route5_PokemonDayCare_Text_ThankYouHeresMon
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	waitse
+	playmoncry KANTO_VAR_RESULT, CRY_MODE_NORMAL
+	msgbox Route5_PokemonDayCare_Text_PlayerGotMonBack
+	call EventScript_RestorePrevTextColor
+	waitmoncry
+	goto Route5_PokemonDayCare_EventScript_CloseMoneyBox
+	end
+
+Route5_PokemonDayCare_EventScript_NoRoomInParty::
+	msgbox Route5_PokemonDayCare_Text_YouveGotNoRoomForIt
+	goto Route5_PokemonDayCare_EventScript_CloseMoneyBox
+	end
+
+Route5_PokemonDayCare_EventScript_CloseMoneyBox::
+	hidemoneybox
+	release
+	call Pip_EventScript_NPCReaction
+	end

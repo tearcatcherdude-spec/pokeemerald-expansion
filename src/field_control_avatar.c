@@ -1,4 +1,7 @@
 #include "global.h"
+#include "pip.h"
+#include "kanto_progress.h"
+#include "parallel_watch.h"
 #include "battle_setup.h"
 #include "bike.h"
 #include "coord_event_weather.h"
@@ -414,6 +417,7 @@ static const u8 *GetInteractedObjectEventScript(struct MapPosition *position, u8
         script = GetObjectEventScriptPointerByObjectEventId(objectEventId);
 
     script = GetRamScript(gSpecialVar_LastTalked, script);
+    Pip_BeginKantoNPCInteraction();
     return script;
 }
 
@@ -455,7 +459,7 @@ static const u8 *GetInteractedBackgroundEventScript(struct MapPosition *position
     case BG_EVENT_HIDDEN_ITEM:
         if (bgEvent->bgUnion.hiddenItem.underfoot == TRUE)
             return NULL;
-        gSpecialVar_0x8004 = bgEvent->bgUnion.hiddenItem.hiddenItemId + FLAG_HIDDEN_ITEMS_START;
+        gSpecialVar_0x8004 = KantoProgress_HiddenItemFlag(bgEvent->bgUnion.hiddenItem.hiddenItemId);
         gSpecialVar_0x8005 = bgEvent->bgUnion.hiddenItem.item;
         gSpecialVar_0x8009 = bgEvent->bgUnion.hiddenItem.quantity;
         if (FlagGet(gSpecialVar_0x8004) == TRUE)

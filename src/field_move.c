@@ -1,4 +1,6 @@
 #include "global.h"
+#include "parallel_watch.h"
+#include "constants/kanto_symbols.h"
 #include "event_data.h"
 #include "field_move.h"
 #include "fldeff.h"
@@ -21,6 +23,22 @@ static bool32 IsAlwaysTrue(enum FieldMove fieldMove)
 
 static bool32 HasBadgeForFieldMove(enum FieldMove fieldMove)
 {
+#if !IS_FRLG
+    if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+        switch (fieldMove)
+        {
+        case FIELD_MOVE_CUT: return FlagGet(KANTO_FLAG_BADGE02_GET);
+        case FIELD_MOVE_FLASH: return FlagGet(KANTO_FLAG_BADGE01_GET);
+        case FIELD_MOVE_ROCK_SMASH: return FlagGet(KANTO_FLAG_BADGE06_GET);
+        case FIELD_MOVE_STRENGTH: return FlagGet(KANTO_FLAG_BADGE04_GET);
+        case FIELD_MOVE_SURF: return FlagGet(KANTO_FLAG_BADGE05_GET);
+        case FIELD_MOVE_FLY: return FlagGet(KANTO_FLAG_BADGE03_GET);
+        case FIELD_MOVE_WATERFALL: return FlagGet(KANTO_FLAG_BADGE07_GET);
+        default: return FALSE;
+        }
+    }
+#endif
     return FlagGet(gFieldMoveInfo[fieldMove].arg + FLAG_BADGE01_GET);
 }
 

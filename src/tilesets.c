@@ -7,3 +7,5 @@
 #include "data/tilesets/headers.h"
 
 #include "data/tilesets/watch.h"
+
+#include "data/tilesets/kanto.h"

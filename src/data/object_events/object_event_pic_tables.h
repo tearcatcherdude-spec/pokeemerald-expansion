@@ -1355,7 +1355,7 @@ static const struct SpriteFrameImage sPicTable_ApricornTree[] = {
     overworld_frame(gObjectEventPic_ApricornTree, 2, 2, 0),
 };
 
-#if IS_FRLG
+// Kanto NPC graphics and palettes are also used by the Emerald campaign.
 
 static const struct SpriteFrameImage sPicTable_RedNormal[] = {
     overworld_frame(gObjectEventPic_RedNormal, 2, 4, 0),
@@ -2493,7 +2493,6 @@ static const struct SpriteFrameImage sPicTable_MomFrlg[] = {
     overworld_frame(gObjectEventPic_MomFrlg, 2, 4, 2),
 };
 
-#endif // IS_FRLG
 
 static const struct SpriteFrameImage sPicTable_Pip[] = {
     overworld_ascending_frames(gObjectEventPic_Pip, 2, 4),

@@ -338,4 +338,6 @@
 #define TESTING_VAR_UNUSED_7                (TESTING_VARS_START + 0x7)
 #endif // TESTING
 
+#include "constants/kanto_vars_aliases.h"
+
 #endif // GUARD_CONSTANTS_VARS_H

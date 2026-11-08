@@ -1,5 +1,6 @@
 #include "global.h"
 #include "event_data.h"
+#include "kanto_progress.h"
 #include "pokedex.h"
 
 #define SPECIAL_FLAGS_SIZE  (NUM_SPECIAL_FLAGS / 8)  // 8 flags per byte
@@ -162,6 +163,9 @@ bool32 CanResetRTC(void)
 
 u16 *GetVarPointer(u16 id)
 {
+    // Reject reserved out-of-bank IDs before the legacy special/test var paths.
+    if (id >= KANTO_VAR_BASE && id < KANTO_VAR_BASE + 0x1000)
+        return KantoProgress_GetVarPointer(id);
     if (id < VARS_START)
         return NULL;
     else if (id < SPECIAL_VARS_START)
@@ -206,6 +210,14 @@ u16 VarGetObjectEventGraphicsId(u8 id)
 
 u8 *GetFlagPointer(u16 id)
 {
+    // Existing trainer helpers add TRAINER_FLAGS_START to an opponent ID.
+    // Keep their code and Hoenn IDs intact while routing imported trainer IDs.
+    if (id >= TRAINER_FLAGS_START + KANTO_TRAINER_BASE
+     && id < TRAINER_FLAGS_START + KANTO_TRAINER_BASE + KANTO_TRAINER_COUNT)
+        return KantoProgress_GetFlagPointer(KANTO_FLAG_BASE + KANTO_NATIVE_TRAINER_FLAG_BASE
+            + id - TRAINER_FLAGS_START - KANTO_TRAINER_BASE);
+    if (id >= KANTO_FLAG_BASE && id < KANTO_FLAG_BASE + 0x1000)
+        return KantoProgress_GetFlagPointer(id);
     if (id == 0)
         return NULL;
     else if (id < SPECIAL_FLAGS_START)
@@ -220,6 +232,7 @@ u8 *GetFlagPointer(u16 id)
 
 u8 FlagSet(u16 id)
 {
+    id = KantoProgress_RegionalFlagId(id);
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
         *ptr |= 1 << (id & 7);
@@ -228,6 +241,7 @@ u8 FlagSet(u16 id)
 
 u8 FlagToggle(u16 id)
 {
+    id = KantoProgress_RegionalFlagId(id);
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
         *ptr ^= 1 << (id & 7);
@@ -236,6 +250,7 @@ u8 FlagToggle(u16 id)
 
 u8 FlagClear(u16 id)
 {
+    id = KantoProgress_RegionalFlagId(id);
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
         *ptr &= ~(1 << (id & 7));
@@ -244,6 +259,7 @@ u8 FlagClear(u16 id)
 
 bool8 FlagGet(u16 id)
 {
+    id = KantoProgress_RegionalFlagId(id);
     u8 *ptr = GetFlagPointer(id);
 
     if (!ptr)

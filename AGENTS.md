@@ -18,3 +18,19 @@ IDs with NULL tombstones; append new IDs instead of reusing or reordering them.
 
 Before delivery run `python dev_scripts/validate_project_baseline.py`, relevant
 build/tests, and verify Pip's actual compiled sprite and palette in the ROM.
+
+# Full Kanto continuity
+
+The current integrated work is PR #8, branch `feature/full-kanto-adventure`,
+built on the accepted starter/Living Hoenn work and the PR #6 artwork via PR #7.
+Continue from that integrated branch when extending this game, not the earlier
+11-map watch trial. All 408 existing Pip memory slots and 116 map-group prefixes
+are now guarded in `data/project_baseline.json`; append, never reorder or reuse.
+
+SaveBlock3 keeps the released 180-byte Pip/watch prefix. Kanto version 1 occupies
+an additional 824 bytes (total 1004, including ARM struct padding). Its flags, variables and per-world healing
+locations have fixed offsets tested in `test/save.c`. Extend saves by appending
+and migrating new fields. Do not increment the Kanto version and clear the whole
+bank: that would erase the user's regional story, trainer and scene progress.
+Keep badges/HM gates regional while preserving earned obedience and shared Hall
+of Fame history/access. Keep watch item ID 874 and the eleven group-75 map IDs.

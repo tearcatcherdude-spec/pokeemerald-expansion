@@ -122,6 +122,9 @@ static u32 GetPartyMonCount(u32 lastId, struct Pokemon *party, bool32 onlyAlive)
 
 static const u8* const *GetTrainerSlideArray(enum DifficultyLevel difficulty, u32 trainerId, u32 slideId)
 {
+    static const u8 *const sNoImportedSlides[TRAINER_SLIDE_COUNT] = {NULL};
+    if (IsKantoTrainerId(trainerId))
+        return sNoImportedSlides;
 #if TESTING
     return (FlagGet(TESTING_FLAG_TRAINER_SLIDES) ? sTestTrainerSlides[difficulty][trainerId] : NULL);
 #else

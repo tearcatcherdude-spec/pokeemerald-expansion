@@ -1,4 +1,5 @@
 #include "global.h"
+#include "kanto_progress.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_anim_scripts.h"
@@ -5637,24 +5638,24 @@ enum Obedience GetAttackerObedienceForAction(void)
         return OBEYS;
     if (B_OBEDIENCE_MECHANICS < GEN_8 && !IsOtherTrainer(gBattleMons[gBattlerAttacker].otId, gBattleMons[gBattlerAttacker].otName))
         return OBEYS;
-    if (FlagGet(FLAG_BADGE08_GET)) // Rain Badge, ignore obedience altogether
+    if (KantoProgress_HasBadgeForObedience(7)) // Rain Badge, ignore obedience altogether
         return OBEYS;
 
     obedienceLevel = 10;
 
-    if (FlagGet(FLAG_BADGE01_GET)) // Stone Badge
+    if (KantoProgress_HasBadgeForObedience(0)) // Stone Badge
         obedienceLevel = 20;
-    if (FlagGet(FLAG_BADGE02_GET)) // Knuckle Badge
+    if (KantoProgress_HasBadgeForObedience(1)) // Knuckle Badge
         obedienceLevel = 30;
-    if (FlagGet(FLAG_BADGE03_GET)) // Dynamo Badge
+    if (KantoProgress_HasBadgeForObedience(2)) // Dynamo Badge
         obedienceLevel = 40;
-    if (FlagGet(FLAG_BADGE04_GET)) // Heat Badge
+    if (KantoProgress_HasBadgeForObedience(3)) // Heat Badge
         obedienceLevel = 50;
-    if (FlagGet(FLAG_BADGE05_GET)) // Balance Badge
+    if (KantoProgress_HasBadgeForObedience(4)) // Balance Badge
         obedienceLevel = 60;
-    if (FlagGet(FLAG_BADGE06_GET)) // Feather Badge
+    if (KantoProgress_HasBadgeForObedience(5)) // Feather Badge
         obedienceLevel = 70;
-    if (FlagGet(FLAG_BADGE07_GET)) // Mind Badge
+    if (KantoProgress_HasBadgeForObedience(6)) // Mind Badge
         obedienceLevel = 80;
 
     if (B_OBEDIENCE_MECHANICS >= GEN_8
@@ -9979,8 +9980,6 @@ bool32 AreMultiPartiesFullTeams(void)
         return FALSE;
     }
 #else
-    enum DifficultyLevel difficulty = GetCurrentDifficultyLevel();
-
     if (B_MULTI_HALF_TEAMS)
     {
         gSpecialVar_Result = FALSE;
@@ -9995,8 +9994,8 @@ bool32 AreMultiPartiesFullTeams(void)
 
     if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_LINK_OPPONENT
      || gBattleTypeFlags & BATTLE_TYPE_TOWER_LINK_MULTI
-     || (gTrainers[difficulty][TRAINER_BATTLE_PARAM.opponentA].multiTeamSize == MULTI_TEAM_SIZE_HALF)
-     || (gTrainers[difficulty][TRAINER_BATTLE_PARAM.opponentB].multiTeamSize == MULTI_TEAM_SIZE_HALF))
+     || (GetTrainerStructFromId(TRAINER_BATTLE_PARAM.opponentA)->multiTeamSize == MULTI_TEAM_SIZE_HALF)
+     || (GetTrainerStructFromId(TRAINER_BATTLE_PARAM.opponentB)->multiTeamSize == MULTI_TEAM_SIZE_HALF))
     {
         gSpecialVar_Result = FALSE;
         return FALSE;

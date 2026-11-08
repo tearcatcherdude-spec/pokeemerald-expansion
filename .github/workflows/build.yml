@@ -26,6 +26,9 @@ jobs:
       - name: Validate accepted project baseline
         run: python3 dev_scripts/validate_project_baseline.py
 
+      - name: Validate Kanto campaign topology
+        run: python3 dev_scripts/validate_kanto_campaign.py
+
       - name: Install binutils
         run: |
           sudo apt-get update
@@ -56,8 +59,18 @@ jobs:
           GAME_VERSION: EMERALD
         run: make -j$(nproc) -O all
 
+      - name: Preserve failed script preprocessing
+        if: failure()
+        run: |
+          tools/preproc/preproc -s data/event_scripts.s charmap.txt > /tmp/kanto-scripts-first-pass.s
+          wc -l /tmp/kanto-scripts-first-pass.s
+          tail -n 30 /tmp/kanto-scripts-first-pass.s
+
       - name: Verify compiled Pip artwork
         run: python3 dev_scripts/verify_pip_rom.py pokeemerald.gba pokeemerald.map
+
+      - name: Verify compiled Kanto NPC registrations
+        run: python3 dev_scripts/verify_kanto_rom.py pokeemerald.gba pokeemerald.map
 
       - name: Upload Emerald ROM
         uses: actions/upload-artifact@v4

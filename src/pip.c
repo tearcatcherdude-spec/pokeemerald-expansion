@@ -1,5 +1,6 @@
 #include "global.h"
 #include "pip.h"
+#include "parallel_watch.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "field_player_avatar.h"
@@ -19,6 +20,11 @@ extern const u8 Cozy_Text_PictureBookShelf[], Cozy_Text_BookShelf[], Cozy_Text_V
 extern const u8 Cozy_Text_EmptyTrashCan[], Cozy_Text_ShopShelf[], Cozy_Text_Blueprint[];
 
 static EWRAM_DATA bool8 sSceneSuspended = FALSE;
+static EWRAM_DATA bool8 sKantoReactionHandled = FALSE;
+static EWRAM_DATA bool8 sKantoInteractionActive = FALSE;
+static EWRAM_DATA u8 sKantoTalkGroup = 0;
+static EWRAM_DATA u8 sKantoTalkMap = 0;
+static EWRAM_DATA u8 sKantoTalkLocalId = 0;
 static EWRAM_DATA u16 sSavedResult = 0;
 static EWRAM_DATA u16 sSavedLastTalked = 0;
 static EWRAM_DATA u16 sReactionGraphics = 0;
@@ -35,6 +41,10 @@ struct PipLocationDialogue
 
 #include "data/pip_dialogue.h"
 #include "data/pip_living_dialogue.h"
+#include "data/pip_kanto_dialogue.h"
+#include "data/pip_kanto_scenes.h"
+#include "data/pip_kanto_objects.h"
+#include "data/pip_kanto_routes.h"
 #include "data/pip_memory_catalogue.h"
 
 static struct ObjectEvent *GetPipObject(void)
@@ -83,8 +93,54 @@ static const u8 *Fresh(const u8 *text)
 {
     return text != NULL && !Pip_HasHeard(text) ? text : NULL;
 }
+static const u8 *FreshNPCOffer(const u8 *text)
+{
+    u32 id = MemoryIndex(text);
+    EnsureMemory();
+    if (id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text)
+     || (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8))))
+        return NULL;
+    return text;
+}
+static const u8 *FreshKantoLocationFor(bool32 npcOffer)
+{
+    if (!ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+        return NULL;
+    for (u32 i = 0; i < ARRAY_COUNT(sPipAdventureLocations); i++)
+        if (sPipAdventureLocations[i].section == gMapHeader.regionMapSectionId)
+            for (u32 j = 0; j < 2; j++)
+            {
+                const u8 *text = sPipAdventureLocations[i].lines[j];
+                if ((npcOffer ? FreshNPCOffer(text) : Fresh(text)) != NULL)
+                    return text;
+            }
+    for (u32 i = 0; i < ARRAY_COUNT(sPipKantoRoutes); i++)
+        if (sPipKantoRoutes[i].section == gMapHeader.regionMapSectionId)
+            for (u32 j = 0; j < 2; j++)
+            {
+                const u8 *text = sPipKantoRoutes[i].lines[j];
+                if ((npcOffer ? FreshNPCOffer(text) : Fresh(text)) != NULL)
+                    return text;
+            }
+    for (u32 i = 0; i < ARRAY_COUNT(sPipLivingLocations); i++)
+        if (sPipLivingLocations[i].section == gMapHeader.regionMapSectionId)
+            for (u32 j = 0; j < 2; j++)
+            {
+                const u8 *text = sPipLivingLocations[i].lines[j];
+                if ((npcOffer ? FreshNPCOffer(text) : Fresh(text)) != NULL)
+                    return text;
+            }
+    return NULL;
+}
+static const u8 *FreshKantoLocation(void)
+{
+    return FreshKantoLocationFor(FALSE);
+}
 static const u8 *FreshLocation(void)
 {
+    const u8 *kanto = FreshKantoLocation();
+    if (kanto != NULL)
+        return kanto;
     for (u32 i = 0; i < ARRAY_COUNT(sPipLocations); i++)
         if (sPipLocations[i].section == gMapHeader.regionMapSectionId)
             for (u32 j = 0; j < 2; j++)
@@ -266,6 +322,29 @@ void Script_PipChooseDialogue(struct ScriptContext *ctx)
     gSpecialVar_Result = Pip_TrySay(text);
 #endif
 }
+void Pip_BeginKantoNPCInteraction(void)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    sKantoInteractionActive = ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
+    sKantoReactionHandled = FALSE;
+    sKantoTalkGroup = gSaveBlock1Ptr->location.mapGroup;
+    sKantoTalkMap = gSaveBlock1Ptr->location.mapNum;
+    sKantoTalkLocalId = gSpecialVar_LastTalked;
+#endif
+}
+void Script_PipBeginKantoNPCReaction(struct ScriptContext *ctx)
+{
+    if (!ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+#if FNPC_ENABLE_NPC_FOLLOWERS
+        BeginReaction(ctx);
+#else
+        gSpecialVar_Result = FALSE;
+#endif
+        return;
+    }
+    Script_PipBeginNPCReaction(ctx);
+}
 void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
@@ -276,18 +355,60 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
     if (!sSavedTextValid || gSpecialVar_LastTalked == OBJ_EVENT_ID_NPC_FOLLOWER
      || id >= OBJECT_EVENTS_COUNT || !gObjectEvents[id].active)
         return;
+    if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+        if (!sKantoInteractionActive || sKantoReactionHandled
+         || sKantoTalkGroup != gSaveBlock1Ptr->location.mapGroup
+         || sKantoTalkMap != gSaveBlock1Ptr->location.mapNum
+         || sKantoTalkLocalId != gSpecialVar_LastTalked)
+            return;
+        sKantoReactionHandled = TRUE;
+    }
     sReactionGraphics = gObjectEvents[id].graphicsId;
     // Generic strangers do not need the same six jokes. Only specific subjects
     // with something new to add offer a reaction.
     switch (sReactionGraphics)
     {
+    case OBJ_EVENT_GFX_HIKER_FRLG:
     case OBJ_EVENT_GFX_HIKER: text = sPipHiker; break;
     case OBJ_EVENT_GFX_FISHERMAN: text = sPipFisherman; break;
+    case OBJ_EVENT_GFX_SAILOR_FRLG:
     case OBJ_EVENT_GFX_SAILOR: text = sPipSailor; break;
     case OBJ_EVENT_GFX_SCIENTIST_1:
     case OBJ_EVENT_GFX_SCIENTIST_2: text = sPipScientist; break;
+    case OBJ_EVENT_GFX_NURSE_FRLG:
     case OBJ_EVENT_GFX_NURSE: text = sPipNurse; break;
     }
+    if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+        switch (sReactionGraphics)
+        {
+        case OBJ_EVENT_GFX_BROCK: text = sPipAdventure_BROCK; break;
+        case OBJ_EVENT_GFX_MISTY: text = sPipAdventure_MISTY; break;
+        case OBJ_EVENT_GFX_LT_SURGE: text = sPipAdventure_LT_SURGE; break;
+        case OBJ_EVENT_GFX_ERIKA: text = sPipAdventure_ERIKA; break;
+        case OBJ_EVENT_GFX_KOGA: text = sPipAdventure_KOGA; break;
+        case OBJ_EVENT_GFX_SABRINA: text = sPipAdventure_SABRINA; break;
+        case OBJ_EVENT_GFX_BLAINE: text = sPipAdventure_BLAINE; break;
+        case OBJ_EVENT_GFX_GIOVANNI: text = sPipAdventure_GIOVANNI; break;
+        case OBJ_EVENT_GFX_PROF_OAK: text = sPipAdventure_PROF_OAK; break;
+        case OBJ_EVENT_GFX_LORELEI: text = sPipAdventure_LORELEI; break;
+        case OBJ_EVENT_GFX_BRUNO: text = sPipAdventure_BRUNO; break;
+        case OBJ_EVENT_GFX_AGATHA: text = sPipAdventure_AGATHA; break;
+        case OBJ_EVENT_GFX_LANCE: text = sPipAdventure_LANCE; break;
+        case OBJ_EVENT_GFX_BLUE: text = sPipAdventure_BLUE; break;
+        default:
+            if (FreshNPCOffer(text) == NULL) text = FreshKantoLocationFor(TRUE);
+            break;
+        }
+    }
+    const u8 *personScript = GetObjectEventScriptPointerByObjectEventId(id);
+    for (u32 i = 0; i < ARRAY_COUNT(sPipKantoScenes); i++)
+        if (sPipKantoScenes[i].script == personScript)
+        {
+            text = FlagGet(sPipKantoScenes[i].resolvedFlag) ? sPipKantoScenes[i].text : NULL;
+            break;
+        }
     OfferReaction(text);
 #else
     gSpecialVar_Result = FALSE;
@@ -309,6 +430,12 @@ void Script_PipBeginObjectReaction(struct ScriptContext *ctx)
     else if (original == Text_ShopShelf) text = Cozy_Text_ShopShelf;
     else if (original == Text_Blueprint) text = Cozy_Text_Blueprint;
     else text = FreshLocation();
+    for (u32 i = 0; i < ARRAY_COUNT(sPipKantoObjects); i++)
+        if (original == sPipKantoObjects[i].original)
+        {
+            text = sPipKantoObjects[i].comment;
+            break;
+        }
     OfferReaction(text);
 #else
     gSpecialVar_Result = FALSE;

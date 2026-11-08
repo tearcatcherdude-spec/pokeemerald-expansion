@@ -266,6 +266,7 @@ Cozy_Text_Blueprint::
 Pip_EventScript_NPCReaction::
 	callnative Script_PipBeginNPCReaction
 	goto_if_eq VAR_RESULT, FALSE, Pip_EventScript_EndNPCReaction
+Pip_EventScript_OfferNPCReaction:
 	lockall
 	msgbox Pip_Text_AskAboutThem, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Pip_EventScript_FinishNPCReaction
@@ -297,3 +298,10 @@ Pip_EventScript_FinishObjectReaction:
 Pip_EventScript_EndObjectReaction:
 	callnative Script_PipEndNPCReaction
 	return
+
+@ Only scripted Kanto NPC endings use this wrapper. Default NPC message boxes
+@ retain their existing hook; one interaction may offer at most one reaction.
+Pip_EventScript_KantoNPCReaction::
+    callnative Script_PipBeginKantoNPCReaction
+    goto_if_eq VAR_RESULT, FALSE, Pip_EventScript_EndNPCReaction
+    goto Pip_EventScript_OfferNPCReaction

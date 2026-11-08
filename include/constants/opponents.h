@@ -876,4 +876,6 @@
 #endif
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 
+#include "constants/kanto_opponents_aliases.h"
+
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

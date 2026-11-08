@@ -261,6 +261,16 @@ struct ParallelWatchAnchor
     u8 facing, valid;
 };
 
+// Appended after the complete, already released 180-byte watch save prefix.
+struct KantoProgress
+{
+    u16 version;
+    u8 flags[0x900 / 8]; // Original regional flags, including trainer defeats.
+    u16 vars[0x100];
+    struct { s8 mapGroup, mapNum, warpId; s16 x, y; } healLocations[2];
+    u8 healValid[2];
+};
+
 struct SaveBlock3
 {
 #if OW_USE_FAKE_RTC
@@ -287,6 +297,7 @@ struct SaveBlock3
     u8 watchLegacyPadding[2];
     u16 watchMemoryVersion;
     struct ParallelWatchAnchor watchAnchors[2];
+    struct KantoProgress kanto;
 #endif
 }; /* max size 1624 bytes */
 

@@ -42,6 +42,9 @@ EventScript_NotEnoughMonsForDoubleBattle::
 	waitmessage
 	waitbuttonpress
 	release
+.if !IS_FRLG
+	call Pip_EventScript_KantoNPCReaction
+.endif
 	end
 
 EventScript_NoDoubleTrainerBattle::
@@ -67,6 +70,9 @@ EventScript_TryDoRematchBattle::
 	waitbuttonpress
 	special BattleSetup_StartRematchBattle
 	releaseall
+.if !IS_FRLG
+	call Pip_EventScript_KantoNPCReaction
+.endif
 	end
 
 EventScript_NoRematchTrainerBattle::
@@ -84,6 +90,9 @@ EventScript_TryDoDoubleRematchBattle::
 	waitbuttonpress
 	special BattleSetup_StartRematchBattle
 	releaseall
+.if !IS_FRLG
+	call Pip_EventScript_KantoNPCReaction
+.endif
 	end
 
 EventScript_NoDoubleRematchTrainerBattle::
@@ -94,6 +103,9 @@ EventScript_NotEnoughMonsForDoubleRematchBattle::
 	waitmessage
 	waitbuttonpress
 	release
+.if !IS_FRLG
+	call Pip_EventScript_KantoNPCReaction
+.endif
 	end
 
 EventScript_RevealTrainer::
@@ -127,6 +139,9 @@ EventScript_DoTrainerBattle::
 EventScript_EndTrainerBattle::
 	gotobeatenscript
 	releaseall
+.if !IS_FRLG
+	call Pip_EventScript_KantoNPCReaction
+.endif
 	end
 
 @ Event Snippets for dynamic trainer battle scripting
@@ -187,6 +202,9 @@ EventSnippet_DoRematchTrainerBattle::
 EventSnippet_EndTrainerBattle::
 	gotobeatenscript
 	releaseall
+.if !IS_FRLG
+	call Pip_EventScript_KantoNPCReaction
+.endif
 	end
 
 EventSnippet_NotEnoughMonsForDoubleBattle::
@@ -194,4 +212,7 @@ EventSnippet_NotEnoughMonsForDoubleBattle::
 	waitmessage
 	waitbuttonpress
 	release
+.if !IS_FRLG
+	call Pip_EventScript_KantoNPCReaction
+.endif
 	end

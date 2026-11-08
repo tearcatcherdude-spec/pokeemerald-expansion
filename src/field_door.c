@@ -365,6 +365,80 @@ static const u8 sWatchDoorAnimTiles_SlidingSingle[] = INCGFX_U8("graphics/door_a
 static const u8 sWatchDoorAnimTiles_Viridian[] = INCGFX_U8("graphics/door_anims/viridian.png", ".4bpp");
 #endif
 
+
+#if !IS_FRLG
+
+static const u8 sKantoDoorAnimTiles_GeneralFrlg[] = INCGFX_U8("graphics/door_anims/general_frlg.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_SlidingSingle[] = INCGFX_U8("graphics/door_anims/sliding_single.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_SlidingDouble[] = INCGFX_U8("graphics/door_anims/sliding_double.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Pallet[] = INCGFX_U8("graphics/door_anims/pallet.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_OaksLab[] = INCGFX_U8("graphics/door_anims/oaks_lab.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Viridian[] = INCGFX_U8("graphics/door_anims/viridian.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Pewter[] = INCGFX_U8("graphics/door_anims/pewter.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Saffron[] = INCGFX_U8("graphics/door_anims/saffron.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_SilphCo[] = INCGFX_U8("graphics/door_anims/silph_co.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Cerulean[] = INCGFX_U8("graphics/door_anims/cerulean.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Lavender[] = INCGFX_U8("graphics/door_anims/lavender.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Vermilion[] = INCGFX_U8("graphics/door_anims/vermilion.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_PokemonFanClub[] = INCGFX_U8("graphics/door_anims/pokemon_fan_club.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_DeptStore[] = INCGFX_U8("graphics/door_anims/dept_store.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Fuchsia[] = INCGFX_U8("graphics/door_anims/fuchsia.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_SafariZoneFrlg[] = INCGFX_U8("graphics/door_anims/safari_zone_frlg.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_CinnabarLab[] = INCGFX_U8("graphics/door_anims/cinnabar_lab.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_DeptStoreElevator[] = INCGFX_U8("graphics/door_anims/dept_store_elevator.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_CableClubFrlg[] = INCGFX_U8("graphics/door_anims/cable_club_frlg.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_HideoutElevator[] = INCGFX_U8("graphics/door_anims/hideout_elevator.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_SSAnne[] = INCGFX_U8("graphics/door_anims/ss_anne.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_SilphCoElevator[] = INCGFX_U8("graphics/door_anims/silph_co_elevator.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Sevii123[] = INCGFX_U8("graphics/door_anims/sevii_123.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_JoyfulGameCorner[] = INCGFX_U8("graphics/door_anims/joyful_game_corner.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_OneIslandPokeCenter[] = INCGFX_U8("graphics/door_anims/one_island_poke_center.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Sevii45[] = INCGFX_U8("graphics/door_anims/sevii_45.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_FourIslandDayCare[] = INCGFX_U8("graphics/door_anims/four_island_day_care.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_RocketWarehouse[] = INCGFX_U8("graphics/door_anims/rocket_warehouse.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Sevii67[] = INCGFX_U8("graphics/door_anims/sevii_67.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_Teleporter[] = INCGFX_U8("graphics/door_anims/teleporter.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_TrainerTowerLobbyElevator[] = INCGFX_U8("graphics/door_anims/trainer_tower_lobby_elevator.png", ".4bpp");
+static const u8 sKantoDoorAnimTiles_TrainerTowerRoofElevator[] = INCGFX_U8("graphics/door_anims/trainer_tower_roof_elevator.png", ".4bpp");
+
+
+
+static const u8 sKantoDoorAnimPalettes_GeneralFrlg[] = {2, 2, 2, 2, 2, 2, 2, 2};
+static const u8 sKantoDoorAnimPalettes_SlidingSingle[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sKantoDoorAnimPalettes_SlidingDouble[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sKantoDoorAnimPalettes_Pallet[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sKantoDoorAnimPalettes_OaksLab[] = {10, 10, 10, 10, 10, 10, 10, 10};
+static const u8 sKantoDoorAnimPalettes_Viridian[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sKantoDoorAnimPalettes_Pewter[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sKantoDoorAnimPalettes_Saffron[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sKantoDoorAnimPalettes_SilphCo[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sKantoDoorAnimPalettes_Cerulean[] = {12, 12, 12, 12, 12, 12, 12, 12};
+static const u8 sKantoDoorAnimPalettes_Lavender[] = {9, 9, 9, 9, 9, 9, 9, 9};
+static const u8 sKantoDoorAnimPalettes_Vermilion[] = {9, 9, 9, 9, 9, 9, 9, 9};
+static const u8 sKantoDoorAnimPalettes_PokemonFanClub[] = {9, 9, 9, 9, 9, 9, 9, 9};
+static const u8 sKantoDoorAnimPalettes_DeptStore[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sKantoDoorAnimPalettes_Fuchsia[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sKantoDoorAnimPalettes_SafariZoneFrlg[] = {9, 9, 9, 9, 9, 9, 9, 9};
+static const u8 sKantoDoorAnimPalettes_CinnabarLab[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sKantoDoorAnimPalettes_DeptStoreElevator[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sKantoDoorAnimPalettes_CableClubFrlg[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sKantoDoorAnimPalettes_HideoutElevator[] = {12, 12, 2, 2, 2, 2, 2, 2};
+static const u8 sKantoDoorAnimPalettes_SSAnne[] = {7, 7, 7, 7, 7, 7, 7, 7};
+static const u8 sKantoDoorAnimPalettes_SilphCoElevator[] = {8, 8, 2, 2, 2, 2, 2, 2};
+static const u8 sKantoDoorAnimPalettes_Sevii123[] = {5, 5, 5, 5, 5, 5, 5, 5};
+static const u8 sKantoDoorAnimPalettes_JoyfulGameCorner[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sKantoDoorAnimPalettes_OneIslandPokeCenter[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sKantoDoorAnimPalettes_Sevii45[] = {5, 5, 5, 5, 5, 5, 5, 5};
+static const u8 sKantoDoorAnimPalettes_FourIslandDayCare[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sKantoDoorAnimPalettes_RocketWarehouse[] = {10, 10, 10, 10, 10, 10, 10, 10};
+static const u8 sKantoDoorAnimPalettes_Sevii67[] = {5, 5, 5, 5, 5, 5, 5, 5};
+static const u8 sKantoDoorAnimPalettes_Teleporter[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sKantoDoorAnimPalettes_TrainerTowerLobbyElevator[] = {8, 8, 2, 2, 2, 2, 2, 2};
+static const u8 sKantoDoorAnimPalettes_TrainerTowerRoofElevator[] = {11, 11, 2, 2, 2, 2, 2, 2};
+
+
+#endif
+
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
 #if !IS_FRLG
@@ -855,6 +929,256 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
         .tiles = sWatchDoorAnimTiles_Viridian,
         .palettes = sWatchDoorAnimPalettes_Viridian
     },
+
+    {
+        .metatileNum = METATILE_GeneralFrlg_Door,
+        .tileset = &gTileset_Kanto_General_Frlg,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_GeneralFrlg,
+        .palettes = sKantoDoorAnimPalettes_GeneralFrlg
+    },
+    {
+        .metatileNum = METATILE_GeneralFrlg_SlidingSingleDoor,
+        .tileset = &gTileset_Kanto_General_Frlg,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_SlidingSingle,
+        .palettes = sKantoDoorAnimPalettes_SlidingSingle
+    },
+    {
+        .metatileNum = METATILE_GeneralFrlg_SlidingDoubleDoor,
+        .tileset = &gTileset_Kanto_General_Frlg,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_SlidingDouble,
+        .palettes = sKantoDoorAnimPalettes_SlidingDouble
+    },
+    {
+        .metatileNum = METATILE_PalletTown_Door,
+        .tileset = &gTileset_Kanto_PalletTown,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Pallet,
+        .palettes = sKantoDoorAnimPalettes_Pallet
+    },
+    {
+        .metatileNum = METATILE_PalletTown_OaksLabDoor,
+        .tileset = &gTileset_Kanto_PalletTown,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_OaksLab,
+        .palettes = sKantoDoorAnimPalettes_OaksLab
+    },
+    {
+        .metatileNum = METATILE_ViridianCity_Door,
+        .tileset = &gTileset_Kanto_ViridianCity,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Viridian,
+        .palettes = sKantoDoorAnimPalettes_Viridian
+    },
+    {
+        .metatileNum = METATILE_PewterCity_Door,
+        .tileset = &gTileset_Kanto_PewterCity,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Pewter,
+        .palettes = sKantoDoorAnimPalettes_Pewter
+    },
+    {
+        .metatileNum = METATILE_SaffronCity_Door,
+        .tileset = &gTileset_Kanto_SaffronCity,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Saffron,
+        .palettes = sKantoDoorAnimPalettes_Saffron
+    },
+    {
+        .metatileNum = METATILE_SaffronCity_SilphCoDoor,
+        .tileset = &gTileset_Kanto_SaffronCity,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_SilphCo,
+        .palettes = sKantoDoorAnimPalettes_SilphCo
+    },
+    {
+        .metatileNum = METATILE_CeruleanCity_Door,
+        .tileset = &gTileset_Kanto_CeruleanCity,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Cerulean,
+        .palettes = sKantoDoorAnimPalettes_Cerulean
+    },
+    {
+        .metatileNum = METATILE_LavenderTown_Door,
+        .tileset = &gTileset_Kanto_LavenderTown,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Lavender,
+        .palettes = sKantoDoorAnimPalettes_Lavender
+    },
+    {
+        .metatileNum = METATILE_VermilionCity_Door,
+        .tileset = &gTileset_Kanto_VermilionCity,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Vermilion,
+        .palettes = sKantoDoorAnimPalettes_Vermilion
+    },
+    {
+        .metatileNum = METATILE_CeladonCity_DeptStoreDoor,
+        .tileset = &gTileset_Kanto_CeladonCity,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_DeptStore,
+        .palettes = sKantoDoorAnimPalettes_DeptStore
+    },
+    {
+        .metatileNum = METATILE_FuchsiaCity_Door,
+        .tileset = &gTileset_Kanto_FuchsiaCity,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Fuchsia,
+        .palettes = sKantoDoorAnimPalettes_Fuchsia
+    },
+    {
+        .metatileNum = METATILE_FuchsiaCity_SafariZoneDoor,
+        .tileset = &gTileset_Kanto_FuchsiaCity,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_SafariZoneFrlg,
+        .palettes = sKantoDoorAnimPalettes_SafariZoneFrlg
+    },
+    {
+        .metatileNum = METATILE_CinnabarIsland_LabDoor,
+        .tileset = &gTileset_Kanto_CinnabarIsland,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_CinnabarLab,
+        .palettes = sKantoDoorAnimPalettes_CinnabarLab
+    },
+    {
+        .metatileNum = METATILE_SeviiIslands123_Door,
+        .tileset = &gTileset_Kanto_SeviiIslands123,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Sevii123,
+        .palettes = sKantoDoorAnimPalettes_Sevii123
+    },
+    {
+        .metatileNum = METATILE_SeviiIslands123_GameCornerDoor,
+        .tileset = &gTileset_Kanto_SeviiIslands123,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_JoyfulGameCorner,
+        .palettes = sKantoDoorAnimPalettes_JoyfulGameCorner
+    },
+    {
+        .metatileNum = METATILE_SeviiIslands123_PokeCenterDoor,
+        .tileset = &gTileset_Kanto_SeviiIslands123,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_OneIslandPokeCenter,
+        .palettes = sKantoDoorAnimPalettes_OneIslandPokeCenter
+    },
+    {
+        .metatileNum = METATILE_SeviiIslands45_Door,
+        .tileset = &gTileset_Kanto_SeviiIslands45,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Sevii45,
+        .palettes = sKantoDoorAnimPalettes_Sevii45
+    },
+    {
+        .metatileNum = METATILE_SeviiIslands45_DayCareDoor,
+        .tileset = &gTileset_Kanto_SeviiIslands45,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_FourIslandDayCare,
+        .palettes = sKantoDoorAnimPalettes_FourIslandDayCare
+    },
+    {
+        .metatileNum = METATILE_SeviiIslands45_RocketWarehouseDoor_Unlocked,
+        .tileset = &gTileset_Kanto_SeviiIslands45,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_RocketWarehouse,
+        .palettes = sKantoDoorAnimPalettes_RocketWarehouse
+    },
+    {
+        .metatileNum = METATILE_SeviiIslands67_Door,
+        .tileset = &gTileset_Kanto_SeviiIslands67,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sKantoDoorAnimTiles_Sevii67,
+        .palettes = sKantoDoorAnimPalettes_Sevii67
+    },
+    {
+        .metatileNum = METATILE_DepartmentStore_ElevatorDoor,
+        .tileset = &gTileset_Kanto_DepartmentStore,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sKantoDoorAnimTiles_DeptStoreElevator,
+        .palettes = sKantoDoorAnimPalettes_DeptStoreElevator
+    },
+    {
+        .metatileNum = METATILE_PokemonCenterFrlg_CableClubDoor,
+        .tileset = &gTileset_Kanto_PokemonCenterFrlg,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sKantoDoorAnimTiles_CableClubFrlg,
+        .palettes = sKantoDoorAnimPalettes_CableClubFrlg
+    },
+    {
+        .metatileNum = METATILE_SilphCo_HideoutElevatorDoor,
+        .tileset = &gTileset_Kanto_SilphCo,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sKantoDoorAnimTiles_HideoutElevator,
+        .palettes = sKantoDoorAnimPalettes_HideoutElevator
+    },
+    {
+        .metatileNum = METATILE_SSAnne_Door,
+        .tileset = &gTileset_Kanto_SSAnne,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sKantoDoorAnimTiles_SSAnne,
+        .palettes = sKantoDoorAnimPalettes_SSAnne
+    },
+    {
+        .metatileNum = METATILE_SilphCo_ElevatorDoor,
+        .tileset = &gTileset_Kanto_SilphCo,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sKantoDoorAnimTiles_SilphCoElevator,
+        .palettes = sKantoDoorAnimPalettes_SilphCoElevator
+    },
+    {
+        .metatileNum = METATILE_SeaCottage_Teleporter_Door,
+        .tileset = &gTileset_Kanto_SeaCottage,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sKantoDoorAnimTiles_Teleporter,
+        .palettes = sKantoDoorAnimPalettes_Teleporter
+    },
+    {
+        .metatileNum = METATILE_TrainerTower_LobbyElevatorDoor,
+        .tileset = &gTileset_Kanto_TrainerTower,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sKantoDoorAnimTiles_TrainerTowerLobbyElevator,
+        .palettes = sKantoDoorAnimPalettes_TrainerTowerLobbyElevator
+    },
+    {
+        .metatileNum = METATILE_TrainerTower_RoofElevatorDoor,
+        .tileset = &gTileset_Kanto_TrainerTower,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x2,
+        .tiles = sKantoDoorAnimTiles_TrainerTowerRoofElevator,
+        .palettes = sKantoDoorAnimPalettes_TrainerTowerRoofElevator
+    },
+
 #else
     {
         .metatileNum = METATILE_GeneralFrlg_Door,

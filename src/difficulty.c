@@ -46,6 +46,14 @@ enum DifficultyLevel GetTrainerDifficultyLevel(u16 trainerId)
     if (difficulty == DIFFICULTY_NORMAL)
         return DIFFICULTY_NORMAL;
 
+#if !IS_FRLG
+    if (IsKantoTrainerId(trainerId))
+    {
+        if (gKantoTrainers[difficulty][trainerId - KANTO_TRAINER_BASE].party == NULL)
+            return DIFFICULTY_NORMAL;
+        return difficulty;
+    }
+#endif
     if (gTrainers[difficulty][trainerId].party == NULL)
         return DIFFICULTY_NORMAL;
 

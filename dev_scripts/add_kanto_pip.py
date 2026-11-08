@@ -1,0 +1,86 @@
+from pathlib import Path
+import json
+ROOT=Path(__file__).resolve().parents[1]
+area_text='''PEWTER_CITY|Even the museum has rocks. BROCK must feel very supported.|That bench has survived more trainers than I have.
+CERULEAN_CITY|Five battles on one bridge. A toll booth would be less personal.|A water GYM. My shoes did not prepare for this.
+VERMILION_CITY|Everyone here knows a sailor. I know a knot. It is in my shoe.|I packed for a cruise. My bag contains one sandwich.
+LAVENDER_TOWN|We can sit for a minute. Nobody needs us to be funny here.|Someone still tends those flowers. I am glad they do.
+CELADON_CITY|My allowance has requested that we avoid the department store.|So many roofs. Somewhere a PIDGEY is charging rent.
+FUCHSIA_CITY|The SAFARI ZONE has a timer. Finally, a rule my lunch respects.|I waved at a rare POKéMON. It has chosen to remain rare.
+SAFFRON_CITY|I took three turns and ended up behind myself. Excellent planning.|SILPH makes useful inventions. I would like a bag with cupholders.
+CINNABAR_ISLAND|An island, a lab, and a volcano. Someone approved this arrangement.|The sea breeze is nice. The volcano breeze is less nice.
+INDIGO_PLATEAU|I had a speech ready. It has become mostly breathing.|Before we go in, eat something. Heroism is hungry work.
+VIRIDIAN_FOREST|Every rustle sounds enormous. Then a tiny bug walks out, offended.|The trees made a ceiling. Very thoughtful. Slightly damp.
+MT_MOON|A mountain named after the moon. The moon has declined to comment.|If a fossil bites us, I am requesting a refund.
+ROCK_TUNNEL|A new shade of dark. It is called more dark.|That rock looks familiar. Please tell me it is its cousin.
+POKEMON_TOWER|I will keep my voice down. You can take your time.|It is good that someone remembers them. Even when it is hard.
+ROCKET_HIDEOUT|They put arrows on the floor. Crime has good signage.|A base under a game corner. I assumed it was more game corner.
+SILPH_CO|An office building in danger, and the elevator still works.|That employee kept their lunch. A sensible priority.
+SAFARI_ZONE|The POKéMON have no schedule. We are the exhibit with a timer.|The grass is moving. I am trying to look approachable.
+POKEMON_MANSION|Dusty furniture. At last, my housekeeping equals theirs.|A diary is lying open. I hope it is not about us.
+SEAFOAM_ISLANDS|Ice, water, and boulders. My least convenient stairs.|If I slip, please call it a dramatic entrance.
+VICTORY_ROAD|The name sounds encouraging. The boulders have other opinions.|I thought victory came with a road. We supply the road.
+POWER_PLANT|The lights are off. The residents are extremely on.|Do not unplug anything. It might be somebody.
+ONE_ISLAND|A warm breeze and a quiet harbor. I could get used to this bench.|Another island. Another chance to forget where I put my hat.
+TWO_ISLAND|That shop sells everything. I am looking for a second pocket.|Small towns make excellent gossip. Little delivery distance.
+THREE_ISLAND|A forest at the edge of town. The trees have excellent timing.|We should help before we lecture. I can lecture while walking.
+FOUR_ISLAND|Daycare has the right idea. Someone else handles the exercise.|Ice in a tropical cave. The weather has lost its notes.
+FIVE_ISLAND|Please let this be a relaxing walk. I scheduled the relaxing.|Someone planted flowers here. A good use of a day.
+SIX_ISLAND|These ruins lasted ages. My shoes are entering retirement.|If the inscription says push, I would appreciate a picture.
+SEVEN_ISLAND|Seven islands. Still one pair of socks that I actually like.|Ruins are history with fresh air. I like this museum policy.'''
+people_text='''BROCK|He stays calm when rocks fly. I flinch when somebody drops a spoon.
+MISTY|A pool inside a GYM. I should have brought other shoes.
+LT_SURGE|He calls it a shock. I prefer warnings with measurements.
+ERIKA|She made training look restful. I have been practicing that part.
+KOGA|A ninja who announces his name. Very considerate for a ninja.
+SABRINA|I was going to make a joke. She probably heard the first draft.
+BLAINE|A quiz before a battle. He combined my two anxieties.
+GIOVANNI|A GYM and a criminal empire. I cannot manage two errands.
+PROF_OAK|He really loves his research. I hope someone reminds him to eat.
+BLUE|He practices being ahead of us. Exhausting to stand there.'''
+def main():
+ import textwrap
+ sections={v['id'] for v in json.loads((ROOT/'src/data/region_map/region_map_sections.json').read_text(encoding='utf-8'))['map_sections']}
+ areas={v[0]:v[1:] for line in area_text.splitlines() if (v:=line.split('|')) and 'MAPSEC_'+v[0] in sections}
+ people=dict(line.split('|',1) for line in people_text.splitlines())
+ (ROOT/'data/kanto/pip_dialogue.json').write_text(json.dumps({'areas':areas,'people':people},indent=2)+'\n',encoding='utf-8')
+ lines=['// Kanto dialogue: append-only remembered IDs.'];entries=[]
+ def decl(name,text):
+  wrapped=textwrap.wrap('PIP: '+text,width=33,break_long_words=False);text=wrapped[0]+''.join(('\n' if i==1 else '\\l')+t for i,t in enumerate(wrapped[1:],1))+'$'
+  # C literals use the engine continuation escape, represented by backslash-l.
+  lit=json.dumps(text,ensure_ascii=False).replace('\\\\l','\\l')
+  lines.append('static const u8 '+name+'[] = _('+lit+');');entries.append(name)
+ for area,texts in areas.items():
+  for i,t in enumerate(texts):decl('sPipAdventure_'+area+'_'+str(i),t)
+ for who,t in people.items():decl('sPipAdventure_'+who,t)
+ lines+=['static const struct PipLocationDialogue sPipAdventureLocations[] = {']
+ for area in areas:lines.append('    {MAPSEC_'+area+', {sPipAdventure_'+area+'_0, sPipAdventure_'+area+'_1}},')
+ lines+=['};'];(ROOT/'src/data/pip_kanto_dialogue.h').write_text('\n'.join(lines)+'\n',encoding='utf-8',newline='\n')
+ p=ROOT/'src/data/pip_memory_catalogue.h';s=p.read_text();idx=s.index('\n};',s.index('sPipMemoryCatalogue[]'))
+ if entries[0] not in s:s=s[:idx]+''.join('\n    '+name+', // '+str(260+i) for i,name in enumerate(entries))+s[idx:];p.write_text(s,newline='\n')
+ p=ROOT/'src/pip.c';s=p.read_text();s=s.replace('#include "pip.h"','#include "pip.h"\n#include "parallel_watch.h"') if '"parallel_watch.h"' not in s else s
+ s=s.replace('#include "data/pip_memory_catalogue.h"','#include "data/pip_kanto_dialogue.h"\n#include "data/pip_memory_catalogue.h"') if '"data/pip_kanto_dialogue.h"' not in s else s
+ if 'FreshKantoLocation' not in s:
+  idx=s.index('static const u8 *FreshLocation(void)');s=s[:idx]+'''static const u8 *FreshKantoLocation(void)
+{
+    for (u32 i = 0; i < ARRAY_COUNT(sPipAdventureLocations); i++)
+        if (sPipAdventureLocations[i].section == gMapHeader.regionMapSectionId)
+            for (u32 j = 0; j < 2; j++)
+                if (Fresh(sPipAdventureLocations[i].lines[j]) != NULL)
+                    return sPipAdventureLocations[i].lines[j];
+    return NULL;
+}
+'''+s[idx:]
+  s=s.replace('static const u8 *FreshLocation(void)\n{','static const u8 *FreshLocation(void)\n{\n    const u8 *kanto = FreshKantoLocation();\n    if (kanto != NULL)\n        return kanto;')
+  needle='    OfferReaction(text);\n#else';extra='''    if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+        switch (sReactionGraphics)
+        {
+'''+''.join('        case OBJ_EVENT_GFX_'+who+': text = sPipAdventure_'+who+'; break;\n' for who in people)+'''        default:
+            if (Fresh(text) == NULL) text = FreshKantoLocation();
+            break;
+        }
+    }
+''';s=s.replace(needle,extra+needle,1)
+ p.write_text(s,newline='\n');print('Appended',len(entries),'Kanto lines across',len(areas),'areas and',len(people),'named people')
+if __name__=='__main__':main()

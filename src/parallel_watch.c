@@ -1,5 +1,9 @@
 #include "global.h"
 #include "main.h"
+#include "kanto_progress.h"
+#include "safari_zone.h"
+#include "heal_location.h"
+#include "constants/heal_locations.h"
 #include "parallel_watch.h"
 #include "overworld.h"
 #include "field_player_avatar.h"
@@ -16,13 +20,27 @@
 #if FNPC_ENABLE_NPC_FOLLOWERS
 #define WATCH_VERSION 1
 static EWRAM_DATA u8 sArrivalFacing = 0;
+static const u16 sKantoOutdoorMaps[] = {
+#include "data/kanto_outdoors.h"
+};
+// All members of an imported map group belong to Kanto. The topology validator
+// checks this compact index against the complete manifest before every build.
+static const u8 sKantoMapGroupCounts[] = {
+#include "data/kanto_map_group_counts.h"
+};
+bool32 ParallelWatch_IsKanto(u32 group, u32 num)
+{
+    return group < ARRAY_COUNT(sKantoMapGroupCounts)
+        && num < sKantoMapGroupCounts[group];
+}
 
 bool32 ParallelWatch_IsOutdoor(u32 group, u32 num)
 {
-    // Only ordinary Hoenn towns/routes and the three trial outdoor maps.
-    // No facilities, interiors, caves, boats, link rooms or story-only maps.
-    if (group == MAP_GROUP(MAP_WATCH_PALLET))
-        return num <= MAP_NUM(MAP_WATCH_VIRIDIAN);
+    if (GetSafariZoneFlag())
+        return FALSE;
+    for (u32 i = 0; i < ARRAY_COUNT(sKantoOutdoorMaps); i++)
+        if (MAP_GROUP(sKantoOutdoorMaps[i]) == group && MAP_NUM(sKantoOutdoorMaps[i]) == num)
+            return TRUE;
     return group == MAP_GROUP(MAP_LITTLEROOT_TOWN)
         && num <= MAP_NUM(MAP_ROUTE134)
         && IsMapTypeOutdoors(Overworld_GetMapHeaderByGroupAndId(group, num)->mapType);
@@ -35,7 +53,7 @@ bool32 ParallelWatch_IsSafeAnchor(const struct ParallelWatchAnchor *a, u32 world
     const struct Tileset *t;
     u32 id, behavior, block;
     if (!a->valid || world > 1 || !ParallelWatch_IsOutdoor(a->mapGroup, a->mapNum)
-     || (a->mapGroup == MAP_GROUP(MAP_WATCH_PALLET)) != world
+     || ParallelWatch_IsKanto(a->mapGroup, a->mapNum) != world
      || a->facing < DIR_SOUTH || a->facing > DIR_EAST)
         return FALSE;
     h = Overworld_GetMapHeaderByGroupAndId(a->mapGroup, a->mapNum);
@@ -106,7 +124,7 @@ static bool32 CanSwitch(void)
         return Deny(COMPOUND_STRING("The hands are still.$"));
     if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT))
         return Deny(COMPOUND_STRING("The hands will not turn.$"));
-    if (!ParallelWatch_IsSafeAnchor(&a, a.mapGroup == MAP_GROUP(MAP_WATCH_PALLET)))
+    if (!ParallelWatch_IsSafeAnchor(&a, ParallelWatch_IsKanto(a.mapGroup, a.mapNum)))
         return Deny(COMPOUND_STRING("The hands will not turn here.$"));
     return TRUE;
 }
@@ -123,7 +141,7 @@ void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
 {
     struct ParallelWatchAnchor from = CurrentAnchor();
     struct ParallelWatchAnchor target;
-    u32 world = from.mapGroup == MAP_GROUP(MAP_WATCH_PALLET);
+    u32 world = ParallelWatch_IsKanto(from.mapGroup, from.mapNum);
     gSpecialVar_Result = FALSE;
     if (!CanSwitch())
         return;
@@ -147,6 +165,29 @@ void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
             return;
         }
     }
+    if (!KantoProgress_EnsureInitialized())
+        return;
+    // Seed old watch saves from their existing heal point, which may belong
+    // to either world. Never turn a Hoenn center into a Kanto respawn point.
+    const struct WarpData *lastHeal = &gSaveBlock1Ptr->lastHealLocation;
+    u32 healWorld = ParallelWatch_IsKanto(lastHeal->mapGroup, lastHeal->mapNum);
+    if (GetHealLocationIndexByWarpData((struct WarpData *)lastHeal) != HEAL_LOCATION_NONE)
+    {
+        memcpy(&gSaveBlock3Ptr->kanto.healLocations[healWorld], lastHeal, sizeof(struct WarpData));
+        gSaveBlock3Ptr->kanto.healValid[healWorld] = TRUE;
+    }
+    struct WarpData targetHeal;
+    memcpy(&targetHeal, &gSaveBlock3Ptr->kanto.healLocations[!world], sizeof(targetHeal));
+    if (gSaveBlock3Ptr->kanto.healValid[!world]
+     && GetHealLocationIndexByWarpData(&targetHeal) != HEAL_LOCATION_NONE
+     && ParallelWatch_IsKanto(targetHeal.mapGroup, targetHeal.mapNum) == !world)
+        gSaveBlock1Ptr->lastHealLocation = targetHeal;
+    else if (!world)
+        SetLastHealLocationWarp(HEAL_LOCATION_PALLET_TOWN);
+    else
+        SetLastHealLocationWarp(gSaveBlock2Ptr->playerGender == MALE
+            ? HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
+            : HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F);
     gSaveBlock3Ptr->watchAnchors[world] = from;
     SetWarpDestinationToCoords(target.mapGroup, target.mapNum, target.x, target.y);
     sArrivalFacing = target.facing;
@@ -156,6 +197,7 @@ void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
     ResetInitialPlayerAvatarState();
 }
 #else
+bool32 ParallelWatch_IsKanto(u32 group, u32 num) { return FALSE; }
 bool32 ParallelWatch_IsOutdoor(u32 group, u32 num) { return FALSE; }
 bool32 ParallelWatch_IsSafeAnchor(const struct ParallelWatchAnchor *a, u32 world) { return FALSE; }
 void Script_ParallelWatchCheck(struct ScriptContext *ctx) { gSpecialVar_Result = FALSE; }

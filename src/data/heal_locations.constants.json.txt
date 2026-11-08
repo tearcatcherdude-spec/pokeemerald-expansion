@@ -11,4 +11,5 @@ enum {
     NUM_HEAL_LOCATIONS
 };
 
+
 #endif // GUARD_CONSTANTS_HEAL_LOCATIONS_H

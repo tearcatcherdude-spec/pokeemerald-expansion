@@ -157,3 +157,5 @@
 
 - [Living Hoenn and Pip dialogue memory](living_hoenn.md)
 - [Parallel Watch Kanto travel trial](parallel_watch.md)
+
+- [Kanto adventure integration](kanto_adventure.md)

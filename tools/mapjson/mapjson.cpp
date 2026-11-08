@@ -710,7 +710,19 @@ void clean_heal_locations(vector<string> &valid_map_ids)
         if (std::regex_search(line, map_match, map_regex) && !deleted_flag) {
             auto it = find(valid_map_ids.begin(), valid_map_ids.end(), map_match[1]);
             if (it == valid_map_ids.end())
-                deleted_flag = true;
+            {
+                // Kanto native names alias their imported Emerald maps. Keep
+                // healer local IDs when that destination is part of this build.
+                std::ifstream aliases("include/constants/kanto_map_aliases.h");
+                string alias_line;
+                bool imported = false;
+                const string prefix = "#define " + map_match[1].str() + " ";
+                while (std::getline(aliases, alias_line))
+                    if (alias_line.find(prefix) == 0
+                     && find(valid_map_ids.begin(), valid_map_ids.end(), alias_line.substr(prefix.size())) != valid_map_ids.end())
+                        imported = true;
+                deleted_flag = !imported;
+            }
         }
         if (deleted_flag && std::regex_search(line, npc_regex)) {
             deleted_flag = false;

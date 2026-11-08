@@ -1,4 +1,5 @@
 #include "global.h"
+#include "parallel_watch.h"
 #include "battle.h"
 #include "event_data.h"
 #include "field_player_avatar.h"
@@ -27,6 +28,16 @@ extern const u8 SafariZone_EventScript_TimesUp[];
 extern const u8 SafariZone_EventScript_RetirePrompt[];
 extern const u8 SafariZone_EventScript_OutOfBallsMidBattle[];
 extern const u8 SafariZone_EventScript_OutOfBalls[];
+#if !IS_FRLG
+extern const u8 KantoSafariZone_EventScript_TimesUp[];
+extern const u8 KantoSafariZone_EventScript_RetirePrompt[];
+extern const u8 KantoSafariZone_EventScript_OutOfBallsMidBattle[];
+extern const u8 KantoSafariZone_EventScript_OutOfBalls[];
+#endif
+static bool32 IsKantoSafari(void)
+{
+    return IS_FRLG || ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
+}
 
 EWRAM_DATA u8 gNumSafariBalls = 0;
 EWRAM_DATA u16 gSafariZoneStepCounter = 0;
@@ -58,7 +69,7 @@ void EnterSafariMode(void)
     SetSafariZoneFlag();
     ClearAllPokeblockFeeders();
     gNumSafariBalls = 30;
-    if (IS_FRLG)
+    if (IsKantoSafari())
         gSafariZoneStepCounter = 600;
     else
         gSafariZoneStepCounter = 500;
@@ -86,7 +97,11 @@ bool8 SafariZoneTakeStep(void)
     gSafariZoneStepCounter--;
     if (gSafariZoneStepCounter == 0)
     {
+#if !IS_FRLG
+        ScriptContext_SetupScript(IsKantoSafari() ? KantoSafariZone_EventScript_TimesUp : SafariZone_EventScript_TimesUp);
+#else
         ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
+#endif
         return TRUE;
     }
     return FALSE;
@@ -94,7 +109,11 @@ bool8 SafariZoneTakeStep(void)
 
 void SafariZoneRetirePrompt(void)
 {
-    ScriptContext_SetupScript(SafariZone_EventScript_RetirePrompt);
+#if !IS_FRLG
+        ScriptContext_SetupScript(IsKantoSafari() ? KantoSafariZone_EventScript_RetirePrompt : SafariZone_EventScript_RetirePrompt);
+#else
+        ScriptContext_SetupScript(SafariZone_EventScript_RetirePrompt);
+#endif
 }
 
 void CB2_EndSafariBattle(void)
@@ -108,14 +127,22 @@ void CB2_EndSafariBattle(void)
     }
     else if (gBattleOutcome == B_OUTCOME_NO_SAFARI_BALLS)
     {
+#if !IS_FRLG
+        RunScriptImmediately(IsKantoSafari() ? KantoSafariZone_EventScript_OutOfBallsMidBattle : SafariZone_EventScript_OutOfBallsMidBattle);
+#else
         RunScriptImmediately(SafariZone_EventScript_OutOfBallsMidBattle);
+#endif
         WarpIntoMap();
         gFieldCallback = FieldCB_ReturnToFieldNoScriptCheckMusic;
         SetMainCallback2(CB2_LoadMap);
     }
     else if (gBattleOutcome == B_OUTCOME_CAUGHT)
     {
+#if !IS_FRLG
+        ScriptContext_SetupScript(IsKantoSafari() ? KantoSafariZone_EventScript_OutOfBalls : SafariZone_EventScript_OutOfBalls);
+#else
         ScriptContext_SetupScript(SafariZone_EventScript_OutOfBalls);
+#endif
         ScriptContext_Stop();
         SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
     }
