@@ -1070,9 +1070,19 @@ gStdScripts_End::
 	.include "data/scripts/debug.inc"
 
 EventScript_WhiteOut::
+#if !IS_FRLG
+    callnative Script_KantoCheckCurrentRegion
+    goto_if_eq VAR_RESULT, TRUE, Kanto_EventScript_WhiteOut
+#endif
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
 	goto EventScript_ResetMrBriney
 	end
+
+#if !IS_FRLG
+Kanto_EventScript_WhiteOut::
+    call EventScript_ResetEliteFour
+    end
+#endif
 
 EventScript_AfterWhiteOutHeal::
 	lockall

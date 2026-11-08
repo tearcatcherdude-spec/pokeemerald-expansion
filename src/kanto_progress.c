@@ -122,3 +122,8 @@ bool32 KantoProgress_HasAnyChampionRecord(void)
     return FlagGet(FLAG_SYS_GAME_CLEAR);
 #endif
 }
+
+void Script_KantoCheckCurrentRegion(struct ScriptContext *ctx)
+{
+    gSpecialVar_Result = ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
+}
