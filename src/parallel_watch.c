@@ -1,5 +1,9 @@
 #include "global.h"
 #include "main.h"
+#include "kanto_progress.h"
+#include "safari_zone.h"
+#include "heal_location.h"
+#include "constants/heal_locations.h"
 #include "parallel_watch.h"
 #include "overworld.h"
 #include "field_player_avatar.h"
@@ -32,6 +36,8 @@ bool32 ParallelWatch_IsKanto(u32 group, u32 num)
 
 bool32 ParallelWatch_IsOutdoor(u32 group, u32 num)
 {
+    if (GetSafariZoneFlag())
+        return FALSE;
     for (u32 i = 0; i < ARRAY_COUNT(sKantoOutdoorMaps); i++)
         if (MAP_GROUP(sKantoOutdoorMaps[i]) == group && MAP_NUM(sKantoOutdoorMaps[i]) == num)
             return TRUE;
@@ -159,6 +165,29 @@ void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
             return;
         }
     }
+    if (!KantoProgress_EnsureInitialized())
+        return;
+    // Seed old watch saves from their existing heal point, which may belong
+    // to either world. Never turn a Hoenn center into a Kanto respawn point.
+    const struct WarpData *lastHeal = &gSaveBlock1Ptr->lastHealLocation;
+    u32 healWorld = ParallelWatch_IsKanto(lastHeal->mapGroup, lastHeal->mapNum);
+    if (GetHealLocationIndexByWarpData((struct WarpData *)lastHeal) != HEAL_LOCATION_NONE)
+    {
+        memcpy(&gSaveBlock3Ptr->kanto.healLocations[healWorld], lastHeal, sizeof(struct WarpData));
+        gSaveBlock3Ptr->kanto.healValid[healWorld] = TRUE;
+    }
+    struct WarpData targetHeal;
+    memcpy(&targetHeal, &gSaveBlock3Ptr->kanto.healLocations[!world], sizeof(targetHeal));
+    if (gSaveBlock3Ptr->kanto.healValid[!world]
+     && GetHealLocationIndexByWarpData(&targetHeal) != HEAL_LOCATION_NONE
+     && ParallelWatch_IsKanto(targetHeal.mapGroup, targetHeal.mapNum) == !world)
+        gSaveBlock1Ptr->lastHealLocation = targetHeal;
+    else if (!world)
+        SetLastHealLocationWarp(HEAL_LOCATION_PALLET_TOWN);
+    else
+        SetLastHealLocationWarp(gSaveBlock2Ptr->playerGender == MALE
+            ? HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F
+            : HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F);
     gSaveBlock3Ptr->watchAnchors[world] = from;
     SetWarpDestinationToCoords(target.mapGroup, target.mapNum, target.x, target.y);
     sArrivalFacing = target.facing;

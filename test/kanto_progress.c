@@ -3,6 +3,7 @@
 #include "event_data.h"
 #include "test/test.h"
 #include "data.h"
+#include "constants/maps.h"
 #include "battle_setup.h"
 #include "constants/kanto_symbols.h"
 
@@ -82,6 +83,31 @@ TEST("Kanto trainer defeat helpers preserve the corresponding Hoenn trainer flag
     EXPECT_EQ(HasTrainerBeenFought(nativeId), FALSE);
     ClearTrainerFlag(KANTO_TRAINER_LEADER_BROCK);
     if (old) SetTrainerFlag(nativeId);
+    *gSaveBlock3Ptr = previous;
+}
+TEST("Kanto native badge queries and League completion never overwrite Hoenn progress")
+{
+    struct SaveBlock3 previous = *gSaveBlock3Ptr;
+    struct WarpData previousLocation = gSaveBlock1Ptr->location;
+    bool32 previousBadge = FlagGet(FLAG_BADGE01_GET);
+    bool32 previousClear = FlagGet(FLAG_SYS_GAME_CLEAR);
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_LITTLEROOT_TOWN);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_LITTLEROOT_TOWN);
+    FlagClear(FLAG_BADGE01_GET);
+    FlagClear(FLAG_SYS_GAME_CLEAR);
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_WATCH_PALLET);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_WATCH_PALLET);
+    FlagSet(FLAG_BADGE01_GET);
+    FlagSet(FLAG_SYS_GAME_CLEAR);
+    EXPECT(FlagGet(KANTO_FLAG_BADGE01_GET));
+    EXPECT(FlagGet(KANTO_FLAG_SYS_GAME_CLEAR));
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_LITTLEROOT_TOWN);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_LITTLEROOT_TOWN);
+    EXPECT_EQ(FlagGet(FLAG_BADGE01_GET), FALSE);
+    EXPECT_EQ(FlagGet(FLAG_SYS_GAME_CLEAR), FALSE);
+    if (previousBadge) FlagSet(FLAG_BADGE01_GET);
+    if (previousClear) FlagSet(FLAG_SYS_GAME_CLEAR);
+    gSaveBlock1Ptr->location = previousLocation;
     *gSaveBlock3Ptr = previous;
 }
 #endif

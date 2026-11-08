@@ -267,6 +267,8 @@ struct KantoProgress
     u16 version;
     u8 flags[0x900 / 8]; // Original regional flags, including trainer defeats.
     u16 vars[0x100];
+    struct { s8 mapGroup, mapNum, warpId; s16 x, y; } healLocations[2];
+    u8 healValid[2];
 };
 
 struct SaveBlock3

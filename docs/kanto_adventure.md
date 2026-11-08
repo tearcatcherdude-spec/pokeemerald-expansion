@@ -8,7 +8,8 @@ assets are retained, including eight gyms, dungeons, League and island maps.
 
 Kanto save progress appends after the released 180-byte SaveBlock3 prefix. Hoenn
 badges, starter selection, Pip memory, party, bag and PC are not reset. Existing
-Pip catalogue IDs 0–259 stay fixed; 64 authored Kanto remarks append at 260–323.
+Pip catalogue IDs 0–259 stay fixed; 76 authored Kanto remarks append at 260–335. Twelve paired scenes add
+24 actors and one-time item rewards across cities, routes and One Island.
 NPCs and Pip must never explain the watch. Kanto begins with an existing trainer
 and party; the forced second starter selection is skipped.
 
