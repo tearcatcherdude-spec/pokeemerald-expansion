@@ -1,5 +1,7 @@
 #include "global.h"
 #include "kanto_progress.h"
+#include "parallel_watch.h"
+#include "constants/flags.h"
 #include "constants/kanto_symbols.h"
 
 #if FNPC_ENABLE_NPC_FOLLOWERS
@@ -55,4 +57,18 @@ u16 *KantoProgress_GetVarPointer(u16 id)
 #else
     return NULL;
 #endif
+}
+
+u16 KantoProgress_RegionalFlagId(u16 id)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
+    if (gSaveBlock1Ptr != NULL && ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+        if (id >= FLAG_BADGE01_GET && id <= FLAG_BADGE08_GET)
+            return KANTO_FLAG_BADGE01_GET + id - FLAG_BADGE01_GET;
+        if (id == FLAG_SYS_GAME_CLEAR)
+            return KANTO_FLAG_SYS_GAME_CLEAR;
+    }
+#endif
+    return id;
 }

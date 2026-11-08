@@ -232,6 +232,7 @@ u8 *GetFlagPointer(u16 id)
 
 u8 FlagSet(u16 id)
 {
+    id = KantoProgress_RegionalFlagId(id);
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
         *ptr |= 1 << (id & 7);
@@ -240,6 +241,7 @@ u8 FlagSet(u16 id)
 
 u8 FlagToggle(u16 id)
 {
+    id = KantoProgress_RegionalFlagId(id);
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
         *ptr ^= 1 << (id & 7);
@@ -248,6 +250,7 @@ u8 FlagToggle(u16 id)
 
 u8 FlagClear(u16 id)
 {
+    id = KantoProgress_RegionalFlagId(id);
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
         *ptr &= ~(1 << (id & 7));
@@ -256,6 +259,7 @@ u8 FlagClear(u16 id)
 
 bool8 FlagGet(u16 id)
 {
+    id = KantoProgress_RegionalFlagId(id);
     u8 *ptr = GetFlagPointer(id);
 
     if (!ptr)
