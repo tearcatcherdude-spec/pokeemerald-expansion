@@ -720,6 +720,15 @@ void SetWarpDestinationToMapWarp(s8 mapGroup, s8 mapNum, s8 warpId)
     SetWarpDestination(mapGroup, mapNum, warpId, -1, -1);
 }
 
+void SetWarpDestinationToCoords(s8 mapGroup, s8 mapNum, s16 x, s16 y)
+{
+    sWarpDestination.mapGroup = mapGroup;
+    sWarpDestination.mapNum = mapNum;
+    sWarpDestination.warpId = WARP_ID_NONE;
+    sWarpDestination.x = x;
+    sWarpDestination.y = y;
+}
+
 void SetDynamicWarp(s32 unused, s8 mapGroup, s8 mapNum, s8 warpId)
 {
     SetWarpData(&gSaveBlock1Ptr->dynamicWarp, mapGroup, mapNum, warpId, gSaveBlock1Ptr->pos.x, gSaveBlock1Ptr->pos.y);

@@ -1052,6 +1052,7 @@ enum __attribute__((packed)) Item
     ITEM_TATSUGIRINITE = 872,
     ITEM_GLIMMORANITE = 873,
 
+    ITEM_PARALLEL_WATCH, // Append only: preserve every existing item ID.
     ITEMS_COUNT,
     ITEM_FIELD_ARROW = ITEMS_COUNT,
 };

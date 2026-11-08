@@ -16099,6 +16099,18 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+    [ITEM_PARALLEL_WATCH] =
+    {
+        .name = ITEM_NAME("Parallel Watch"),
+        .price = 0,
+        .description = COMPOUND_STRING("Remembers two worlds.\nUse outside, on foot,\nwith a healthy Pokémon."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_ParallelWatch,
+        .iconPic = gItemIcon_DynamaxBand,
+        .iconPalette = gItemIconPalette_DynamaxBand,
+    },
 };
 
 #undef ITEM_NAME

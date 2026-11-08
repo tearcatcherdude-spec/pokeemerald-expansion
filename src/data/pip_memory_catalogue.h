@@ -285,5 +285,11 @@ static const u8 *const sPipMemoryCatalogue[] = {
     World_Pip_34, // 245
     World_Pip_35, // 246
     World_Pip_36, // 247
+    sPipWatch_PALLET_TOWN_0, // 248
+    sPipWatch_PALLET_TOWN_1, // 249
+    sPipWatch_ROUTE_1_0, // 250
+    sPipWatch_ROUTE_1_1, // 251
+    sPipWatch_VIRIDIAN_CITY_0, // 252
+    sPipWatch_VIRIDIAN_CITY_1, // 253
 };
 STATIC_ASSERT(ARRAY_COUNT(sPipMemoryCatalogue) <= 512, PipMemoryCapacity);

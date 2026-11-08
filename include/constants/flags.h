@@ -92,7 +92,7 @@
 #define FLAG_WORLD_SCENE_18 0x46 // Living-world scene reward/state
 #define FLAG_WORLD_SCENE_19 0x47 // Living-world scene reward/state
 #define FLAG_WORLD_SCENE_20 0x48 // Living-world scene reward/state
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
+#define FLAG_HIDE_PARALLEL_WATCH    0x49 // Unused Flag
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag
 #define FLAG_UNUSED_0x04C    0x4C // Unused Flag
