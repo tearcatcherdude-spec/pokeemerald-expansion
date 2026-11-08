@@ -152,9 +152,9 @@ void Script_CozyWorldPrepareRare(struct ScriptContext *ctx)
 {
     gSpecialVar_Result = FALSE;
     for (u32 i = 0; i < PARTY_SIZE; i++)
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE
-         && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG)
-         && GetMonData(&gPlayerParty[i], MON_DATA_HP) != 0)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) != SPECIES_NONE
+         && !GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG)
+         && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HP) != 0)
         {
             gSpecialVar_Result = CozyWorld_GetRare(gSpecialVar_0x8004) != NULL;
             return;
