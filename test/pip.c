@@ -19,8 +19,9 @@ TEST("Pip has a distinct nine-frame Emerald sprite and palette")
     EXPECT_EQ(info->size, 256);
     EXPECT_EQ(info->paletteTag, OBJ_EVENT_PAL_TAG_PIP);
     EXPECT_NE(info->paletteTag, OBJ_EVENT_PAL_TAG_NPC_3);
-    EXPECT_EQ(info->images[8].size, 256);
-    EXPECT_EQ((uintptr_t)info->images[8].data - (uintptr_t)info->images[0].data, 8 * 256);
+    // Emerald stores ascending frames in one relative-frame descriptor.
+    EXPECT_EQ(info->images[0].size, 256);
+    EXPECT(info->images[0].relativeFrames);
 }
 
 TEST("Pip recognises his follower identity without taking over other NPC followers")
