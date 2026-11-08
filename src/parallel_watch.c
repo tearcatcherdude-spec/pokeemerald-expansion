@@ -15,7 +15,7 @@
 
 #if FNPC_ENABLE_NPC_FOLLOWERS
 #define WATCH_VERSION 1
-static EWRAM_DATA u8 sArrivalFacing = DIR_SOUTH;
+static EWRAM_DATA u8 sArrivalFacing = 0;
 
 bool32 ParallelWatch_IsOutdoor(u32 group, u32 num)
 {
@@ -161,3 +161,4 @@ bool32 ParallelWatch_IsSafeAnchor(const struct ParallelWatchAnchor *a, u32 world
 void Script_ParallelWatchCheck(struct ScriptContext *ctx) { gSpecialVar_Result = FALSE; }
 void Script_ParallelWatchSwitch(struct ScriptContext *ctx) { gSpecialVar_Result = FALSE; }
 #endif
+
