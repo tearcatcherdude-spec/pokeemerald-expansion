@@ -37,8 +37,19 @@ Cozy_EventScript_Decline::
 Cozy_EventScript_Companion::
 	lockall
 	facefollowernpc
+	multichoice 0, 0, MULTI_PIP_COMPANION, FALSE
+	goto_if_eq VAR_RESULT, 1, Pip_EventScript_HeadHome
+	goto_if_ne VAR_RESULT, 0, Cozy_EventScript_Stay
 	callnative Script_PipChooseDialogue
+	goto_if_eq VAR_RESULT, FALSE, Pip_EventScript_Quiet
 	msgbox gStringVar4, MSGBOX_DEFAULT
+	releaseall
+	end
+Pip_EventScript_Quiet:
+	delay 16
+	releaseall
+	end
+Pip_EventScript_HeadHome:
 	msgbox Cozy_Text_HeadHome, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Cozy_EventScript_Stay
 	msgbox Cozy_Text_GoingHome, MSGBOX_DEFAULT

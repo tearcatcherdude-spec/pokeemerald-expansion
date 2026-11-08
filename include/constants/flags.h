@@ -55,43 +55,43 @@
 #define FLAG_COZY_WELCOME_GIFT 0x21 // Received the welcome committee Potion
 #define FLAG_COZY_BERRY_TRADE 0x22 // Completed the gardening neighbors request
 #define FLAG_MET_PIP 0x23 // Pip has introduced himself and joined the player
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
+#define FLAG_WORLD_CAUGHT_SENTRET 0x24 // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_SHINX 0x25 // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_EEVEE 0x26 // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_MAREEP 0x27 // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_RIOLU 0x28 // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_TOGEPI 0x29 // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_WOOPER 0x2A // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_HOUNDOUR 0x2B // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_GIBLE 0x2C // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_MUNCHLAX 0x2D // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_DRATINI 0x2E // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_CROAGUNK 0x2F // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_PORYGON 0x30 // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_ELEKID 0x31 // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_LARVITAR 0x32 // One-time living-world encounter
+#define FLAG_WORLD_CAUGHT_DEINO 0x33 // One-time living-world encounter
+#define FLAG_WORLD_SCENE_0 0x34 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_1 0x35 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_2 0x36 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_3 0x37 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_4 0x38 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_5 0x39 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_6 0x3A // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_7 0x3B // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_8 0x3C // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_9 0x3D // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_10 0x3E // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_11 0x3F // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_12 0x40 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_13 0x41 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_14 0x42 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_15 0x43 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_16 0x44 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_17 0x45 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_18 0x46 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_19 0x47 // Living-world scene reward/state
+#define FLAG_WORLD_SCENE_20 0x48 // Living-world scene reward/state
 #define FLAG_UNUSED_0x049    0x49 // Unused Flag
 #define FLAG_UNUSED_0x04A    0x4A // Unused Flag
 #define FLAG_UNUSED_0x04B    0x4B // Unused Flag

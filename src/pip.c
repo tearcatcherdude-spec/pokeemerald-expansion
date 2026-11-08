@@ -22,6 +22,7 @@ static EWRAM_DATA bool8 sSceneSuspended = FALSE;
 static EWRAM_DATA u16 sSavedResult = 0;
 static EWRAM_DATA u16 sSavedLastTalked = 0;
 static EWRAM_DATA u16 sReactionGraphics = 0;
+static EWRAM_DATA const u8 *sPendingReaction = NULL;
 static EWRAM_DATA u32 sSavedMessage = 0;
 static EWRAM_DATA bool8 sSavedTextValid = FALSE;
 static EWRAM_DATA u8 sSavedText[sizeof(gStringVar4)] = {0};
@@ -33,6 +34,8 @@ struct PipLocationDialogue
 };
 
 #include "data/pip_dialogue.h"
+#include "data/pip_living_dialogue.h"
+#include "data/pip_memory_catalogue.h"
 
 static struct ObjectEvent *GetPipObject(void)
 {
@@ -58,19 +61,67 @@ static u32 BadgeCount(void)
     return count;
 }
 
+// Memory belongs to the save, not the current map or a rotating counter.
+static void EnsureMemory(void)
+{
+    if (gSaveBlock3Ptr->pipMemoryVersion != 1)
+    {
+        memset(gSaveBlock3Ptr->pipHeard, 0, sizeof(gSaveBlock3Ptr->pipHeard));
+        memset(gSaveBlock3Ptr->pipOffered, 0, sizeof(gSaveBlock3Ptr->pipOffered));
+        gSaveBlock3Ptr->pipMemoryVersion = 1;
+    }
+}
+static u32 MemoryIndex(const u8 *text)
+{
+    if (text != NULL)
+        for (u32 i = 0; i < ARRAY_COUNT(sPipMemoryCatalogue); i++)
+            if (StringCompare(text, sPipMemoryCatalogue[i]) == 0)
+                return i; // Identical wording shares one canonical remembered ID.
+    return ARRAY_COUNT(sPipMemoryCatalogue);
+}
+static const u8 *Fresh(const u8 *text)
+{
+    return text != NULL && !Pip_HasHeard(text) ? text : NULL;
+}
+static const u8 *FreshLocation(void)
+{
+    for (u32 i = 0; i < ARRAY_COUNT(sPipLocations); i++)
+        if (sPipLocations[i].section == gMapHeader.regionMapSectionId)
+            for (u32 j = 0; j < 2; j++)
+                if (Fresh(sPipLocations[i].lines[j]) != NULL)
+                    return sPipLocations[i].lines[j];
+    for (u32 i = 0; i < ARRAY_COUNT(sPipLivingLocations); i++)
+        if (sPipLivingLocations[i].section == gMapHeader.regionMapSectionId)
+            for (u32 j = 0; j < 2; j++)
+                if (Fresh(sPipLivingLocations[i].lines[j]) != NULL)
+                    return sPipLivingLocations[i].lines[j];
+    return NULL;
+}
 static void BeginReaction(struct ScriptContext *ctx)
 {
     sSavedResult = gSpecialVar_Result;
     sSavedLastTalked = gSpecialVar_LastTalked;
     sSavedMessage = ctx->data[0];
     sSavedTextValid = FALSE;
+    sPendingReaction = NULL;
     gSpecialVar_Result = FALSE;
     if (!Pip_IsFollowing() || sSceneSuspended)
         return;
     memcpy(sSavedText, gStringVar4, sizeof(gStringVar4));
     sSavedTextValid = TRUE;
+}
+static void OfferReaction(const u8 *text)
+{
+    u32 id = MemoryIndex(text);
+    EnsureMemory();
+    if (id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text)
+     || (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8))))
+        return;
+    sPendingReaction = text;
+    gSaveBlock3Ptr->pipOffered[id / 8] |= 1 << (id % 8);
     gSpecialVar_Result = TRUE;
 }
+
 #endif
 
 bool32 Pip_IsFollowing(void)
@@ -174,82 +225,60 @@ void Script_PipCheckFollowing(struct ScriptContext *ctx)
     gSpecialVar_Result = Pip_IsFollowing();
 }
 
-void Script_PipChooseDialogue(struct ScriptContext *ctx)
+bool32 Pip_HasHeard(const u8 *text)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
-    u32 counter = NextComment();
-    const u8 *text;
-    if ((counter % 4) == 2)
-        text = Pip_GetProgressDialogue(BadgeCount(), FlagGet(FLAG_SYS_GAME_CLEAR));
-    else if ((counter % 4) == 3 && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_BIKE))
-        text = sPipBike;
-    else if ((counter % 4) == 3 && gMapHeader.mapType == MAP_TYPE_UNDERWATER)
-        text = sPipUnderwater;
-    else if ((counter % 4) == 3 && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
-        text = sPipSurf;
-    else if ((counter % 4) == 3 && gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
-        text = sPipCave;
-    else
-        text = Pip_GetLocationDialogue(gMapHeader.regionMapSectionId, counter);
-    StringCopy(gStringVar4, text);
+    u32 id = MemoryIndex(text);
+    EnsureMemory();
+    return id >= ARRAY_COUNT(sPipMemoryCatalogue)
+        || (gSaveBlock3Ptr->pipHeard[id / 8] & (1 << (id % 8))) != 0;
+#else
+    return TRUE;
 #endif
 }
-
+bool32 Pip_TrySay(const u8 *text)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    u32 id = MemoryIndex(text);
+    if (!Pip_IsFollowing() || sSceneSuspended || id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text))
+        return FALSE;
+    gSaveBlock3Ptr->pipHeard[id / 8] |= 1 << (id % 8);
+    StringCopy(gStringVar4, text);
+    NextComment();
+    return TRUE;
+#else
+    return FALSE;
+#endif
+}
+void Script_PipChooseDialogue(struct ScriptContext *ctx)
+{
+    gSpecialVar_Result = FALSE;
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    const u8 *text = Fresh(Pip_GetProgressDialogue(BadgeCount(), FlagGet(FLAG_SYS_GAME_CLEAR)));
+    if (text == NULL && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_BIKE))
+        text = Fresh(sPipBike);
+    if (text == NULL && gMapHeader.mapType == MAP_TYPE_UNDERWATER)
+        text = Fresh(sPipUnderwater);
+    if (text == NULL && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
+        text = Fresh(sPipSurf);
+    if (text == NULL)
+        text = FreshLocation();
+    gSpecialVar_Result = Pip_TrySay(text);
+#endif
+}
 void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
     u32 id;
+    const u8 *text = NULL;
     BeginReaction(ctx);
     id = GetObjectEventIdByLocalId(gSpecialVar_LastTalked);
-    if (!Pip_IsFollowing() || sSceneSuspended || gSpecialVar_LastTalked == OBJ_EVENT_ID_NPC_FOLLOWER
+    if (!sSavedTextValid || gSpecialVar_LastTalked == OBJ_EVENT_ID_NPC_FOLLOWER
      || id >= OBJECT_EVENTS_COUNT || !gObjectEvents[id].active)
-    {
-        gSpecialVar_Result = FALSE;
         return;
-    }
     sReactionGraphics = gObjectEvents[id].graphicsId;
-    gSpecialVar_Result = TRUE;
-#else
-    gSpecialVar_Result = FALSE;
-#endif
-}
-
-void Script_PipBeginObjectReaction(struct ScriptContext *ctx)
-{
-#if FNPC_ENABLE_NPC_FOLLOWERS
-    BeginReaction(ctx);
-#else
-    gSpecialVar_Result = FALSE;
-#endif
-}
-
-void Script_PipChooseObjectDialogue(struct ScriptContext *ctx)
-{
-#if FNPC_ENABLE_NPC_FOLLOWERS
-    const u8 *original = (const u8 *)sSavedMessage;
-    const u8 *text = sPipGeneral[NextComment() % ARRAY_COUNT(sPipGeneral)];
-    if (original == Text_PictureBookShelf)
-        text = Cozy_Text_PictureBookShelf;
-    else if (original == Text_BookShelf || original == Text_PokemonCenterBookShelf)
-        text = Cozy_Text_BookShelf;
-    else if (original == Text_Vase)
-        text = Cozy_Text_Vase;
-    else if (original == Text_EmptyTrashCan)
-        text = Cozy_Text_EmptyTrashCan;
-    else if (original == Text_ShopShelf)
-        text = Cozy_Text_ShopShelf;
-    else if (original == Text_Blueprint)
-        text = Cozy_Text_Blueprint;
-    else
-        text = Pip_GetLocationDialogue(gMapHeader.regionMapSectionId, VarGet(VAR_PIP_COMMENT_COUNTER));
-    StringCopy(gStringVar4, text);
-#endif
-}
-
-void Script_PipChooseNPCDialogue(struct ScriptContext *ctx)
-{
-#if FNPC_ENABLE_NPC_FOLLOWERS
-    const u8 *text;
+    // Generic strangers do not need the same six jokes. Only specific subjects
+    // with something new to add offer a reaction.
     switch (sReactionGraphics)
     {
     case OBJ_EVENT_GFX_HIKER: text = sPipHiker; break;
@@ -258,10 +287,42 @@ void Script_PipChooseNPCDialogue(struct ScriptContext *ctx)
     case OBJ_EVENT_GFX_SCIENTIST_1:
     case OBJ_EVENT_GFX_SCIENTIST_2: text = sPipScientist; break;
     case OBJ_EVENT_GFX_NURSE: text = sPipNurse; break;
-    default: text = sPipNPC[NextComment() % ARRAY_COUNT(sPipNPC)]; break;
     }
-    StringCopy(gStringVar4, text);
+    OfferReaction(text);
+#else
+    gSpecialVar_Result = FALSE;
 #endif
+}
+void Script_PipBeginObjectReaction(struct ScriptContext *ctx)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    const u8 *text = NULL;
+    const u8 *original;
+    BeginReaction(ctx);
+    if (!sSavedTextValid)
+        return;
+    original = (const u8 *)sSavedMessage;
+    if (original == Text_PictureBookShelf) text = Cozy_Text_PictureBookShelf;
+    else if (original == Text_BookShelf || original == Text_PokemonCenterBookShelf) text = Cozy_Text_BookShelf;
+    else if (original == Text_Vase) text = Cozy_Text_Vase;
+    else if (original == Text_EmptyTrashCan) text = Cozy_Text_EmptyTrashCan;
+    else if (original == Text_ShopShelf) text = Cozy_Text_ShopShelf;
+    else if (original == Text_Blueprint) text = Cozy_Text_Blueprint;
+    else text = FreshLocation();
+    OfferReaction(text);
+#else
+    gSpecialVar_Result = FALSE;
+#endif
+}
+void Script_PipChooseObjectDialogue(struct ScriptContext *ctx)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    gSpecialVar_Result = Pip_TrySay(sPendingReaction);
+#endif
+}
+void Script_PipChooseNPCDialogue(struct ScriptContext *ctx)
+{
+    Script_PipChooseObjectDialogue(ctx);
 }
 
 void Script_PipEndNPCReaction(struct ScriptContext *ctx)

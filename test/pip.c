@@ -26,7 +26,7 @@ TEST("Pip has a distinct nine-frame Emerald sprite and palette")
 
 TEST("Pip recognises his follower identity without taking over other NPC followers")
 {
-    struct NPCFollower previous = gSaveBlock3Ptr->NPCfollower;
+    struct SaveBlock3 previous = *gSaveBlock3Ptr;
     SetFollowerNPCData(FNPC_DATA_IN_PROGRESS, TRUE);
     SetFollowerNPCData(FNPC_DATA_EVENT_FLAG, FLAG_HIDE_COZY_COMPANION + 1);
     EXPECT_EQ(Pip_IsFollowing(), FALSE);
@@ -34,7 +34,7 @@ TEST("Pip recognises his follower identity without taking over other NPC followe
     EXPECT_EQ(Pip_IsFollowing(), TRUE);
     SetFollowerNPCData(FNPC_DATA_IN_PROGRESS, FALSE);
     EXPECT_EQ(Pip_IsFollowing(), FALSE);
-    gSaveBlock3Ptr->NPCfollower = previous;
+    *gSaveBlock3Ptr = previous;
 }
 
 TEST("Pip location dialogue covers all Hoenn towns and routes")
@@ -61,7 +61,8 @@ TEST("Pip progress dialogue changes across badges and after the League")
 TEST("Optional Pip reactions preserve the NPC script result and message state")
 {
     struct ScriptContext ctx = {0};
-    struct NPCFollower previous = gSaveBlock3Ptr->NPCfollower;
+    struct SaveBlock3 previous = *gSaveBlock3Ptr;
+    gSaveBlock3Ptr->pipMemoryVersion = 0;
     struct ObjectEvent oldNpc = gObjectEvents[1];
     u16 oldResult = gSpecialVar_Result;
     u16 oldTalked = gSpecialVar_LastTalked;
@@ -90,7 +91,7 @@ TEST("Optional Pip reactions preserve the NPC script result and message state")
     EXPECT_EQ(gSpecialVar_LastTalked, 77);
     EXPECT_EQ(ctx.data[0], 0x12345678);
     EXPECT_EQ(StringCompare(gStringVar4, COMPOUND_STRING("Original NPC message")), 0);
-    gSaveBlock3Ptr->NPCfollower = previous;
+    *gSaveBlock3Ptr = previous;
     gObjectEvents[1] = oldNpc;
     gSpecialVar_Result = oldResult;
     gSpecialVar_LastTalked = oldTalked;
@@ -99,7 +100,7 @@ TEST("Optional Pip reactions preserve the NPC script result and message state")
 
 TEST("Pip steps aside for scripted actors without blocking their tiles")
 {
-    struct NPCFollower previous = gSaveBlock3Ptr->NPCfollower;
+    struct SaveBlock3 previous = *gSaveBlock3Ptr;
     struct ObjectEvent oldObject = gObjectEvents[15];
     struct Sprite oldSprite = gSprites[0];
     SetFollowerNPCData(FNPC_DATA_IN_PROGRESS, TRUE);
@@ -115,7 +116,7 @@ TEST("Pip steps aside for scripted actors without blocking their tiles")
     EXPECT_EQ(FollowerNPC_IsCollisionExempt(&gObjectEvents[15], &gObjectEvents[1]), TRUE);
     Pip_ResetSceneState();
     EXPECT_EQ(Pip_IsSceneSuspended(), FALSE);
-    gSaveBlock3Ptr->NPCfollower = previous;
+    *gSaveBlock3Ptr = previous;
     gObjectEvents[15] = oldObject;
     gSprites[0] = oldSprite;
 }

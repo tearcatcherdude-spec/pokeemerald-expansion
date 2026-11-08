@@ -4,6 +4,8 @@
 struct ScriptContext;
 
 bool32 Pip_IsFollowing(void);
+bool32 Pip_HasHeard(const u8 *text);
+bool32 Pip_TrySay(const u8 *text);
 bool32 Pip_IsSceneSuspended(void);
 void Pip_RefreshIdentity(void);
 void Pip_BeforeScriptedMovement(u8 localId);

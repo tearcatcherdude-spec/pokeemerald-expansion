@@ -154,3 +154,5 @@
     - [Release Schedule and Process](team_procedures/schedule.md)
     - [Merge Checklist](team_procedures/merge_checklist.md)
     - [Scope Guidelines](team_procedures/scope.md)
+
+- [Living Hoenn and Pip dialogue memory](living_hoenn.md)
