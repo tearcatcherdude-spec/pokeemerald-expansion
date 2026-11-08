@@ -1000,7 +1000,7 @@ World_Scene1_Before::
 
 
 World_Scene1_DoneText::
-	.string "POND INSPECTOR: Another conclusive\ninspection. Please take a POTION. For\lworking under these conditions.$"
+	.string "POND INSPECTOR: Another conclusive\ninspection. That POTION is for your\lown fieldwork. Ours mostly involves\llooking at a pond.$"
 
 
 World_Scene1_After::
@@ -1099,7 +1099,7 @@ World_Scene3_Before::
 
 
 World_Scene3_DoneText::
-	.string "TRENDSETTER: Please accept a GREAT\nBALL. You have helped normalize\lstanding normally.$"
+	.string "TRENDSETTER: The GREAT BALL is your\naward for services to standing\lnormally. Please continue your\lexcellent work.$"
 
 
 World_Scene3_After::
@@ -1303,7 +1303,7 @@ World_Scene7_Before::
 
 
 World_Scene7_DoneText::
-	.string "ASH SWEEPER: Take a SUPER POTION.\nGetting up and trying again is worth\llooking after.$"
+	.string "ASH SWEEPER: That SUPER POTION is\nfor the road. Getting up and trying\lagain is worth looking after.$"
 
 
 World_Scene7_After::
@@ -1468,9 +1468,9 @@ World_EventScript_Scene11_0::
 	goto_if_eq VAR_RESULT, NO, World_RequestDeclined
 	checkitem ITEM_STAR_PIECE, 1
 	goto_if_eq VAR_RESULT, FALSE, World_RequestMissing
-	checkitemspace ITEM_ULTRA_BALL, 1
+	checkitemspace ITEM_SCOPE_LENS, 1
 	goto_if_eq VAR_RESULT, FALSE, World_RewardFull
-	giveitem ITEM_ULTRA_BALL, 1
+	giveitem ITEM_SCOPE_LENS, 1
 	goto_if_eq VAR_RESULT, FALSE, World_RewardFull
 	removeitem ITEM_STAR_PIECE, 1
 
@@ -1496,7 +1496,7 @@ World_Scene11_PartnerAfter:
 	end
 
 World_Scene11_Intro::
-	.string "JUNIOR ASTRONOMER: We built a ladder\nto study the stars. Early results\lsuggest we need a taller ladder.$"
+	.string "JUNIOR ASTRONOMER: We built a ladder\nto study the stars. Early results\lsuggest we need a taller ladder.\lCould you spare a STAR PIECE for our\ldisplay? Our spare SCOPE LENS would\lbe yours.$"
 
 
 World_Scene11_Before::
@@ -1504,7 +1504,7 @@ World_Scene11_Before::
 
 
 World_Scene11_DoneText::
-	.string "JUNIOR ASTRONOMER: A STAR PIECE\nwould help our display. We can offer\lan ULTRA BALL. It has excellent\lastronaut colors.$"
+	.string "JUNIOR ASTRONOMER: A little piece of\nthe sky, at a very sensible height!\lThe SCOPE LENS is yours. We finally\lhave a display the ladder assistant\lcan visit safely.$"
 
 
 World_Scene11_After::
@@ -1559,7 +1559,7 @@ World_Scene12_DoneText::
 
 
 World_Scene12_After::
-	.string "STAIR COMMITTEE CHAIR: The minutes\nsay everyone should bring water.\lPlease take ours for the road.$"
+	.string "STAIR COMMITTEE CHAIR: The minutes\nsay everyone should bring water.\lRemember yours on the next flight of\lstairs.$"
 
 
 World_Pip_12::
@@ -1654,7 +1654,7 @@ World_Scene14_Before::
 
 
 World_Scene14_DoneText::
-	.string "FINISH LINE CREW: Take a FULL\nRESTORE. You can decide what this\lplace means after you have had a\lrest.$"
+	.string "FINISH LINE CREW: That FULL RESTORE\nis for whenever you decide to press\lon. You can decide what this place\lmeans after you have had a rest.$"
 
 
 World_Scene14_After::
@@ -1799,7 +1799,7 @@ World_Scene17_PartnerAfter:
 	end
 
 World_Scene17_Intro::
-	.string "SHADE SURVEYOR: We are comparing the\nshade under the cycling road to the\lsun beside it.$"
+	.string "SHADE SURVEYOR: We are comparing\nshade to sunshine. My partner\lbrushed a poison barb collecting\lsamples. Could we trade our GREAT\lBALL for one ANTIDOTE?$"
 
 
 World_Scene17_Before::
@@ -1807,7 +1807,7 @@ World_Scene17_Before::
 
 
 World_Scene17_DoneText::
-	.string "SHADE SURVEYOR: An ANTIDOTE? My\npartner brushed a poison barb\lcollecting samples. We have a GREAT\lBALL to trade.$"
+	.string "SHADE SURVEYOR: Thank you for the\nANTIDOTE. The GREAT BALL is yours.\lThe report will recommend looking at\lsamples from a sensible distance.$"
 
 
 World_Scene17_After::
@@ -1952,7 +1952,7 @@ World_Scene20_PartnerAfter:
 	end
 
 World_Scene20_Intro::
-	.string "RAIN RESEARCHER: We are checking\nwhether the rain stops if nobody\lcomplains about it.$"
+	.string "RAIN RESEARCHER: We are checking\nwhether rain stops if nobody\lcomplains. My partner wants a REPEL\lfor the walk home through the grass.\lWe can trade a SUPER POTION.\lInterested?$"
 
 
 World_Scene20_Before::
@@ -2018,4 +2018,3 @@ World_Text_Missing::
 
 World_Text_Full::
 	.string "Your BAG cannot hold the reward.\nNothing was taken. Come back after\lmaking some room.$"
-
