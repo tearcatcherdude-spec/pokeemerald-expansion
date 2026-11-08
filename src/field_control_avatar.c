@@ -1,4 +1,5 @@
 #include "global.h"
+#include "parallel_watch.h"
 #include "battle_setup.h"
 #include "bike.h"
 #include "coord_event_weather.h"

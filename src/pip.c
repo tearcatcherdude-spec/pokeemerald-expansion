@@ -38,6 +38,8 @@ struct PipLocationDialogue
 #include "data/pip_living_dialogue.h"
 #include "data/pip_kanto_dialogue.h"
 #include "data/pip_kanto_scenes.h"
+#include "data/pip_kanto_objects.h"
+#include "data/pip_kanto_routes.h"
 #include "data/pip_memory_catalogue.h"
 
 static struct ObjectEvent *GetPipObject(void)
@@ -88,11 +90,18 @@ static const u8 *Fresh(const u8 *text)
 }
 static const u8 *FreshKantoLocation(void)
 {
+    if (!ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+        return NULL;
     for (u32 i = 0; i < ARRAY_COUNT(sPipAdventureLocations); i++)
         if (sPipAdventureLocations[i].section == gMapHeader.regionMapSectionId)
             for (u32 j = 0; j < 2; j++)
                 if (Fresh(sPipAdventureLocations[i].lines[j]) != NULL)
                     return sPipAdventureLocations[i].lines[j];
+    for (u32 i = 0; i < ARRAY_COUNT(sPipKantoRoutes); i++)
+        if (sPipKantoRoutes[i].section == gMapHeader.regionMapSectionId)
+            for (u32 j = 0; j < 2; j++)
+                if (Fresh(sPipKantoRoutes[i].lines[j]) != NULL)
+                    return sPipKantoRoutes[i].lines[j];
     return NULL;
 }
 static const u8 *FreshLocation(void)
@@ -353,6 +362,12 @@ void Script_PipBeginObjectReaction(struct ScriptContext *ctx)
     else if (original == Text_ShopShelf) text = Cozy_Text_ShopShelf;
     else if (original == Text_Blueprint) text = Cozy_Text_Blueprint;
     else text = FreshLocation();
+    for (u32 i = 0; i < ARRAY_COUNT(sPipKantoObjects); i++)
+        if (original == sPipKantoObjects[i].original)
+        {
+            text = sPipKantoObjects[i].comment;
+            break;
+        }
     OfferReaction(text);
 #else
     gSpecialVar_Result = FALSE;
