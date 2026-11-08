@@ -14,6 +14,14 @@ def main():
         if path.endswith('.pal'):data=data.replace(b'\r\n',b'\n')
         actual=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
         require(actual==expected,f'{path} differs from accepted Morph/Pip artwork in PR #6')
+    if 'persistent_map_groups' in state:
+        groups=json.loads((ROOT/'data/maps/map_groups.json').read_text(encoding='utf-8'))
+        for index,old in enumerate(state['persistent_map_groups']):
+            require(index < len(groups['group_order']) and groups['group_order'][index]==old['name'],
+                    'Do not reorder saved map groups; append new groups')
+            current=groups[old['name']]
+            require(current[:len(old['maps'])]==old['maps'],
+                    old['name']+': do not reorder saved map numbers; append new maps')
     pointers=(ROOT/'src/data/object_events/object_event_graphics_info_pointers.h').read_text(encoding='utf-8')
     require(re.search(r'\[OBJ_EVENT_GFX_PIP\]\s*=\s*&gObjectEventGraphicsInfo_Pip',pointers),'Pip graphics ID must retain his own graphics info')
     info=(ROOT/'src/data/object_events/object_event_graphics_info.h').read_text(encoding='utf-8').split('gObjectEventGraphicsInfo_Pip =',1)[1].split('};',1)[0]

@@ -35,6 +35,10 @@ TEST("SaveBlock3 is backwards compatible")
     EXPECT_EQ(sizeof(struct ParallelWatchAnchor), 8);
     EXPECT_EQ(offsetof(struct SaveBlock3, kanto), 180);
     EXPECT_EQ(sizeof(struct KantoProgress), 820);
+    EXPECT_EQ(offsetof(struct KantoProgress, flags), 2);
+    EXPECT_EQ(offsetof(struct KantoProgress, vars), 290);
+    EXPECT_EQ(offsetof(struct KantoProgress, healLocations), 802);
+    EXPECT_EQ(offsetof(struct KantoProgress, healValid), 818);
     EXPECT_EQ(sizeof(struct SaveBlock3), T_SAVEBLOCK3_WITH_FOLLOWER_SIZE);
 #else
     EXPECT_EQ(sizeof(struct SaveBlock3), T_SAVEBLOCK3_SIZE);
