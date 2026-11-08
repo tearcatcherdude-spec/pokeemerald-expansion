@@ -389,16 +389,10 @@ LittlerootTown_EventScript_GoSaveBirchTrigger::
 
 LittlerootTown_EventScript_TownSign::
 	msgbox LittlerootTown_Text_TownSign, MSGBOX_SIGN
-	.if !IS_FRLG
-	call Cozy_EventScript_InspectTownSign
-	.endif
 	end
 
 LittlerootTown_EventScript_BirchsLabSign::
 	msgbox LittlerootTown_Text_ProfBirchsLab, MSGBOX_SIGN
-	.if !IS_FRLG
-	call Cozy_EventScript_InspectBirchsLabSign
-	.endif
 	end
 
 LittlerootTown_EventScript_BrendansHouseSign::
@@ -408,7 +402,7 @@ LittlerootTown_EventScript_BrendansHouseSign::
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_BirchsHouseSignFemale
 	releaseall
 	.if !IS_FRLG
-	call Cozy_EventScript_InspectBrendansHouseSign
+	call Pip_EventScript_ObjectReaction
 	.endif
 	end
 
@@ -427,7 +421,7 @@ LittlerootTown_EventScript_MaysHouseSign::
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_PlayersHouseSignFemale
 	releaseall
 	.if !IS_FRLG
-	call Cozy_EventScript_InspectMaysHouseSign
+	call Pip_EventScript_ObjectReaction
 	.endif
 	end
 

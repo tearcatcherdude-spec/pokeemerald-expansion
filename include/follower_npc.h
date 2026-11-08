@@ -95,6 +95,7 @@ enum FollowerNPCForcedMovementStates
 
 void SetFollowerNPCData(enum FollowerNPCDataTypes type, u32 value);
 const u8 *GetFollowerNPCScriptPointer(void);
+void SetFollowerNPCScriptPointer(const u8 *script);
 u32 GetFollowerNPCData(enum FollowerNPCDataTypes type);
 void ClearFollowerNPCData(void);
 

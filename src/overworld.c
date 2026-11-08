@@ -1,4 +1,5 @@
 #include "global.h"
+#include "pip.h"
 #include "overworld.h"
 #include "battle_pyramid.h"
 #include "battle_setup.h"
@@ -1889,6 +1890,7 @@ void CB2_Overworld(void)
     if (fading)
         SetVBlankCallback(NULL);
     OverworldBasic();
+    Pip_TryRegroupAfterScene();
     if (fading)
     {
         SetFieldVBlankCallback();

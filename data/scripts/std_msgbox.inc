@@ -5,6 +5,9 @@ Std_MsgboxNPC:
 	waitmessage
 	waitbuttonpress
 	release
+	.if !IS_FRLG
+	call Pip_EventScript_NPCReaction
+	.endif
 	return
 
 Std_MsgboxSign:
@@ -15,6 +18,9 @@ Std_MsgboxSign:
 	waitbuttonpress
 	releaseall
 	clearflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	.if !IS_FRLG
+	call Pip_EventScript_ObjectReaction
+	.endif
 	return
 
 Std_MsgboxDefault:
