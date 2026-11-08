@@ -17,6 +17,7 @@ FuchsiaCity_Mart_EventScript_Clerk::
 	pokemart FuchsiaCity_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -29,6 +30,7 @@ FuchsiaCity_Mart_Items::
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_Mart_Text_DontTheyHaveSafariZonePennants::

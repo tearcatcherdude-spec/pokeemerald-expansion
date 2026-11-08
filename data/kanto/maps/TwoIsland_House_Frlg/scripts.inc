@@ -101,6 +101,7 @@ TwoIsland_House_EventScript_CantTutorEgg::
 TwoIsland_House_EventScript_EndTutorMove::
 	msgbox TwoIsland_House_Text_NeedMushroomOrTwoToLearnMove
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_House_EventScript_SetHasBigMushroom::

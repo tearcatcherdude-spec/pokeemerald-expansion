@@ -21,6 +21,7 @@ CeruleanCity_House4_EventScript_WonderNewsBerryMan::
 CeruleanCity_House4_EventScript_NoNews::
 	msgbox CeruleanCity_House4_Text_NothingEntertaining
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Small reward for receiving Wonder News from friend
@@ -30,6 +31,7 @@ CeruleanCity_House4_EventScript_Reward_RecvSmall::
 	giveitem REWARD_ITEM
 	goto_if_eq KANTO_VAR_RESULT, FALSE, CeruleanCity_House4_EventScript_NoRoomForBerries
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Big reward for receiving Wonder News from non-friend source
@@ -39,6 +41,7 @@ CeruleanCity_House4_EventScript_Reward_RecvBig::
 	giveitem REWARD_ITEM, 4
 	goto_if_eq KANTO_VAR_RESULT, FALSE, CeruleanCity_House4_EventScript_NoRoomForBerries
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Player has not recently sent Wonder News
@@ -47,6 +50,7 @@ CeruleanCity_House4_EventScript_Waiting::
 	waitmovement 0
 	msgbox CeruleanCity_House4_Text_WishCouldShareNewsWithOthers
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Small reward for sending Wonder News every 1-3 times
@@ -56,6 +60,7 @@ CeruleanCity_House4_EventScript_Reward_SentSmall::
 	giveitem REWARD_ITEM
 	goto_if_eq KANTO_VAR_RESULT, FALSE, CeruleanCity_House4_EventScript_NoRoomForBerries
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Big reward for sending Wonder News every 4th time
@@ -65,6 +70,7 @@ CeruleanCity_House4_EventScript_Reward_SentBig::
 	giveitem REWARD_ITEM, 4
 	goto_if_eq KANTO_VAR_RESULT, FALSE, CeruleanCity_House4_EventScript_NoRoomForBerries
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Player has hit reward limit and must wait to receive new rewards
@@ -73,6 +79,7 @@ CeruleanCity_House4_EventScript_AtMax::
 	waitmovement 0
 	msgbox CeruleanCity_House4_Text_EnjoyingMyselfWithAllSortsOfNews
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House4_EventScript_MovementReactionToNews::
@@ -88,6 +95,7 @@ CeruleanCity_House4_EventScript_MovementReactionToNews::
 CeruleanCity_House4_EventScript_NoRoomForBerries::
 	msgbox CeruleanCity_House4_Text_YourBerryPouchIsFull
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House4_Text_NothingEntertaining::

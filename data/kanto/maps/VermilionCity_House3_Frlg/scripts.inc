@@ -17,6 +17,7 @@ VermilionCity_House3_EventScript_Pidgey::
 	msgbox VermilionCity_House3_Text_Pidgey
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_House3_EventScript_Letter::

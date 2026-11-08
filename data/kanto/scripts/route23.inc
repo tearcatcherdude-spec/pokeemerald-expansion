@@ -3,6 +3,7 @@ Route23_EventScript_MissingBoulderBadge::
 	playse SE_BOO
 	msgbox Text_CantLetYouPass
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route23_EventScript_MissingBadge::
@@ -13,6 +14,7 @@ Route23_EventScript_MissingBadge::
 	closemessage
 	waitse
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route23_EventScript_AlreadyRecognizedBoulderBadge::
@@ -22,11 +24,13 @@ Route23_EventScript_AlreadyRecognizedBoulderBadge::
 	waitfanfare
 	waitbuttonpress
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route23_EventScript_AlreadyRecognizedBadge::
 	msgbox Text_OnlyPassWithBadgeOhGoAhead
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Duplicate of the below, only used for Boulder Badge
@@ -104,12 +108,14 @@ Route23_EventScript_RecognizeBoulderBadge::
 	waitbuttonpress
 	copyvar KANTO_VAR_MAP_SCENE_ROUTE23, VAR_TEMP_1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route23_EventScript_RecognizeBadge::
 	msgbox Text_OnlyPassWithBadgeOhGoAhead
 	copyvar KANTO_VAR_MAP_SCENE_ROUTE23, VAR_TEMP_1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route23_EventScript_BadgeGuardTrigger::

@@ -12,6 +12,7 @@ CinnabarIsland_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonCenter_1F_EventScript_Gentleman::
@@ -47,6 +48,7 @@ CinnabarIsland_PokemonCenter_1F_EventScript_Bill::
 	warp MAP_KANTO_CINNABAR_ISLAND, 14, 11
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonCenter_1F_EventScript_ExitWithBillSouth::
@@ -70,6 +72,7 @@ CinnabarIsland_PokemonCenter_1F_EventScript_ExitWithBillWest::
 CinnabarIsland_PokemonCenter_1F_EventScript_NotReadyToSail::
 	msgbox CinnabarIsland_PokemonCenter_1F_Text_OhNotDoneYet
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonCenter_1F_Movement_BillExit::

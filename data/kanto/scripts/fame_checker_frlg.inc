@@ -6,6 +6,7 @@ ViridianCity_School_EventScript_PokemonJournal::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureProfOak
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_PokemonJournalUnused1::
@@ -16,6 +17,7 @@ EventScript_PokemonJournalUnused1::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureProfOak
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_PokemonJournalUnused2::
@@ -25,6 +27,7 @@ EventScript_PokemonJournalUnused2::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureProfOak
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_PokemonCenter_1F_EventScript_PokemonJournal::
@@ -41,6 +44,7 @@ Route4_EventScript_Boy::
 	famechecker FAMECHECKER_BROCK, 3
 	msgbox Route4_Text_PeopleLikeAndRespectBrock
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtMoon_1F_EventScript_BaldingMan::
@@ -49,6 +53,7 @@ MtMoon_1F_EventScript_BaldingMan::
 	famechecker FAMECHECKER_BROCK, 4
 	msgbox MtMoon_1F_Text_BrockHelpsExcavateFossils
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Museum_1F_EventScript_PokemonJournalBrock::
@@ -65,6 +70,7 @@ Route20_EventScript_Camper::
 	famechecker FAMECHECKER_MISTY, 3
 	msgbox Route20_Text_MistyTrainsHere
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route25_EventScript_Beauty::
@@ -73,6 +79,7 @@ Route25_EventScript_Beauty::
 	famechecker FAMECHECKER_MISTY, 4
 	msgbox Route25_Text_MistyHighHopesAboutThisPlace
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_PokemonCenter_1F_EventScript_PokemonJournalMisty::
@@ -82,6 +89,7 @@ CeruleanCity_PokemonCenter_1F_EventScript_PokemonJournalMisty::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureMisty
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonCenter_1F_EventScript_PokemonJournalLtSurge::
@@ -99,6 +107,7 @@ CeladonCity_Condominiums_2F_EventScript_PokemonJournalErika::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureErika
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_WardensHouse_EventScript_PokemonJournalKoga::
@@ -108,6 +117,7 @@ FuchsiaCity_WardensHouse_EventScript_PokemonJournalKoga::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureKoga
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SafariZone_North_RestHouse_EventScript_BaldingMan::
@@ -116,6 +126,7 @@ SafariZone_North_RestHouse_EventScript_BaldingMan::
 	famechecker FAMECHECKER_KOGA, 5
 	msgbox SafariZone_West_Text_KogaPatrolsSafariEverySoOften
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonCenter_1F_EventScript_PokemonJournalSabrina::
@@ -125,6 +136,7 @@ SaffronCity_PokemonCenter_1F_EventScript_PokemonJournalSabrina::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureSabrina
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_BlaineFujiPhoto::
@@ -149,6 +161,7 @@ FourIsland_Mart_EventScript_OldMan::
 	famechecker FAMECHECKER_LORELEI, 2
 	msgbox FourIsland_Mart_Text_LoreleiGrewUpOnThisIsland
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_PokemonCenter_1F_EventScript_PokemonJournal::
@@ -158,6 +171,7 @@ FiveIsland_PokemonCenter_1F_EventScript_PokemonJournal::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureLorelei
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_PokemonJournalBruno::
@@ -167,6 +181,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_PokemonJournalBruno::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureBruno
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_SevaultCanyon_EventScript_BlackBelt::
@@ -175,6 +190,7 @@ SevenIsland_SevaultCanyon_EventScript_BlackBelt::
 	famechecker FAMECHECKER_BRUNO, 5
 	msgbox SevenIsland_SevaultCanyon_Text_BrunoTrainedWithBrawly
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_BlackBelt::
@@ -184,6 +200,7 @@ IndigoPlateau_PokemonCenter_1F_EventScript_BlackBelt::
 	famechecker FAMECHECKER_AGATHA, 2
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_AgathaWhuppedUs
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_PokemonCenter_1F_EventScript_PokemonJournal::
@@ -193,6 +210,7 @@ SevenIsland_PokemonCenter_1F_EventScript_PokemonJournal::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureAgatha
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_Mart_EventScript_OldWoman::
@@ -201,6 +219,7 @@ SixIsland_Mart_EventScript_OldWoman::
 	famechecker FAMECHECKER_AGATHA, 5
 	msgbox SixIsland_Mart_Text_AgathaOldestEverEliteFourMember
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_LanceUnused::
@@ -209,6 +228,7 @@ EventScript_LanceUnused::
 	famechecker FAMECHECKER_LANCE, 0
 	msgbox gFameCheckerFlavorText_Lance0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_EventScript_BattleGirlUnused::
@@ -217,6 +237,7 @@ SaffronCity_EventScript_BattleGirlUnused::
 	famechecker FAMECHECKER_LANCE, 1
 	msgbox SaffronCity_Text_HowCanClubNotRecognizeLance
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_EventScript_BattleGirl::
@@ -225,6 +246,7 @@ SaffronCity_EventScript_BattleGirl::
 	famechecker FAMECHECKER_LANCE, 2
 	msgbox SaffronCity_Text_HowCanClubNotRecognizeLance
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_2F_EventScript_Woman::
@@ -233,6 +255,7 @@ CeladonCity_DepartmentStore_2F_EventScript_Woman::
 	famechecker FAMECHECKER_LANCE, 3
 	msgbox CeladonCity_DepartmentStore_2F_Text_LanceComesToBuyCapes
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_PokemonJournal::
@@ -242,6 +265,7 @@ IndigoPlateau_PokemonCenter_1F_EventScript_PokemonJournal::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureLance
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_CooltrainerM::
@@ -250,6 +274,7 @@ IndigoPlateau_PokemonCenter_1F_EventScript_CooltrainerM::
 	famechecker FAMECHECKER_LANCE, 5
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_LancesCousinGymLeaderFarAway
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_PokemonCenter_1F_EventScript_BaldingMan::
@@ -258,6 +283,7 @@ LavenderTown_PokemonCenter_1F_EventScript_BaldingMan::
 	famechecker FAMECHECKER_MRFUJI, 3
 	msgbox LavenderTown_PokemonCenter_1F_Text_HearMrFujiNotFromAroundHere
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonCenter_1F_EventScript_PokemonJournalMrFuji::
@@ -267,6 +293,7 @@ CinnabarIsland_PokemonCenter_1F_EventScript_PokemonJournalMrFuji::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox PokemonJournal_Text_SpecialFeatureMrFuji
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_5F_EventScript_Scientist::
@@ -275,6 +302,7 @@ SilphCo_5F_EventScript_Scientist::
 	famechecker FAMECHECKER_GIOVANNI, 1
 	msgbox SilphCo_5F_Text_RocketBossLookingForStrongMons
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_8F_EventScript_Scientist::
@@ -283,4 +311,5 @@ SilphCo_8F_EventScript_Scientist::
 	famechecker FAMECHECKER_GIOVANNI, 2
 	msgbox SilphCo_8F_Text_ToRocketBossMonsAreTools
 	release
+	call Pip_EventScript_NPCReaction
 	end

@@ -14,6 +14,7 @@ CeladonCity_Condominiums_RoofRoom_EventScript_EeveeBall::
 	goto_if_eq KANTO_VAR_RESULT, 1, CeladonCity_Condominiums_RoofRoom_EventScript_GetEeveePC
 	goto_if_eq KANTO_VAR_RESULT, 2, Common_EventScript_NoMoreRoomForPokemon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_RoofRoom_EventScript_GetEeveeParty::
@@ -51,6 +52,7 @@ CeladonCity_Condominiums_RoofRoom_EventScript_TransferEeveeToPC::
 CeladonCity_Condominiums_RoofRoom_EventScript_SetGotEevee::
 	setflag KANTO_FLAG_GOT_EEVEE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_RoofRoom_EventScript_TMsPamphlet::

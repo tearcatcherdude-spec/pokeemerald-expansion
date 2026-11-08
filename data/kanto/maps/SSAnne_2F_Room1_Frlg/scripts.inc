@@ -12,6 +12,7 @@ SSAnne_2F_Room1_EventScript_Gentleman::
 	waitbuttonpress
 	hidemonpic
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_2F_Room1_Text_SleepingMonLookedLikeThis::

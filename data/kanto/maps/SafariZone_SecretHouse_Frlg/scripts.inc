@@ -12,16 +12,19 @@ SafariZone_SecretHouse_EventScript_Attendant::
 	msgbox SafariZone_SecretHouse_Text_ExplainSurf
 	setflag KANTO_FLAG_GOT_HM03
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SafariZone_SecretHouse_EventScript_NoRoomForHM03::
 	msgbox SafariZone_SecretHouse_Text_DontHaveRoomForPrize
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SafariZone_SecretHouse_EventScript_ExplainSurf::
 	msgbox SafariZone_SecretHouse_Text_ExplainSurf
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SafariZone_SecretHouse_Text_CongratsYouveWon::

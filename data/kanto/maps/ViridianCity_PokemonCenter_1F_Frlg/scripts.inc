@@ -12,6 +12,7 @@ ViridianCity_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_PokemonCenter_1F_EventScript_Boy::

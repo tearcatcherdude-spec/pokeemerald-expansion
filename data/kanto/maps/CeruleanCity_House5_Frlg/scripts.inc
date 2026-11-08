@@ -14,16 +14,19 @@ CeruleanCity_House5_EventScript_BerryPowderMan::
 	goto_if_eq KANTO_VAR_RESULT, FALSE, EventScript_BagIsFull
 	msgbox CeruleanCity_House1_Text_GoCrushBerriesAtDirectCorner
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House5_EventScript_NoBerries::
 	msgbox CeruleanCity_House1_Text_WhyMustYouLieNoBerries
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House5_EventScript_NoInterestInBerries::
 	msgbox CeruleanCity_House1_Text_TakeInterestInAllSortsOfThings
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House5_EventScript_AskToExchangePowder::
@@ -134,6 +137,7 @@ CeruleanCity_House5_EventScript_ExitMenu::
 	msgbox CeruleanCity_House1_Text_SeeMeIfYoudLikeToTradePowder
 	special RemoveBerryPowderVendorMenu
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House5_EventScript_ExchangePowderForItem::
@@ -152,12 +156,14 @@ CeruleanCity_House5_EventScript_ExchangePowderForItem::
 	msgbox CeruleanCity_House1_Text_HopeToSeeYouAgain
 	special RemoveBerryPowderVendorMenu
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House5_EventScript_BagIsFull::
 	msgbox gText_TheBagIsFull
 	special RemoveBerryPowderVendorMenu
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House5_EventScript_NotEnoughBerryPowder::

@@ -10,6 +10,7 @@ PewterCity_House1_EventScript_LittleBoy::
 	msgbox PewterCity_House1_Text_NidoranSit
 	call PewterCity_House1_EventScript_DoNidoranCry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_House1_EventScript_Nidoran::
@@ -19,6 +20,7 @@ PewterCity_House1_EventScript_Nidoran::
 	applymovement LOCALID_PEWTER_HOUSE_NIDORAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_House1_EventScript_DoNidoranCry::

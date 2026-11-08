@@ -17,6 +17,7 @@ SSAnne_1F_Room3_EventScript_Wigglytuff::
 	msgbox SSAnne_1F_Room3_Text_Wigglytuff
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_1F_Room3_Text_CruiseIsElegantAndCozy::

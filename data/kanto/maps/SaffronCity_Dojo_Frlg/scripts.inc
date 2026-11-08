@@ -31,11 +31,13 @@ SaffronCity_Dojo_EventScript_HitmonleeBall::
 	goto_if_eq KANTO_VAR_RESULT, YES, SaffronCity_Dojo_EventScript_GiveHitmon
 	hidemonpic
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Dojo_EventScript_AlreadyGotHitmon::
 	msgbox SaffronCity_Dojo_Text_BetterNotGetGreedy
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Dojo_EventScript_HitmonchanBall::
@@ -52,6 +54,7 @@ SaffronCity_Dojo_EventScript_HitmonchanBall::
 	goto_if_eq KANTO_VAR_RESULT, YES, SaffronCity_Dojo_EventScript_GiveHitmon
 	hidemonpic
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Dojo_EventScript_GiveHitmon::
@@ -61,6 +64,7 @@ SaffronCity_Dojo_EventScript_GiveHitmon::
 	goto_if_eq KANTO_VAR_RESULT, 1, SaffronCity_Dojo_EventScript_ReceivedHitmonPC
 	goto_if_eq KANTO_VAR_RESULT, 2, Common_EventScript_NoMoreRoomForPokemon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Dojo_EventScript_ReceivedHitmonParty::
@@ -99,6 +103,7 @@ SaffronCity_Dojo_EventScript_TransferredHitmonToPC::
 
 SaffronCity_Dojo_EventScript_EndGiveMon::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Dojo_EventScript_Statue::
@@ -142,11 +147,13 @@ SaffronCity_Dojo_EventScript_MasterKoichi::
 SaffronCity_Dojo_EventScript_MasterKoichiAlreadyGotHitmon::
 	msgbox SaffronCity_Dojo_Text_StayAndTrainWithUs
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Dojo_EventScript_DefeatedMasterKoichi::
 	setvar KANTO_VAR_MAP_SCENE_SAFFRON_CITY_DOJO, 1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Dojo_Text_MasterKoichiIntro::

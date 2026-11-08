@@ -207,6 +207,7 @@ VermilionCity_Gym_EventScript_LtSurge::
 	goto_if_unset KANTO_FLAG_GOT_TM34_FROM_SURGE, VermilionCity_Gym_EventScript_GiveTM34
 	msgbox VermilionCity_Gym_Text_LtSurgePostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_Gym_EventScript_DefeatedLtSurge::
@@ -231,11 +232,13 @@ VermilionCity_Gym_EventScript_GiveTM34::
 	setflag KANTO_FLAG_GOT_TM34_FROM_SURGE
 	msgbox VermilionCity_Gym_Text_ExplainTM34
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_Gym_EventScript_NoRoomForTM34::
 	msgbox VermilionCity_Gym_Text_MakeRoomInYourBag
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_Gym_EventScript_Dwayne::
@@ -258,6 +261,7 @@ VermilionCity_Gym_EventScript_Tucker::
 VermilionCity_Gym_EventScript_DefeatedTucker::
 	famechecker FAMECHECKER_LTSURGE, 2
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_Gym_EventScript_GymGuy::
@@ -266,11 +270,13 @@ VermilionCity_Gym_EventScript_GymGuy::
 	goto_if_set KANTO_FLAG_DEFEATED_LT_SURGE, VermilionCity_Gym_EventScript_GymGuyPostVictory
 	msgbox VermilionCity_Gym_Text_GymGuyAdvice
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_Gym_EventScript_GymGuyPostVictory::
 	msgbox VermilionCity_Gym_Text_GymGuyPostVictory
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_Gym_EventScript_GymStatue::

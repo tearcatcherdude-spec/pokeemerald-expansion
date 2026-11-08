@@ -32,20 +32,24 @@ Route12_EventScript_Snorlax::
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_RAN, Route12_EventScript_FoughtSnorlax
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route12_EventScript_FoughtSnorlax
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_EventScript_DontUsePokeFlute::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_EventScript_FoughtSnorlax::
 	msgbox Text_SnorlaxReturnedToMountains
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_EventScript_SnorlaxNoPokeFlute::
 	msgbox Route12_Text_MonSprawledOutInSlumber
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_EventScript_RouteSign::

@@ -552,16 +552,19 @@ PalletTown_ProfessorOaksLab_EventScript_Rival::
 	goto_if_eq KANTO_VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_RivalWaitingForStarter
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalWaitingForStarter::
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalChoseStarter::
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalMyMonLooksTougher
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_ProfOak::
@@ -578,21 +581,25 @@ PalletTown_ProfessorOaksLab_EventScript_ProfOak::
 	goto_if_eq KANTO_VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_OakCanReachNextTownWithMon
 	msgbox PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_OakJustShownCompleteDex::
 	msgbox PokedexRating_Text_ThankYouMadeDreamReality
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_OakCanReachNextTownWithMon::
 	msgbox PalletTown_ProfessorOaksLab_Text_OakCanReachNextTownWithMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_OakBattleMonForItToGrow::
 	msgbox PalletTown_ProfessorOaksLab_Text_OakBattleMonForItToGrow
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene::
@@ -653,7 +660,7 @@ PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene::
 	waitmessage
 	waitfanfare
 	call EventScript_RestorePrevTextColor
-	setflag KANTO_FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
 	setvar KANTO_VAR_MAP_SCENE_POKEMON_CENTER_TEALA, 1
 	msgbox PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese
@@ -681,6 +688,7 @@ PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene::
 	setvar KANTO_VAR_MAP_SCENE_PALLET_TOWN_RIVALS_HOUSE, 1
 	setvar KANTO_VAR_MAP_SCENE_ROUTE22, 1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverNorth::
@@ -785,6 +793,7 @@ PalletTown_ProfessorOaksLab_EventScript_RatePokedex::
 	call PokedexRating_EventScript_RateInPerson
 	goto_if_set KANTO_FLAG_OAK_SAW_DEX_COMPLETION, PalletTown_ProfessorOaksLab_EventScript_DexCompleted
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_DexCompleted::
@@ -803,6 +812,7 @@ PalletTown_ProfessorOaksLab_EventScript_DexCompleted::
 	msgbox PokedexRating_Text_ThankYouMadeDreamReality
 	setflag SHOWED_OAK_COMPLETE_DEX
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_OakExcitedNorth::
@@ -913,6 +923,7 @@ PalletTown_ProfessorOaksLab_EventScript_TryStartNationalDexScene::
 
 PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_CheckIfPlayerNeedsBalls::
@@ -933,16 +944,19 @@ PalletTown_ProfessorOaksLab_EventScript_GivePlayerMoreBalls::
 	giveitem_msg PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls, ITEM_POKE_BALL, 5
 	setflag KANTO_FLAG_GOT_POKEBALLS_FROM_OAK_AFTER_22_RIVAL
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_MonsAroundWorldWait::
 	msgbox PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_PlayerAlreadyGotBalls::
 	msgbox PalletTown_ProfessorOaksLab_Text_OakComeSeeMeSometime
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalEnterNorth::
@@ -1075,6 +1089,7 @@ PalletTown_ProfessorOaksLab_EventScript_BulbasaurBall::
 	goto_if_eq KANTO_VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
 	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice::
@@ -1108,6 +1123,7 @@ PalletTown_ProfessorOaksLab_EventScript_ConfirmCharmander::
 PalletTown_ProfessorOaksLab_EventScript_DeclinedStarter::
 	hidemonpic
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_ChoseStarter::
@@ -1115,7 +1131,7 @@ PalletTown_ProfessorOaksLab_EventScript_ChoseStarter::
 	removeobject KANTO_VAR_LAST_TALKED
 	msgbox PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic
 	call EventScript_RestorePrevTextColor
-	setflag KANTO_FLAG_SYS_POKEMON_GET
+	setflag FLAG_SYS_POKEMON_GET
 	setflag KANTO_FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
 	givemon PLAYER_STARTER_SPECIES, 5
 	copyvar KANTO_VAR_STARTER_MON_FRLG, PLAYER_STARTER_NUM
@@ -1173,6 +1189,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter::
 	setvar KANTO_VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3
 	call_if_set KANTO_FLAG_OPENED_START_MENU, PalletTown_ProfessorOaksLab_EventScript_ReadyEndSignLadyScene
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_ReadyEndSignLadyScene::
@@ -1218,6 +1235,7 @@ PalletTown_ProfessorOaksLab_EventScript_SquirtleBall::
 	goto_if_eq KANTO_VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
 	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_CharmanderBall::
@@ -1231,11 +1249,13 @@ PalletTown_ProfessorOaksLab_EventScript_CharmanderBall::
 	goto_if_eq KANTO_VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
 	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_LastPokeBall::
 	msgbox PalletTown_ProfessorOaksLab_Text_OaksLastMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_Aide1::
@@ -1244,12 +1264,14 @@ PalletTown_ProfessorOaksLab_EventScript_Aide1::
 	goto_if_set KANTO_FLAG_SYS_GAME_CLEAR, PalletTown_ProfessorOaksLab_EventScript_Aide1GameClear
 	msgbox PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_Aide1GameClear::
 	famechecker FAMECHECKER_OAK, 5
 	msgbox PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_Aide2::
@@ -1258,12 +1280,14 @@ PalletTown_ProfessorOaksLab_EventScript_Aide2::
 	goto_if_set KANTO_FLAG_SYS_GAME_CLEAR, PalletTown_ProfessorOaksLab_EventScript_Aide2GameClear
 	msgbox PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_Aide2GameClear::
 	famechecker FAMECHECKER_DAISY, 0
 	msgbox PalletTown_ProfessorOaksLab_Text_DaisyWillGroomMons
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_Aide3::
@@ -1272,6 +1296,7 @@ PalletTown_ProfessorOaksLab_EventScript_Aide3::
 	famechecker FAMECHECKER_OAK, 2
 	msgbox PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_Pokedex::

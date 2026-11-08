@@ -19,16 +19,19 @@ CeladonCity_Restaurant_EventScript_CoinCaseMan::
 	giveitem_msg CeladonCity_Restaurant_Text_ReceivedCoinCaseFromMan, ITEM_COIN_CASE
 	setflag KANTO_FLAG_GOT_COIN_CASE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Restaurant_EventScript_NoRoomForCoinCase::
 	msgbox CeladonCity_Restaurant_Text_MakeRoomForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Restaurant_EventScript_AlreadyGotCoinCase::
 	msgbox CeladonCity_Restaurant_Text_ThoughtIdWinItBack
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Restaurant_EventScript_WorkerM::

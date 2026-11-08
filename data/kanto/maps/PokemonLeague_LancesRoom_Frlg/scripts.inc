@@ -132,6 +132,7 @@ PokemonLeague_LancesRoom_EventScript_Rematch::
 PokemonLeague_LancesRoom_EventScript_PostBattle::
 	msgbox PokemonLeague_LancesRoom_Text_PostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonLeague_LancesRoom_EventScript_DefeatedLance::
@@ -142,6 +143,7 @@ PokemonLeague_LancesRoom_EventScript_DefeatedLance::
 	msgbox PokemonLeague_LancesRoom_Text_PostBattle
 	closemessage
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonLeague_LancesRoom_EventScript_LanceMoveOutOfWayLeft::

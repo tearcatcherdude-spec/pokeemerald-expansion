@@ -11,6 +11,7 @@ ViridianCity_Gym_EventScript_Giovanni::
 	removeobject LOCALID_VIRIDIAN_GIOVANNI
 	fadescreen FADE_FROM_BLACK
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_Gym_EventScript_DefeatedGiovanni::
@@ -31,11 +32,13 @@ ViridianCity_Gym_EventScript_GiveTM26::
 	setflag KANTO_FLAG_GOT_TM26_FROM_GIOVANNI
 	msgbox ViridianCity_Gym_Text_ExplainTM26
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_Gym_EventScript_NoRoomForTM26::
 	msgbox ViridianCity_Gym_Text_YouDoNotHaveSpace
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_Gym_EventScript_Jason::
@@ -84,12 +87,14 @@ ViridianCity_Gym_EventScript_GymGuy::
 	goto_if_set KANTO_FLAG_DEFEATED_LEADER_GIOVANNI, ViridianCity_Gym_EventScript_GymGuyPostVictory
 	msgbox ViridianCity_Gym_Text_GymGuyAdvice
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_Gym_EventScript_GymGuyPostVictory::
 	famechecker FAMECHECKER_GIOVANNI, 4
 	msgbox ViridianCity_Gym_Text_GymGuyPostVictory
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_Gym_EventScript_GymStatue::

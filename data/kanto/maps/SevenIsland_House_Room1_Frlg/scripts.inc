@@ -76,11 +76,13 @@ SevenIsland_House_Room1_EventScript_OldWoman::
 	goto_if_eq TRAINER_VISITING, TRUE, SevenIsland_House_Room1_EventScript_TrainerVisiting
 	msgbox SevenIsland_House_Room1_Text_OnlyEnjoymentWatchingBattles
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_House_Room1_EventScript_InvalidVisitingTrainer::
 	msgbox SevenIsland_House_Room1_Text_OnlyEnjoymentWatchingBattles
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_House_Room1_EventScript_TrainerVisiting::
@@ -105,12 +107,14 @@ SevenIsland_House_Room1_EventScript_TrainerVisiting::
 	warp MAP_KANTO_SEVEN_ISLAND_HOUSE_ROOM2, 3, 1
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_House_Room1_EventScript_DeclineBattle::
 	special LoadPlayerParty
 	msgbox SevenIsland_House_Room1_Text_OhYouWontBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_House_Room1_EventScript_ChooseParty::

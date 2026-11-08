@@ -13,11 +13,13 @@ SilphCo_3F_EventScript_WorkerM::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_3F_EventScript_WorkerMRocketsGone
 	msgbox SilphCo_3F_Text_WhatAmIToDo
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_3F_EventScript_WorkerMRocketsGone::
 	msgbox SilphCo_3F_Text_YouAndYourMonsSavedUs
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_3F_EventScript_FloorSign::

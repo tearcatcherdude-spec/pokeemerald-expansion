@@ -83,6 +83,7 @@ PokemonLeague_LoreleisRoom_EventScript_Rematch::
 PokemonLeague_LoreleisRoom_EventScript_PostBattle::
 	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei::
@@ -90,6 +91,7 @@ PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei::
 	call PokemonLeague_EventScript_OpenDoor
 	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonLeague_LoreleisRoom_Text_Intro::

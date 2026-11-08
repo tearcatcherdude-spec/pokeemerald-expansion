@@ -1,4 +1,5 @@
 #include "global.h"
+#include "pip.h"
 #include "kanto_progress.h"
 #include "parallel_watch.h"
 #include "battle_setup.h"
@@ -416,6 +417,7 @@ static const u8 *GetInteractedObjectEventScript(struct MapPosition *position, u8
         script = GetObjectEventScriptPointerByObjectEventId(objectEventId);
 
     script = GetRamScript(gSpecialVar_LastTalked, script);
+    Pip_BeginKantoNPCInteraction();
     return script;
 }
 

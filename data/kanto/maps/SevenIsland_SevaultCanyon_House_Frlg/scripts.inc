@@ -31,6 +31,7 @@ SevenIsland_SevaultCanyon_House_EventScript_ChanseyDanceMan::
 	msgbox SevenIsland_SevaultCanyon_House_Text_YoureAllChipperNow
 	setflag DID_CHANSEY_DANCE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_SevaultCanyon_House_EventScript_PlayerFaceDown::
@@ -43,12 +44,14 @@ SevenIsland_SevaultCanyon_House_EventScript_AlreadyDanced::
 	waitmovement 0
 	msgbox SevenIsland_SevaultCanyon_House_Text_ChanseyDanceJoinIn
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_SevaultCanyon_House_EventScript_DeclineDance::
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox SevenIsland_SevaultCanyon_House_Text_ComeOnDance
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_SevaultCanyon_House_Movement_ChanseyDance::
@@ -78,6 +81,7 @@ SevenIsland_SevaultCanyon_House_EventScript_Chansey::
 	msgbox SevenIsland_SevaultCanyon_House_Text_Chansey
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_SevaultCanyon_House_Text_ChanseyDanceJoinIn::

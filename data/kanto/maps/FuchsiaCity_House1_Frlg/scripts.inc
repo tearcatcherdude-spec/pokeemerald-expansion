@@ -11,6 +11,7 @@ FuchsiaCity_House1_EventScript_OldMan::
 	famechecker FAMECHECKER_BILL, 2
 	msgbox FuchsiaCity_House1_Text_BillIsMyGrandson
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_House1_EventScript_LittleBoy::

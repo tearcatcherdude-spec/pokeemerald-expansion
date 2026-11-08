@@ -179,6 +179,7 @@ OneIsland_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_Bill::
@@ -186,6 +187,7 @@ OneIsland_PokemonCenter_1F_EventScript_Bill::
 	goto_if_set KANTO_FLAG_SEVII_DETOUR_FINISHED, OneIsland_PokemonCenter_1F_EventScript_BillGoTakeStroll
 	msgbox OneIsland_PokemonCenter_1F_Text_HmmHowAboutLikeThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_BillGoTakeStroll::
@@ -193,6 +195,7 @@ OneIsland_PokemonCenter_1F_EventScript_BillGoTakeStroll::
 	waitmovement 0
 	msgbox OneIsland_PokemonCenter_1F_Text_GotPCWorkingStrollAWhileMore
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_Celio::
@@ -212,6 +215,7 @@ OneIsland_PokemonCenter_1F_EventScript_Celio::
 	applymovement LOCALID_CELIO, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_CelioGiveBillFact::
@@ -222,23 +226,27 @@ OneIsland_PokemonCenter_1F_EventScript_CelioGiveBillFact::
 	famechecker FAMECHECKER_BILL, 5
 	msgbox OneIsland_PokemonCenter_1F_Text_BillCantStomachMilk
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_BillFact1::
 	famechecker FAMECHECKER_BILL, 3
 	msgbox OneIsland_PokemonCenter_1F_Text_BillsFirstMonWasAbra
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_BillFact2::
 	famechecker FAMECHECKER_BILL, 4
 	msgbox OneIsland_PokemonCenter_1F_Text_BillsHometownInGoldenrod
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_CelioJustGivenSapphire::
 	msgbox OneIsland_PokemonCenter_1F_Text_WishYouBestOfLuck
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_GiveCelioSapphire::
@@ -279,11 +287,13 @@ OneIsland_PokemonCenter_1F_EventScript_GiveCelioSapphire::
 	setvar KANTO_VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 6
 	special InitRoamer
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_ExplainRainbowPass::
 	msgbox OneIsland_PokemonCenter_1F_Text_PassLetYouGetToAllIslands
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_GiveCelioRuby::
@@ -337,6 +347,7 @@ OneIsland_PokemonCenter_1F_EventScript_GiveRainbowPass::
 OneIsland_PokemonCenter_1F_EventScript_CelioWaitingForRuby::
 	msgbox OneIsland_PokemonCenter_1F_Text_TryingToFindGem
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_CelioRequestRuby::
@@ -350,11 +361,13 @@ OneIsland_PokemonCenter_1F_EventScript_CelioRequestRuby::
 	setvar KANTO_VAR_MAP_SCENE_MT_EMBER_EXTERIOR, 1
 	setvar KANTO_VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 4
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_CelioPlayerMissingNationalDex::
 	msgbox OneIsland_PokemonCenter_1F_Text_CelioImModifyingMyNetworkMachine
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_Movement_CelioCheckMachine::
@@ -385,11 +398,13 @@ OneIsland_PokemonCenter_1F_EventScript_BattleGirl::
 	goto_if_set KANTO_FLAG_IS_CHAMPION, OneIsland_PokemonCenter_1F_EventScript_BattleGirlHoennLinked
 	msgbox OneIsland_PokemonCenter_1F_Text_WishICouldTradeWithBoyfriend
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_BattleGirlHoennLinked::
 	msgbox OneIsland_PokemonCenter_1F_Text_TradedWithFarAwayBoyfriend
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_PokemonCenter_1F_EventScript_NetworkMachine::

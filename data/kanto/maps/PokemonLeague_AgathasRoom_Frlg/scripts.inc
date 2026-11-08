@@ -79,6 +79,7 @@ PokemonLeague_AgathasRoom_EventScript_Rematch::
 PokemonLeague_AgathasRoom_EventScript_PostBattle::
 	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha::
@@ -86,6 +87,7 @@ PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha::
 	call PokemonLeague_EventScript_OpenDoor
 	msgbox PokemonLeague_AgathasRoom_Text_PostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonLeague_AgathasRoom_Text_Intro::

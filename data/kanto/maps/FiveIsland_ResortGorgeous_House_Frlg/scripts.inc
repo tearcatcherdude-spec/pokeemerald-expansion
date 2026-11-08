@@ -17,6 +17,7 @@ FiveIsland_ResortGorgeous_House_EventScript_RequestMon::
 	special SampleResortGorgeousMonAndReward
 	msgbox FiveIsland_ResortGorgeous_House_Text_WishToSeeMonPlease
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_ResortGorgeous_House_EventScript_RequestTookTooLong::
@@ -57,6 +58,7 @@ FiveIsland_ResortGorgeous_House_EventScript_ShowRequestedMon::
 	setflag SHOWN_REQUESTED_MON
 	setvar KANTO_VAR_RESORT_GORGEOUS_REQUESTED_MON, SPECIES_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_ResortGorgeous_House_EventScript_ButlerApproachPlayerNorth::
@@ -95,11 +97,13 @@ FiveIsland_ResortGorgeous_House_EventScript_NoRoomForReward::
 	setflag SHOWN_REQUESTED_MON
 	setvar KANTO_VAR_RESORT_GORGEOUS_REQUESTED_MON, SPECIES_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_ResortGorgeous_House_EventScript_JustFulfilledRequest::
 	msgbox FiveIsland_ResortGorgeous_House_Text_SelphyWishYouBestOfLuck
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_ResortGorgeous_House_Movement_ButlerApproachPlayerNorth::

@@ -18,32 +18,38 @@ SixIsland_WaterPath_House1_EventScript_Beauty::
 	goto_if_eq KANTO_VAR_RESULT, 3, SixIsland_WaterPath_House1_EventScript_ShownBigHeracross
 	goto_if_eq KANTO_VAR_RESULT, 4, SixIsland_WaterPath_House1_EventScript_ShownTiedHeracross
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_WaterPath_House1_EventScript_NoHeracrossInParty::
 	msgbox SixIsland_WaterPath_House1_Text_LoveItNeedItHeracross
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_WaterPath_House1_EventScript_DontShowMon::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_WaterPath_House1_EventScript_ShownNonHeracross::
 	msgbox SixIsland_WaterPath_House1_Text_ThisWontDo
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_WaterPath_House1_EventScript_ShownSmallHeracross::
 	goto_if_unset KANTO_FLAG_GOT_NEST_BALL_FROM_WATER_PATH_HOUSE_1, SixIsland_WaterPath_House1_EventScript_ShownBigHeracross
 	msgbox SixIsland_WaterPath_House1_Text_ItsXSizeYSizeWasBiggest
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_WaterPath_House1_EventScript_ShownTiedHeracross::
 	goto_if_unset KANTO_FLAG_GOT_NEST_BALL_FROM_WATER_PATH_HOUSE_1, SixIsland_WaterPath_House1_EventScript_ShownBigHeracross
 	msgbox SixIsland_WaterPath_House1_Text_ItsXSizeSameAsBefore
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_WaterPath_House1_EventScript_ShownBigHeracross::
@@ -53,11 +59,13 @@ SixIsland_WaterPath_House1_EventScript_ShownBigHeracross::
 	goto_if_eq KANTO_VAR_RESULT, FALSE, SixIsland_WaterPath_House1_EventScript_NoRoomForNestBall
 	msgbox SixIsland_WaterPath_House1_Text_WantToSeeBiggerOne
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_WaterPath_House1_EventScript_NoRoomForNestBall::
 	msgbox SixIsland_WaterPath_House1_Text_YourBagIsFull
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_WaterPath_House1_EventScript_SizeRecord::

@@ -9,12 +9,14 @@ SaffronCity_CopycatsHouse_2F_EventScript_Doduo::
 	msgbox SaffronCity_CopycatsHouse_2F_Text_Doduo
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_CopycatsHouse_2F_EventScript_Doll::
 	lock
 	msgbox SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_CopycatsHouse_2F_EventScript_Copycat::
@@ -26,6 +28,7 @@ SaffronCity_CopycatsHouse_2F_EventScript_Copycat::
 	call_if_eq KANTO_VAR_RESULT, MALE, SaffronCity_CopycatsHouse_2F_EventScript_MimicPlayerMale
 	call_if_eq KANTO_VAR_RESULT, FEMALE, SaffronCity_CopycatsHouse_2F_EventScript_MimicPlayerFemale
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_CopycatsHouse_2F_EventScript_MimicPlayerMale::

@@ -26,6 +26,7 @@ MtMoon_B2F_EventScript_Miguel::
 	goto_if_defeated KANTO_TRAINER_SUPER_NERD_MIGUEL, MtMoon_B2F_EventScript_MiguelGoPickFossil
 	call MtMoon_B2F_EventScript_BattleMiguel
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtMoon_B2F_EventScript_BattleMiguel::
@@ -43,11 +44,13 @@ MtMoon_B2F_EventScript_BattleMiguel::
 MtMoon_B2F_EventScript_MiguelFossilPicked::
 	msgbox MtMoon_B2F_Text_LabOnCinnabarRegeneratesFossils
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtMoon_B2F_EventScript_MiguelGoPickFossil::
 	msgbox MtMoon_B2F_Text_WellEachTakeAFossil
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtMoon_B2F_EventScript_DomeFossil::
@@ -71,6 +74,7 @@ MtMoon_B2F_EventScript_DomeFossil::
 	setflag KANTO_FLAG_GOT_DOME_FOSSIL
 	setflag KANTO_FLAG_GOT_FOSSIL_FROM_MT_MOON
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtMoon_B2F_Movement_MiguelToHelixFossil::
@@ -101,10 +105,12 @@ MtMoon_B2F_EventScript_HelixFossil::
 	setflag KANTO_FLAG_GOT_HELIX_FOSSIL
 	setflag KANTO_FLAG_GOT_FOSSIL_FROM_MT_MOON
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtMoon_B2F_EventScript_DontTakeFossil::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtMoon_B2F_Movement_MiguelToDomeFossil::

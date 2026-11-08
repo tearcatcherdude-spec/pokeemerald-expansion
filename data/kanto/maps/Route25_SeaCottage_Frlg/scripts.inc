@@ -59,6 +59,7 @@ Route25_SeaCottage_EventScript_BillAskForHelp::
 	waitdooranim
 	setflag BILL_IN_TELEPORTER
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Just returns after message, execution continues as if player had said yes
@@ -89,6 +90,7 @@ Route25_SeaCottage_EventScript_BillWalkToTeleporter::
 Route25_SeaCottage_EventScript_BillGoToSSAnne::
 	msgbox Route25_SeaCottage_Text_SSAnnePartyYouGoInstead
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route25_SeaCottage_EventScript_BillGiveSSTicket::
@@ -102,7 +104,7 @@ Route25_SeaCottage_EventScript_BillGiveSSTicket::
 	setflag KANTO_FLAG_GOT_SS_TICKET_DUP
 	setflag KANTO_FLAG_HIDE_NUGGET_BRIDGE_ROCKET
 	setflag KANTO_FLAG_GOT_SS_TICKET
-	setflag KANTO_FLAG_SYS_PC_LANETTE
+	setflag FLAG_SYS_PC_LANETTE
 	goto Route25_SeaCottage_EventScript_BillGoToSSAnne
 	end
 
@@ -117,11 +119,13 @@ Route25_SeaCottage_EventScript_BillThanksFemale::
 Route25_SeaCottage_EventScript_NoRoomForSSTicket::
 	msgbox Route25_SeaCottage_Text_YouveGotTooMuchStuff
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route25_SeaCottage_EventScript_BillGoLookAtPC::
 	msgbox Route25_SeaCottage_Text_CheckOutRareMonsOnPC
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route25_SeaCottage_Movement_BillWalkToTeleporter::

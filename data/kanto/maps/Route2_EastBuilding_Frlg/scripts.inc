@@ -22,11 +22,13 @@ Route2_EastBuilding_EventScript_Aide::
 	setflag KANTO_FLAG_GOT_HM05
 	msgbox Route2_EastBuilding_Text_ExplainHM05
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route2_EastBuilding_EventScript_AlreadyGotHM05::
 	msgbox Route2_EastBuilding_Text_ExplainHM05
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route2_EastBuilding_EventScript_GetAideRequestInfo::

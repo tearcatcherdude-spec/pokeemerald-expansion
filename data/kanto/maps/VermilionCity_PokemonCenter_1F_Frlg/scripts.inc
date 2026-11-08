@@ -12,6 +12,7 @@ VermilionCity_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonCenter_1F_EventScript_Man::
@@ -36,11 +37,13 @@ VermilionCity_PokemonCenter_1F_EventScript_VSSeekerWoman::
 	goto_if_eq KANTO_VAR_RESULT, FALSE, EventScript_BagIsFull
 	msgbox VermilionCity_PokemonCenter_1F_Text_UseDeviceForRematches
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonCenter_1F_EventScript_ExplainVSSeeker::
 	msgbox VermilionCity_PokemonCenter_1F_Text_ExplainVSSeeker
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonCenter_1F_Text_TrainerMonsStrongerThanWild::

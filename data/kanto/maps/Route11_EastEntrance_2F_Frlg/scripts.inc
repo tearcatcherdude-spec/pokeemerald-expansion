@@ -35,22 +35,26 @@ Route11_EastEntrance_2F_EventScript_Turner::
 	msgbox Trade_Text_HeyThanks
 	setflag KANTO_FLAG_DID_NINA_TRADE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route11_EastEntrance_2F_EventScript_DeclineTrade::
 	msgbox Trade_Text_AwwOhWell
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route11_EastEntrance_2F_EventScript_NotRequestedMon::
 	bufferspeciesname STR_VAR_1, KANTO_VAR_0x8009
 	msgbox Trade_Text_WhatThatsNoMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route11_EastEntrance_2F_EventScript_AlreadyTraded::
 	msgbox Trade_Text_IsntMyOldMonGreat
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route11_EastEntrance_2F_EventScript_Aide::
@@ -72,11 +76,13 @@ Route11_EastEntrance_2F_EventScript_Aide::
 	setflag KANTO_FLAG_GOT_ITEMFINDER
 	msgbox Route11_EastEntrance_2F_Text_ExplainItemfinder
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route11_EastEntrance_2F_EventScript_AlreadyGotItemfinder::
 	msgbox Route11_EastEntrance_2F_Text_ExplainItemfinder
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route11_EastEntrance_2F_EventScript_GetAideRequestInfo::

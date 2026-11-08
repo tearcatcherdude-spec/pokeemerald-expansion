@@ -59,6 +59,7 @@ FiveIsland_RocketWarehouse_EventScript_DefeatedGideon::
 	setflag KANTO_FLAG_RECOVERED_SAPPHIRE
 	giveitem ITEM_SAPPHIRE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_RocketWarehouse_EventScript_Grunt2::
@@ -91,6 +92,7 @@ FiveIsland_RocketWarehouse_EventScript_DefeatedAdmin2::
 	setvar KANTO_VAR_MAP_SCENE_ROCKET_WAREHOUSE, 1
 	setflag KANTO_FLAG_DEFEATED_ROCKETS_IN_WAREHOUSE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_RocketWarehouse_EventScript_PlayerFaceAdmin2::
@@ -128,6 +130,7 @@ FiveIsland_RocketWarehouse_EventScript_DefeatedAdmin1::
 	call_if_eq PLAYER_X_POS, 27, FiveIsland_RocketWarehouse_EventScript_AdminFacePlayerDown
 	msgbox FiveIsland_RocketWarehouse_Text_MadeItSoYouCanComeBackThrough
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_RocketWarehouse_EventScript_PlayerFaceAdmin1::

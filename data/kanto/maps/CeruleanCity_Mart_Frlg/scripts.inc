@@ -17,6 +17,7 @@ CeruleanCity_Mart_EventScript_Clerk::
 	pokemart CeruleanCity_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -32,6 +33,7 @@ CeruleanCity_Mart_Items::
 	.2byte ITEM_REPEL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_Mart_Text_RepelWorksOnWeakMons::

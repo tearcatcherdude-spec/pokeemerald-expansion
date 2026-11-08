@@ -13,6 +13,7 @@ PokemonTower_7F_EventScript_MrFuji::
 	warp MAP_KANTO_LAVENDER_TOWN_VOLUNTEER_POKEMON_HOUSE, 4, 7
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonTower_7F_EventScript_Grunt1::
@@ -55,6 +56,7 @@ PokemonTower_7F_EventScript_Grunt1ExitLeft::
 PokemonTower_7F_EventScript_RemoveGrunt1::
 	removeobject LOCALID_POKEMON_TOWER_GRUNT1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonTower_7F_Movement_Grunt1ExitMid::
@@ -131,6 +133,7 @@ PokemonTower_7F_EventScript_Grunt2ExitRight::
 PokemonTower_7F_EventScript_RemoveGrunt2::
 	removeobject LOCALID_POKEMON_TOWER_GRUNT2
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonTower_7F_Movement_Grunt2ExitLeft::
@@ -194,10 +197,12 @@ PokemonTower_7F_EventScript_Grunt3ExitLeft::
 PokemonTower_7F_EventScript_RemoveGrunt3::
 	removeobject LOCALID_POKEMON_TOWER_GRUNT3
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonTower_7F_EventScript_Unused::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonTower_7F_Movement_Grunt3ExitRight::

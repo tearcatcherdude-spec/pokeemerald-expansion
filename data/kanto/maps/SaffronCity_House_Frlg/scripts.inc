@@ -17,6 +17,7 @@ SaffronCity_House_EventScript_Pidgey::
 	msgbox SaffronCity_House_Text_Pidgey
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_House_EventScript_Letter::

@@ -128,11 +128,13 @@ TwoIsland_JoyfulGameCorner_EventScript_InfoMan::
 	goto_if_set KANTO_FLAG_RESCUED_LOSTELLE, TwoIsland_JoyfulGameCorner_EventScript_GetGamesGoingSoon
 	msgbox TwoIsland_JoyfulGameCorner_Text_NotRunningAnyGamesToday
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_JoyfulGameCorner_EventScript_GetGamesGoingSoon::
 	msgbox TwoIsland_JoyfulGameCorner_Text_GetGamesGoingSoon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Only referred to as Lostelles Daddy in text
@@ -144,6 +146,7 @@ TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy::
 	goto_if_eq KANTO_VAR_MAP_SCENE_TWO_ISLAND_JOYFUL_GAME_CORNER, 3, TwoIsland_JoyfulGameCorner_EventScript_GiveDaddyMeteorite
 	msgbox TwoIsland_JoyfulGameCorner_Text_PleaseGoToThreeIsland
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_JoyfulGameCorner_EventScript_GiveDaddyMeteorite::
@@ -168,17 +171,20 @@ TwoIsland_JoyfulGameCorner_EventScript_ReceiveMoonStone::
 	setflag KANTO_FLAG_GOT_MOON_STONE_FROM_JOYFUL_GAME_CORNER
 	msgreceiveditem TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy, ITEM_MOON_STONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_JoyfulGameCorner_EventScript_GetGameCornerRunning::
 	msgbox TwoIsland_JoyfulGameCorner_Text_IllGetGameCornerRunning
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_JoyfulGameCorner_EventScript_NoRoomForMoonStone::
 	setflag KANTO_FLAG_NO_ROOM_FOR_JOYFUL_GAME_CORNER_MOON_STONE
 	msgbox TwoIsland_JoyfulGameCorner_Text_NotGoingToFitInBag
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_JoyfulGameCorner_EventScript_Lostelle::
@@ -186,6 +192,7 @@ TwoIsland_JoyfulGameCorner_EventScript_Lostelle::
 	faceplayer
 	msgbox TwoIsland_JoyfulGameCorner_Text_PleaseShowMeYouBeingCool
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_JoyfulGameCorner_Text_WhereHasLostelleGottenTo::

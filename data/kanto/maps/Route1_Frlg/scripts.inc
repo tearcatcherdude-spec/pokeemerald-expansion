@@ -19,11 +19,13 @@ Route1_EventScript_MartClerk::
 	call EventScript_RestorePrevTextColor
 	setflag KANTO_FLAG_GOT_POTION_ON_ROUTE_1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route1_EventScript_AlreadyGotPotion::
 	msgbox Route1_Text_ComeSeeUsIfYouNeedPokeBalls
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route1_EventScript_Boy::

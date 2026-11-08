@@ -12,6 +12,7 @@ PewterCity_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_PokemonCenter_1F_EventScript_Gentleman::
@@ -28,6 +29,7 @@ PewterCity_PokemonCenter_1F_EventScript_Jigglypuff::
 	delay 455
 	playbgm MUS_POKE_CENTER, 1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_PokemonCenter_1F_EventScript_Youngster::
@@ -38,6 +40,7 @@ PewterCity_PokemonCenter_1F_EventScript_GBAKid1::
 	lock
 	msgbox PewterCity_PokemonCenter_1F_Text_TradingMyClefairyForPikachu
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_PokemonCenter_1F_EventScript_GBAKid2::

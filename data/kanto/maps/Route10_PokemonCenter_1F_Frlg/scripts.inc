@@ -15,6 +15,7 @@ Route10_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route10_PokemonCenter_1F_EventScript_FatMan::
@@ -48,11 +49,13 @@ Route10_PokemonCenter_1F_EventScript_Aide::
 	setflag KANTO_FLAG_GOT_EVERSTONE_FROM_OAKS_AIDE
 	msgbox Route10_PokemonCenter_1F_Text_ExplainEverstone
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route10_PokemonCenter_1F_EventScript_AlreadyGotEverstone::
 	msgbox Route10_PokemonCenter_1F_Text_ExplainEverstone
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route10_PokemonCenter_1F_EventScript_GetAideRequestInfo::

@@ -30,6 +30,7 @@ ThreeIsland_DunsparceTunnel_EventScript_Prospector::
 	applymovement LOCALID_PROSPECTOR, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_DunsparceTunnel_EventScript_ProspectorStruckGold::
@@ -43,11 +44,13 @@ ThreeIsland_DunsparceTunnel_EventScript_ProspectorStruckGold::
 ThreeIsland_DunsparceTunnel_EventScript_NoRoomForNugget::
 	msgbox ThreeIsland_DunsparceTunnel_Text_WhoopsBagCrammedFull
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_DunsparceTunnel_EventScript_ProspectorAlreadyGaveNugget::
 	msgbox ThreeIsland_DunsparceTunnel_Text_ThatsANugget
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_DunsparceTunnel_Text_ProspectingForGold::

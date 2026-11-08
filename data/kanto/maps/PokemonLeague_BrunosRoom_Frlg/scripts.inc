@@ -83,6 +83,7 @@ PokemonLeague_BrunosRoom_EventScript_PostBattle::
 	call_if_eq KANTO_VAR_FACING, DIR_WEST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
 	call_if_eq KANTO_VAR_FACING, DIR_EAST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonLeague_BrunosRoom_EventScript_DefeatedBruno::
@@ -95,6 +96,7 @@ PokemonLeague_BrunosRoom_EventScript_DefeatedBruno::
 	call_if_eq KANTO_VAR_FACING, DIR_WEST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
 	call_if_eq KANTO_VAR_FACING, DIR_EAST, PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayDown
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonLeague_BrunosRoom_EventScript_BrunoLookAwayLeft::

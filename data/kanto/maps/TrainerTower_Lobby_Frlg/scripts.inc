@@ -98,6 +98,7 @@ TrainerTower_Lobby_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TrainerTower_Lobby_EventScript_Receptionist::
@@ -112,6 +113,7 @@ TrainerTower_Lobby_EventScript_ThanksForCompeting::
 	msgbox TrainerTower_Lobby_Text_ThanksForCompeting
 TrainerTower_Lobby_EventScript_ReceptionistEnd::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TrainerTower_Lobby_EventScript_MartClerk::
@@ -122,6 +124,7 @@ TrainerTower_Lobby_EventScript_MartClerk::
 	pokemart TrainerTower_Lobby_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -137,6 +140,7 @@ TrainerTower_Lobby_Mart_Items::
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TrainerTower_Lobby_EventScript_EntryTrigger::

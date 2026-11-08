@@ -12,6 +12,7 @@ SaffronCity_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonCenter_1F_EventScript_Gentleman::
@@ -28,11 +29,13 @@ SaffronCity_PokemonCenter_1F_EventScript_Youngster::
 	goto_if_eq KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SaffronCity_PokemonCenter_1F_EventScript_YoungsterRocketsGone
 	msgbox SaffronCity_PokemonCenter_1F_Text_GreatIfEliteFourCameBeatRockets
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonCenter_1F_EventScript_YoungsterRocketsGone::
 	msgbox SaffronCity_PokemonCenter_1F_Text_TeamRocketTookOff
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonCenter_1F_Text_GrowthRatesDifferBySpecies::

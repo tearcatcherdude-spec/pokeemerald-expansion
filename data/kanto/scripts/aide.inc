@@ -1,16 +1,19 @@
 Aide_EventScript_HaventCaughtEnough::
 	msgbox Aide_Text_HaventCaughtEnoughMonsForItem
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Aide_EventScript_NoRoomForItem::
 	msgbox Aide_Text_DontHaveAnyRoomForItem
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Aide_EventScript_DeclineCheckMons::
 	msgbox Aide_Text_GetEnoughMonsComeBackForItem
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Aide_Text_HaventCaughtEnoughMonsForItem::

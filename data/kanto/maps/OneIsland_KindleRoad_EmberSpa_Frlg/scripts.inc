@@ -23,6 +23,7 @@ OneIsland_KindleRoad_EmberSpa_EventScript_BlackBelt::
 	famechecker FAMECHECKER_BRUNO, 3
 	msgbox OneIsland_KindleRoad_EmberSpa_Text_BrunoVisitsSpaOnOccasion
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_KindleRoad_EmberSpa_EventScript_RockSmashMan::
@@ -34,11 +35,13 @@ OneIsland_KindleRoad_EmberSpa_EventScript_RockSmashMan::
 	setflag KANTO_FLAG_GOT_HM06
 	msgbox OneIsland_KindleRoad_EmberSpa_Text_ExplainHM06
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_KindleRoad_EmberSpa_EventScript_AlreadyGotHM06::
 	msgbox OneIsland_KindleRoad_EmberSpa_Text_ExplainHM06
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_KindleRoad_EmberSpa_EventScript_SpaHeal::

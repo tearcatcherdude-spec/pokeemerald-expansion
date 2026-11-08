@@ -14,6 +14,7 @@ CeladonCity_EventScript_OldMan1::
 	lock
 	msgbox CeladonCity_Text_GymIsGreatFullOfWomen
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_EventScript_Woman::
@@ -36,6 +37,7 @@ CeladonCity_EventScript_FatMan::
 	applymovement LOCALID_CELADON_FAT_MAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_EventScript_Poliwrath::
@@ -49,6 +51,7 @@ CeladonCity_EventScript_Poliwrath::
 	applymovement LOCALID_CELADON_POLIWRATH, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_EventScript_RocketGrunt1::

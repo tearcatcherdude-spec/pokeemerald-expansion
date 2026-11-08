@@ -12,11 +12,13 @@ VermilionCity_PokemonFanClub_EventScript_Chairman::
 	goto_if_eq KANTO_VAR_RESULT, YES, VermilionCity_PokemonFanClub_EventScript_ChairmanStory
 	msgbox VermilionCity_PokemonFanClub_Text_ComeBackToHearStory
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_AlreadyHeardStory::
 	msgbox VermilionCity_PokemonFanClub_Text_DidntComeToSeeAboutMonsAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_ChairmanStory::
@@ -27,11 +29,13 @@ VermilionCity_PokemonFanClub_EventScript_ChairmanStory::
 	giveitem_msg VermilionCity_PokemonFanClub_Text_ReceivedBikeVoucherFromChairman, ITEM_BIKE_VOUCHER, 1, MUS_RG_OBTAIN_KEY_ITEM
 	msgbox VermilionCity_PokemonFanClub_Text_ExplainBikeVoucher
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_NoRoomForBikeVoucher::
 	msgbox VermilionCity_PokemonFanClub_Text_MakeRoomForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_WorkerF::
@@ -40,12 +44,14 @@ VermilionCity_PokemonFanClub_EventScript_WorkerF::
 	goto_if_set KANTO_FLAG_SYS_GAME_CLEAR, VermilionCity_PokemonFanClub_EventScript_WorkerFGameClear
 	msgbox VermilionCity_PokemonFanClub_Text_ChairmanVeryVocalAboutPokemon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_WorkerFGameClear::
 	famechecker FAMECHECKER_DAISY, 1
 	msgbox VermilionCity_PokemonFanClub_Text_ChairmanReallyAdoresHisMons
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_Woman::
@@ -58,6 +64,7 @@ VermilionCity_PokemonFanClub_EventScript_Woman::
 	waitmovement 0
 	setflag SPOKE_TO_WOMAN_LAST
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_WomanSpokeToFatMan::
@@ -67,6 +74,7 @@ VermilionCity_PokemonFanClub_EventScript_WomanSpokeToFatMan::
 	waitmovement 0
 	clearflag SPOKE_TO_FAT_MAN_LAST
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_FatMan::
@@ -79,6 +87,7 @@ VermilionCity_PokemonFanClub_EventScript_FatMan::
 	waitmovement 0
 	setflag SPOKE_TO_FAT_MAN_LAST
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_FatManSpokeToWoman::
@@ -88,6 +97,7 @@ VermilionCity_PokemonFanClub_EventScript_FatManSpokeToWoman::
 	waitmovement 0
 	clearflag SPOKE_TO_WOMAN_LAST
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_Pikachu::
@@ -98,6 +108,7 @@ VermilionCity_PokemonFanClub_EventScript_Pikachu::
 	msgbox VermilionCity_PokemonFanClub_Text_Pikachu
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_Seel::
@@ -108,6 +119,7 @@ VermilionCity_PokemonFanClub_EventScript_Seel::
 	msgbox VermilionCity_PokemonFanClub_Text_Seel
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_PokemonFanClub_EventScript_RulesSign1::

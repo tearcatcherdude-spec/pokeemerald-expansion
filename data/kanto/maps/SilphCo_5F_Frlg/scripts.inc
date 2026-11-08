@@ -14,11 +14,13 @@ SilphCo_5F_EventScript_WorkerM::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_5F_EventScript_WorkerMRocketsGone
 	msgbox SilphCo_5F_Text_RocketsInUproarAboutIntruder
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_5F_EventScript_WorkerMRocketsGone::
 	msgbox SilphCo_5F_Text_YoureOurHeroThankYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_5F_EventScript_PokemonReport1::

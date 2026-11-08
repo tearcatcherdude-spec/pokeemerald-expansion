@@ -97,6 +97,7 @@ FourIsland_House2_EventScript_StickerManAskForBrag::
 FourIsland_House2_EventScript_NothingToBragAbout::
 	msgbox FourIsland_House2_Text_BragAboutSomethingForMe
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_ChooseBrag::
@@ -174,6 +175,7 @@ FourIsland_House2_EventScript_ChooseBragHofEggsLinkWins::
 FourIsland_House2_EventScript_StickerManNothingToBrag::
 	msgbox FourIsland_House2_Text_GiveYouStickerIfYouBrag
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_BragHoF::
@@ -214,11 +216,13 @@ FourIsland_House2_EventScript_BragHoFHighest::
 FourIsland_House2_EventScript_AlreadyBraggedHoF::
 	msgbox FourIsland_House2_Text_ComeBackWithBetterStoryHoF
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_AlreadyBraggedHoFMax::
 	msgbox FourIsland_House2_Text_LivingLegendHoF
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_BraggedHoF::
@@ -229,6 +233,7 @@ FourIsland_House2_EventScript_BraggedHoF::
 	waitfanfare
 	delay 90
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_BragEggs::
@@ -269,11 +274,13 @@ FourIsland_House2_EventScript_BragEggsHighest::
 FourIsland_House2_EventScript_AlreadyBraggedEggs::
 	msgbox FourIsland_House2_Text_ComeBackWithBetterStoryEggs
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_AlreadyBraggedEggsMax::
 	msgbox FourIsland_House2_Text_LivingLegendEggs
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_BraggedEggs::
@@ -284,6 +291,7 @@ FourIsland_House2_EventScript_BraggedEggs::
 	waitfanfare
 	delay 90
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_BragLinkWins::
@@ -324,11 +332,13 @@ FourIsland_House2_EventScript_BragLinkWinsHighest::
 FourIsland_House2_EventScript_AlreadyBraggedLinkWins::
 	msgbox FourIsland_House2_Text_ComeBackWithBetterStoryLinkWins
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_AlreadyBraggedLinkWinsMax::
 	msgbox FourIsland_House2_Text_LivingLegendLinkWins
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_BraggedLinkWins::
@@ -339,8 +349,10 @@ FourIsland_House2_EventScript_BraggedLinkWins::
 	waitfanfare
 	delay 90
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_House2_EventScript_QuitBrag::
 	release
+	call Pip_EventScript_NPCReaction
 	end

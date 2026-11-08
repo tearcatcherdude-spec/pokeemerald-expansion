@@ -186,12 +186,14 @@ CeruleanCity_EventScript_GruntDefeated::
 	fadescreenswapbuffers FADE_FROM_BLACK
 	setflag KANTO_FLAG_GOT_TM28_FROM_ROCKET
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_EventScript_NoRoomForTM28::
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CeruleanCity_Text_MakeRoomForThisCantRun
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_EventScript_GruntTriggerTop::
@@ -231,6 +233,7 @@ CeruleanCity_EventScript_Policeman::
 	applymovement LOCALID_CERULEAN_POLICEMAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_EventScript_LittleBoy::
@@ -239,11 +242,13 @@ CeruleanCity_EventScript_LittleBoy::
 	goto_if_set KANTO_FLAG_GOT_SS_TICKET, CeruleanCity_EventScript_LittleBoySlowbroMoved
 	msgbox CeruleanCity_Text_IfSlowbroWasntThereCouldCutTree
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_EventScript_LittleBoySlowbroMoved::
 	msgbox CeruleanCity_Text_YouCanCutDownSmallTrees
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_EventScript_BaldingMan::
@@ -266,6 +271,7 @@ CeruleanCity_EventScript_Woman::
 	applymovement LOCALID_CERULEAN_WOMAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_EventScript_Lass::
@@ -285,6 +291,7 @@ CeruleanCity_EventScript_Lass::
 	call_if_eq KANTO_VAR_0x8008, 1, CeruleanCity_EventScript_SlowbroFailed2
 	call_if_eq KANTO_VAR_0x8008, 2, CeruleanCity_EventScript_SlowbroFailed3
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_EventScript_SlowbroCommand1::
@@ -320,6 +327,7 @@ CeruleanCity_EventScript_Slowbro::
 	call_if_eq KANTO_VAR_0x8008, 2, CeruleanCity_EventScript_SlowbroText3
 	call_if_eq KANTO_VAR_0x8008, 3, CeruleanCity_EventScript_SlowbroText4
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_EventScript_SlowbroText1::

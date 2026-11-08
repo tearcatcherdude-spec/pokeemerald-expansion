@@ -21,22 +21,26 @@ CeruleanCity_House3_EventScript_Dontae::
 	msgbox Trade_Text_Thanks
 	setflag KANTO_FLAG_DID_ZYNX_TRADE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House3_EventScript_DeclineTrade::
 	msgbox Trade_Text_WellIfYouDontWantTo
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House3_EventScript_NotRequestedMon::
 	bufferspeciesname STR_VAR_1, KANTO_VAR_0x8009
 	msgbox Trade_Text_ThisIsntMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House3_EventScript_AlreadyTraded::
 	msgbox Trade_Text_HasTradedMonGrownStronger
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House3_Text_PleaseTradeWithMyHusband::

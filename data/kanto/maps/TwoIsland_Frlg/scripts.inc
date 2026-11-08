@@ -111,6 +111,7 @@ TwoIsland_EventScript_ShopInitial::
 	pokemart TwoIsland_Items_ShopInitial
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -119,12 +120,14 @@ TwoIsland_Items_ShopInitial::
 	.2byte ITEM_FRESH_WATER
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_EventScript_ShopExpanded1::
 	pokemart TwoIsland_Items_ShopExpanded1
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -135,12 +138,14 @@ TwoIsland_Items_ShopExpanded1::
 	.2byte ITEM_FRESH_WATER
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_EventScript_ShopExpanded2::
 	pokemart TwoIsland_Items_ShopExpanded2
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -153,12 +158,14 @@ TwoIsland_Items_ShopExpanded2::
 	.2byte ITEM_MOOMOO_MILK
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_EventScript_ShopExpanded3::
 	pokemart TwoIsland_Items_ShopExpanded3
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -173,6 +180,7 @@ TwoIsland_Items_ShopExpanded3::
 	.2byte ITEM_LAVA_COOKIE
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_EventScript_Sailor::
@@ -189,6 +197,7 @@ TwoIsland_EventScript_Beauty::
 	famechecker FAMECHECKER_BRUNO, 4
 	msgbox TwoIsland_Text_BrunoCameToIslandWhileBack
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_EventScript_SuperNerd::

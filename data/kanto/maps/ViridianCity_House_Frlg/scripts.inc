@@ -17,6 +17,7 @@ ViridianCity_House_EventScript_Speary::
 	msgbox ViridianCity_House_Text_Speary
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_House_EventScript_NicknameSign::

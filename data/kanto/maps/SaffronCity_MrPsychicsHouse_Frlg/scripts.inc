@@ -12,16 +12,19 @@ SaffronCity_MrPsychicsHouse_EventScript_MrPsychic::
 	msgbox SaffronCity_MrPsychicsHouse_Text_ExplainTM29
 	setflag KANTO_FLAG_GOT_TM29_FROM_MR_PSYCHIC
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_MrPsychicsHouse_EventScript_NoRoomForTM29::
 	msgbox SaffronCity_MrPsychicsHouse_Text_YouveNoRoom
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_MrPsychicsHouse_EventScript_AlreadyGotTM29::
 	msgbox SaffronCity_MrPsychicsHouse_Text_ExplainTM29
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_MrPsychicsHouse_Text_YouWantedThis::

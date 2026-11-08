@@ -19,6 +19,7 @@ SilphCo_11F_EventScript_President::
 	msgbox SilphCo_11F_Text_ThatsOurSecretPrototype
 	setflag KANTO_FLAG_GOT_MASTER_BALL_FROM_SILPH
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_11F_EventScript_PresidentThanksMale::
@@ -32,11 +33,13 @@ SilphCo_11F_EventScript_PresidentThanksFemale::
 SilphCo_11F_EventScript_NoRoomForMasterBall::
 	msgbox SilphCo_11F_Text_YouHaveNoRoomForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_11F_EventScript_AlreadyGotMasterBall::
 	msgbox SilphCo_11F_Text_ThatsOurSecretPrototype
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_11F_EventScript_Secretary::

@@ -34,22 +34,26 @@ FuchsiaCity_House3_EventScript_ForgetMove::
 	waitfanfare
 	msgbox FuchsiaCity_House3_Text_MonHasForgottenMoveCompletely
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_House3_EventScript_CantForgetOnlyMove::
 	special BufferMoveDeleterNicknameAndMove
 	msgbox FuchsiaCity_House3_Text_MonOnlyKnowsOneMove
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_House3_EventScript_CantForgetMoveEgg::
 	msgbox FuchsiaCity_House3_Text_NoEggShouldKnowMoves
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_House3_EventScript_CancelForgetMove::
 	msgbox FuchsiaCity_House3_Text_ComeAgainToForgetOtherMoves
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_House3_Text_WouldYouLikeToForgetMove::

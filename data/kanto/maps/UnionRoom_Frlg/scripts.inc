@@ -33,6 +33,7 @@ UnionRoom_EventScript_Player1_Frlg::
 	setvar KANTO_VAR_RESULT, 1
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UnionRoom_EventScript_Player2_Frlg::
@@ -41,6 +42,7 @@ UnionRoom_EventScript_Player2_Frlg::
 	setvar KANTO_VAR_RESULT, 2
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UnionRoom_EventScript_Player3_Frlg::
@@ -49,6 +51,7 @@ UnionRoom_EventScript_Player3_Frlg::
 	setvar KANTO_VAR_RESULT, 3
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UnionRoom_EventScript_Player4_Frlg::
@@ -57,6 +60,7 @@ UnionRoom_EventScript_Player4_Frlg::
 	setvar KANTO_VAR_RESULT, 4
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UnionRoom_EventScript_Player5_Frlg::
@@ -65,6 +69,7 @@ UnionRoom_EventScript_Player5_Frlg::
 	setvar KANTO_VAR_RESULT, 5
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UnionRoom_EventScript_Player6_Frlg::
@@ -73,6 +78,7 @@ UnionRoom_EventScript_Player6_Frlg::
 	setvar KANTO_VAR_RESULT, 6
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UnionRoom_EventScript_Player7_Frlg::
@@ -81,6 +87,7 @@ UnionRoom_EventScript_Player7_Frlg::
 	setvar KANTO_VAR_RESULT, 7
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UnionRoom_EventScript_Player8_Frlg::
@@ -89,6 +96,7 @@ UnionRoom_EventScript_Player8_Frlg::
 	setvar KANTO_VAR_RESULT, 8
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UnionRoom_EventScript_Attendant_Frlg::
@@ -97,6 +105,7 @@ UnionRoom_EventScript_Attendant_Frlg::
 	setvar KANTO_VAR_RESULT, 9
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UnionRoom_EventScript_Unused_Frlg::

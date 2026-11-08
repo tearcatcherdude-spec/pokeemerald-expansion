@@ -7,11 +7,13 @@ CeruleanCity_House2_EventScript_Hiker::
 	goto_if_set KANTO_FLAG_GOT_TM28_FROM_ROCKET, CeruleanCity_House2_EventScript_HikerGotTM28
 	msgbox CeruleanCity_House2_Text_RocketsStoleTMForDig
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House2_EventScript_HikerGotTM28::
 	msgbox CeruleanCity_House2_Text_TeachDiglettDigWithoutTM
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House2_EventScript_Lass::

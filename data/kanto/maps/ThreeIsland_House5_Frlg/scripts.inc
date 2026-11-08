@@ -7,11 +7,13 @@ ThreeIsland_House5_EventScript_LittleGirl::
 	goto_if_set KANTO_FLAG_RESCUED_LOSTELLE, ThreeIsland_House5_EventScript_LittleGirlLostelleFound
 	msgbox ThreeIsland_House5_Text_ImNotLostelle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_House5_EventScript_LittleGirlLostelleFound::
 	msgbox ThreeIsland_House5_Text_IllGoPlayWithLostelle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_House5_Text_ImNotLostelle::

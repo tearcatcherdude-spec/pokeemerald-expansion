@@ -7,6 +7,7 @@ FuchsiaCity_Gym_EventScript_Koga::
 	goto_if_unset KANTO_FLAG_GOT_TM06_FROM_KOGA, FuchsiaCity_Gym_EventScript_GiveTM06
 	msgbox FuchsiaCity_Gym_Text_KogaPostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_Gym_EventScript_DefeatedKoga::
@@ -26,11 +27,13 @@ FuchsiaCity_Gym_EventScript_GiveTM06::
 	setflag KANTO_FLAG_GOT_TM06_FROM_KOGA
 	msgbox FuchsiaCity_Gym_Text_KogaExplainTM06
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_Gym_EventScript_NoRoomForTM06::
 	msgbox FuchsiaCity_Gym_Text_MakeSpaceForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_Gym_EventScript_Phil::
@@ -70,11 +73,13 @@ FuchsiaCity_Gym_EventScript_GymGuy::
 	goto_if_set KANTO_FLAG_DEFEATED_KOGA, FuchsiaCity_Gym_EventScript_GymGuyPostVictory
 	msgbox FuchsiaCity_Gym_Text_GymGuyAdvice
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_Gym_EventScript_GymGuyPostVictory::
 	msgbox FuchsiaCity_Gym_Text_GymGuyPostVictory
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_Gym_EventScript_GymStatue::

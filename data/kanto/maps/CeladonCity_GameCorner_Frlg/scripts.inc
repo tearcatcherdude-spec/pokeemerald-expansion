@@ -72,6 +72,7 @@ CeladonCity_GameCorner_EventScript_ClerkEnd::
 	hidemoneybox
 	hidecoinsbox
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_GameCorner_EventScript_ClerkDeclineBuy::
@@ -106,6 +107,7 @@ CeladonCity_GameCorner_EventScript_FaceSlotMachine::
 	applymovement KANTO_VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_GameCorner_EventScript_Woman1::
@@ -420,6 +422,7 @@ CeladonCity_GameCorner_Text_DefeatedGrunt::
 	call_if_ne KANTO_VAR_FACING, DIR_WEST, CeladonCity_GameCorner_Text_GruntExit
 	removeobject LOCALID_GAME_CORNER_GRUNT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_GameCorner_Text_GruntExitWest::

@@ -344,6 +344,7 @@ CableClub_EventScript_ConfirmNumberAndRestart_Frlg::
 	special CloseLink  @ Redundant
 	msgbox CableClub_Text_PleaseConfirmNumberAndRestart_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_TradeCenter_Frlg::
@@ -420,42 +421,49 @@ CableClub_EventScript_AbortLinkPlayerNotReady_Frlg::
 	special CloseLink
 	msgbox CableClub_Text_NotSetUpForFarAwayRegion_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_AbortLinkOtherTrainerNotReady_Frlg::
 	special CloseLink
 	msgbox CableClub_Text_OtherTrainerNotReady_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_AbortLinkConnectionError_Frlg::
 	special CloseLink
 	msgbox CableClub_Text_LinkErrorPleaseReset_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_AbortLinkSomeoneNotReady_Frlg::
 	special CloseLink
 	msgbox CableClub_Text_SomeoneIsNotReadyToLink_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_AbortLinkDifferentSelections_Frlg::
 	special CloseLink
 	msgbox CableClub_Text_PlayersMadeDifferentSelections_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_AbortLink_Frlg::
 	special CloseLink
 	msgbox CableClub_Text_PleaseVisitAgain_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_AbortMinigame_Frlg::
 	special CloseLink
 	msgbox CableClub_Text_ComeAgain_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Unused
@@ -468,17 +476,20 @@ CableClub_EventScript_AbortLinkIncorrectNumberOfParticipants_Frlg::
 	special CloseLink
 	msgbox CableClub_Text_IncorrectNumberOfParticipants_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_AbortLinkPlayerHasBadEgg_Frlg::
 	special CloseLink
 	msgbox CableClub_Text_YouHaveAMonThatCantBeTaken_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_WirelessClubAdjustements_Frlg::
 	msgbox Text_WirelessClubUndergoingAdjustments
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_NotReadyYet_Frlg::
@@ -692,7 +703,7 @@ CableClub_EventScript_DoLinkRoomExit_Frlg::
 CableClub_EventScript_UnionRoomAttendant_Frlg::
 	lock
 	faceplayer
-	goto_if_unset KANTO_FLAG_SYS_POKEDEX_GET, CableClub_EventScript_WirelessClubAdjustements_Frlg
+	goto_if_unset FLAG_SYS_POKEDEX_GET, CableClub_EventScript_WirelessClubAdjustements_Frlg
 	specialvar KANTO_VAR_RESULT, IsBadEggInParty
 	goto_if_eq KANTO_VAR_RESULT, TRUE, CableClub_EventScript_AbortLinkPlayerHasBadEgg_Frlg
 	copyvar KANTO_VAR_0x8007, KANTO_VAR_LAST_TALKED
@@ -777,7 +788,7 @@ CableClub_EventScript_UnionRoomAdapterNotConnected_Frlg::
 CableClub_EventScript_WirelessClubAttendant_Frlg::
 	lock
 	faceplayer
-	goto_if_unset KANTO_FLAG_SYS_POKEDEX_GET, CableClub_EventScript_WirelessClubAdjustements_Frlg
+	goto_if_unset FLAG_SYS_POKEDEX_GET, CableClub_EventScript_WirelessClubAdjustements_Frlg
 	msgbox CableClub_Text_AskAboutLinking_Frlg, MSGBOX_YESNO
 	goto_if_eq KANTO_VAR_RESULT, NO, CableClub_EventScript_DontAskAboutLinking_Frlg
 	msgbox CableClub_Text_ExplainWirelessClub_Frlg
@@ -792,7 +803,7 @@ CableClub_EventScript_DontAskAboutLinking_Frlg::
 CableClub_EventScript_DirectCornerAttendant_Frlg::
 	lock
 	faceplayer
-	goto_if_unset KANTO_FLAG_SYS_POKEDEX_GET, CableClub_EventScript_WirelessClubAdjustements_Frlg
+	goto_if_unset FLAG_SYS_POKEDEX_GET, CableClub_EventScript_WirelessClubAdjustements_Frlg
 	specialvar KANTO_VAR_RESULT, IsBadEggInParty
 	goto_if_eq KANTO_VAR_RESULT, TRUE, CableClub_EventScript_AbortLinkPlayerHasBadEgg_Frlg
 	specialvar KANTO_VAR_RESULT, IsWirelessAdapterConnected
@@ -1020,7 +1031,7 @@ CableClub_EventScript_EnterWirelessLinkRoom_Frlg::
 
 CableClub_EventScript_ShowWirelessCommunicationScreen_Frlg::
 	lockall
-	goto_if_unset KANTO_FLAG_SYS_POKEDEX_GET, CableClub_EventScript_NotReadyYet_Frlg
+	goto_if_unset FLAG_SYS_POKEDEX_GET, CableClub_EventScript_NotReadyYet_Frlg
 	specialvar KANTO_VAR_RESULT, IsWirelessAdapterConnected
 	goto_if_eq KANTO_VAR_RESULT, FALSE, CableClub_EventScript_AdapterNotConnected_Frlg
 	fadescreen FADE_TO_BLACK
@@ -1078,16 +1089,19 @@ JoyfulGameCorner_EventScript_InfoMan2_Frlg::
 CableClub_EventScript_PokemonJumpInfo_Frlg::
 	msgbox Text_PokemonJumpInfo_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_DodrioBerryPickingInfo_Frlg::
 	msgbox Text_DodrioBerryPickingInfo_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_MinigameInfoExit_Frlg::
 	msgbox Text_TalkToManToPlay_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 JoyfulGameCorner_EventScript_MinigameAttendant_Frlg::
@@ -1188,6 +1202,7 @@ CableClub_EventScript_EnterMinigame_Frlg::
 CableClub_EventScript_AdapterNotConnectedMinigame_Frlg::
 	msgbox Text_AdapterNotConnectedMinigame_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CableClub_EventScript_NoEligiblePkmn_Frlg::

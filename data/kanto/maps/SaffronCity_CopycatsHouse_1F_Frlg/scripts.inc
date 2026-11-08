@@ -17,6 +17,7 @@ SaffronCity_CopycatsHouse_1F_EventScript_Chansey::
 	msgbox SaffronCity_CopycatsHouse_1F_Text_Chansey
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_CopycatsHouse_1F_Text_DaughterIsSelfCentered::

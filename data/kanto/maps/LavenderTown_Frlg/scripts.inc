@@ -15,11 +15,13 @@ LavenderTown_EventScript_LittleGirl::
 	goto_if_eq KANTO_VAR_RESULT, YES, LavenderTown_EventScript_LittleGirlBelieve
 	msgbox LavenderTown_Text_JustImaginingWhiteHand
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_EventScript_LittleGirlBelieve::
 	msgbox LavenderTown_Text_SoThereAreBelievers
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_EventScript_WorkerM::

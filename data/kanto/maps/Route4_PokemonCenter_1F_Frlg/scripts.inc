@@ -18,6 +18,7 @@ Route4_PokemonCenter_1F_EventScript_Gentleman::
 	lock
 	msgbox Route4_PokemonCenter_1F_Text_TeamRocketAttacksCerulean
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_PokemonCenter_1F_EventScript_MagikarpSalesman::
@@ -93,6 +94,7 @@ Route4_PokemonCenter_1F_EventScript_EndPurchaseMagikarp::
 Route4_PokemonCenter_1F_EventScript_BoughtMagikarp::
 	setflag KANTO_FLAG_BOUGHT_MAGIKARP
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_PokemonCenter_1F_EventScript_PayForMagikarp::
@@ -109,17 +111,20 @@ Route4_PokemonCenter_1F_EventScript_DeclineMagikarp::
 	msgbox Route4_PokemonCenter_1F_Text_OnlyDoingThisAsFavorToYou
 	hidemoneybox
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_PokemonCenter_1F_EventScript_NotEnoughMoney::
 	msgbox Route4_PokemonCenter_1F_Text_YoullNeedMoreMoney
 	hidemoneybox
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_PokemonCenter_1F_EventScript_AlreadyBoughtMagikarp::
 	msgbox Route4_PokemonCenter_1F_Text_IDontGiveRefunds
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_PokemonCenter_1F_EventScript_NoRoomForMagikarp::
@@ -127,6 +132,7 @@ Route4_PokemonCenter_1F_EventScript_NoRoomForMagikarp::
 	msgbox Route4_PokemonCenter_1F_Text_NoRoomForMorePokemon
 	hidemoneybox
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_PokemonCenter_1F_EventScript_Nurse::
@@ -134,6 +140,7 @@ Route4_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_PokemonCenter_1F_EventScript_Youngster::
@@ -144,6 +151,7 @@ Route4_PokemonCenter_1F_EventScript_Newspaper::
 	lock
 	msgbox Route4_PokemonCenter_1F_Text_ItsANewspaper
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_PokemonCenter_1F_Text_CanHaveSixMonsWithYou::

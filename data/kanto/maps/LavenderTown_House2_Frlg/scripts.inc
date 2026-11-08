@@ -19,6 +19,7 @@ LavenderTown_House2_EventScript_ChooseMon::
 LavenderTown_House2_EventScript_DontRateNickname::
 	msgbox LavenderTown_House2_Text_ISeeComeVisitAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_House2_EventScript_CheckCanRateMon::
@@ -38,11 +39,13 @@ LavenderTown_House2_EventScript_CheckCanRateMon::
 LavenderTown_House2_EventScript_CantNicknameEgg::
 	msgbox LavenderTown_House2_Text_ThatIsMerelyAnEgg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_House2_EventScript_CantNicknameTradeMon::
 	msgbox LavenderTown_House2_Text_TrulyImpeccableName
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_House2_EventScript_ChooseNewNickname::
@@ -53,11 +56,13 @@ LavenderTown_House2_EventScript_ChooseNewNickname::
 	goto_if_eq KANTO_VAR_RESULT, TRUE, LavenderTown_House2_EventScript_ChoseNewNickname
 	msgbox LavenderTown_House2_Text_FromNowOnShallBeKnownAsSameName
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_House2_EventScript_ChoseNewNickname::
 	msgbox LavenderTown_House2_Text_FromNowOnShallBeKnownAsName
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_House2_Text_WantMeToRateNicknames::

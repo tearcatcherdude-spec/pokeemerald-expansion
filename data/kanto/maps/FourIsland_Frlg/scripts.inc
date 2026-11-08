@@ -77,6 +77,7 @@ FourIsland_EventScript_DaycareMan::
 	goto_if_eq KANTO_VAR_RESULT, DAYCARE_TWO_MONS, FourIsland_EventScript_CheckOnTwoMons
 	msgbox DayCare_Text_ImDaycareManSpeakToMyWife
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_EventScript_DaycareEggWaiting::
@@ -87,6 +88,7 @@ FourIsland_EventScript_DaycareEggWaiting::
 	msgbox DayCare_Text_IllKeepIt
 	special RejectEggFromDayCare
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_EventScript_DaycareAcceptEgg::
@@ -94,6 +96,7 @@ FourIsland_EventScript_DaycareAcceptEgg::
 	goto_if_ne KANTO_VAR_RESULT, PARTY_SIZE, FourIsland_EventScript_DaycareReceivedEgg
 	msgbox DayCare_Text_YouHaveNoRoomForIt
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_EventScript_DaycareReceivedEgg::
@@ -106,12 +109,14 @@ FourIsland_EventScript_DaycareReceivedEgg::
 	msgbox DayCare_Text_TakeGoodCareOfIt
 	special GiveEggFromDaycare
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_EventScript_CheckOnOneMon::
 	special GetDaycareMonNicknames
 	msgbox DayCare_Text_YourMonIsDoingFine
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_EventScript_CheckOnTwoMons::
@@ -122,6 +127,7 @@ FourIsland_EventScript_CheckOnTwoMons::
 	waitmessage
 	waitbuttonpress
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_EventScript_OldWoman::
@@ -130,12 +136,14 @@ FourIsland_EventScript_OldWoman::
 	goto_if_set KANTO_FLAG_IS_CHAMPION, FourIsland_EventScript_OldWomanLoreleiLeft
 	msgbox FourIsland_Text_LoreleiHasReturned
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_EventScript_OldWomanLoreleiLeft::
 	famechecker FAMECHECKER_LORELEI, 5
 	msgbox FourIsland_Text_LoreleiMetLaprasAsChild
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_EventScript_LittleGirl::
@@ -144,6 +152,7 @@ FourIsland_EventScript_LittleGirl::
 	famechecker FAMECHECKER_LORELEI, 4
 	msgbox FourIsland_Text_LoreleiHasLotsOfStuffedDolls
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_EventScript_FatMan::

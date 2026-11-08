@@ -17,6 +17,7 @@ VermilionCity_Mart_EventScript_Clerk::
 	pokemart VermilionCity_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -30,6 +31,7 @@ VermilionCity_Mart_Items::
 	.2byte ITEM_REPEL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_Mart_Text_TeamRocketAreWickedPeople::

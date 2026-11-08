@@ -28,8 +28,6 @@ extern const u8 SafariZone_EventScript_TimesUp[];
 extern const u8 SafariZone_EventScript_RetirePrompt[];
 extern const u8 SafariZone_EventScript_OutOfBallsMidBattle[];
 extern const u8 SafariZone_EventScript_OutOfBalls[];
-
-
 #if !IS_FRLG
 extern const u8 KantoSafariZone_EventScript_TimesUp[];
 extern const u8 KantoSafariZone_EventScript_RetirePrompt[];
@@ -99,7 +97,7 @@ bool8 SafariZoneTakeStep(void)
     gSafariZoneStepCounter--;
     if (gSafariZoneStepCounter == 0)
     {
-        #if !IS_FRLG
+#if !IS_FRLG
         ScriptContext_SetupScript(IsKantoSafari() ? KantoSafariZone_EventScript_TimesUp : SafariZone_EventScript_TimesUp);
 #else
         ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
@@ -111,7 +109,7 @@ bool8 SafariZoneTakeStep(void)
 
 void SafariZoneRetirePrompt(void)
 {
-    #if !IS_FRLG
+#if !IS_FRLG
         ScriptContext_SetupScript(IsKantoSafari() ? KantoSafariZone_EventScript_RetirePrompt : SafariZone_EventScript_RetirePrompt);
 #else
         ScriptContext_SetupScript(SafariZone_EventScript_RetirePrompt);
@@ -129,7 +127,7 @@ void CB2_EndSafariBattle(void)
     }
     else if (gBattleOutcome == B_OUTCOME_NO_SAFARI_BALLS)
     {
-        #if !IS_FRLG
+#if !IS_FRLG
         RunScriptImmediately(IsKantoSafari() ? KantoSafariZone_EventScript_OutOfBallsMidBattle : SafariZone_EventScript_OutOfBallsMidBattle);
 #else
         RunScriptImmediately(SafariZone_EventScript_OutOfBallsMidBattle);
@@ -140,7 +138,7 @@ void CB2_EndSafariBattle(void)
     }
     else if (gBattleOutcome == B_OUTCOME_CAUGHT)
     {
-        #if !IS_FRLG
+#if !IS_FRLG
         ScriptContext_SetupScript(IsKantoSafari() ? KantoSafariZone_EventScript_OutOfBalls : SafariZone_EventScript_OutOfBalls);
 #else
         ScriptContext_SetupScript(SafariZone_EventScript_OutOfBalls);

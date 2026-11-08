@@ -131,6 +131,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirl::
 	goto_if_eq KANTO_VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_WasYourFanNotAnymore
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlPlayersFan::
@@ -138,21 +139,25 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlPlayersFan::
 	goto_if_eq KANTO_VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlOnlyFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_AlwaysCheerForYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlOnlyFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_IllAlwaysBelieveInYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlOnlyNonFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_EveryonesYourFanButICantBe
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlPlayerNotChampion::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_TrainersCoolWhenBattling
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirl::
@@ -167,6 +172,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirl::
 	goto_if_eq KANTO_VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_WantToBeLikeSabrina
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlPlayersFan::
@@ -174,21 +180,25 @@ SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlPlayersFan::
 	goto_if_eq KANTO_VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlOnlyFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_WantToBeLikeYouOneDay
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlOnlyFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_EveryoneButMeStoppedBeingYourFan
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlOnlyNonFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_WontStopBeingSabrinasFan
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlPlayerNotChampion::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_CanIBecomeCoolTrainerOneDay
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_Youngster::
@@ -203,6 +213,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Youngster::
 	goto_if_eq KANTO_VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_BrocksMyHero
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterPlayersFan::
@@ -210,21 +221,25 @@ SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterPlayersFan::
 	goto_if_eq KANTO_VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterOnlyFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_CanYouAutographShorts
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterOnlyFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_CountingOnYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterOnlyNonFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_BrocksFanToBitterEnd
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterPlayerNotChampion::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_BrocksLastWordOnCool
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_Gentleman::
@@ -239,6 +254,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Gentleman::
 	goto_if_eq KANTO_VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_HmmAndYouAre
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayersFan::
@@ -246,21 +262,25 @@ SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayersFan::
 	goto_if_eq KANTO_VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_HadPleasureOfWatchingYouBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_NeverSeenTrainerOfYourMagnificence
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyNonFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_YouveStillAWaysToGo
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayerNotChampion::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_YoullBeTalkedAboutIfYouKeepWinning
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_Woman::
@@ -274,6 +294,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Woman::
 	goto_if_eq KANTO_VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_TrainerHasBeenOnFire
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_WomanPlayersFan::
@@ -281,16 +302,19 @@ SaffronCity_PokemonTrainerFanClub_EventScript_WomanPlayersFan::
 	goto_if_eq KANTO_VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_AdoreWayYouBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImYourNumberOneFan
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyNonFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_EveryoneTalksAboutYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_Rocker::
@@ -304,6 +328,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Rocker::
 	goto_if_eq KANTO_VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_LoveWayTrainerTalks
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_RockerPlayersFan::
@@ -311,16 +336,19 @@ SaffronCity_PokemonTrainerFanClub_EventScript_RockerPlayersFan::
 	goto_if_eq KANTO_VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_TheWayYouBattleIsCool
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImOnlyOneLeftOfYourFans
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyNonFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImLoneTrainerFan
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_Beauty::
@@ -334,6 +362,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Beauty::
 	goto_if_eq KANTO_VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_WhyCantOthersSeeMastersDignity
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BeautyPlayersFan::
@@ -341,16 +370,19 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BeautyPlayersFan::
 	goto_if_eq KANTO_VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_YouReallyAreAmazing
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_ImYourOnlyFan
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyNonFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_BelieveInMasterWithAllMyHeart
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BlackBelt::
@@ -364,6 +396,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BlackBelt::
 	goto_if_eq KANTO_VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_OnlyMasterHasMyRespect
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltPlayersFan::
@@ -371,16 +404,19 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltPlayersFan::
 	goto_if_eq KANTO_VAR_RESULT, 1, SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_YourBattleStyleIsEducational
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_WontStopBeingYourFan
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_NeverBeFanOfAnyoneButMaster
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_PokemonTrainerFanClub_Text_HuhYou::

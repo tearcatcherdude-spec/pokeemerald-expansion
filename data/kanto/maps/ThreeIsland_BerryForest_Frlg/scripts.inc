@@ -37,6 +37,7 @@ ThreeIsland_BerryForest_EventScript_Lostelle::
 	warp MAP_KANTO_TWO_ISLAND_JOYFUL_GAME_CORNER, 6, 6
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_BerryForest_EventScript_NoRoomForBerry::

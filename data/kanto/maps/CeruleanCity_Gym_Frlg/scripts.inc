@@ -7,6 +7,7 @@ CeruleanCity_Gym_EventScript_Misty::
 	goto_if_unset KANTO_FLAG_GOT_TM03_FROM_MISTY, CeruleanCity_Gym_EventScript_GiveTM03
 	msgbox CeruleanCity_Gym_Text_ExplainTM03
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_Gym_EventScript_MistyDefeated::
@@ -26,11 +27,13 @@ CeruleanCity_Gym_EventScript_GiveTM03::
 	setflag KANTO_FLAG_GOT_TM03_FROM_MISTY
 	msgbox CeruleanCity_Gym_Text_ExplainTM03
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_Gym_EventScript_NoRoomForTM03::
 	msgbox CeruleanCity_Gym_Text_BetterMakeRoomForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_Gym_EventScript_Diana::
@@ -50,11 +53,13 @@ CeruleanCity_Gym_EventScript_GymGuy::
 	goto_if_set KANTO_FLAG_DEFEATED_MISTY, CeruleanCity_Gym_EventScript_GymGuyPostVictory
 	msgbox CeruleanCity_Gym_Text_GymGuyAdvice
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_Gym_EventScript_GymGuyPostVictory::
 	msgbox CeruleanCity_Gym_Text_WeMakePrettyGoodTeam
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_Gym_EventScript_GymStatue::

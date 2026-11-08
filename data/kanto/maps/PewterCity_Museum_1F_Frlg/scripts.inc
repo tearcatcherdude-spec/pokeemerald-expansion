@@ -9,6 +9,7 @@ PewterCity_Museum_1F_EventScript_Scientist1::
 	goto_if_eq KANTO_VAR_FACING, DIR_NORTH, PewterCity_Museum_1F_EventScript_Scientist1BehindCounter
 	msgbox PewterCity_Museum_1F_Text_PleaseEnjoyYourself
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Museum_1F_EventScript_Scientist1BehindCounter::
@@ -22,6 +23,7 @@ PewterCity_Museum_1F_EventScript_AmberHasGeneticMatter::
 	applymovement LOCALID_MUSEUM_SCIENTIST1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Museum_1F_EventScript_ExplainAmber::
@@ -29,6 +31,7 @@ PewterCity_Museum_1F_EventScript_ExplainAmber::
 	applymovement LOCALID_MUSEUM_SCIENTIST1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Museum_1F_EventScript_EntranceTriggerLeft::
@@ -150,16 +153,19 @@ PewterCity_Museum_1F_EventScript_OldAmberScientist::
 	removeobject LOCALID_OLD_AMBER
 	giveitem_msg PewterCity_Museum_1F_Text_ReceivedOldAmberFromMan, ITEM_OLD_AMBER, 1, MUS_RG_OBTAIN_KEY_ITEM
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Museum_1F_EventScript_NoRoomForOldAmber::
 	msgbox PewterCity_Museum_1F_Text_DontHaveSpaceForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Museum_1F_EventScript_AlreadyGotOldAmber::
 	msgbox PewterCity_Museum_1F_Text_GetOldAmberChecked
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Museum_1F_EventScript_OldAmber::

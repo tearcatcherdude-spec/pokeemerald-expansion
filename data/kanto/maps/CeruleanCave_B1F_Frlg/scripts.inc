@@ -42,6 +42,7 @@ CeruleanCave_B1F_EventScript_Mewtwo::
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, CeruleanCave_B1F_EventScript_RanFromMewtwo
 	setflag KANTO_FLAG_FOUGHT_MEWTWO
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCave_B1F_EventScript_DefeatedMewtwo::

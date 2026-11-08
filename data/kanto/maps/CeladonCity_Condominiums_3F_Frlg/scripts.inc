@@ -20,6 +20,7 @@ CeladonCity_Condominiums_3F_EventScript_Designer::
 	goto_if_eq KANTO_VAR_RESULT, TRUE, CeladonCity_Condominiums_3F_EventScript_CompletedPokedex
 	msgbox CeladonCity_Condominiums_3F_Text_ImGameDesignerShowMeFinishedPokedex
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_3F_EventScript_CompletedPokedex::
@@ -32,6 +33,7 @@ CeladonCity_Condominiums_3F_EventScript_ShowDiploma::
 	delay 60
 	special Special_ShowDiploma
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_3F_EventScript_DevelopmentRoomSign::

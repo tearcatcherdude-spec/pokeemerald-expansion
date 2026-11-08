@@ -12,6 +12,7 @@ FourIsland_PokemonDayCare_EventScript_DaycareWoman::
 	goto_if_eq KANTO_VAR_RESULT, YES, FourIsland_PokemonDayCare_GiveMonToRaise
 	msgbox DayCare_Text_FineThenComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_PokemonDayCare_GiveMonToRaise::
@@ -34,11 +35,13 @@ FourIsland_PokemonDayCare_GiveMonToRaise::
 	specialvar KANTO_VAR_RESULT, GetDaycareState
 	goto_if_eq KANTO_VAR_RESULT, DAYCARE_ONE_MON, FourIsland_PokemonDayCare_CanRaiseOneMore
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_PokemonDayCare_ComeAgain::
 	msgbox DayCare_Text_ComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_PokemonDayCare_CanRaiseOneMore::
@@ -50,16 +53,19 @@ FourIsland_PokemonDayCare_CanRaiseOneMore::
 FourIsland_PokemonDayCare_OnlyOneMonInParty::
 	msgbox DayCare_Text_YouHaveJustOneMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_PokemonDayCare_OnlyOneAliveMonInParty::
 	msgbox DayCare_Text_WhatWillYouBattleWith
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_PokemonDayCare_EggWaiting::
 	msgbox DayCare_Text_HusbandWasLookingForYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_PokemonDayCare_MonHasGrownXLevels::
@@ -106,6 +112,7 @@ FourIsland_PokemonDayCare_CheckEnoughMoney::
 	goto_if_eq KANTO_VAR_RESULT, TRUE, FourIsland_PokemonDayCare_RetrieveMon
 	msgbox DayCare_Text_NotEnoughMoney
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_PokemonDayCare_RetrieveMon::
@@ -135,6 +142,7 @@ FourIsland_PokemonDayCare_AskRetrieveOtherMon::
 FourIsland_PokemonDayCare_NoRoomInParty::
 	msgbox DayCare_Text_YourPartyIsFull
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_PokemonDayCare_Movement_RetrieveMon::
@@ -173,6 +181,7 @@ FourIsland_PokemonDayCare_TwoMonsInDaycare::
 	goto_if_eq KANTO_VAR_RESULT, YES, FourIsland_PokemonDayCare_TryRetrieveMon
 	msgbox DayCare_Text_ComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Unused
@@ -184,4 +193,5 @@ FourIsland_PokemonDayCare_EventScript_UnusedRetrieveMon::
 	msgbox DayCare_Text_HeresYourMon
 	msgbox DayCare_Text_ComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end

@@ -10,16 +10,19 @@ Route24_EventScript_Rocket::
 	goto_if_eq KANTO_VAR_RESULT, FALSE, Route24_EventScript_NoRoomForNugget
 	call Route24_EventScript_BattleRocket
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route24_EventScript_NoRoomForNugget::
 	msgbox Route24_Text_YouDontHaveAnyRoom
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route24_EventScript_RocketPostBattle::
 	msgbox Route24_Text_YoudBecomeTopRocketLeader
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route24_EventScript_RocketTriggerLeft::
@@ -76,6 +79,7 @@ Route24_EventScript_NoRoomForNuggetTrigger::
 	waitmovement 0
 	call_if_eq VAR_TEMP_1, 0, Route24_EventScript_RocketWalkBackToPos
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route24_EventScript_RocketWalkBackToPos::

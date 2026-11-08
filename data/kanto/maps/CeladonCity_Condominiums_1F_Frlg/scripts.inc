@@ -13,11 +13,13 @@ CeladonCity_Condominiums_1F_EventScript_TeaWoman::
 	goto_if_eq KANTO_VAR_RESULT, FALSE, EventScript_BagIsFull
 	msgbox CeladonCity_Condominiums_1F_Text_NothingBeatsThirstLikeTea
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_1F_EventScript_TeaWomanAfterTea::
 	msgbox CeladonCity_Condominiums_1F_Text_MyDearMonsKeepMeCompany
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_1F_EventScript_TeaWomanMentionDaisy::
@@ -25,6 +27,7 @@ CeladonCity_Condominiums_1F_EventScript_TeaWomanMentionDaisy::
 	setflag KANTO_FLAG_TALKED_TO_TEA_LADY_AFTER_HOF
 	msgbox CeladonCity_Condominiums_1F_Text_DaisyComesToBuyTea
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_1F_EventScript_Meowth::
@@ -35,6 +38,7 @@ CeladonCity_Condominiums_1F_EventScript_Meowth::
 	msgbox CeladonCity_Condominiums_1F_Text_Meowth
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_1F_EventScript_Clefairy::
@@ -45,6 +49,7 @@ CeladonCity_Condominiums_1F_EventScript_Clefairy::
 	msgbox CeladonCity_Condominiums_1F_Text_Clefairy
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_1F_EventScript_Nidoran::
@@ -55,6 +60,7 @@ CeladonCity_Condominiums_1F_EventScript_Nidoran::
 	msgbox CeladonCity_Condominiums_1F_Text_Nidoran
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_Condominiums_1F_EventScript_SuiteSign::

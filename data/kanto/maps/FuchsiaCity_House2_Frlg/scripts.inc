@@ -9,11 +9,13 @@ FuchsiaCity_House2_EventScript_FishingGurusBrother::
 	goto_if_eq KANTO_VAR_RESULT, YES, FuchsiaCity_House2_EventScript_GiveGoodRod
 	msgbox FuchsiaCity_House2_Text_OhThatsDisappointing
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_House2_EventScript_AlreadyGotGoodRod::
 	msgbox FuchsiaCity_House2_Text_HowAreTheFishBiting
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_House2_EventScript_GiveGoodRod::
@@ -24,11 +26,13 @@ FuchsiaCity_House2_EventScript_GiveGoodRod::
 	msgbox FuchsiaCity_House2_Text_GoodRodCanCatchBetterMons
 	setflag KANTO_FLAG_GOT_GOOD_ROD
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_House2_EventScript_NoRoomForGoodRod::
 	msgbox FuchsiaCity_House2_Text_YouHaveNoRoomForGift
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_House2_Text_DoYouLikeToFish::

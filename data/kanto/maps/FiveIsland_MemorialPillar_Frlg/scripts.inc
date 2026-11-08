@@ -15,11 +15,13 @@ FiveIsland_MemorialPillar_EventScript_MemorialMan::
 	waitmovement 0
 	msgbox FiveIsland_MemorialPillar_Text_ThisIsWhereIBuriedMyOnix
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_MemorialPillar_EventScript_AlreadyGotTM42::
 	msgbox FiveIsland_MemorialPillar_Text_ScrubScrubTectonix
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_MemorialPillar_EventScript_ReturnedForTM42::
@@ -28,6 +30,7 @@ FiveIsland_MemorialPillar_EventScript_ReturnedForTM42::
 	goto_if_eq KANTO_VAR_RESULT, FALSE, FiveIsland_MemorialPillar_EventScript_NoRoomForTM42
 	call FiveIsland_MemorialPillar_EventScript_ReceivedTM42
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_MemorialPillar_EventScript_Memorial::

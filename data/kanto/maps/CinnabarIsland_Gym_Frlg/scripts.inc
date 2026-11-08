@@ -51,6 +51,7 @@ CinnabarIsland_Gym_EventScript_Blaine::
 	goto_if_unset KANTO_FLAG_GOT_TM38_FROM_BLAINE, CinnabarIsland_Gym_EventScript_GiveTM38
 	msgbox CinnabarIsland_Gym_Text_BlainePostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_DefeatedBlaine::
@@ -72,11 +73,13 @@ CinnabarIsland_Gym_EventScript_GiveTM38::
 	setflag KANTO_FLAG_GOT_TM38_FROM_BLAINE
 	msgbox CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_NoRoomForTM38::
 	msgbox CinnabarIsland_Gym_Text_MakeSpaceForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_Erik::
@@ -92,6 +95,7 @@ CinnabarIsland_Gym_EventScript_Avery::
 CinnabarIsland_Gym_EventScript_DefeatedAvery::
 	call_if_unset KANTO_FLAG_CINNABAR_GYM_QUIZ_2, CinnabarIsland_Gym_EventScript_Quiz2CompleteTrainer
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz2CompleteTrainer::
@@ -107,6 +111,7 @@ CinnabarIsland_Gym_EventScript_Derek::
 CinnabarIsland_Gym_EventScript_DefeatedDerek::
 	call_if_unset KANTO_FLAG_CINNABAR_GYM_QUIZ_4, CinnabarIsland_Gym_EventScript_Quiz4CompleteTrainer
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz4CompleteTrainer::
@@ -121,6 +126,7 @@ CinnabarIsland_Gym_EventScript_Zac::
 CinnabarIsland_Gym_EventScript_DefeatedZac::
 	call_if_unset KANTO_FLAG_CINNABAR_GYM_QUIZ_6, CinnabarIsland_Gym_EventScript_Quiz6CompleteTrainer
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz6CompleteTrainer::
@@ -135,6 +141,7 @@ CinnabarIsland_Gym_EventScript_Quinn::
 CinnabarIsland_Gym_EventScript_DefeatedQuinn::
 	call_if_unset KANTO_FLAG_CINNABAR_GYM_QUIZ_1, CinnabarIsland_Gym_EventScript_Quiz1CompleteTrainer
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz1CompleteTrainer::
@@ -149,6 +156,7 @@ CinnabarIsland_Gym_EventScript_Ramon::
 CinnabarIsland_Gym_EventScript_DefeatedRamon::
 	call_if_unset KANTO_FLAG_CINNABAR_GYM_QUIZ_3, CinnabarIsland_Gym_EventScript_Quiz3CompleteTrainer
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz3CompleteTrainer::
@@ -163,6 +171,7 @@ CinnabarIsland_Gym_EventScript_Dusty::
 CinnabarIsland_Gym_EventScript_DefeatedDusty::
 	call_if_unset KANTO_FLAG_CINNABAR_GYM_QUIZ_5, CinnabarIsland_Gym_EventScript_Quiz5CompleteTrainer
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz5CompleteTrainer::
@@ -175,11 +184,13 @@ CinnabarIsland_Gym_EventScript_GymGuy::
 	goto_if_set KANTO_FLAG_DEFEATED_BLAINE, CinnabarIsland_Gym_EventScript_GymGuyPostVictory
 	msgbox CinnabarIsland_Gym_Text_GymGuyAdvice
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_GymGuyPostVictory::
 	msgbox CinnabarIsland_Gym_Text_GymGuyPostVictory
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Gym_EventScript_GymStatue::

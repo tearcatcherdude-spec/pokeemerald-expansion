@@ -38,11 +38,13 @@ Route15_WestEntrance_2F_EventScript_Aide::
 	setflag KANTO_FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE
 	msgbox Route15_WestEntrance_2F_Text_ExplainExpShare
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route15_WestEntrance_2F_EventScript_AlreadyGotExpShare::
 	msgbox Route15_WestEntrance_2F_Text_ExplainExpShare
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route15_WestEntrance_2F_EventScript_GetAideRequestInfo::

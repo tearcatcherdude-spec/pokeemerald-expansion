@@ -7,6 +7,7 @@ PewterCity_Gym_EventScript_Brock::
 	goto_if_unset KANTO_FLAG_GOT_TM39_FROM_BROCK, PewterCity_Gym_EventScript_GiveTM39
 	msgbox PewterCity_Gym_Text_BrockPostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Gym_EventScript_DefeatedBrock::
@@ -28,11 +29,13 @@ PewterCity_Gym_EventScript_GiveTM39::
 	setflag KANTO_FLAG_GOT_TM39_FROM_BROCK
 	msgbox PewterCity_Gym_Text_ExplainTM39
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Gym_EventScript_NoRoomForTM39::
 	msgbox PewterCity_Gym_Text_DontHaveRoomForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Gym_EventScript_Liam::
@@ -52,6 +55,7 @@ PewterCity_Gym_EventScript_GymGuy::
 PewterCity_Gym_EventScript_GymGuyPostVictory::
 	msgbox PewterCity_Gym_Text_YoureChampMaterial
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Gym_EventScript_GymGuyTakeMeToTop::
@@ -67,6 +71,7 @@ PewterCity_Gym_EventScript_GymGuyDontTakeMeToTop::
 PewterCity_Gym_EventScript_GymGuyAdvice::
 	msgbox PewterCity_Gym_Text_TryDifferentPartyOrders
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Gym_EventScript_GymStatue::

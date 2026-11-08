@@ -172,6 +172,7 @@ SeafoamIslands_B4F_EventScript_Articuno::
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SeafoamIslands_B4F_EventScript_RanFromArticuno
 	setflag KANTO_FLAG_FOUGHT_ARTICUNO
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SeafoamIslands_B4F_EventScript_DefeatedArticuno::

@@ -34,6 +34,7 @@ RocketHideout_B4F_EventScript_Giovanni::
 	famechecker FAMECHECKER_GIOVANNI, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	fadescreen FADE_FROM_BLACK
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 RocketHideout_B4F_EventScript_SilphScope::
@@ -43,12 +44,14 @@ RocketHideout_B4F_EventScript_SilphScope::
 	giveitem ITEM_SILPH_SCOPE
 	goto_if_eq KANTO_VAR_RESULT, FALSE, EventScript_BagIsFull
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 RocketHideout_B4F_EventScript_Grunt1::
 	trainerbattle_single KANTO_TRAINER_TEAM_ROCKET_GRUNT_18, RocketHideout_B4F_Text_Grunt1Intro, RocketHideout_B4F_Text_Grunt1Defeat, RocketHideout_B4F_EventScript_DefeatedGrunt1
 	msgbox RocketHideout_B4F_Text_Grunt1PostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 RocketHideout_B4F_EventScript_DefeatedGrunt1::
@@ -56,6 +59,7 @@ RocketHideout_B4F_EventScript_DefeatedGrunt1::
 	addobject LOCALID_LIFT_KEY
 	clearflag KANTO_FLAG_HIDE_LIFT_KEY
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 RocketHideout_B4F_EventScript_LiftKey::
@@ -66,6 +70,7 @@ RocketHideout_B4F_EventScript_LiftKey::
 	giveitem ITEM_LIFT_KEY
 	goto_if_eq KANTO_VAR_RESULT, FALSE, EventScript_BagIsFull
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 RocketHideout_B4F_EventScript_Grunt2::
@@ -80,6 +85,7 @@ RocketHideout_B4F_EventScript_DefeatedGrunt2::
 	call_if_eq NUM_DOOR_GRUNTS_DEFEATED, 2, RocketHideout_B4F_EventScript_RemoveBarrier
 	call_if_eq NUM_DOOR_GRUNTS_DEFEATED, 2, RocketHideout_B4F_EventScript_DrawMapForBarrierRemoval
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 RocketHideout_B4F_EventScript_Grunt3::
@@ -94,6 +100,7 @@ RocketHideout_B4F_EventScript_DefeatedGrunt3::
 	call_if_eq NUM_DOOR_GRUNTS_DEFEATED, 2, RocketHideout_B4F_EventScript_RemoveBarrier
 	call_if_eq NUM_DOOR_GRUNTS_DEFEATED, 2, RocketHideout_B4F_EventScript_DrawMapForBarrierRemoval
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 RocketHideout_B4F_EventScript_DrawMapForBarrierRemoval::

@@ -123,6 +123,7 @@ SilphCo_7F_EventScript_LaprasGuy::
 	goto_if_eq KANTO_VAR_RESULT, 1, SilphCo_7F_EventScript_ReceiveLaprasPC
 	goto_if_eq KANTO_VAR_RESULT, 2, Common_EventScript_NoMoreRoomForPokemon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_7F_EventScript_ReceiveLaprasParty::
@@ -162,11 +163,13 @@ SilphCo_7F_EventScript_EndReceiveLapras::
 	msgbox SilphCo_7F_Text_ExplainLapras
 	setflag KANTO_FLAG_GOT_LAPRAS_FROM_SILPH
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_7F_EventScript_AlreadyGotLapras::
 	msgbox SilphCo_7F_Text_RocketBossWentToBoardroom
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_7F_EventScript_WorkerM1::
@@ -175,11 +178,13 @@ SilphCo_7F_EventScript_WorkerM1::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_7F_EventScript_WorkerM1RocketsGone
 	msgbox SilphCo_7F_Text_RocketsAfterMasterBall
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_7F_EventScript_WorkerM1RocketsGone::
 	msgbox SilphCo_7F_Text_CanceledMasterBallProject
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_7F_EventScript_WorkerM2::
@@ -188,11 +193,13 @@ SilphCo_7F_EventScript_WorkerM2::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_7F_EventScript_WorkerM2RocketsGone
 	msgbox SilphCo_7F_Text_BadIfTeamRocketTookOver
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_7F_EventScript_WorkerM2RocketsGone::
 	msgbox SilphCo_7F_Text_WowYouChasedOffTeamRocket
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_7F_EventScript_WorkerF::
@@ -201,11 +208,13 @@ SilphCo_7F_EventScript_WorkerF::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_7F_EventScript_WorkerFRocketsGone
 	msgbox SilphCo_7F_Text_ReallyDangerousHere
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_7F_EventScript_WorkerFRocketsGone::
 	msgbox SilphCo_7F_Text_ThankYouSoMuch
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_7F_EventScript_FloorSign::

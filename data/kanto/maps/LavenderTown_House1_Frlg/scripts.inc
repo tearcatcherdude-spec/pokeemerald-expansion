@@ -7,11 +7,13 @@ LavenderTown_House1_EventScript_CooltrainerF::
 	goto_if_set KANTO_FLAG_RESCUED_MR_FUJI, LavenderTown_House1_EventScript_CooltrainerFGhostGone
 	msgbox LavenderTown_House1_Text_RocketsKilledCubonesMother
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_House1_EventScript_CooltrainerFGhostGone::
 	msgbox LavenderTown_House1_Text_GhostOfPokemonTowerIsGone
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_House1_EventScript_Cubone::
@@ -22,6 +24,7 @@ LavenderTown_House1_EventScript_Cubone::
 	msgbox LavenderTown_House1_Text_Cubone
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_House1_Text_Cubone::

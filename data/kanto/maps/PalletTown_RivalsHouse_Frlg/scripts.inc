@@ -32,11 +32,13 @@ PalletTown_RivalsHouse_EventScript_Daisy::
 	applymovement LOCALID_DAISY, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_HeardBattledRival::
 	msgbox PalletTown_RivalsHouse_Text_HeardYouBattledRival
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_GroomMon::
@@ -60,16 +62,19 @@ PalletTown_RivalsHouse_EventScript_GroomMon::
 	special BufferMonNickname
 	msgbox PalletTown_RivalsHouse_Text_ThereYouGoAllDone
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_CantGroomEgg::
 	msgbox PalletTown_RivalsHouse_Text_CantGroomAnEgg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_DeclineGrooming::
 	msgbox PalletTown_RivalsHouse_Text_DontNeedAnyGrooming
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_RateMonFriendship::
@@ -88,41 +93,49 @@ PalletTown_RivalsHouse_EventScript_RateMonFriendship::
 PalletTown_RivalsHouse_EventScript_MonFriendshipLowest::
 	msgbox PalletTown_RivalsHouse_Text_WhyWouldMonHateYouSoMuch
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_MonFriendshipLower::
 	msgbox PalletTown_RivalsHouse_Text_DontLikeWayItGlaresAtYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_MonFriendshipLow::
 	msgbox PalletTown_RivalsHouse_Text_NotFamiliarWithYouYet
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_MonFriendshipMid::
 	msgbox PalletTown_RivalsHouse_Text_ItsWarmingUpToYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_MonFriendshipHigh::
 	msgbox PalletTown_RivalsHouse_Text_ItsQuiteFriendly
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_MonFriendshipHigher::
 	msgbox PalletTown_RivalsHouse_Text_ItLooksVeryHappy
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_MonFriendshipHighest::
 	msgbox PalletTown_RivalsHouse_Text_CouldntLoveYouMore
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_PleaseGiveMonsRest::
 	msgbox PalletTown_RivalsHouse_Text_PleaseGiveMonsRest
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_GiveTownMap::
@@ -140,16 +153,19 @@ PalletTown_RivalsHouse_EventScript_GiveTownMap::
 	delay 12
 	giveitem_msg PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy, ITEM_TOWN_MAP, 1, MUS_RG_OBTAIN_KEY_ITEM
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_NoRoomForTownMap::
 	msgbox PalletTown_RivalsHouse_Text_DontHaveSpaceForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_ExplainTownMap::
 	msgbox PalletTown_RivalsHouse_Text_ExplainTownMap
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_RivalsHouse_EventScript_TownMap::

@@ -21,22 +21,26 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_Garett::
 	msgbox Trade_Text_HeyThanks
 	setflag KANTO_FLAG_DID_SEELOR_TRADE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DeclineTrade::
 	msgbox Trade_Text_AwwOhWell
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_NotRequestedMon::
 	bufferspeciesname STR_VAR_1, KANTO_VAR_0x8009
 	msgbox Trade_Text_WhatThatsNoMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_AlreadyTraded::
 	msgbox Trade_Text_IsntMyOldMonGreat
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_FossilScientist::
@@ -82,6 +86,7 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_SetResultFalse::
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DontShowFossil::
 	msgbox CinnabarIsland_PokemonLab_ExperimentRoom_Text_NoIsTooBad
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ChooseFossilHelix::
@@ -148,6 +153,7 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowHelixFossil::
 	setvar KANTO_VAR_MAP_SCENE_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM_REVIVE_STATE, 1
 	setvar KANTO_VAR_MAP_SCENE_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM_WHICH_FOSSIL, HELIX_FOSSIL
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowDomeFossil::
@@ -162,6 +168,7 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowDomeFossil::
 	setvar KANTO_VAR_MAP_SCENE_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM_REVIVE_STATE, 1
 	setvar KANTO_VAR_MAP_SCENE_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM_WHICH_FOSSIL, DOME_FOSSIL
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowOldAmber::
@@ -176,16 +183,19 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_ShowOldAmber::
 	setvar KANTO_VAR_MAP_SCENE_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM_REVIVE_STATE, 1
 	setvar KANTO_VAR_MAP_SCENE_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM_WHICH_FOSSIL, OLD_AMBER
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_DeclineReviveFossil::
 	msgbox CinnabarIsland_PokemonLab_ExperimentRoom_Text_YouComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_FossilStillReviving::
 	msgbox CinnabarIsland_PokemonLab_ExperimentRoom_Text_TakesTimeGoForWalk
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_GiveRevivedMon::
@@ -261,11 +271,13 @@ CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_MonSentToPC::
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_EndGiveMon::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_RevivedAllFossils::
 	msgbox CinnabarIsland_PokemonLab_ExperimentRoom_Text_YouComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_CheckRevivedMtMoonFossil::

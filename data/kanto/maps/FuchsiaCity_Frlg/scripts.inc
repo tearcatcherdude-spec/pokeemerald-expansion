@@ -38,6 +38,7 @@ FuchsiaCity_EventScript_Lass::
 	famechecker FAMECHECKER_KOGA, 3
 	msgbox FuchsiaCity_Text_MyFatherIsGymLeader
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_EventScript_CitySign::

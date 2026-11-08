@@ -21,6 +21,7 @@ CeladonCity_DepartmentStore_4F_EventScript_Clerk::
 	pokemart CeladonCity_DepartmentStore_4F_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -33,6 +34,7 @@ CeladonCity_DepartmentStore_4F_Items::
 	.2byte ITEM_LEAF_STONE
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_4F_Text_GettingPokeDollAsPresent::

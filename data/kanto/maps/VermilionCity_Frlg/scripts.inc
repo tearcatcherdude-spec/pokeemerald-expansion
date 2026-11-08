@@ -39,11 +39,13 @@ VermilionCity_EventScript_OldMan1::
 	goto_if_eq KANTO_VAR_MAP_SCENE_VERMILION_CITY, 3, VermilionCity_EventScript_OldMan1SSAnneLeft
 	msgbox VermilionCity_Text_DidYouSeeSSAnneInHarbor
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_EventScript_OldMan1SSAnneLeft::
 	msgbox VermilionCity_Text_SSAnneHasDepartedForYear
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_EventScript_FerrySailor::
@@ -52,6 +54,7 @@ VermilionCity_EventScript_FerrySailor::
 	goto_if_eq KANTO_VAR_MAP_SCENE_VERMILION_CITY, 3, VermilionCity_EventScript_CheckSeagallopPresent
 	msgbox VermilionCity_Text_WelcomeToTheSSAnne
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_EventScript_CheckHasMysticTicket::
@@ -74,6 +77,7 @@ VermilionCity_EventScript_CheckSeagallopPresent::
 	goto_if_ge KANTO_VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 1, VermilionCity_EventScript_ChooseSeagallopDestTriPass
 	msgbox VermilionCity_Text_TheShipSetSail
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_EventScript_ChooseSeagallopDestRainbowPass::
@@ -167,6 +171,7 @@ VermilionCity_EventScript_ChooseSeagallopDestTriPass::
 @ Unreachable
 Vermilion_EventScript_Unused::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_EventScript_CheckTicketLeft::
@@ -223,6 +228,7 @@ VermilionCity_EventScript_OaksAide::
 	setflag KANTO_FLAG_TALKED_TO_OAKS_AIDE_IN_VERMILION
 	msgbox VermilionCity_Text_Route2AideHasPackageForYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_EventScript_OldMan2::
@@ -238,6 +244,7 @@ VermilionCity_EventScript_Machop::
 	waitmoncry
 	msgbox VermilionCity_Text_MachopStompingLandFlat
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_EventScript_CitySign::

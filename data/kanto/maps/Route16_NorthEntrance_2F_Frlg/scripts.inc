@@ -38,11 +38,13 @@ Route16_NorthEntrance_2F_EventScript_Aide::
 	setflag KANTO_FLAG_GOT_AMULET_COIN_FROM_OAKS_AIDE
 	msgbox Route16_NorthEntrance_2F_Text_ExplainAmuletCoin
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route16_NorthEntrance_2F_EventScript_AlreadyGotAmuletCoin::
 	msgbox Route16_NorthEntrance_2F_Text_ExplainAmuletCoin
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route16_NorthEntrance_2F_EventScript_GetAideRequestInfo::

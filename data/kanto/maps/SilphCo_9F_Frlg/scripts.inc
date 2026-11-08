@@ -18,11 +18,13 @@ SilphCo_9F_EventScript_HealWoman::
 	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox SilphCo_9F_Text_DontGiveUp
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_9F_EventScript_HealWomanRocketsGone::
 	msgbox SilphCo_9F_Text_ThankYouSoMuch
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_9F_EventScript_FloorSign::

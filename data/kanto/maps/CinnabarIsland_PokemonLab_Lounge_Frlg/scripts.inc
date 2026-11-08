@@ -21,22 +21,26 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_Clifton::
 	msgbox Trade_Text_Thanks
 	setflag KANTO_FLAG_DID_ESPHERE_TRADE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_CliftonDeclineTrade::
 	msgbox Trade_Text_WellIfYouDontWantTo
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_CliftonNotRequestedMon::
 	bufferspeciesname STR_VAR_1, KANTO_VAR_0x8009
 	msgbox Trade_Text_ThisIsntMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_CliftonAlreadyTraded::
 	msgbox Trade_Text_HasTradedMonGrownStronger
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_Norma::
@@ -63,22 +67,26 @@ CinnabarIsland_PokemonLab_Lounge_EventScript_Norma::
 	msgbox Trade_Text_ThanksYoureAPal
 	setflag KANTO_FLAG_DID_TANGENY_TRADE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_NormaDeclineTrade::
 	msgbox Trade_Text_ThatsTooBad
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_NormaNotRequestedMon::
 	bufferspeciesname STR_VAR_1, KANTO_VAR_0x8009
 	msgbox Trade_Text_ThisIsNoMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_Lounge_EventScript_NormaAlreadyTraded::
 	msgbox Trade_Text_HowIsMyOldMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_PokemonLab_Lounge_Text_FoundFossilInMtMoon::

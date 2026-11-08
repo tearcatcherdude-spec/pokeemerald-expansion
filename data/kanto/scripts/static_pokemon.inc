@@ -3,6 +3,7 @@ EventScript_RemoveStaticMon::
 	removeobject KANTO_VAR_LAST_TALKED
 	fadescreenswapbuffers FADE_FROM_BLACK
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_MonFlewAway::
@@ -12,6 +13,7 @@ EventScript_MonFlewAway::
 	bufferspeciesname STR_VAR_1, KANTO_VAR_0x8004
 	msgbox Text_MonFlewAway
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_AwakenSnorlax::

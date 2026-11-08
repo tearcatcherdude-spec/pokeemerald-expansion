@@ -69,6 +69,7 @@ CeruleanCity_House1_EventScript_DescribeEarthBadge::
 CeruleanCity_House1_EventScript_StopDescribingBadges::
 	msgbox CeruleanCity_House1_Text_ComeVisitAnytime
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_House1_Text_BadgesHaveAmazingSecrets::

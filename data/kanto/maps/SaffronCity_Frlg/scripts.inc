@@ -46,12 +46,14 @@ SaffronCity_EventScript_DoorGuardGrunt::
 	waitmovement 0
 	msgbox SaffronCity_Text_ImASecurityGuard
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_EventScript_DoorGuardAsleep::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox SaffronCity_Text_HesTakingASnooze
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_EventScript_WorkerM::
@@ -78,6 +80,7 @@ SaffronCity_EventScript_Pidgeot::
 	msgbox SaffronCity_Text_Pidgeot
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_EventScript_Man::

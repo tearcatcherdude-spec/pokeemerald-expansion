@@ -17,6 +17,7 @@ CinnabarIsland_Mart_EventScript_Clerk::
 	pokemart CinnabarIsland_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -30,6 +31,7 @@ CinnabarIsland_Mart_Items::
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_Mart_Text_DontTheyHaveXAttack::

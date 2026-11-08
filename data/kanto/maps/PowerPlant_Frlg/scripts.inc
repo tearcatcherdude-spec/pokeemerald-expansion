@@ -53,6 +53,7 @@ PowerPlant_EventScript_Zapdos::
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_RanFromZapdos
 	setflag KANTO_FLAG_FOUGHT_ZAPDOS
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PowerPlant_EventScript_DefeatedZapdos::
@@ -82,6 +83,7 @@ PowerPlant_EventScript_Electrode1::
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtElectrode1
 	setflag KANTO_FLAG_FOUGHT_POWER_PLANT_ELECTRODE_1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PowerPlant_EventScript_FoughtElectrode1::
@@ -106,6 +108,7 @@ PowerPlant_EventScript_Electrode2::
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_FoughtElectrode2
 	setflag KANTO_FLAG_FOUGHT_POWER_PLANT_ELECTRODE_2
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PowerPlant_EventScript_FoughtElectrode2::

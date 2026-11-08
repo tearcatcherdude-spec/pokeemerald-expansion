@@ -25,11 +25,13 @@ PokemonTower_1F_EventScript_Woman2::
 	goto_if_eq KANTO_VAR_RESULT, MALE, PokemonTower_1F_EventScript_Woman2MalePlayer
 	msgbox PokemonTower_1F_Text_ComeToPayRespectsGirl
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonTower_1F_EventScript_Woman2MalePlayer::
 	msgbox PokemonTower_1F_Text_ComeToPayRespectsSon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PokemonTower_1F_EventScript_WorkerF::

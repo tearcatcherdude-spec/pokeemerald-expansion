@@ -12,16 +12,19 @@ Route16_House_EventScript_Woman::
 	msgbox Route16_House_Text_ExplainHM02
 	setflag KANTO_FLAG_GOT_HM02
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route16_House_EventScript_NoRoomForHM02::
 	msgbox Route16_House_Text_DontHaveAnyRoomForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route16_House_EventScript_AlreadyGotHM02::
 	msgbox Route16_House_Text_ExplainHM02
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route16_House_EventScript_Fearow::
@@ -32,6 +35,7 @@ Route16_House_EventScript_Fearow::
 	msgbox Route16_House_Text_Fearow
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route16_House_Text_FoundMySecretRetreat::

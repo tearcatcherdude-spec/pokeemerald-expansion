@@ -81,16 +81,19 @@ OneIsland_EventScript_OldMan::
 	goto_if_set KANTO_FLAG_SEVII_DETOUR_FINISHED, OneIsland_EventScript_OldManLinkKanto
 	msgbox OneIsland_Text_LuckyToHaveCelioHere
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_EventScript_OldManLinkKanto::
 	msgbox OneIsland_Text_HavePCLinkageWithKanto
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_EventScript_OldManLinkHoenn::
 	msgbox OneIsland_Text_HavePCLinkageWithHoenn
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 OneIsland_EventScript_BaldingMan::

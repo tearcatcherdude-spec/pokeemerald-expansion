@@ -13,23 +13,27 @@ FourIsland_LoreleisHouse_EventScript_Lorelei::
 	goto_if_set KANTO_FLAG_DEFEATED_ROCKETS_IN_WAREHOUSE, FourIsland_LoreleisHouse_EventScript_Lorelei2
 	msgbox FourIsland_LoreleisHouse_Text_IfAnythingWereToHappenToIsland
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_LoreleisHouse_EventScript_Lorelei2::
 	setflag KANTO_FLAG_TALKED_TO_LORELEI_AFTER_WAREHOUSE
 	msgbox FourIsland_LoreleisHouse_Text_IllReturnToLeagueInShortWhile
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_LoreleisHouse_EventScript_Lorelei3::
 	msgbox FourIsland_LoreleisHouse_Text_WillDoWhatICanHereAndNow
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_LoreleisHouse_EventScript_Doll::
 	lock
 	msgbox FourIsland_LoreleisHouse_Text_StuffedMonDollsGalore
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FourIsland_LoreleisHouse_Text_IfAnythingWereToHappenToIsland::

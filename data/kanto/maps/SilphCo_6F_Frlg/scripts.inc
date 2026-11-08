@@ -12,11 +12,13 @@ SilphCo_6F_EventScript_WorkerM2::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_6F_EventScript_WorkerM2RocketsGone
 	msgbox SilphCo_6F_Text_TargetedSilphForOurMonProducts
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_WorkerM2RocketsGone::
 	msgbox SilphCo_6F_Text_ComeWorkForSilphWhenYoureOlder
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_WorkerM3::
@@ -25,11 +27,13 @@ SilphCo_6F_EventScript_WorkerM3::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_6F_EventScript_WorkerM3RocketsGone
 	msgbox SilphCo_6F_Text_RocketsTookOverBuilding
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_WorkerM3RocketsGone::
 	msgbox SilphCo_6F_Text_BetterGetBackToWork
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_WorkerM1::
@@ -38,11 +42,13 @@ SilphCo_6F_EventScript_WorkerM1::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_6F_EventScript_WorkerM1RocketsGone
 	msgbox SilphCo_6F_Text_HelpMePlease
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_WorkerM1RocketsGone::
 	msgbox SilphCo_6F_Text_WeGotEngaged
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_WorkerF1::
@@ -51,11 +57,13 @@ SilphCo_6F_EventScript_WorkerF1::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_6F_EventScript_WorkerF1RocketsGone
 	msgbox SilphCo_6F_Text_ThatManIsSuchACoward
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_WorkerF1RocketsGone::
 	msgbox SilphCo_6F_Text_NeedsMeToLookAfterHim
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_WorkerF2::
@@ -64,11 +72,13 @@ SilphCo_6F_EventScript_WorkerF2::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_6F_EventScript_WorkerF2RocketsGone
 	msgbox SilphCo_6F_Text_RocketsTryingToConquerWorld
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_WorkerF2RocketsGone::
 	msgbox SilphCo_6F_Text_RocketsRanAwayBecauseOfYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_6F_EventScript_FloorSign::

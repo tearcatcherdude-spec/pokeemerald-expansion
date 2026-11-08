@@ -5,6 +5,7 @@ LivingKanto_Scene0_A::
 	setflag 0xa8d0
 	msgbox LivingKanto_Scene0_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene0_B::
@@ -17,16 +18,19 @@ LivingKanto_Scene0_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene0_Before::
 	msgbox LivingKanto_Scene0_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene0_Done::
 	msgbox LivingKanto_Scene0_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene0_Intro::
@@ -48,6 +52,7 @@ LivingKanto_Scene1_A::
 	setflag 0xa8d1
 	msgbox LivingKanto_Scene1_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene1_B::
@@ -60,16 +65,19 @@ LivingKanto_Scene1_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene1_Before::
 	msgbox LivingKanto_Scene1_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene1_Done::
 	msgbox LivingKanto_Scene1_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene1_Intro::
@@ -91,6 +99,7 @@ LivingKanto_Scene2_A::
 	setflag 0xa8d2
 	msgbox LivingKanto_Scene2_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene2_B::
@@ -103,16 +112,19 @@ LivingKanto_Scene2_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e2
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene2_Before::
 	msgbox LivingKanto_Scene2_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene2_Done::
 	msgbox LivingKanto_Scene2_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene2_Intro::
@@ -134,6 +146,7 @@ LivingKanto_Scene3_A::
 	setflag 0xa8d3
 	msgbox LivingKanto_Scene3_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene3_B::
@@ -146,16 +159,19 @@ LivingKanto_Scene3_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e3
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene3_Before::
 	msgbox LivingKanto_Scene3_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene3_Done::
 	msgbox LivingKanto_Scene3_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene3_Intro::
@@ -177,6 +193,7 @@ LivingKanto_Scene4_A::
 	setflag 0xa8d4
 	msgbox LivingKanto_Scene4_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene4_B::
@@ -189,16 +206,19 @@ LivingKanto_Scene4_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e4
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene4_Before::
 	msgbox LivingKanto_Scene4_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene4_Done::
 	msgbox LivingKanto_Scene4_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene4_Intro::
@@ -220,6 +240,7 @@ LivingKanto_Scene5_A::
 	setflag 0xa8d5
 	msgbox LivingKanto_Scene5_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene5_B::
@@ -232,16 +253,19 @@ LivingKanto_Scene5_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e5
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene5_Before::
 	msgbox LivingKanto_Scene5_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene5_Done::
 	msgbox LivingKanto_Scene5_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene5_Intro::
@@ -263,6 +287,7 @@ LivingKanto_Scene6_A::
 	setflag 0xa8d6
 	msgbox LivingKanto_Scene6_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene6_B::
@@ -275,16 +300,19 @@ LivingKanto_Scene6_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e6
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene6_Before::
 	msgbox LivingKanto_Scene6_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene6_Done::
 	msgbox LivingKanto_Scene6_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene6_Intro::
@@ -306,6 +334,7 @@ LivingKanto_Scene7_A::
 	setflag 0xa8d7
 	msgbox LivingKanto_Scene7_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene7_B::
@@ -318,16 +347,19 @@ LivingKanto_Scene7_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e7
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene7_Before::
 	msgbox LivingKanto_Scene7_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene7_Done::
 	msgbox LivingKanto_Scene7_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene7_Intro::
@@ -349,6 +381,7 @@ LivingKanto_Scene8_A::
 	setflag 0xa8d8
 	msgbox LivingKanto_Scene8_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene8_B::
@@ -361,16 +394,19 @@ LivingKanto_Scene8_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e8
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene8_Before::
 	msgbox LivingKanto_Scene8_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene8_Done::
 	msgbox LivingKanto_Scene8_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene8_Intro::
@@ -392,6 +428,7 @@ LivingKanto_Scene9_A::
 	setflag 0xa8d9
 	msgbox LivingKanto_Scene9_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene9_B::
@@ -404,16 +441,19 @@ LivingKanto_Scene9_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8e9
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene9_Before::
 	msgbox LivingKanto_Scene9_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene9_Done::
 	msgbox LivingKanto_Scene9_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene9_Intro::
@@ -435,6 +475,7 @@ LivingKanto_Scene10_A::
 	setflag 0xa8da
 	msgbox LivingKanto_Scene10_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene10_B::
@@ -447,16 +488,19 @@ LivingKanto_Scene10_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8ea
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene10_Before::
 	msgbox LivingKanto_Scene10_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene10_Done::
 	msgbox LivingKanto_Scene10_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene10_Intro::
@@ -478,6 +522,7 @@ LivingKanto_Scene11_A::
 	setflag 0xa8db
 	msgbox LivingKanto_Scene11_Intro, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene11_B::
@@ -490,16 +535,19 @@ LivingKanto_Scene11_B::
 	goto_if_eq VAR_RESULT, FALSE, LivingKanto_BagFull
 	setflag 0xa8eb
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene11_Before::
 	msgbox LivingKanto_Scene11_BeforeText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene11_Done::
 	msgbox LivingKanto_Scene11_After, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_Scene11_Intro::
@@ -517,6 +565,7 @@ LivingKanto_Scene11_After::
 LivingKanto_BagFull::
 	msgbox LivingKanto_BagFullText, MSGBOX_DEFAULT
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LivingKanto_BagFullText::

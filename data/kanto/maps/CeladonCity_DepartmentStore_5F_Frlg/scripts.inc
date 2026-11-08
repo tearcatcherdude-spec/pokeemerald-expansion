@@ -21,6 +21,7 @@ CeladonCity_DepartmentStore_5F_EventScript_ClerkXItems::
 	pokemart CeladonCity_DepartmentStore_5F_XItems
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -34,6 +35,7 @@ CeladonCity_DepartmentStore_5F_XItems::
 	.2byte ITEM_DIRE_HIT
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_5F_EventScript_ClerkVitamins::
@@ -44,6 +46,7 @@ CeladonCity_DepartmentStore_5F_EventScript_ClerkVitamins::
 	pokemart CeladonCity_DepartmentStore_5F_Vitamins
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -56,6 +59,7 @@ CeladonCity_DepartmentStore_5F_Vitamins::
 	.2byte ITEM_CARBOS
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_5F_Text_ExplainStatEnhancers::

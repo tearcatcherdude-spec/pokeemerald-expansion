@@ -19,6 +19,7 @@ SixIsland_RuinValley_EventScript_Scientist::
 	applymovement LOCALID_RUIN_VALLEY_SCIENTIST, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SixIsland_RuinValley_EventScript_DottedHoleDoor::

@@ -17,22 +17,26 @@ VermilionCity_House2_EventScript_Elyssa::
 	msgbox VermilionCity_House2_Text_ThankYou
 	setflag KANTO_FLAG_DID_CH_DING_TRADE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_House2_EventScript_DeclineTrade::
 	msgbox VermilionCity_House2_Text_ThatsTooBad
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_House2_EventScript_NotRequestedMon::
 	bufferspeciesname STR_VAR_1, KANTO_VAR_0x8009
 	msgbox VermilionCity_House2_Text_ThisIsNoMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_House2_EventScript_AlreadyTraded::
 	msgbox VermilionCity_House2_Text_HowIsMyOldMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_House2_Text_DoYouHaveMonWantToTradeForMyMon::

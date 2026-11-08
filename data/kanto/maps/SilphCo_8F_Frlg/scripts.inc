@@ -12,11 +12,13 @@ SilphCo_8F_EventScript_WorkerM::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_8F_EventScript_WorkerMRocketsGone
 	msgbox SilphCo_8F_Text_WonderIfSilphIsFinished
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_8F_EventScript_WorkerMRocketsGone::
 	msgbox SilphCo_8F_Text_ThanksForSavingUs
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_8F_EventScript_FloorSign::

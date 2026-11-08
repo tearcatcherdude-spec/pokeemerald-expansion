@@ -104,4 +104,5 @@ Route5_PokemonDayCare_EventScript_NoRoomInParty::
 Route5_PokemonDayCare_EventScript_CloseMoneyBox::
 	hidemoneybox
 	release
+	call Pip_EventScript_NPCReaction
 	end

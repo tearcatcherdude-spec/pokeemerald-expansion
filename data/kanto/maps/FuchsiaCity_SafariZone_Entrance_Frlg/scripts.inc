@@ -198,11 +198,13 @@ FuchsiaCity_SafariZone_Entrance_EventScript_InfoAttendant::
 	goto_if_eq KANTO_VAR_RESULT, YES, FuchsiaCity_SafariZone_Entrance_EventScript_ExplainSafariZone
 	msgbox FuchsiaCity_SafariZone_Entrance_Text_SorryYoureARegularHere
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_SafariZone_Entrance_EventScript_ExplainSafariZone::
 	msgbox FuchsiaCity_SafariZone_Entrance_Text_ExplainSafariZone
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_SafariZone_Entrance_Text_WelcomeToSafariZone::

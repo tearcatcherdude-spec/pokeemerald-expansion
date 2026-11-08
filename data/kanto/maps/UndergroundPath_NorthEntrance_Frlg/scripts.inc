@@ -17,20 +17,24 @@ UndergroundPath_NorthEntrance_EventScript_Saige::
 	msgbox Trade_Text_ThanksYoureAPal
 	setflag KANTO_FLAG_DID_MS_NIDO_TRADE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UndergroundPath_NorthEntrance_EventScript_DeclineTrade::
 	msgbox Trade_Text_ThatsTooBad
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UndergroundPath_NorthEntrance_EventScript_NotRequestedMon::
 	bufferspeciesname STR_VAR_1, KANTO_VAR_0x8009
 	msgbox Trade_Text_ThisIsNoMon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 UndergroundPath_NorthEntrance_EventScript_AlreadyTraded::
 	msgbox Trade_Text_HowIsMyOldMon
 	release
+	call Pip_EventScript_NPCReaction
 	end

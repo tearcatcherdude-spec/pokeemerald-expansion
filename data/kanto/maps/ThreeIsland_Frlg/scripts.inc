@@ -22,6 +22,7 @@ ThreeIsland_EventScript_Biker::
 	setvar VAR_TEMP_1, 2
 	call ThreeIsland_EventScript_BikerArgumentScene
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_EventScript_AntiBiker1::
@@ -31,6 +32,7 @@ ThreeIsland_EventScript_AntiBiker1::
 	setvar VAR_TEMP_1, 0
 	call ThreeIsland_EventScript_BikerArgumentScene
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_EventScript_AntiBiker1GotFullRestore::
@@ -38,6 +40,7 @@ ThreeIsland_EventScript_AntiBiker1GotFullRestore::
 	waitmovement 0
 	msgbox ThreeIsland_Text_YouveGotImpressiveMons
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_EventScript_GiveFullRestore::
@@ -51,11 +54,13 @@ ThreeIsland_EventScript_GiveFullRestore::
 	setflag KANTO_FLAG_GOT_FULL_RESTORE_FROM_THREE_ISLAND_DEFENDER
 	msgbox ThreeIsland_Text_YouveGotImpressiveMons
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_EventScript_NoRoomForFullRestore::
 	msgbox ThreeIsland_Text_OhYourBagIsFull
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_EventScript_BikerArgumentScene::
@@ -123,6 +128,7 @@ ThreeIsland_EventScript_AntiBiker2::
 	setvar VAR_TEMP_1, 1
 	call ThreeIsland_EventScript_BikerArgumentScene
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_EventScript_AntiBiker2BikersGone::
@@ -130,6 +136,7 @@ ThreeIsland_EventScript_AntiBiker2BikersGone::
 	waitmovement 0
 	msgbox ThreeIsland_Text_LostelleWentOffTowardsBondBridge
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_EventScript_BikerBossIntroTrigger::
@@ -375,6 +382,7 @@ ThreeIsland_EventScript_Doduo::
 	msgbox ThreeIsland_Text_Doduo
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_EventScript_IslandSign::

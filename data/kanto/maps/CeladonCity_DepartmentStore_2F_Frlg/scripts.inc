@@ -21,6 +21,7 @@ CeladonCity_DepartmentStore_2F_EventScript_ClerkItems::
 	pokemart CeladonCity_DepartmentStore_2F_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -36,6 +37,7 @@ CeladonCity_DepartmentStore_2F_Items::
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_2F_EventScript_ClerkTMs::
@@ -46,6 +48,7 @@ CeladonCity_DepartmentStore_2F_EventScript_ClerkTMs::
 	pokemart CeladonCity_DepartmentStore_2F_TMs
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -58,6 +61,7 @@ CeladonCity_DepartmentStore_2F_TMs::
 	.2byte ITEM_TM45
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_2F_Text_SuperRepelMorePowerfulRepel::

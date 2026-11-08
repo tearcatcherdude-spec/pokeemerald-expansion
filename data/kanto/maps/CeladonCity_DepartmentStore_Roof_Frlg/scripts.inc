@@ -151,6 +151,7 @@ CeladonCity_DepartmentStore_Roof_EventScript_GiveDrink::
 	call_if_eq KANTO_VAR_0x8008, ITEM_SODA_POP, CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM20
 	call_if_eq KANTO_VAR_0x8008, ITEM_LEMONADE, CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM33
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM16::
@@ -171,20 +172,24 @@ CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM33::
 CeladonCity_DepartmentStore_Roof_EventScript_NoRoomForReward::
 	msgbox CeladonCity_DepartmentStore_Roof_Text_DontHaveSpaceForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_Roof_EventScript_DontGiveDrink::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_Roof_EventScript_IWantDrink::
 	msgbox CeladonCity_DepartmentStore_Roof_Text_ImThirstyIWantDrink
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_Roof_EventScript_NotThirstyAfterAll::
 	msgbox CeladonCity_DepartmentStore_Roof_Text_ImNotThirstyAfterAll
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_DepartmentStore_Roof_EventScript_CooltrainerM::

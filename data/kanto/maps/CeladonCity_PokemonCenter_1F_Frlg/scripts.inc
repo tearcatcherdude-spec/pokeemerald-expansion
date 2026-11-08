@@ -12,6 +12,7 @@ CeladonCity_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_PokemonCenter_1F_EventScript_Gentleman::

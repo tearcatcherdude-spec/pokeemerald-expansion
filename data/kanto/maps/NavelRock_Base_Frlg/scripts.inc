@@ -61,6 +61,7 @@ NavelRock_Base_Frlg_EventScript_Lugia::
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, NavelRock_Base_Frlg_EventScript_RanFromLugia
 	setflag KANTO_FLAG_FOUGHT_LUGIA
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 NavelRock_Base_Frlg_EventScript_DefeatedLugia::

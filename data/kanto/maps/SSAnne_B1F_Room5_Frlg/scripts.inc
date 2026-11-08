@@ -13,6 +13,7 @@ SSAnne_B1F_Room5_EventScript_Machoke::
 	msgbox SSAnne_B1F_Room5_Text_Machoke
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_B1F_Room5_Text_MachokeHasStrengthToMoveRocks::

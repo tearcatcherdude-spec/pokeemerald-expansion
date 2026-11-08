@@ -21,17 +21,20 @@ IndigoPlateau_PokemonCenter_1F_EventScript_DoorGuard::
 	goto_if_eq KANTO_VAR_RESULT, TRUE, IndigoPlateau_PokemonCenter_1F_EventScript_CheckSeviiIslandComplete
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_FaceEliteFourGoodLuck
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_CheckSeviiIslandComplete::
 	goto_if_set KANTO_FLAG_IS_CHAMPION, IndigoPlateau_PokemonCenter_1F_EventScript_SeviiIslandComplete
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_LoreleiIsAbsentClosedForTimeBeing
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_SeviiIslandComplete::
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_FaceEliteFourGoodLuck
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_GymGuy::
@@ -46,6 +49,7 @@ IndigoPlateau_PokemonCenter_1F_EventScript_Clerk::
 	pokemart IndigoPlateau_PokemonCenter_1F_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -59,6 +63,7 @@ IndigoPlateau_PokemonCenter_1F_Items::
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_Nurse::
@@ -66,6 +71,7 @@ IndigoPlateau_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 IndigoPlateau_PokemonCenter_1F_Text_GymGuyAdvice::

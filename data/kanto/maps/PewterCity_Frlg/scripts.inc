@@ -24,6 +24,7 @@ PewterCity_EventScript_GymGuide::
 	removeobject LOCALID_PEWTER_GYM_GUIDE
 	clearflag KANTO_FLAG_HIDE_PEWTER_CITY_GYM_GUIDE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_EventScript_WalkToGymEast::
@@ -450,6 +451,7 @@ PewterCity_EventScript_MuseumGuide::
 	removeobject LOCALID_PEWTER_MUSEUM_GUIDE
 	clearflag KANTO_FLAG_HIDE_PEWTER_MUSEUM_GUIDE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_EventScript_LeadToMuseumNorth::
@@ -479,6 +481,7 @@ PewterCity_EventScript_LeadToMuseumEast::
 PewterCity_EventScript_CheckedOutMuseum::
 	msgbox PewterCity_Text_WerentThoseFossilsAmazing
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 .macro walk_to_museum
@@ -612,6 +615,7 @@ PewterCity_EventScript_FatMan::
 	famechecker FAMECHECKER_BROCK, 2
 	msgbox PewterCity_Text_BrockOnlySeriousTrainerHere
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_EventScript_BugCatcher::
@@ -621,11 +625,13 @@ PewterCity_EventScript_BugCatcher::
 	goto_if_eq KANTO_VAR_RESULT, YES, PewterCity_EventScript_KnowWhatTheyreDoing
 	msgbox PewterCity_Text_SprayingRepelToKeepWildMonsOut
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_EventScript_KnowWhatTheyreDoing::
 	msgbox PewterCity_Text_ThatsRightItsHardWork
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_EventScript_TrainerTips::
@@ -657,6 +663,7 @@ PewterCity_EventScript_RunningShoesAide::
 	setvar VAR_TEMP_1, 0
 	call PewterCity_EventScript_AideGiveRunningShoes
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_EventScript_RunningShoesAideTriggerTop::
@@ -719,7 +726,7 @@ PewterCity_EventScript_AideGiveRunningShoes::
 	msgbox PewterCity_Text_RunningShoesLetterFromMom
 	closemessage
 	removeobject LOCALID_PEWTER_AIDE
-	setflag KANTO_FLAG_SYS_B_DASH
+	setflag FLAG_SYS_B_DASH
 	setvar KANTO_VAR_MAP_SCENE_PEWTER_CITY, 2
 	return
 

@@ -10,6 +10,7 @@ SSAnne_1F_Room6_EventScript_Woman::
 	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox SSAnne_1F_Room6_Text_GladEveryoneIsRefreshed
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_1F_Room6_EventScript_DeclineHeal::
@@ -17,11 +18,13 @@ SSAnne_1F_Room6_EventScript_DeclineHeal::
 	goto_if_eq KANTO_VAR_RESULT, MALE, SSAnne_1F_Room6_EventScript_DeclineHealMale
 	msgbox SSAnne_1F_Room6_Text_SorryYouLookLikeMySister
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_1F_Room6_EventScript_DeclineHealMale::
 	msgbox SSAnne_1F_Room6_Text_SorryYouLookLikeMyBrother
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_1F_Room6_Text_TakeAShortRest::

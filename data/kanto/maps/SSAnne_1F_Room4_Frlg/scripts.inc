@@ -8,11 +8,13 @@ SSAnne_1F_Room4_EventScript_Woman::
 	goto_if_eq KANTO_VAR_RESULT, MALE, SSAnne_1F_Room4_EventScript_WomanPlayerMale
 	msgbox SSAnne_1F_Room4_Text_WaitressCherryPiePlease
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_1F_Room4_EventScript_WomanPlayerMale::
 	msgbox SSAnne_1F_Room4_Text_WaiterCherryPiePlease
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_1F_Room4_Text_WaiterCherryPiePlease::

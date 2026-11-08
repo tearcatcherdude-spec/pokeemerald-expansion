@@ -87,11 +87,13 @@ ViridianCity_EventScript_OldMan::
 	applymovement LOCALID_VIRIDIAN_OLD_MAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_OldManGymLeaderReturned::
 	msgbox ViridianCity_Text_ViridiansGymLeaderReturned
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_TutorialOldMan::
@@ -108,27 +110,32 @@ ViridianCity_EventScript_AskIfTeachyTVHelpful::
 	goto_if_eq KANTO_VAR_RESULT, NO, ViridianCity_EventScript_TeachyTVNotHelpful
 	msgbox ViridianCity_Text_MyGrandsonOnTheShow
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_TeachyTVNotHelpful::
 	msgbox ViridianCity_Text_TooBusyForTeachyTV
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_TutorialCompleted::
 	msgbox ViridianCity_Text_WeakenMonsFirstToCatch
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_TutorialStart::
 	call ViridianCity_EventScript_DoTutorialBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Unused
 ViridianCity_EventScript_WatchToLearnBasics::
 	msgbox ViridianCity_Text_WatchThatToLearnBasics
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Unused. Starts battle after the post battle text, which is odd.
@@ -137,12 +144,14 @@ ViridianCity_EventScript_TutorialUnused::
 	special StartOldManTutorialBattle
 	waitstate
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_TutorialNotReady::
 	msgbox ViridianCity_Text_ThisIsPrivateProperty
 	closemessage
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_Youngster::
@@ -156,11 +165,13 @@ ViridianCity_EventScript_Youngster::
 ViridianCity_EventScript_YoungsterExplainCaterpillars::
 	msgbox ViridianCity_Text_ExplainCaterpieWeedle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_YoungsterDeclineExplanation::
 	msgbox ViridianCity_Text_OhOkayThen
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_Woman::
@@ -169,6 +180,7 @@ ViridianCity_EventScript_Woman::
 	goto_if_eq KANTO_VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 0, ViridianCity_EventScript_WomanRoadBlocked
 	msgbox ViridianCity_Text_GoShoppingInPewterOccasionally
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_WomanRoadBlocked::
@@ -177,6 +189,7 @@ ViridianCity_EventScript_WomanRoadBlocked::
 	applymovement LOCALID_VIRIDIAN_WOMAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_DreamEaterTutor::
@@ -206,6 +219,7 @@ ViridianCity_EventScript_TutorialTriggerLeft::
 	waitmovement 0
 	call ViridianCity_EventScript_DoTutorialBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_TutorialTriggerRight::
@@ -217,6 +231,7 @@ ViridianCity_EventScript_TutorialTriggerRight::
 	waitmovement 0
 	call ViridianCity_EventScript_DoTutorialBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_EventScript_DoTutorialBattle::

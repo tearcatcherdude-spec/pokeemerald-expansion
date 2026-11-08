@@ -330,6 +330,7 @@ CinnabarIsland_EventScript_Woman::
 	famechecker FAMECHECKER_BLAINE, 3
 	msgbox CinnabarIsland_Text_BlaineLivedHereSinceBeforeLab
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CinnabarIsland_EventScript_OldMan::

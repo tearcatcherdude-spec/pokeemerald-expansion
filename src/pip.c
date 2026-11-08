@@ -20,6 +20,11 @@ extern const u8 Cozy_Text_PictureBookShelf[], Cozy_Text_BookShelf[], Cozy_Text_V
 extern const u8 Cozy_Text_EmptyTrashCan[], Cozy_Text_ShopShelf[], Cozy_Text_Blueprint[];
 
 static EWRAM_DATA bool8 sSceneSuspended = FALSE;
+static EWRAM_DATA bool8 sKantoReactionHandled = FALSE;
+static EWRAM_DATA bool8 sKantoInteractionActive = FALSE;
+static EWRAM_DATA u8 sKantoTalkGroup = 0;
+static EWRAM_DATA u8 sKantoTalkMap = 0;
+static EWRAM_DATA u8 sKantoTalkLocalId = 0;
 static EWRAM_DATA u16 sSavedResult = 0;
 static EWRAM_DATA u16 sSavedLastTalked = 0;
 static EWRAM_DATA u16 sReactionGraphics = 0;
@@ -290,6 +295,29 @@ void Script_PipChooseDialogue(struct ScriptContext *ctx)
     gSpecialVar_Result = Pip_TrySay(text);
 #endif
 }
+void Pip_BeginKantoNPCInteraction(void)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    sKantoInteractionActive = ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
+    sKantoReactionHandled = FALSE;
+    sKantoTalkGroup = gSaveBlock1Ptr->location.mapGroup;
+    sKantoTalkMap = gSaveBlock1Ptr->location.mapNum;
+    sKantoTalkLocalId = gSpecialVar_LastTalked;
+#endif
+}
+void Script_PipBeginKantoNPCReaction(struct ScriptContext *ctx)
+{
+    if (!ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+#if FNPC_ENABLE_NPC_FOLLOWERS
+        BeginReaction(ctx);
+#else
+        gSpecialVar_Result = FALSE;
+#endif
+        return;
+    }
+    Script_PipBeginNPCReaction(ctx);
+}
 void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
@@ -300,6 +328,15 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
     if (!sSavedTextValid || gSpecialVar_LastTalked == OBJ_EVENT_ID_NPC_FOLLOWER
      || id >= OBJECT_EVENTS_COUNT || !gObjectEvents[id].active)
         return;
+    if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    {
+        if (!sKantoInteractionActive || sKantoReactionHandled
+         || sKantoTalkGroup != gSaveBlock1Ptr->location.mapGroup
+         || sKantoTalkMap != gSaveBlock1Ptr->location.mapNum
+         || sKantoTalkLocalId != gSpecialVar_LastTalked)
+            return;
+        sKantoReactionHandled = TRUE;
+    }
     sReactionGraphics = gObjectEvents[id].graphicsId;
     // Generic strangers do not need the same six jokes. Only specific subjects
     // with something new to add offer a reaction.
@@ -338,7 +375,7 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
     for (u32 i = 0; i < ARRAY_COUNT(sPipKantoScenes); i++)
         if (sPipKantoScenes[i].script == personScript)
         {
-            text = sPipKantoScenes[i].text;
+            text = FlagGet(sPipKantoScenes[i].resolvedFlag) ? sPipKantoScenes[i].text : NULL;
             break;
         }
     OfferReaction(text);

@@ -21,4 +21,6 @@ void Script_PipBeginObjectReaction(struct ScriptContext *ctx);
 void Script_PipChooseObjectDialogue(struct ScriptContext *ctx);
 void Script_PipEndNPCReaction(struct ScriptContext *ctx);
 
+void Pip_BeginKantoNPCInteraction(void);
+void Script_PipBeginKantoNPCReaction(struct ScriptContext *ctx);
 #endif

@@ -7,6 +7,7 @@ SaffronCity_Gym_EventScript_Sabrina::
 	goto_if_unset KANTO_FLAG_GOT_TM04_FROM_SABRINA, SaffronCity_Gym_EventScript_GiveTM04
 	msgbox SaffronCity_Gym_Text_ExplainTM04
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Gym_EventScript_DefeatedSabrina::
@@ -27,11 +28,13 @@ SaffronCity_Gym_EventScript_GiveTM04::
 	setflag KANTO_FLAG_GOT_TM04_FROM_SABRINA
 	msgbox SaffronCity_Gym_Text_SabrinaPostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Gym_EventScript_NoRoomForTM04::
 	msgbox SaffronCity_Gym_Text_BagFullOfOtherItems
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Gym_EventScript_Johan::
@@ -76,11 +79,13 @@ SaffronCity_Gym_EventScript_GymGuy::
 	goto_if_set KANTO_FLAG_DEFEATED_SABRINA, SaffronCity_Gym_EventScript_GymGuyPostVictory
 	msgbox SaffronCity_Gym_Text_GymGuyAdvice
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Gym_EventScript_GymGuyPostVictory::
 	msgbox SaffronCity_Gym_Text_GymGuyPostVictory
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SaffronCity_Gym_EventScript_GymStatue::

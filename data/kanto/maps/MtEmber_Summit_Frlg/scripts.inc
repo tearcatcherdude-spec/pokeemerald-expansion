@@ -42,6 +42,7 @@ MtEmber_Summit_EventScript_Moltres::
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, MtEmber_Summit_EventScript_RanFromMoltres
 	setflag KANTO_FLAG_FOUGHT_MOLTRES
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_Summit_EventScript_DefeatedMoltres::

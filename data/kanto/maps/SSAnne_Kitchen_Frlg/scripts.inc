@@ -23,6 +23,7 @@ SSAnne_Kitchen_EventScript_Chef4::
 	call_if_eq KANTO_VAR_0x8008, 1, SSAnne_Kitchen_EventScript_EelsAuBarbecue
 	call_if_eq KANTO_VAR_0x8008, 2, SSAnne_Kitchen_EventScript_PrimeBeefsteak
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_Kitchen_EventScript_SalmonDuSalad::

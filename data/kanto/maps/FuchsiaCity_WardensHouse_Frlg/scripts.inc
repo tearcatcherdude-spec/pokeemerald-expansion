@@ -10,6 +10,7 @@ FuchsiaCity_WardensHouse_EventScript_Warden::
 	call_if_eq KANTO_VAR_RESULT, YES, FuchsiaCity_WardensHouse_EventScript_WardenYes
 	call_if_eq KANTO_VAR_RESULT, NO, FuchsiaCity_WardensHouse_EventScript_WardenNo
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_WardensHouse_EventScript_GiveGoldTeeth::
@@ -27,6 +28,7 @@ FuchsiaCity_WardensHouse_EventScript_GiveGoldTeeth::
 	setflag KANTO_FLAG_GOT_HM04
 	removeitem ITEM_GOLD_TEETH
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_WardensHouse_EventScript_WardenThanksMale::
@@ -48,6 +50,7 @@ FuchsiaCity_WardensHouse_EventScript_WardenNo::
 FuchsiaCity_WardensHouse_EventScript_ExplainStrength::
 	msgbox FuchsiaCity_WardensHouse_Text_ExplainStrength
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_WardensHouse_EventScript_DisplaySign1::

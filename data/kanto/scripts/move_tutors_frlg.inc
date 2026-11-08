@@ -21,11 +21,13 @@ VictoryRoad_2F_EventScript_DoubleEdgeTutor::
 EventScript_DoubleEdgeDeclined::
 	msgbox Text_DoubleEdgeDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_DoubleEdgeTaught::
 	msgbox Text_DoubleEdgeTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_ThunderWaveTutor::
@@ -51,11 +53,13 @@ EventScript_ThunderWaveTutor::
 EventScript_ThunderWaveDeclined::
 	msgbox Text_ThunderWaveDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_ThunderWaveTaught::
 	msgbox Text_ThunderWaveTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 RockTunnel_B1F_EventScript_RockSlideTutor::
@@ -81,11 +85,13 @@ RockTunnel_B1F_EventScript_RockSlideTutor::
 EventScript_RockSlideDeclined::
 	msgbox Text_RockSlideDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_RockSlideTaught::
 	msgbox Text_RockSlideTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_Exterior_EventScript_ExplosionTutor::
@@ -111,11 +117,13 @@ MtEmber_Exterior_EventScript_ExplosionTutor::
 EventScript_ExplosionDeclined::
 	msgbox Text_ExplosionDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_ExplosionTaught::
 	msgbox Text_ExplosionTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_EventScript_MegaPunchTutor::
@@ -141,11 +149,13 @@ Route4_EventScript_MegaPunchTutor::
 EventScript_MegaPunchDeclined::
 	msgbox Text_MegaPunchDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_MegaPunchTaught::
 	msgbox Text_MegaPunchTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route4_EventScript_MegaKickTutor::
@@ -171,11 +181,13 @@ Route4_EventScript_MegaKickTutor::
 EventScript_MegaKickDeclined::
 	msgbox Text_MegaKickDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_MegaKickTaught::
 	msgbox Text_MegaKickTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_DreamEaterTutor::
@@ -201,11 +213,13 @@ EventScript_DreamEaterTutor::
 EventScript_DreamEaterDeclined::
 	msgbox Text_DreamEaterDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_DreamEaterTaught::
 	msgbox Text_DreamEaterTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_SoftboiledTutor::
@@ -231,11 +245,13 @@ EventScript_SoftboiledTutor::
 EventScript_SoftboiledDeclined::
 	msgbox Text_SoftboiledDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_SoftboiledTaught::
 	msgbox Text_SoftboiledTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FuchsiaCity_EventScript_SubstituteTutor::
@@ -261,11 +277,13 @@ FuchsiaCity_EventScript_SubstituteTutor::
 EventScript_SubstituteDeclined::
 	msgbox Text_SubstituteDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_SubstituteTaught::
 	msgbox Text_SubstituteTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SevenIsland_EventScript_SwordsDanceTutor::
@@ -291,11 +309,13 @@ SevenIsland_EventScript_SwordsDanceTutor::
 EventScript_SwordsDanceDeclined::
 	msgbox Text_SwordsDanceDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_SwordsDanceTaught::
 	msgbox Text_SwordsDanceTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Museum_1F_EventScript_SeismicTossTutor::
@@ -321,11 +341,13 @@ PewterCity_Museum_1F_EventScript_SeismicTossTutor::
 EventScript_SeismicTossDeclined::
 	msgbox Text_SeismicTossDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_SeismicTossTaught::
 	msgbox Text_SeismicTossTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_CounterTutor::
@@ -351,11 +373,13 @@ EventScript_CounterTutor::
 EventScript_CounterDeclined::
 	msgbox Text_CounterDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_CounterTaught::
 	msgbox Text_CounterTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_MetronomeTutor::
@@ -381,11 +405,13 @@ EventScript_MetronomeTutor::
 EventScript_MetronomeDeclined::
 	msgbox Text_MetronomeDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_MetronomeTaught::
 	msgbox Text_MetronomeTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_MimicTutor::
@@ -412,6 +438,7 @@ EventScript_MimicTutor::
 EventScript_MimicDeclined::
 	msgbox Text_MimicDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_MimicTaught::
@@ -419,6 +446,7 @@ EventScript_MimicTaught::
 	call_if_eq KANTO_VAR_RESULT, MALE, EventScript_MimicTaughtMale
 	call_if_eq KANTO_VAR_RESULT, FEMALE, EventScript_MimicTaughtFemale
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_MimicTaughtMale::
@@ -452,11 +480,13 @@ FourIsland_House1_EventScript_BodySlamTutor::
 EventScript_BodySlamDeclined::
 	msgbox Text_BodySlamDeclined
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_BodySlamTaught::
 	msgbox Text_BodySlamTaught
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 TwoIsland_CapeBrink_House_EventScript_StarterTutor::
@@ -485,11 +515,13 @@ TwoIsland_CapeBrink_House_EventScript_StarterTutor::
 CapeBrinkTutor_EventScript_MoveJustTaught::
 	msgbox Text_MakeBestUseOfMove
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CapeBrinkTutor_EventScript_TaughtAllMoves::
 	msgbox Text_FeelRejuvenated
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CapeBrinkTutor_EventScript_TaughtMove::
@@ -499,12 +531,14 @@ CapeBrinkTutor_EventScript_TaughtMove::
 	msgbox Text_TaughtMove
 	setflag FLAG_TEMP_2
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CapeBrinkTutor_EventScript_LearnedAllMoves::
 	msgbox Text_PassedOnEverythingIKnow
 	setflag KANTO_FLAG_LEARNED_ALL_MOVES_AT_CAPE_BRINK
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CapeBrinkTutor_EventScript_ChooseMon::
@@ -536,11 +570,13 @@ CapeBrinkTutor_EventScript_JumpInPlaceRight::
 CapeBrinkTutor_EventScript_DeclineMove::
 	msgbox Text_YouRejectIt
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CapeBrinkTutor_EventScript_NoLeadStarter::
 	msgbox Text_JustMistaken
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_ChooseMoveTutorMon::

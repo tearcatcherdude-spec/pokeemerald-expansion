@@ -17,6 +17,7 @@ PewterCity_Mart_EventScript_Clerk::
 	pokemart PewterCity_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -31,6 +32,7 @@ PewterCity_Mart_Items::
 	.2byte ITEM_REPEL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PewterCity_Mart_Text_BoughtWeirdFishFromShadyGuy::

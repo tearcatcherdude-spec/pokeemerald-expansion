@@ -111,6 +111,7 @@ EventScript_CancelSail::
 	specialvar KANTO_VAR_RESULT, IsPlayerLeftOfVermilionSailor
 	goto_if_eq KANTO_VAR_RESULT, TRUE, VermilionCity_EventScript_WalkUpPier
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_EventScript_WalkUpPier::

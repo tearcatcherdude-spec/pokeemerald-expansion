@@ -9,6 +9,7 @@ ViridianCity_School_EventScript_Lass::
 	applymovement LOCALID_SCHOOL_LASS, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_School_EventScript_Woman::
@@ -19,6 +20,7 @@ ViridianCity_School_EventScript_Woman::
 	applymovement LOCALID_SCHOOL_WOMAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_School_EventScript_Notebook::

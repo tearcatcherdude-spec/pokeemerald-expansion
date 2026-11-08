@@ -4,7 +4,7 @@ WatchMart_MapScripts::
 	.byte 0
 
 ViridianCity_Mart_OnLoad::
-	goto_if_unset KANTO_FLAG_SYS_POKEDEX_GET, ViridianCity_Mart_EventScript_HideQuestionnaire
+	goto_if_unset FLAG_SYS_POKEDEX_GET, ViridianCity_Mart_EventScript_HideQuestionnaire
 	end
 
 ViridianCity_Mart_EventScript_HideQuestionnaire::
@@ -58,6 +58,7 @@ ViridianCity_Mart_EventScript_Clerk::
 	pokemart ViridianCity_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -68,11 +69,13 @@ ViridianCity_Mart_Items::
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_Mart_EventScript_SayHiToOak::
 	msgbox ViridianCity_Mart_Text_SayHiToOakForMe
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ViridianCity_Mart_EventScript_Woman::

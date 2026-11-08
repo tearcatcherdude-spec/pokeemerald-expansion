@@ -9,6 +9,7 @@ Route12_FishingHouse_EventScript_FishingGuruBrother::
 	goto_if_eq KANTO_VAR_RESULT, YES, Route12_FishingHouse_EventScript_GiveSuperRod
 	msgbox Route12_FishingHouse_Text_OhThatsDisappointing
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_GiveSuperRod::
@@ -20,11 +21,13 @@ Route12_FishingHouse_EventScript_GiveSuperRod::
 	setflag KANTO_FLAG_GOT_SUPER_ROD
 	msgbox Route12_FishingHouse_Text_IfYouCatchBigMagikarpShowMe
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_NoRoomForSuperRod::
 	msgbox Route12_FishingHouse_Text_NoRoomForGift
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_CheckMagikarpRecord::
@@ -42,32 +45,38 @@ Route12_FishingHouse_EventScript_CheckMagikarpRecord::
 	goto_if_eq KANTO_VAR_RESULT, 3, Route12_FishingHouse_EventScript_NewRecordMagikarp
 	goto_if_eq KANTO_VAR_RESULT, 4, Route12_FishingHouse_EventScript_TieRecordMagikarp
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_NoMagikarpInParty::
 	msgbox Route12_FishingHouse_Text_TryFishingBringMeMagikarp
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_CancelShowMon::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_NotMagikarp::
 	msgbox Route12_FishingHouse_Text_DoesntLookLikeMagikarp
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_NotRecordMagikarp::
 	goto_if_unset KANTO_FLAG_GOT_RECORD_SETTING_MAGIKARP, Route12_FishingHouse_EventScript_NewRecordMagikarp
 	msgbox Route12_FishingHouse_Text_HmmXSizeDoesntMeasureUp
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_TieRecordMagikarp::
 	goto_if_unset KANTO_FLAG_GOT_RECORD_SETTING_MAGIKARP, Route12_FishingHouse_EventScript_NewRecordMagikarp
 	msgbox Route12_FishingHouse_Text_HuhXSizeSameSizeAsLast
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_NewRecordMagikarp::
@@ -77,11 +86,13 @@ Route12_FishingHouse_EventScript_NewRecordMagikarp::
 	goto_if_eq KANTO_VAR_RESULT, FALSE, Route12_FishingHouse_EventScript_NoRoomForNetBall
 	msgbox Route12_FishingHouse_Text_LookForwardToGreaterRecords
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_NoRoomForNetBall::
 	msgbox Route12_FishingHouse_Text_NoRoomForGift
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_FishingHouse_EventScript_MagikarpRecordSign::

@@ -9,11 +9,13 @@ VermilionCity_House1_EventScript_FishingGuru::
 	goto_if_eq KANTO_VAR_RESULT, YES, VermilionCity_House1_EventScript_GiveOldRod
 	msgbox VermilionCity_House1_Text_OhThatsSoDisappointing
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_House1_EventScript_AlreadyGotOldRod::
 	msgbox VermilionCity_House1_Text_HowAreTheFishBiting
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_House1_EventScript_GiveOldRod::
@@ -25,11 +27,13 @@ VermilionCity_House1_EventScript_GiveOldRod::
 	setflag KANTO_FLAG_GOT_OLD_ROD
 	msgbox VermilionCity_House1_Text_FishingIsAWayOfLife
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_House1_EventScript_NoRoomForOldRod::
 	msgbox VermilionCity_House1_Text_NoRoomForNiceGift
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 VermilionCity_House1_Text_ImFishingGuruDoYouLikeToFish::

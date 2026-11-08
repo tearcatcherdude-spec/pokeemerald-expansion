@@ -9,6 +9,7 @@ MtEmber_RubyPath_B5F_EventScript_Ruby::
 	removeobject LOCALID_RUBY
 	giveitem_msg MtEmber_RubyPath_B3F_Text_FoundARuby, ITEM_RUBY, 1, MUS_RG_OBTAIN_KEY_ITEM
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_RubyPath_B3F_Text_FoundARuby::

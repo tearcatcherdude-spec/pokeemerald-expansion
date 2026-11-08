@@ -53,6 +53,7 @@ SixIsland_DottedHole_SapphireRoom_EventScript_Sapphire::
 	removeobject LOCALID_DOTTED_HOLE_THIEF
 	setflag KANTO_FLAG_LEARNED_YES_NAH_CHANSEY
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Lots of redundant scripts below

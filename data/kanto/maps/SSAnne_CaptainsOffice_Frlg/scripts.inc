@@ -20,6 +20,7 @@ SSAnne_CaptainsOffice_EventScript_Captain::
 	setflag KANTO_FLAG_GOT_HM01
 	setvar KANTO_VAR_MAP_SCENE_VERMILION_CITY, 1
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Unused
@@ -29,6 +30,7 @@ SSAnne_CaptainsOffice_EventScript_NoRoomForCut::
 	applymovement LOCALID_SS_ANNE_CAPTAIN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_CaptainsOffice_EventScript_AlreadyGotCut::
@@ -36,6 +38,7 @@ SSAnne_CaptainsOffice_EventScript_AlreadyGotCut::
 	waitmovement 0
 	msgbox SSAnne_CaptainsOffice_Text_SSAnneWillSetSailSoon
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SSAnne_CaptainsOffice_EventScript_TrashCan::

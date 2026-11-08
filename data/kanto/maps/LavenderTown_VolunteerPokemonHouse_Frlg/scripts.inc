@@ -12,16 +12,19 @@ LavenderTown_VolunteerPokemonHouse_EventScript_MrFuji::
 	giveitem_msg LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji, ITEM_POKE_FLUTE, 1, MUS_RG_OBTAIN_KEY_ITEM
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_AlreadyHavePokeFlute::
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_HasPokeFluteHelpedYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_NoRoomForPokeFlute::
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_MustMakeRoomForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_LittleGirl::
@@ -30,6 +33,7 @@ LavenderTown_VolunteerPokemonHouse_EventScript_LittleGirl::
 	famechecker FAMECHECKER_MRFUJI, 0
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_MrFujiLooksAfterOrphanedMons
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_LittleBoy::
@@ -42,11 +46,13 @@ LavenderTown_VolunteerPokemonHouse_EventScript_Youngster::
 	goto_if_set KANTO_FLAG_RESCUED_MR_FUJI, LavenderTown_VolunteerPokemonHouse_EventScript_YoungsterFujiBack
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_WhereDidMrFujiGo
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_YoungsterFujiBack::
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_MrFujiWasPrayingForCubonesMother
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_Nidorino::
@@ -57,6 +63,7 @@ LavenderTown_VolunteerPokemonHouse_EventScript_Nidorino::
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_Nidorino
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_Psyduck::
@@ -67,6 +74,7 @@ LavenderTown_VolunteerPokemonHouse_EventScript_Psyduck::
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_Psyduck
 	waitmoncry
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_PokemonFanMagazine::

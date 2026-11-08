@@ -35,6 +35,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeMon::
 CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange::
 	hidecoinsbox
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Abra::
@@ -183,6 +184,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_PartyFull::
 	msgbox gText_NoMoreRoomForPokemon
 	hidecoinsbox
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_NicknamePartyMon::
@@ -197,6 +199,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_NeedCoinCase::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_CoinCaseRequired
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_NotEnoughCoins::
@@ -324,6 +327,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_BagFull::
 	msgbox gText_TooBadBagIsFull
 	hidecoinsbox
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkItems::

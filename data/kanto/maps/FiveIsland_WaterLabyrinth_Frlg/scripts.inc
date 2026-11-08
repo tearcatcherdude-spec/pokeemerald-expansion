@@ -11,12 +11,14 @@ FiveIsland_WaterLabyrinth_EventScript_EggGentleman::
 	goto_if_eq KANTO_VAR_RESULT, 6, FiveIsland_WaterLabyrinth_EventScript_LeadMonMaxFriendship
 	msgbox FiveIsland_WaterLabyrinth_Text_HmmISeeIsee
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment::
 	famechecker FAMECHECKER_DAISY, 2
 	msgbox FiveIsland_WaterLabyrinth_Text_CuteMonRemindsMeOfDaisy
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_WaterLabyrinth_EventScript_LeadMonMaxFriendship::
@@ -51,12 +53,14 @@ FiveIsland_WaterLabyrinth_EventScript_PostEggComment::
 	goto_if_eq KANTO_VAR_RESULT, TRUE, FiveIsland_WaterLabyrinth_EventScript_MonDaisyComment
 	msgbox FiveIsland_WaterLabyrinth_Text_GladIMetSomeoneLikeYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_WaterLabyrinth_EventScript_NoRoomForEgg::
 	setflag KANTO_FLAG_NO_ROOM_FOR_TOGEPI_EGG
 	msgbox FiveIsland_WaterLabyrinth_Text_DontHaveSpaceInYourParty
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 FiveIsland_WaterLabyrinth_EventScript_ReturnForEgg::

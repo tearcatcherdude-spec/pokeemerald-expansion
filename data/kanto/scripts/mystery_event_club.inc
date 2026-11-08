@@ -12,6 +12,7 @@ MysteryEventClub_EventScript_Woman::
 EventScript_AlreadyGaveProfile:
 	msgbox Text_TellMoreNextTime
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_AskForProfile:
@@ -39,6 +40,7 @@ EventScript_AcceptGiveProfile:
 EventScript_CancelGiveProfile:
 	msgbox Text_DecidedNotTo
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_GaveProfile:
@@ -49,11 +51,13 @@ EventScript_GaveProfile:
 	delay 80
 	msgbox Text_ProfileSaysSomethingAboutYou
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_DeclineGiveProfile:
 	msgbox Text_DontBeLikeThat
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_GivenProfileBefore:
@@ -86,6 +90,7 @@ EventScript_AcceptGiveNewProfile:
 EventScript_DeclineGiveNewProfile:
 	msgbox Text_LikeProfileWayItIs
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_GaveSpecialProfile:
@@ -96,6 +101,7 @@ EventScript_GaveSpecialProfile:
 	delay 80
 	msgbox Text_HeardThatBefore
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 EventScript_GiveProfile:

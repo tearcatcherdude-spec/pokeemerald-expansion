@@ -22,6 +22,8 @@ def main():
  ids={m['id']:(load('data/maps/'+stable[n]+'/map.json')['id'] if n in stable else 'MAP_KANTO_'+m['id'][4:]) for n,m in originals.items()}
  symbols=load('data/kanto/symbol_manifest.json')['renamed']|ids
  symbols['VAR_STARTER_MON']='KANTO_VAR_STARTER_MON_FRLG'
+ for shared in ['FLAG_SYS_POKEMON_GET', 'FLAG_SYS_POKEDEX_GET', 'FLAG_SYS_B_DASH', 'FLAG_SYS_NATIONAL_DEX', 'FLAG_SYS_RIBBON_GET', 'FLAG_SYS_PC_LANETTE']:
+  symbols[shared]=shared
  pattern=re.compile(r'\b(?:'+ '|'.join(map(re.escape,sorted(symbols,key=len,reverse=True)))+r')\b')
  def rewrite(s):return pattern.sub(lambda m:symbols[m[0]],s)
  layouts=load('data/layouts/layouts.json'); oldlayouts={l['id']:l for l in layouts['layouts'] if l.get('layout_version')=='frlg' and not l.get('parallel_watch')}

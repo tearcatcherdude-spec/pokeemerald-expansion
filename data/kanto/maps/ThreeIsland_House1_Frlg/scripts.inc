@@ -7,6 +7,7 @@ ThreeIsland_House1_EventScript_Lostelle::
 	special GetPlayerBigGuyGirlString
 	msgbox ThreeIsland_House1_Text_YoureAlwaysSoCool
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_House1_EventScript_DisplayCase::

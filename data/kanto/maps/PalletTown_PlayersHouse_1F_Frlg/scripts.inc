@@ -12,6 +12,7 @@ PalletTown_PlayersHouse_1F_EventScript_Mom::
 	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouMale::
@@ -28,6 +29,7 @@ PalletTown_PlayersHouse_1F_EventScript_MomHeal::
 	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox PalletTown_PlayersHouse_1F_Text_LookingGreatTakeCare
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Displays special text if interacted with from side or back (which are normally inaccessible)

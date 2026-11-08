@@ -14,16 +14,19 @@ ThreeIsland_Port_EventScript_Woman::
 	goto_if_ge KANTO_VAR_MAP_SCENE_THREE_ISLAND, 4, ThreeIsland_Port_EventScript_WomanBikersGone
 	msgbox ThreeIsland_Port_Text_IllCallThePolice
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_Port_EventScript_WomanLostelleFound::
 	msgbox ThreeIsland_Port_Text_EverythingTurnedOutForBest
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_Port_EventScript_WomanBikersGone::
 	msgbox ThreeIsland_Port_Text_ThankGoodnessBikersGone
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_Port_EventScript_Biker1::
@@ -34,6 +37,7 @@ ThreeIsland_Port_EventScript_Biker2::
 	lock
 	msgbox ThreeIsland_Port_Text_ForkOverMoney
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_Port_Text_WereKantoRiderFederation::

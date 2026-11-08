@@ -21,6 +21,7 @@ LavenderTown_Mart_EventScript_Clerk::
 	pokemart LavenderTown_Mart_Items
 	msgbox gText_PleaseComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 	.align 2
@@ -36,6 +37,7 @@ LavenderTown_Mart_Items::
 	.2byte ITEM_SUPER_REPEL
 	.2byte ITEM_NONE
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 LavenderTown_Mart_Text_SearchingForStatRaiseItems::

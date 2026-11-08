@@ -51,14 +51,17 @@ BirthIsland_Exterior_Frlg_EventScript_Triangle::
 
 BirthIsland_Exterior_EventScript_NotSolved1::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 BirthIsland_Exterior_EventScript_NotSolved2::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 BirthIsland_Exterior_EventScript_NotSolved3::
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 BirthIsland_Exterior_Frlg_EventScript_Deoxys::
@@ -87,6 +90,7 @@ BirthIsland_Exterior_Frlg_EventScript_Deoxys::
 	goto_if_eq KANTO_VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, BirthIsland_Exterior_Frlg_EventScript_RanFromDeoxys
 	setflag KANTO_FLAG_FOUGHT_DEOXYS
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 BirthIsland_Exterior_Frlg_EventScript_DefeatedDeoxys::

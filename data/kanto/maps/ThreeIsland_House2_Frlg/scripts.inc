@@ -7,6 +7,7 @@ ThreeIsland_House2_EventScript_Man::
 	famechecker FAMECHECKER_SABRINA, 1
 	msgbox ThreeIsland_House2_Text_IAdmireSabrina
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 ThreeIsland_House2_EventScript_Rocker::

@@ -12,6 +12,7 @@ CeruleanCity_PokemonCenter_1F_EventScript_Nurse::
 	faceplayer
 	call EventScript_PkmnCenterNurse_Frlg
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_PokemonCenter_1F_EventScript_Gentleman::
@@ -28,6 +29,7 @@ CeruleanCity_PokemonCenter_1F_EventScript_Youngster::
 	famechecker FAMECHECKER_BILL, 1
 	msgbox CeruleanCity_PokemonCenter_1F_Text_BillCollectsRareMons
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_PokemonCenter_1F_EventScript_Lass::

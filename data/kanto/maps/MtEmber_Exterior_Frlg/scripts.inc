@@ -27,11 +27,13 @@ MtEmber_Exterior_EventScript_Grunt1::
 	goto_if_eq KANTO_VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F, 4, MtEmber_Exterior_EventScript_BattleGrunt1
 	msgbox MtEmber_Exterior_Text_WellTryDiggingHere
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_Exterior_EventScript_Grunt1Defeated::
 	msgbox MtEmber_Exterior_Text_Grunt1PostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_Exterior_EventScript_BattleGrunt1::
@@ -43,6 +45,7 @@ MtEmber_Exterior_EventScript_BattleGrunt1::
 	msgbox MtEmber_Exterior_Text_Grunt1PostBattle
 	goto_if_defeated KANTO_TRAINER_TEAM_ROCKET_GRUNT_44, MtEmber_Exterior_EventScript_DefeatedBothGrunts
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_Exterior_EventScript_DefeatedBothGrunts::
@@ -53,6 +56,7 @@ MtEmber_Exterior_EventScript_DefeatedBothGrunts::
 	removeobject LOCALID_MT_EMBER_GRUNT2
 	fadescreenswapbuffers FADE_FROM_BLACK
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_Exterior_EventScript_Grunt2::
@@ -65,11 +69,13 @@ MtEmber_Exterior_EventScript_Grunt2::
 	applymovement LOCALID_MT_EMBER_GRUNT2, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_Exterior_EventScript_DefeatedGrunt2::
 	msgbox MtEmber_Exterior_Text_Grunt2PostBattle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_Exterior_EventScript_BattleGrunt2::
@@ -79,6 +85,7 @@ MtEmber_Exterior_EventScript_BattleGrunt2::
 	msgbox MtEmber_Exterior_Text_Grunt2PostBattle
 	goto_if_defeated KANTO_TRAINER_TEAM_ROCKET_GRUNT_43, MtEmber_Exterior_EventScript_DefeatedBothGrunts
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 MtEmber_Exterior_EventScript_RocketPasswordScene::

@@ -343,6 +343,7 @@ PalletTown_EventScript_SignLady::
 	copyobjectxytoperm LOCALID_PALLET_SIGN_LADY
 	setflag FLAG_TEMP_2
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_EventScript_SignLadyMoveOutOfWayRight::
@@ -360,6 +361,7 @@ PalletTown_EventScript_SignLadyDone::
 	waitmovement 0
 	msgbox PalletTown_Text_RaisingMonsToo
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_EventScript_SignLadyGoReadSign::
@@ -367,6 +369,7 @@ PalletTown_EventScript_SignLadyGoReadSign::
 	waitmovement 0
 	msgbox PalletTown_Text_ReadItReadIt
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_EventScript_SignLadyJustShowedSign::
@@ -374,6 +377,7 @@ PalletTown_EventScript_SignLadyJustShowedSign::
 	waitmovement 0
 	msgbox PalletTown_Text_SignsAreUsefulArentThey
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_Movement_SignLadyMoveOutOfWayRight::
@@ -446,6 +450,7 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	waitmovement 0
 	call PalletTown_EventScript_SignLadyShowSign
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 PalletTown_Text_OakDontGoOut::

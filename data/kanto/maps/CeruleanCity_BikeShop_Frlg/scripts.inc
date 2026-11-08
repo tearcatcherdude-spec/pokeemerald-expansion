@@ -28,6 +28,7 @@ CeruleanCity_BikeShop_EventScript_ClerkGoodbye::
 	msgbox CeruleanCity_BikeShop_Text_ThankYouComeAgain
 	hidemoneybox
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_BikeShop_EventScript_ExchangeBikeVoucher::
@@ -38,17 +39,20 @@ CeruleanCity_BikeShop_EventScript_ExchangeBikeVoucher::
 	removeitem ITEM_BIKE_VOUCHER
 	msgbox CeruleanCity_BikeShop_Text_ThankYouComeAgain
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_BikeShop_EventScript_AlreadyGotBicycle::
 	msgbox CeruleanCity_BikeShop_Text_HowDoYouLikeNewBicycle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Unused
 CeruleanCity_BikeShop_EventScript_NoRoomForBicycle::
 	msgbox CeruleanCity_BikeShop_Text_MakeRoomForBicycle
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_BikeShop_EventScript_Woman::
@@ -61,11 +65,13 @@ CeruleanCity_BikeShop_EventScript_Youngster::
 	goto_if_set KANTO_FLAG_GOT_BICYCLE, CeruleanCity_BikeShop_EventScript_YoungsterHaveBike
 	msgbox CeruleanCity_BikeShop_Text_BikesCoolButExpensive
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_BikeShop_EventScript_YoungsterHaveBike::
 	msgbox CeruleanCity_BikeShop_Text_WowYourBikeIsCool
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 CeruleanCity_BikeShop_EventScript_Bicycle::

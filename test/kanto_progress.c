@@ -3,6 +3,7 @@
 #include "event_data.h"
 #include "test/test.h"
 #include "data.h"
+#include "field_move.h"
 #include "constants/maps.h"
 #include "battle_setup.h"
 #include "constants/kanto_symbols.h"
@@ -119,5 +120,29 @@ TEST("Kanto hidden items fit the native compact event without corrupting quantit
     EXPECT_EQ((event >> 11) & 8191, packedId);
     EXPECT_EQ(KantoProgress_HiddenItemFlag(packedId), KANTO_FLAG_BASE + 0x3E8);
     EXPECT_EQ(KantoProgress_HiddenItemFlag(0), FLAG_HIDDEN_ITEMS_START);
+}
+TEST("Kanto field moves use Kanto badge order without replacing shared running shoes")
+{
+    struct SaveBlock3 previous = *gSaveBlock3Ptr;
+    struct WarpData previousLocation = gSaveBlock1Ptr->location;
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_WATCH_PALLET);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_WATCH_PALLET);
+    for (u32 i = 0; i < NUM_BADGES; i++) FlagClear(KANTO_FLAG_BADGE01_GET + i);
+    FlagSet(KANTO_FLAG_BADGE01_GET);
+    EXPECT(IsFieldMoveUnlocked(FIELD_MOVE_FLASH));
+    EXPECT_EQ(IsFieldMoveUnlocked(FIELD_MOVE_CUT), FALSE);
+    FlagSet(KANTO_FLAG_BADGE02_GET);
+    EXPECT(IsFieldMoveUnlocked(FIELD_MOVE_CUT));
+    FlagSet(KANTO_FLAG_BADGE03_GET);
+    EXPECT(IsFieldMoveUnlocked(FIELD_MOVE_FLY));
+    EXPECT_EQ(IsFieldMoveUnlocked(FIELD_MOVE_STRENGTH), FALSE);
+    FlagSet(KANTO_FLAG_BADGE04_GET);
+    EXPECT(IsFieldMoveUnlocked(FIELD_MOVE_STRENGTH));
+    FlagSet(KANTO_FLAG_SYS_USE_STRENGTH);
+    EXPECT(FlagGet(FLAG_SYS_USE_STRENGTH));
+    FlagClear(FLAG_SYS_USE_STRENGTH);
+    EXPECT_EQ(FlagGet(KANTO_FLAG_SYS_USE_STRENGTH), FALSE);
+    gSaveBlock1Ptr->location = previousLocation;
+    *gSaveBlock3Ptr = previous;
 }
 #endif

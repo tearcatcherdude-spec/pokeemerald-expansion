@@ -66,6 +66,14 @@ u16 KantoProgress_RegionalFlagId(u16 id)
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     if (gSaveBlock1Ptr != NULL && ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
     {
+        switch (id)
+        {
+        case FLAG_SYS_SAFARI_MODE: return KANTO_FLAG_SYS_SAFARI_MODE;
+        case FLAG_SYS_USE_STRENGTH: return KANTO_FLAG_SYS_USE_STRENGTH;
+        case FLAG_SYS_USE_FLASH: return KANTO_FLAG_SYS_USE_FLASH;
+        case FLAG_SYS_CRUISE_MODE: return KANTO_FLAG_SYS_CRUISE_MODE;
+        case FLAG_SYS_CTRL_OBJ_DELETE: return KANTO_FLAG_SYS_CTRL_OBJ_DELETE;
+        }
         if (id >= FLAG_BADGE01_GET && id <= FLAG_BADGE08_GET)
             return KANTO_FLAG_BADGE01_GET + id - FLAG_BADGE01_GET;
         if (id == FLAG_SYS_GAME_CLEAR)

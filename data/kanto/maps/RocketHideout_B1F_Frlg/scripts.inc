@@ -42,6 +42,7 @@ RocketHideout_B1F_EventScript_DefeatedGrunt5::
 	special DrawWholeMapView
 	waitse
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 RocketHideout_B1F_EventScript_SetBarrier::

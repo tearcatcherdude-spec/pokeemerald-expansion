@@ -22,6 +22,7 @@ Route12_NorthEntrance_2F_EventScript_Lass::
 	msgbox Route12_NorthEntrance_2F_Text_ExplainTM27
 	setflag KANTO_FLAG_GOT_TM27
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_NorthEntrance_2F_EventScript_TakeTMMale::
@@ -35,11 +36,13 @@ Route12_NorthEntrance_2F_EventScript_TakeTMFemale::
 Route12_NorthEntrance_2F_EventScript_NoRoomForTM27::
 	msgbox Route12_NorthEntrance_2F_Text_DontHaveRoomForThis
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 Route12_NorthEntrance_2F_EventScript_ExplainTM27::
 	msgbox Route12_NorthEntrance_2F_Text_ExplainTM27
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 @ Male and female text identical, differ (presumably) in JP

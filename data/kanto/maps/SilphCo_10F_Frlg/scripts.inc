@@ -12,11 +12,13 @@ SilphCo_10F_EventScript_WorkerF::
 	goto_if_ge KANTO_VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_10F_EventScript_WorkerFRocketsGone
 	msgbox SilphCo_10F_Text_WaaaImScared
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_10F_EventScript_WorkerFRocketsGone::
 	msgbox SilphCo_10F_Text_KeepMeCryingASecret
 	release
+	call Pip_EventScript_NPCReaction
 	end
 
 SilphCo_10F_EventScript_FloorSign::
