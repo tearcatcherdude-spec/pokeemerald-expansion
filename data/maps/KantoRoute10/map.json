@@ -237,7 +237,7 @@
       "y": 19,
       "elevation": 0,
       "item": "ITEM_SUPER_POTION",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE10_SUPER_POTION",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE10_SUPER_POTION - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -247,7 +247,7 @@
       "y": 40,
       "elevation": 3,
       "item": "ITEM_MAX_ETHER",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE10_MAX_ETHER",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE10_MAX_ETHER - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -257,7 +257,7 @@
       "y": 26,
       "elevation": 3,
       "item": "ITEM_CHERI_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE10_CHERI_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE10_CHERI_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -267,7 +267,7 @@
       "y": 29,
       "elevation": 3,
       "item": "ITEM_PERSIM_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE10_PERSIM_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE10_PERSIM_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -277,7 +277,7 @@
       "y": 57,
       "elevation": 3,
       "item": "ITEM_NANAB_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE10_NANAB_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE10_NANAB_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

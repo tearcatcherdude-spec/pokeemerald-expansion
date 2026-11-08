@@ -421,7 +421,7 @@
       "y": 7,
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_CERULEAN_CITY_RARE_CANDY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_CERULEAN_CITY_RARE_CANDY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },

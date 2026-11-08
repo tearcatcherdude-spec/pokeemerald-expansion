@@ -261,7 +261,7 @@
       "y": 34,
       "elevation": 3,
       "item": "ITEM_PEARL",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_FOUR_ISLAND_PEARL",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_FOUR_ISLAND_PEARL - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -271,7 +271,7 @@
       "y": 21,
       "elevation": 3,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_FOUR_ISLAND_ULTRA_BALL",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_FOUR_ISLAND_ULTRA_BALL - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },

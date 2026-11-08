@@ -230,7 +230,7 @@
       "y": 2,
       "elevation": 3,
       "item": "ITEM_ELIXIR",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE25_ELIXIR",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE25_ELIXIR - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -240,7 +240,7 @@
       "y": 6,
       "elevation": 3,
       "item": "ITEM_ETHER",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE25_ETHER",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE25_ETHER - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -250,7 +250,7 @@
       "y": 8,
       "elevation": 3,
       "item": "ITEM_ORAN_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE25_ORAN_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE25_ORAN_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -260,7 +260,7 @@
       "y": 3,
       "elevation": 3,
       "item": "ITEM_BLUK_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE25_BLUK_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE25_BLUK_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

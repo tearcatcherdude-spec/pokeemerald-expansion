@@ -256,7 +256,7 @@
       "y": 20,
       "elevation": 3,
       "item": "ITEM_ZINC",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE14_ZINC",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE14_ZINC - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -266,7 +266,7 @@
       "y": 53,
       "elevation": 3,
       "item": "ITEM_PINAP_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE14_PINAP_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE14_PINAP_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

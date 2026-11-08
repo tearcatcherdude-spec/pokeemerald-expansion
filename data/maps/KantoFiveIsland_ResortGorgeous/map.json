@@ -160,7 +160,7 @@
       "y": 7,
       "elevation": 3,
       "item": "ITEM_NEST_BALL",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_FIVE_ISLAND_RESORT_GORGEOUS_NEST_BALL",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_FIVE_ISLAND_RESORT_GORGEOUS_NEST_BALL - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -170,7 +170,7 @@
       "y": 11,
       "elevation": 3,
       "item": "ITEM_STARDUST",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_FIVE_ISLAND_RESORT_GORGEOUS_STARDUST",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_FIVE_ISLAND_RESORT_GORGEOUS_STARDUST - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -180,7 +180,7 @@
       "y": 12,
       "elevation": 3,
       "item": "ITEM_STAR_PIECE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_FIVE_ISLAND_RESORT_GORGEOUS_STAR_PIECE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_FIVE_ISLAND_RESORT_GORGEOUS_STAR_PIECE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -190,7 +190,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_STARDUST",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_FIVE_ISLAND_RESORT_GORGEOUS_STARDUST_2",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_FIVE_ISLAND_RESORT_GORGEOUS_STARDUST_2 - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },

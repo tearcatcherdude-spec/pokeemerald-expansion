@@ -142,7 +142,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_ELIXIR",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_POKEMON_MANSION_B1F_ELIXIR",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_POKEMON_MANSION_B1F_ELIXIR - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

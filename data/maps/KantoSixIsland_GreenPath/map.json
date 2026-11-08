@@ -96,7 +96,7 @@
       "y": 9,
       "elevation": 3,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SIX_ISLAND_GREEN_PATH_ULTRA_BALL",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SIX_ISLAND_GREEN_PATH_ULTRA_BALL - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

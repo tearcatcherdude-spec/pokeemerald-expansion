@@ -225,7 +225,7 @@
       "y": 83,
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE17_RARE_CANDY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE17_RARE_CANDY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -235,7 +235,7 @@
       "y": 53,
       "elevation": 3,
       "item": "ITEM_FULL_RESTORE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE17_FULL_RESTORE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE17_FULL_RESTORE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -245,7 +245,7 @@
       "y": 68,
       "elevation": 3,
       "item": "ITEM_PP_UP",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE17_PP_UP",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE17_PP_UP - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -255,7 +255,7 @@
       "y": 125,
       "elevation": 3,
       "item": "ITEM_MAX_REVIVE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE17_MAX_REVIVE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE17_MAX_REVIVE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -265,7 +265,7 @@
       "y": 157,
       "elevation": 3,
       "item": "ITEM_MAX_ELIXIR",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE17_MAX_ELIXIR",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE17_MAX_ELIXIR - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

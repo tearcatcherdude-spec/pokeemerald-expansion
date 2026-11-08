@@ -214,7 +214,7 @@
       "y": 7,
       "elevation": 0,
       "item": "ITEM_ETHER",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE9_ETHER",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE9_ETHER - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -224,7 +224,7 @@
       "y": 2,
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE9_RARE_CANDY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE9_RARE_CANDY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -234,7 +234,7 @@
       "y": 2,
       "elevation": 3,
       "item": "ITEM_CHESTO_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE9_CHESTO_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE9_CHESTO_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

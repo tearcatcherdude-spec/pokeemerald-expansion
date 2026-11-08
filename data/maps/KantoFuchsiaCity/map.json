@@ -460,7 +460,7 @@
       "y": 26,
       "elevation": 3,
       "item": "ITEM_MAX_REVIVE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_FUCHSIA_CITY_MAX_REVIVE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_FUCHSIA_CITY_MAX_REVIVE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

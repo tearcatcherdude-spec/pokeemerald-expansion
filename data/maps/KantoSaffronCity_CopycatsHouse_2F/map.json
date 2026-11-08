@@ -106,7 +106,7 @@
       "y": 1,
       "elevation": 0,
       "item": "ITEM_NUGGET",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SAFFRON_CITY_COPYCATS_HOUSE_2F_NUGGET",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SAFFRON_CITY_COPYCATS_HOUSE_2F_NUGGET - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

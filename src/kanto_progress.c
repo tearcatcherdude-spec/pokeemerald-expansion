@@ -72,3 +72,12 @@ u16 KantoProgress_RegionalFlagId(u16 id)
 #endif
     return id;
 }
+
+u16 KantoProgress_HiddenItemFlag(u16 packedId)
+{
+#if !IS_FRLG
+    if (packedId >= 0x1000 && packedId < 0x1000 + KANTO_NATIVE_FLAG_COUNT)
+        return KANTO_FLAG_BASE + packedId - 0x1000;
+#endif
+    return FLAG_HIDDEN_ITEMS_START + packedId;
+}

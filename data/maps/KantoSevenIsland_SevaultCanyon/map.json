@@ -332,7 +332,7 @@
       "y": 66,
       "elevation": 3,
       "item": "ITEM_CHERI_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_SEVAULT_CANYON_CHERI_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_SEVAULT_CANYON_CHERI_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },

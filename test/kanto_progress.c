@@ -62,7 +62,7 @@ TEST("Invalid Kanto bank IDs never fall through into unrelated save or testing m
 TEST("Kanto Brock resolves to his original party without aliasing a Hoenn or partner trainer")
 {
     const struct Trainer *trainer = GetTrainerStructFromId(KANTO_TRAINER_LEADER_BROCK);
-    EXPECT_EQ(trainer->partySize, 2);
+    EXPECT_EQ((u32)trainer->partySize, 2);
     EXPECT_EQ(trainer->party[0].species, SPECIES_GEODUDE);
     EXPECT_EQ(trainer->party[0].lvl, 12);
     EXPECT_EQ(trainer->party[1].species, SPECIES_ONIX);
@@ -109,5 +109,14 @@ TEST("Kanto native badge queries and League completion never overwrite Hoenn pro
     if (previousClear) FlagSet(FLAG_SYS_GAME_CLEAR);
     gSaveBlock1Ptr->location = previousLocation;
     *gSaveBlock3Ptr = previous;
+}
+TEST("Kanto hidden items fit the native compact event without corrupting quantity")
+{
+    u32 packedId = 0x1000 + 0x3E8;
+    u32 event = ITEM_POTION | (packedId << 11) | (1 << 24);
+    EXPECT_EQ((event >> 24) & 127, 1);
+    EXPECT_EQ((event >> 11) & 8191, packedId);
+    EXPECT_EQ(KantoProgress_HiddenItemFlag(packedId), KANTO_FLAG_BASE + 0x3E8);
+    EXPECT_EQ(KantoProgress_HiddenItemFlag(0), FLAG_HIDDEN_ITEMS_START);
 }
 #endif

@@ -174,7 +174,7 @@
       "y": 16,
       "elevation": 3,
       "item": "ITEM_MAX_ELIXIR",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_POWER_PLANT_MAX_ELIXIR",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_POWER_PLANT_MAX_ELIXIR - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -184,7 +184,7 @@
       "y": 12,
       "elevation": 3,
       "item": "ITEM_THUNDER_STONE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_POWER_PLANT_THUNDER_STONE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_POWER_PLANT_THUNDER_STONE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

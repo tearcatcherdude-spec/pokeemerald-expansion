@@ -68,7 +68,7 @@
       "y": 15,
       "elevation": 3,
       "item": "ITEM_WEPEAR_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE7_WEPEAR_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE7_WEPEAR_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

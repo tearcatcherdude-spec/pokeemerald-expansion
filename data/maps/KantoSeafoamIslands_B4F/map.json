@@ -139,7 +139,7 @@
       "y": 8,
       "elevation": 0,
       "item": "ITEM_WATER_STONE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SEAFOAM_ISLANDS_B4F_WATER_STONE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SEAFOAM_ISLANDS_B4F_WATER_STONE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },

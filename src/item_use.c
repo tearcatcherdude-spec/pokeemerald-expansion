@@ -1,4 +1,5 @@
 #include "global.h"
+#include "kanto_progress.h"
 #include "parallel_watch.h"
 #include "item_use.h"
 #include "battle.h"
@@ -450,7 +451,7 @@ bool8 ItemfinderCheckForHiddenItems(const struct MapEvents *events, u8 taskId)
     for (i = 0; i < events->bgEventCount; i++)
     {
         // Check if there are any hidden items on the current map that haven't been picked up
-        if (events->bgEvents[i].kind == BG_EVENT_HIDDEN_ITEM && !FlagGet(events->bgEvents[i].bgUnion.hiddenItem.hiddenItemId + FLAG_HIDDEN_ITEMS_START))
+        if (events->bgEvents[i].kind == BG_EVENT_HIDDEN_ITEM && !FlagGet(KantoProgress_HiddenItemFlag(events->bgEvents[i].bgUnion.hiddenItem.hiddenItemId)))
         {
             distanceX = events->bgEvents[i].x + MAP_OFFSET - playerX;
             distanceY = events->bgEvents[i].y + MAP_OFFSET - playerY;
@@ -479,7 +480,7 @@ static bool8 IsHiddenItemPresentAtCoords(const struct MapEvents *events, s16 x, 
     {
         if (bgEvent[i].kind == BG_EVENT_HIDDEN_ITEM && x == bgEvent[i].x && y == bgEvent[i].y) // hidden item and coordinates matches x and y passed?
         {
-            if (!FlagGet(bgEvent[i].bgUnion.hiddenItem.hiddenItemId + FLAG_HIDDEN_ITEMS_START))
+            if (!FlagGet(KantoProgress_HiddenItemFlag(bgEvent[i].bgUnion.hiddenItem.hiddenItemId)))
                 return TRUE;
             else
                 return FALSE;

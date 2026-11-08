@@ -205,7 +205,7 @@
       "y": 2,
       "elevation": 3,
       "item": "ITEM_MACHO_BRACE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_VIRIDIAN_CITY_GYM_MACHO_BRACE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_VIRIDIAN_CITY_GYM_MACHO_BRACE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": true
     }

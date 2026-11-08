@@ -93,7 +93,7 @@
       "y": 4,
       "elevation": 3,
       "item": "ITEM_SOOTHE_BELL",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_POKEMON_TOWER_7F_SOOTHE_BELL",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_POKEMON_TOWER_7F_SOOTHE_BELL - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": true
     }

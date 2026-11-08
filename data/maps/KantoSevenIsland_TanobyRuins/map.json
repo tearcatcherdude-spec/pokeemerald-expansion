@@ -138,7 +138,7 @@
       "y": 10,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -148,7 +148,7 @@
       "y": 9,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_2",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_2 - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -158,7 +158,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_3",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_3 - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -168,7 +168,7 @@
       "y": 2,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_4",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TANOBY_RUINS_HEART_SCALE_4 - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

@@ -77,7 +77,7 @@
       "y": 28,
       "elevation": 3,
       "item": "ITEM_LAVA_COOKIE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SSANNE_EXTERIOR_LAVA_COOKIE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SSANNE_EXTERIOR_LAVA_COOKIE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

@@ -326,7 +326,7 @@
       "y": 11,
       "elevation": 3,
       "item": "ITEM_MAX_ETHER",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_VERMILION_CITY_MAX_ETHER",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_VERMILION_CITY_MAX_ETHER - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

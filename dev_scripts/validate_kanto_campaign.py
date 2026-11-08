@@ -23,6 +23,10 @@ def main():
    assert w['dest_map'] in maps,(m['name'],w)
    num=int(w['dest_warp_id']);assert num<0 or num<len(maps[w['dest_map']]['warp_events']),(m['name'],w)
   for c in m['connections'] or []:assert c['map'] in maps,(m['name'],c)
+  for e in m['bg_events']:
+   if e.get('type')=='hidden_item':
+    assert e['flag'].startswith('(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_'),(m['name'],e)
+
  for inc in (ROOT/'data/kanto').rglob('*.inc'):
   for path in re.findall(r'\.include "([^"]+)"',inc.read_text(encoding='utf-8')):
    assert (ROOT/path).is_file(),(inc,path)

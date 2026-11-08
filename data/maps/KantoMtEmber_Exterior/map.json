@@ -379,7 +379,7 @@
       "y": 17,
       "elevation": 0,
       "item": "ITEM_FIRE_STONE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_MT_EMBER_EXTERIOR_FIRE_STONE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_MT_EMBER_EXTERIOR_FIRE_STONE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -389,7 +389,7 @@
       "y": 30,
       "elevation": 3,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_MT_EMBER_EXTERIOR_ULTRA_BALL",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_MT_EMBER_EXTERIOR_ULTRA_BALL - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

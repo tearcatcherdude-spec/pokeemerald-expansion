@@ -150,7 +150,7 @@
       "y": 12,
       "elevation": 0,
       "item": "ITEM_ULTRA_BALL",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_ULTRA_BALL",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_ULTRA_BALL - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -160,7 +160,7 @@
       "y": 1,
       "elevation": 0,
       "item": "ITEM_FULL_RESTORE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_FULL_RESTORE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_FULL_RESTORE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

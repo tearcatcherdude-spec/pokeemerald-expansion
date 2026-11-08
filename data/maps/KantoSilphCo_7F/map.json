@@ -340,7 +340,7 @@
       "y": 11,
       "elevation": 0,
       "item": "ITEM_ZINC",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SILPH_CO_7F_ZINC",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SILPH_CO_7F_ZINC - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },

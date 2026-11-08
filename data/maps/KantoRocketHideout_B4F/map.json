@@ -177,7 +177,7 @@
       "y": 6,
       "elevation": 3,
       "item": "ITEM_NEST_BALL",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROCKET_HIDEOUT_B4F_NEST_BALL",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROCKET_HIDEOUT_B4F_NEST_BALL - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -187,7 +187,7 @@
       "y": 6,
       "elevation": 3,
       "item": "ITEM_NET_BALL",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROCKET_HIDEOUT_B4F_NET_BALL",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROCKET_HIDEOUT_B4F_NET_BALL - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

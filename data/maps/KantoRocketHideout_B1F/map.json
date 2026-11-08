@@ -167,7 +167,7 @@
       "y": 17,
       "elevation": 0,
       "item": "ITEM_PP_UP",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROCKET_HIDEOUT_B1F_PP_UP",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROCKET_HIDEOUT_B1F_PP_UP - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

@@ -68,7 +68,7 @@
       "y": 5,
       "elevation": 3,
       "item": "ITEM_HYPER_POTION",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SSANNE_B1F_CORRIDOR_HYPER_POTION",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SSANNE_B1F_CORRIDOR_HYPER_POTION - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

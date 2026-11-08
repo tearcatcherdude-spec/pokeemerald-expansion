@@ -249,7 +249,7 @@
       "y": 5,
       "elevation": 0,
       "item": "ITEM_ESCAPE_ROPE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_ROUTE11_ESCAPE_ROPE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_ROUTE11_ESCAPE_ROPE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

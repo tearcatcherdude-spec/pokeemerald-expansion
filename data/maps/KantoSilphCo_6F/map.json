@@ -234,7 +234,7 @@
       "y": 8,
       "elevation": 0,
       "item": "ITEM_CARBOS",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SILPH_CO_6F_CARBOS",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SILPH_CO_6F_CARBOS - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },

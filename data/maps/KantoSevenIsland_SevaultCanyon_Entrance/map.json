@@ -129,7 +129,7 @@
       "y": 29,
       "elevation": 5,
       "item": "ITEM_RAWST_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE_RAWST_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE_RAWST_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },

@@ -293,7 +293,7 @@
       "y": 3,
       "elevation": 3,
       "item": "ITEM_BIG_MUSHROOM",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_POKEMON_TOWER_5F_BIG_MUSHROOM",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_POKEMON_TOWER_5F_BIG_MUSHROOM - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }

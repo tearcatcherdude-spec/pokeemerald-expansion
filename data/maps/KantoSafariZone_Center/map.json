@@ -148,7 +148,7 @@
       "y": 15,
       "elevation": 3,
       "item": "ITEM_LEAF_STONE",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SAFARI_ZONE_CENTER_LEAF_STONE",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SAFARI_ZONE_CENTER_LEAF_STONE - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },

@@ -146,7 +146,7 @@
       "y": 8,
       "elevation": 0,
       "item": "ITEM_CHESTO_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_CHESTO_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_CHESTO_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -156,7 +156,7 @@
       "y": 4,
       "elevation": 0,
       "item": "ITEM_PECHA_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_PECHA_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_PECHA_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     },
@@ -166,7 +166,7 @@
       "y": 6,
       "elevation": 0,
       "item": "ITEM_CHERI_BERRY",
-      "flag": "KANTO_FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_CHERI_BERRY",
+      "flag": "(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_CHERI_BERRY - KANTO_FLAG_BASE))",
       "quantity": 1,
       "underfoot": false
     }
