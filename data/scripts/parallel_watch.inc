@@ -18,7 +18,7 @@ ParallelWatch_End:
 	releaseall
 	end
 ParallelWatch_Text_Use:
-	.string "Visit the other world?\nThe watch remembers where you leave.$"
+	.string "Turn the watch's hands?$"
 ParallelWatch_EventScript_Pickup::
 	lock
 	faceplayer
@@ -31,7 +31,7 @@ ParallelWatch_EndPickup:
 	release
 	end
 ParallelWatch_Text_Found:
-	.string "Two hands turn in opposite directions.\nOne points somewhere unfamiliar.\pUse it outside with a healthy POKéMON.\nYour team and belongings travel too.$"
+	.string "The hands turn in opposite directions.$"
 ParallelWatch_Nurse::
 	lock
 	faceplayer
@@ -46,7 +46,7 @@ ParallelWatch_Nurse::
 ParallelWatch_Text_Heal:
 	.string "Welcome! Rest your POKéMON here?\nVisiting teams are always welcome.$"
 ParallelWatch_Text_Healed:
-	.string "All rested! The PC uses the same\nstorage network as your home region.$"
+	.string "All rested!\nWe hope to see you again.$"
 ParallelWatch_Mart::
 	lock
 	faceplayer
@@ -69,7 +69,7 @@ ParallelWatch_WatchPallet_1::
 	msgbox ParallelWatch_WatchPallet_1_Text, MSGBOX_NPC
 	end
 ParallelWatch_WatchPallet_1_Text:
-	.string "A watch that takes you places?\nMine only takes me to lunchtime.$"
+	.string "I set off for a morning walk.\nIt turned into a lunch break.$"
 ParallelWatch_WatchRoute1_0::
 	msgbox ParallelWatch_WatchRoute1_0_Text, MSGBOX_NPC
 	end
@@ -84,12 +84,12 @@ ParallelWatch_WatchViridian_1::
 	msgbox ParallelWatch_WatchViridian_1_Text, MSGBOX_NPC
 	end
 ParallelWatch_WatchViridian_1_Text:
-	.string "Someone called your bag mysterious.\nI called it practical.\pIf my keys worked in two worlds,\nI would lose them in both.$"
+	.string "I keep a spare key in my bag.\nNow I just need a spare bag.$"
 ParallelWatch_WatchHouse1F_0::
 	msgbox ParallelWatch_WatchHouse1F_0_Text, MSGBOX_NPC
 	end
 ParallelWatch_WatchHouse1F_0_Text:
-	.string "A visitor! Make yourself at home.\nThe room upstairs is empty.\pYou look like someone who needs\na minute without saving the world.$"
+	.string "A visitor! Make yourself at home.\nThe room upstairs is empty.\pI keep meaning to find someone\nwho understands that TV remote.$"
 ParallelWatch_WatchNeighbor_0::
 	msgbox ParallelWatch_WatchNeighbor_0_Text, MSGBOX_NPC
 	end
@@ -99,17 +99,17 @@ ParallelWatch_WatchLab_0::
 	msgbox ParallelWatch_WatchLab_0_Text, MSGBOX_NPC
 	end
 ParallelWatch_WatchLab_0_Text:
-	.string "Two places, one TRAINER. Remarkable!\nPlease keep your own POKéMON.\pThe watch remembers where you left\neach world. Use it outdoors, on foot.\pYour PC, bag and team stay yours.\nI would write that down twice.$"
+	.string "My notes were perfectly organized.\nThen I invented a better system.\pNow I have two missing notebooks.$"
 ParallelWatch_WatchCenter_1::
 	msgbox ParallelWatch_WatchCenter_1_Text, MSGBOX_NPC
 	end
 ParallelWatch_WatchCenter_1_Text:
-	.string "The PC in the top-right corner\nconnects to your usual boxes.\pI checked my account twice.\nStill no money in either region.$"
+	.string "I came in for a quick rest.\nThat was three cups of tea ago.$"
 ParallelWatch_WatchHouse_0::
 	msgbox ParallelWatch_WatchHouse_0_Text, MSGBOX_NPC
 	end
 ParallelWatch_WatchHouse_0_Text:
-	.string "I moved one town over.\nIt took six boxes and three days.\pYou moved one WORLD over.\nThat seems unfairly efficient.$"
+	.string "I moved one town over.\nIt took six boxes and three days.\pThe sofa still hasn't forgiven me.$"
 ParallelWatch_WatchSchool_0::
 	msgbox ParallelWatch_WatchSchool_0_Text, MSGBOX_NPC
 	end
@@ -119,7 +119,7 @@ ParallelWatch_GymClosed::
 	msgbox ParallelWatch_GymClosed_Text, MSGBOX_NPC
 	end
 ParallelWatch_GymClosed_Text:
-	.string "The GYM is closed.\nNo challenge is available here yet.$"
+	.string "The GYM is closed.\nA notice says: Back after lunch.$"
 ParallelWatch_UpstairsClosed::
 	msgbox ParallelWatch_UpstairsClosed_Text, MSGBOX_NPC
 	end

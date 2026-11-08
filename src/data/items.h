@@ -16101,9 +16101,9 @@ const struct ItemInfo gItemsInfo[] =
     },
     [ITEM_PARALLEL_WATCH] =
     {
-        .name = ITEM_NAME("Parallel Watch"),
+        .name = ITEM_NAME("Strange Watch"),
         .price = 0,
-        .description = COMPOUND_STRING("Cross worlds.\nUse outdoors\nwhile on foot."),
+        .description = COMPOUND_STRING("An odd watch.\nIts hands turn\nopposite ways."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,

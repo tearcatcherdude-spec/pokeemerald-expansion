@@ -3,7 +3,7 @@
 Built on the complete Living Hoenn/Pip branch. Existing starters, scenes, rewards,
 rare encounters and saved dialogue memory remain in place.
 
-Find the Parallel Watch on the ground in Littleroot at (8,17). Use it from Key
+Find the Strange Watch on the ground in Littleroot at (8,17). Use it from Key
 Items, or register it to Select. It needs a healthy non-egg Pokémon and clear
 outdoor ground on foot. Say Yes to cross; No leaves both return points alone.
 
@@ -39,4 +39,11 @@ Implementation notes:
   coordinate scripts and NPC movement ranges before use. Invalid anchors use a
   verified fallback. Coordinate warp API retains signed 16-bit route coordinates.
 
-Validation status: source implementation prepared; build and emulator tests pending.
+Pip uses the accepted Morph artwork and palette from PR #6. The watch is a silent
+mystery: NPCs and Pip do not explain it, world switching or shared inventory/PC
+mechanics. Retired explanatory dialogue IDs remain reserved; new local remarks
+append to the catalogue, preserving existing save memory.
+
+Run `python dev_scripts/validate_project_baseline.py` before building. It verifies
+the accepted asset fingerprints, starter files, append-only memory slots and
+silent-mystery dialogue. Current build and emulator results are recorded in PR #7.

@@ -96,18 +96,18 @@ static bool32 CanSwitch(void)
     struct ParallelWatchAnchor a = CurrentAnchor();
     bool32 healthy = FALSE;
     if (gMain.inBattle || IsOverworldLinkActive())
-        return Deny(COMPOUND_STRING("The watch is quiet for now.$"));
+        return Deny(COMPOUND_STRING("The hands are still.$"));
     for (u32 i = 0; i < PARTY_SIZE; i++)
         if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) != SPECIES_NONE
          && !GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG)
          && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HP))
             healthy = TRUE;
     if (!healthy)
-        return Deny(COMPOUND_STRING("Bring a healthy POKéMON before\ntrying the watch.$"));
+        return Deny(COMPOUND_STRING("The hands are still.$"));
     if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT))
-        return Deny(COMPOUND_STRING("Step off your bike or out of the\nwater before using the watch.$"));
+        return Deny(COMPOUND_STRING("The hands will not turn.$"));
     if (!ParallelWatch_IsSafeAnchor(&a, a.mapGroup == MAP_GROUP(MAP_WATCH_PALLET)))
-        return Deny(COMPOUND_STRING("Find clear ground outside, away from\ndoors and people, to use the watch.$"));
+        return Deny(COMPOUND_STRING("The hands will not turn here.$"));
     return TRUE;
 }
 void Script_ParallelWatchCheck(struct ScriptContext *ctx)
@@ -143,7 +143,7 @@ void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
         };
         if (!ParallelWatch_IsSafeAnchor(&target, !world))
         {
-            Deny(COMPOUND_STRING("The other world has no safe landing.\nThe watch stays here with you.$"));
+            Deny(COMPOUND_STRING("The hands spin, then stop.$"));
             return;
         }
     }
