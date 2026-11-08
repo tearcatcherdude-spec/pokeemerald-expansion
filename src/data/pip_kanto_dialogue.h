@@ -63,6 +63,10 @@ static const u8 sPipAdventure_BLAINE[] = _("PIP: A quiz before a battle. He\ncom
 static const u8 sPipAdventure_GIOVANNI[] = _("PIP: A GYM and a criminal empire.\nI cannot manage two errands.$");
 static const u8 sPipAdventure_PROF_OAK[] = _("PIP: He really loves his\nresearch. I hope someone reminds\lhim to eat.$");
 static const u8 sPipAdventure_BLUE[] = _("PIP: He practices being ahead of\nus. Exhausting to stand there.$");
+static const u8 sPipAdventure_LORELEI[] = _("PIP: She makes ice sound like a plan.\nI can barely plan a sandwich.$");
+static const u8 sPipAdventure_BRUNO[] = _("PIP: He lifts boulders for training.\nI have been carrying the bag.\lSurely that counts.$");
+static const u8 sPipAdventure_AGATHA[] = _("PIP: She has known OAK for years.\nThat explains the advanced\llecturing technique.$");
+static const u8 sPipAdventure_LANCE[] = _("PIP: A cape AND dragons.\nHe has committed to the job.$");
 static const struct PipLocationDialogue sPipAdventureLocations[] = {
     {MAPSEC_KANTO_SAFARI_ZONE, {sPipAdventure_SAFARI_ZONE_0, sPipAdventure_SAFARI_ZONE_1}},
     {MAPSEC_KANTO_VICTORY_ROAD, {sPipAdventure_VICTORY_ROAD_0, sPipAdventure_VICTORY_ROAD_1}},

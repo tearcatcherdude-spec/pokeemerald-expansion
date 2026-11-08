@@ -441,5 +441,9 @@ static const u8 *const sPipMemoryCatalogue[] = {
     sPipKantoRoute_24_1, // 401
     sPipKantoRoute_25_0, // 402
     sPipKantoRoute_25_1, // 403
+    sPipAdventure_LORELEI, // 404
+    sPipAdventure_BRUNO, // 405
+    sPipAdventure_AGATHA, // 406
+    sPipAdventure_LANCE, // 407
 };
 STATIC_ASSERT(ARRAY_COUNT(sPipMemoryCatalogue) <= 512, PipMemoryCapacity);

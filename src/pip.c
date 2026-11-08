@@ -93,21 +93,48 @@ static const u8 *Fresh(const u8 *text)
 {
     return text != NULL && !Pip_HasHeard(text) ? text : NULL;
 }
-static const u8 *FreshKantoLocation(void)
+static const u8 *FreshNPCOffer(const u8 *text)
+{
+    u32 id = MemoryIndex(text);
+    EnsureMemory();
+    if (id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text)
+     || (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8))))
+        return NULL;
+    return text;
+}
+static const u8 *FreshKantoLocationFor(bool32 npcOffer)
 {
     if (!ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
         return NULL;
     for (u32 i = 0; i < ARRAY_COUNT(sPipAdventureLocations); i++)
         if (sPipAdventureLocations[i].section == gMapHeader.regionMapSectionId)
             for (u32 j = 0; j < 2; j++)
-                if (Fresh(sPipAdventureLocations[i].lines[j]) != NULL)
-                    return sPipAdventureLocations[i].lines[j];
+            {
+                const u8 *text = sPipAdventureLocations[i].lines[j];
+                if ((npcOffer ? FreshNPCOffer(text) : Fresh(text)) != NULL)
+                    return text;
+            }
     for (u32 i = 0; i < ARRAY_COUNT(sPipKantoRoutes); i++)
         if (sPipKantoRoutes[i].section == gMapHeader.regionMapSectionId)
             for (u32 j = 0; j < 2; j++)
-                if (Fresh(sPipKantoRoutes[i].lines[j]) != NULL)
-                    return sPipKantoRoutes[i].lines[j];
+            {
+                const u8 *text = sPipKantoRoutes[i].lines[j];
+                if ((npcOffer ? FreshNPCOffer(text) : Fresh(text)) != NULL)
+                    return text;
+            }
+    for (u32 i = 0; i < ARRAY_COUNT(sPipLivingLocations); i++)
+        if (sPipLivingLocations[i].section == gMapHeader.regionMapSectionId)
+            for (u32 j = 0; j < 2; j++)
+            {
+                const u8 *text = sPipLivingLocations[i].lines[j];
+                if ((npcOffer ? FreshNPCOffer(text) : Fresh(text)) != NULL)
+                    return text;
+            }
     return NULL;
+}
+static const u8 *FreshKantoLocation(void)
+{
+    return FreshKantoLocationFor(FALSE);
 }
 static const u8 *FreshLocation(void)
 {
@@ -365,9 +392,13 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
         case OBJ_EVENT_GFX_BLAINE: text = sPipAdventure_BLAINE; break;
         case OBJ_EVENT_GFX_GIOVANNI: text = sPipAdventure_GIOVANNI; break;
         case OBJ_EVENT_GFX_PROF_OAK: text = sPipAdventure_PROF_OAK; break;
+        case OBJ_EVENT_GFX_LORELEI: text = sPipAdventure_LORELEI; break;
+        case OBJ_EVENT_GFX_BRUNO: text = sPipAdventure_BRUNO; break;
+        case OBJ_EVENT_GFX_AGATHA: text = sPipAdventure_AGATHA; break;
+        case OBJ_EVENT_GFX_LANCE: text = sPipAdventure_LANCE; break;
         case OBJ_EVENT_GFX_BLUE: text = sPipAdventure_BLUE; break;
         default:
-            if (Fresh(text) == NULL) text = FreshKantoLocation();
+            if (FreshNPCOffer(text) == NULL) text = FreshKantoLocationFor(TRUE);
             break;
         }
     }
