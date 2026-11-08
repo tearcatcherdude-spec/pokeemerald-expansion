@@ -1,4 +1,5 @@
 #include "global.h"
+#include "kanto_progress.h"
 #include "main.h"
 #include "event_data.h"
 #include "field_effect.h"
@@ -744,7 +745,7 @@ static void CreatePCMultichoice(void)
         pixelWidth = DisplayTextAndGetWidth(sPCNameStrings[i], pixelWidth);
     }
 
-    if (FlagGet(FLAG_SYS_GAME_CLEAR))
+    if (KantoProgress_HasAnyChampionRecord())
     {
         pixelWidth = DisplayTextAndGetWidth(gText_HallOfFame, pixelWidth);
     }
@@ -752,7 +753,7 @@ static void CreatePCMultichoice(void)
     width = ConvertPixelWidthToTileWidth(pixelWidth);
 
     // Include Hall of Fame option if player is champion
-    if (FlagGet(FLAG_SYS_GAME_CLEAR))
+    if (KantoProgress_HasAnyChampionRecord())
     {
         numChoices = 4;
         windowId = CreateWindowFromRect(0, 0, width, 8);

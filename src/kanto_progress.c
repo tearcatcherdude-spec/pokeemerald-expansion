@@ -127,3 +127,8 @@ void Script_KantoCheckCurrentRegion(struct ScriptContext *ctx)
 {
     gSpecialVar_Result = ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
 }
+
+void Script_KantoCheckAnyChampionRecord(struct ScriptContext *ctx)
+{
+    gSpecialVar_Result = KantoProgress_HasAnyChampionRecord();
+}
