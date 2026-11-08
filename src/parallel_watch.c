@@ -153,7 +153,7 @@ void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
     gSpecialVar_Result = TRUE;
     DoWarp();
     gFieldCallback = WatchArrival;
-    ScriptContext_Stop();
+    ResetInitialPlayerAvatarState();
 }
 #else
 bool32 ParallelWatch_IsOutdoor(u32 group, u32 num) { return FALSE; }

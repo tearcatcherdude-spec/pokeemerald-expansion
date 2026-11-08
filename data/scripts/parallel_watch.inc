@@ -8,6 +8,7 @@ ParallelWatch_EventScript_Use::
 	closemessage
 	callnative Script_ParallelWatchSwitch
 	goto_if_eq VAR_RESULT, FALSE, ParallelWatch_Denied
+	waitstate
 	end
 ParallelWatch_Denied:
 	message gStringVar4
