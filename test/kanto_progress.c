@@ -62,6 +62,7 @@ TEST("Invalid Kanto bank IDs never fall through into unrelated save or testing m
 TEST("Kanto Brock resolves to his original party without aliasing a Hoenn or partner trainer")
 {
     const struct Trainer *trainer = GetTrainerStructFromId(KANTO_TRAINER_LEADER_BROCK);
+    EXPECT_EQ(SanitizeTrainerId(KANTO_TRAINER_LEADER_BROCK), KANTO_TRAINER_LEADER_BROCK);
     EXPECT_EQ((u32)trainer->partySize, 2);
     EXPECT_EQ(trainer->party[0].species, SPECIES_GEODUDE);
     EXPECT_EQ(trainer->party[0].lvl, 12);

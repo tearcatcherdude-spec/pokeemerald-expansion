@@ -28,6 +28,7 @@ def main():
     assert e['flag'].startswith('(FLAG_HIDDEN_ITEMS_START + 0x1000 + (KANTO_FLAG_'),(m['name'],e)
 
  for inc in (ROOT/'data/kanto').rglob('*.inc'):
+  assert not re.search(r'\bVAR_STARTER_MON\b',inc.read_text(encoding='utf-8')),('Hoenn starter variable leaked into Kanto',inc)
   for path in re.findall(r'\.include "([^"]+)"',inc.read_text(encoding='utf-8')):
    assert (ROOT/path).is_file(),(inc,path)
  labels={}

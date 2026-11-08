@@ -24,6 +24,8 @@ bool32 KantoProgress_EnsureInitialized(void)
             u32 id = sInitialFlags[i] - KANTO_FLAG_BASE;
             gSaveBlock3Ptr->kanto.flags[id / 8] |= 1 << (id % 8);
         }
+        u32 obtained = KANTO_FLAG_SYS_POKEMON_GET - KANTO_FLAG_BASE;
+        gSaveBlock3Ptr->kanto.flags[obtained / 8] |= 1 << (obtained % 8);
         // The visitor already has an Emerald starter. Skip the forced Oak
         // rescue and starter battle, retaining the parcel and local quest chain.
         gSaveBlock3Ptr->kanto.vars[KANTO_VAR_MAP_SCENE_PALLET_TOWN_OAK - KANTO_VAR_BASE] = 1;

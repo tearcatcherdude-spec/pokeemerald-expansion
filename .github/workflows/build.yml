@@ -69,6 +69,9 @@ jobs:
       - name: Verify compiled Pip artwork
         run: python3 dev_scripts/verify_pip_rom.py pokeemerald.gba pokeemerald.map
 
+      - name: Verify compiled Kanto NPC registrations
+        run: python3 dev_scripts/verify_kanto_rom.py pokeemerald.gba pokeemerald.map
+
       - name: Upload Emerald ROM
         uses: actions/upload-artifact@v4
         with:
