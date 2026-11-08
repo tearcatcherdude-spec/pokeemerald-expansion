@@ -21,13 +21,14 @@ This branch adds the files in their intended locations without modifying game co
 
 The existing engine table handles right/east by horizontal mirroring. Foot/anchor positions and visual animation should be reviewed in mGBA after registration.
 
-## Codex integration tasks
-1. On a separate coding branch (merge these assets first or cherry-pick the asset commit), register `gObjectEventPic_Pip` using the pattern of `gObjectEventPic_Boy2` in `src/data/object_events/object_event_graphics.h`.
-2. Register the frame table with `overworld_ascending_frames(gObjectEventPic_Pip, 2, 4)` in `src/data/object_events/object_event_pic_tables.h`.
-3. Create a **new** `ObjectEventGraphicsInfo` with `width=16, height=32, size=256`, `sAnimTable_Standard`, compatible OAM, and a new graphics ID. Consult `src/data/object_events/object_event_graphics_info.h`, pointers, and object event constants.
-4. Register a palette appropriately; do not overwrite an existing NPC palette or assume unallocated palette tags.
-5. Use the existing follower system for Pip. Test all four cardinal directions, follower movement, warp transitions, normal and Echo maps, save/reload, and shadows.
-6. Build/test on the repo's current working branch. Do not alter starter selection or existing Echo World map work without an explicit integration need.
+## Registration reference
+1. `gObjectEventPic_Pip` is registered in `src/data/object_events/object_event_graphics.h` using the standard human sprite conversion.
+2. `sPicTable_Pip` uses `overworld_ascending_frames(gObjectEventPic_Pip, 2, 4)`.
+3. `gObjectEventGraphicsInfo_Pip` has width 16, height 32, size 256, `sAnimTable_Standard` and the standard 16x32 OAM/subsprite layout.
+4. `OBJ_EVENT_PAL_TAG_PIP` is distinct from the shared NPC palettes and registered in the palette table.
+5. `OBJ_EVENT_GFX_PIP` is connected to the existing follower system, with its own identity and scene safeguards.
+
+Build/runtime verification remains necessary: all four cardinal directions, movement, warp transitions, save/reload, travel modes and shadows. This coding branch covers normal Emerald; the separate Echo maps are preserved without being merged here.
 
 **Integration:** `OBJ_EVENT_GFX_PIP` uses these exact nine frames and its own palette tag. The original shared Boy sprite/palette is unchanged. Pip's travelling dialogue covers all Hoenn towns and routes, major landmarks, badges and postgame. Standard NPC conversations offer an optional reaction, preserving the original script's result, message pointer and expanded text. Scripted movement temporarily hides Pip and removes his collision with actors; he regroups when controls return.
 
