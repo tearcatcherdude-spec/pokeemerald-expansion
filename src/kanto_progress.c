@@ -110,3 +110,15 @@ bool32 KantoProgress_HasBadgeForObedience(u32 index)
     return FlagGet(FLAG_BADGE01_GET + index);
 #endif
 }
+
+bool32 KantoProgress_HasAnyChampionRecord(void)
+{
+#if !IS_FRLG
+    u32 flag = FLAG_SYS_GAME_CLEAR;
+    if (gSaveBlock1Ptr->flags[flag / 8] & (1 << (flag % 8)))
+        return TRUE;
+    return FlagGet(KANTO_FLAG_SYS_GAME_CLEAR);
+#else
+    return FlagGet(FLAG_SYS_GAME_CLEAR);
+#endif
+}

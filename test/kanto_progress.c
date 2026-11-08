@@ -168,4 +168,28 @@ TEST("Cross-region travel retains earned obedience while HM badges stay regional
     gSaveBlock1Ptr->location = previousLocation;
     *gSaveBlock3Ptr = previous;
 }
+TEST("A first League win in the other region retains existing Hall of Fame history")
+{
+    struct SaveBlock3 previous = *gSaveBlock3Ptr;
+    struct WarpData previousLocation = gSaveBlock1Ptr->location;
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_LITTLEROOT_TOWN);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_LITTLEROOT_TOWN);
+    bool32 old = FlagGet(FLAG_SYS_GAME_CLEAR);
+    FlagClear(FLAG_SYS_GAME_CLEAR);
+    FlagClear(KANTO_FLAG_SYS_GAME_CLEAR);
+    EXPECT_EQ(KantoProgress_HasAnyChampionRecord(), FALSE);
+    FlagSet(FLAG_SYS_GAME_CLEAR);
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_WATCH_PALLET);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_WATCH_PALLET);
+    EXPECT_EQ(FlagGet(FLAG_SYS_GAME_CLEAR), FALSE);
+    EXPECT(KantoProgress_HasAnyChampionRecord());
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_LITTLEROOT_TOWN);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_LITTLEROOT_TOWN);
+    FlagClear(FLAG_SYS_GAME_CLEAR);
+    FlagSet(KANTO_FLAG_SYS_GAME_CLEAR);
+    EXPECT(KantoProgress_HasAnyChampionRecord());
+    if (old) FlagSet(FLAG_SYS_GAME_CLEAR);
+    gSaveBlock1Ptr->location = previousLocation;
+    *gSaveBlock3Ptr = previous;
+}
 #endif

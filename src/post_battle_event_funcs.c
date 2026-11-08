@@ -1,4 +1,5 @@
 #include "global.h"
+#include "kanto_progress.h"
 #include "main.h"
 #include "credits.h"
 #include "event_data.h"
@@ -21,15 +22,10 @@ int GameClear(void)
 
     HealPlayerParty();
 
-    if (FlagGet(FLAG_SYS_GAME_CLEAR) == TRUE)
-    {
-        gHasHallOfFameRecords = TRUE;
-    }
-    else
-    {
-        gHasHallOfFameRecords = FALSE;
-        FlagSet(FLAG_SYS_GAME_CLEAR);
-    }
+    // The regions have independent League completion, but share the same
+    // Hall of Fame history. A first victory here must retain earlier records.
+    gHasHallOfFameRecords = KantoProgress_HasAnyChampionRecord();
+    FlagSet(FLAG_SYS_GAME_CLEAR);
 
     if (GetGameStat(GAME_STAT_FIRST_HOF_PLAY_TIME) == 0)
         SetGameStat(GAME_STAT_FIRST_HOF_PLAY_TIME, (gSaveBlock2Ptr->playTimeHours << 16) | (gSaveBlock2Ptr->playTimeMinutes << 8) | gSaveBlock2Ptr->playTimeSeconds);
@@ -99,15 +95,10 @@ bool8 EnterHallOfFame(void)
     int i;
     bool8 gaveAtLeastOneRibbon;
     HealPlayerParty();
-    if (FlagGet(FLAG_SYS_GAME_CLEAR) == TRUE)
-    {
-        gHasHallOfFameRecords = TRUE;
-    }
-    else
-    {
-        gHasHallOfFameRecords = FALSE;
-        FlagSet(FLAG_SYS_GAME_CLEAR);
-    }
+    // The regions have independent League completion, but share the same
+    // Hall of Fame history. A first victory here must retain earlier records.
+    gHasHallOfFameRecords = KantoProgress_HasAnyChampionRecord();
+    FlagSet(FLAG_SYS_GAME_CLEAR);
     if (GetGameStat(GAME_STAT_FIRST_HOF_PLAY_TIME) == 0)
     {
         SetGameStat(GAME_STAT_FIRST_HOF_PLAY_TIME, (gSaveBlock2Ptr->playTimeHours << 16) | (gSaveBlock2Ptr->playTimeMinutes << 8) | gSaveBlock2Ptr->playTimeSeconds);
