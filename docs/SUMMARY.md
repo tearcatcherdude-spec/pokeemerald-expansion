@@ -156,3 +156,4 @@
     - [Scope Guidelines](team_procedures/scope.md)
 
 - [Living Hoenn and Pip dialogue memory](living_hoenn.md)
+- [Parallel Watch Kanto travel trial](parallel_watch.md)

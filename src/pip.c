@@ -75,7 +75,7 @@ static u32 MemoryIndex(const u8 *text)
 {
     if (text != NULL)
         for (u32 i = 0; i < ARRAY_COUNT(sPipMemoryCatalogue); i++)
-            if (StringCompare(text, sPipMemoryCatalogue[i]) == 0)
+            if (sPipMemoryCatalogue[i] != NULL && StringCompare(text, sPipMemoryCatalogue[i]) == 0)
                 return i; // Identical wording shares one canonical remembered ID.
     return ARRAY_COUNT(sPipMemoryCatalogue);
 }

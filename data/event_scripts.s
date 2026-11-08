@@ -1742,3 +1742,19 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
 	.include "data/scripts/wild_encounter.inc"
+
+.if !IS_FRLG
+	.include "data/scripts/parallel_watch.inc"
+	.include "data/maps/WatchPallet/scripts.inc"
+	.include "data/maps/WatchRoute1/scripts.inc"
+	.include "data/maps/WatchViridian/scripts.inc"
+	.include "data/maps/WatchHouse1F/scripts.inc"
+	.include "data/maps/WatchHouse2F/scripts.inc"
+	.include "data/maps/WatchNeighbor/scripts.inc"
+	.include "data/maps/WatchLab/scripts.inc"
+	.include "data/maps/WatchCenter/scripts.inc"
+	.include "data/maps/WatchMart/scripts.inc"
+	.include "data/maps/WatchHouse/scripts.inc"
+	.include "data/maps/WatchSchool/scripts.inc"
+
+.endif

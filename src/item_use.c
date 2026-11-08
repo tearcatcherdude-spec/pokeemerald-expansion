@@ -1,4 +1,5 @@
 #include "global.h"
+#include "parallel_watch.h"
 #include "item_use.h"
 #include "battle.h"
 #include "battle_anim.h"
@@ -1581,3 +1582,23 @@ void ItemUseOutOfBattle_TownMap(u8 taskId)
 }
 
 #undef tUsingRegisteredKeyItem
+
+#if !IS_FRLG
+extern const u8 ParallelWatch_EventScript_Use[];
+static void ItemUseOnFieldCB_ParallelWatch(u8 taskId)
+{
+    ScriptContext_SetupScript(ParallelWatch_EventScript_Use);
+    DestroyTask(taskId);
+}
+void ItemUseOutOfBattle_ParallelWatch(u8 taskId)
+{
+    sItemUseOnFieldCB = ItemUseOnFieldCB_ParallelWatch;
+    SetUpItemUseOnFieldCallback(taskId);
+}
+
+#else
+void ItemUseOutOfBattle_ParallelWatch(u8 taskId)
+{
+    ItemUseOutOfBattle_CannotUse(taskId);
+}
+#endif

@@ -31,6 +31,14 @@ static const u8 sPipLiving_PACIFIDLOG_TOWN_0[] = _("PIP: I can hear water under 
 static const u8 sPipLiving_PACIFIDLOG_TOWN_1[] = _("PIP: A house here is a little promise\nthat the next tide will be\lmanageable.$");
 static const u8 sPipLiving_EVER_GRANDE_CITY_0[] = _("PIP: Before we go in: I am glad I came.\nThat is the whole speech.$");
 static const u8 sPipLiving_EVER_GRANDE_CITY_1[] = _("PIP: You do not have to win to justify\ncoming this far with me.$");
+
+static const u8 sPipKanto_PALLET_TOWN_0[] = _("PIP: The flowers are doing very well.\nI am trying not to take it personally.$");
+static const u8 sPipKanto_PALLET_TOWN_1[] = _("PIP: That sign says a lot for something\nthat never leaves the same spot.$");
+static const u8 sPipKanto_ROUTE_1_0[] = _("PIP: The grass is taller than my plan\nfor getting through it quietly.$");
+static const u8 sPipKanto_ROUTE_1_1[] = _("PIP: I tried thanking that ledge for\nthe shortcut. It was unmoved.$");
+static const u8 sPipKanto_VIRIDIAN_CITY_0[] = _("PIP: This town has a very serious name.\nThe flowerbeds seem unconcerned.$");
+static const u8 sPipKanto_VIRIDIAN_CITY_1[] = _("PIP: If we stop for lunch, I promise to\ncall it an important supply check.$");
+
 static const struct PipLocationDialogue sPipLivingLocations[] = {
     {MAPSEC_LITTLEROOT_TOWN, {sPipLiving_LITTLEROOT_TOWN_0, sPipLiving_LITTLEROOT_TOWN_1}},
     {MAPSEC_OLDALE_TOWN, {sPipLiving_OLDALE_TOWN_0, sPipLiving_OLDALE_TOWN_1}},
@@ -48,4 +56,7 @@ static const struct PipLocationDialogue sPipLivingLocations[] = {
     {MAPSEC_SOOTOPOLIS_CITY, {sPipLiving_SOOTOPOLIS_CITY_0, sPipLiving_SOOTOPOLIS_CITY_1}},
     {MAPSEC_PACIFIDLOG_TOWN, {sPipLiving_PACIFIDLOG_TOWN_0, sPipLiving_PACIFIDLOG_TOWN_1}},
     {MAPSEC_EVER_GRANDE_CITY, {sPipLiving_EVER_GRANDE_CITY_0, sPipLiving_EVER_GRANDE_CITY_1}},
+    {MAPSEC_PALLET_TOWN, {sPipKanto_PALLET_TOWN_0, sPipKanto_PALLET_TOWN_1}},
+    {MAPSEC_ROUTE_1, {sPipKanto_ROUTE_1_0, sPipKanto_ROUTE_1_1}},
+    {MAPSEC_VIRIDIAN_CITY, {sPipKanto_VIRIDIAN_CITY_0, sPipKanto_VIRIDIAN_CITY_1}},
 };
