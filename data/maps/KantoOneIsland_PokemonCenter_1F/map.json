@@ -102,6 +102,34 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "OneIsland_PokemonCenter_1F_EventScript_BattleGirl",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LIVING_KANTO_11_0",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
+      "x": 9,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LivingKanto_Scene11_A",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LIVING_KANTO_11_1",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1_FRLG",
+      "x": 10,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LivingKanto_Scene11_B",
+      "flag": "0"
     }
   ],
   "warp_events": [

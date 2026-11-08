@@ -30,5 +30,15 @@ def main():
  for m in maps.values():assert m.get('shared_scripts_map',m['name'])+'_MapScripts' in labels,m['name']
  for gym in ['PewterCity','CeruleanCity','VermilionCity','CeladonCity','FuchsiaCity','SaffronCity','CinnabarIsland','ViridianCity']:
   assert any(n.startswith('Kanto'+gym+'_Gym') for n in manifest['maps'].values()),gym
+ scenes=load('data/kanto/living_scenes.json')
+ for i,scene in enumerate(scenes):
+  m=next(m for m in maps.values() if m['name']==scene['map']);l=layouts[m['layout']]
+  actors=[o for o in m['object_events'] if o.get('script','').startswith('LivingKanto_Scene'+str(i)+'_')]
+  assert len(actors)==2,(scene['map'],actors)
+  grid=(ROOT/l['blockdata_filepath']).read_bytes()
+  for o in actors:
+   tile=struct.unpack_from('<H',grid,(o['y']*l['width']+o['x'])*2)[0]
+   assert not tile&0xC00 and o['elevation']==tile>>12,(scene['map'],o)
+ print(f'PASS: {len(scenes)} paired scenes and {len(scenes)*2} actors on walkable native tiles')
  print(f'PASS: {len(maps)} campaign maps, all warp/connection destinations, layouts, eight gyms, script roots and unique labels')
 if __name__=='__main__':main()

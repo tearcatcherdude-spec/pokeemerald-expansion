@@ -139,6 +139,34 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_EventScript_OaksAide",
       "flag": "KANTO_FLAG_HIDE_VERMILION_CITY_OAKS_AIDE"
+    },
+    {
+      "local_id": "LOCALID_LIVING_KANTO_2_0",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
+      "x": 24,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LivingKanto_Scene2_A",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LIVING_KANTO_2_1",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1_FRLG",
+      "x": 25,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LivingKanto_Scene2_B",
+      "flag": "0"
     }
   ],
   "warp_events": [

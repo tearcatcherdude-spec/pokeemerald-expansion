@@ -1050,9 +1050,10 @@ gStdScripts_End::
 
 .endif
 
-.if !IS_FRLG
+#if !IS_FRLG
 	.include "data/kanto/campaign.inc"
-.endif
+	.include "data/kanto/living_scenes.inc"
+#endif
 
 	.include "data/scripts/std_msgbox.inc"
 	.include "data/scripts/trainer_battle.inc"

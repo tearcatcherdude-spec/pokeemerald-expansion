@@ -255,6 +255,34 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "FuchsiaCity_EventScript_Lass",
       "flag": "KANTO_FLAG_HIDE_POSTGAME_GOSSIPERS"
+    },
+    {
+      "local_id": "LOCALID_LIVING_KANTO_5_0",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
+      "x": 23,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LivingKanto_Scene5_A",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LIVING_KANTO_5_1",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1_FRLG",
+      "x": 24,
+      "y": 19,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "LivingKanto_Scene5_B",
+      "flag": "0"
     }
   ],
   "warp_events": [

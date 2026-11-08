@@ -361,5 +361,17 @@ static const u8 *const sPipMemoryCatalogue[] = {
     sPipAdventure_GIOVANNI, // 321
     sPipAdventure_PROF_OAK, // 322
     sPipAdventure_BLUE, // 323
+    sPipLivingKanto_0, // 324
+    sPipLivingKanto_1, // 325
+    sPipLivingKanto_2, // 326
+    sPipLivingKanto_3, // 327
+    sPipLivingKanto_4, // 328
+    sPipLivingKanto_5, // 329
+    sPipLivingKanto_6, // 330
+    sPipLivingKanto_7, // 331
+    sPipLivingKanto_8, // 332
+    sPipLivingKanto_9, // 333
+    sPipLivingKanto_10, // 334
+    sPipLivingKanto_11, // 335
 };
 STATIC_ASSERT(ARRAY_COUNT(sPipMemoryCatalogue) <= 512, PipMemoryCapacity);

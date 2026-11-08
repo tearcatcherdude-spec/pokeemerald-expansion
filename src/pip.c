@@ -37,6 +37,7 @@ struct PipLocationDialogue
 #include "data/pip_dialogue.h"
 #include "data/pip_living_dialogue.h"
 #include "data/pip_kanto_dialogue.h"
+#include "data/pip_kanto_scenes.h"
 #include "data/pip_memory_catalogue.h"
 
 static struct ObjectEvent *GetPipObject(void)
@@ -295,11 +296,14 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
     // with something new to add offer a reaction.
     switch (sReactionGraphics)
     {
+    case OBJ_EVENT_GFX_HIKER_FRLG:
     case OBJ_EVENT_GFX_HIKER: text = sPipHiker; break;
     case OBJ_EVENT_GFX_FISHERMAN: text = sPipFisherman; break;
+    case OBJ_EVENT_GFX_SAILOR_FRLG:
     case OBJ_EVENT_GFX_SAILOR: text = sPipSailor; break;
     case OBJ_EVENT_GFX_SCIENTIST_1:
     case OBJ_EVENT_GFX_SCIENTIST_2: text = sPipScientist; break;
+    case OBJ_EVENT_GFX_NURSE_FRLG:
     case OBJ_EVENT_GFX_NURSE: text = sPipNurse; break;
     }
     if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
@@ -321,6 +325,13 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
             break;
         }
     }
+    const u8 *personScript = GetObjectEventScriptPointerByObjectEventId(id);
+    for (u32 i = 0; i < ARRAY_COUNT(sPipKantoScenes); i++)
+        if (sPipKantoScenes[i].script == personScript)
+        {
+            text = sPipKantoScenes[i].text;
+            break;
+        }
     OfferReaction(text);
 #else
     gSpecialVar_Result = FALSE;

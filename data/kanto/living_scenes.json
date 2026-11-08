@@ -1,0 +1,110 @@
+[
+  {
+    "map": "KantoPewterCity",
+    "x": 24,
+    "y": 20,
+    "seen_flag": "0xa8d0",
+    "reward_flag": "0xa8e0",
+    "reward": "ITEM_POKE_BALL",
+    "pip": "Science has made an important distinction. Lunch is not a mineral."
+  },
+  {
+    "map": "KantoCeruleanCity",
+    "x": 24,
+    "y": 20,
+    "seen_flag": "0xa8d1",
+    "reward_flag": "0xa8e1",
+    "reward": "ITEM_POTION",
+    "pip": "An umbrella that stops rain. They could be onto something."
+  },
+  {
+    "map": "KantoVermilionCity",
+    "x": 24,
+    "y": 19,
+    "seen_flag": "0xa8d2",
+    "reward_flag": "0xa8e2",
+    "reward": "ITEM_SUPER_POTION",
+    "pip": "I learned the tune and where he keeps the spare key."
+  },
+  {
+    "map": "KantoLavenderTown",
+    "x": 12,
+    "y": 7,
+    "seen_flag": "0xa8d3",
+    "reward_flag": "0xa8e3",
+    "reward": "ITEM_ORAN_BERRY",
+    "pip": "We can help water them before we go."
+  },
+  {
+    "map": "KantoCeladonCity",
+    "x": 28,
+    "y": 19,
+    "seen_flag": "0xa8d4",
+    "reward_flag": "0xa8e4",
+    "reward": "ITEM_GREAT_BALL",
+    "pip": "The notebook has to work very hard now."
+  },
+  {
+    "map": "KantoFuchsiaCity",
+    "x": 23,
+    "y": 19,
+    "seen_flag": "0xa8d5",
+    "reward_flag": "0xa8e5",
+    "reward": "ITEM_REPEL",
+    "pip": "I hope our entry says mostly harmless."
+  },
+  {
+    "map": "KantoSaffronCity",
+    "x": 33,
+    "y": 33,
+    "seen_flag": "0xa8d6",
+    "reward_flag": "0xa8e6",
+    "reward": "ITEM_FRESH_WATER",
+    "pip": "I predict that I will also want lunch."
+  },
+  {
+    "map": "KantoCinnabarIsland_PokemonLab_Entrance",
+    "x": 15,
+    "y": 6,
+    "seen_flag": "0xa8d7",
+    "reward_flag": "0xa8e7",
+    "reward": "ITEM_BURN_HEAL",
+    "pip": "I will keep my geological opinions quiet."
+  },
+  {
+    "map": "KantoRoute3",
+    "x": 42,
+    "y": 10,
+    "seen_flag": "0xa8d8",
+    "reward_flag": "0xa8e8",
+    "reward": "ITEM_ORAN_BERRY",
+    "pip": "Three pillows is an ambitious hiking strategy."
+  },
+  {
+    "map": "KantoRoute6",
+    "x": 9,
+    "y": 20,
+    "seen_flag": "0xa8d9",
+    "reward_flag": "0xa8e9",
+    "reward": "ITEM_AWAKENING",
+    "pip": "Finally, a battle I am qualified to lose."
+  },
+  {
+    "map": "KantoRoute15",
+    "x": 38,
+    "y": 10,
+    "seen_flag": "0xa8da",
+    "reward_flag": "0xa8ea",
+    "reward": "ITEM_GREAT_BALL",
+    "pip": "Somewhere a bicycle is answering."
+  },
+  {
+    "map": "KantoOneIsland_PokemonCenter_1F",
+    "x": 9,
+    "y": 5,
+    "seen_flag": "0xa8db",
+    "reward_flag": "0xa8eb",
+    "reward": "ITEM_SODA_POP",
+    "pip": "This club has a very reasonable attendance policy."
+  }
+]

@@ -59,6 +59,13 @@ jobs:
           GAME_VERSION: EMERALD
         run: make -j$(nproc) -O all
 
+      - name: Preserve failed script preprocessing
+        if: failure()
+        run: |
+          tools/preproc/preproc -s data/event_scripts.s charmap.txt > /tmp/kanto-scripts-first-pass.s
+          wc -l /tmp/kanto-scripts-first-pass.s
+          tail -n 30 /tmp/kanto-scripts-first-pass.s
+
       - name: Verify compiled Pip artwork
         run: python3 dev_scripts/verify_pip_rom.py pokeemerald.gba pokeemerald.map
 
