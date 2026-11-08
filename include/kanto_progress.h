@@ -6,4 +6,5 @@ u8 *KantoProgress_GetFlagPointer(u16 id);
 u16 *KantoProgress_GetVarPointer(u16 id);
 u16 KantoProgress_RegionalFlagId(u16 id);
 u16 KantoProgress_HiddenItemFlag(u16 packedId);
+bool32 KantoProgress_HasBadgeForObedience(u32 index);
 #endif

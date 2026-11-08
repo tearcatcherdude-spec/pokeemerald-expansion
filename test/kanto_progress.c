@@ -145,4 +145,27 @@ TEST("Kanto field moves use Kanto badge order without replacing shared running s
     gSaveBlock1Ptr->location = previousLocation;
     *gSaveBlock3Ptr = previous;
 }
+TEST("Cross-region travel retains earned obedience while HM badges stay regional")
+{
+    struct SaveBlock3 previous = *gSaveBlock3Ptr;
+    struct WarpData previousLocation = gSaveBlock1Ptr->location;
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_LITTLEROOT_TOWN);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_LITTLEROOT_TOWN);
+    bool32 oldBadge = FlagGet(FLAG_BADGE08_GET);
+    FlagSet(FLAG_BADGE08_GET);
+    FlagClear(KANTO_FLAG_BADGE08_GET);
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_WATCH_PALLET);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_WATCH_PALLET);
+    EXPECT_EQ(FlagGet(FLAG_BADGE08_GET), FALSE);
+    EXPECT(KantoProgress_HasBadgeForObedience(7));
+    gSaveBlock1Ptr->location.mapGroup = MAP_GROUP(MAP_LITTLEROOT_TOWN);
+    gSaveBlock1Ptr->location.mapNum = MAP_NUM(MAP_LITTLEROOT_TOWN);
+    FlagClear(FLAG_BADGE08_GET);
+    FlagSet(KANTO_FLAG_BADGE08_GET);
+    EXPECT_EQ(FlagGet(FLAG_BADGE08_GET), FALSE);
+    EXPECT(KantoProgress_HasBadgeForObedience(7));
+    if (oldBadge) FlagSet(FLAG_BADGE08_GET);
+    gSaveBlock1Ptr->location = previousLocation;
+    *gSaveBlock3Ptr = previous;
+}
 #endif

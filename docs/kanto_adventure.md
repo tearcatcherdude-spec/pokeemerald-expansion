@@ -10,6 +10,8 @@ Kanto save progress appends after the released 180-byte SaveBlock3 prefix. Hoenn
 badges, starter selection, Pip memory, party, bag and PC are not reset. Existing
 Pip catalogue IDs 0–259 stay fixed; 144 authored Kanto remarks append at 260–403. Twelve paired scenes add
 24 actors and one-time item rewards across cities, routes and One Island.
+Obedience earned through badges in either region is retained on travel.
+HM gates and story badges remain regional.
 NPCs and Pip must never explain the watch. Kanto begins with an existing trainer
 and party; the forced second starter selection is skipped.
 

@@ -1,5 +1,6 @@
 #include "global.h"
 #include "kanto_progress.h"
+#include "event_data.h"
 #include "parallel_watch.h"
 #include "constants/flags.h"
 #include "constants/kanto_symbols.h"
@@ -90,4 +91,22 @@ u16 KantoProgress_HiddenItemFlag(u16 packedId)
         return KANTO_FLAG_BASE + packedId - 0x1000;
 #endif
     return FLAG_HIDDEN_ITEMS_START + packedId;
+}
+
+bool32 KantoProgress_HasBadgeForObedience(u32 index)
+{
+    if (index >= NUM_BADGES)
+        return FALSE;
+#if !IS_FRLG
+    // Party ownership and experience transfer with the player. Regional HM
+    // gates still read their own badges; earned obedience never goes backward.
+    u32 hoenn = FLAG_BADGE01_GET + index;
+    if (gSaveBlock1Ptr->flags[hoenn / 8] & (1 << (hoenn % 8)))
+        return TRUE;
+    u32 kanto = KANTO_FLAG_BADGE01_GET + index;
+    u8 *ptr = KantoProgress_GetFlagPointer(kanto);
+    return ptr != NULL && (*ptr & (1 << (kanto % 8)));
+#else
+    return FlagGet(FLAG_BADGE01_GET + index);
+#endif
 }
