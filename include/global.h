@@ -254,6 +254,13 @@ struct NPCFollower
 #include "constants/items.h"
 #define ITEM_FLAGS_COUNT ((ITEMS_COUNT / 8) + ((ITEMS_COUNT % 8) ? 1 : 0))
 
+struct ParallelWatchAnchor
+{
+    s8 mapGroup, mapNum;
+    s16 x, y;
+    u8 facing, valid;
+};
+
 struct SaveBlock3
 {
 #if OW_USE_FAKE_RTC
@@ -276,6 +283,10 @@ struct SaveBlock3
     u16 pipMemoryVersion;
     u8 pipHeard[64]; // Append-only dialogue catalogue: 512 persistent one-shot lines.
     u8 pipOffered[64]; // A declined optional offer must not nag again.
+    // Starts after the complete 160-byte Living Hoenn save prefix, including padding.
+    u8 watchLegacyPadding[2];
+    u16 watchMemoryVersion;
+    struct ParallelWatchAnchor watchAnchors[2];
 #endif
 }; /* max size 1624 bytes */
 

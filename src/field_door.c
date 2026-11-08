@@ -349,6 +349,22 @@ static const u8 sDoorAnimPalettes_TrainerTowerRoofElevator[] = {11, 11, 2, 2, 2,
 
 #endif // IS_FRLG
 
+
+#if !IS_FRLG
+static const u8 sWatchDoorAnimPalettes_GeneralFrlg[] = {2, 2, 2, 2, 2, 2, 2, 2};
+static const u8 sWatchDoorAnimPalettes_OaksLab[] = {10, 10, 10, 10, 10, 10, 10, 10};
+static const u8 sWatchDoorAnimPalettes_Pallet[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sWatchDoorAnimPalettes_SlidingDouble[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sWatchDoorAnimPalettes_SlidingSingle[] = {3, 3, 3, 3, 3, 3, 3, 3};
+static const u8 sWatchDoorAnimPalettes_Viridian[] = {8, 8, 8, 8, 8, 8, 8, 8};
+static const u8 sWatchDoorAnimTiles_GeneralFrlg[] = INCGFX_U8("graphics/door_anims/general_frlg.png", ".4bpp");
+static const u8 sWatchDoorAnimTiles_OaksLab[] = INCGFX_U8("graphics/door_anims/oaks_lab.png", ".4bpp");
+static const u8 sWatchDoorAnimTiles_Pallet[] = INCGFX_U8("graphics/door_anims/pallet.png", ".4bpp");
+static const u8 sWatchDoorAnimTiles_SlidingDouble[] = INCGFX_U8("graphics/door_anims/sliding_double.png", ".4bpp");
+static const u8 sWatchDoorAnimTiles_SlidingSingle[] = INCGFX_U8("graphics/door_anims/sliding_single.png", ".4bpp");
+static const u8 sWatchDoorAnimTiles_Viridian[] = INCGFX_U8("graphics/door_anims/viridian.png", ".4bpp");
+#endif
+
 static const struct DoorGraphics sDoorAnimGraphicsTable[] =
 {
 #if !IS_FRLG
@@ -790,6 +806,54 @@ static const struct DoorGraphics sDoorAnimGraphicsTable[] =
         .size = DOOR_SIZE_1x2,
         .tiles = sDoorAnimTiles_TrainerHillRoofElevator,
         .palettes = sDoorAnimPalettes_TrainerHillRoofElevator
+    },
+    {
+        .metatileNum = METATILE_GeneralFrlg_Door,
+        .tileset = &gTileset_Watch_General_Frlg,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sWatchDoorAnimTiles_GeneralFrlg,
+        .palettes = sWatchDoorAnimPalettes_GeneralFrlg
+    },
+    {
+        .metatileNum = METATILE_GeneralFrlg_SlidingSingleDoor,
+        .tileset = &gTileset_Watch_General_Frlg,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sWatchDoorAnimTiles_SlidingSingle,
+        .palettes = sWatchDoorAnimPalettes_SlidingSingle
+    },
+    {
+        .metatileNum = METATILE_GeneralFrlg_SlidingDoubleDoor,
+        .tileset = &gTileset_Watch_General_Frlg,
+        .sound = DOOR_SOUND_SLIDING,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sWatchDoorAnimTiles_SlidingDouble,
+        .palettes = sWatchDoorAnimPalettes_SlidingDouble
+    },
+    {
+        .metatileNum = METATILE_PalletTown_Door,
+        .tileset = &gTileset_Watch_PalletTown,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sWatchDoorAnimTiles_Pallet,
+        .palettes = sWatchDoorAnimPalettes_Pallet
+    },
+    {
+        .metatileNum = METATILE_PalletTown_OaksLabDoor,
+        .tileset = &gTileset_Watch_PalletTown,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sWatchDoorAnimTiles_OaksLab,
+        .palettes = sWatchDoorAnimPalettes_OaksLab
+    },
+    {
+        .metatileNum = METATILE_ViridianCity_Door,
+        .tileset = &gTileset_Watch_ViridianCity,
+        .sound = DOOR_SOUND_NORMAL,
+        .size = DOOR_SIZE_1x1,
+        .tiles = sWatchDoorAnimTiles_Viridian,
+        .palettes = sWatchDoorAnimPalettes_Viridian
     },
 #else
     {

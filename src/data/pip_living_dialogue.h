@@ -31,6 +31,13 @@ static const u8 sPipLiving_PACIFIDLOG_TOWN_0[] = _("PIP: I can hear water under 
 static const u8 sPipLiving_PACIFIDLOG_TOWN_1[] = _("PIP: A house here is a little promise\nthat the next tide will be\lmanageable.$");
 static const u8 sPipLiving_EVER_GRANDE_CITY_0[] = _("PIP: Before we go in: I am glad I came.\nThat is the whole speech.$");
 static const u8 sPipLiving_EVER_GRANDE_CITY_1[] = _("PIP: You do not have to win to justify\ncoming this far with me.$");
+static const u8 sPipWatch_PALLET_TOWN_0[] = _("PIP: A completely different world.\nSame shoes. I expected paperwork.$");
+static const u8 sPipWatch_PALLET_TOWN_1[] = _("PIP: If we meet another me, please\nask which of us packed lunch.$");
+static const u8 sPipWatch_ROUTE_1_0[] = _("PIP: New world, familiar tall grass.\nSome things are very committed.$");
+static const u8 sPipWatch_ROUTE_1_1[] = _("PIP: That ledge only goes one way.\nThe watch has better manners.$");
+static const u8 sPipWatch_VIRIDIAN_CITY_0[] = _("PIP: The PC still knows our boxes.\nI hope it does not charge roaming.$");
+static const u8 sPipWatch_VIRIDIAN_CITY_1[] = _("PIP: We can go home whenever you like.\nI like knowing that.$");
+
 static const struct PipLocationDialogue sPipLivingLocations[] = {
     {MAPSEC_LITTLEROOT_TOWN, {sPipLiving_LITTLEROOT_TOWN_0, sPipLiving_LITTLEROOT_TOWN_1}},
     {MAPSEC_OLDALE_TOWN, {sPipLiving_OLDALE_TOWN_0, sPipLiving_OLDALE_TOWN_1}},
@@ -48,4 +55,7 @@ static const struct PipLocationDialogue sPipLivingLocations[] = {
     {MAPSEC_SOOTOPOLIS_CITY, {sPipLiving_SOOTOPOLIS_CITY_0, sPipLiving_SOOTOPOLIS_CITY_1}},
     {MAPSEC_PACIFIDLOG_TOWN, {sPipLiving_PACIFIDLOG_TOWN_0, sPipLiving_PACIFIDLOG_TOWN_1}},
     {MAPSEC_EVER_GRANDE_CITY, {sPipLiving_EVER_GRANDE_CITY_0, sPipLiving_EVER_GRANDE_CITY_1}},
+    {MAPSEC_PALLET_TOWN, {sPipWatch_PALLET_TOWN_0, sPipWatch_PALLET_TOWN_1}},
+    {MAPSEC_ROUTE_1, {sPipWatch_ROUTE_1_0, sPipWatch_ROUTE_1_1}},
+    {MAPSEC_VIRIDIAN_CITY, {sPipWatch_VIRIDIAN_CITY_0, sPipWatch_VIRIDIAN_CITY_1}},
 };
