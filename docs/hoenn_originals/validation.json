@@ -1,0 +1,787 @@
+{
+  "status": "pass",
+  "rom_build_tested": false,
+  "emulator_tested": false,
+  "assets": [
+    {
+      "name": "emi",
+      "png_sha256": "17a43f2f3ab26cfa65528897c3d84e27838d05d81063e86bc1b37398da7aa383",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "rex",
+      "png_sha256": "6e4401331d56003f47e7d6906fe269388e985e2effbfb98e90b9b976c79d351c",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "nova",
+      "png_sha256": "85be52058da3bd1ca6551d6753cf299ebd9ee878f19249caa515b23a90077dd7",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "silas",
+      "png_sha256": "ccf636fa9846fe408c25989ba66a1aca1a34c402e6419395378df816f076945c",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "miko",
+      "png_sha256": "31eda5b7e767ca3949c3e1745cf208459fed800eea09126a8b4248e4726321f3",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "jax",
+      "png_sha256": "9e973f637b50c1b53685bc01638349fbf4d2154ca5d04acd0827631797280ade",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "vera",
+      "png_sha256": "d324c790a8b9931289f1e8cbc9634bd89dce10cdc809e2afca763e8330e7627b",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "kade",
+      "png_sha256": "2333be162a8e1f273ab8979a8f2903370b10d6633b3f1537ee5d46293f448ab6",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "lume",
+      "png_sha256": "c3277c7474e11b9a220ab9bc18e4118f4fde6b572d3141110c355dd1c7c81f3c",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "bran",
+      "png_sha256": "c88d8b570b09bdd0df3e163fd757b52ee90fe0e353f09c84ba5d3be026009d90",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          11,
+          16,
+          31
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ],
+        [
+          0,
+          12,
+          16,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "poppy",
+      "png_sha256": "9d0cac65dd303c6ebb775597e9b798b0576fff0923b6d3714ea66b066c377c3a",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          1,
+          12,
+          15,
+          31
+        ],
+        [
+          1,
+          12,
+          15,
+          31
+        ],
+        [
+          1,
+          12,
+          15,
+          31
+        ],
+        [
+          1,
+          13,
+          15,
+          32
+        ],
+        [
+          1,
+          13,
+          15,
+          32
+        ],
+        [
+          1,
+          13,
+          15,
+          32
+        ],
+        [
+          1,
+          13,
+          15,
+          32
+        ],
+        [
+          1,
+          13,
+          15,
+          32
+        ],
+        [
+          1,
+          13,
+          15,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    },
+    {
+      "name": "morph",
+      "png_sha256": "3776b93b1ccbd07f7a023d0cda88e0699a142d95a365c46e6819005c93605849",
+      "visible_colors": 15,
+      "frame_bboxes": [
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          11,
+          15,
+          31
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ],
+        [
+          1,
+          12,
+          15,
+          32
+        ]
+      ],
+      "four_bpp_bytes": 2304,
+      "four_bpp_roundtrip": "pass",
+      "palette_match": "pass",
+      "head_registration": "pass"
+    }
+  ]
+}
