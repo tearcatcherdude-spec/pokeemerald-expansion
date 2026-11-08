@@ -273,6 +273,9 @@ struct SaveBlock3
     // Append new state so enabling companions preserves the starter build's
     // legacy SaveBlock3 prefix. Old save sectors zero-fill the unused tail.
     struct NPCFollower NPCfollower;
+    u16 pipMemoryVersion;
+    u8 pipHeard[64]; // Append-only dialogue catalogue: 512 persistent one-shot lines.
+    u8 pipOffered[64]; // A declined optional offer must not nag again.
 #endif
 }; /* max size 1624 bytes */
 

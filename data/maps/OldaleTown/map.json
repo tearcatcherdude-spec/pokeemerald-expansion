@@ -85,6 +85,48 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "OldaleTown_EventScript_Rival",
       "flag": "FLAG_HIDE_OLDALE_TOWN_RIVAL"
+    },
+    {
+      "local_id": "LOCALID_LIVING_Rare0_0",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SENTRET)",
+      "x": 9,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "World_EventScript_Rare0_0",
+      "flag": "FLAG_WORLD_CAUGHT_SENTRET"
+    },
+    {
+      "local_id": "LOCALID_LIVING_Scene0_0",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 6,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "World_EventScript_Scene0_0",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LIVING_Scene0_1",
+      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "x": 7,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "World_EventScript_Scene0_1",
+      "flag": "0"
     }
   ],
   "warp_events": [
