@@ -3,6 +3,7 @@ from pathlib import Path
 r=Path(__file__).resolve().parents[1]
 g=json.loads((r/'data/maps/map_groups.json').read_text());layouts={l['id']:l for l in json.loads((r/'data/layouts/layouts.json').read_text())['layouts']};names=g['gMapGroup_ParallelWatch'];maps={}
 for n in names:
+ assert f'data/maps/{n}/scripts.inc' in (r/'data/event_scripts.s').read_text(encoding='utf-8')
  m=json.loads((r/f'data/maps/{n}/map.json').read_text());maps[m['id']]=m;l=layouts[m['layout']]
  assert m['parallel_watch'] and l['parallel_watch'] and l['layout_version']=='frlg'
  assert len((r/l['blockdata_filepath']).read_bytes())==l['width']*l['height']*2
