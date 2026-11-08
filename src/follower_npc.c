@@ -1,4 +1,5 @@
 #include "global.h"
+#include "pip.h"
 #include "follower_npc.h"
 #include "follower_npc_alternate_sprites.h"
 #include "battle.h"
@@ -49,7 +50,7 @@
 #define tDoorX          data[2]
 #define tDoorY          data[3]
 
-static void SetFollowerNPCScriptPointer(const u8 *script);
+void SetFollowerNPCScriptPointer(const u8 *script);
 static void PlayerLogCoordinates(struct ObjectEvent *player);
 static void TurnNPCIntoFollower(u32 localId, u32 followerFlags, u32 setScript, const u8 *script);
 static u32 GetFollowerNPCSprite(void);
@@ -116,7 +117,7 @@ void SetFollowerNPCData(enum FollowerNPCDataTypes type, u32 value)
 #endif
 }
 
-static void SetFollowerNPCScriptPointer(const u8 *script)
+void SetFollowerNPCScriptPointer(const u8 *script)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
     gSaveBlock3Ptr->NPCfollower.script = script;
@@ -1207,6 +1208,8 @@ void NPCFollow(struct ObjectEvent *npc, u32 state, bool32 ignoreScriptActive)
     // Only if a follower exists.
     else if (!PlayerHasFollowerNPC())
         return;
+    else if (Pip_IsSceneSuspended())
+        return;
     // Don't follow during a script.
     else if (ArePlayerFieldControlsLocked() && !ignoreScriptActive)
         return;
@@ -1317,6 +1320,7 @@ void NPCFollow(struct ObjectEvent *npc, u32 state, bool32 ignoreScriptActive)
 
 void CreateFollowerNPCAvatar(void)
 {
+    Pip_RefreshIdentity();
     if (!PlayerHasFollowerNPC())
         return;
 
@@ -1411,6 +1415,9 @@ bool32 FollowerNPC_IsCollisionExempt(struct ObjectEvent *obstacle, struct Object
 
     if (!PlayerHasFollowerNPC())
         return FALSE;
+
+    if (Pip_IsSceneSuspended() && (obstacle == follower || collider == follower))
+        return TRUE;
 
     if (obstacle == follower && collider == player)
         return TRUE;

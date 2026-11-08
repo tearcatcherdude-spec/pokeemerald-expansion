@@ -7,6 +7,7 @@
 #define T_SAVEBLOCK1_SIZE 15568
 #define T_SAVEBLOCK2_SIZE 3884
 #define T_SAVEBLOCK3_SIZE 4
+#define T_SAVEBLOCK3_WITH_FOLLOWER_SIZE 160
 #define T_POKEMONSTORAGE_SIZE 34144
 
 TEST("SaveBlock1 is backwards compatible")
@@ -21,7 +22,18 @@ TEST("SaveBlock2 is backwards compatible")
 
 TEST("SaveBlock3 is backwards compatible")
 {
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    // Follower storage deliberately extends this block. Its legacy data must
+    // retain its original offset; changing only the size baseline misses that.
+    EXPECT_EQ(offsetof(struct SaveBlock3, dexNavChain), 0);
+    EXPECT_EQ(offsetof(struct SaveBlock3, NPCfollower), T_SAVEBLOCK3_SIZE);
+    EXPECT_EQ(offsetof(struct SaveBlock3, pipMemoryVersion), 28);
+    EXPECT_EQ(offsetof(struct SaveBlock3, pipHeard), 30);
+    EXPECT_EQ(offsetof(struct SaveBlock3, pipOffered), 94);
+    EXPECT_EQ(sizeof(struct SaveBlock3), T_SAVEBLOCK3_WITH_FOLLOWER_SIZE);
+#else
     EXPECT_EQ(sizeof(struct SaveBlock3), T_SAVEBLOCK3_SIZE);
+#endif
 }
 
 TEST("PokemonStorage is backwards compatible")
@@ -32,4 +44,5 @@ TEST("PokemonStorage is backwards compatible")
 #undef T_SAVEBLOCK1_SIZE
 #undef T_SAVEBLOCK2_SIZE
 #undef T_SAVEBLOCK3_SIZE
+#undef T_SAVEBLOCK3_WITH_FOLLOWER_SIZE
 #undef T_POKEMONSTORAGE_SIZE

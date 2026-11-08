@@ -1,4 +1,5 @@
 #include "global.h"
+#include "pip.h"
 #include "script_movement.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
@@ -25,6 +26,7 @@ bool8 ScriptMovement_StartObjectMovementScript(u8 localId, u8 mapNum, u8 mapGrou
 
     if (TryGetObjectEventIdByLocalIdAndMap(localId, mapNum, mapGroup, &objEventId))
         return TRUE;
+    Pip_BeforeScriptedMovement(localId);
     if (!FuncIsActiveTask(ScriptMovement_MoveObjects))
         ScriptMovement_StartMoveObjects(50);
     return ScriptMovement_TryAddNewMovement(GetMoveObjectsTaskId(), objEventId, movementScript);

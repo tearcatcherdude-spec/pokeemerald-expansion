@@ -1350,6 +1350,10 @@ Common_EventScript_PlayerHandedOverTheItem::
 	.include "data/scripts/elite_four.inc"
 	.include "data/scripts/movement.inc"
 	.include "data/scripts/check_furniture.inc"
+	.if !IS_FRLG
+	.include "data/scripts/cozy_companion.inc"
+	.include "data/scripts/living_hoenn.inc"
+	.endif
 	.include "data/scripts/mart_clerk.inc"
 	.include "data/text/record_mix.inc"
 	.include "data/text/pc.inc"

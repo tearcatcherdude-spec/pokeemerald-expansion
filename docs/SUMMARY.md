@@ -2,6 +2,8 @@
 
 - [README](./README.md)
 - [FEATURES](./FEATURES.md)
+- [Cozy companion prototype](cozy_companion_prototype.md)
+- [Pip companion assets and integration](pip_companion_for_codex.md)
 - [Installation](./INSTALL.md)
     - [Setting up WSL1 (Legacy Portion)](./legacy_WSL1_INSTALL.md)
     - [ChromeOS](./install/chromeos/CHROME_OS.md)
@@ -152,3 +154,5 @@
     - [Release Schedule and Process](team_procedures/schedule.md)
     - [Merge Checklist](team_procedures/merge_checklist.md)
     - [Scope Guidelines](team_procedures/scope.md)
+
+- [Living Hoenn and Pip dialogue memory](living_hoenn.md)

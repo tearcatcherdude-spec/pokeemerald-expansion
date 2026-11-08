@@ -584,6 +584,20 @@
       "trainer_sight_or_berry_tree_id": "ITEM_REVIVAL_HERB",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_123_REVIVAL_HERB"
+    },
+    {
+      "local_id": "LOCALID_LIVING_Rare14_0",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(LARVITAR)",
+      "x": 84,
+      "y": 11,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "World_EventScript_Rare14_0",
+      "flag": "FLAG_WORLD_CAUGHT_LARVITAR"
     }
   ],
   "warp_events": [

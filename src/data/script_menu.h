@@ -1133,6 +1133,12 @@ struct MultichoiceListStruct
     u8 count;
 };
 
+static const struct MenuAction sMultichoiceList_Pip[] = {
+    {COMPOUND_STRING("Talk")},
+    {COMPOUND_STRING("Head home")},
+    {COMPOUND_STRING("Keep walking")},
+};
+
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
@@ -1293,6 +1299,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_HOF_EGGS_QUIT]                              = MULTICHOICE(sMultichoiceList_HOF_Eggs_Quit),
     [MULTI_HOF_VICTORIES_QUIT]                         = MULTICHOICE(sMultichoiceList_HOF_Victories_Quit),
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
+    [MULTI_PIP_COMPANION] = MULTICHOICE(sMultichoiceList_Pip),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
 };
 

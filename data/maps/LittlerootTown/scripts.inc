@@ -401,6 +401,9 @@ LittlerootTown_EventScript_BrendansHouseSign::
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_PlayersHouseSignMale
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_BirchsHouseSignFemale
 	releaseall
+	.if !IS_FRLG
+	call Pip_EventScript_ObjectReaction
+	.endif
 	end
 
 LittlerootTown_EventScript_PlayersHouseSignMale::
@@ -417,6 +420,9 @@ LittlerootTown_EventScript_MaysHouseSign::
 	call_if_eq VAR_RESULT, MALE, LittlerootTown_EventScript_BirchsHouseSignMale
 	call_if_eq VAR_RESULT, FEMALE, LittlerootTown_EventScript_PlayersHouseSignFemale
 	releaseall
+	.if !IS_FRLG
+	call Pip_EventScript_ObjectReaction
+	.endif
 	end
 
 LittlerootTown_EventScript_BirchsHouseSignMale::
