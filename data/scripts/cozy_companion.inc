@@ -1,4 +1,4 @@
-@ Cozy upperworld prototype. Existing human art; no battle partner.
+@ Pip: travelling companion across Hoenn. No battle partner.
 @ Uses a separate test save: enabling NPC followers changes SaveBlock3.
 Cozy_EventScript_Recruit::
 	lock
@@ -6,9 +6,15 @@ Cozy_EventScript_Recruit::
 	goto_if_unset FLAG_SYS_B_DASH, Cozy_EventScript_NotYet
 	checkfollowernpc
 	goto_if_eq VAR_RESULT, TRUE, Cozy_EventScript_AlreadyFollowing
+	goto_if_set FLAG_MET_PIP, Pip_EventScript_RecruitAgain
 	msgbox Cozy_Text_Recruit, MSGBOX_YESNO
+	goto Pip_EventScript_RecruitDecision
+Pip_EventScript_RecruitAgain:
+	msgbox Pip_Text_RecruitAgain, MSGBOX_YESNO
+Pip_EventScript_RecruitDecision:
 	goto_if_eq VAR_RESULT, NO, Cozy_EventScript_Decline
 	msgbox Cozy_Text_Joining, MSGBOX_DEFAULT
+	setflag FLAG_MET_PIP
 	setfollowernpc LOCALID_COZY_COMPANION, FNPC_ALL_LAND | FNPC_ALL_WATER, Cozy_EventScript_Companion, 0
 	release
 	end
@@ -31,9 +37,8 @@ Cozy_EventScript_Decline::
 Cozy_EventScript_Companion::
 	lockall
 	facefollowernpc
-	addvar VAR_COZY_COMPANION_CHAT, 1
-	call_if_eq VAR_COZY_COMPANION_CHAT, 1, Cozy_EventScript_ChatOne
-	call_if_ge VAR_COZY_COMPANION_CHAT, 2, Cozy_EventScript_ChatTwo
+	callnative Script_PipChooseDialogue
+	msgbox gStringVar4, MSGBOX_DEFAULT
 	msgbox Cozy_Text_HeadHome, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Cozy_EventScript_Stay
 	msgbox Cozy_Text_GoingHome, MSGBOX_DEFAULT
@@ -45,29 +50,6 @@ Cozy_EventScript_Companion::
 Cozy_EventScript_Stay::
 	releaseall
 	end
-
-Cozy_EventScript_ChatOne::
-	msgbox Cozy_Text_ChatOne, MSGBOX_DEFAULT
-	return
-
-Cozy_EventScript_ChatTwo::
-	msgbox Cozy_Text_ChatTwo, MSGBOX_DEFAULT
-	setvar VAR_COZY_COMPANION_CHAT, 0
-	return
-
-@ Do not comment for an unrelated follower. No automatic text after inspection.
-Cozy_EventScript_AskComment::
-	setvar VAR_RESULT, FALSE
-	goto_if_unset FLAG_HIDE_COZY_COMPANION, Cozy_EventScript_NoComment
-	checkfollowernpc
-	goto_if_eq VAR_RESULT, FALSE, Cozy_EventScript_NoComment
-	lockall
-	msgbox Cozy_Text_AskComment, MSGBOX_YESNO
-	releaseall
-	return
-
-Cozy_EventScript_NoComment::
-	return
 
 Cozy_EventScript_Gardener::
 	lock
@@ -132,104 +114,15 @@ Cozy_EventScript_BagFull::
 	release
 	end
 
-Cozy_EventScript_InspectTownSign::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentTownSign
-	return
-
-Cozy_EventScript_CommentTownSign::
-	msgbox Cozy_Text_TownSign, MSGBOX_SIGN
-	return
-
-Cozy_EventScript_InspectBirchsLabSign::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentBirchsLabSign
-	return
-
-Cozy_EventScript_CommentBirchsLabSign::
-	msgbox Cozy_Text_BirchsLabSign, MSGBOX_SIGN
-	return
-
-Cozy_EventScript_InspectBrendansHouseSign::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentBrendansHouseSign
-	return
-
-Cozy_EventScript_CommentBrendansHouseSign::
-	msgbox Cozy_Text_BrendansHouseSign, MSGBOX_SIGN
-	return
-
-Cozy_EventScript_InspectMaysHouseSign::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentMaysHouseSign
-	return
-
-Cozy_EventScript_CommentMaysHouseSign::
-	msgbox Cozy_Text_MaysHouseSign, MSGBOX_SIGN
-	return
-
-Cozy_EventScript_InspectPictureBookShelf::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentPictureBookShelf
-	return
-
-Cozy_EventScript_CommentPictureBookShelf::
-	msgbox Cozy_Text_PictureBookShelf, MSGBOX_SIGN
-	return
-
-Cozy_EventScript_InspectBookShelf::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentBookShelf
-	return
-
-Cozy_EventScript_CommentBookShelf::
-	msgbox Cozy_Text_BookShelf, MSGBOX_SIGN
-	return
-
-Cozy_EventScript_InspectVase::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentVase
-	return
-
-Cozy_EventScript_CommentVase::
-	msgbox Cozy_Text_Vase, MSGBOX_SIGN
-	return
-
-Cozy_EventScript_InspectEmptyTrashCan::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentEmptyTrashCan
-	return
-
-Cozy_EventScript_CommentEmptyTrashCan::
-	msgbox Cozy_Text_EmptyTrashCan, MSGBOX_SIGN
-	return
-
-Cozy_EventScript_InspectShopShelf::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentShopShelf
-	return
-
-Cozy_EventScript_CommentShopShelf::
-	msgbox Cozy_Text_ShopShelf, MSGBOX_SIGN
-	return
-
-Cozy_EventScript_InspectBlueprint::
-	call Cozy_EventScript_AskComment
-	call_if_eq VAR_RESULT, YES, Cozy_EventScript_CommentBlueprint
-	return
-
-Cozy_EventScript_CommentBlueprint::
-	msgbox Cozy_Text_Blueprint, MSGBOX_SIGN
-	return
-
 Cozy_Text_Recruit::
+	.string "PIP: Hey! I am Pip.\p"
 	.string "Heading out? I could come along.\n"
 	.string "I know a shortcut to most places.\l"
 	.string "It is usually the regular path.\l"
 	.string "Want some company?$"
 
 Cozy_Text_Joining::
-	.string "COMPANION: Great! You navigate.\n"
+	.string "PIP: Great! You navigate.\n"
 	.string "I will handle moral support.\l"
 	.string "And identifying suspicious chairs.$"
 
@@ -247,23 +140,23 @@ Cozy_Text_Decline::
 	.string "an interesting local landmark.$"
 
 Cozy_Text_ChatOne::
-	.string "COMPANION: Good walking today.\n"
+	.string "PIP: Good walking today.\n"
 	.string "Very convincing footwork.$"
 
 Cozy_Text_ChatTwo::
-	.string "COMPANION: We should pack snacks.\n"
+	.string "PIP: We should pack snacks.\n"
 	.string "For emergencies. Like being awake.$"
 
 Cozy_Text_HeadHome::
-	.string "Ask your companion to head home?$"
+	.string "Ask PIP to head home?$"
 
 Cozy_Text_GoingHome::
-	.string "COMPANION: See you in LITTLEROOT!\n"
+	.string "PIP: See you in LITTLEROOT!\n"
 	.string "Take a little walk before you\l"
 	.string "look for me. I am a slow goodbye.$"
 
 Cozy_Text_AskComment::
-	.string "Ask your companion about it?$"
+	.string "Ask PIP about it?$"
 
 Cozy_Text_GardenRequest::
 	.string "We are welcoming this shrub.\n"
@@ -315,46 +208,81 @@ Cozy_Text_BagFull::
 	.string "We will keep this safe for you.$"
 
 Cozy_Text_TownSign::
-	.string "COMPANION: A town so small,\n"
+	.string "PIP: A town so small,\n"
 	.string "even the sign knows everyone.$"
 
 Cozy_Text_BirchsLabSign::
-	.string "COMPANION: A whole building\n"
+	.string "PIP: A whole building\n"
 	.string "for asking POKéMON questions.\l"
 	.string "I usually just ask the POKéMON.$"
 
 Cozy_Text_BrendansHouseSign::
-	.string "COMPANION: A name on a house.\n"
+	.string "PIP: A name on a house.\n"
 	.string "Bold. Now everyone knows\l"
 	.string "where to return borrowed things.$"
 
 Cozy_Text_MaysHouseSign::
-	.string "COMPANION: Looks cozy.\n"
+	.string "PIP: Looks cozy.\n"
 	.string "That is my professional opinion\l"
 	.string "as someone who likes chairs.$"
 
 Cozy_Text_PictureBookShelf::
-	.string "COMPANION: Pictures! Finally,\n"
+	.string "PIP: Pictures! Finally,\n"
 	.string "a book that respects my schedule.$"
 
 Cozy_Text_BookShelf::
-	.string "COMPANION: A guide to adventure.\n"
+	.string "PIP: A guide to adventure.\n"
 	.string "Chapter one says to pack carefully.\l"
 	.string "We have already failed chapter one.$"
 
 Cozy_Text_Vase::
-	.string "COMPANION: It lives on sunlight\n"
-	.string "and water. Show-off.$"
+	.string "PIP: It is empty. Finally,\n"
+	.string "a vase with room for ambition.$"
 
 Cozy_Text_EmptyTrashCan::
-	.string "COMPANION: Nothing in there.\n"
+	.string "PIP: Nothing in there.\n"
 	.string "A spotless record. Unlike mine.$"
 
 Cozy_Text_ShopShelf::
-	.string "COMPANION: Everything we need.\n"
+	.string "PIP: Everything we need.\n"
 	.string "And several things I could argue\l"
 	.string "we need if you gave me a minute.$"
 
 Cozy_Text_Blueprint::
-	.string "COMPANION: I understand this.\n"
+	.string "PIP: I understand this.\n"
 	.string "It is a building before it hatches.$"
+
+Pip_EventScript_NPCReaction::
+	callnative Script_PipBeginNPCReaction
+	goto_if_eq VAR_RESULT, FALSE, Pip_EventScript_EndNPCReaction
+	lockall
+	msgbox Pip_Text_AskAboutThem, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Pip_EventScript_FinishNPCReaction
+	callnative Script_PipChooseNPCDialogue
+	msgbox gStringVar4, MSGBOX_DEFAULT
+Pip_EventScript_FinishNPCReaction:
+	releaseall
+Pip_EventScript_EndNPCReaction:
+	callnative Script_PipEndNPCReaction
+	return
+
+Pip_Text_AskAboutThem::
+	.string "Ask PIP about them?$"
+
+Pip_Text_RecruitAgain::
+	.string "PIP: Ready to head out again?\n"
+	.string "My shoes were getting bored.$"
+
+Pip_EventScript_ObjectReaction::
+	callnative Script_PipBeginObjectReaction
+	goto_if_eq VAR_RESULT, FALSE, Pip_EventScript_EndObjectReaction
+	lockall
+	msgbox Cozy_Text_AskComment, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Pip_EventScript_FinishObjectReaction
+	callnative Script_PipChooseObjectDialogue
+	msgbox gStringVar4, MSGBOX_DEFAULT
+Pip_EventScript_FinishObjectReaction:
+	releaseall
+Pip_EventScript_EndObjectReaction:
+	callnative Script_PipEndNPCReaction
+	return

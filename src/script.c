@@ -1,4 +1,5 @@
 #include "global.h"
+#include "pip.h"
 #include "script.h"
 #include "event_data.h"
 #include "field_screen_effect.h"
@@ -273,6 +274,7 @@ bool8 ScriptContext_IsEnabled(void)
 // Re-initializes the global script context to zero.
 void ScriptContext_Init(void)
 {
+    Pip_ResetSceneState();
     InitScriptContext(&sGlobalScriptContext, gScriptCmdTable, gScriptCmdTableEnd);
     sGlobalScriptContextStatus = CONTEXT_SHUTDOWN;
 }
@@ -295,6 +297,7 @@ bool8 ScriptContext_RunScript(void)
     {
         sGlobalScriptContextStatus = CONTEXT_SHUTDOWN;
         UnlockPlayerFieldControls();
+        Pip_TryRegroupAfterScene();
         return FALSE;
     }
 
