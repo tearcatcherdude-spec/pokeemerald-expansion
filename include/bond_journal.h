@@ -30,6 +30,7 @@ void Script_BondsRest(struct ScriptContext *ctx);
 void Script_BondsStory(struct ScriptContext *ctx);
 void Script_BondsInterestMenu(struct ScriptContext *ctx);
 void Script_BondsInterest(struct ScriptContext *ctx);
+void Script_BondsRelationshipTrack(struct ScriptContext *ctx);
 void Script_BondsGiftMenu(struct ScriptContext *ctx);
 void Script_BondsGiftPreview(struct ScriptContext *ctx);
 void Script_BondsGiftCommit(struct ScriptContext *ctx);

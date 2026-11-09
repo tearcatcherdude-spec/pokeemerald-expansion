@@ -74,6 +74,7 @@ Bonds_EventScript_Rest::
 Bonds_EventScript_Relationship::
 	callnative Script_BondsInterestMenu
 	waitstate
+	goto_if_eq VAR_RESULT, 4, Bonds_EventScript_RelationshipTrack
 	goto_if_ge VAR_RESULT, 4, Bonds_EventScript_Menu
 	copyvar VAR_0x800A, VAR_RESULT
 	msgbox Bonds_Text_Relationship, MSGBOX_YESNO
@@ -81,6 +82,13 @@ Bonds_EventScript_Relationship::
 	copyvar VAR_RESULT, VAR_0x800A
 	callnative Script_BondsInterest
 	goto Bonds_EventScript_InfoOnly
+Bonds_EventScript_RelationshipTrack::
+	callnative Script_BondsRelationshipTrack
+	goto Bonds_EventScript_InfoOnly
+Bonds_EventScript_RelationshipRevisit::
+	lockall
+	facefollowernpc
+	goto Bonds_EventScript_Relationship
 Bonds_EventScript_Gift::
 	callnative Script_BondsGiftMenu
 	waitstate

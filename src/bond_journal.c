@@ -87,6 +87,12 @@ static const struct SpriteTemplate sMapHeartTemplate={
     .anims=gDummySpriteAnimTable,.affineAnims=gDummySpriteAffineAnimTable,.callback=SpriteCallbackDummy,
 };
 extern const u8 Bonds_EventScript_Marker[];
+extern const u8 Bonds_EventScript_RelationshipRevisit[];
+
+static u32 TrackedEvent(void)
+{
+    return Bonds_GetProgress()->trackedEvent & 0x7F;
+}
 
 static u32 EventIndex(void)
 {
@@ -243,7 +249,10 @@ void Script_BondsEventInfo(struct ScriptContext *ctx)
     gSpecialVar_Result=FALSE;
     if(Bonds_GetProgress()->people[sWho].hearts==5)
     {
-        Text(COMPOUND_STRING("All five personal events complete.\nYour story together continues.\lKeepsake recorded in this journal.$"));
+        Text(COMPOUND_STRING("All five personal events complete.\nYour final meeting place:\l"));
+        StringAppend(gStringVar4,e->directions);
+        StringAppend(gStringVar4,COMPOUND_STRING("\lReturn here for relationship choices.\lNo event rewards can repeat."));
+        gSpecialVar_Result=TRUE;
         return;
     }
     Text(e->title);StringAppend(gStringVar4,COMPOUND_STRING("\nRequired Bond Lv. "));Number(sEventLevels[index%5]);
@@ -327,9 +336,18 @@ void Script_BondsInterestMenu(struct ScriptContext *ctx)
     static const struct MenuAction items[]={
         {COMPOUND_STRING("Romantic interest")},{COMPOUND_STRING("Close friendship")},
         {COMPOUND_STRING("Not sure yet")},{COMPOUND_STRING("Commit together")},
-        {COMPOUND_STRING("Back")},
+        {COMPOUND_STRING("Track meeting place")},{COMPOUND_STRING("Back")},
     };
     Menu(items,ARRAY_COUNT(items));
+}
+void Script_BondsRelationshipTrack(struct ScriptContext *ctx)
+{
+    u32 hearts=Bonds_GetProgress()->people[sWho].hearts;
+    if(hearts<3)
+    {Text(COMPOUND_STRING("Romantic choices open in the third\npersonal event. Friendship is\lalready part of your journey.$"));return;}
+    Bonds_GetProgress()->trackedEvent=0x80 | (sWho*5+(hearts>=5?4:2)+1);
+    Text(sBondEvents[TrackedEvent()-1].directions);
+    StringAppend(gStringVar4,COMPOUND_STRING("\lRelationship meeting tracked.\lUse the heart marker together.\lNo personal-event rewards repeat."));
 }
 void Script_BondsInterest(struct ScriptContext *ctx)
 {
@@ -507,11 +525,14 @@ void Script_BondsClose(struct ScriptContext *ctx)
 
 static bool32 MarkerReady(void)
 {
-    u32 tracked=Bonds_GetProgress()->trackedEvent;
+    u32 tracked=TrackedEvent();
     if(!tracked || tracked>50 || !Cast_IsFollowing() || Cast_Active()!=(tracked-1)/5+1
      || Pip_IsSceneSuspended() || ScriptContext_IsEnabled() || ArePlayerFieldControlsLocked() || sSceneEvent)
         return FALSE;
-    return OnMap(sBondEvents[tracked-1].map) && Unmet(tracked-1)==NULL;
+    if(!OnMap(sBondEvents[tracked-1].map)) return FALSE;
+    if((Bonds_GetProgress()->trackedEvent & 0x80) || Bonds_GetProgress()->people[(tracked-1)/5].hearts==5)
+        return Bonds_GetProgress()->people[(tracked-1)/5].hearts>=3;
+    return Unmet(tracked-1)==NULL;
 }
 static void HideMarker(void)
 {
@@ -555,7 +576,7 @@ void Bonds_UpdateField(void)
     }
     {
         struct Sprite *s=&gSprites[sMarkerSprite-1];
-        const struct BondEvent *e=&sBondEvents[Bonds_GetProgress()->trackedEvent-1];
+        const struct BondEvent *e=&sBondEvents[TrackedEvent()-1];
         s16 x=e->x+7,y=e->y+7;
         SetSpritePosToOffsetMapCoords(&x,&y,8,8);
         s->x=x;s->y=y;s->coordOffsetEnabled=TRUE;
@@ -567,19 +588,21 @@ bool32 Bonds_TryMarker(s16 x,s16 y)
     u32 tracked;
     s16 px,py;
     if(!Bonds_GetProgress() || !MarkerReady()) return FALSE;
-    tracked=Bonds_GetProgress()->trackedEvent;
+    tracked=TrackedEvent();
     PlayerGetDestCoords(&px,&py);
     if((x-7!=sBondEvents[tracked-1].x || y-7!=sBondEvents[tracked-1].y)
      && (px-7!=sBondEvents[tracked-1].x || py-7!=sBondEvents[tracked-1].y)) return FALSE;
     sWho=(tracked-1)/5;
-    ScriptContext_SetupScript(Bonds_EventScript_Marker);
+    if((Bonds_GetProgress()->trackedEvent & 0x80) || Bonds_GetProgress()->people[sWho].hearts==5)
+        ScriptContext_SetupScript(Bonds_EventScript_RelationshipRevisit);
+    else ScriptContext_SetupScript(Bonds_EventScript_Marker);
     return TRUE;
 }
 u16 Bonds_TrackedMapSection(void)
 {
     u32 tracked;
     Bonds_EnsureInitialized();
-    if(!Bonds_GetProgress() || !(tracked=Bonds_GetProgress()->trackedEvent) || tracked>50) return 0xFFFF;
+    if(!Bonds_GetProgress() || !(tracked=TrackedEvent()) || tracked>50) return 0xFFFF;
     return Overworld_GetMapHeaderByGroupAndId(MAP_GROUP(sBondEvents[tracked-1].map),MAP_NUM(sBondEvents[tracked-1].map))->regionMapSectionId;
 }
 bool32 Bonds_IsMapView(void) {return sMapView;}

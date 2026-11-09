@@ -20,7 +20,7 @@ struct BondProgress
 {
     u32 magic;
     u16 version;
-    u8 committed, trackedEvent; // 0 means none; otherwise character/event index + 1.
+    u8 committed, trackedEvent; // Tracked low 7 bits: event + 1; bit 7: relationship revisit.
     u8 visited[8];
     struct BondPerson people[BOND_COUNT];
 };
