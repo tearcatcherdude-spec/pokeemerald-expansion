@@ -1,5 +1,6 @@
 #include "global.h"
 #include "pip.h"
+#include "cast.h"
 #include "parallel_watch.h"
 #include "event_data.h"
 #include "event_object_movement.h"
@@ -32,6 +33,7 @@ static EWRAM_DATA const u8 *sPendingReaction = NULL;
 static EWRAM_DATA u32 sSavedMessage = 0;
 static EWRAM_DATA bool8 sSavedTextValid = FALSE;
 static EWRAM_DATA u8 sSavedText[sizeof(gStringVar4)] = {0};
+static EWRAM_DATA u8 sSavedSpeaker[sizeof(gStringVar1)] = {0};
 
 struct PipLocationDialogue
 {
@@ -98,7 +100,7 @@ static const u8 *FreshNPCOffer(const u8 *text)
     u32 id = MemoryIndex(text);
     EnsureMemory();
     if (id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text)
-     || (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8))))
+     || (!Cast_IsFollowing() && (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8)))))
         return NULL;
     return text;
 }
@@ -155,6 +157,7 @@ static const u8 *FreshLocation(void)
 }
 static void BeginReaction(struct ScriptContext *ctx)
 {
+    Cast_ClearPending();
     sSavedResult = gSpecialVar_Result;
     sSavedLastTalked = gSpecialVar_LastTalked;
     sSavedMessage = ctx->data[0];
@@ -164,6 +167,7 @@ static void BeginReaction(struct ScriptContext *ctx)
     if (!Pip_IsFollowing() || sSceneSuspended)
         return;
     memcpy(sSavedText, gStringVar4, sizeof(gStringVar4));
+    memcpy(sSavedSpeaker, gStringVar1, sizeof(gStringVar1));
     sSavedTextValid = TRUE;
 }
 static void OfferReaction(const u8 *text)
@@ -171,10 +175,15 @@ static void OfferReaction(const u8 *text)
     u32 id = MemoryIndex(text);
     EnsureMemory();
     if (id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text)
-     || (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8))))
+     || (!Cast_IsFollowing() && (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8)))))
         return;
+    if (Cast_IsFollowing())
+    {
+        if (!Cast_Offer(id)) return;
+    }
+    else
+        gSaveBlock3Ptr->pipOffered[id / 8] |= 1 << (id % 8);
     sPendingReaction = text;
-    gSaveBlock3Ptr->pipOffered[id / 8] |= 1 << (id % 8);
     gSpecialVar_Result = TRUE;
 }
 
@@ -183,7 +192,7 @@ static void OfferReaction(const u8 *text)
 bool32 Pip_IsFollowing(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
-    return PlayerHasFollowerNPC() && GetFollowerNPCData(FNPC_DATA_EVENT_FLAG) == FLAG_HIDE_COZY_COMPANION;
+    return Cast_IsFollowing() || (PlayerHasFollowerNPC() && GetFollowerNPCData(FNPC_DATA_EVENT_FLAG) == FLAG_HIDE_COZY_COMPANION);
 #else
     return FALSE;
 #endif
@@ -201,6 +210,9 @@ bool32 Pip_IsSceneSuspended(void)
 void Pip_RefreshIdentity(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
+    Cast_RefreshIdentity();
+    if (Cast_IsFollowing())
+        return;
     if (Pip_IsFollowing())
     {
         // Rebind saved ROM pointers and upgrade the former placeholder graphic.
@@ -285,6 +297,7 @@ bool32 Pip_HasHeard(const u8 *text)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
     u32 id = MemoryIndex(text);
+    if (Cast_IsFollowing()) return Cast_HasUsed(id);
     EnsureMemory();
     return id >= ARRAY_COUNT(sPipMemoryCatalogue)
         || (gSaveBlock3Ptr->pipHeard[id / 8] & (1 << (id % 8))) != 0;
@@ -296,6 +309,8 @@ bool32 Pip_TrySay(const u8 *text)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
     u32 id = MemoryIndex(text);
+    if (Cast_IsFollowing())
+        return text != NULL && !sSceneSuspended && Cast_TrySay(id);
     if (!Pip_IsFollowing() || sSceneSuspended || id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text))
         return FALSE;
     gSaveBlock3Ptr->pipHeard[id / 8] |= 1 << (id % 8);
@@ -310,6 +325,11 @@ void Script_PipChooseDialogue(struct ScriptContext *ctx)
 {
     gSpecialVar_Result = FALSE;
 #if FNPC_ENABLE_NPC_FOLLOWERS
+    if (!sSceneSuspended && Cast_TryPersonalTalk())
+    {
+        gSpecialVar_Result = TRUE;
+        return;
+    }
     const u8 *text = Fresh(Pip_GetProgressDialogue(BadgeCount(), FlagGet(FLAG_SYS_GAME_CLEAR)));
     if (text == NULL && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_BIKE))
         text = Fresh(sPipBike);
@@ -325,7 +345,7 @@ void Script_PipChooseDialogue(struct ScriptContext *ctx)
 void Pip_BeginKantoNPCInteraction(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
-    sKantoInteractionActive = ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
+    sKantoInteractionActive = Cast_IsFollowing() || ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
     sKantoReactionHandled = FALSE;
     sKantoTalkGroup = gSaveBlock1Ptr->location.mapGroup;
     sKantoTalkMap = gSaveBlock1Ptr->location.mapNum;
@@ -334,7 +354,7 @@ void Pip_BeginKantoNPCInteraction(void)
 }
 void Script_PipBeginKantoNPCReaction(struct ScriptContext *ctx)
 {
-    if (!ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    if (!ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum) && !Cast_IsFollowing())
     {
 #if FNPC_ENABLE_NPC_FOLLOWERS
         BeginReaction(ctx);
@@ -355,7 +375,7 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
     if (!sSavedTextValid || gSpecialVar_LastTalked == OBJ_EVENT_ID_NPC_FOLLOWER
      || id >= OBJECT_EVENTS_COUNT || !gObjectEvents[id].active)
         return;
-    if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    if (Cast_IsFollowing() || ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
     {
         if (!sKantoInteractionActive || sKantoReactionHandled
          || sKantoTalkGroup != gSaveBlock1Ptr->location.mapGroup
@@ -402,6 +422,9 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
             break;
         }
     }
+    if (Cast_IsFollowing() && !ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum)
+     && FreshNPCOffer(text) == NULL)
+        text = FreshLocation();
     const u8 *personScript = GetObjectEventScriptPointerByObjectEventId(id);
     for (u32 i = 0; i < ARRAY_COUNT(sPipKantoScenes); i++)
         if (sPipKantoScenes[i].script == personScript)
@@ -459,7 +482,12 @@ void Script_PipEndNPCReaction(struct ScriptContext *ctx)
     gSpecialVar_LastTalked = sSavedLastTalked;
     ctx->data[0] = sSavedMessage;
     if (sSavedTextValid)
+    {
         memcpy(gStringVar4, sSavedText, sizeof(gStringVar4));
+        memcpy(gStringVar1, sSavedSpeaker, sizeof(gStringVar1));
+    }
+    Cast_ClearPending();
+    Cast_HidePortrait();
     sSavedTextValid = FALSE;
 #endif
 }

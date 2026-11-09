@@ -635,3 +635,24 @@ const u16 gObjectEventPic_ClefairyOld[] = INCGFX_U16("graphics/object_events/pic
 
 const u32 gObjectEventPic_Pip[] = INCGFX_U32("graphics/object_events/pics/people/pip.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_Pip[] = INCGFX_U16("graphics/object_events/palettes/pip.pal", ".gbapal");
+
+const u32 gObjectEventPic_CastSilas[] = INCGFX_U32("graphics/object_events/pics/people/cast_silas.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastSilas[] = INCGFX_U16("graphics/object_events/palettes/cast_silas.pal", ".gbapal");
+const u32 gObjectEventPic_CastKade[] = INCGFX_U32("graphics/object_events/pics/people/cast_kade.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastKade[] = INCGFX_U16("graphics/object_events/palettes/cast_kade.pal", ".gbapal");
+const u32 gObjectEventPic_CastAshe[] = INCGFX_U32("graphics/object_events/pics/people/cast_ashe.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastAshe[] = INCGFX_U16("graphics/object_events/palettes/cast_ashe.pal", ".gbapal");
+const u32 gObjectEventPic_CastNico[] = INCGFX_U32("graphics/object_events/pics/people/cast_nico.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastNico[] = INCGFX_U16("graphics/object_events/palettes/cast_nico.pal", ".gbapal");
+const u32 gObjectEventPic_CastRiven[] = INCGFX_U32("graphics/object_events/pics/people/cast_riven.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastRiven[] = INCGFX_U16("graphics/object_events/palettes/cast_riven.pal", ".gbapal");
+const u32 gObjectEventPic_CastEmi[] = INCGFX_U32("graphics/object_events/pics/people/cast_emi.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastEmi[] = INCGFX_U16("graphics/object_events/palettes/cast_emi.pal", ".gbapal");
+const u32 gObjectEventPic_CastVera[] = INCGFX_U32("graphics/object_events/pics/people/cast_vera.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastVera[] = INCGFX_U16("graphics/object_events/palettes/cast_vera.pal", ".gbapal");
+const u32 gObjectEventPic_CastLume[] = INCGFX_U32("graphics/object_events/pics/people/cast_lume.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastLume[] = INCGFX_U16("graphics/object_events/palettes/cast_lume.pal", ".gbapal");
+const u32 gObjectEventPic_CastMochi[] = INCGFX_U32("graphics/object_events/pics/people/cast_mochi.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastMochi[] = INCGFX_U16("graphics/object_events/palettes/cast_mochi.pal", ".gbapal");
+const u32 gObjectEventPic_CastZuri[] = INCGFX_U32("graphics/object_events/pics/people/cast_zuri.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_CastZuri[] = INCGFX_U16("graphics/object_events/palettes/cast_zuri.pal", ".gbapal");

@@ -271,6 +271,16 @@ struct KantoProgress
     u8 healValid[2];
 };
 
+// Cast v1 is a separate suffix; none of the released 1004-byte prefix moves.
+struct CastProgress
+{
+    u16 version, recruited, met, ready, hidden;
+    u8 active, reserved;
+    u32 steps, walkStart[2];
+    u8 loreStage[10], spoken[10];
+    u8 used[10][56]; // 448 canonical contexts per person; offered/declined is spent.
+};
+
 struct SaveBlock3
 {
 #if OW_USE_FAKE_RTC
@@ -298,6 +308,7 @@ struct SaveBlock3
     u16 watchMemoryVersion;
     struct ParallelWatchAnchor watchAnchors[2];
     struct KantoProgress kanto;
+    struct CastProgress cast;
 #endif
 }; /* max size 1624 bytes */
 

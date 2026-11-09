@@ -7,7 +7,7 @@
 #define T_SAVEBLOCK1_SIZE 15568
 #define T_SAVEBLOCK2_SIZE 3884
 #define T_SAVEBLOCK3_SIZE 4
-#define T_SAVEBLOCK3_WITH_FOLLOWER_SIZE 1004
+#define T_SAVEBLOCK3_WITH_FOLLOWER_SIZE 1608
 #define T_POKEMONSTORAGE_SIZE 34144
 
 TEST("SaveBlock1 is backwards compatible")
@@ -40,6 +40,10 @@ TEST("SaveBlock3 is backwards compatible")
     EXPECT_EQ(offsetof(struct KantoProgress, vars), 290);
     EXPECT_EQ(offsetof(struct KantoProgress, healLocations), 804);
     EXPECT_EQ(offsetof(struct KantoProgress, healValid), 820);
+    EXPECT_EQ(offsetof(struct SaveBlock3, cast), 1004);
+    EXPECT_EQ(sizeof(struct CastProgress), 604);
+    EXPECT_EQ(offsetof(struct CastProgress, used), 44);
+    EXPECT_LE(sizeof(struct SaveBlock3), 1624);
     EXPECT_EQ(sizeof(struct SaveBlock3), T_SAVEBLOCK3_WITH_FOLLOWER_SIZE);
 #else
     EXPECT_EQ(sizeof(struct SaveBlock3), T_SAVEBLOCK3_SIZE);

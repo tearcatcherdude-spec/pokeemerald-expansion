@@ -1,3 +1,13 @@
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastSilas;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastKade;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastAshe;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastNico;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastRiven;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastEmi;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastVera;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastLume;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastMochi;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastZuri;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanMachBike;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanSurfing;
@@ -410,6 +420,17 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_QUINTY_PLUMP] =             &gObjectEventGraphicsInfo_QuintyPlump,
     [OBJ_EVENT_GFX_NINJA_BOY] =                &gObjectEventGraphicsInfo_NinjaBoy,
     [OBJ_EVENT_GFX_TWIN] =                     &gObjectEventGraphicsInfo_Twin,
+    [OBJ_EVENT_GFX_PIP + 1 ... OBJ_EVENT_GFX_PIP + 17] = &gObjectEventGraphicsInfo_NinjaBoy,
+    [OBJ_EVENT_GFX_CAST_SILAS] = &gObjectEventGraphicsInfo_CastSilas,
+    [OBJ_EVENT_GFX_CAST_KADE] = &gObjectEventGraphicsInfo_CastKade,
+    [OBJ_EVENT_GFX_CAST_ASHE] = &gObjectEventGraphicsInfo_CastAshe,
+    [OBJ_EVENT_GFX_CAST_NICO] = &gObjectEventGraphicsInfo_CastNico,
+    [OBJ_EVENT_GFX_CAST_RIVEN] = &gObjectEventGraphicsInfo_CastRiven,
+    [OBJ_EVENT_GFX_CAST_EMI] = &gObjectEventGraphicsInfo_CastEmi,
+    [OBJ_EVENT_GFX_CAST_VERA] = &gObjectEventGraphicsInfo_CastVera,
+    [OBJ_EVENT_GFX_CAST_LUME] = &gObjectEventGraphicsInfo_CastLume,
+    [OBJ_EVENT_GFX_CAST_MOCHI] = &gObjectEventGraphicsInfo_CastMochi,
+    [OBJ_EVENT_GFX_CAST_ZURI] = &gObjectEventGraphicsInfo_CastZuri,
     [OBJ_EVENT_GFX_PIP] =                    &gObjectEventGraphicsInfo_Pip,
     [OBJ_EVENT_GFX_BOY_1] =                    &gObjectEventGraphicsInfo_Boy1,
     [OBJ_EVENT_GFX_GIRL_1] =                   &gObjectEventGraphicsInfo_Girl1,

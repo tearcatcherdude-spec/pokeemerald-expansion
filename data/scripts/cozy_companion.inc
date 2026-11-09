@@ -38,6 +38,7 @@ Cozy_EventScript_Companion::
 	lockall
 	facefollowernpc
 	multichoice 0, 0, MULTI_PIP_COMPANION, FALSE
+	goto_if_eq VAR_RESULT, 2, Cast_EventScript_Roster
 	goto_if_eq VAR_RESULT, 1, Pip_EventScript_HeadHome
 	goto_if_ne VAR_RESULT, 0, Cozy_EventScript_Stay
 	callnative Script_PipChooseDialogue
@@ -167,7 +168,7 @@ Cozy_Text_GoingHome::
 	.string "look for me. I am a slow goodbye.$"
 
 Cozy_Text_AskComment::
-	.string "Ask PIP about it?$"
+	.string "Ask {STR_VAR_1} about it?$"
 
 Cozy_Text_GardenRequest::
 	.string "We are welcoming this shrub.\n"
@@ -268,6 +269,7 @@ Pip_EventScript_NPCReaction::
 	goto_if_eq VAR_RESULT, FALSE, Pip_EventScript_EndNPCReaction
 Pip_EventScript_OfferNPCReaction:
 	lockall
+	callnative Script_CastBufferSpeaker
 	msgbox Pip_Text_AskAboutThem, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Pip_EventScript_FinishNPCReaction
 	callnative Script_PipChooseNPCDialogue
@@ -279,7 +281,7 @@ Pip_EventScript_EndNPCReaction:
 	return
 
 Pip_Text_AskAboutThem::
-	.string "Ask PIP about them?$"
+	.string "Ask {STR_VAR_1} about them?$"
 
 Pip_Text_RecruitAgain::
 	.string "PIP: Ready to head out again?\n"
@@ -289,6 +291,7 @@ Pip_EventScript_ObjectReaction::
 	callnative Script_PipBeginObjectReaction
 	goto_if_eq VAR_RESULT, FALSE, Pip_EventScript_EndObjectReaction
 	lockall
+	callnative Script_CastBufferSpeaker
 	msgbox Cozy_Text_AskComment, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Pip_EventScript_FinishObjectReaction
 	callnative Script_PipChooseObjectDialogue

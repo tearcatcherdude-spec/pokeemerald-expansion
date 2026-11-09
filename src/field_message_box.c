@@ -1,4 +1,5 @@
 #include "global.h"
+#include "cast.h"
 #include "menu.h"
 #include "string_util.h"
 #include "task.h"
@@ -143,6 +144,7 @@ static void StartDrawFieldMessage(void)
 
 void HideFieldMessageBox(void)
 {
+    Cast_HidePortrait();
     DestroyTask_DrawFieldMessage();
     ClearDialogWindowAndFrame(0, TRUE);
     DestroyNamebox();

@@ -583,8 +583,39 @@ const union AnimCmd *const sBackAnims_OldManPokedude[] = {
         .animation = anim,                                                                   \
     }}
 
+const u32 gTrainerFrontPic_CastSilas[] = INCGFX_U32("graphics/trainers/front_pics/cast_silas.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastSilas[] = INCGFX_U16("graphics/trainers/palettes/cast_silas.pal", ".gbapal");
+const u32 gTrainerFrontPic_CastKade[] = INCGFX_U32("graphics/trainers/front_pics/cast_kade.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastKade[] = INCGFX_U16("graphics/trainers/palettes/cast_kade.pal", ".gbapal");
+const u32 gTrainerFrontPic_CastAshe[] = INCGFX_U32("graphics/trainers/front_pics/cast_ashe.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastAshe[] = INCGFX_U16("graphics/trainers/palettes/cast_ashe.pal", ".gbapal");
+const u32 gTrainerFrontPic_CastNico[] = INCGFX_U32("graphics/trainers/front_pics/cast_nico.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastNico[] = INCGFX_U16("graphics/trainers/palettes/cast_nico.pal", ".gbapal");
+const u32 gTrainerFrontPic_CastRiven[] = INCGFX_U32("graphics/trainers/front_pics/cast_riven.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastRiven[] = INCGFX_U16("graphics/trainers/palettes/cast_riven.pal", ".gbapal");
+const u32 gTrainerFrontPic_CastEmi[] = INCGFX_U32("graphics/trainers/front_pics/cast_emi.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastEmi[] = INCGFX_U16("graphics/trainers/palettes/cast_emi.pal", ".gbapal");
+const u32 gTrainerFrontPic_CastVera[] = INCGFX_U32("graphics/trainers/front_pics/cast_vera.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastVera[] = INCGFX_U16("graphics/trainers/palettes/cast_vera.pal", ".gbapal");
+const u32 gTrainerFrontPic_CastLume[] = INCGFX_U32("graphics/trainers/front_pics/cast_lume.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastLume[] = INCGFX_U16("graphics/trainers/palettes/cast_lume.pal", ".gbapal");
+const u32 gTrainerFrontPic_CastMochi[] = INCGFX_U32("graphics/trainers/front_pics/cast_mochi.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastMochi[] = INCGFX_U16("graphics/trainers/palettes/cast_mochi.pal", ".gbapal");
+const u32 gTrainerFrontPic_CastZuri[] = INCGFX_U32("graphics/trainers/front_pics/cast_zuri.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastZuri[] = INCGFX_U16("graphics/trainers/palettes/cast_zuri.pal", ".gbapal");
+
 const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
 {
+    [TRAINER_PIC_CAST_SILAS] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastSilas, gTrainerPalette_CastSilas), },
+    [TRAINER_PIC_CAST_KADE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastKade, gTrainerPalette_CastKade), },
+    [TRAINER_PIC_CAST_ASHE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastAshe, gTrainerPalette_CastAshe), },
+    [TRAINER_PIC_CAST_NICO] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastNico, gTrainerPalette_CastNico), },
+    [TRAINER_PIC_CAST_RIVEN] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastRiven, gTrainerPalette_CastRiven), },
+    [TRAINER_PIC_CAST_EMI] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastEmi, gTrainerPalette_CastEmi), },
+    [TRAINER_PIC_CAST_VERA] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastVera, gTrainerPalette_CastVera), },
+    [TRAINER_PIC_CAST_LUME] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastLume, gTrainerPalette_CastLume), },
+    [TRAINER_PIC_CAST_MOCHI] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastMochi, gTrainerPalette_CastMochi), },
+    [TRAINER_PIC_CAST_ZURI] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastZuri, gTrainerPalette_CastZuri), },
     [TRAINER_PIC_NONE] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_None, gTrainerPalette_None),

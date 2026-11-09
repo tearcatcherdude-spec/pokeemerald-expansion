@@ -1,4 +1,5 @@
 #include "global.h"
+#include "cast.h"
 #include "pip.h"
 #include "kanto_progress.h"
 #include "parallel_watch.h"
@@ -754,6 +755,7 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
         return FALSE;
     }
 
+    Cast_OnStep();
     IncrementRematchStepCounter();
     IncrementDaycareSteps();
     UpdateFriendshipStepCounter();

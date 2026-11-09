@@ -414,6 +414,17 @@ enum
     OBJ_EVENT_GFX_CUTTABLE_TREE_FRLG,
     OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG,
     OBJ_EVENT_GFX_PIP,
+    // Preserve the released dynamic-gfx range (Pip+2 through Pip+17).
+    OBJ_EVENT_GFX_CAST_SILAS = OBJ_EVENT_GFX_PIP + 18,
+    OBJ_EVENT_GFX_CAST_KADE,
+    OBJ_EVENT_GFX_CAST_ASHE,
+    OBJ_EVENT_GFX_CAST_NICO,
+    OBJ_EVENT_GFX_CAST_RIVEN,
+    OBJ_EVENT_GFX_CAST_EMI,
+    OBJ_EVENT_GFX_CAST_VERA,
+    OBJ_EVENT_GFX_CAST_LUME,
+    OBJ_EVENT_GFX_CAST_MOCHI,
+    OBJ_EVENT_GFX_CAST_ZURI,
     NUM_OBJ_EVENT_GFX,
 };
 
@@ -429,7 +440,7 @@ enum
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
 // More info about them in include/constants/vars.h
-#define OBJ_EVENT_GFX_VARS   (NUM_OBJ_EVENT_GFX + 1)
+#define OBJ_EVENT_GFX_VARS   (OBJ_EVENT_GFX_PIP + 2) // Released save IDs; never shift.
 #define OBJ_EVENT_GFX_VAR_0  (OBJ_EVENT_GFX_VARS + 0x0)
 #define OBJ_EVENT_GFX_VAR_1  (OBJ_EVENT_GFX_VARS + 0x1)
 #define OBJ_EVENT_GFX_VAR_2  (OBJ_EVENT_GFX_VARS + 0x2)
@@ -570,6 +581,17 @@ enum
 #define OBJ_EVENT_PAL_TAG_SEAGALLOP               0x1132
 #define OBJ_EVENT_PAL_TAG_SS_ANNE                 0x1133
 #define OBJ_EVENT_PAL_TAG_PIP                     0x1134
+#define OBJ_EVENT_PAL_TAG_CAST_SILAS 0x7C00
+#define OBJ_EVENT_PAL_TAG_CAST_KADE 0x7C01
+#define OBJ_EVENT_PAL_TAG_CAST_ASHE 0x7C02
+#define OBJ_EVENT_PAL_TAG_CAST_NICO 0x7C03
+#define OBJ_EVENT_PAL_TAG_CAST_RIVEN 0x7C04
+#define OBJ_EVENT_PAL_TAG_CAST_EMI 0x7C05
+#define OBJ_EVENT_PAL_TAG_CAST_VERA 0x7C06
+#define OBJ_EVENT_PAL_TAG_CAST_LUME 0x7C07
+#define OBJ_EVENT_PAL_TAG_CAST_MOCHI 0x7C08
+#define OBJ_EVENT_PAL_TAG_CAST_ZURI 0x7C09
+
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla
