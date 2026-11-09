@@ -1,4 +1,5 @@
 #include "global.h"
+#include "companion_dialogue.h"
 #include "bonds.h"
 #include "bond_journal.h"
 #include "data.h"
@@ -1284,6 +1285,7 @@ void ConfigureTrainerBattle(struct ScriptContext *ctx)
 void ConfigureApproachingTrainerBattle(struct ApproachingTrainer *approachingTrainer)
 {
     InitTrainerBattleParameter();
+    CompanionDialogue_BeginInteraction(approachingTrainer[0].trainerScriptPtr);
 
     struct ScriptStack trainerBattleScriptStack;
     InitScriptStack(&trainerBattleScriptStack);

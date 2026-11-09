@@ -626,3 +626,9 @@ from companion_world_objects import ROWS as WORLD_OBJECT_ROWS
 ROWS.extend(WORLD_OBJECT_ROWS)
 from companion_world_people import ROWS as WORLD_PEOPLE_ROWS
 ROWS.extend(WORLD_PEOPLE_ROWS)
+from companion_hoenn_people import ROWS as HOENN_PEOPLE_ROWS
+ROWS.extend(HOENN_PEOPLE_ROWS)
+from companion_kanto_people import ROWS as KANTO_PEOPLE_ROWS
+ROWS.extend(KANTO_PEOPLE_ROWS)
+from companion_route_people import ROWS as ROUTE_PEOPLE_ROWS
+ROWS.extend(ROUTE_PEOPLE_ROWS)

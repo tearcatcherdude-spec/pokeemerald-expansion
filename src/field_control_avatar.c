@@ -721,6 +721,7 @@ static bool8 TryStartCoordEventScript(struct MapPosition *position)
     if (!RunScriptImmediatelyUntilEffect(SCREFF_V1 | SCREFF_HARDWARE, script, &ctx))
         return FALSE;
 
+    CompanionDialogue_BeginInteraction(script);
     ScriptContext_ContinueScript(&ctx);
     return TRUE;
 }
