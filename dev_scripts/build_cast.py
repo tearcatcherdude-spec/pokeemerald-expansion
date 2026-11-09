@@ -59,7 +59,7 @@ def register(characters):
   n=c['name'];s+='\n=== TRAINER_KANTO_DATA_CAST_'+n.upper()+' ===\nName: '+n.upper()+'\nClass: Pkmn Trainer 1\nPic: Cast '+n.title()+'\nGender: '+('Male' if i<5 else 'Female')+'\nMusic: '+('Male' if i<5 else 'Female')+'\nDouble Battle: No\nAI: Check Bad Move / Try To Faint\n\n'
   for species in c['team']:
    s+=species+'\nLevel: '+str(c['level'])+'\nIVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe\n'
-   if species=='Smeargle':s+='Moves: Tackle / Quick Attack / Sand Attack / Swift\n'
+   if species=='Smeargle':s+='- Tackle\n- Quick Attack\n- Sand Attack\n- Swift\n'
    s+='\n'
  p.write_text(s.rstrip()+"\n")
  # Native walkable placement: do not edit terrain or existing actors/scripts.

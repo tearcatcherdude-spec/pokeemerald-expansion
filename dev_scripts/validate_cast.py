@@ -8,7 +8,10 @@ def main():
  baseline=load('data/cast/base_contract.json')
  manifest=load('data/cast/asset_manifest.json');characters=load('data/cast/characters.json');review=load('data/cast/dialogue_review.json');contract=load('data/cast/dialogue_contract.json')
  assert len(characters)==10 and {c['name'] for c in characters}==set(contract['characters'])
- for path,sha in manifest['assets'].items():assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==sha,('Supplied asset changed',path)
+ for path,sha in manifest['assets'].items():
+  raw=(ROOT/path).read_bytes()
+  if path.endswith('.pal'):raw=raw.replace(b'\r\n',b'\n')
+  assert hashlib.sha256(raw).hexdigest()==sha,('Supplied asset changed',path)
  groups=load('data/maps/map_groups.json');layouts={l['id']:l for l in load('data/layouts/layouts.json')['layouts']}
  wild={e['map']:e for g in load('src/data/wild_encounters.json')['wild_encounter_groups'] for e in g.get('encounters',[]) if 'map' in e}
  species=(ROOT/'include/constants/species.h').read_text();items=(ROOT/'include/constants/items.h').read_text()

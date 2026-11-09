@@ -14034,7 +14034,10 @@ AI: Check Bad Move / Try To Faint
 Smeargle
 Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-Moves: Tackle / Quick Attack / Sand Attack / Swift
+- Tackle
+- Quick Attack
+- Sand Attack
+- Swift
 
 Chatot
 Level: 27
