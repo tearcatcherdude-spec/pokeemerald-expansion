@@ -1,4 +1,5 @@
 #include "global.h"
+#include "bonds.h"
 #include "data.h"
 #include "main.h"
 #include "battle.h"
@@ -1421,6 +1422,11 @@ bool8 GetTrainerFlag(void)
 
 static void SetBattledTrainersFlags(void)
 {
+    // Only an actual first victory renews the outing. Script-set trainer flags
+    // and repeat rematches must not allow gift/walking-cap resets.
+    if (!FlagGet(GetTrainerAFlag())
+     || (TRAINER_BATTLE_PARAM.opponentB != 0 && !FlagGet(GetTrainerBFlag())))
+        Bonds_RenewOuting();
     if (TRAINER_BATTLE_PARAM.opponentB != 0)
         FlagSet(GetTrainerBFlag());
     FlagSet(GetTrainerAFlag());

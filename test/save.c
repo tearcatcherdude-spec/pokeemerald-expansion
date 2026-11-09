@@ -52,7 +52,11 @@ TEST("SaveBlock3 is backwards compatible")
 
 TEST("PokemonStorage is backwards compatible")
 {
-    EXPECT_EQ(sizeof(struct PokemonStorage), T_POKEMONSTORAGE_SIZE);
+    EXPECT_EQ(offsetof(struct PokemonStorage, bonds), T_POKEMONSTORAGE_SIZE);
+    EXPECT_EQ(sizeof(struct BondPerson), 38);
+    EXPECT_EQ(sizeof(struct BondProgress), 396);
+    EXPECT_EQ(sizeof(struct PokemonStorage), T_POKEMONSTORAGE_SIZE + 396);
+    EXPECT_LE(sizeof(struct PokemonStorage), 9 * 3968);
 }
 
 #undef T_SAVEBLOCK1_SIZE

@@ -1,4 +1,5 @@
 #include "global.h"
+#include "bonds.h"
 #include "clock.h"
 #include "new_game.h"
 #include "random.h"
@@ -199,6 +200,7 @@ void NewGameInitData(void)
     gPartiesCount[B_TRAINER_PLAYER] = 0;
     ZeroPlayerPartyMons();
     ResetPokemonStorageSystem();
+    Bonds_Reset();
     DeactivateAllRoamers();
     gSaveBlock1Ptr->registeredItem = ITEM_NONE;
     ClearBag();

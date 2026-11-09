@@ -1,5 +1,6 @@
 #include "global.h"
 #include "cast.h"
+#include "bonds.h"
 #include "pip.h"
 #include "pokemon.h"
 #include "event_data.h"
@@ -181,6 +182,7 @@ void Cast_RefreshIdentity(void)
 }
 void Cast_OnStep(void)
 {
+    Bonds_OnStep();
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     if (gSaveBlock3Ptr->cast.version == CAST_VERSION
      && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT)
@@ -239,9 +241,13 @@ bool32 Cast_TrySay(u32 id)
     {
         Say(who, sCastCharacters[who].lore[stage], sCastCharacters[who].loreExpression[stage]);
         p->loreStage[who]++;
+        Bonds_QueueObservation(who, TRUE);
     }
     else
+    {
         Say(who, comment->text, comment->expression);
+        Bonds_QueueObservation(who, FALSE);
+    }
     if (p->spoken[who] < 255)
         p->spoken[who]++;
     return TRUE;
@@ -383,6 +389,7 @@ bool32 Cast_TryPersonalTalk(void)
         return FALSE;
     Say(who, sCastCharacters[who].lore[stage], sCastCharacters[who].loreExpression[stage]);
     gSaveBlock3Ptr->cast.loreStage[who]++;
+    Bonds_QueueObservation(who, TRUE);
     return TRUE;
 #else
     return FALSE;

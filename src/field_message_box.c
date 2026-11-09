@@ -1,5 +1,6 @@
 #include "global.h"
 #include "cast.h"
+#include "bonds.h"
 #include "menu.h"
 #include "string_util.h"
 #include "task.h"
@@ -52,6 +53,7 @@ static void Task_DrawFieldMessage(u8 taskId)
     case 2:
         if (RunTextPrintersAndIsPrinter0Active() != TRUE)
         {
+            Bonds_MessageFinished();
             sFieldMessageBoxMode = FIELD_MESSAGE_BOX_HIDDEN;
             DestroyTask(taskId);
         }
@@ -144,6 +146,7 @@ static void StartDrawFieldMessage(void)
 
 void HideFieldMessageBox(void)
 {
+    Bonds_CancelMessage();
     Cast_HidePortrait();
     DestroyTask_DrawFieldMessage();
     ClearDialogWindowAndFrame(0, TRUE);
