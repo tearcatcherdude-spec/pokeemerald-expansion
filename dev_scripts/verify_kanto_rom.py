@@ -2,9 +2,25 @@
 from pathlib import Path
 import json,re,struct,sys
 ROOT=Path(__file__).resolve().parents[1]
+def graphics_ids():
+ source=(ROOT/'include/constants/event_objects.h').read_text()
+ body=re.search(r'enum\s*\{(.*?)\};',source,re.S)[1]
+ body=re.sub(r'/\*.*?\*/|//[^\n]*','',body,flags=re.S)
+ result={};value=-1
+ for token in body.split(','):
+  token=token.strip()
+  if not token:continue
+  if '=' in token:
+   name,expression=map(str.strip,token.split('=',1))
+   match=re.fullmatch(r'(\w+)\s*\+\s*(\d+)',expression)
+   value=result[match[1]]+int(match[2]) if match else int(expression,0)
+  else:name=token;value+=1
+  result[name]=value
+ return result
+
 def verify(rom_path,map_path):
  rom=Path(rom_path).read_bytes();text=Path(map_path).read_text(encoding='utf-8',errors='replace');symbols={n:int(a,16) for a,n in re.findall(r'0x([0-9a-fA-F]{8,16})\s+(\w+)\s*$',text,re.M)}
- source=(ROOT/'include/constants/event_objects.h').read_text();body=re.search(r'enum\s*\{(.*?)\};',source,re.S)[1];body=re.sub(r'/\*.*?\*/|//[^\n]*','',body,flags=re.S);ids={n.strip():i for i,n in enumerate(body.split(',')) if n.strip()}
+ ids=graphics_ids()
  expected=dict(re.findall(r'\[(OBJ_EVENT_GFX_\w+)\]\s*=\s*&(gObjectEventGraphicsInfo_\w+)',(ROOT/'src/data/object_events/object_event_graphics_info_pointers.h').read_text()))
  manifest=json.loads((ROOT/'data/kanto/maps_manifest.json').read_text());graphics=set()
  for name in manifest['maps'].values():
