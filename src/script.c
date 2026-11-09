@@ -272,6 +272,11 @@ bool8 ScriptContext_IsEnabled(void)
 }
 
 // Re-initializes the global script context to zero.
+bool32 ScriptContext_IsGlobal(const struct ScriptContext *ctx)
+{
+    return ctx == &sGlobalScriptContext;
+}
+
 void ScriptContext_Init(void)
 {
     Pip_ResetSceneState();

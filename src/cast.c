@@ -221,8 +221,7 @@ bool32 Cast_TrySay(u32 id)
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     struct CastProgress *p = &gSaveBlock3Ptr->cast;
     const struct CastComment *comment;
-    static const u8 thresholds[] = {0, 4, 9, 15, 22, 30};
-    u32 active = Cast_Active(), who, stage, memoryId;
+    u32 active = Cast_Active(), who, memoryId;
     if (!Cast_IsFollowing() || !active || id >= CAST_SOURCE_COUNT)
         return FALSE;
     who = active - 1;
@@ -234,20 +233,10 @@ bool32 Cast_TrySay(u32 id)
         return FALSE;
     memoryId = sCastContextMemoryId[active - 1][id];
     p->used[who][memoryId / 8] |= 1 << (memoryId % 8);
-    stage = p->loreStage[who];
-    // Ordered revelations emerge during actual conversations, never a rotating fallback.
-    if (stage < ARRAY_COUNT(thresholds) && p->spoken[who] >= thresholds[stage]
-     && (comment->topic & sCastLoreTriggers[who][stage]))
-    {
-        Say(who, sCastCharacters[who].lore[stage], sCastCharacters[who].loreExpression[stage]);
-        p->loreStage[who]++;
-        Bonds_QueueObservation(who, TRUE);
-    }
-    else
-    {
-        Say(who, comment->text, comment->expression);
-        Bonds_QueueObservation(who, FALSE);
-    }
+    // Contextual answers never turn into an unrelated personal revelation.
+    // Ordered lore remains available through Talk and the bond journal.
+    Say(who, comment->text, comment->expression);
+    Bonds_QueueObservation(who, FALSE);
     if (p->spoken[who] < 255)
         p->spoken[who]++;
     return TRUE;

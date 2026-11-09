@@ -1,0 +1,3271 @@
+{
+  "voices": [
+    "pip",
+    "silas",
+    "kade",
+    "ashe",
+    "nico",
+    "riven",
+    "emi",
+    "vera",
+    "lume",
+    "mochi",
+    "zuri"
+  ],
+  "capacity": 736,
+  "contexts": [
+    {
+      "id": 0,
+      "key": "oldale_save",
+      "subject": "She is saving before taking a rest.",
+      "sources": {
+        "OldaleTown_Text_SavingMyProgress": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "I want to take a rest, so I'm saving my\\nprogress.$",
+          "sha256": "8f71a798ad993b7dbafcd5405fc3dd904b302e6fb1d639dd5798d17dbe2bae9e"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "She is saving before her rest. I usually just trust the pillow."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Recording progress before resting. Sensible fieldwork; excellent pillow management."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Rest first, mistakes later. Saving gives the mistakes less authority."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "She saved before resting. I should write down tunes before naps eat them."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Save, then rest. Like covering dough before leaving it alone. Less chance of disaster."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A pause with a carefully prepared return. Even an intermission needs planning."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "She is saving her progress. I save my poems. Unfortunately, all the drafts too."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Save before shutting down. My workshop could learn from her."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A rest with a way back to where she stopped. A kind little ritual."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Saving before a rest. A sensible fastening on the end of the day."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "She is keeping her progress safe. I photograph a wall before the weather gets ambitious."
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "key": "oldale_footprints_search",
+      "subject": "He asks for space to sketch supposedly rare footprints.",
+      "sources": {
+        "OldaleTown_Text_DiscoveredFootprints": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "I just discovered the footprints of\\na rare POK\u00e9MON!\\pWait until I finish sketching\\nthem, okay?$",
+          "sha256": "13ba3c7c2eb103c0def3903e8d935702407be14f4a0cbf57b4b7bcce17d15d6b"
+        },
+        "OldaleTown_Text_WaitDontComeInHere": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "Aaaaah! Wait!\\nPlease don't come in here.\\pI just discovered the footprints of\\na rare POK\u00e9MON!\\pWait until I finish sketching\\nthem, okay?$",
+          "sha256": "cd06b51c1538feb06234f83402eada70f4c6064308b15c2af0e3cff113556029"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "He needs room to sketch those footprints. I shall contribute by keeping my feet out of the evidence."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Sketch first, identify later. Let us avoid adding eleven new theories with our shoes."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Give him space. Nobody solves a mystery while we are standing on it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "Those prints have an audience now. Let us not turn the sketch into crowd noise."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I can wait. Stepping on the tracks would be a very poor contribution to science."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The footprints are having their portrait done. We must respect the sitting."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Rare footprints. At last, a celebrity who cannot ask me what my poem means."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "He is documenting the tracks. Good. Measurements before dramatic conclusions, preferably."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Someone passed here. For now, that is the part of the story we actually know."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Let him finish the sketch. Even an excellent shoe can trample evidence."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "He is drawing the prints before they fade. I understand the hurry. We can go around."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "key": "oldale_footprints_reveal",
+      "subject": "The supposedly rare footprints were his own.",
+      "sources": {
+        "OldaleTown_Text_FinishedSketchingFootprints": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "I finished sketching the footprints of\\na rare POK\u00e9MON.\\pBut it turns out they were only my\\nown footprints\u2026$",
+          "sha256": "6c3444ca4cf5333c9d5217268a331b2d6d5c8ec3b19124df621f7b54c6e5d413"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "laughing",
+          "text": "They were his own footprints. At least the rare creature has agreed to an interview."
+        },
+        {
+          "voice": "silas",
+          "expression": "laughing",
+          "text": "His own tracks. A useful correction, and an unusually convenient research subject."
+        },
+        {
+          "voice": "kade",
+          "expression": "laughing",
+          "text": "Tracked himself down. Tough suspect. Knew every move he was going to make."
+        },
+        {
+          "voice": "ashe",
+          "expression": "laughing",
+          "text": "His own footprints. A solo performance with a very surprising encore."
+        },
+        {
+          "voice": "nico",
+          "expression": "laughing",
+          "text": "He found himself. Usually I need breakfast before managing that."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The investigator was the mysterious creature. A twist with remarkably little travel expense."
+        },
+        {
+          "voice": "emi",
+          "expression": "laughing",
+          "text": "His own footprints. A moving portrait of a man going absolutely nowhere."
+        },
+        {
+          "voice": "vera",
+          "expression": "laughing",
+          "text": "His own tracks! Excellent reason to check the measuring equipment attached to your ankles."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "He corrected the story when the evidence changed. That is worth keeping, too."
+        },
+        {
+          "voice": "mochi",
+          "expression": "laughing",
+          "text": "His own footprints. His shoes have finally received professional recognition."
+        },
+        {
+          "voice": "zuri",
+          "expression": "laughing",
+          "text": "A self-portrait in mud. Unexpected medium. Very committed artist."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "key": "potion_use",
+      "subject": "Potions can heal away from a Center.",
+      "sources": {
+        "OldaleTown_Text_PotionExplanation": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "A POTION can be used anytime, so it's\\neven more useful than a POK\u00e9MON CENTER\\lin certain situations.$",
+          "sha256": "bee5ebcd3c8e440093c6fa3ba006650df006853e02cef9f424e07b996692dd37"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A POTION means we can help before reaching a CENTER. I prefer emergencies with fewer walking directions."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A portable treatment. Useful, though it does not make pushing a tired team sensible."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Keep a POTION handy. Being tough is no reason to limp to town."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A little healing on the road. Much better than telling a tired friend to keep the tempo."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "POTIONS for the team, lunch for us. Travelling goes better when care is already packed."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A POTION can help out here. We need not turn every injury into an endurance performance."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A POTION works on the road. Finally, a bottle that makes a problem smaller."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Field repairs for Pokemon. Unlike my tools, the POTION comes with useful instructions."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Care we can carry. A small bottle is allowed to matter."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A POTION belongs somewhere reachable. A pocket is only useful if you can find its contents."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Healing before the next town. Good supplies make room for a better journey."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "key": "party_order",
+      "subject": "The first party member enters battle first.",
+      "sources": {
+        "OldaleTown_House1_Text_LeftPokemonGoesOutFirst": {
+          "path": "data/maps/OldaleTown_House1/scripts.inc",
+          "text": "When a POK\u00e9MON battle starts, the one\\nat the left of the list goes out first.\\pSo, when you get more POK\u00e9MON in your\\nparty, try switching around the order\\lof your POK\u00e9MON.\\pIt could give you an advantage.$",
+          "sha256": "43f887056748811c50b17e62c79ae4f54b74678c8190d40693adb67690beb135"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "First in the party, first into battle. I shall stop calling it the snack queue."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The first slot determines the opening. We can change the order before choosing a strategy."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Pick the lead on purpose. Whoever is first gets the first problem."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The first Pokemon sets the opening note. Best choose one ready to play it."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "First in line gets the battle, not the bread. Important distinction."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Choose your opening performer carefully. The rest of the cast still matters."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "First in the party means first into battle. An extremely literal opening line."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Reorder the team for the job. Tools work better when the right one is within reach."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "The first companion steps forward first. We can make that a choice rather than an accident."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Put the right Pokemon first. Arrangement should serve the wearer. Or the battler, here."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The first slot sets the opening shape. We can rearrange without leaving anyone out."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "key": "battle_growth",
+      "subject": "Battles help Pokemon gain levels.",
+      "sources": {
+        "OldaleTown_House2_Text_PokemonLevelUp": {
+          "path": "data/maps/OldaleTown_House2/scripts.inc",
+          "text": "When POK\u00e9MON battle, they eventually\\nlevel up and become stronger.$",
+          "sha256": "332730560468136c95942056bfcd26eefec8bfaf22f39db2848deaf450aa75bb"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Battles help Pokemon grow. My experience mostly teaches me where the benches are."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Experience builds strength. Rest is still part of the work, even if it earns no level announcement."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Practice makes them stronger. Pick battles they can learn from."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "Battles are practice, then. With more dramatic feedback than scales."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "They grow through experience. I grow through trying a recipe again after a very flat loaf."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Rehearsal with consequences. Let us make sure our team gets recovery time between performances."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "They gain levels by battling. I gain revisions by reading my work aloud. Less cheering."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Repeated practice improves performance. Preferably without setting the practice equipment on fire."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Growing stronger takes experience. No need to pretend the beginning was embarrassing."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Practice gives strength a better fit. Everyone starts with some awkward seams."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Battles leave lessons. We should notice the Pokemon doing the learning, too."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "key": "strength_travel",
+      "subject": "A stronger team can travel farther.",
+      "sources": {
+        "OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon": {
+          "path": "data/maps/OldaleTown_House2/scripts.inc",
+          "text": "If the POK\u00e9MON with you become\\nstronger, you'll be able to go farther\\laway from here.$",
+          "sha256": "6856553b6993c05fa703b9389d15748800782c08f247536ca9bc9d3a677eb730"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A stronger team can go farther. I hope farther also has lunch."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "More capable partners open safer routes. Distance is not the only measure of progress."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Get stronger, go farther. Come back for a rest before farther becomes a problem."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A stronger team means a longer road. Plenty of time to finish that travelling tune."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Farther away means more provisions. That is not fear. That is sandwiches."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Strength opens the next act. We still choose the pace of the performance."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Grow stronger, travel farther. My legs would like to submit a footnote."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Capability changes the route. We should improve supplies along with the team."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "The road gets longer as we grow. Coming home remains a perfectly good ending to a day."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Stronger partners, farther journeys. I am adding reinforced soles to that plan."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "A stronger team opens more places. I wonder what colours we have not seen yet."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "key": "center_oldale",
+      "subject": "Tired Pokemon can recover at the nearby Oldale Center.",
+      "sources": {
+        "Route101_Text_TakeTiredPokemonToPokeCenter": {
+          "path": "data/maps/Route101/scripts.inc",
+          "text": "If POK\u00e9MON get tired, take them to\\na POK\u00e9MON CENTER.\\pThere's a POK\u00e9MON CENTER in OLDALE\\nTOWN right close by.$",
+          "sha256": "53d2e76d87ebf4ebf6a55bbcb5a7c04a100ad40b1233af9f00a030f12064a930"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "OLDALE has a CENTER nearby. Excellent. A helpful direction that ends in sitting down."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The nearby CENTER is our recovery point. Let us use it before tired becomes hurt."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "OLDALE is close. Take the team in if they need it; the road can wait."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The CENTER is just ahead. Even a good travelling song needs a rest."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Healing in OLDALE, then. I can plan lunch while the team gets proper care."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A nearby place to recover. We need not make a dramatic collapse our next entrance."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A CENTER close by. Hope has a roof and very practical opening hours."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "OLDALE has recovery facilities. Better than testing how far a tired team can hobble."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "There is somewhere nearby to rest them. That is good news worth saying plainly."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Let us take the team to OLDALE if they are tired. Comfort should not be postponed for appearances."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "OLDALE's CENTER is close. A good route includes somewhere to recover."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "key": "wild_grass",
+      "subject": "Searching tall grass leads to wild Pokemon encounters.",
+      "sources": {
+        "Route101_Text_WildPokemonInTallGrass": {
+          "path": "data/maps/Route101/scripts.inc",
+          "text": "Wild POK\u00e9MON will jump out at you in\\ntall grass.\\pIf you want to catch POK\u00e9MON, you have\\nto go into the tall grass and search.$",
+          "sha256": "c27245d14f1593243dfa508e2e9d7c8bb5b6045418ddb1a51d0b5cec4ba11864"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Tall grass is where we meet wild Pokemon. My shoes were hoping for a quieter introduction."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The grass is habitat, not an empty shortcut. We should enter prepared to meet its residents."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Want to meet wild Pokemon? Into the grass. Keep the team ready."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The grass has surprise performers. None appear to need an announcement."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Wild Pokemon in the grass. Let us secure the food before making introductions."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The grass conceals the next entrance. Good staging. Unreliable ticketing."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Tall grass: where a peaceful walk develops a supporting cast."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Searching the grass brings encounters. Supplies first; improvisation second."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "The grass has residents. A path through somebody's home deserves some attention."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Tall grass means Pokemon, and possibly seeds in every hem. Both require preparation."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "We step into the grass and the scene changes. There are lives here we have not met."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "key": "grass_sneeze",
+      "subject": "The grass reaches his nose and makes him sneeze.",
+      "sources": {
+        "Route102_Text_ImNotVeryTall": {
+          "path": "data/maps/Route102/scripts.inc",
+          "text": "I'm\u2026not very tall, so I sink right\\ninto tall grass.\\pThe grass goes up my nose and\u2026\\nFwafwafwafwafwa\u2026\\pFwatchoo!$",
+          "sha256": "99b17b109a99b23f521e05df51db1b726da39441138ac07ca6625da8cd16fab0"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "The grass reaches his nose. I support his campaign for a shorter lawn."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "At his height, that grass is a very different environment. A tissue seems more useful than advice."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Give him a bit of room. Sneezing in tall grass sounds miserable."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The grass is playing his nose like an instrument. Not one I would put in the band."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Grass up the nose. I have flour days like that. A clean handkerchief helps more than laughing."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A sneeze with excellent projection. An unfortunate venue for the performance."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The grass goes up his nose. Nature has become an intrusive editor."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "That path is poorly suited to his height. A shorter route would beat a lecture about endurance."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "The same grass is a meadow to us and a thicket to him. Perspective is quite physical."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Grass at face height. This is why comfort cannot be designed for one body."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "He is walking through what looks like a wall from down there. We can give him space."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "key": "catch_many",
+      "subject": "He wants to catch many Pokemon.",
+      "sources": {
+        "Route102_Text_CatchWholeBunchOfPokemon": {
+          "path": "data/maps/Route102/scripts.inc",
+          "text": "I'm going to catch a whole bunch of\\nPOK\u00e9MON!$",
+          "sha256": "f801756da4fca038b26f186f61440c1e5feb8499e01b7abe812de4eb09027fc7"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A whole bunch of Pokemon. I hope he has also planned a whole bunch of meals."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "An ambitious collection. Each new partner still needs individual care."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Catch plenty if you can care for them. A team is more than a number."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A whole bunch. That is less a solo act and more an orchestra with teeth."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Many Pokemon means many appetites. I respect the ambition and fear the shopping list."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A large cast. Someone will need to learn every name, not just count the entrances."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A whole bunch of Pokemon. The phrase has concealed an enormous amount of responsibility."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "He has a target count. I would also like to see the care plan."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "I hope each one becomes a someone to him, rather than another mark on a list."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Quite a collection planned. No matching outfit can substitute for knowing each partner."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "A whole bunch of new lives in one plan. I hope he leaves room to know them."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "key": "reflection",
+      "subject": "He wonders whether his reflected face shows hope or fear.",
+      "sources": {
+        "PetalburgCity_Text_WaterReflection": {
+          "path": "data/maps/PetalburgCity/scripts.inc",
+          "text": "My face is reflected in the water.\\pIt's a shining grin full of hope\u2026\\pOr it could be a look of somber silence\\nstruggling with fear\u2026\\pWhat do you see reflected in your face?$",
+          "sha256": "49e085ce1ff7aef6f0cced491a87a75b4e9c61eae2d6a67f6c398f12a4b5760c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "He sees hope or fear in the water. I see somebody asking a rather brave question."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A reflection gives little evidence of what someone feels. Asking is better than guessing."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Hope and fear can share a face. You do not have to choose just one."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "You can be hopeful and frightened. I have performed several entire songs in that arrangement."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Both can be true. A warm meal does not fix everything, but it helps me talk about it."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A face can carry more than one feeling. That is not a failed performance."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Hope and fear in the same reflection. The water is a better poet than I expected."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Same face, different feelings. We should not mistake the surface for a complete reading."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Water shows a face. The person gets to tell us what is behind it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Hope does not need a particular face. Neither does fear. We should leave him room for both."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The light can show his outline. It cannot choose his meaning for him."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "key": "storage_seventh",
+      "subject": "A seventh caught Pokemon is sent to a PC box.",
+      "sources": {
+        "PetalburgCity_Text_FullPartyExplanation": {
+          "path": "data/maps/PetalburgCity/scripts.inc",
+          "text": "Let's say you have six POK\u00e9MON.\\nIf you catch another one\u2026\\pIt is automatically sent to a STORAGE\\nBOX over a PC connection.$",
+          "sha256": "9b851081863b0bb9853c4fde471f12f7ffd0628385dc76f6d299e58d1cc26fba"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "The seventh Pokemon goes to a BOX. Sensible. My proposed second backpack had several design flaws."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A full party sends the next catch to storage. We should check on our boxed partners, too."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Six travelling, the next one in a BOX. Remember where everyone went."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "Six on the road, the seventh waiting in a BOX. We should make time for the whole ensemble."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "The BOX handles the seventh catch. It does not handle remembering everybody's favourite food. I can help."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The travelling cast has six places. A partner waiting backstage still belongs to the company."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The seventh goes to a BOX. A surprisingly orderly ending to a wild encounter."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Automatic storage prevents an overcrowded party. We should still check the destination ourselves."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A BOX is a place to wait, not a reason to forget somebody."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "The seventh goes to storage. Extra pockets are useful, but this is beyond my tailoring."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Only six travel at once. That need not make the others background characters."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "key": "gym_first",
+      "subject": "He recommends checking a new town gym.",
+      "sources": {
+        "PetalburgCity_Text_AreYouRookieTrainer": {
+          "path": "data/maps/PetalburgCity/scripts.inc",
+          "text": "Hiya! Are you maybe\u2026\\nA rookie TRAINER?\\pDo you know what POK\u00e9MON TRAINERS\\ndo when they reach a new town?\\pThey first check what kind of GYM\\nis in the town.$",
+          "sha256": "e1777136d4104e81ed96f79b2a2af34dc79e8783b0d18870dc09d034a6c7463c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Check the GYM first? I had the bakery pencilled in. We can negotiate."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Checking the local GYM tells us what training lies ahead. A sensible first survey."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Check the GYM, learn what we are facing. Nobody said we have to fight immediately."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "He checks the GYM first. I usually listen for somebody practising with a window open."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "GYM first, supplies close behind. Hungry strategy is rarely my best strategy."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Look at the venue before taking the stage. At last, a trainer tip I can wholeheartedly endorse."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The GYM is the first stop. My shoes were hoping towns had introductions before examinations."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Reconnaissance before a challenge. I approve of a plan containing an actual inspection."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Learning what a place asks of us is useful. So is meeting the people outside its GYM."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Checking the GYM is sensible. We can prepare without pretending we are ready for everything."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The GYM tells one part of a town's story. I want to see what surrounds it, too."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "key": "kanto_coffee",
+      "subject": "His granddaughter explains his rudeness as lack of coffee.",
+      "sources": {
+        "ViridianCity_Text_GrandpaHasntHadCoffeeYet": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "Oh, Grandpa!\\nDon't be so mean!\\pI'm so sorry.\\nHe hasn't had his coffee yet.$",
+          "sha256": "913b497bfb32943d9357dd52a0e0237680a983479a536ffa813d6ddd5e436250"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "He has not had coffee. I understand the tiredness. The road still belongs to other people."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The missing coffee explains his mood. It does not make his granddaughter responsible for it."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "No coffee is rough. Making it everyone else's problem is optional."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I get quiet before breakfast. He has chosen a much louder arrangement."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I sympathise with an empty cup. Less with making somebody else apologise for it."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A caffeine shortage has become public theatre. His granddaughter deserves a quieter morning."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "No coffee, therefore no road. A startling contribution to municipal planning."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Coffee is fuel, not a permit to block the route. Very important distinction."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "She is trying to smooth things over. I hope someone asks how her morning is going."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Being uncomfortable is real. Making everyone accommodate rudeness is a separate choice."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "One empty cup, an entire blocked street. The proportions need work."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "key": "kanto_gym_closed",
+      "subject": "Viridian gym is closed and its leader is unknown.",
+      "sources": {
+        "ViridianCity_Text_GymClosedWonderWhoLeaderIs": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "This POK\u00e9MON GYM is always closed.\\pI wonder who the LEADER is?$",
+          "sha256": "55dc144f15f73d9da44ad746739f802252846eb62a8a91c8dab8741f3d553bdd"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Closed GYM, mysterious LEADER. I hope this is a schedule problem rather than a secret basement problem."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "No LEADER identified and no access. We need more information, not a theory presented as fact."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Closed for now. We can come back when somebody is actually running the place."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A GYM with no announced LEADER. That is an unusually long silent introduction."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "If the GYM stays closed, we can use the time to restock. Waiting is easier with provisions."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An absent lead and a locked venue. Even my rehearsals have clearer notices."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The LEADER is a mystery. The door has made its position extremely clear."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "No opening notice? A small sign would solve several people's afternoon."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "An unanswered question is allowed to remain one until we learn more. The lock is not evidence of a ghost."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A closed door and no explanation. Information should not be an exclusive accessory."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The building is there; the person is missing from the picture. We can look elsewhere for now."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "key": "kanto_gym_returned",
+      "subject": "Viridian leader has returned.",
+      "sources": {
+        "ViridianCity_Text_ViridiansGymLeaderReturned": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "VIRIDIAN GYM's LEADER returned!$",
+          "sha256": "d470ae23234c0a5e03212a8d553d86bf67acda74854120f29491a03bf632f414"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "The LEADER is back. The door can retire from being the strongest opponent here."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The situation has changed: the LEADER returned. We can reassess our plans."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "LEADER is back. Now we can prepare for a real challenge."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The LEADER has returned. Long introduction. Let us see how the actual performance goes."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "The GYM has its LEADER again. We should make sure our team is ready before heading in."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The missing lead has arrived. I trust the entrance was worth the wait."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The LEADER returned. At last, the mystery has developed opening hours."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Someone is running the GYM again. Good time to check our team rather than the lock."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A return changes the story. Let us pay attention to what happens next."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "The LEADER is back. We can prepare properly instead of dressing for a locked door."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The empty place has a person in it again. That changes what we can do here."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "key": "caterpie_weedle",
+      "subject": "Caterpie is not poisonous; Weedle has Poison Sting.",
+      "sources": {
+        "ViridianCity_Text_ExplainCaterpieWeedle": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "CATERPIE has no poison,\\nbut WEEDLE does.\\pWatch that your POK\u00e9MON aren't\\nstabbed by WEEDLE's POISON STING.$",
+          "sha256": "d4320ce15aa32a83104853a9bda4279466d75be342dd64685c467680b0c5469e"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "CATERPIE and WEEDLE: similar shapes, very different reasons not to grab the pointy end."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Useful distinction: WEEDLE has POISON STING. Resemblance is not a safe identification method."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Watch for WEEDLE's sting. Looking a bit like CATERPIE does not make it harmless."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "WEEDLE brings POISON STING. I will admire the caterpillars without requesting a demonstration."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "CATERPIE and WEEDLE need different caution. Let us check antidotes before the forest."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Two similar silhouettes, one poisonous entrance. Casting by appearance has consequences."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "CATERPIE does not have the poison. WEEDLE supplies the sharp critique."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Identify first, touch never without cause. WEEDLE is an excellent safety instructor at a terrible hourly rate."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Two small creatures, different defences. Their stories deserve more care than a shared outline."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A similar shape does not mean the same needs. WEEDLE's sting makes that point emphatically."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Look closely: the differences matter. That sting is more than a detail in the sketch."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "key": "forest_shopping",
+      "subject": "Her shopping trip to Pewter takes the winding forest trail.",
+      "sources": {
+        "ViridianCity_Text_GoShoppingInPewterOccasionally": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "I go shopping in PEWTER CITY\\noccasionally.\\pI have to take the winding trail in\\nVIRIDIAN FOREST when I go.$",
+          "sha256": "a8600b01a84cec796be2832cd27dc6c42826d27a82ca56b88775e318151db035"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Her shopping trip goes through the forest. I hope she buys everything on the first visit."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The winding forest path is part of her routine. A useful reminder that our adventure is somebody's errand."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Through the forest for shopping. I would check the list twice before leaving."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A forest walk just to shop. I hope the route has a good rhythm once you know it."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "That is a long trip for a forgotten ingredient. I would make a very careful list."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Through the forest for groceries. A surprisingly elaborate set change for an ordinary day."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A winding forest between her and the shops. My shopping list has become a survival document."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "An everyday route with several bends and wild Pokemon. Good argument for durable carrying straps."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "To us, a forest adventure. To her, the way to the shops. Places hold more than one kind of story."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "That shopping route needs shoes made for walking, and a bag made to carry the whole list."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The forest is part of her daily map. I wonder which turns she has stopped noticing."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "key": "catch_weaken",
+      "subject": "He advises weakening Pokemon before catching them and mentions strong coffee.",
+      "sources": {
+        "ViridianCity_Text_WeakenMonsFirstToCatch": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "Well, now, I've had my coffee, and\\nthat's what I need to get going!\\pBut I made it too strong.\\nIt gave me a headache\u2026\\pIncidentally, are you filling your\\nPOK\u00e9DEX?\\pAt first, focus on weakening the\\nPOK\u00e9MON before trying to catch it.$",
+          "sha256": "b1b304098a8fdaa6a816a35f6564ad6d25780e50aa7b0aecccbc836e232bf171"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Weaken the Pokemon first. And apparently weaken the coffee too, judging by his headache."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Lowering a wild Pokemon's HP helps capture. His coffee has independently demonstrated the risks of overdoing things."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Weaken it without knocking it out. Coffee strength appears to need a similar adjustment."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "Gentler battle, gentler coffee. He has given us two lessons for the price of a headache."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Weaken the Pokemon before a catch. Dilute the coffee before the next lecture. Different recipes, same restraint."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "He recommends restraint in catching. His coffee has filed a dissenting review."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Weaken the Pokemon first. The coffee has already defeated its trainer."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Controlled force improves capture. Controlled brewing might improve his morning."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "He can offer useful advice and still be having a difficult morning. Both parts are visible here."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Enough damage to help a catch, not enough to knock it out. Proportion matters. Especially in that coffee."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "A little restraint helps the capture. The headache is a rather vivid footnote."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "key": "ledge_jump",
+      "subject": "Ledges allow a one-way shortcut back toward Pallet.",
+      "sources": {
+        "Route1_Text_CanJumpFromLedges": {
+          "path": "data/kanto/maps/Route1_Frlg/scripts.inc",
+          "text": "See those ledges along the road?\\pIt's a bit scary, but you can jump\\nfrom them.\\pYou can get back to PALLET TOWN\\nquicker that way.$",
+          "sha256": "1944d16127682a19510967e3253f0cb24d2d10946a215597a20e4f3cb9e2d267"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Jump down the ledges to get back faster. The climb back up remains rudely unavailable."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "One-way shortcuts change a return route. Let us check where we land before choosing one."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Down is the shortcut. Up is the long way. Worth remembering before jumping."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A quicker way back. My knees would like a moment to review the arrangement."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Jumping down saves time on the return. Secure the bread before testing it."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A quick exit with no matching entrance. Useful staging, provided we know the landing."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The ledge is a shortcut in one direction. A path with a very firm opinion."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Gravity-powered transport. Efficient, with a disappointingly limited reverse gear."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A shorter return, not a shorter journey both ways. The ground keeps its own rules."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "One-way shortcut. I am checking the bag closures before we turn walking into a landing."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The way home can follow a different line. Let us see where this one comes down."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "key": "pallet_sign_copy",
+      "subject": "She repeats the Trainer Tips sign about the Start menu.",
+      "sources": {
+        "PalletTown_Text_PressStartToOpenMenuCopy": {
+          "path": "data/kanto/maps/PalletTown_Frlg/scripts.inc",
+          "text": "TRAINER TIPS!\\pPress START to open the MENU!$",
+          "sha256": "85e8f024f16a5d2995765489bbc01a967535df87574415cb8e06753b58471213"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "She copied the sign into conversation. The sign has found a publicist."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The same instructions, delivered personally. Repetition can be useful when somebody actually needs it."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Same tip as the sign. She is making sure nobody misses it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The sign has a vocalist now. Quite committed to the original lyrics."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "She copied the tip exactly. I appreciate someone who labels the recipe instead of improvising instructions."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A faithful adaptation of a sign. Minimal scenery. Excellent availability."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "She has performed a reading of a menu instruction. I am suddenly less nervous about my poems."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Exact reproduction of the operating instructions. I wish every borrowed tool came back with that."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A written tip becomes something she can share. That is how small bits of knowledge travel."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "She kept the useful part of the sign intact. A practical adaptation, if a very enthusiastic one."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "She brought the words off the board. Now they have a person attached to them."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "key": "pallet_sign_read",
+      "subject": "A sign explains how to open the Start menu.",
+      "sources": {
+        "PalletTown_Text_PressStartToOpenMenu": {
+          "path": "data/kanto/maps/PalletTown_Frlg/scripts.inc",
+          "text": "TRAINER TIPS\\pPress START to open the MENU!$",
+          "sha256": "2be24e72f76e3e30eece984b862608710afaea59aa50f942c965396dda4aada8"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "START opens the MENU. A useful sign; I had been trying a meaningful glance."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A clear instruction for the MENU. Short enough to consult without losing the rest of the afternoon."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "START, then MENU. Straightforward. I appreciate that."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The MENU has an opening cue. That makes two of us."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "START opens the MENU. Let us check our supplies while it is open."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A single button for the opening. I have overcomplicated several entrances."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "START opens the MENU. Concise prose. Disturbingly employable."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "One clear instruction. Excellent labelling; no ominous diagram required."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A small sign that helps someone find their way through the controls. Useful things need not be grand."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A MENU instruction where people can find it. Function has been allowed to lead the design."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Simple lettering, useful message. Not every sign needs a dramatic flourish."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "key": "pokemon_portable",
+      "subject": "Poke Balls let people carry their Pokemon with them.",
+      "sources": {
+        "ViridianCity_Text_CanCarryMonsAnywhere": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "Those POK\u00e9 BALLS at your waist!\\nYou have POK\u00e9MON, don't you?\\pIt's great that you can carry and\\nuse POK\u00e9MON anytime, anywhere.$",
+          "sha256": "ef117b1d28375f407ceffb96bf9f7db2c69fbbb3f9170693e2b25949ca5c1a7b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Pokemon can come with us in POKE BALLS. My bag still somehow loses a single pencil."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A compact way to travel together. Convenient equipment does not replace looking after the occupants."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "They travel with us. Let us give them reasons to enjoy the trip."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A whole team, ready to travel. I cannot fit my instrument case that neatly."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Partners travel in POKE BALLS. Their lunch, regrettably, remains full size."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Such compact travelling arrangements. My costume trunk has refused all similar negotiations."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A POKE BALL carries a Pokemon. My pocket cannot reliably carry a folded receipt."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A remarkable piece of portable technology. I am resisting the urge to suggest extra compartments."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "We can take them with us. I like the together part more than the anywhere part."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "POKE BALLS make room for partners. My designs mostly make room for keys. I respect the scale."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "They come with us wherever we go. I hope we notice what they make of the scenery."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "key": "hidden_items",
+      "subject": "Some items on the ground are invisible and must be searched for.",
+      "sources": {
+        "PetalburgWoods_Text_HiddenItemsExplanation": {
+          "path": "data/maps/PetalburgWoods/scripts.inc",
+          "text": "Sometimes, there are things on the\\nground even if you can't see them.\\pThat's why I always check where I'm\\nwalking.$",
+          "sha256": "3f71da1cd6f56ef99b7ab0fadd8c9c384e00b474fdf04c308864a7b02bea21fb"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Some items are hidden from view. At last, an explanation for every pencil I have owned."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "We may need to examine a place rather than just look at it. Evidence can be easy to miss."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Hidden items. Check carefully; do not tear the whole forest apart over a suspicion."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "Not everything useful announces itself. Quiet instruments have taught me that."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Invisible items on the ground. I am still keeping food off it."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The prop is there even when the audience cannot see it. Search carefully, not theatrically."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Some useful things are invisible. Like my confidence, but with a better chance of being found."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A closer inspection can find what a quick look misses. No shovel required for every question."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Look again without assuming the first glance told the whole story. That is useful beyond finding items."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Something can be there without catching the eye. Decorative sparkle is a poor inventory system."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The scene has details we missed. Worth looking closely before deciding it is empty."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "key": "miracle_seed",
+      "subject": "Miracle Seed strengthens Grass-type moves when held.",
+      "sources": {
+        "PetalburgWoods_Text_MiracleSeedExplanation": {
+          "path": "data/maps/PetalburgWoods/scripts.inc",
+          "text": "It's a MIRACLE SEED.\\nIf a POK\u00e9MON holds that item, its\\lGRASS-type moves become stronger.\\pBesides MIRACLE SEED, I think there are\\nother convenient items for POK\u00e9MON\\lto hold.$",
+          "sha256": "a20ccebab531700a2f37e04136e001eaebd310ac21cd7e0d82845ba95d809660"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A held MIRACLE SEED helps GRASS moves. I shall not test whether it improves a salad."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Give the MIRACLE SEED to a partner using GRASS moves. The benefit depends on the match."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good held item for GRASS attacks. Put it with someone who can use it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A small seed backing up GRASS moves. A very quiet supporting musician."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "This seed is for holding, not baking. I appreciate the clarification before the experiment."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A small prop with a specific purpose. Give it to the right performer."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A MIRACLE SEED improves GRASS moves. My garden seeds mostly improve the pigeons' afternoon."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Match the held item to the moves. An upgrade is only useful when it fits the job."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A seed carried for strength. Useful and symbolic; it is allowed to be both."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A useful accessory for a GRASS attacker. The wearer determines whether the design works."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Something this small can change a battle. Details matter when they belong in the right place."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "key": "bug_out_of_balls",
+      "subject": "The bug catcher has run out of Poke Balls.",
+      "sources": {
+        "PetalburgWoods_Text_ImOutOfPokeBalls": {
+          "path": "data/maps/PetalburgWoods/scripts.inc",
+          "text": "I caught a bunch of POK\u00e9MON.\\nNow I'm out of POK\u00e9 BALLS.$",
+          "sha256": "7a1988f7264b6feca2baf9e3fa51266dd8348b6a779791fcce5b3e8575b4bd15"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Out of POKE BALLS. An ambitious catching plan has met a very round supply problem."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "An empty supply of POKE BALLS limits the survey. Worth checking before the next expedition."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Out of POKE BALLS. Time to restock, not blame the bugs."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "He has found the end of his supplies before the end of his enthusiasm. Familiar rehearsal problem."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "No POKE BALLS left. A list before leaving town could save another long walk."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Plenty of ambition, no equipment. The production has encountered its budget."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Out of POKE BALLS. The forest has won on a technicality."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Inventory failure. A wonderfully unglamorous reason to check the bag before an expedition."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "The desire to catch more has outlasted the supplies. A pause is sensible here."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "No POKE BALLS left. Even the best bag needs someone to check what is inside."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "He still sees possibilities everywhere. The empty bag has a more limited interpretation."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "key": "picture_books",
+      "subject": "The shelf contains Pokemon picture books.",
+      "sources": {
+        "Text_PictureBookShelf": {
+          "path": "data/text/check_furniture.inc",
+          "text": "There's a set of POK\u00e9MON picture books.$",
+          "sha256": "f6e71f35dcc1902554b3acebbf9b6d58b939db543f8df7b1feddc2a6009713c8"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Pokemon picture books. I can finally research without losing my place in the long words."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Illustrations make species easier to recognise. I should compare the drawings with what we actually meet."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Picture books. Good way to learn what to look for before heading out."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I like the illustrated ones. There is room to linger without racing the next sentence."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Picture books about Pokemon. I wonder whether the berry illustrations are accurate. Purely practical interest."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A whole shelf of illustrated creatures. Someone has already done the costume research."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Picture books. A story that trusts the drawing to do some of the work. I should try that."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Pictures and labels together. More useful than a diagram labelled with another mysterious diagram."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Someone can meet a Pokemon here before seeing one outside. A gentle first introduction."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "The pictures help you notice differences. Good design makes looking easier."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Someone chose how each Pokemon would be seen. I like checking what the artist noticed first."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "key": "pokemon_magazines",
+      "subject": "The Center has Pokemon Pal, Pokemon Handbook and Adorable Pokemon magazines.",
+      "sources": {
+        "Text_PokemonCenterBookShelf": {
+          "path": "data/text/check_furniture.inc",
+          "text": "POK\u00e9MON magazines!\\nPOK\u00e9MON PAL\u2026\\pPOK\u00e9MON HANDBOOK\u2026\\nADORABLE POK\u00e9MON\u2026$",
+          "sha256": "4d0f9831ccb198ce65320c8e5c9335a490feadbc32280f6c5314f76bd1f35ece"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "ADORABLE POKEMON. Finally, a publication brave enough to state its position."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A HANDBOOK beside ADORABLE POKEMON. Research and enthusiasm appear to share a shelf."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Pokemon care and cute pictures. Could do worse while waiting for the team."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "Pokemon magazines for the waiting room. Better background company than worrying in perfect silence."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "ADORABLE POKEMON beside the HANDBOOK. I hope one has a feeding guide. Ideally both."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Several magazines, three very clear editorial directions. I admire a publication that knows its audience."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "ADORABLE POKEMON. A title that has already delivered its entire argument."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "The HANDBOOK might be useful while we wait. I shall resist annotating somebody else's magazine."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A waiting room leaves people with questions. It is kind to leave something helpful to read."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Care guides and affectionate pictures. Both have a place; neither substitutes for the other."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "A shelf for learning, and a shelf for loving the pictures. Fortunately, the same shelf can do both."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "key": "empty_vase",
+      "subject": "An expensive-looking vase is empty.",
+      "sources": {
+        "Text_Vase": {
+          "path": "data/text/check_furniture.inc",
+          "text": "This vase looks expensive\u2026\\nPeered inside\u2026\\pBut, it was empty.$",
+          "sha256": "5fb1f998f5b136cc6271bc78b3607a8d7a211e8b755062cb6940dba22f559607"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Expensive vase. Empty inside. I will demonstrate wisdom by moving my elbows away."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "An empty vase tells us very little about its price. We can inspect it without testing its durability."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Looks expensive. Leave it where it is; our luck does not need exercise."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "An expensive vase with nothing in it. I shall not fill the silence by dropping it."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Empty vase. Still not a bread basket. I am behaving impeccably."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An empty vase demanding this much presence. A performer could learn from it."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Expensive and empty. I have attended readings with a similar atmosphere."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Empty, expensive, breakable. Three strong arguments against a hands-on demonstration."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Nothing inside. That need not be a mystery; sometimes a vase is waiting for flowers."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "The empty space is part of the design. My elbows will respect the designer's intentions."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The shape holds the light even without flowers. We can admire it without picking it up."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "key": "empty_bin",
+      "subject": "The examined trash can has nothing in it.",
+      "sources": {
+        "Text_EmptyTrashCan": {
+          "path": "data/text/check_furniture.inc",
+          "text": "It's empty.$",
+          "sha256": "a74050572c5008b6d25d53abcf58911f7ddf69e2b6a790eb58675d3144e4ab44"
+        },
+        "Text_TrashBin": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "Inside this\u2026\\n\u2026\u2026\\pThere's nothing here!$",
+          "sha256": "5660a70af1e81811a51bebe5221382a295f35015c9171929efb0003b92b223a9"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Empty. Excellent news for the cleaner, less exciting news for our investigation."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Nothing in the bin. A negative result is still a result. We can stop looking now."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Empty. Mystery solved. Hands washed next."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "An empty bin. I am choosing to hear that as a very short rest."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Nothing there. Good. Food scraps belong in a proper disposal plan, not a pocket."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An empty bin. An admirably restrained set."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Empty. Even the rubbish has found somewhere else to be."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "No contents, no repair required. I rarely receive such a concise maintenance report."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "It is empty. We do not have to give it a hidden meaning."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Nothing in it. Let us avoid making a new mess to justify the inspection."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Empty space can be useful. Particularly when it means someone already cleaned up."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "key": "town_map",
+      "subject": "The object is a town map.",
+      "sources": {
+        "Text_ATownMap": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "A TOWN MAP.$",
+          "sha256": "f74b511669176c63b15c39143f725cf846e1f85b1db312c6e276fe8a2665ef04"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A TOWN MAP. A second opinion on where I was confidently heading."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A map lets us compare the route before walking it. I approve of research with landmarks."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Check the route now. Cheaper than discovering the wrong turn with our feet."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A map of the town. Useful when every unfamiliar street starts looking like a chorus repeat."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A TOWN MAP. We can plan supplies around the distance instead of optimistic hunger."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A map. The stage plan for an entrance that actually reaches the right building."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A map. My preferred genre of writing when we are lost."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A useful overview. Let us identify the destination before redesigning the journey."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A map holds one version of a place. The streets will have the rest of the details."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Routes, buildings, useful distances. Good layout is a form of kindness."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Someone made this place legible. I like seeing which landmarks they chose."
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "key": "polished_window",
+      "subject": "The window has been carefully polished.",
+      "sources": {
+        "Text_PolishedWindow": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "The window is very well polished.$",
+          "sha256": "c80a28db1fb537d47aa48eda02e93a3568b34f94c52cfe80f1d250ebdc9654a1"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A very clean window. I shall keep my investigative fingerprints to myself."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A clear window is somebody's work. We can appreciate it without adding a handprint."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Someone cleaned that properly. Let us not immediately undo it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A window clear enough to forget it is there. I have walked into that particular criticism."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Polished glass. My flour-covered hands are remaining firmly over here."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Immaculate glass. A fine invisible member of the scenery."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A polished window. At last, a transparent conversation."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Clean surface, clear view. Maintenance making itself almost invisible."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Someone made it easier to see outside. Quiet work counts."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Very clean glass. A reminder that a good finish is also somebody's time."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "No smears between us and the light. Someone took care with this."
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "key": "sky_window",
+      "subject": "The window gives a beautiful view of the sky.",
+      "sources": {
+        "Text_BeautifulSkyWindow": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "Outside the window\u2026\\pThe sky looks fantastically\\nbeautiful.$",
+          "sha256": "f0700ee3fd4fa8bdfc4e859e2c57c32b1c0ab94b69a0fe63ec9d26461589c58e"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "That sky deserves a longer look. I can postpone my next important remark about snacks."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A clear view of the sky. No measurement needed for enjoying it."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good view. We can spare a minute."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "That sky makes me want to write something with a little more room between the notes."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A beautiful sky through the window. Even better with somewhere to sit and share lunch."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Excellent lighting. For once I have no improvements to propose."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "I would describe that sky, but it is already doing a rather good job."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A good view with no adjustments required. I am practising leaving it that way."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "The sky is allowed to be beautiful without becoming an omen. We can just look."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Those colours work without asking anyone to wear them. A generous arrangement."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I want to remember that light. A sketch might keep the colours, if I am quick."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "key": "tool_display",
+      "subject": "The tools have been neatly arranged.",
+      "sources": {
+        "Text_NeatlyLinedUpTools": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "All sorts of tools are lined up\\nneatly.$",
+          "sha256": "4404ddbe8e77f8cc0979046799536c6a14be510f36ad7b905a67f994d6eaf83a"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Every tool in its place. My bag is quietly applying for a different owner."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "An orderly set of tools makes missing equipment easier to notice. Even my notebook could improve here."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Tools put back properly. Saves searching when something actually goes wrong."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "All the tools lined up. I should arrange my spare strings before they arrange themselves into a knot."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Every tool has a place. Like a kitchen before I start being creative with flour."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The props are ready. An excellent production begins long before anyone notices the stage."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Neatly arranged tools. My desk has requested that we stop looking at this."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Everything visible and reachable. Whoever arranged this understands the glorious luxury of finding the correct wrench."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Tools waiting where their owner expects them. There is comfort in a familiar arrangement."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "An organised kit. Functionally beautiful, and less likely to eat your afternoon."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Each tool has room. Somebody composed this for the hands that will use it."
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "key": "dewford_trends",
+      "subject": "Trends spread rapidly through the small island community.",
+      "sources": {
+        "DewfordTown_Text_TinyIslandCommunity": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "DEWFORD is a tiny island community.\\nIf something gets trendy here,\\leveryone picks up on it right away.$",
+          "sha256": "4b35b1d1cbbe130555406609b1d3d492b57abed298bb77cb4512a79d8b204d2f"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A trend reaches the whole island quickly. I shall be very careful where I debut my new hat."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A small community shares information quickly. Popularity still does not establish whether something is true."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "News travels fast here. Best make sure it is worth passing on."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A tune could cross this island before I finished it. That is encouraging and alarming."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "One successful loaf could become an island tradition. No pressure on breakfast, then."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A ready audience for every new fashion. I should distinguish applause from everyone merely noticing."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A whole island catches a trend. Finally, a poem could spread faster than my regret."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Rapid adoption. I hope somebody tests a new invention before the entire island buys one."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A story can travel quickly where people know one another. So can a misunderstanding."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Trends spread fast here. I hope people still feel free to wear what suits them."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "A small island shares its colours quickly. I would like to know who starts them."
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "key": "devon_products",
+      "subject": "Devon makes convenient products and locals shorten the company name.",
+      "sources": {
+        "RustboroCity_Text_WeShortenItToDevon": {
+          "path": "data/maps/RustboroCity/scripts.inc",
+          "text": "The DEVON CORPORATION\u2026\\nWe all just shorten it to DEVON.\\pThat company makes all sorts of\\nconvenient products.$",
+          "sha256": "9eb699303885ffd303dce875fb66623ff51f3edd6b451e7175ad6148f88962b1"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "DEVON makes convenient products. I hope one keeps receipts from dissolving in my pocket."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A company making useful equipment. I would judge each product by what it does, not the size of the building."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "DEVON, then. A shorter name leaves more time to ask whether the thing actually works."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "They shorten the name to DEVON. Good. The full version has too many beats for a casual introduction."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Convenient products. If they invent a bread bag that never crushes the crust, I have suggestions."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A short name for a large production. Let us see whether the props live up to the billing."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "They shortened the company name. Corporate poetry has finally discovered editing."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "DEVON makes equipment. I would very much like to see the testing bench before the sales pitch."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A familiar name can stand for many people's work. I wonder whose names are not on the sign."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Convenient products should make somebody's day easier. That is a useful design brief."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Everyone knows the short name. I am curious about the people making things behind it."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "key": "fortree_blocked",
+      "subject": "An unseen obstruction blocks the route to Fortree gym.",
+      "sources": {
+        "FortreeCity_Text_SomethingBlockingGym": {
+          "path": "data/maps/FortreeCity/scripts.inc",
+          "text": "I want to go to the POK\u00e9MON GYM,\\nbut something's blocking the way.\\pAfter all the bother I went through\\ntraining on ROUTE 120\u2026$",
+          "sha256": "179a51d47f8cbbf1a74dccaaf6e7555205ec4b775a9d08d84a9de779be53e790"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Something is blocking the GYM. I was hoping invisible obstacles were only a figure of speech."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "There is an obstruction we cannot identify yet. We should investigate rather than charge at empty-looking space."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Something is there. Pushing harder is not always the answer."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "An unseen obstacle before the GYM. My stage fright has become architecture."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "He trained all that way and cannot get through. We can help look before suggesting more effort."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An invisible obstruction. Effective stagecraft, inconvenient entrance policy."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The path looks open and refuses us anyway. An uncomfortably accomplished metaphor."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Unseen does not mean absent. Let us identify the obstruction before modifying the path."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Something blocks the way. We do not need a supernatural explanation before checking what lives here."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "He prepared for a battle, not this barrier. Access matters as much as the challenge beyond it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The gap in the picture is occupied. We need a closer way of seeing."
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "key": "aqua_loot",
+      "subject": "An Aqua grunt blurts out that stolen goods entered the hideout.",
+      "sources": {
+        "LilycoveCity_Text_MovedLootIntoHideoutToday": {
+          "path": "data/maps/LilycoveCity/scripts.inc",
+          "text": "Fufufu\u2026\\pWe moved more loot into our secret\\nHIDEOUT today\u2026\\pWh-who are you?!\\nI was just talking to myself!$",
+          "sha256": "3719bcb41fd07e07071a538fd71f7f7507720c37792f8ca1854eb2657efd984d"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "More loot in the HIDEOUT. That confession was considerably louder than his secrecy."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "He said they moved more loot into the HIDEOUT. That is actual information, not just a suspicious outfit."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He mentioned stolen goods and the HIDEOUT. Worth remembering exactly what he said."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "That was a very public verse about a supposedly private operation."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "More stolen goods. Somewhere, somebody is missing what he is bragging about."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An unsolicited confession followed by surprise at having an audience. Weak rehearsal discipline."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "He was talking to himself. Unfortunately for his secret, he has excellent projection."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "They moved more loot inside. A concrete lead; no need to improve it with guesses."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Loot means belongings taken from people. His little boast has somebody else's loss behind it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "He has explained the theft more clearly than he intended. We should remember the details."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "His secret HIDEOUT is receiving stolen things. There are people outside this picture who deserve them back."
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "key": "sootopolis_steps",
+      "subject": "Diving and constant stairs make life in Sootopolis physically demanding.",
+      "sources": {
+        "SootopolisCity_Text_PhysicallyFitLivingHere": {
+          "path": "data/maps/SootopolisCity/scripts.inc",
+          "text": "Diving in the sea. Climbing up and\\ndown stairs all the time\u2026\\pIf you live in this town, you end up\\ngetting physically fit.$",
+          "sha256": "2e0ca83219fca8e1fd0ab68b1380dbddc1abe2529b22b8274b5756eaf0f05cac"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Stairs and diving every day. Even the errands have a training montage."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The terrain shapes daily life. It may build fitness, but it also asks a lot of anyone who struggles with stairs."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "That is a lot of climbing just to get around. We can take breaks."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "All those stairs. The town has written percussion for my knees."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Diving and stairs before lunch. I would pack a second lunch for the return trip."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Daily life with this many entrances and ascents. The scenery demands an athletic cast."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The stairs keep people fit. My legs have described the policy in less flattering language."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "That is a demanding route for ordinary errands. A better handrail would be a worthwhile invention."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "The town asks different things of different bodies. We should not mistake difficulty for a virtue everyone chose."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "All those stairs need practical shoes. And practical alternatives for anyone who cannot climb them."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Beautiful buildings, demanding routes. A town is also the distance between its doorways."
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "key": "moon_rumour",
+      "subject": "The speaker calls Clefairy coming from the moon a rumor.",
+      "sources": {
+        "PewterCity_Text_ClefairyCameFromMoon": {
+          "path": "data/kanto/maps/PewterCity_Frlg/scripts.inc",
+          "text": "CLEFAIRY came from the moon.\\nThat's what the rumor is.\\pThey appeared after MOON STONES\\nfell on MT. MOON.$",
+          "sha256": "a805c52fc9eca6738128e810aef9a1ff53951d3366329531955e375d6ff9e0f1"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "CLEFAIRY from the moon. I shall wait for a return address before buying a ticket."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "They called it a rumour. The MOON STONES are interesting evidence, not a complete proof of where CLEFAIRY began."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Maybe from the moon. We can be curious without pretending we already know."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "CLEFAIRY from the moon. That would explain the excellent night-time atmosphere, if the rumour is true."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A rumour about the moon. I can supply star-shaped biscuits without claiming they prove anything."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A lunar origin story. Splendid premise; I would still like to hear the witnesses."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "CLEFAIRY may be from the moon. I have already mistaken a streetlamp for it, so I shall abstain."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "An intriguing theory. I would like measurements before adding lunar landing gear to a POKE BALL."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "They said rumour, and that distinction matters. We can enjoy the story without presenting it as a finding."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A moon story suits CLEFAIRY beautifully. A flattering story can still need evidence."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Moonlight, stones, CLEFAIRY. A wonderful composition. It does not automatically become a historical record."
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "key": "garden_repel",
+      "subject": "The gardener sprays Repel to keep wild Pokemon away.",
+      "sources": {
+        "PewterCity_Text_SprayingRepelToKeepWildMonsOut": {
+          "path": "data/kanto/maps/PewterCity_Frlg/scripts.inc",
+          "text": "I'm spraying REPEL to keep wild\\nPOK\u00e9MON out of my garden!$",
+          "sha256": "3402f7f61378e0feafb50eb03abd88c23779f592a894f3a6a409342e5cc0b997"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "REPEL for the garden. The vegetables have hired a very small security service."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "REPEL keeps wild visitors away. I hope the gardener follows its instructions rather than treating more as automatically better."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Keeping Pokemon out of the garden. Fair enough; they still need somewhere else to forage."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The garden has a boundary now. A very quiet way of asking the audience to remain outside."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Protecting the vegetables with REPEL. I understand wanting the harvest to reach the kitchen."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The garden is closed to unsolicited performers. At least the notice is being delivered without a battle."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "REPEL for the garden. A strongly worded letter in spray form."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A purpose-made deterrent. Much better than testing an alarming homemade fence on the local wildlife."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "People need gardens; wild Pokemon need food. Keeping one boundary does not solve the whole relationship."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "REPEL keeps visitors off the plants. I appreciate a boundary with a practical purpose."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The garden is somebody's work. The Pokemon outside it are somebody's neighbours, too."
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "key": "lavender_white_hand",
+      "subject": "The speaker teases the player about a white hand on their shoulder.",
+      "sources": {
+        "LavenderTown_Text_JustImaginingWhiteHand": {
+          "path": "data/kanto/maps/LavenderTown_Frlg/scripts.inc",
+          "text": "Hahaha, I guess not.\\pThat white hand on your shoulder\u2026\\nI'm just imagining it.$",
+          "sha256": "b041c282c06daee321ad36ab6d639d15b32f34a6231792c911079c5ffc0e4d34"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "annoyed",
+          "text": "The white hand was a joke. My shoulders would appreciate advance notice next time."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "That is a teasing claim, not evidence of a ghost. I refuse to put it in my notebook as a sighting."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "They are trying to scare you. You do not owe them a convincing reaction."
+        },
+        {
+          "voice": "ashe",
+          "expression": "surprised",
+          "text": "A white hand on my shoulder is not a cue I rehearsed. I would prefer a polite tap."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Startling people is easy. Making sure they are all right afterwards is the useful part."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An effective scare, perhaps. I prefer an audience that agreed to the performance."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A white hand on the shoulder. Mine is probably trying to return an overdue book."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I would like the alleged hand to provide a repeatable demonstration. Preferably somewhere other than my neck."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "An old ghost joke. I would rather ask who taught it to them than insist we have seen a ghost."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "That joke fits some people badly. We can ask them to stop if it makes us uncomfortable."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "A few words and suddenly the whole scene feels different. That is a reason to use them carefully."
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "key": "harbour_pollution",
+      "subject": "The town tries to prevent pollution and mentions Grimer in toxic sludge.",
+      "sources": {
+        "VermilionCity_Text_GrimerMultipliesInSludge": {
+          "path": "data/kanto/maps/VermilionCity_Frlg/scripts.inc",
+          "text": "We're careful about pollution here.\\pWe've heard GRIMER multiplies in\\ntoxic sludge.$",
+          "sha256": "4f195e02f935ba06c11ddd9373cfcdbd6b3c69a8bacb361236dcd4ec8233979a"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Keeping sludge out of the harbour. A plan with benefits well beyond less alarming shoes."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Clean water matters regardless of the GRIMER report. We should not make a Pokemon the excuse to ignore the pollution itself."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Keep the harbour clean. People and Pokemon both have to live with what goes into it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "Toxic sludge is a poor accompaniment to a seaside town. I would rather hear the waves."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Clean water matters to the whole food chain. That includes lunch, but not only lunch."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Pollution is more than an unattractive backdrop. The people living here cannot simply leave the scene."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A harbour should not require a warning label. Cleaning it seems a sensible editorial decision."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Preventing the waste is better than inventing a machine to move the smell somewhere else."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "GRIMER is part of the story, but the sludge came from somewhere. We should ask about that, too."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A clean-looking waterfront can still have polluted water. Appearance is not the whole inspection."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Water carries what the town puts into it. A harbour belongs to more than the view from the shore."
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "key": "ss_anne_departed",
+      "subject": "The S.S. Anne has left and is expected next year.",
+      "sources": {
+        "VermilionCity_Text_SSAnneHasDepartedForYear": {
+          "path": "data/kanto/maps/VermilionCity_Frlg/scripts.inc",
+          "text": "So, the S.S. ANNE has departed?\\pShe'll be back in VERMILION about\\nthis time next year.$",
+          "sha256": "2d5f15adc44d47c7337af3d920bc80dac01977c624f976563a2c4ef1aad65a47"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "The S.S. ANNE has gone for the year. I shall stop pretending a brisk walk can catch it."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The ship has departed. We should plan around the actual timetable rather than the one we would prefer."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Gone until next year. No point chasing the wake. We have roads to travel."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The ship has left. Some departures do not wait for us to find the perfect last note."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Back next year. Plenty of time to improve a packed lunch, though a little inconvenient for today's plans."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The ship has made its exit. We can appreciate it without trying to demand an encore from the harbour."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Back next year. An unusually strict booking policy for something we can no longer see."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A yearly return. I am making a note instead of attempting an emergency boat design."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "It left, and people expect it again. A departure can hold both an ending and a promise."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Gone for the year. We can make another plan without calling this one a personal failure."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The harbour has changed shape without it. I wonder what the crew will see before returning."
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "key": "koffing_temper",
+      "subject": "The owner says Koffing is usually nice but releases poison when angry.",
+      "sources": {
+        "CeladonCity_Text_GotMyKoffingInCinnabar": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "I got my KOFFING in CINNABAR.\\pIt's usually nice, but it breathes\\npoison when it's angry.$",
+          "sha256": "2a90ad70edf9eee56324015b4e7f81e17653f7e341aed97ba83a1e8ec63b980c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Usually nice, poisonous when angry. I shall introduce myself from a respectful breathing distance."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Recognising KOFFING's warning signs matters. We should give it space rather than provoke a demonstration."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Give it room when it is angry. That is good manners and very practical lung care."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "KOFFING can be kind and still need space. I would prefer our introduction to stay a quiet passage."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A nice Pokemon with dangerous fumes. Let us keep the food sealed and the introductions considerate."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "No need to test the angry performance. The owner has already supplied the relevant warning."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Nice until angry, then poison. I shall not read my experimental poems to it without permission."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "The fumes are a real hazard. Good ventilation and a calm approach beat testing its patience."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "It has limits. Being usually gentle does not mean it must tolerate everything."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A friendly nature does not remove a need for boundaries. Especially breathable ones."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The owner knows another side of it. We can respect both the affection and the warning."
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "key": "saffron_threat",
+      "subject": "A Rocket grunt threatens to hurt the player.",
+      "sources": {
+        "SaffronCity_Text_DontGetDefiantOrIllHurtYou": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "Don't get defiant!\\nOr I'll have to hurt you!$",
+          "sha256": "b044db4cadf1455aaabe3765c1051fae9a6d427e30ee295fddcd51dd7cdddad9"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "annoyed",
+          "text": "That was a threat. Let us stay together and look for a safe way through this."
+        },
+        {
+          "voice": "silas",
+          "expression": "annoyed",
+          "text": "They threatened harm. We should take that seriously without accepting their right to control us."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "Stay close. They do not get to make a threat sound like a rule."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "That is frightening. I am here. We can decide our next move without doing it alone."
+        },
+        {
+          "voice": "nico",
+          "expression": "annoyed",
+          "text": "Threatening people is not strength. Let us keep the team safe and think before moving."
+        },
+        {
+          "voice": "riven",
+          "expression": "annoyed",
+          "text": "That was no harmless performance. Stay with me; we should choose our next step carefully."
+        },
+        {
+          "voice": "emi",
+          "expression": "annoyed",
+          "text": "I have no clever line for that. It was cruel, and I am staying beside you."
+        },
+        {
+          "voice": "vera",
+          "expression": "annoyed",
+          "text": "A credible hazard. We need a plan and a clear route, not a test of pride."
+        },
+        {
+          "voice": "lume",
+          "expression": "sad",
+          "text": "A threat is meant to shrink your choices. We can take a moment and look for the ones still open."
+        },
+        {
+          "voice": "mochi",
+          "expression": "annoyed",
+          "text": "You do not deserve that. Let us keep each other safe before worrying about looking brave."
+        },
+        {
+          "voice": "zuri",
+          "expression": "annoyed",
+          "text": "They are trying to decide who belongs in this street. We should not have to face that alone."
+        }
+      ]
+    }
+  ]
+}

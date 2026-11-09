@@ -1,6 +1,7 @@
 #ifndef GUARD_POKEMON_STORAGE_SYSTEM_H
 #define GUARD_POKEMON_STORAGE_SYSTEM_H
 #include "bonds.h"
+#include "companion_dialogue.h"
 
 #define TOTAL_BOXES_COUNT       14
 #define IN_BOX_ROWS             5 // Number of rows, 6 Pokémon per row
@@ -28,6 +29,7 @@ struct PokemonStorage
     // Bond v1 uses previously zero-filled space in the final PC flash sector.
     // The complete released 34144-byte storage prefix remains unchanged.
     struct BondProgress bonds;
+    struct CompanionDialogueProgress companionDialogue;
 };
 
 extern struct PokemonStorage *gPokemonStoragePtr;

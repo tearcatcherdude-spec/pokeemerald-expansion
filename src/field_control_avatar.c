@@ -1,4 +1,5 @@
 #include "global.h"
+#include "companion_dialogue.h"
 #include "bond_journal.h"
 #include "cast.h"
 #include "pip.h"
@@ -307,6 +308,7 @@ static bool8 TryStartInteractionScript(struct MapPosition *position, u16 metatil
      && script != EventScript_PC)
         PlaySE(SE_SELECT);
 
+    CompanionDialogue_BeginInteraction(script);
     ScriptContext_SetupScript(script);
     return TRUE;
 }

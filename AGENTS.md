@@ -78,3 +78,26 @@ Temporary scene actors use local IDs F0..F2 and must be removed on cancel, finis
 and map changes without removing original actors or duplicating the follower.
 Run `validate_bonds.py` plus all previous source/artwork checks and native normal
 save, marker-route, journal, reward-once, branch-choice and loss/retry checks.
+
+# Contextual dialogue continuity
+
+The contextual dialogue branch extends PR #10 commit
+3c2db04c936104b9297e0ad22f9c589bf3a51baa. Keep the completed bond system,
+artwork, starters and full regional progress. Do not substitute NPC sprite-type,
+map observations or personal lore for actual NPC replies. Unknown last messages
+must invalidate earlier candidate text; exact-label bindings require source review.
+The first 47 new context IDs in data/companion_dialogue/contexts.json are append-only.
+Keep original Pip/cast reaction memory, including exact furniture and paired scenes.
+
+CompanionDialogueProgress appends 1020 bytes after offset 34560. PokemonStorage
+is 35580/35712; its 11 independent 92-byte banks reserve 736 contexts/voice.
+Do not resize that record, clear old banks, evict spent bits or repurpose the
+remaining 132 bytes without a new reviewed format. Normal/Ask/Silent is global
+and persistent. Muting must not remove a follower or block journal/story choices.
+
+Regenerate with build_companion_contexts.py, run validate_companion_dialogue.py
+and the existing validators. coverage.json is a conservative static inventory,
+not proof that every actor has dialogue or that every branch ran. Do not call
+the initial authored batch full-world completion. Validate the exact ROM with
+actual NPC branch changes, unknown messages, deferred prompts, each mode,
+independent spent memory, portraits, EXP-on-print and old normal-save migration.
