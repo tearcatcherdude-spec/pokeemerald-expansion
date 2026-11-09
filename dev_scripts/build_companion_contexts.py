@@ -39,6 +39,19 @@ def text_blocks():
             raw = ''.join(re.findall(r'\.string\s+"(.*)"', m[2]))
             found[m[1]] = dict(path=path.relative_to(ROOT).as_posix(),
                                text=raw, sha256=hashlib.sha256(raw.encode()).hexdigest())
+        # Some single text addresses have assembler-selected wording (the
+        # four-/six-stage Berry descriptions, for example). Preserve the whole
+        # conditional source for review and drift detection; never pretend both
+        # alternatives are one displayed sentence or infer a completed outcome.
+        conditional = r'^(\w+)::?[^\n]*\n([ \t]*\.if[^\n]*\n(?:[ \t]*\.(?:if|else|elseif|endif|string)\b[^\n]*\n)+)'
+        for m in re.finditer(conditional, text, re.M):
+            variants = re.split(r'^[ \t]*\.(?:else|elseif)\b[^\n]*$', m[2], flags=re.M)
+            found[m[1]] = dict(path=path.relative_to(ROOT).as_posix(),
+                text=''.join(re.findall(r'\.string\s+"(.*)"', m[2])),
+                sha256=hashlib.sha256(m[2].encode()).hexdigest(),
+                source_kind='asm_conditional', conditional_assembly=m[2],
+                source_variants=[''.join(re.findall(r'\.string\s+"(.*)"', v)) for v in variants],
+                compilation_eligibility='requires_review')
     found.update(global_c_text_blocks())
     return found
 

@@ -656,3 +656,9 @@ from companion_shared_objects import ROWS as SHARED_OBJECT_ROWS
 ROWS.extend(SHARED_OBJECT_ROWS)
 from companion_routes_120_134 import ROWS as HOENN_LATE_ROUTE_ROWS
 ROWS.extend(HOENN_LATE_ROUTE_ROWS)
+from companion_berry_objects import ROWS as BERRY_OBJECT_ROWS
+ROWS.extend(BERRY_OBJECT_ROWS)
+from companion_hoenn_interiors_final import ROWS as HOENN_INTERIOR_FINAL_ROWS
+ROWS.extend(HOENN_INTERIOR_FINAL_ROWS)
+from companion_kanto_interiors_remaining import ROWS as KANTO_INTERIOR_REMAINING_ROWS
+ROWS.extend(KANTO_INTERIOR_REMAINING_ROWS)

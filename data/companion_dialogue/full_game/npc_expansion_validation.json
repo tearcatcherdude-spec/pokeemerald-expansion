@@ -90,5 +90,20 @@
         }
       }
     ]
+  },
+  "automatic_story_validation": {
+    "source_commit": "cff113cec1c0b9bacf03a84e8c87801362a630f7",
+    "rom_sha256": "f817040f7dffb52e82f63a7744c7c20506591e5a827898f436af73942cf7278d",
+    "report": {
+      "checks": [
+        "The actual museum map-frame introduction finishes its messages and actor turns before offering the exact reply, with portrait/controls cleanup and once-only EXP",
+        "An actual scheduled Roxanne call triggered by a physical step retains its final registration source and offers the matching reply only after the call ends",
+        "Only when asked suppresses the automatic map-frame prompt while actual companion-menu Talk retains the exact scene and prints Emi perspective",
+        "Silent suppresses map-frame replies without spending a fresh voice history, awarding EXP, removing the follower or leaving field controls locked"
+      ],
+      "rom_sha256": "f817040f7dffb52e82f63a7744c7c20506591e5a827898f436af73942cf7278d",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "limitations": "Prepared story, party and position fixtures; actual map-frame introduction, physical-step scheduled call and companion menu; not a continuous playthrough."
   }
 }
