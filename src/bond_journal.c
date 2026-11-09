@@ -305,6 +305,13 @@ void Script_BondsMeet(struct ScriptContext *ctx)
     u32 index=EventIndex();
     const u8 *unmet=Unmet(index);
     gSpecialVar_Result=FALSE;
+    if(Bonds_GetProgress()->people[sWho].hearts==5)
+    {
+        if(!Cast_IsFollowing() || Cast_Active()!=sWho+1 || !AtMeeting(index))
+        {Text(sBondEvents[index].directions);return;}
+        gSpecialVar_Result=2; // A reunion opens choices, never a completed event.
+        return;
+    }
     if(unmet) { Text(unmet);return; }
     if(!Cast_IsFollowing() || Cast_Active()!=sWho+1 || Pip_IsSceneSuspended())
     { Text(COMPOUND_STRING("Travel with this companion first.$"));return; }

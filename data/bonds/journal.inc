@@ -51,6 +51,7 @@ Bonds_EventScript_Meet::
 	msgbox Bonds_Text_Begin, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Bonds_EventScript_Menu
 	callnative Script_BondsMeet
+	goto_if_eq VAR_RESULT, 2, Bonds_EventScript_Relationship
 	goto_if_eq VAR_RESULT, FALSE, Bonds_EventScript_InfoOnly
 	goto Bonds_EventScript_SceneBegin
 Bonds_EventScript_ViewMap::
@@ -118,6 +119,7 @@ Bonds_EventScript_Marker::
 	msgbox Bonds_Text_Begin, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Bonds_EventScript_Close
 	callnative Script_BondsMeet
+	goto_if_eq VAR_RESULT, 2, Bonds_EventScript_Relationship
 	goto_if_eq VAR_RESULT, FALSE, Bonds_EventScript_MarkerError
 Bonds_EventScript_SceneBegin::
 	callnative Script_BondsSceneIntro
