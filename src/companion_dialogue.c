@@ -8,6 +8,8 @@
 #include "event_data.h"
 #include "string_util.h"
 
+#if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
+
 #define DIALOGUE_MAGIC 0x474C4443
 #define NO_CONTEXT COMPANION_CONTEXT_CAPACITY
 
@@ -23,7 +25,7 @@ static EWRAM_DATA bool8 sOffering = FALSE;
 static EWRAM_DATA bool8 sFinishPending = FALSE;
 static EWRAM_DATA bool8 sHasRecent = FALSE;
 static EWRAM_DATA u8 sGroup = 0, sMap = 0, sVoice = 0;
-static EWRAM_DATA u16 sContext = NO_CONTEXT;
+static EWRAM_DATA u16 sContext = 0; // ResetSession installs the sentinel.
 static EWRAM_DATA const u8 *sMessage = NULL;
 static EWRAM_DATA const u8 *sLegacy = NULL;
 static EWRAM_DATA u16 sResult = 0, sLastTalked = 0;
@@ -240,3 +242,24 @@ void Script_CompanionDialogueBufferMode(struct ScriptContext *ctx)
     u32 mode = CompanionDialogue_GetMode();
     StringCopy(gStringVar4, mode == COMPANION_DIALOGUE_ASK ? ask : mode == COMPANION_DIALOGUE_SILENT ? silent : normal);
 }
+
+#else
+// This project feature belongs to Emerald. Keep the upstream alternate targets
+// buildable without linking Emerald-only cast, map or text symbols.
+void CompanionDialogue_Reset(void) {}
+u32 CompanionDialogue_GetMode(void) { return COMPANION_DIALOGUE_NORMAL; }
+bool32 CompanionDialogue_SetMode(u32 mode) { return FALSE; }
+void CompanionDialogue_BeginInteraction(const u8 *script) {}
+void CompanionDialogue_RecordMessage(struct ScriptContext *ctx, const u8 *message) {}
+bool32 CompanionDialogue_FinishInteraction(struct ScriptContext *ctx) { return FALSE; }
+void CompanionDialogue_AfterScript(void) {}
+bool32 CompanionDialogue_IsInteractionActive(void) { return FALSE; }
+void CompanionDialogue_ResetSession(void) {}
+u32 CompanionDialogue_TryManualTalk(void) { return 0; }
+void Script_CompanionDialogueChoose(struct ScriptContext *ctx) {}
+void Script_CompanionDialogueRestore(struct ScriptContext *ctx) {}
+void Script_CompanionDialogueSetMode(struct ScriptContext *ctx) {}
+void Script_CompanionDialogueBufferMode(struct ScriptContext *ctx) {}
+u32 CompanionDialogue_ContextForMessage(const u8 *message) { return COMPANION_CONTEXT_CAPACITY; }
+bool32 CompanionDialogue_HasSpent(u32 voice, u32 context) { return TRUE; }
+#endif
