@@ -54,11 +54,40 @@ history, hashing away fresh comments, or claiming raw compression has no worst c
 A pure layout model (`dev_scripts/companion_memory_layout.py`) checks a shared
 proposal with 11616 new state bits, retaining the released pilot bits/metadata
 and standard save boundaries. This is a proposal test, not an implemented or
-native-validated save format. The user has been asked whether new dialogue should use shared automatic no-repeat
-memory with explicit alternative perspectives, or retain fully independent history
-and require a larger save-storage redesign. This gameplay/storage choice is pending;
-do not implement the dependent format until the user answers. Existing pilot
-independent memory is preserved under either choice.
+native-validated save format. The user selected fully independent permanent
+memory for every companion and conversation; the shared proposal is rejected.
+Existing pilot independent memory must be preserved. The user confirmed mGBA on
+Windows. Its documented Lua API is available starting in 0.10; the installed
+executable is 0.10.5. Target the standard emulator with a small external helper,
+not an unsupported larger Flash bank.
+
+Save-path review found that link/Frontier saving skips the PC sectors and has a
+separate incremental full-save path. The WIP instead appends a 56-byte anchor to
+SaveBlock2 at offset 3884 (new total 3940/3968). All released offsets stay fixed.
+The 1020-byte pilot record and its 736 bits per voice stay unchanged. The new
+12288-context/voice RAM bitmap uses immutable host snapshots, addressed by SHA-256.
+Each extended observation prepares its snapshot BEFORE the offer and updates the
+RAM anchor only on host success. File failures roll back that observation bit;
+all cartridge save paths then write a reference that already has a host file.
+Save failure leaves prior slot references usable. This adds no host IO or new
+abort branch to trading, Frontier or normal saving. Missing history is never
+recreated as empty; original dialogue and ordinary gameplay remain usable.
+
+`tools/companion_history/mgba_history.lua` implements the adapter; the host test
+executes this actual Lua source through Lua 5.4 with mocked documented mGBA APIs.
+It checks SHA-256 against Python, dense independent data, both snapshot anchors,
+missing/corrupt/wrong-game files, bad destination pointers, file write failures
+and acknowledgement ordering. This is not yet proof of native ROM integration.
+Lua flush/close/rename protects application-level transaction ordering; it is not
+a guarantee against Windows power loss. Immutable full snapshots currently grow
+by about 17 KB per new extended observation; packaging/retention needs review.
+The helper is required for extended observations; do not ship it without setup
+instructions, an existing writable history directory and explicit backup guidance
+covering both the .sav and history files. Do not delete snapshots that old saves
+or save states may reference.
+
+Normal saves, Hall of Fame saves, link saves, incremental link saves, failed
+writes and backup-slot recovery all need explicit transactional tests.
 
 Release requires reviewed eligibility/bindings and voice coverage throughout the
 intended game, source/artwork checks, successful builds/tests, native branch and

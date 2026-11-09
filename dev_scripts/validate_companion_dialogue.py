@@ -9,8 +9,8 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
     data=json.loads((ROOT/'data/companion_dialogue/contexts.json').read_text())
     contexts=data['contexts']; sources=text_blocks(); seen=set(); wording={v:set() for v in VOICES}
-    assert data['voices']==VOICES and data['capacity']==736
-    assert len(contexts)==len(ROWS)<=736
+    assert data['voices']==VOICES and data['capacity']==12288 and data['legacy_capacity']==736
+    assert len(contexts)==len(ROWS)<=12288
     pilot_path=ROOT/'data/companion_dialogue/full_game/released_pilot_contract.json'
     if pilot_path.exists():
         pilot=json.loads(pilot_path.read_text())

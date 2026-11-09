@@ -17,7 +17,13 @@ TEST("SaveBlock1 is backwards compatible")
 
 TEST("SaveBlock2 is backwards compatible")
 {
+#if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
+    EXPECT_EQ(offsetof(struct SaveBlock2, companionHistory), T_SAVEBLOCK2_SIZE);
+    EXPECT_EQ(sizeof(struct CompanionHistoryAnchor), 56);
+    EXPECT_EQ(sizeof(struct SaveBlock2), T_SAVEBLOCK2_SIZE + 56);
+#else
     EXPECT_EQ(sizeof(struct SaveBlock2), T_SAVEBLOCK2_SIZE);
+#endif
 }
 
 TEST("SaveBlock3 is backwards compatible")

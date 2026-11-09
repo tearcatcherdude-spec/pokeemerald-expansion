@@ -76,8 +76,8 @@ TEST("Footprint and gym reactions distinguish actual dialogue branches without g
     EXPECT_LT(open, COMPANION_CONTEXT_CAPACITY);
     EXPECT_NE(search, reveal);
     EXPECT_NE(closed, open);
-    EXPECT_EQ(CompanionDialogue_ContextForMessage(NULL), COMPANION_CONTEXT_CAPACITY);
-    EXPECT_EQ(CompanionDialogue_ContextForMessage((const u8 *)"an unmapped conversation"), COMPANION_CONTEXT_CAPACITY);
+    EXPECT_EQ(CompanionDialogue_ContextForMessage(NULL), COMPANION_NO_CONTEXT);
+    EXPECT_EQ(CompanionDialogue_ContextForMessage((const u8 *)"an unmapped conversation"), COMPANION_NO_CONTEXT);
 }
 
 TEST("A reaction spent by one companion does not silence another companion's perspective")

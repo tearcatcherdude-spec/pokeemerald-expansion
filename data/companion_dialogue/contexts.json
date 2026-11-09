@@ -12,7 +12,8 @@
     "mochi",
     "zuri"
   ],
-  "capacity": 736,
+  "capacity": 12288,
+  "legacy_capacity": 736,
   "contexts": [
     {
       "id": 0,

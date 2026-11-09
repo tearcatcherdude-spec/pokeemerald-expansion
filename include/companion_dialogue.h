@@ -5,6 +5,7 @@ struct ScriptContext;
 enum { COMPANION_DIALOGUE_NORMAL, COMPANION_DIALOGUE_ASK, COMPANION_DIALOGUE_SILENT };
 #define COMPANION_CONTEXT_CAPACITY 736
 #define COMPANION_VOICE_COUNT 11
+#define COMPANION_NO_CONTEXT 0xFFFF
 
 // Appended after Bond v1. Never resize/reorder the released PC or bond prefix.
 struct CompanionDialogueProgress

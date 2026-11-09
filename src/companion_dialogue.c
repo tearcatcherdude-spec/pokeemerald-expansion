@@ -11,7 +11,7 @@
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
 
 #define DIALOGUE_MAGIC 0x474C4443
-#define NO_CONTEXT COMPANION_CONTEXT_CAPACITY
+#define NO_CONTEXT COMPANION_NO_CONTEXT
 
 struct ContextReply { const u8 *text; u8 expression; };
 struct ContextMessage { const u8 *message; u16 context; };
@@ -149,6 +149,8 @@ u32 CompanionDialogue_ContextForMessage(const u8 *message)
 bool32 CompanionDialogue_HasSpent(u32 voice, u32 context)
 {
     EnsureInitialized();
+    if (context >= COMPANION_CONTEXT_CAPACITY)
+        return CompanionHistory_HasSpent(voice, context);
     return voice >= COMPANION_VOICE_COUNT || context >= COMPANION_CONTEXT_CAPACITY
         || Progress() == NULL
         || (Progress()->spent[voice][context / 8] & (1 << (context % 8))) != 0;
@@ -167,6 +169,8 @@ static bool32 Offer(void)
     {
         if (CompanionDialogue_HasSpent(sVoice, sContext))
             return FALSE;
+        if (sContext >= COMPANION_CONTEXT_CAPACITY)
+            return CompanionHistory_Spend(sVoice, sContext);
         Progress()->spent[sVoice][sContext / 8] |= 1 << (sContext % 8);
         return TRUE;
     }

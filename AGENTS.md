@@ -112,9 +112,14 @@ game or ask for approval at every internal content batch. See
 are frozen by released_pilot_contract.json. Unwritten/unknown branches are gaps,
 not completed coverage. Source inventory alone does not establish native coverage.
 
-A necessary gameplay/storage question is pending: shared automatic no-repeat
-history with explicit alternative perspectives, or fully independent history
-requiring a larger save-storage redesign. Existing independent pilot memory
-must survive either approach. Do not silently select a trade-off, resize/reset
-released banks, discard the backup save, or reuse PC/fusion/Hall of Fame/special
-storage. Continue independent inventory/writing/hook work while awaiting the answer.
+The user selected fully independent permanent memory for every companion and
+conversation. Shared memory is rejected. Existing pilot memory must survive.
+The user confirmed mGBA on Windows. Target its documented Lua API (0.10+).
+Do not resize/reset released banks, discard the backup save, or reuse
+PC/fusion/Hall of Fame/special storage. A host-side snapshot protocol is only a
+candidate until the actual adapter/ROM and migration tests pass. The current WIP
+appends a 56-byte anchor at SaveBlock2 offset 3884, preserving the whole prefix.
+Extended observations prepare an immutable host snapshot before being offered;
+normal/partial save paths then write the already valid anchor without new IO.
+No helper or missing history must suppress only extended observations, preserve
+their anchor and keep normal gameplay, original history and normal saving usable.

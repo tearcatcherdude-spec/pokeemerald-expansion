@@ -38,6 +38,12 @@ jobs:
       - name: Validate contextual companion dialogue
         run: python3 dev_scripts/validate_companion_dialogue.py
 
+      - name: Test independent history host protocol
+        run: |
+          python3 -m pip install --target /tmp/echo-history-deps lupa==2.8
+          PYTHONPATH=/tmp/echo-history-deps python3 dev_scripts/test_companion_history_host.py
+          python3 dev_scripts/companion_history_snapshots.py
+
       - name: Install binutils
         run: |
           sudo apt-get update
