@@ -1,5 +1,6 @@
 #include "global.h"
 #include "pip.h"
+#include "malloc.h"
 #include "fieldmap.h"
 #include "event_object_movement.h"
 #include "event_data.h"
@@ -21,7 +22,12 @@ static void SetUpPipMemory(void)
 }
 TEST("Pip remembers a spoken line across scene resets and saved-memory restoration")
 {
-    struct SaveBlock3 previous = *gSaveBlock3Ptr;
+    // Two full save snapshots outgrew the small GBA stack after the cast suffix.
+    struct SaveBlock3 *previous = Alloc(sizeof(*previous));
+    struct SaveBlock3 *saved = Alloc(sizeof(*saved));
+    EXPECT_NE(previous, NULL);
+    EXPECT_NE(saved, NULL);
+    *previous = *gSaveBlock3Ptr;
     u8 oldText[sizeof(gStringVar4)];
     memcpy(oldText, gStringVar4, sizeof(oldText));
     SetUpPipMemory();
@@ -31,11 +37,13 @@ TEST("Pip remembers a spoken line across scene resets and saved-memory restorati
     EXPECT_EQ(Pip_TrySay(line), FALSE);
     Pip_ResetSceneState();
     EXPECT_EQ(Pip_HasHeard(line), TRUE);
-    struct SaveBlock3 saved = *gSaveBlock3Ptr;
+    *saved = *gSaveBlock3Ptr;
     memset(gSaveBlock3Ptr->pipHeard, 0, sizeof(gSaveBlock3Ptr->pipHeard));
-    *gSaveBlock3Ptr = saved;
+    *gSaveBlock3Ptr = *saved;
     EXPECT_EQ(Pip_TrySay(line), FALSE);
-    *gSaveBlock3Ptr = previous;
+    *gSaveBlock3Ptr = *previous;
+    Free(saved);
+    Free(previous);
     memcpy(gStringVar4, oldText, sizeof(oldText));
 }
 TEST("Pip declines unknown lines and absent followers do not consume fresh dialogue")
