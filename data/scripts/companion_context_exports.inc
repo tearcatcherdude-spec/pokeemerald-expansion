@@ -48,3 +48,32 @@
 	.global VermilionCity_Text_SSAnneHasDepartedForYear
 	.global CeladonCity_Text_GotMyKoffingInCinnabar
 	.global SaffronCity_Text_DontGetDefiantOrIllHurtYou
+	.global Text_BookShelf
+	.global Text_Bookshelf
+	.global Text_ShopShelf
+	.global Text_PokeMartShelf
+	.global Text_Blueprint
+	.global Text_Blueprints
+	.global Text_DishesPlatesNeatlyLinedUp
+	.global Text_Kitchen
+	.global Text_Dresser
+	.global Text_Snacks
+	.global Text_PokemartSign
+	.global gText_PokemartSign
+	.global Text_PokecenterSign
+	.global gText_PokemonCenterSign
+	.global Text_Food
+	.global Text_Painting
+	.global Text_PowerPlantMachine
+	.global Text_Telephone
+	.global Text_Computer
+	.global Text_AdvertisingPoster
+	.global Text_TastyFood
+	.global Text_Cup
+	.global Text_BlinkingLights
+	.global Text_ImpressiveMachine
+	.global Text_VideoGame
+	.global Text_Burglary
+	.global Text_PlayerFacingTVScreen
+	.global Text_Indigo_UltimateGoal
+	.global Text_Indigo_HighestAuthority

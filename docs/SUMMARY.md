@@ -164,3 +164,5 @@
 - [Companion bonds and personal events](companion_bonds.md)
 
 - [Contextual companion dialogue and silencer](contextual_companion_dialogue.md)
+
+- [Full-game companion dialogue expansion](full_game_companion_dialogue.md)

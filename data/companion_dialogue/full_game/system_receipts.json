@@ -1,0 +1,65 @@
+{
+  "gText_ObtainedTheItem": {
+    "path": "data/text/obtain_item.inc",
+    "text": "Obtained the {STR_VAR_2}!$",
+    "sha256": "53ccd1dd64054706356d2d6b1ba067efa39f97f9ff17e9b9e6ea26b640219d25",
+    "disposition": "system_success_receipt",
+    "reason": "Preserve the last actual NPC speaker; never classify bag-full errors as success."
+  },
+  "gText_ObtainedTheItems": {
+    "path": "data/text/obtain_item.inc",
+    "text": "Obtained {STR_VAR_1} {STR_VAR_2}!$",
+    "sha256": "66bfa6cfa8dd1e7e21f046cc2317d3e3072f5c402506be4f430f863a032eedc3",
+    "disposition": "system_success_receipt",
+    "reason": "Preserve the last actual NPC speaker; never classify bag-full errors as success."
+  },
+  "gText_PutItemInPocket": {
+    "path": "data/text/obtain_item.inc",
+    "text": "{PLAYER} put away the {STR_VAR_2}\\nin the {STR_VAR_3} POCKET.$",
+    "sha256": "700226c9caa625e48024fe1c729ab811cd8bf654c52337e2f5e608d1e293d399",
+    "disposition": "system_success_receipt",
+    "reason": "Preserve the last actual NPC speaker; never classify bag-full errors as success."
+  },
+  "gText_PlayerPutItemInBag": {
+    "path": "data/text/obtain_item.inc",
+    "text": "{PLAYER} put away the {STR_VAR_2}\\nin the BAG.$",
+    "sha256": "65c28af47410c1f1be1108ce313733f226ee2c0c404b30c9d4b4d565154ae87d",
+    "disposition": "system_success_receipt",
+    "reason": "Preserve the last actual NPC speaker; never classify bag-full errors as success."
+  },
+  "gText_ObtainedTheDecor": {
+    "path": "data/text/obtain_item.inc",
+    "text": "Obtained the {STR_VAR_2}!$",
+    "sha256": "53ccd1dd64054706356d2d6b1ba067efa39f97f9ff17e9b9e6ea26b640219d25",
+    "disposition": "system_success_receipt",
+    "reason": "Preserve the last actual NPC speaker; never classify bag-full errors as success."
+  },
+  "gText_TheDecorWasTransferredToThePC": {
+    "path": "data/text/obtain_item.inc",
+    "text": "The {STR_VAR_2} was transferred\\nto the PC.$",
+    "sha256": "cd6a42e0ea0482ffe2a0bd4a00aec7ec095a2c609f88de0b6d077b776818d721",
+    "disposition": "system_success_receipt",
+    "reason": "Preserve the last actual NPC speaker; never classify bag-full errors as success."
+  },
+  "gText_PlayerFoundOneItem": {
+    "path": "data/text/obtain_item.inc",
+    "text": "{PLAYER} found one {STR_VAR_2}!$",
+    "sha256": "bcc79aa2438594c681fa8af2e9bcf25848e61da6b52b1aff2160f839848f544c",
+    "disposition": "system_success_receipt",
+    "reason": "Preserve the last actual NPC speaker; never classify bag-full errors as success."
+  },
+  "gText_PlayerFoundItems": {
+    "path": "data/text/obtain_item.inc",
+    "text": "{PLAYER} found {STR_VAR_1} {STR_VAR_2}!$",
+    "sha256": "3f574f3524c52a557df5eadf7c406377563951e3fa8179b710aaab410c8805bb",
+    "disposition": "system_success_receipt",
+    "reason": "Preserve the last actual NPC speaker; never classify bag-full errors as success."
+  },
+  "gText_RegisteredTrainerinPokeNav": {
+    "path": "data/event_scripts.s",
+    "text": "Registered {STR_VAR_1} {STR_VAR_2}\\nin the POKéNAV.$",
+    "sha256": "83a16c8a86b4c744cfbc77b85bffcd88fe6c76af08c7eade4818207da35f4f31",
+    "disposition": "system_success_receipt",
+    "reason": "Preserve the last actual NPC speaker; never classify bag-full errors as success."
+  }
+}

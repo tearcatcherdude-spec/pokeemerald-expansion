@@ -11,6 +11,14 @@ def main():
     contexts=data['contexts']; sources=text_blocks(); seen=set(); wording={v:set() for v in VOICES}
     assert data['voices']==VOICES and data['capacity']==736
     assert len(contexts)==len(ROWS)<=736
+    pilot_path=ROOT/'data/companion_dialogue/full_game/released_pilot_contract.json'
+    if pilot_path.exists():
+        pilot=json.loads(pilot_path.read_text())
+        assert data['voices']==pilot['voices']
+        for current,old in zip(contexts,pilot['contexts']):
+            assert (current['id'],current['key'],current['sources'])==(old['id'],old['key'],old['sources'])
+            assert hashlib.sha256(json.dumps(current['replies'],sort_keys=True).encode()).hexdigest()==old['replies_sha256'], 'Released pilot wording or expressions changed'
+        assert len(contexts)>=len(pilot['contexts'])
     for i,(row,authored) in enumerate(zip(contexts,ROWS)):
         assert (row['id'],row['key'])==(i,authored['key'])
         assert set(row['sources'])==set(authored['labels'])

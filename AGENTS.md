@@ -101,3 +101,20 @@ not proof that every actor has dialogue or that every branch ran. Do not call
 the initial authored batch full-world completion. Validate the exact ROM with
 actual NPC branch changes, unknown messages, deferred prompts, each mode,
 independent spent memory, portraits, EXP-on-print and old normal-save migration.
+
+# Full-game dialogue expansion
+
+The user authorized one full-game expansion across both regions on top of PR #11
+79ec91c79bd03c426c64f824415befdfe99d351d. Do not restrict the deliverable to early
+game or ask for approval at every internal content batch. See
+`docs/full_game_companion_dialogue.md` and the complete worklist under
+`data/companion_dialogue/full_game`. The first 47 context IDs/wording/expressions
+are frozen by released_pilot_contract.json. Unwritten/unknown branches are gaps,
+not completed coverage. Source inventory alone does not establish native coverage.
+
+A necessary gameplay/storage question is pending: shared automatic no-repeat
+history with explicit alternative perspectives, or fully independent history
+requiring a larger save-storage redesign. Existing independent pilot memory
+must survive either approach. Do not silently select a trade-off, resize/reset
+released banks, discard the backup save, or reuse PC/fusion/Hall of Fame/special
+storage. Continue independent inventory/writing/hook work while awaiting the answer.

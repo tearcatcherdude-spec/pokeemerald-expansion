@@ -7,6 +7,22 @@ from companion_context_content import ROWS
 ROOT = Path(__file__).resolve().parents[1]
 VOICES = ['pip', 'silas', 'kade', 'ashe', 'nico', 'riven', 'emi', 'vera', 'lume', 'mochi', 'zuri']
 
+def global_c_text_blocks():
+    """Inventory exported C strings referenced by script msgbox operands.
+
+    Conditional compilation and native formatting still require review. Static
+    C strings cannot be exported merely by writing an assembly .global alias.
+    """
+    found={}
+    pattern=re.compile(r'^const\s+u8\s+(\w+)\s*\[\s*\]\s*=\s*(?:_|COMPOUND_STRING)\(\s*((?:"(?:\\.|[^"\\])*"\s*)+)\)\s*;',re.M)
+    for path in sorted((ROOT/'src').rglob('*.c')):
+        for m in pattern.finditer(path.read_text(encoding='utf-8')):
+            raw=''.join(re.findall(r'"((?:\\.|[^"\\])*)"',m[2]))
+            found[m[1]]=dict(path=path.relative_to(ROOT).as_posix(),text=raw,
+                sha256=hashlib.sha256(raw.encode()).hexdigest(),source_kind='c_global',
+                compilation_eligibility='requires_review')
+    return found
+
 def text_blocks():
     found = {}
     # Imported sources supersede the unused vanilla FRLG copies.
@@ -14,12 +30,16 @@ def text_blocks():
     paths += sorted((ROOT/'data/text').rglob('*.inc'))
     paths += sorted((ROOT/'data/scripts').rglob('*.inc'))
     paths += sorted((ROOT/'data/kanto').rglob('*.inc'))
+    paths += sorted((ROOT/'data/cast').rglob('*.inc'))
+    paths += sorted((ROOT/'data/bonds').rglob('*.inc'))
+    paths += [ROOT/'data/event_scripts.s']
     for path in paths:
         text = path.read_text(encoding='utf-8')
         for m in re.finditer(r'^(\w+)::?[^\n]*\n((?:[ \t]*\.string[^\n]*\n)+)', text, re.M):
             raw = ''.join(re.findall(r'\.string\s+"(.*)"', m[2]))
             found[m[1]] = dict(path=path.relative_to(ROOT).as_posix(),
                                text=raw, sha256=hashlib.sha256(raw.encode()).hexdigest())
+    found.update(global_c_text_blocks())
     return found
 
 def build():

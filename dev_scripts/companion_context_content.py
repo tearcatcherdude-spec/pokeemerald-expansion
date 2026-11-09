@@ -620,3 +620,7 @@ sad~A threat is meant to shrink your choices. We can take a moment and look for 
 annoyed~You do not deserve that. Let us keep each other safe before worrying about looking brave.|
 annoyed~They are trying to decide who belongs in this street. We should not have to face that alone.
 ''')
+
+# Whole-game expansion; preserve the released first 47 IDs above.
+from companion_world_objects import ROWS as WORLD_OBJECT_ROWS
+ROWS.extend(WORLD_OBJECT_ROWS)

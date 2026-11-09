@@ -6,6 +6,25 @@
 
 extern const u8 OldaleTown_Text_DiscoveredFootprints[], OldaleTown_Text_FinishedSketchingFootprints[];
 extern const u8 ViridianCity_Text_GymClosedWonderWhoLeaderIs[], ViridianCity_Text_ViridiansGymLeaderReturned[];
+extern const u8 gText_ObtainedTheItem[], gText_PutItemInPocket[], gText_TheBagIsFull[];
+extern const u8 gText_TooBadBagIsFull[], gText_NoRoomLeftForAnother[];
+
+TEST("Successful item receipts preserve the speaker but bag-full failures are not receipts")
+{
+    EXPECT_EQ(CompanionDialogue_IsSystemReceipt(gText_ObtainedTheItem), TRUE);
+    EXPECT_EQ(CompanionDialogue_IsSystemReceipt(gText_PutItemInPocket), TRUE);
+    EXPECT_EQ(CompanionDialogue_IsSystemReceipt(gText_TheBagIsFull), FALSE);
+    EXPECT_EQ(CompanionDialogue_IsSystemReceipt(gText_TooBadBagIsFull), FALSE);
+    EXPECT_EQ(CompanionDialogue_IsSystemReceipt(gText_NoRoomLeftForAnother), FALSE);
+    EXPECT_EQ(CompanionDialogue_IsSystemReceipt(NULL), FALSE);
+}
+
+TEST("Receipt classification never guesses from an NPC mentioning an obtained item")
+{
+    static const u8 npc[] = _("Obtained the {STR_VAR_2}!$");
+    EXPECT_EQ(CompanionDialogue_IsSystemReceipt(npc), FALSE);
+    EXPECT_EQ(CompanionDialogue_IsSystemReceipt(OldaleTown_Text_DiscoveredFootprints), FALSE);
+}
 
 TEST("Dialogue settings migrate only the new suffix and preserve PC, bond and cast progress")
 {

@@ -32,6 +32,7 @@ void Script_CompanionDialogueRestore(struct ScriptContext *ctx);
 void Script_CompanionDialogueSetMode(struct ScriptContext *ctx);
 void Script_CompanionDialogueBufferMode(struct ScriptContext *ctx);
 u32 CompanionDialogue_ContextForMessage(const u8 *message);
+bool32 CompanionDialogue_IsSystemReceipt(const u8 *message);
 bool32 CompanionDialogue_HasSpent(u32 voice, u32 context);
 
 #endif

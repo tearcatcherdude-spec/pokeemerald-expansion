@@ -19,6 +19,15 @@ struct ContextMessage { const u8 *message; u16 context; };
 
 extern const u8 Cozy_EventScript_Companion[], Cast_EventScript_Companion[];
 extern const u8 CompanionDialogue_EventScript_React[];
+extern const u8 gText_ObtainedTheItem[];
+extern const u8 gText_ObtainedTheItems[];
+extern const u8 gText_PutItemInPocket[];
+extern const u8 gText_PlayerPutItemInBag[];
+extern const u8 gText_ObtainedTheDecor[];
+extern const u8 gText_TheDecorWasTransferredToThePC[];
+extern const u8 gText_PlayerFoundOneItem[];
+extern const u8 gText_PlayerFoundItems[];
+extern const u8 gText_RegisteredTrainerinPokeNav[];
 
 static EWRAM_DATA bool8 sActive = FALSE;
 static EWRAM_DATA bool8 sOffering = FALSE;
@@ -103,13 +112,30 @@ void CompanionDialogue_BeginInteraction(const u8 *script)
     sMap = gSaveBlock1Ptr->location.mapNum;
     sVoice = Voice();
 }
+bool32 CompanionDialogue_IsSystemReceipt(const u8 *message)
+{
+    // These are success notifications, not a new person speaking. In
+    // particular, a bag-full error is NOT a receipt and must invalidate an
+    // earlier gift offer rather than let us react as though it succeeded.
+    static const u8 *const receipts[] = {
+        gText_ObtainedTheItem, gText_ObtainedTheItems, gText_PutItemInPocket,
+        gText_PlayerPutItemInBag, gText_ObtainedTheDecor,
+        gText_TheDecorWasTransferredToThePC, gText_PlayerFoundOneItem,
+        gText_PlayerFoundItems, gText_RegisteredTrainerinPokeNav,
+    };
+    for (u32 i = 0; i < ARRAY_COUNT(receipts); i++)
+        if (message == receipts[i])
+            return TRUE;
+    return FALSE;
+}
 void CompanionDialogue_RecordMessage(struct ScriptContext *ctx, const u8 *message)
 {
     if (sActive && !sOffering && ScriptContext_IsGlobal(ctx))
     {
-        // Always replace, including unknown/dynamic messages: do not react to
-        // an earlier branch after the NPC has gone on to say something else.
-        sMessage = message;
+        // Unknown NPC/dynamic messages always replace the previous candidate.
+        // Explicit system receipts preserve the last actual speaker.
+        if (!CompanionDialogue_IsSystemReceipt(message))
+            sMessage = message;
     }
 }
 u32 CompanionDialogue_ContextForMessage(const u8 *message)
@@ -261,5 +287,6 @@ void Script_CompanionDialogueRestore(struct ScriptContext *ctx) {}
 void Script_CompanionDialogueSetMode(struct ScriptContext *ctx) {}
 void Script_CompanionDialogueBufferMode(struct ScriptContext *ctx) {}
 u32 CompanionDialogue_ContextForMessage(const u8 *message) { return COMPANION_CONTEXT_CAPACITY; }
+bool32 CompanionDialogue_IsSystemReceipt(const u8 *message) { return FALSE; }
 bool32 CompanionDialogue_HasSpent(u32 voice, u32 context) { return TRUE; }
 #endif

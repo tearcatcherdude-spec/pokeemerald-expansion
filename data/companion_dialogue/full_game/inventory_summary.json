@@ -1,0 +1,17 @@
+{
+  "method": "Static explicit label references, all branches. No automatic semantic grouping or terminal-message claim.",
+  "maps": 935,
+  "actor": 3845,
+  "map_lifecycle": 885,
+  "background": 1345,
+  "coordinate_story": 517,
+  "shared_metatile_dispatch": 50,
+  "unique_interaction_roots": 4866,
+  "reachable_text_labels": 9175,
+  "source_texts_found": 9175,
+  "distinct_raw_source_texts": 8804,
+  "pilot_bound_labels": 45,
+  "authored_bound_labels": 70,
+  "native_functions_requiring_review": 534,
+  "missing_script_roots": 0
+}
