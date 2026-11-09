@@ -142,6 +142,8 @@ def register(characters):
  'Cast_EventScript_Dismiss::','\tmsgbox Cast_Text_Dismiss, MSGBOX_YESNO','\tgoto_if_eq VAR_RESULT, NO, Cast_EventScript_Stay','\tcallnative Script_CastFarewell','\tmsgbox gStringVar4, MSGBOX_DEFAULT','\tcallnative Script_CastDismiss','\tgoto Cast_EventScript_Stay',
  'Cast_EventScript_Roster::','\tmultichoicegrid 0, 0, MULTI_CAST_ROSTER, 3, FALSE','\tgoto_if_eq VAR_RESULT, MULTI_B_PRESSED, Cast_EventScript_Stay','\tgoto_if_eq VAR_RESULT, 11, Cast_EventScript_Stay','\tcallnative Script_CastSwitchRoster','\tgoto_if_ne VAR_RESULT, FALSE, Cast_EventScript_Stay','\tmsgbox Cast_Text_Locked, MSGBOX_DEFAULT','Cast_EventScript_Stay::','\tcallnative Script_CastHidePortrait','\treleaseall','\tend',
  'Cast_Text_Unavailable::','\t.string "Your current escort needs you.\\nThere is no room to change company\\lright now.$"','Cast_Text_Locked::','\t.string "Befriend that trainer first.\\nYour current companion will stay.$"','Cast_Text_Dismiss::','\t.string "Part ways for now?\\nThey will return to where you met.$"']
+ if (ROOT/'data/bonds/journal.inc').exists():
+  scripts.insert(scripts.index('\tmultichoice 0, 0, MULTI_PIP_COMPANION, FALSE')+1,'\tgoto_if_eq VAR_RESULT, 4, Bonds_EventScript_Journal')
  (ROOT/'data/cast/recruitment.inc').write_text('\n'.join(scripts)+'\n')
 
 def dialogue(characters):
@@ -222,5 +224,10 @@ def dialogue(characters):
  print('Built',sum(c['unique_comments'] for c in review),'distinct voiced reactions across',len(symbols)-symbols.count('NULL'),'supported Pip contexts per character, plus 60 ordered lore revelations.')
 
 if __name__=='__main__':
- characters=profiles();register(characters);dialogue(characters)
+ characters=profiles()
+ for c in characters:c['life_stage']='adult'
+ register(characters);dialogue(characters)
+ if (ROOT/'data/bonds/journal.inc').exists():
+  import build_bonds
+  build_bonds.main()
 

@@ -14050,3 +14050,1682 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Spinda
 Level: 27
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+
+=== TRAINER_KANTO_DATA_BOND_SILAS_40 ===
+Name: SILAS
+Class: Pkmn Trainer 1
+Pic: Cast Silas
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Magnezone
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Flash Cannon
+- Thunder Wave
+- Light Screen
+
+Porygon2
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Tri Attack
+- Psybeam
+- Recover
+- Conversion
+
+Gardevoir
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Magical Leaf
+- Reflect
+- Calm Mind
+
+Roselia
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sludge Bomb
+- Stun Spore
+- Synthesis
+
+
+=== TRAINER_KANTO_DATA_BOND_SILAS_50 ===
+Name: SILAS
+Class: Pkmn Trainer 1
+Pic: Cast Silas
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Magnezone
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Flash Cannon
+- Thunder Wave
+- Light Screen
+
+Porygon2
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Tri Attack
+- Psybeam
+- Recover
+- Conversion
+
+Gardevoir
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Magical Leaf
+- Reflect
+- Calm Mind
+
+Roserade
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sludge Bomb
+- Stun Spore
+- Synthesis
+
+
+=== TRAINER_KANTO_DATA_BOND_SILAS_60 ===
+Name: SILAS
+Class: Pkmn Trainer 1
+Pic: Cast Silas
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Magnezone
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Flash Cannon
+- Thunder Wave
+- Light Screen
+
+Porygon2
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Tri Attack
+- Psybeam
+- Recover
+- Conversion
+
+Gardevoir
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Magical Leaf
+- Reflect
+- Calm Mind
+
+Roserade
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sludge Bomb
+- Stun Spore
+- Synthesis
+
+
+=== TRAINER_KANTO_DATA_BOND_SILAS_70 ===
+Name: SILAS
+Class: Pkmn Trainer 1
+Pic: Cast Silas
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Magnezone
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Flash Cannon
+- Thunder Wave
+- Light Screen
+
+Porygon2
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Tri Attack
+- Psybeam
+- Recover
+- Conversion
+
+Gardevoir
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Magical Leaf
+- Reflect
+- Calm Mind
+
+Roserade
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sludge Bomb
+- Stun Spore
+- Synthesis
+
+
+=== TRAINER_KANTO_DATA_BOND_KADE_40 ===
+Name: KADE
+Class: Pkmn Trainer 1
+Pic: Cast Kade
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Sandslash
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Slash
+- Dig
+- Rock Tomb
+- Sand Attack
+
+Raticate
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Fang
+- Crunch
+- Quick Attack
+- Scary Face
+
+Houndoom
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Flamethrower
+- Bite
+- Smog
+- Roar
+
+Machoke
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Karate Chop
+- Brick Break
+- Rock Tomb
+- Focus Energy
+
+
+=== TRAINER_KANTO_DATA_BOND_KADE_50 ===
+Name: KADE
+Class: Pkmn Trainer 1
+Pic: Cast Kade
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Sandslash
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Slash
+- Dig
+- Rock Tomb
+- Sand Attack
+
+Raticate
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Fang
+- Crunch
+- Quick Attack
+- Scary Face
+
+Houndoom
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Flamethrower
+- Bite
+- Smog
+- Roar
+
+Machamp
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Karate Chop
+- Brick Break
+- Rock Tomb
+- Focus Energy
+
+
+=== TRAINER_KANTO_DATA_BOND_KADE_60 ===
+Name: KADE
+Class: Pkmn Trainer 1
+Pic: Cast Kade
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Sandslash
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Slash
+- Dig
+- Rock Tomb
+- Sand Attack
+
+Raticate
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Fang
+- Crunch
+- Quick Attack
+- Scary Face
+
+Houndoom
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Flamethrower
+- Bite
+- Smog
+- Roar
+
+Machamp
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Karate Chop
+- Brick Break
+- Rock Tomb
+- Focus Energy
+
+
+=== TRAINER_KANTO_DATA_BOND_KADE_70 ===
+Name: KADE
+Class: Pkmn Trainer 1
+Pic: Cast Kade
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Sandslash
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Slash
+- Dig
+- Rock Tomb
+- Sand Attack
+
+Raticate
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Fang
+- Crunch
+- Quick Attack
+- Scary Face
+
+Houndoom
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Flamethrower
+- Bite
+- Smog
+- Roar
+
+Machamp
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Karate Chop
+- Brick Break
+- Rock Tomb
+- Focus Energy
+
+
+=== TRAINER_KANTO_DATA_BOND_ASHE_40 ===
+Name: ASHE
+Class: Pkmn Trainer 1
+Pic: Cast Ashe
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Kricketune
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- X-Scissor
+- Sing
+- Slash
+- Focus Energy
+
+Loudred
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Voice
+- Bite
+- Stomp
+- Rest
+
+Chimecho
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Extrasensory
+- Uproar
+- Yawn
+- Reflect
+
+Golbat
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Bite
+- Confuse Ray
+- Swift
+
+
+=== TRAINER_KANTO_DATA_BOND_ASHE_50 ===
+Name: ASHE
+Class: Pkmn Trainer 1
+Pic: Cast Ashe
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Kricketune
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- X-Scissor
+- Sing
+- Slash
+- Focus Energy
+
+Exploud
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Voice
+- Bite
+- Stomp
+- Rest
+
+Chimecho
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Extrasensory
+- Uproar
+- Yawn
+- Reflect
+
+Crobat
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Bite
+- Confuse Ray
+- Swift
+
+
+=== TRAINER_KANTO_DATA_BOND_ASHE_60 ===
+Name: ASHE
+Class: Pkmn Trainer 1
+Pic: Cast Ashe
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Kricketune
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- X-Scissor
+- Sing
+- Slash
+- Focus Energy
+
+Exploud
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Voice
+- Bite
+- Stomp
+- Rest
+
+Chimecho
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Extrasensory
+- Uproar
+- Yawn
+- Reflect
+
+Crobat
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Bite
+- Confuse Ray
+- Swift
+
+
+=== TRAINER_KANTO_DATA_BOND_ASHE_70 ===
+Name: ASHE
+Class: Pkmn Trainer 1
+Pic: Cast Ashe
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Kricketune
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- X-Scissor
+- Sing
+- Slash
+- Focus Energy
+
+Exploud
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Voice
+- Bite
+- Stomp
+- Rest
+
+Chimecho
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Extrasensory
+- Uproar
+- Yawn
+- Reflect
+
+Crobat
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Bite
+- Confuse Ray
+- Swift
+
+
+=== TRAINER_KANTO_DATA_BOND_NICO_40 ===
+Name: NICO
+Class: Pkmn Trainer 1
+Pic: Cast Nico
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Magcargo
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Lava Plume
+- Ancient Power
+- Amnesia
+- Yawn
+
+Breloom
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Mach Punch
+- Mega Drain
+- Leech Seed
+- Headbutt
+
+Cherrim
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sunny Day
+- Helping Hand
+- Take Down
+
+Snorlax
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Body Slam
+- Bite
+- Rest
+- Snore
+
+
+=== TRAINER_KANTO_DATA_BOND_NICO_50 ===
+Name: NICO
+Class: Pkmn Trainer 1
+Pic: Cast Nico
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Magcargo
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Lava Plume
+- Ancient Power
+- Amnesia
+- Yawn
+
+Breloom
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Mach Punch
+- Mega Drain
+- Leech Seed
+- Headbutt
+
+Cherrim
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sunny Day
+- Helping Hand
+- Take Down
+
+Snorlax
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Body Slam
+- Bite
+- Rest
+- Snore
+
+
+=== TRAINER_KANTO_DATA_BOND_NICO_60 ===
+Name: NICO
+Class: Pkmn Trainer 1
+Pic: Cast Nico
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Magcargo
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Lava Plume
+- Ancient Power
+- Amnesia
+- Yawn
+
+Breloom
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Mach Punch
+- Mega Drain
+- Leech Seed
+- Headbutt
+
+Cherrim
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sunny Day
+- Helping Hand
+- Take Down
+
+Snorlax
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Body Slam
+- Bite
+- Rest
+- Snore
+
+
+=== TRAINER_KANTO_DATA_BOND_NICO_70 ===
+Name: NICO
+Class: Pkmn Trainer 1
+Pic: Cast Nico
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Magcargo
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Lava Plume
+- Ancient Power
+- Amnesia
+- Yawn
+
+Breloom
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Mach Punch
+- Mega Drain
+- Leech Seed
+- Headbutt
+
+Cherrim
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sunny Day
+- Helping Hand
+- Take Down
+
+Snorlax
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Body Slam
+- Bite
+- Rest
+- Snore
+
+
+=== TRAINER_KANTO_DATA_BOND_RIVEN_40 ===
+Name: RIVEN
+Class: Pkmn Trainer 1
+Pic: Cast Riven
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Kadabra
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Reflect
+- Recover
+- Shadow Ball
+
+Sableye
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Claw
+- Fake Out
+- Confuse Ray
+- Knock Off
+
+Mismagius
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Ball
+- Magical Leaf
+- Confuse Ray
+- Psybeam
+
+Mr. Mime
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psybeam
+- Reflect
+- Light Screen
+- Encore
+
+
+=== TRAINER_KANTO_DATA_BOND_RIVEN_50 ===
+Name: RIVEN
+Class: Pkmn Trainer 1
+Pic: Cast Riven
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Alakazam
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Reflect
+- Recover
+- Shadow Ball
+
+Sableye
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Claw
+- Fake Out
+- Confuse Ray
+- Knock Off
+
+Mismagius
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Ball
+- Magical Leaf
+- Confuse Ray
+- Psybeam
+
+Mr. Mime
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psybeam
+- Reflect
+- Light Screen
+- Encore
+
+
+=== TRAINER_KANTO_DATA_BOND_RIVEN_60 ===
+Name: RIVEN
+Class: Pkmn Trainer 1
+Pic: Cast Riven
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Alakazam
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Reflect
+- Recover
+- Shadow Ball
+
+Sableye
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Claw
+- Fake Out
+- Confuse Ray
+- Knock Off
+
+Mismagius
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Ball
+- Magical Leaf
+- Confuse Ray
+- Psybeam
+
+Mr. Mime
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psybeam
+- Reflect
+- Light Screen
+- Encore
+
+
+=== TRAINER_KANTO_DATA_BOND_RIVEN_70 ===
+Name: RIVEN
+Class: Pkmn Trainer 1
+Pic: Cast Riven
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Alakazam
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Reflect
+- Recover
+- Shadow Ball
+
+Sableye
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Claw
+- Fake Out
+- Confuse Ray
+- Knock Off
+
+Mismagius
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Ball
+- Magical Leaf
+- Confuse Ray
+- Psybeam
+
+Mr. Mime
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psybeam
+- Reflect
+- Light Screen
+- Encore
+
+
+=== TRAINER_KANTO_DATA_BOND_EMI_40 ===
+Name: EMI
+Class: Pkmn Trainer 1
+Pic: Cast Emi
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Noctowl
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Confusion
+- Hypnosis
+- Reflect
+
+Kirlia
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Magical Leaf
+- Calm Mind
+- Double Team
+
+Honchkrow
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Wing Attack
+- Feint Attack
+- Haze
+- Taunt
+
+Lopunny
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Strength
+- Quick Attack
+- Charm
+- Jump Kick
+
+
+=== TRAINER_KANTO_DATA_BOND_EMI_50 ===
+Name: EMI
+Class: Pkmn Trainer 1
+Pic: Cast Emi
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Noctowl
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Confusion
+- Hypnosis
+- Reflect
+
+Gardevoir
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Magical Leaf
+- Calm Mind
+- Double Team
+
+Honchkrow
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Wing Attack
+- Feint Attack
+- Haze
+- Taunt
+
+Lopunny
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Strength
+- Quick Attack
+- Charm
+- Jump Kick
+
+
+=== TRAINER_KANTO_DATA_BOND_EMI_60 ===
+Name: EMI
+Class: Pkmn Trainer 1
+Pic: Cast Emi
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Noctowl
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Confusion
+- Hypnosis
+- Reflect
+
+Gardevoir
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Magical Leaf
+- Calm Mind
+- Double Team
+
+Honchkrow
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Wing Attack
+- Feint Attack
+- Haze
+- Taunt
+
+Lopunny
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Strength
+- Quick Attack
+- Charm
+- Jump Kick
+
+
+=== TRAINER_KANTO_DATA_BOND_EMI_70 ===
+Name: EMI
+Class: Pkmn Trainer 1
+Pic: Cast Emi
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Noctowl
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Confusion
+- Hypnosis
+- Reflect
+
+Gardevoir
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psychic
+- Magical Leaf
+- Calm Mind
+- Double Team
+
+Honchkrow
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Wing Attack
+- Feint Attack
+- Haze
+- Taunt
+
+Lopunny
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Strength
+- Quick Attack
+- Charm
+- Jump Kick
+
+
+=== TRAINER_KANTO_DATA_BOND_VERA_40 ===
+Name: VERA
+Class: Pkmn Trainer 1
+Pic: Cast Vera
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Manectric
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Bite
+- Thunder Wave
+- Quick Attack
+
+Magneton
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Flash Cannon
+- Thunder Wave
+- Light Screen
+
+Electrode
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Spark
+- Swift
+- Light Screen
+- Screech
+
+Pachirisu
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Spark
+- Super Fang
+- Charm
+- Quick Attack
+
+
+=== TRAINER_KANTO_DATA_BOND_VERA_50 ===
+Name: VERA
+Class: Pkmn Trainer 1
+Pic: Cast Vera
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Manectric
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Bite
+- Thunder Wave
+- Quick Attack
+
+Magnezone
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Flash Cannon
+- Thunder Wave
+- Light Screen
+
+Electrode
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Spark
+- Swift
+- Light Screen
+- Screech
+
+Pachirisu
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Spark
+- Super Fang
+- Charm
+- Quick Attack
+
+
+=== TRAINER_KANTO_DATA_BOND_VERA_60 ===
+Name: VERA
+Class: Pkmn Trainer 1
+Pic: Cast Vera
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Manectric
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Bite
+- Thunder Wave
+- Quick Attack
+
+Magnezone
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Flash Cannon
+- Thunder Wave
+- Light Screen
+
+Electrode
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Spark
+- Swift
+- Light Screen
+- Screech
+
+Pachirisu
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Spark
+- Super Fang
+- Charm
+- Quick Attack
+
+
+=== TRAINER_KANTO_DATA_BOND_VERA_70 ===
+Name: VERA
+Class: Pkmn Trainer 1
+Pic: Cast Vera
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Manectric
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Bite
+- Thunder Wave
+- Quick Attack
+
+Magnezone
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Thunderbolt
+- Flash Cannon
+- Thunder Wave
+- Light Screen
+
+Electrode
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Spark
+- Swift
+- Light Screen
+- Screech
+
+Pachirisu
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Spark
+- Super Fang
+- Charm
+- Quick Attack
+
+
+=== TRAINER_KANTO_DATA_BOND_LUME_40 ===
+Name: LUME
+Class: Pkmn Trainer 1
+Pic: Cast Lume
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Ninjask
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- X-Scissor
+- Aerial Ace
+- Mind Reader
+- Double Team
+
+Dusclops
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Punch
+- Will-O-Wisp
+- Payback
+- Confuse Ray
+
+Grumpig
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psybeam
+- Power Gem
+- Confuse Ray
+- Magic Coat
+
+Noctowl
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Confusion
+- Hypnosis
+- Reflect
+
+
+=== TRAINER_KANTO_DATA_BOND_LUME_50 ===
+Name: LUME
+Class: Pkmn Trainer 1
+Pic: Cast Lume
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Ninjask
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- X-Scissor
+- Aerial Ace
+- Mind Reader
+- Double Team
+
+Dusknoir
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Punch
+- Will-O-Wisp
+- Payback
+- Confuse Ray
+
+Grumpig
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psybeam
+- Power Gem
+- Confuse Ray
+- Magic Coat
+
+Noctowl
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Confusion
+- Hypnosis
+- Reflect
+
+
+=== TRAINER_KANTO_DATA_BOND_LUME_60 ===
+Name: LUME
+Class: Pkmn Trainer 1
+Pic: Cast Lume
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Ninjask
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- X-Scissor
+- Aerial Ace
+- Mind Reader
+- Double Team
+
+Dusknoir
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Punch
+- Will-O-Wisp
+- Payback
+- Confuse Ray
+
+Grumpig
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psybeam
+- Power Gem
+- Confuse Ray
+- Magic Coat
+
+Noctowl
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Confusion
+- Hypnosis
+- Reflect
+
+
+=== TRAINER_KANTO_DATA_BOND_LUME_70 ===
+Name: LUME
+Class: Pkmn Trainer 1
+Pic: Cast Lume
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Ninjask
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- X-Scissor
+- Aerial Ace
+- Mind Reader
+- Double Team
+
+Dusknoir
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Shadow Punch
+- Will-O-Wisp
+- Payback
+- Confuse Ray
+
+Grumpig
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Psybeam
+- Power Gem
+- Confuse Ray
+- Magic Coat
+
+Noctowl
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Air Slash
+- Confusion
+- Hypnosis
+- Reflect
+
+
+=== TRAINER_KANTO_DATA_BOND_MOCHI_40 ===
+Name: MOCHI
+Class: Pkmn Trainer 1
+Pic: Cast Mochi
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Lopunny
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Strength
+- Jump Kick
+- Charm
+- Quick Attack
+
+Delcatty
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Swift
+- Fake Out
+- Sing
+- Feint Attack
+
+Vespiquen
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Attack Order
+- Power Gem
+- Defend Order
+- Heal Order
+
+Roselia
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sludge Bomb
+- Stun Spore
+- Synthesis
+
+
+=== TRAINER_KANTO_DATA_BOND_MOCHI_50 ===
+Name: MOCHI
+Class: Pkmn Trainer 1
+Pic: Cast Mochi
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Lopunny
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Strength
+- Jump Kick
+- Charm
+- Quick Attack
+
+Delcatty
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Swift
+- Fake Out
+- Sing
+- Feint Attack
+
+Vespiquen
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Attack Order
+- Power Gem
+- Defend Order
+- Heal Order
+
+Roserade
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sludge Bomb
+- Stun Spore
+- Synthesis
+
+
+=== TRAINER_KANTO_DATA_BOND_MOCHI_60 ===
+Name: MOCHI
+Class: Pkmn Trainer 1
+Pic: Cast Mochi
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Lopunny
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Strength
+- Jump Kick
+- Charm
+- Quick Attack
+
+Delcatty
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Swift
+- Fake Out
+- Sing
+- Feint Attack
+
+Vespiquen
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Attack Order
+- Power Gem
+- Defend Order
+- Heal Order
+
+Roserade
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sludge Bomb
+- Stun Spore
+- Synthesis
+
+
+=== TRAINER_KANTO_DATA_BOND_MOCHI_70 ===
+Name: MOCHI
+Class: Pkmn Trainer 1
+Pic: Cast Mochi
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Lopunny
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Strength
+- Jump Kick
+- Charm
+- Quick Attack
+
+Delcatty
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Swift
+- Fake Out
+- Sing
+- Feint Attack
+
+Vespiquen
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Attack Order
+- Power Gem
+- Defend Order
+- Heal Order
+
+Roserade
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Magical Leaf
+- Sludge Bomb
+- Stun Spore
+- Synthesis
+
+
+=== TRAINER_KANTO_DATA_BOND_ZURI_40 ===
+Name: ZURI
+Class: Pkmn Trainer 1
+Pic: Cast Zuri
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Smeargle
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Voice
+- Aerial Ace
+- Thunder Wave
+- Mimic
+
+Chatot
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Chatter
+- Sing
+- Uproar
+- Mirror Move
+
+Ambipom
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Double Hit
+- Aerial Ace
+- Sand Attack
+- Swift
+
+Spinda
+Level: 40
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Dizzy Punch
+- Teeter Dance
+- Feint Attack
+- Psybeam
+
+
+=== TRAINER_KANTO_DATA_BOND_ZURI_50 ===
+Name: ZURI
+Class: Pkmn Trainer 1
+Pic: Cast Zuri
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Smeargle
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Voice
+- Aerial Ace
+- Thunder Wave
+- Mimic
+
+Chatot
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Chatter
+- Sing
+- Uproar
+- Mirror Move
+
+Ambipom
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Double Hit
+- Aerial Ace
+- Sand Attack
+- Swift
+
+Spinda
+Level: 50
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Dizzy Punch
+- Teeter Dance
+- Feint Attack
+- Psybeam
+
+
+=== TRAINER_KANTO_DATA_BOND_ZURI_60 ===
+Name: ZURI
+Class: Pkmn Trainer 1
+Pic: Cast Zuri
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Smeargle
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Voice
+- Aerial Ace
+- Thunder Wave
+- Mimic
+
+Chatot
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Chatter
+- Sing
+- Uproar
+- Mirror Move
+
+Ambipom
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Double Hit
+- Aerial Ace
+- Sand Attack
+- Swift
+
+Spinda
+Level: 60
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Dizzy Punch
+- Teeter Dance
+- Feint Attack
+- Psybeam
+
+
+=== TRAINER_KANTO_DATA_BOND_ZURI_70 ===
+Name: ZURI
+Class: Pkmn Trainer 1
+Pic: Cast Zuri
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Smeargle
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Hyper Voice
+- Aerial Ace
+- Thunder Wave
+- Mimic
+
+Chatot
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Chatter
+- Sing
+- Uproar
+- Mirror Move
+
+Ambipom
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Double Hit
+- Aerial Ace
+- Sand Attack
+- Swift
+
+Spinda
+Level: 70
+IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+- Dizzy Punch
+- Teeter Dance
+- Feint Attack
+- Psybeam

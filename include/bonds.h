@@ -34,6 +34,7 @@ void Bonds_OnStep(void);
 void Bonds_RenewOuting(void);
 bool32 Bonds_Rest(u32 who, bool32 atCenter);
 bool32 Bonds_Objective(u32 who, u32 objective);
+void Bonds_OnObjectiveFlag(u16 id);
 bool32 Bonds_Landmark(u32 who, u32 landmark);
 u32 Bonds_GiftPreview(u32 who, u32 value);
 bool32 Bonds_RecordGift(u32 who, u32 value);

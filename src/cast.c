@@ -264,6 +264,7 @@ void Cast_ClearPending(void)
 }
 void Cast_HidePortrait(void)
 {
+    Bonds_CancelMessage();
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     if (sPortraitSprite && sPortraitSprite <= MAX_SPRITES && gSprites[sPortraitSprite - 1].inUse
      && gSprites[sPortraitSprite - 1].template == &sPortraitTemplate)
@@ -400,6 +401,23 @@ void Cast_ShowPortrait(u32 who, u32 expression)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     ShowPortrait(who, expression);
+#endif
+}
+
+bool32 Cast_TryBondStory(void)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
+    static const u8 levels[] = {1,4,8,12,16,20};
+    u32 active=Cast_Active(),who,stage;
+    if(!active || !Cast_IsFollowing() || Pip_IsSceneSuspended()) return FALSE;
+    who=active-1;stage=gSaveBlock3Ptr->cast.loreStage[who];
+    if(stage>=6 || Bonds_Level(who)<levels[stage]) return FALSE;
+    Say(who,sCastCharacters[who].lore[stage],sCastCharacters[who].loreExpression[stage]);
+    gSaveBlock3Ptr->cast.loreStage[who]++;
+    Bonds_QueueObservation(who,TRUE);
+    return TRUE;
+#else
+    return FALSE;
 #endif
 }
 

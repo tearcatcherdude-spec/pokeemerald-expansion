@@ -1786,4 +1786,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 
 #if !IS_FRLG
 	.include "data/cast/recruitment.inc"
+	.include "data/bonds/journal.inc"
 #endif

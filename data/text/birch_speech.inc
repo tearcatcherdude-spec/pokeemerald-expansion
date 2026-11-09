@@ -32,8 +32,8 @@ gText_Birch_AndYouAre::
 	.string "And you are?$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+	.string "Which look would you prefer?\n"
+	.string "Choose the one that feels right.$"
 
 gText_Birch_WhatsYourName::
 	.string "All right.\n"
@@ -44,6 +44,8 @@ gText_Birch_SoItsPlayer::
 
 gText_Birch_YourePlayer::
 	.string "Ah, okay!\p"
+	.string "Your first journey as an adult!\n"
+	.string "There is no single right time to begin.\p"
 	.string "You're {PLAYER}{KUN} who's moving to my\n"
 	.string "hometown of LITTLEROOT.\l"
 	.string "I get it now!\p"

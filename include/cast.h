@@ -15,6 +15,7 @@ bool32 Cast_HasUsed(u32 id);
 bool32 Cast_Offer(u32 id);
 bool32 Cast_TrySay(u32 id);
 bool32 Cast_TryPersonalTalk(void);
+bool32 Cast_TryBondStory(void);
 void Cast_ClearPending(void);
 void Cast_HidePortrait(void);
 void Cast_ShowPortrait(u32 who, u32 expression);

@@ -139,6 +139,20 @@ bool32 Bonds_Objective(u32 who, u32 objective)
     return TRUE;
 }
 
+void Bonds_OnObjectiveFlag(u16 id)
+{
+    u32 objective,active;
+    if(id>=FLAG_WORLD_SCENE_0 && id<=FLAG_WORLD_SCENE_20)
+        objective=id-FLAG_WORLD_SCENE_0;
+    else if(id==FLAG_COZY_BERRY_TRADE)
+        objective=21;
+    else if(id>=0xA8E0 && id<0xA8EC)
+        objective=32+id-0xA8E0;
+    else return;
+    if(!Cast_IsFollowing() || !(active=Cast_Active())) return;
+    Bonds_Objective(active-1,objective);
+}
+
 bool32 Bonds_Landmark(u32 who, u32 landmark)
 {
     Bonds_EnsureInitialized();

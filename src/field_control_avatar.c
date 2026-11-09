@@ -1,4 +1,5 @@
 #include "global.h"
+#include "bond_journal.h"
 #include "cast.h"
 #include "pip.h"
 #include "kanto_progress.h"
@@ -217,6 +218,8 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     if (input->heldDirection && (input->dpadDirection == playerDirection) && (TrySetUpWalkIntoSignpostScript(&position, metatileBehavior, playerDirection) == TRUE))
         return TRUE;
 
+    if (input->pressedAButton && Bonds_TryMarker(position.x, position.y))
+        return TRUE;
     if (input->pressedAButton && TryStartInteractionScript(&position, metatileBehavior, playerDirection) == TRUE)
         return TRUE;
 

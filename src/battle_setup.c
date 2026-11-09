@@ -1,5 +1,6 @@
 #include "global.h"
 #include "bonds.h"
+#include "bond_journal.h"
 #include "data.h"
 #include "main.h"
 #include "battle.h"
@@ -1474,7 +1475,7 @@ void BattleSetup_StartTrainerBattle(void)
         }
     }
 
-    if (TRAINER_BATTLE_PARAM.earlyRival && GetRivalBattleFlags() & RIVAL_BATTLE_TUTORIAL)
+    if (TRAINER_BATTLE_PARAM.earlyRival && (GetRivalBattleFlags() & RIVAL_BATTLE_TUTORIAL) && !Bonds_IsTraining())
         gBattleTypeFlags |= BATTLE_TYPE_FIRST_BATTLE;
 
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)

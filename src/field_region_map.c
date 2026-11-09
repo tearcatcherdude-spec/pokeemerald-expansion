@@ -1,4 +1,5 @@
 #include "global.h"
+#include "bond_journal.h"
 #include "bg.h"
 #include "event_data.h"
 #include "field_effect.h"
@@ -149,7 +150,8 @@ static void FieldUpdateRegionMap(void)
     {
     case 0:
         InitRegionMap(&sFieldRegionMapHandler->regionMap, FALSE);
-        CreateRegionMapPlayerIcon(TAG_PLAYER_ICON, TAG_PLAYER_ICON);
+        if(!Bonds_IsMapView())
+            CreateRegionMapPlayerIcon(TAG_PLAYER_ICON, TAG_PLAYER_ICON);
         CreateRegionMapCursor(TAG_CURSOR, TAG_CURSOR);
         sFieldRegionMapHandler->state++;
         break;
@@ -187,6 +189,8 @@ static void FieldUpdateRegionMap(void)
                 sFieldRegionMapHandler->state++;
                 break;
         case MAP_INPUT_R_BUTTON:
+                if(Bonds_IsMapView())
+                    break;
                 if (sFieldRegionMapHandler->regionMap.mapSecType == MAPSECTYPE_CITY_CANFLY
                     && FlagGet(OW_FLAG_POKE_RIDER) && Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
                 {
@@ -232,7 +236,7 @@ static void PrintTitleWindowText(void)
 {
     static const u8 FlyPromptText[] = _("{R_BUTTON} FLY");
     const u8 *region;
-    if (IS_FRLG)
+    if (GetRegionMapType(Bonds_DisplayedMapSection(gMapHeader.regionMapSectionId)) == REGION_MAP_KANTO)
         region = gText_Kanto;
     else
         region = gText_Hoenn;
@@ -241,7 +245,7 @@ static void PrintTitleWindowText(void)
 
     FillWindowPixelBuffer(WIN_TITLE, PIXEL_FILL(1));
 
-    if (sFieldRegionMapHandler->regionMap.mapSecType == MAPSECTYPE_CITY_CANFLY
+    if (!Bonds_IsMapView() && sFieldRegionMapHandler->regionMap.mapSecType == MAPSECTYPE_CITY_CANFLY
         && FlagGet(OW_FLAG_POKE_RIDER) && Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
     {
         AddTextPrinterParameterized(WIN_TITLE, FONT_NORMAL, FlyPromptText, flyOffset, 1, 0, NULL);
