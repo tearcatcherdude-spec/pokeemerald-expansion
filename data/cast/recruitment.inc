@@ -216,6 +216,8 @@ Cast_EventScript_Companion::
 Cast_EventScript_Dismiss::
 	msgbox Cast_Text_Dismiss, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Cast_EventScript_Stay
+	callnative Script_CastFarewell
+	msgbox gStringVar4, MSGBOX_DEFAULT
 	callnative Script_CastDismiss
 	goto Cast_EventScript_Stay
 Cast_EventScript_Roster::

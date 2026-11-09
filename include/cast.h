@@ -24,6 +24,7 @@ void Script_CastAfterBattle(struct ScriptContext *ctx);
 void Script_CastJoin(struct ScriptContext *ctx);
 void Script_CastSwitchRoster(struct ScriptContext *ctx);
 void Script_CastDismiss(struct ScriptContext *ctx);
+void Script_CastFarewell(struct ScriptContext *ctx);
 void Script_CastBufferSpeaker(struct ScriptContext *ctx);
 void Script_CastHidePortrait(struct ScriptContext *ctx);
 #endif

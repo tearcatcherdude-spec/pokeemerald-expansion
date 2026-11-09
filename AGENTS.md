@@ -34,3 +34,22 @@ and migrating new fields. Do not increment the Kanto version and clear the whole
 bank: that would erase the user's regional story, trainer and scene progress.
 Keep badges/HM gates regional while preserving earned obedience and shared Hall
 of Fame history/access. Keep watch item ID 874 and the eleven group-75 map IDs.
+
+# Recruitable cast continuity
+
+PR #9, `feature/recruitable-cast`, extends the complete PR #8 Kanto build. Preserve
+all ten supplied walking sprites and all eighty expressions; their canonical
+asset hashes live in `data/cast/asset_manifest.json`. Text palettes normalize line
+endings for hashing; their ordered colour entries are exact. Portrait source
+binaries are tracked `_expressions.bin` / `_palette.bin`, not generated targets.
+
+The released 1004-byte prefix stays unchanged. Cast version 1 appends 604 bytes
+(total 1608, maximum 1624). Never reset the regional or cast banks to add content.
+Friendship, readiness after a lost battle, per-character canonical comment memory,
+and ordered lore all persist. Keep original Pip memory and all source-context IDs.
+Reserve the old dynamic graphic IDs at `OBJ_EVENT_GFX_PIP + 2 .. + 17`; appended
+cast graphics start after them. Keep the native trainer entries 0..623 unchanged.
+Run the cast source validator and actual compiled artwork verifier in addition to
+the original baseline and Kanto checks. Native emulator checks must use the exact
+packaged binary and normal-save migration; do not claim a continuous playthrough
+from arranged test positions or parties.

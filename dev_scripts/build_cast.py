@@ -53,6 +53,43 @@ def profiles():
  ]
 
 def register(characters):
+ retries=[
+  "I remember your WURMPLE. No need to repeat the observation. Would you like another four-Pokemon field test?",
+  "Your RATTATA has already cleared the interview. Ready to try that four-Pokemon battle again?",
+  "The footsteps are safely recorded. No extra walking assignment. Shall we try our battle again?",
+  "Your berry is already in the trail bread. No more ingredients needed. Want a rematch?",
+  "Your ABRA has passed the audition. No need for another disappearing act. Shall we rehearse our battle again?",
+  "I kept the rhythm you brought back. I am not making you walk in circles forever. Want another battle?",
+  "The first-aid kit is stocked, thanks to you. No second donation. Shall we run the battle test again?",
+  "We already asked NINCADA about the roots. I have kept the notes. Another four-Pokemon battle?",
+  "The clasp test is done. You do not owe me another POKE BALL. Ready for a rematch?",
+  "Your POTION is in the crew kit. That part is done. Want to try the four-Pokemon battle again?",
+ ]
+ rejoins=[
+  "Ready for more fieldwork together? I have left room in the notebook for unexpected lunches.",
+  "Heading out? I can walk with you. The roads are better with somebody worth talking to.",
+  "Want company again? I have a new tune. You are under no obligation to pretend the humming is finished.",
+  "Need a travelling baker? I have packed enough to make getting lost a catering decision.",
+  "Shall we travel together again? I have rehearsed a perfectly ordinary entrance. It was difficult.",
+  "Going somewhere? I would like to come along. That is the unedited version of the sentence.",
+  "Ready to head out together? The tools are packed and the more alarming prototypes are staying here.",
+  "Would you like company? I have questions about a local story, and no urgent need to invent the answers.",
+  "Shall we go together again? I have mended the useful things. We can admire the unnecessary ones on the way.",
+  "Want company on the road? I saved a blank page. We can decide what belongs on it together.",
+ ]
+ farewells=[
+  "I will be in OLDALE. If a bush appears to be covered in notes, please check whether it is me.",
+  "I will be back on ROUTE 2. Take your time. That is not courier advice; it is friend advice.",
+  "I will be on ROUTE 3. If you hear humming, the song may have acquired a second line.",
+  "Find me on ROUTE 104. I will save you something, unless MUNCHLAX has filed an exceptionally persuasive appeal.",
+  "Back to VERMILION for me. No smoke, no vanishing. Just a rather grateful goodbye.",
+  "I will be on ROUTE 102. Same sign, slightly less stationary poem. See you soon.",
+  "I will be in SLATEPORT. Knock before entering anything labelled experimental. Especially my lunch box.",
+  "Back to VERDANTURF. I will keep listening. Bring me a story if you feel like sharing one.",
+  "I will be in CERULEAN. If a sleeve tears, you know where to find me. For other reasons too.",
+  "I will be in CELADON. Keep noticing things. You do not have to turn every good moment into a masterpiece.",
+ ]
+ for i,c in enumerate(characters):c.update(retry=retries[i],rejoin=rejoins[i],farewell=farewells[i])
  # Retain trainer IDs 0..623 byte-for-byte; use previously unused defeat bits 0x770..779.
  p=ROOT/'src/data/trainers_kanto.party';s=p.read_text();s=s.split('\n=== TRAINER_KANTO_DATA_CAST_')[0].rstrip()+'\n'
  for i,c in enumerate(characters):
@@ -91,7 +128,7 @@ def register(characters):
  for i,c in enumerate(characters):
   n=c['name'];N=n.title();graphics += [f'const u8 ALIGNED(4) gCastPortrait_{N}[] = INCBIN_U8("graphics/cast_portraits/{n}_expressions.bin");',f'const u16 gCastPalette_{N}[] = INCBIN_U16("graphics/cast_portraits/{n}_palette.bin");']
   fields=[f'.graphics = OBJ_EVENT_GFX_CAST_{n.upper()}',f'.trainer = CAST_TRAINER_{n.upper()}',f'.requirement = CAST_REQ_{c["requirement"].upper()}',f'.value = '+(str(c['value']) if c['requirement']=='steps' else ('SPECIES_' if c['requirement']=='species' else 'ITEM_')+c['value']),f'.walkSlot = {0 if n=="ashe" else 1}']
-  for key in ['name','intro','request','ready','join']:fields.append('.'+key+' = '+ctext(n.upper() if key=='name' else c[key],None if key=='name' else n))
+  for key in ['name','intro','request','ready','retry','join','rejoin','farewell']:fields.append('.'+key+' = '+ctext(n.upper() if key=='name' else c[key],None if key=='name' else n))
   fields += ['.lore = {'+', '.join(ctext(t,n) for e,t in c['lore'])+'}', '.loreExpression = {'+', '.join(str(EXPRESSIONS.index(e)) for e,t in c['lore'])+'}']
   rows.append('    {'+',\n     '.join(fields)+'},')
  (ROOT/'src/data/cast_characters.h').write_text('\n'.join(graphics)+'\nstatic const u8 *const sCastPortraits[] = {'+', '.join('gCastPortrait_'+n.title() for n in NAMES)+'};\nstatic const u16 *const sCastPortraitPalettes[] = {'+', '.join('gCastPalette_'+n.title() for n in NAMES)+'};\nstatic const struct CastCharacter sCastCharacters[] = {\n'+'\n'.join(rows)+'\n};\n')
@@ -102,7 +139,7 @@ def register(characters):
  scripts += ['Cast_EventScript_AfterBattle::','\tcallnative Script_CastAfterBattle','\tgoto_if_eq VAR_RESULT, FALSE, Cast_EventScript_End','\tmsgbox gStringVar4, MSGBOX_YESNO','\tgoto_if_eq VAR_RESULT, NO, Cast_EventScript_End','\tcallnative Script_CastJoin','\tgoto_if_eq VAR_RESULT, FALSE, Cast_EventScript_Unavailable','\tgoto Cast_EventScript_End',
  'Cast_EventScript_Unavailable::','\tmsgbox Cast_Text_Unavailable, MSGBOX_DEFAULT','Cast_EventScript_End::','\tcallnative Script_CastHidePortrait','\trelease','\tend',
  'Cast_EventScript_Companion::','\tlockall','\tfacefollowernpc','\tmultichoice 0, 0, MULTI_PIP_COMPANION, FALSE','\tgoto_if_eq VAR_RESULT, 2, Cast_EventScript_Roster','\tgoto_if_eq VAR_RESULT, 1, Cast_EventScript_Dismiss','\tgoto_if_ne VAR_RESULT, 0, Cast_EventScript_Stay','\tcallnative Script_PipChooseDialogue','\tgoto_if_eq VAR_RESULT, FALSE, Cast_EventScript_Stay','\tmsgbox gStringVar4, MSGBOX_DEFAULT','\tgoto Cast_EventScript_Stay',
- 'Cast_EventScript_Dismiss::','\tmsgbox Cast_Text_Dismiss, MSGBOX_YESNO','\tgoto_if_eq VAR_RESULT, NO, Cast_EventScript_Stay','\tcallnative Script_CastDismiss','\tgoto Cast_EventScript_Stay',
+ 'Cast_EventScript_Dismiss::','\tmsgbox Cast_Text_Dismiss, MSGBOX_YESNO','\tgoto_if_eq VAR_RESULT, NO, Cast_EventScript_Stay','\tcallnative Script_CastFarewell','\tmsgbox gStringVar4, MSGBOX_DEFAULT','\tcallnative Script_CastDismiss','\tgoto Cast_EventScript_Stay',
  'Cast_EventScript_Roster::','\tmultichoicegrid 0, 0, MULTI_CAST_ROSTER, 3, FALSE','\tgoto_if_eq VAR_RESULT, MULTI_B_PRESSED, Cast_EventScript_Stay','\tgoto_if_eq VAR_RESULT, 11, Cast_EventScript_Stay','\tcallnative Script_CastSwitchRoster','\tgoto_if_ne VAR_RESULT, FALSE, Cast_EventScript_Stay','\tmsgbox Cast_Text_Locked, MSGBOX_DEFAULT','Cast_EventScript_Stay::','\tcallnative Script_CastHidePortrait','\treleaseall','\tend',
  'Cast_Text_Unavailable::','\t.string "Your current escort needs you.\\nThere is no room to change company\\lright now.$"','Cast_Text_Locked::','\t.string "Befriend that trainer first.\\nYour current companion will stay.$"','Cast_Text_Dismiss::','\t.string "Part ways for now?\\nThey will return to where you met.$"']
  (ROOT/'data/cast/recruitment.inc').write_text('\n'.join(scripts)+'\n')

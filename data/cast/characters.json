@@ -44,6 +44,9 @@
         "I wrote home about you. Mother asked whether my new colleague eats properly. Congratulations. You have passed peer review."
       ]
     ],
+    "retry": "I remember your WURMPLE. No need to repeat the observation. Would you like another four-Pokemon field test?",
+    "rejoin": "Ready for more fieldwork together? I have left room in the notebook for unexpected lunches.",
+    "farewell": "I will be in OLDALE. If a bush appears to be covered in notes, please check whether it is me.",
     "x": 11,
     "y": 15,
     "local_id": 8
@@ -93,6 +96,9 @@
         "Travelling with you feels less like making up for a mistake. More like going somewhere. I could get used to that."
       ]
     ],
+    "retry": "Your RATTATA has already cleared the interview. Ready to try that four-Pokemon battle again?",
+    "rejoin": "Heading out? I can walk with you. The roads are better with somebody worth talking to.",
+    "farewell": "I will be back on ROUTE 2. Take your time. That is not courier advice; it is friend advice.",
     "x": 12,
     "y": 61,
     "local_id": 8
@@ -142,6 +148,9 @@
         "I am writing a song I might actually play for people. There is a part for footsteps. Yours, if that is all right."
       ]
     ],
+    "retry": "The footsteps are safely recorded. No extra walking assignment. Shall we try our battle again?",
+    "rejoin": "Want company again? I have a new tune. You are under no obligation to pretend the humming is finished.",
+    "farewell": "I will be on ROUTE 3. If you hear humming, the song may have acquired a second line.",
     "x": 12,
     "y": 9,
     "local_id": 12
@@ -191,6 +200,9 @@
         "When I open a place again, there will be a spare chair. And a smoke alarm with union representation."
       ]
     ],
+    "retry": "Your berry is already in the trail bread. No more ingredients needed. Want a rematch?",
+    "rejoin": "Need a travelling baker? I have packed enough to make getting lost a catering decision.",
+    "farewell": "Find me on ROUTE 104. I will save you something, unless MUNCHLAX has filed an exceptionally persuasive appeal.",
     "x": 20,
     "y": 53,
     "local_id": 37
@@ -240,6 +252,9 @@
         "You never ask me to be impressive all the time. It is an unusual luxury. I am considering a less dramatic thank-you."
       ]
     ],
+    "retry": "Your ABRA has passed the audition. No need for another disappearing act. Shall we rehearse our battle again?",
+    "rejoin": "Shall we travel together again? I have rehearsed a perfectly ordinary entrance. It was difficult.",
+    "farewell": "Back to VERMILION for me. No smoke, no vanishing. Just a rather grateful goodbye.",
     "x": 15,
     "y": 18,
     "local_id": 11
@@ -289,6 +304,9 @@
         "I sent her a new poem. No disguise, no punchline. I would like to read it to you one day. When my knees stop writing their own review."
       ]
     ],
+    "retry": "I kept the rhythm you brought back. I am not making you walk in circles forever. Want another battle?",
+    "rejoin": "Going somewhere? I would like to come along. That is the unedited version of the sentence.",
+    "farewell": "I will be on ROUTE 102. Same sign, slightly less stationary poem. See you soon.",
     "x": 40,
     "y": 12,
     "local_id": 12
@@ -338,6 +356,9 @@
         "I have drawn a folding rest seat. You are listed as a consultant. Payment is one extremely official sit-down."
       ]
     ],
+    "retry": "The first-aid kit is stocked, thanks to you. No second donation. Shall we run the battle test again?",
+    "rejoin": "Ready to head out together? The tools are packed and the more alarming prototypes are staying here.",
+    "farewell": "I will be in SLATEPORT. Knock before entering anything labelled experimental. Especially my lunch box.",
     "x": 20,
     "y": 22,
     "local_id": 38
@@ -387,6 +408,9 @@
         "I am writing one about these travels. You do not have to do anything legendary. Someone remembering you kindly is enough."
       ]
     ],
+    "retry": "We already asked NINCADA about the roots. I have kept the notes. Another four-Pokemon battle?",
+    "rejoin": "Would you like company? I have questions about a local story, and no urgent need to invent the answers.",
+    "farewell": "Back to VERDANTURF. I will keep listening. Bring me a story if you feel like sharing one.",
     "x": 13,
     "y": 13,
     "local_id": 8
@@ -436,6 +460,9 @@
         "I have a sketch of our travelling clothes. Every pocket works. The angry sandwich has finally approved the collection."
       ]
     ],
+    "retry": "The clasp test is done. You do not owe me another POKE BALL. Ready for a rematch?",
+    "rejoin": "Shall we go together again? I have mended the useful things. We can admire the unnecessary ones on the way.",
+    "farewell": "I will be in CERULEAN. If a sleeve tears, you know where to find me. For other reasons too.",
     "x": 23,
     "y": 23,
     "local_id": 15
@@ -485,6 +512,9 @@
         "There is a new mural in my sketchbook. Everyone we have helped gets a little space. Yes, the bent-spoon birds are staying."
       ]
     ],
+    "retry": "Your POTION is in the crew kit. That part is done. Want to try the four-Pokemon battle again?",
+    "rejoin": "Want company on the road? I saved a blank page. We can decide what belongs on it together.",
+    "farewell": "I will be in CELADON. Keep noticing things. You do not have to turn every good moment into a masterpiece.",
     "x": 21,
     "y": 21,
     "local_id": 18

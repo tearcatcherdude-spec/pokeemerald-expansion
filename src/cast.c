@@ -23,7 +23,7 @@ enum { CAST_REQ_STEPS, CAST_REQ_SPECIES, CAST_REQ_ITEM };
 struct CastCharacter {
     u16 graphics, trainer, requirement, value;
     u8 walkSlot;
-    const u8 *name, *intro, *request, *ready, *join;
+    const u8 *name, *intro, *request, *ready, *retry, *join, *rejoin, *farewell;
     const u8 *lore[6];
     u8 loreExpression[6];
 };
@@ -293,7 +293,7 @@ void Script_CastRecruitStatus(struct ScriptContext *ctx)
     }
     else if (HasRequirement(sRecruitId))
     {
-        Say(sRecruitId, c->ready, 1);
+        Say(sRecruitId, (p->ready & (1 << sRecruitId)) ? c->retry : c->ready, 1);
         gSpecialVar_Result = 1;
     }
     else
@@ -322,8 +322,9 @@ void Script_CastAfterBattle(struct ScriptContext *ctx)
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     if (HasTrainerBeenFought(sCastCharacters[sRecruitId].trainer))
     {
+        bool32 alreadyFriends = (gSaveBlock3Ptr->cast.recruited & (1 << sRecruitId)) != 0;
         gSaveBlock3Ptr->cast.recruited |= 1 << sRecruitId;
-        Say(sRecruitId, sCastCharacters[sRecruitId].join, 1);
+        Say(sRecruitId, alreadyFriends ? sCastCharacters[sRecruitId].rejoin : sCastCharacters[sRecruitId].join, 1);
         gSpecialVar_Result = TRUE;
     }
 #endif
@@ -392,5 +393,14 @@ void Cast_ShowPortrait(u32 who, u32 expression)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     ShowPortrait(who, expression);
+#endif
+}
+
+void Script_CastFarewell(struct ScriptContext *ctx)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
+    u32 active = Cast_Active();
+    if (active && Cast_IsFollowing())
+        Say(active - 1, sCastCharacters[active - 1].farewell, 1);
 #endif
 }
