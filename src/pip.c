@@ -100,7 +100,7 @@ static const u8 *FreshNPCOffer(const u8 *text)
     u32 id = MemoryIndex(text);
     EnsureMemory();
     if (id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text)
-     || (!Cast_Active() && (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8)))))
+     || (!Cast_IsFollowing() && (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8)))))
         return NULL;
     return text;
 }
@@ -175,9 +175,9 @@ static void OfferReaction(const u8 *text)
     u32 id = MemoryIndex(text);
     EnsureMemory();
     if (id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text)
-     || (!Cast_Active() && (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8)))))
+     || (!Cast_IsFollowing() && (gSaveBlock3Ptr->pipOffered[id / 8] & (1 << (id % 8)))))
         return;
-    if (Cast_Active())
+    if (Cast_IsFollowing())
     {
         if (!Cast_Offer(id)) return;
     }
@@ -210,11 +210,9 @@ bool32 Pip_IsSceneSuspended(void)
 void Pip_RefreshIdentity(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
+    Cast_RefreshIdentity();
     if (Cast_IsFollowing())
-    {
-        Cast_RefreshIdentity();
         return;
-    }
     if (Pip_IsFollowing())
     {
         // Rebind saved ROM pointers and upgrade the former placeholder graphic.
@@ -299,7 +297,7 @@ bool32 Pip_HasHeard(const u8 *text)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
     u32 id = MemoryIndex(text);
-    if (Cast_Active()) return Cast_HasUsed(id);
+    if (Cast_IsFollowing()) return Cast_HasUsed(id);
     EnsureMemory();
     return id >= ARRAY_COUNT(sPipMemoryCatalogue)
         || (gSaveBlock3Ptr->pipHeard[id / 8] & (1 << (id % 8))) != 0;
@@ -311,7 +309,7 @@ bool32 Pip_TrySay(const u8 *text)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
     u32 id = MemoryIndex(text);
-    if (Cast_Active())
+    if (Cast_IsFollowing())
         return !sSceneSuspended && Cast_TrySay(id);
     if (!Pip_IsFollowing() || sSceneSuspended || id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text))
         return FALSE;

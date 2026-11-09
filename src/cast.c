@@ -31,9 +31,9 @@ struct CastComment { const u8 *text; u8 expression; u16 topic; };
 #include "data/cast_characters.h"
 #include "data/cast_dialogue.h"
 static EWRAM_DATA u8 sRecruitId = 0;
-static EWRAM_DATA u16 sPending = CAST_CONTEXT_CAPACITY;
+static EWRAM_DATA u16 sPending = 0; // source ID + 1; zero means no pending offer.
 static EWRAM_DATA u8 sPendingCharacter = 0;
-static EWRAM_DATA u8 sPortraitSprite = MAX_SPRITES;
+static EWRAM_DATA u8 sPortraitSprite = 0; // sprite ID + 1; zero means no portrait.
 static const struct OamData sPortraitOam = { .shape = 0, .size = 3, .priority = 0 };
 static const struct SpriteTemplate sPortraitTemplate = {
     .tileTag = CAST_PORTRAIT_TAG, .paletteTag = CAST_PORTRAIT_TAG,
@@ -57,8 +57,9 @@ static void ShowPortrait(u32 who, u32 expression)
         return;
     }
     // 64x64, entirely above the normal dialogue window; independent OBJ palette.
-    sPortraitSprite = CreateSprite(&sPortraitTemplate, 40, 72, 0);
-    if (sPortraitSprite == MAX_SPRITES)
+    u32 sprite = CreateSprite(&sPortraitTemplate, 40, 72, 0);
+    sPortraitSprite = sprite < MAX_SPRITES ? sprite + 1 : 0;
+    if (!sPortraitSprite)
     {
         FreeSpriteTilesByTag(CAST_PORTRAIT_TAG);
         FreeSpritePaletteByTag(CAST_PORTRAIT_TAG);
@@ -165,6 +166,12 @@ bool32 Cast_IsFollowing(void)
 void Cast_RefreshIdentity(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
+    if (!Cast_IsFollowing())
+    {
+        gSaveBlock3Ptr->cast.active = 0;
+        gSaveBlock3Ptr->cast.hidden = 0;
+        return;
+    }
     if (Cast_IsFollowing())
     {
         SetFollowerNPCData(FNPC_DATA_GFX_ID, sCastCharacters[Cast_Active() - 1].graphics);
@@ -201,7 +208,7 @@ bool32 Cast_Offer(u32 id)
         return FALSE;
     memoryId = sCastContextMemoryId[active - 1][id];
     gSaveBlock3Ptr->cast.used[active - 1][memoryId / 8] |= 1 << (memoryId % 8);
-    sPending = id;
+    sPending = id + 1;
     sPendingCharacter = active;
     return TRUE;
 #endif
@@ -217,7 +224,7 @@ bool32 Cast_TrySay(u32 id)
     if (!Cast_IsFollowing() || !active || id >= CAST_SOURCE_COUNT)
         return FALSE;
     who = active - 1;
-    if (Cast_HasUsed(id) && !(sPending == id && sPendingCharacter == active))
+    if (Cast_HasUsed(id) && !(sPending == id + 1 && sPendingCharacter == active))
         return FALSE;
     Cast_ClearPending();
     comment = &sCastComments[who][id];
@@ -245,17 +252,17 @@ bool32 Cast_TrySay(u32 id)
 void Cast_ClearPending(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
-    sPending = CAST_CONTEXT_CAPACITY;
+    sPending = 0;
     sPendingCharacter = 0;
 #endif
 }
 void Cast_HidePortrait(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
-    if (sPortraitSprite < MAX_SPRITES && gSprites[sPortraitSprite].inUse
-     && gSprites[sPortraitSprite].template == &sPortraitTemplate)
-        DestroySprite(&gSprites[sPortraitSprite]);
-    sPortraitSprite = MAX_SPRITES;
+    if (sPortraitSprite && sPortraitSprite <= MAX_SPRITES && gSprites[sPortraitSprite - 1].inUse
+     && gSprites[sPortraitSprite - 1].template == &sPortraitTemplate)
+        DestroySprite(&gSprites[sPortraitSprite - 1]);
+    sPortraitSprite = 0;
     FreeSpriteTilesByTag(CAST_PORTRAIT_TAG);
     FreeSpritePaletteByTag(CAST_PORTRAIT_TAG);
 #endif
@@ -354,7 +361,7 @@ void Script_CastDismiss(struct ScriptContext *ctx)
 void Script_CastBufferSpeaker(struct ScriptContext *ctx)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
-    u32 active = Cast_Active();
+    u32 active = Cast_IsFollowing() ? Cast_Active() : 0;
     StringCopy(gStringVar1, active ? sCastCharacters[active - 1].name : COMPOUND_STRING("PIP"));
 #else
     StringCopy(gStringVar1, COMPOUND_STRING("PIP"));
