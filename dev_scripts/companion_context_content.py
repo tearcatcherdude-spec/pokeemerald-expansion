@@ -634,3 +634,7 @@ from companion_route_people import ROWS as ROUTE_PEOPLE_ROWS
 ROWS.extend(ROUTE_PEOPLE_ROWS)
 from companion_kanto_interiors_routes import ROWS as KANTO_INTERIOR_ROUTE_ROWS
 ROWS.extend(KANTO_INTERIOR_ROUTE_ROWS)
+from companion_gym_people import ROWS as GYM_PEOPLE_ROWS
+ROWS.extend(GYM_PEOPLE_ROWS)
+from companion_hoenn_interiors import ROWS as HOENN_INTERIOR_ROWS
+ROWS.extend(HOENN_INTERIOR_ROWS)
