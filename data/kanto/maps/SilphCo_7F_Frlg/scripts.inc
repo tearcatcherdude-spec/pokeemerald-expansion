@@ -329,7 +329,7 @@ SilphCo_7F_Text_Grunt1PostBattle::
 	.string "My brothers will repay the favor!$"
 
 SilphCo_7F_Text_Grunt2Intro::
-	.string "A child intruder?\n"
+	.string "An intruding trainer?\n"
 	.string "That must be you!$"
 
 SilphCo_7F_Text_Grunt2Defeat::

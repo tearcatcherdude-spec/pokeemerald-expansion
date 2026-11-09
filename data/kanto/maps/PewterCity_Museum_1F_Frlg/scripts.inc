@@ -196,7 +196,7 @@ PewterCity_Museum_1F_EventScript_KabutopsFossil::
 
 PewterCity_Museum_1F_Text_Its50YForChildsTicket::
 	.string "Yes, yes.\n"
-	.string "It's ¥50 for a child's ticket.\p"
+	.string "It's ¥50 for a visitor's ticket.\p"
 	.string "Would you like to come in?$"
 
 PewterCity_Museum_1F_Text_ComeAgain::

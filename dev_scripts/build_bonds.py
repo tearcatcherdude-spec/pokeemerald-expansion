@@ -1,6 +1,6 @@
 """Build append-only bond content; never alter existing map events or terrain."""
 import json, pathlib, struct, textwrap, re
-from bond_scenes import TASKS, GIFTS, GIFT_REPLIES, REWARDS, CHALLENGES
+from bond_scenes import TASKS, GIFTS, GIFT_REPLIES, REWARDS, CHALLENGES, NEIGHBOR_QUESTIONS
 from bond_teams import TEAMS, EVOLUTIONS
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 NAMES = ['silas','kade','ashe','nico','riven','emi','vera','lume','mochi','zuri']
@@ -90,6 +90,9 @@ def main():
                 responses=[[ra,rb,'We can take more time. The invitation will still be here.']]
             elif stage==3:
                 for q,c,d,rc,rd in CHALLENGES[name]:
+                    questions.append(q); options.append([c,d]); responses.append([rc,rd])
+            elif name=='zuri' and stage==1:
+                for q,c,d,rc,rd in NEIGHBOR_QUESTIONS:
                     questions.append(q); options.append([c,d]); responses.append([rc,rd])
             expression=[7,0,3,0,1][stage]
             row={'character':name,'stage':stage+1,'intro':intro,'questions':questions,'options':options,'responses':responses,'ending':ending,'expression':expression}

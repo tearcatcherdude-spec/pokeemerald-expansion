@@ -25,6 +25,8 @@
 #include "pokemon.h"
 #include "money.h"
 #include "script_pokemon_util.h"
+#include "metatile_behavior.h"
+#include "constants/event_objects.h"
 
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
 struct BondEvent
@@ -71,6 +73,10 @@ static EWRAM_DATA struct Bag sTrialBag = {};
 static EWRAM_DATA struct Pokemon sTrialParty[PARTY_SIZE] = {};
 static EWRAM_DATA u8 sTrialPartyCount = 0;
 static EWRAM_DATA u8 sPreviewBand = 0;
+static EWRAM_DATA u8 sStageActors[3] = {};
+static EWRAM_DATA u16 sStageMap = 0;
+static void ClearStage(void);
+static void StageActors(u32 index);
 static const struct OamData sHeartOam={.shape=0,.size=1,.priority=1};
 static const struct SpriteTemplate sHeartTemplate={
     .tileTag=0x7C51,.paletteTag=0x7C51,.oam=&sHeartOam,
@@ -289,6 +295,7 @@ void Script_BondsMeet(struct ScriptContext *ctx)
     if(!AtMeeting(index))
     { Text(COMPOUND_STRING("Meet at the named heart marker.\nYou must walk there normally.$"));return; }
     sSceneEvent=index+1;sScenePage=0;sSceneChoice=0;sSceneRound=0;sTrialWon=FALSE;
+    StageActors(index);
     gSpecialVar_Result=TRUE;
 }
 void Script_BondsRest(struct ScriptContext *ctx)
@@ -324,8 +331,11 @@ void Script_BondsInterest(struct ScriptContext *ctx)
     if(choice>=4) { Text(COMPOUND_STRING("You leave the conversation for later.$"));return; }
     if(!Cast_IsFollowing() || Cast_Active()!=sWho+1)
     { Text(COMPOUND_STRING("Talk about this while together.$"));return; }
+    if(choice==3 && (Bonds_GetProgress()->people[sWho].hearts<5 || !AtMeeting(sWho*5+4)))
+    { Text(COMPOUND_STRING("Complete the final personal event,\nthen revisit its meeting place to\ldiscuss a new commitment.$"));return; }
     if(Bonds_GetProgress()->people[sWho].hearts<3
-     || (choice!=1 && !AtMeeting(sWho*5+(Bonds_GetProgress()->people[sWho].hearts>=4?4:2))))
+     || (choice!=1 && !AtMeeting(sWho*5+2)
+      && !(Bonds_GetProgress()->people[sWho].hearts>=4 && AtMeeting(sWho*5+4))))
     { Text(COMPOUND_STRING("Revisit your third-event meeting\nplace after that event, or your\lfinal meeting place when ready.$"));return; }
     if(!Bonds_SetInterest(sWho,choices[choice]))
     { Text(COMPOUND_STRING("Interest opens at the third event.\nCommitment opens at the last event.\lOnly one committed relationship\lis possible. End it respectfully\lbefore making another commitment.$"));return; }
@@ -420,7 +430,7 @@ void Script_BondsSceneChoice(struct ScriptContext *ctx)
 }
 void Script_BondsSceneComplete(struct ScriptContext *ctx)
 {
-    u32 index,stage,count;
+    u32 index,stage,count,beforeExp;
     gSpecialVar_Result=FALSE;
     if(!sSceneEvent || sScenePage!=5) return;
     index=sSceneEvent-1;stage=index%5;
@@ -430,6 +440,7 @@ void Script_BondsSceneComplete(struct ScriptContext *ctx)
     {Text(COMPOUND_STRING("Make room for the RARE CANDY reward.\nThis event stays available; no\lreward or heart was consumed.$"));sSceneEvent=0;return;}
     if(count && !AddBagItem(ITEM_RARE_CANDY,count))
     {Text(COMPOUND_STRING("The reward could not be stored.\nThe event stays available.$"));sSceneEvent=0;return;}
+    beforeExp=Bonds_GetProgress()->people[sWho].exp;
     if(!Bonds_CompleteEvent(sWho,stage))
     {
         if(count) RemoveBagItem(ITEM_RARE_CANDY,count);
@@ -450,7 +461,9 @@ void Script_BondsSceneComplete(struct ScriptContext *ctx)
         StringAppend(gStringVar4,sBondKeepsakes[sWho]);
         StringAppend(gStringVar4,COMPOUND_STRING("\lRecorded in the journal.\lBond Level: MAX."));
     }
-    else {StringAppend(gStringVar4,COMPOUND_STRING("Bond EXP +"));Number(stage==3?100:60);}
+    else if(Bonds_GetProgress()->people[sWho].exp>beforeExp)
+    {StringAppend(gStringVar4,COMPOUND_STRING("Bond EXP +"));Number(Bonds_GetProgress()->people[sWho].exp-beforeExp);}
+    else StringAppend(gStringVar4,COMPOUND_STRING("Bond EXP: MAX."));
     sSceneEvent=0;gSpecialVar_Result=TRUE;
 }
 void Script_BondsTutorMenu(struct ScriptContext *ctx)
@@ -473,6 +486,7 @@ void Script_BondsTutor(struct ScriptContext *ctx)
 }
 void Script_BondsClose(struct ScriptContext *ctx)
 {
+    ClearStage();
     sSceneEvent=0;sScenePage=0;sSceneRound=0;
     sTrialWon=FALSE;
     Cast_HidePortrait();
@@ -499,6 +513,8 @@ void Bonds_UpdateField(void)
     u32 active;
     Bonds_EnsureInitialized();
     if(!Bonds_GetProgress()) return;
+    if(sStageMap && !OnMap(sStageMap))
+    {ClearStage();sSceneEvent=0;sScenePage=0;}
     if(!ScriptContext_IsEnabled() && !ArePlayerFieldControlsLocked())
     {
         active=Cast_IsFollowing()?Cast_Active():0;
@@ -613,6 +629,66 @@ void Script_BondsViewMap(struct ScriptContext *ctx)
     sMapView=TRUE;
     FieldInitRegionMap(ReturnFromBondMap);
 }
+static void ClearStage(void)
+{
+    for(u32 i=0;i<3;i++)
+    {
+        u32 id=sStageActors[i];
+        if(id && id<=OBJECT_EVENTS_COUNT && gObjectEvents[id-1].active
+         && gObjectEvents[id-1].localId==0xF0+i)
+            RemoveObjectEvent(&gObjectEvents[id-1]);
+        sStageActors[i]=0;
+    }
+    sStageMap=0;
+}
+static bool32 StageTile(s16 x,s16 y,u32 elevation)
+{
+    if(!AreCoordsInsidePlayerMap(x+7,y+7) || MapGridGetCollisionAt(x+7,y+7)
+     || MapGridGetElevationAt(x+7,y+7)!=elevation
+     || MetatileBehavior_IsSurfableWaterOrUnderwater(MapGridGetMetatileBehaviorAt(x+7,y+7))) return FALSE;
+    for(u32 i=0;i<OBJECT_EVENTS_COUNT;i++)
+        if(gObjectEvents[i].active && gObjectEvents[i].currentCoords.x==x+7 && gObjectEvents[i].currentCoords.y==y+7) return FALSE;
+    for(u32 i=0;i<gMapHeader.events->warpCount;i++)
+        if(abs(gMapHeader.events->warps[i].x-x)+abs(gMapHeader.events->warps[i].y-y)<=1) return FALSE;
+    for(u32 i=0;i<gMapHeader.events->coordEventCount;i++)
+        if(gMapHeader.events->coordEvents[i].x==x && gMapHeader.events->coordEvents[i].y==y) return FALSE;
+    return TRUE;
+}
+static void StageActors(u32 index)
+{
+    u16 graphics[3];u32 count=0,who=index/5,stage=index%5;
+    const struct BondEvent *e=&sBondEvents[index];
+    ClearStage();
+    if(who==0 && stage==0) graphics[count++]=OBJ_EVENT_GFX_SPECIES(WURMPLE);
+    if(who==2 && stage==0) graphics[count++]=OBJ_EVENT_GFX_SPECIES(WHISMUR);
+    if(who==3 && stage==0) graphics[count++]=OBJ_EVENT_GFX_MAN_1;
+    if(who==6 && (stage==0 || stage==3)) graphics[count++]=OBJ_EVENT_GFX_SPECIES(ELECTRIKE);
+    if((who==5 || who==2) && stage==3)
+    {graphics[count++]=OBJ_EVENT_GFX_WOMAN_1;graphics[count++]=OBJ_EVENT_GFX_MAN_1;graphics[count++]=OBJ_EVENT_GFX_EXPERT_M;}
+    if(who==4 && (stage==0 || stage==3))
+    {graphics[count++]=OBJ_EVENT_GFX_MAN_1;graphics[count++]=OBJ_EVENT_GFX_WOMAN_1;}
+    if(who==9 && stage==1)
+    {graphics[count++]=OBJ_EVENT_GFX_WOMAN_1;graphics[count++]=OBJ_EVENT_GFX_MAN_1;graphics[count++]=OBJ_EVENT_GFX_EXPERT_M;}
+    sStageMap=e->map;
+    for(u32 i=0;i<count;i++)
+    {
+        bool32 spawned=FALSE;
+        for(s32 radius=1;radius<=4 && !spawned;radius++)
+            for(s32 dy=-radius;dy<=radius && !spawned;dy++)
+                for(s32 dx=-radius;dx<=radius && !spawned;dx++)
+                {
+                    s16 x=e->x+dx,y=e->y+dy;
+                    u32 id;
+                    struct ObjectEventTemplate actor={0};
+                    if(abs(dx)+abs(dy)!=radius || !StageTile(x,y,MapGridGetElevationAt(e->x+7,e->y+7))) continue;
+                    actor.localId=0xF0+i;actor.graphicsId=graphics[i];actor.kind=OBJ_KIND_NORMAL;
+                    actor.x=x;actor.y=y;actor.elevation=MapGridGetElevationAt(x+7,y+7);
+                    actor.movementType=MOVEMENT_TYPE_FACE_DOWN;
+                    id=SpawnSpecialObjectEvent(&actor);
+                    if(id<OBJECT_EVENTS_COUNT) {sStageActors[i]=id+1;spawned=TRUE;}
+                }
+    }
+}
 static u32 TrialBand(void)
 {
     u32 hoenn=0,kanto=0;
@@ -698,10 +774,14 @@ void Script_BondsTrainEnd(struct ScriptContext *ctx)
         gPartiesCount[B_TRAINER_PLAYER]=sTrialPartyCount;
     }
     else for(u32 i=0;i<gPartiesCount[B_TRAINER_PLAYER];i++)
-    {
-        u32 held=GetMonData(&sTrialParty[i],MON_DATA_HELD_ITEM);
-        SetMonData(&gParties[B_TRAINER_PLAYER][i],MON_DATA_HELD_ITEM,&held);
-    }
+        for(u32 j=0;j<sTrialPartyCount;j++)
+            if(GetMonData(&gParties[B_TRAINER_PLAYER][i],MON_DATA_PERSONALITY)==GetMonData(&sTrialParty[j],MON_DATA_PERSONALITY)
+             && GetMonData(&gParties[B_TRAINER_PLAYER][i],MON_DATA_OT_ID)==GetMonData(&sTrialParty[j],MON_DATA_OT_ID))
+            {
+                u32 held=GetMonData(&sTrialParty[j],MON_DATA_HELD_ITEM);
+                SetMonData(&gParties[B_TRAINER_PLAYER][i],MON_DATA_HELD_ITEM,&held);
+                break;
+            }
     HealPlayerParty();sTraining=FALSE;
     Text(won?COMPOUND_STRING("Practice complete. Your team and\nsupplies recover. Later rematches\lgive no Bond EXP or repeated rewards.$"):COMPOUND_STRING("Your team and supplies recover.\nNo money, Bond EXP or hearts lost.\lRetry for free or take the\lnonbattle challenge another time.$"));
     if(won && sTrainingEvent) {sTrialWon=TRUE;sScenePage=4;gSpecialVar_Result=2;}

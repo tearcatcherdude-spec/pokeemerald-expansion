@@ -1213,20 +1213,38 @@
     {
       "character": "zuri",
       "stage": 2,
-      "intro": "Three neighbors shared what they wanted remembered: a garden, a meeting place, and somebody who always brought an extra chair.",
+      "intro": "Three neighbors are here to share what they want remembered. I brought a portable board, and an extremely important permission question.",
       "questions": [
-        "How would you like to respond?"
+        "How would you like to respond?",
+        "NEIGHBOR: The meeting place matters to me. We made friends there after I moved. You can use my words if you like.",
+        "NEIGHBOR: My friend always brought an extra chair. I would like that in the panel, if there is room."
       ],
       "options": [
         [
-          "Include all three voices",
-          "Ask before drawing them"
+          "Ask about the garden",
+          "Ask permission first"
+        ],
+        [
+          "Ask how to credit them",
+          "Ask about the meeting place"
+        ],
+        [
+          "Make room for the chair",
+          "Ask about its meaning"
         ]
       ],
       "responses": [
         [
-          "Different opinions fit beside each other. A community is inconveniently larger than my first composition.",
-          "Yes. Being willing to talk is not the same as agreeing to become a public portrait."
+          "NEIGHBOR: The little garden is my favorite place to sit. A drawing of the flowers would be lovely. I would rather not be in the picture myself.",
+          "NEIGHBOR: Thank you for asking. The garden, please. Not a portrait of me. I would like to choose that part."
+        ],
+        [
+          "NEIGHBOR: Use my first name beside the quote, please. I want to recognize my own voice.",
+          "NEIGHBOR: Nothing grand. A place where somebody learned my name. That is what I would like remembered."
+        ],
+        [
+          "NEIGHBOR: Thank you. Such a small thing to draw, for something that made a place for so many people.",
+          "NEIGHBOR: It meant you could arrive without having to ask whether you were welcome."
         ]
       ],
       "ending": "I have their permission for a small panel. No borrowed wall, no claim to have spoken for everybody.",

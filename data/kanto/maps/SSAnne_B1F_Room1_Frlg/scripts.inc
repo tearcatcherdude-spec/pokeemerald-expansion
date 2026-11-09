@@ -17,7 +17,7 @@ SSAnne_B1F_Room1_Text_PhillipIntro::
 
 SSAnne_B1F_Room1_Text_PhillipDefeat::
 	.string "Argh!\n"
-	.string "Beaten by a kid!$"
+	.string "Beaten by a newcomer!$"
 
 SSAnne_B1F_Room1_Text_PhillipPostBattle::
 	.string "When we're out at sea, jellyfish\n"

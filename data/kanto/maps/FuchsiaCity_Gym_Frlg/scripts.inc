@@ -155,7 +155,7 @@ FuchsiaCity_Gym_Text_KaydenDefeat::
 FuchsiaCity_Gym_Text_KaydenPostBattle::
 	.string "So, you mix brawn with brains?\n"
 	.string "Good strategy!\p"
-	.string "That's remarkable for a child\n"
+	.string "That's remarkable for a trainer\n"
 	.string "TRAINER.$"
 
 FuchsiaCity_Gym_Text_KirkIntro::

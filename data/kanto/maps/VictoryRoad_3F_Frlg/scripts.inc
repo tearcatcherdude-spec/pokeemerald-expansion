@@ -83,7 +83,7 @@ Text_DoubleEdgeTaught::
 	.string "out!$"
 
 VictoryRoad_3F_Text_GeorgeIntro::
-	.string "I heard rumors of a child prodigy.$"
+	.string "I heard about a promising newcomer.$"
 
 VictoryRoad_3F_Text_GeorgeDefeat::
 	.string "The rumors were true!$"

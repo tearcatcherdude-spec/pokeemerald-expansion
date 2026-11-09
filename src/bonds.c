@@ -84,8 +84,7 @@ void Bonds_OnStep(void)
         p->outingSteps++;
         if (p->outingSteps % 256 == 0 && p->walkingExp < 40)
         {
-            Bonds_AddExp(active - 1, 5);
-            p->walkingExp += 5;
+            p->walkingExp += Bonds_AddExp(active - 1, min(5,40-p->walkingExp));
         }
     }
 }
@@ -141,6 +140,7 @@ bool32 Bonds_Objective(u32 who, u32 objective)
 
 void Bonds_OnObjectiveFlag(u16 id)
 {
+#if !IS_FRLG
     u32 objective,active;
     if(id>=FLAG_WORLD_SCENE_0 && id<=FLAG_WORLD_SCENE_20)
         objective=id-FLAG_WORLD_SCENE_0;
@@ -151,6 +151,7 @@ void Bonds_OnObjectiveFlag(u16 id)
     else return;
     if(!Cast_IsFollowing() || !(active=Cast_Active())) return;
     Bonds_Objective(active-1,objective);
+#endif
 }
 
 bool32 Bonds_Landmark(u32 who, u32 landmark)

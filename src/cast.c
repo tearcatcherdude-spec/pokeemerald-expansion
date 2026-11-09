@@ -331,6 +331,8 @@ void Script_CastAfterBattle(struct ScriptContext *ctx)
     {
         bool32 alreadyFriends = (gSaveBlock3Ptr->cast.recruited & (1 << sRecruitId)) != 0;
         gSaveBlock3Ptr->cast.recruited |= 1 << sRecruitId;
+        if(!alreadyFriends)
+            Bonds_Objective(sRecruitId,64); // Completing the original personal recruitment request.
         Say(sRecruitId, alreadyFriends ? sCastCharacters[sRecruitId].rejoin : sCastCharacters[sRecruitId].join, 1);
         gSpecialVar_Result = TRUE;
     }

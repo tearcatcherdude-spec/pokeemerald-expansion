@@ -24,7 +24,7 @@ def main():
     text=json.dumps(review,ensure_ascii=False)
     assert not re.search(r'\b(?:the watch|universe|world switching|shared (?:party|PC))\b',text,re.I)
     for row in review['scenes']:
-        count=3 if row['stage']==4 else 1
+        count=3 if row['stage']==4 or (row['character']=='zuri' and row['stage']==2) else 1
         assert len(row['options'])==len(row['responses'])==count
         assert all(len(a)==len(b) for a,b in zip(row['options'],row['responses']))
     teams=load('data/bonds/trial_teams.json');assert len(teams)==40
