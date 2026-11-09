@@ -632,3 +632,5 @@ from companion_kanto_people import ROWS as KANTO_PEOPLE_ROWS
 ROWS.extend(KANTO_PEOPLE_ROWS)
 from companion_route_people import ROWS as ROUTE_PEOPLE_ROWS
 ROWS.extend(ROUTE_PEOPLE_ROWS)
+from companion_kanto_interiors_routes import ROWS as KANTO_INTERIOR_ROUTE_ROWS
+ROWS.extend(KANTO_INTERIOR_ROUTE_ROWS)
