@@ -21,8 +21,8 @@ def main():
  assert {c['name']:c['map'] for c in characters}['silas']=='OldaleTown'
  for i,c in enumerate(characters):
   n=c['name'];png=(ROOT/f'graphics/object_events/pics/people/cast_{n}.png').read_bytes();assert struct.unpack('>IIBB',png[16:26])==(144,32,4,3)
-  assert (ROOT/f'graphics/cast_portraits/{n}.4bpp').stat().st_size==8*2048
-  assert (ROOT/f'graphics/cast_portraits/{n}.gbapal').stat().st_size==32
+  assert (ROOT/f'graphics/cast_portraits/{n}_expressions.bin').stat().st_size==8*2048
+  assert (ROOT/f'graphics/cast_portraits/{n}_palette.bin').stat().st_size==32
   assert len(c['team'])==4 and len(set(c['team']))==4
   assert len(c['lore'])==6 and all(e in contract['expressions'] for e,t in c['lore'])
   # First four generations only. These named species use the existing expansion's data.

@@ -14,7 +14,7 @@ def wrapped(text,name=None):
  return lines[0]+''.join(('\\n' if i==1 else '\\l')+line for i,line in enumerate(lines[1:],1))+'$'
 
 def ctext(text,name=None):
- return '_("'+wrapped(text,name).replace('"','\\"')+'")'
+ return 'COMPOUND_STRING("'+wrapped(text,name).replace('"','\\"')+'")'
 
 def profiles():
  # Team levels use the maximum native land encounter of the nearby route + 3 or + 5.
@@ -89,7 +89,7 @@ def register(characters):
  # All eight expressions retain their supplied tile and palette order.
  rows=[];graphics=[]
  for i,c in enumerate(characters):
-  n=c['name'];N=n.title();graphics += [f'const u8 ALIGNED(4) gCastPortrait_{N}[] = INCBIN_U8("graphics/cast_portraits/{n}.4bpp");',f'const u16 gCastPalette_{N}[] = INCBIN_U16("graphics/cast_portraits/{n}.gbapal");']
+  n=c['name'];N=n.title();graphics += [f'const u8 ALIGNED(4) gCastPortrait_{N}[] = INCBIN_U8("graphics/cast_portraits/{n}_expressions.bin");',f'const u16 gCastPalette_{N}[] = INCBIN_U16("graphics/cast_portraits/{n}_palette.bin");']
   fields=[f'.graphics = OBJ_EVENT_GFX_CAST_{n.upper()}',f'.trainer = CAST_TRAINER_{n.upper()}',f'.requirement = CAST_REQ_{c["requirement"].upper()}',f'.value = '+(str(c['value']) if c['requirement']=='steps' else ('SPECIES_' if c['requirement']=='species' else 'ITEM_')+c['value']),f'.walkSlot = {0 if n=="ashe" else 1}']
   for key in ['name','intro','request','ready','join']:fields.append('.'+key+' = '+ctext(n.upper() if key=='name' else c[key],None if key=='name' else n))
   fields += ['.lore = {'+', '.join(ctext(t,n) for e,t in c['lore'])+'}', '.loreExpression = {'+', '.join(str(EXPRESSIONS.index(e)) for e,t in c['lore'])+'}']

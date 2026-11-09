@@ -13,7 +13,7 @@ def verify(rom_path,map_path):
   n=c['name'];N=n.title()
   ptr=struct.unpack_from('<I',rom,table+4*ids['OBJ_EVENT_GFX_CAST_'+n.upper()])[0]
   assert ptr==symbols['gObjectEventGraphicsInfo_Cast'+N],('Cast actor registration',n)
-  for symbol,expected in [(f'gObjectEventPic_Cast{N}',expected_frames(ROOT/f'graphics/object_events/pics/people/cast_{n}.png')),(f'gObjectEventPal_Cast{N}',expected_palette(ROOT/f'graphics/object_events/palettes/cast_{n}.pal')),(f'gCastPortrait_{N}',(ROOT/f'graphics/cast_portraits/{n}.4bpp').read_bytes()),(f'gCastPalette_{N}',(ROOT/f'graphics/cast_portraits/{n}.gbapal').read_bytes())]:
+  for symbol,expected in [(f'gObjectEventPic_Cast{N}',expected_frames(ROOT/f'graphics/object_events/pics/people/cast_{n}.png')),(f'gObjectEventPal_Cast{N}',expected_palette(ROOT/f'graphics/object_events/palettes/cast_{n}.pal')),(f'gCastPortrait_{N}',(ROOT/f'graphics/cast_portraits/{n}_expressions.bin').read_bytes()),(f'gCastPalette_{N}',(ROOT/f'graphics/cast_portraits/{n}_palette.bin').read_bytes())]:
    assert symbol in symbols,('Missing compiled asset',symbol)
    at=symbols[symbol]-0x08000000;assert rom[at:at+len(expected)]==expected,('Compiled pixels/palette differ',symbol)
  print('PASS: compiled ROM contains all ten exact nine-frame walkers, their palettes, and all eighty supplied expression frames/palettes')
