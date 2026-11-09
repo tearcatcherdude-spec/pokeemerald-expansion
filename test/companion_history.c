@@ -49,4 +49,20 @@ TEST("Extended history rejects legacy indexes and out of bounds voices")
     EXPECT_EQ(CompanionHistory_Spend(0, 12288), FALSE);
     EXPECT_EQ(CompanionHistory_Spend(0xFFFFFFFF, 0xFFFFFFFF), FALSE);
 }
+
+TEST("Future history format is preserved rather than treated as a fresh save")
+{
+    struct CompanionHistoryAnchor old = gSaveBlock2Ptr->companionHistory;
+    gSaveBlock2Ptr->companionHistory.magic = 0x31484345;
+    gSaveBlock2Ptr->companionHistory.version = 2;
+    memset(gSaveBlock2Ptr->companionHistory.digest, 0x5A, 32);
+    CompanionHistory_OnLoad();
+    EXPECT_EQ(gCompanionHistoryMailbox.status, 2);
+    EXPECT_EQ(gCompanionHistoryMailbox.request, 0);
+    EXPECT_EQ(CompanionHistory_Spend(1, 736), FALSE);
+    EXPECT_EQ(gSaveBlock2Ptr->companionHistory.version, 2);
+    EXPECT_EQ(gSaveBlock2Ptr->companionHistory.digest[31], 0x5A);
+    gSaveBlock2Ptr->companionHistory = old;
+    CompanionHistory_OnLoad();
+}
 #endif

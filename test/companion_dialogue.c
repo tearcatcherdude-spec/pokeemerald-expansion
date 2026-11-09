@@ -1,5 +1,6 @@
 #include "global.h"
 #include "companion_dialogue.h"
+#include "cast.h"
 #include "pokemon_storage_system.h"
 #include "malloc.h"
 #include "test/test.h"
@@ -8,6 +9,7 @@ extern const u8 OldaleTown_Text_DiscoveredFootprints[], OldaleTown_Text_Finished
 extern const u8 ViridianCity_Text_GymClosedWonderWhoLeaderIs[], ViridianCity_Text_ViridiansGymLeaderReturned[];
 extern const u8 gText_ObtainedTheItem[], gText_PutItemInPocket[], gText_TheBagIsFull[];
 extern const u8 gText_TooBadBagIsFull[], gText_NoRoomLeftForAnother[];
+extern const u8 Text_BookShelf[], Text_PokemonCenterBookShelf[];
 
 TEST("Successful item receipts preserve the speaker but bag-full failures are not receipts")
 {
@@ -36,7 +38,7 @@ TEST("Dialogue settings migrate only the new suffix and preserve PC, bond and ca
     *oldSave = *gSaveBlock3Ptr;
     memset(&gPokemonStoragePtr->companionDialogue, 0, sizeof(*old));
     EXPECT_EQ(CompanionDialogue_GetMode(), COMPANION_DIALOGUE_NORMAL);
-    EXPECT_EQ(gPokemonStoragePtr->companionDialogue.version, 1);
+    EXPECT_EQ(gPokemonStoragePtr->companionDialogue.version, 2);
     EXPECT_EQ(memcmp(prefix, gPokemonStoragePtr, 34560), 0);
     EXPECT_EQ(memcmp(oldSave, gSaveBlock3Ptr, sizeof(*oldSave)), 0);
     EXPECT_EQ(CompanionDialogue_HasSpent(10, 735), FALSE);
@@ -94,4 +96,36 @@ TEST("A reaction spent by one companion does not silence another companion's per
     EXPECT_EQ(CompanionDialogue_HasSpent(0, COMPANION_CONTEXT_CAPACITY), TRUE);
     gPokemonStoragePtr->companionDialogue = *old;
     CompanionDialogue_ResetSession(); Free(old);
+}
+
+TEST("Released object history imports once without sharing future independent contexts")
+{
+    struct SaveBlock3 *saved = Alloc(sizeof(*saved));
+    struct CompanionDialogueProgress *previous = Alloc(sizeof(*previous));
+    *saved = *gSaveBlock3Ptr;
+    *previous = gPokemonStoragePtr->companionDialogue;
+    Cast_EnsureInitialized();
+    memset(gSaveBlock3Ptr->cast.used, 0, sizeof(gSaveBlock3Ptr->cast.used));
+    gSaveBlock3Ptr->cast.active = 1;
+    EXPECT_EQ(Cast_Offer(174), TRUE); // Released Silas bookshelf source.
+    CompanionDialogue_Reset();
+    gPokemonStoragePtr->companionDialogue.version = 1;
+    memset(gPokemonStoragePtr->companionDialogue.reserved, 0, 2);
+    u32 books = CompanionDialogue_ContextForMessage(Text_BookShelf);
+    u32 magazines = CompanionDialogue_ContextForMessage(Text_PokemonCenterBookShelf);
+    EXPECT_EQ(CompanionDialogue_HasSpent(1, books), TRUE);
+    EXPECT_EQ(CompanionDialogue_HasSpent(1, magazines), TRUE);
+    EXPECT_EQ(CompanionDialogue_HasSpent(6, books), FALSE);
+    EXPECT_EQ(CompanionDialogue_HasSpent(6, magazines), FALSE);
+    // After migration, a fresh context bit does not spend another description.
+    gPokemonStoragePtr->companionDialogue.spent[6][books / 8] |= 1 << (books % 8);
+    EXPECT_EQ(CompanionDialogue_HasSpent(6, books), TRUE);
+    EXPECT_EQ(CompanionDialogue_HasSpent(6, magazines), FALSE);
+    // Later legacy changes cannot silently rerun a completed import.
+    gSaveBlock3Ptr->cast.active = 6;
+    EXPECT_EQ(Cast_Offer(174), TRUE);
+    EXPECT_EQ(CompanionDialogue_HasSpent(6, magazines), FALSE);
+    *gSaveBlock3Ptr = *saved;
+    gPokemonStoragePtr->companionDialogue = *previous;
+    Free(previous); Free(saved);
 }

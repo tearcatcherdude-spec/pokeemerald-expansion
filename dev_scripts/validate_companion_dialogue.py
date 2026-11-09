@@ -34,6 +34,11 @@ def main():
             wording[r['voice']].add(r['text'])
             assert not re.search(r'\b(?:the watch|strange watch|world switching|shared (?:PC|party))\b',r['text'],re.I)
     pip=(ROOT/'src/pip.c').read_text()
+    legacy_labels=set(re.findall(r'\{(Text_\w+),\s*sPipKantoObject_', (ROOT/'src/data/pip_kanto_objects.h').read_text()))
+    legacy_labels.update(re.findall(r'original == (Text_\w+)',pip))
+    binding_ids={label:row['id'] for row in contexts for label in row['sources']}
+    for label in legacy_labels:
+        assert label in binding_ids and binding_ids[label]<736, ('Legacy object needs one-time migration within existing banks',label)
     npc=pip.split('void Script_PipBeginNPCReaction')[1].split('const u8 *Pip_GetExactObjectReaction')[0]
     objects=pip.split('void Script_PipBeginObjectReaction')[1].split('void Script_PipChooseObjectDialogue')[0]
     assert 'FreshLocation' not in npc+objects and 'sReactionGraphics' not in pip

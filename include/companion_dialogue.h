@@ -13,7 +13,7 @@ struct CompanionDialogueProgress
     u32 magic;
     u8 version;
     u8 mode;
-    u8 reserved[2];
+    u8 reserved[2]; // v2: LE count of contexts checked for legacy memory import.
     u8 spent[COMPANION_VOICE_COUNT][COMPANION_CONTEXT_CAPACITY / 8];
 };
 

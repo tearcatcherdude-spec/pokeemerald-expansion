@@ -123,3 +123,8 @@ Extended observations prepare an immutable host snapshot before being offered;
 normal/partial save paths then write the already valid anchor without new IO.
 No helper or missing history must suppress only extended observations, preserve
 their anchor and keep normal gameplay, original history and normal saving usable.
+Dialogue progress v2 keeps the same 1020-byte record and all bank offsets; its
+two former reserved bytes count completed one-time legacy-context imports.
+Import read-only, per voice, once for each appended context. Do not keep checking
+legacy broad categories on every offer: that would silence fresh independent
+descriptions. All exact legacy aliases must be bound below context 736.

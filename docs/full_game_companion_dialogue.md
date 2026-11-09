@@ -29,6 +29,17 @@ The first 47 context IDs, their wording, sources and expressions are frozen in
 whole-game object writing is appended in `dev_scripts/companion_world_objects.py`.
 The original pilot and all original Pip/cast memory remain intact.
 
+Dialogue progress v2 uses the existing two reserved metadata bytes for an
+append-only count of contexts checked for legacy history. It imports old exact
+object offers/heard bits for each voice once, without clearing any released
+bank. This prevents upgraded wording from replaying a previously heard subject.
+After import, newly visited contexts remain independent even when the old system
+used one broad canonical object comment for several descriptions. Legacy queries
+are read-only and do not initialize or reset old progress. All old exact-object
+aliases must be assigned within the original 736-context record; later contexts
+use the host bridge. Unknown newer history formats retain their anchor and stay
+quiet rather than being treated as an empty save.
+
 Two interaction issues are being addressed locally:
 
 - Imported Kanto furniture must select its native interaction family from the
@@ -88,6 +99,22 @@ or save states may reference.
 
 Normal saves, Hall of Fame saves, link saves, incremental link saves, failed
 writes and backup-slot recovery all need explicit transactional tests.
+
+On development commit daf52c96f55a6450de868172cb8f1c71f5a21c5d, the compiled ROM
+bridge/artwork checks passed. ROM SHA-256:
+`358173ee01bc182a428c4c1163a03563094faad6cb8aab847239d07ee0c35d6d`.
+The actual ROM and actual Lua helper passed 13 grouped native save-function
+checks: accepted-pilot migration, independent banks up to context 12287, normal
+and partial saves, both incremental link paths, Hall of Fame save path with no
+record buffer, damaged-newest-slot fallback, earlier normal saves, save-state
+rollback, missing-file recovery, write-failure rollback, helper-disappearance
+timeout and absent-helper saving. Prepared save fixtures hold background field
+callbacks idle; these are not whole-game playthroughs or desktop Scripting UI
+tests. Separate real A-button tests passed all 16 existing behavior groups,
+including both regions, all voices/portraits, modes, decline/repeat and EXP.
+Later source changes for one-time legacy import and unknown-format handling
+require a new compiled build and repeat of the affected native checks.
+The current full expansion remains unfinished, with only 71 authored contexts.
 
 Release requires reviewed eligibility/bindings and voice coverage throughout the
 intended game, source/artwork checks, successful builds/tests, native branch and

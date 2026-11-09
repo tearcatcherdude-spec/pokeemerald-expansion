@@ -80,6 +80,17 @@ void CompanionHistory_OnLoad(void)
     }
     else
     {
+        const u8 *anchor = (const u8 *)&gSaveBlock2Ptr->companionHistory;
+        for (u32 i = 0; i < sizeof(struct CompanionHistoryAnchor); i++)
+        {
+            if (anchor[i] != 0)
+            {
+                // A newer/unknown format is not an empty legacy save. Retain
+                // its exact reference and suppress extended observations.
+                gCompanionHistoryMailbox.status = STATUS_ERROR;
+                return;
+            }
+        }
         // No changes to game RNG; once saved this identity is immutable.
         memcpy(gCompanionHistorySnapshot.identity, gSaveBlock2Ptr->playerTrainerId, 4);
         memcpy(gCompanionHistorySnapshot.identity + 4, gSaveBlock2Ptr->playerName, 8);

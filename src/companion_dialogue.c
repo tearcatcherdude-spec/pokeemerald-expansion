@@ -60,7 +60,10 @@ void CompanionDialogue_Reset(void)
     {
         memset(p, 0, sizeof(*p));
         p->magic = DIALOGUE_MAGIC;
-        p->version = 1;
+        p->version = 2;
+        u32 count = min(ARRAY_COUNT(sContextReplies), COMPANION_CONTEXT_CAPACITY);
+        p->reserved[0] = count;
+        p->reserved[1] = count >> 8;
     }
     CompanionDialogue_ResetSession();
 }
@@ -72,7 +75,33 @@ static void EnsureInitialized(void)
         // Initialize only the appended suffix, never the released history.
         memset(p, 0, sizeof(*p));
         p->magic = DIALOGUE_MAGIC;
-        p->version = 1;
+        p->version = 2;
+    }
+    if (p != NULL && p->version <= 2)
+    {
+        // Import released object history once for each appended context. New
+        // observations thereafter spend their OWN context, not a broad legacy
+        // category shared by several different object descriptions.
+        u32 first = p->reserved[0] | (p->reserved[1] << 8);
+        u32 limit = min(ARRAY_COUNT(sContextReplies), COMPANION_CONTEXT_CAPACITY);
+        if (first < limit)
+        {
+            for (u32 i = 0; i < ARRAY_COUNT(sContextMessages); i++)
+            {
+                u32 id = sContextMessages[i].context;
+                if (id >= first && id < limit)
+                {
+                    const u8 *legacy = Pip_GetExactObjectReaction(sContextMessages[i].message);
+                    if (legacy != NULL)
+                        for (u32 voice = 0; voice < COMPANION_VOICE_COUNT; voice++)
+                            if (Pip_HasOfferedByVoice(legacy, voice))
+                                p->spent[voice][id / 8] |= 1 << (id % 8);
+                }
+            }
+            p->reserved[0] = limit;
+            p->reserved[1] = limit >> 8;
+        }
+        p->version = 2;
     }
 }
 u32 CompanionDialogue_GetMode(void)
@@ -154,11 +183,16 @@ u32 CompanionDialogue_ContextForMessage(const u8 *message)
 bool32 CompanionDialogue_HasSpent(u32 voice, u32 context)
 {
     EnsureInitialized();
+    if (voice >= COMPANION_VOICE_COUNT || Progress() == NULL || Progress()->version > 2)
+        return TRUE;
     if (context >= COMPANION_CONTEXT_CAPACITY)
-        return CompanionHistory_HasSpent(voice, context);
-    return voice >= COMPANION_VOICE_COUNT || context >= COMPANION_CONTEXT_CAPACITY
-        || Progress() == NULL
-        || (Progress()->spent[voice][context / 8] & (1 << (context % 8))) != 0;
+    {
+        if (CompanionHistory_HasSpent(voice, context))
+            return TRUE;
+    }
+    else if ((Progress()->spent[voice][context / 8] & (1 << (context % 8))) != 0)
+        return TRUE;
+    return FALSE;
 }
 static bool32 SameSituation(void)
 {
@@ -175,8 +209,12 @@ static bool32 Offer(void)
         if (CompanionDialogue_HasSpent(sVoice, sContext))
             return FALSE;
         if (sContext >= COMPANION_CONTEXT_CAPACITY)
-            return CompanionHistory_Spend(sVoice, sContext);
-        Progress()->spent[sVoice][sContext / 8] |= 1 << (sContext % 8);
+        {
+            if (!CompanionHistory_Spend(sVoice, sContext))
+                return FALSE;
+        }
+        else
+            Progress()->spent[sVoice][sContext / 8] |= 1 << (sContext % 8);
         return TRUE;
     }
     return sLegacy != NULL && Pip_TryOfferExact(sLegacy);
@@ -190,6 +228,7 @@ static bool32 Say(void)
         const struct ContextReply *reply = &sContextReplies[sContext][sVoice];
         if (reply->text == NULL)
             return FALSE;
+        Cast_ClearPending(); // The new text supersedes any legacy offer payload.
         // ShowPortrait cancels old pending EXP; queue this observation after it.
         if (sVoice != 0)
             Cast_ShowPortrait(sVoice - 1, reply->expression);

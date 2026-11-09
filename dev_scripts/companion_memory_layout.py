@@ -1,9 +1,11 @@
-"""Capacity model for the pending memory choice. Does not touch a game save.
+"""Historical capacity model. Does not touch a game save.
 
 The shared proposal preserves the released pilot's actual 0..46 independent
 bits, plus seventeen reserved bits per voice. It assigns only unused future
 pilot bytes and the unused sector tails to new history. It requires an explicit
-format migration and the user's gameplay choice before runtime implementation.
+format migration. The user rejected shared history and selected fully independent
+memory; retain this calculation as evidence of why standard storage cannot fit.
+The runtime candidate now uses a Windows mGBA host snapshot bridge instead.
 """
 VOICES=11
 PILOT_BYTES=1020
