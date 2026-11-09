@@ -1,0 +1,57 @@
+{
+  "base_commit": "ba1f1f5f2173fc450fba6c0aae76c6c3ecac6ef3",
+  "maps": {
+    "data/maps/OldaleTown/map.json": {
+      "objects_count": 7,
+      "objects_sha": "10d63a4ba70c46207c3dd2061f84a9b6bd57e3b782df076f00f26c6c93c22757",
+      "metadata_sha": "9438634293675496993fd009db539540122bfffcb3f72deff59b1075c0b448e4"
+    },
+    "data/maps/KantoRoute2/map.json": {
+      "objects_count": 7,
+      "objects_sha": "78ef420e4a312e29d3b20a9a6a63fe7329f03a6b2d010b290b3822ee4f9d8e10",
+      "metadata_sha": "bc225b6c17e2bba1a0dd51092dace84cfd5da4cc0d48b4ea2bc1759a89163651"
+    },
+    "data/maps/KantoRoute3/map.json": {
+      "objects_count": 11,
+      "objects_sha": "8a76d9aa8a9c30de97038ccecc83e904985c156b95b32ea8716aecff6b1221cb",
+      "metadata_sha": "f1cc973e1061931e754734bc25800f7448c674c8460b2e0e309f9c90fd5e88dd"
+    },
+    "data/maps/Route104/map.json": {
+      "objects_count": 36,
+      "objects_sha": "354fc87427f86b329ee0ab48b2740ff324fdf551d7fc87005d6a28e8513ba7a9",
+      "metadata_sha": "d0f97d17cd452bae9d1705c24c6ad363fd11873e8f1b2c9fe4f6d37b8737af29"
+    },
+    "data/maps/KantoVermilionCity/map.json": {
+      "objects_count": 10,
+      "objects_sha": "5aec27012b28ff6f1025633a1927c6a2da1737089645f87a2e09ff5df1706cbc",
+      "metadata_sha": "2be019010644c0e810415ec0d0ce04c0063ca5297e7c06b5f8f76d32b1b2c088"
+    },
+    "data/maps/Route102/map.json": {
+      "objects_count": 11,
+      "objects_sha": "59ff1b569309fe50a85917401b5c0ff23702601d4a61b0ae6aade0b24bf9e2af",
+      "metadata_sha": "1e0322bb572f296bb28175d24fdc5dbd2a72d6f9fc6534d011c55a751c19f373"
+    },
+    "data/maps/SlateportCity/map.json": {
+      "objects_count": 37,
+      "objects_sha": "8f6be745b67596ed9b1362838ef1d4dd8627520107edd1a9ea2a6c736d22e6ff",
+      "metadata_sha": "b97d10ad3b43b7d54e7c60ef84f9880c5a41fe43f8ff1fcef5cf521e89770833"
+    },
+    "data/maps/VerdanturfTown/map.json": {
+      "objects_count": 7,
+      "objects_sha": "c9d9e5a659744517e37bcf3a26ca1e2456bd0d0092c056aecb987ab743be9e5b",
+      "metadata_sha": "b77b8882b3da0da75bdd1d0c92df8c0f54a787a1482bbbab84be34b2ec8c2e13"
+    },
+    "data/maps/KantoCeruleanCity/map.json": {
+      "objects_count": 14,
+      "objects_sha": "68ac0eb6c6dd1d2c143447941566c77f853d503fba8e02f7b03ac89d2eaea5f8",
+      "metadata_sha": "612b20454b78340daafae4951154b064e1305e521980c2b0fb0cb88985cb928f"
+    },
+    "data/maps/KantoCeladonCity/map.json": {
+      "objects_count": 17,
+      "objects_sha": "c99d6baf34462dc48a756da00d5e0bb17364c9da6c4b06dfabccb74140c8e366",
+      "metadata_sha": "27420bd34285c475cf55f94ff6fe4ee7c9e7a0f0d0a69ca5dd1b756734e51565"
+    }
+  },
+  "original_trainer_prefix_chars": 241544,
+  "original_trainer_prefix_sha": "a695a38b12023421299c9d8a176e5b6a480176d9f9847885a2acc10fc0bb6991"
+}

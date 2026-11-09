@@ -170,6 +170,21 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "World_EventScript_Scene15_1",
       "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_CAST_EMI",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_CAST_EMI",
+      "x": 40,
+      "y": 12,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Cast_EventScript_Meet_Emi",
+      "flag": "0xb005"
     }
   ],
   "warp_events": [],

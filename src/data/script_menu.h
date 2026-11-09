@@ -1136,7 +1136,23 @@ struct MultichoiceListStruct
 static const struct MenuAction sMultichoiceList_Pip[] = {
     {COMPOUND_STRING("Talk")},
     {COMPOUND_STRING("Head home")},
+    {COMPOUND_STRING("Change company")},
     {COMPOUND_STRING("Keep walking")},
+};
+
+static const struct MenuAction sMultichoiceList_Cast[] = {
+    {COMPOUND_STRING("Pip")},
+    {COMPOUND_STRING("Silas")},
+    {COMPOUND_STRING("Kade")},
+    {COMPOUND_STRING("Ashe")},
+    {COMPOUND_STRING("Nico")},
+    {COMPOUND_STRING("Riven")},
+    {COMPOUND_STRING("Emi")},
+    {COMPOUND_STRING("Vera")},
+    {COMPOUND_STRING("Lume")},
+    {COMPOUND_STRING("Mochi")},
+    {COMPOUND_STRING("Zuri")},
+    {COMPOUND_STRING("Cancel")},
 };
 
 static const struct MultichoiceListStruct sMultichoiceLists[] =
@@ -1299,6 +1315,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_HOF_EGGS_QUIT]                              = MULTICHOICE(sMultichoiceList_HOF_Eggs_Quit),
     [MULTI_HOF_VICTORIES_QUIT]                         = MULTICHOICE(sMultichoiceList_HOF_Victories_Quit),
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
+    [MULTI_CAST_ROSTER] = MULTICHOICE(sMultichoiceList_Cast),
     [MULTI_PIP_COMPANION] = MULTICHOICE(sMultichoiceList_Pip),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
 };

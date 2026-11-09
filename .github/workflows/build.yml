@@ -29,6 +29,9 @@ jobs:
       - name: Validate Kanto campaign topology
         run: python3 dev_scripts/validate_kanto_campaign.py
 
+      - name: Validate recruitable cast
+        run: python3 dev_scripts/validate_cast.py
+
       - name: Install binutils
         run: |
           sudo apt-get update
@@ -71,6 +74,9 @@ jobs:
 
       - name: Verify compiled Kanto NPC registrations
         run: python3 dev_scripts/verify_kanto_rom.py pokeemerald.gba pokeemerald.map
+
+      - name: Verify compiled cast artwork and expressions
+        run: python3 dev_scripts/verify_cast_rom.py pokeemerald.gba pokeemerald.map
 
       - name: Upload Emerald ROM
         uses: actions/upload-artifact@v4

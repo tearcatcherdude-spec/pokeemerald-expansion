@@ -159,3 +159,5 @@
 - [Parallel Watch Kanto travel trial](parallel_watch.md)
 
 - [Kanto adventure integration](kanto_adventure.md)
+
+- [Recruitable travelling cast](recruitable_cast.md)

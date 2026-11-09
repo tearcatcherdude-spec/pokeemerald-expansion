@@ -1,4 +1,5 @@
 #include "global.h"
+#include "cast.h"
 #include "event_data.h"
 #include "kanto_progress.h"
 #include "pokedex.h"
@@ -210,6 +211,8 @@ u16 VarGetObjectEventGraphicsId(u8 id)
 
 u8 *GetFlagPointer(u16 id)
 {
+    if (id >= CAST_FLAG_BASE && id < CAST_FLAG_BASE + CAST_COUNT)
+        return Cast_GetFlagPointer(id);
     // Existing trainer helpers add TRAINER_FLAGS_START to an opponent ID.
     // Keep their code and Hoenn IDs intact while routing imported trainer IDs.
     if (id >= TRAINER_FLAGS_START + KANTO_TRAINER_BASE

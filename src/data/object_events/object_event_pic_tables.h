@@ -2497,3 +2497,14 @@ static const struct SpriteFrameImage sPicTable_MomFrlg[] = {
 static const struct SpriteFrameImage sPicTable_Pip[] = {
     overworld_ascending_frames(gObjectEventPic_Pip, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_CastSilas[] = { overworld_ascending_frames(gObjectEventPic_CastSilas, 2, 4), };
+static const struct SpriteFrameImage sPicTable_CastKade[] = { overworld_ascending_frames(gObjectEventPic_CastKade, 2, 4), };
+static const struct SpriteFrameImage sPicTable_CastAshe[] = { overworld_ascending_frames(gObjectEventPic_CastAshe, 2, 4), };
+static const struct SpriteFrameImage sPicTable_CastNico[] = { overworld_ascending_frames(gObjectEventPic_CastNico, 2, 4), };
+static const struct SpriteFrameImage sPicTable_CastRiven[] = { overworld_ascending_frames(gObjectEventPic_CastRiven, 2, 4), };
+static const struct SpriteFrameImage sPicTable_CastEmi[] = { overworld_ascending_frames(gObjectEventPic_CastEmi, 2, 4), };
+static const struct SpriteFrameImage sPicTable_CastVera[] = { overworld_ascending_frames(gObjectEventPic_CastVera, 2, 4), };
+static const struct SpriteFrameImage sPicTable_CastLume[] = { overworld_ascending_frames(gObjectEventPic_CastLume, 2, 4), };
+static const struct SpriteFrameImage sPicTable_CastMochi[] = { overworld_ascending_frames(gObjectEventPic_CastMochi, 2, 4), };
+static const struct SpriteFrameImage sPicTable_CastZuri[] = { overworld_ascending_frames(gObjectEventPic_CastZuri, 2, 4), };
