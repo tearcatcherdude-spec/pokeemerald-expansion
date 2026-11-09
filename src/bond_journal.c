@@ -274,13 +274,20 @@ void Script_BondsRewardInfo(struct ScriptContext *ctx)
     if(stage==2 || stage==3)
     {
         StringAppend(gStringVar4,GetMoveName(sBondRewardMoves[sWho][stage==3]));
-        StringAppend(gStringVar4,COMPOUND_STRING(" tutoring.\lBond EXP +")); Number(stage==3?100:60);
+        StringAppend(gStringVar4,COMPOUND_STRING(" tutoring.\l"));
+        if(Bonds_GetProgress()->people[sWho].exp>=BOND_EXP_CAP)
+            StringAppend(gStringVar4,COMPOUND_STRING("Bond EXP: MAX."));
+        else
+        {StringAppend(gStringVar4,COMPOUND_STRING("Bond EXP +"));Number(min(stage==3?100:60,BOND_EXP_CAP-Bonds_GetProgress()->people[sWho].exp));}
     }
     else
     {
         Number(stage==0?1:stage==1?2:3);StringAppend(gStringVar4,COMPOUND_STRING(" RARE CANDY."));
         if(stage==4) {StringAppend(gStringVar4,COMPOUND_STRING("\l"));StringAppend(gStringVar4,sBondKeepsakes[sWho]);}
-        else StringAppend(gStringVar4,COMPOUND_STRING("\lBond EXP +60."));
+        else if(Bonds_GetProgress()->people[sWho].exp>=BOND_EXP_CAP)
+            StringAppend(gStringVar4,COMPOUND_STRING("\lBond EXP: MAX."));
+        else
+        {StringAppend(gStringVar4,COMPOUND_STRING("\lBond EXP +"));Number(min(60,BOND_EXP_CAP-Bonds_GetProgress()->people[sWho].exp));}
     }
     StringAppend(gStringVar4,COMPOUND_STRING("\lFriendship and romance earn the\lsame practical rewards. No payment."));
 }
@@ -519,7 +526,7 @@ void Bonds_UpdateField(void)
     u32 active;
     Bonds_EnsureInitialized();
     if(!Bonds_GetProgress()) return;
-    if(sStageMap && !OnMap(sStageMap))
+    if((sSceneEvent || sStageActors[0] || sStageActors[1] || sStageActors[2]) && !OnMap(sStageMap))
     {ClearStage();sSceneEvent=0;sScenePage=0;}
     if(!ScriptContext_IsEnabled() && !ArePlayerFieldControlsLocked())
     {
@@ -558,9 +565,12 @@ void Bonds_UpdateField(void)
 bool32 Bonds_TryMarker(s16 x,s16 y)
 {
     u32 tracked;
+    s16 px,py;
     if(!Bonds_GetProgress() || !MarkerReady()) return FALSE;
     tracked=Bonds_GetProgress()->trackedEvent;
-    if(x-7!=sBondEvents[tracked-1].x || y-7!=sBondEvents[tracked-1].y) return FALSE;
+    PlayerGetDestCoords(&px,&py);
+    if((x-7!=sBondEvents[tracked-1].x || y-7!=sBondEvents[tracked-1].y)
+     && (px-7!=sBondEvents[tracked-1].x || py-7!=sBondEvents[tracked-1].y)) return FALSE;
     sWho=(tracked-1)/5;
     ScriptContext_SetupScript(Bonds_EventScript_Marker);
     return TRUE;
