@@ -78,8 +78,8 @@ ordinary Pokemon battle EXP but no repeat bond/event/item rewards.
 ## Save compatibility and validation
 
 SaveBlocks 1/2/3 and the released 34144-byte PC/fusion prefix keep their layouts.
-Bond v1 appends 396 bytes to the PC block, using its final sector's zero-filled
-tail; total PC block size is 34540 of 35712 available. Existing normal saves retain
+Bond v1 appends 416 bytes to the PC block, using its final sector's zero-filled
+tail; total PC block size is 34560 of 35712 available. Existing normal saves retain
 their checksums because the newly included legacy bytes are zero. Initialize only
 the new suffix. Both rotating save slots cover bond data with the normal checksum
 and save counter; Hall of Fame, Trainer Hill and recorded battle sectors remain.

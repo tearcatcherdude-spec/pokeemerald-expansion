@@ -58,8 +58,8 @@ from arranged test positions or parties.
 
 PR #10, `feature/companion-bonds`, extends PR #9 commit
 abca44ff33711c59df08e0734d41e658263c6128. SaveBlocks 1/2/3 stay unchanged.
-Bond v1 appends 396 bytes after the released 34144-byte PC/fusion prefix;
-PokemonStorage is 34540 bytes of a 35712-byte allowance. Never move the prefix,
+Bond v1 appends 416 bytes after the released 34144-byte PC/fusion prefix;
+PokemonStorage is 34560 bytes of a 35712-byte allowance. Never move the prefix,
 shrink boxes, erase fusion slots, or reuse Hall of Fame/special save sectors.
 Normal legacy saves have zero bytes in the appended tail, preserving checksums.
 Keep the magic/version and individual bond record offsets stable after release.

@@ -53,9 +53,15 @@ TEST("SaveBlock3 is backwards compatible")
 TEST("PokemonStorage is backwards compatible")
 {
     EXPECT_EQ(offsetof(struct PokemonStorage, bonds), T_POKEMONSTORAGE_SIZE);
-    EXPECT_EQ(sizeof(struct BondPerson), 38);
-    EXPECT_EQ(sizeof(struct BondProgress), 396);
-    EXPECT_EQ(sizeof(struct PokemonStorage), T_POKEMONSTORAGE_SIZE + 396);
+    // This ARM build rounds every struct to a four-byte boundary, including
+    // the per-person record whose final two bytes are alignment padding.
+    EXPECT_EQ(sizeof(struct BondPerson), 40);
+    EXPECT_EQ(offsetof(struct BondPerson, hearts), 11);
+    EXPECT_EQ(offsetof(struct BondPerson, landmarks), 14);
+    EXPECT_EQ(offsetof(struct BondPerson, objectives), 22);
+    EXPECT_EQ(offsetof(struct BondProgress, people), 16);
+    EXPECT_EQ(sizeof(struct BondProgress), 416);
+    EXPECT_EQ(sizeof(struct PokemonStorage), T_POKEMONSTORAGE_SIZE + 416);
     EXPECT_LE(sizeof(struct PokemonStorage), 9 * 3968);
 }
 
