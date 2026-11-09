@@ -638,3 +638,9 @@ from companion_gym_people import ROWS as GYM_PEOPLE_ROWS
 ROWS.extend(GYM_PEOPLE_ROWS)
 from companion_hoenn_interiors import ROWS as HOENN_INTERIOR_ROWS
 ROWS.extend(HOENN_INTERIOR_ROWS)
+from companion_gym_people_extra import ROWS as GYM_EXTRA_ROWS
+ROWS.extend(GYM_EXTRA_ROWS)
+from companion_routes_105_119 import ROWS as HOENN_ROUTE_ROWS
+ROWS.extend(HOENN_ROUTE_ROWS)
+from companion_kanto_interiors_routes_extra import ROWS as KANTO_INTERIOR_ROUTE_EXTRA_ROWS
+ROWS.extend(KANTO_INTERIOR_ROUTE_EXTRA_ROWS)
