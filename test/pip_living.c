@@ -90,27 +90,23 @@ TEST("Pip stops speaking when local dialogue runs out instead of cycling")
     VarSet(VAR_PIP_COMMENT_COUNTER, oldCounter);
     memcpy(gStringVar4, oldText, sizeof(oldText));
 }
-TEST("Declining a Pip reaction prevents a repeated offer without marking it heard")
+TEST("Declining an exact bookshelf reaction prevents a repeated offer without marking it heard")
 {
     struct SaveBlock3 previous = *gSaveBlock3Ptr;
-    struct ObjectEvent oldNpc = gObjectEvents[1];
     struct ScriptContext ctx = {0};
     u16 oldTalked = gSpecialVar_LastTalked;
     u16 oldResult = gSpecialVar_Result;
     SetUpPipMemory();
-    gObjectEvents[1].active = TRUE;
-    gObjectEvents[1].localId = 77;
-    gObjectEvents[1].mapNum = gSaveBlock1Ptr->location.mapNum;
-    gObjectEvents[1].mapGroup = gSaveBlock1Ptr->location.mapGroup;
-    gObjectEvents[1].graphicsId = OBJ_EVENT_GFX_HIKER;
+    extern const u8 Text_BookShelf[];
+    ctx.data[0] = (u32)Text_BookShelf;
     gSpecialVar_LastTalked = 77;
     gSpecialVar_Result = 41;
-    Script_PipBeginNPCReaction(&ctx);
+    Script_PipBeginObjectReaction(&ctx);
     EXPECT_EQ(gSpecialVar_Result, TRUE);
     Script_PipEndNPCReaction(&ctx); // No choice to hear the line was made.
     EXPECT_EQ(gSpecialVar_Result, 41);
     Pip_ResetSceneState();
-    Script_PipBeginNPCReaction(&ctx);
+    Script_PipBeginObjectReaction(&ctx);
     EXPECT_EQ(gSpecialVar_Result, FALSE);
     Script_PipEndNPCReaction(&ctx);
     u32 heard = 0;
@@ -118,7 +114,6 @@ TEST("Declining a Pip reaction prevents a repeated offer without marking it hear
         heard |= gSaveBlock3Ptr->pipHeard[i];
     EXPECT_EQ(heard, 0);
     *gSaveBlock3Ptr = previous;
-    gObjectEvents[1] = oldNpc;
     gSpecialVar_LastTalked = oldTalked;
     gSpecialVar_Result = oldResult;
 }

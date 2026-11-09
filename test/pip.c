@@ -58,7 +58,7 @@ TEST("Pip progress dialogue changes across badges and after the League")
     EXPECT_NE(Pip_GetProgressDialogue(NUM_BADGES, FALSE), Pip_GetProgressDialogue(NUM_BADGES, TRUE));
 }
 
-TEST("Optional Pip reactions preserve the NPC script result and message state")
+TEST("Unmapped NPC reactions stay quiet while preserving original script result and message state")
 {
     struct ScriptContext ctx = {0};
     struct SaveBlock3 previous = *gSaveBlock3Ptr;
@@ -81,7 +81,8 @@ TEST("Optional Pip reactions preserve the NPC script result and message state")
     ctx.data[0] = 0x12345678;
     StringCopy(gStringVar4, COMPOUND_STRING("Original NPC message"));
     Script_PipBeginNPCReaction(&ctx);
-    EXPECT_EQ(gSpecialVar_Result, TRUE);
+    // A HIKER graphic does not establish what the NPC actually said.
+    EXPECT_EQ(gSpecialVar_Result, FALSE);
     Script_PipChooseNPCDialogue(&ctx);
     ctx.data[0] = 0;
     gSpecialVar_LastTalked = 0;
