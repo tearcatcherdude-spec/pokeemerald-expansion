@@ -11,6 +11,7 @@ bool32 Bonds_PositionMapView(struct RegionMap *map);
 void Bonds_CreateMapPin(struct RegionMap *map);
 void Bonds_FreeMapPin(void);
 bool32 Bonds_IsTraining(void);
+u32 Bonds_GetSceneState(void);
 void Script_BondsSelect(struct ScriptContext *ctx);
 void Script_BondsStatus(struct ScriptContext *ctx);
 void Script_BondsDetails(struct ScriptContext *ctx);

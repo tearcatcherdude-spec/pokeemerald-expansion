@@ -705,6 +705,10 @@ static u32 TrialBand(void)
     return max(hoenn,kanto)>=7?1:0;
 }
 bool32 Bonds_IsTraining(void) {return sTraining;}
+u32 Bonds_GetSceneState(void)
+{
+    return sSceneEvent | ((u32)sScenePage<<8) | ((u32)sSceneRound<<16);
+}
 void Script_BondsSceneRoute(struct ScriptContext *ctx)
 {
     gSpecialVar_Result=sSceneEvent && (sSceneEvent-1)%5==3;
@@ -797,4 +801,5 @@ bool32 Bonds_PositionMapView(struct RegionMap *map) {return FALSE;}
 void Bonds_CreateMapPin(struct RegionMap *map) {}
 void Bonds_FreeMapPin(void) {}
 bool32 Bonds_IsTraining(void) {return FALSE;}
+u32 Bonds_GetSceneState(void) {return 0;}
 #endif
