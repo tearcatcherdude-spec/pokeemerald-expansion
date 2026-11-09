@@ -206,6 +206,7 @@ Cast_EventScript_Companion::
 	lockall
 	facefollowernpc
 	multichoice 0, 0, MULTI_PIP_COMPANION, FALSE
+	goto_if_eq VAR_RESULT, 4, Bonds_EventScript_Journal
 	goto_if_eq VAR_RESULT, 2, Cast_EventScript_Roster
 	goto_if_eq VAR_RESULT, 1, Cast_EventScript_Dismiss
 	goto_if_ne VAR_RESULT, 0, Cast_EventScript_Stay

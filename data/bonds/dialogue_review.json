@@ -1,0 +1,1548 @@
+{
+  "scenes": [
+    {
+      "character": "silas",
+      "stage": 1,
+      "intro": "That WURMPLE has crossed the same leaf twice. My notes say indecisive. My notes may be projecting.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Watch quietly",
+          "Put the notebook away"
+        ]
+      ],
+      "responses": [
+        [
+          "It chose a shady spot. We can observe without making it perform for us.",
+          "An unrecorded observation. Scandalous. I think I can survive one."
+        ]
+      ],
+      "ending": "Attendance: two people, one WURMPLE. Nothing discovered except a pleasant place to sit.",
+      "expression": 7
+    },
+    {
+      "character": "silas",
+      "stage": 2,
+      "intro": "Devon let me keep these discarded parts. A switch, a speaker, and an empty casing. None is connected to anything dangerous.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Sort by function",
+          "Ask which matters most"
+        ]
+      ],
+      "responses": [
+        [
+          "A voice needs all three. My mother would add someone willing to listen. She repaired radios, not loneliness, but sometimes both improved.",
+          "The casing has her handwriting inside. Apparently sentimental significance is not an approved engineering category. It should be."
+        ]
+      ],
+      "ending": "I usually explain first and ask for help much later. Thank you for letting me try the reverse.",
+      "expression": 0
+    },
+    {
+      "character": "silas",
+      "stage": 3,
+      "intro": "The museum has boats. I have left my notebook closed. There is no assessment at the end of this outing.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "I was hoping you might ask. I would like to try, if you would.",
+          "Company without a report is already something I wanted. I am glad we can say what we mean.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "We can keep learning about each other without turning it into a test.",
+      "expression": 3
+    },
+    {
+      "character": "silas",
+      "stage": 4,
+      "intro": "Peer review, outdoors. Our exercise is to notice three things without deciding we understand them completely.",
+      "questions": [
+        "How would you like to respond?",
+        "A trainer walks past without stopping. Which observation can we actually support?",
+        "Last observation: one field scientist has stopped talking long enough to hear somebody else. Should that go in the report?"
+      ],
+      "options": [
+        [
+          "Notice the shade",
+          "Notice the waiting person"
+        ],
+        [
+          "They are walking",
+          "We do not know why"
+        ],
+        [
+          "Record the change",
+          "Let him say it himself"
+        ]
+      ],
+      "responses": [
+        [
+          "A tree offers shelter without asking what the traveler intends to accomplish. An excellent working policy.",
+          "They may be waiting for someone. Or enjoying being alone. Observation does not grant permission to invent their feelings."
+        ],
+        [
+          "Precisely. A small fact, accurately described.",
+          "Precisely. Uncertainty deserves a place in the notes."
+        ],
+        [
+          "An improvement in method. Thank you for the very patient demonstration.",
+          "I asked for help, and listened to the answer. I would like to keep doing that."
+        ]
+      ],
+      "ending": "The third observation is mine: asking you made this better. I shall include that in the report.",
+      "expression": 0
+    },
+    {
+      "character": "silas",
+      "stage": 5,
+      "intro": "I wrote to my mother about the journey. Three pages on plants. One sentence on how much less alone I feel.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "Then I would like to write that we chose each other. Not that either of us stopped having a life of our own.",
+          "Then I shall write friend without surrounding it with just. It is a very substantial word.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "Keep this annotated notebook. The margin says: leave room for another answer, and sometimes for lunch.",
+      "expression": 1
+    },
+    {
+      "character": "kade",
+      "stage": 1,
+      "intro": "One ordinary parcel. One short delivery. I have prepared my customer-service smile. Do not make eye contact with it.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Walk at his pace",
+          "Offer to carry it"
+        ]
+      ],
+      "responses": [
+        [
+          "Thanks. Nobody paid for express delivery. I keep having to remind my shoulders.",
+          "Halfway each? Revolutionary logistics. The parcel weighs less than my objection to asking."
+        ]
+      ],
+      "ending": "Delivered. Nothing exploded, nobody vanished, and I got to walk back with someone. A good working day.",
+      "expression": 7
+    },
+    {
+      "character": "kade",
+      "stage": 2,
+      "intro": "I know the destination. I do not know this street. There is a courier right there. We could perform the obscure ritual of asking.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Ask together",
+          "Let him ask"
+        ]
+      ],
+      "responses": [
+        [
+          "Excuse us. Which way? There. A question, an answer, no permanent damage to my qualifications.",
+          "All right. I can ask for directions without explaining every mistake I have ever made first."
+        ]
+      ],
+      "ending": "The late delivery still happened. Today went better because I accepted help. Those facts do not cancel each other.",
+      "expression": 0
+    },
+    {
+      "character": "kade",
+      "stage": 3,
+      "intro": "No parcel. No deadline. I chose somewhere to go because I thought you might enjoy it. This is suspiciously difficult to invoice.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "I would like that. Clear agreement, no reading between the shipping labels.",
+          "Good. I wanted your company. That was the point, not a hidden debt you were expected to repay.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "We can decide what this means ourselves. There is no form for it. I checked.",
+      "expression": 3
+    },
+    {
+      "character": "kade",
+      "stage": 4,
+      "intro": "Three stops, two sets of hands, nobody required to prove they can collapse heroically under a bag.",
+      "questions": [
+        "How would you like to respond?",
+        "Second stop has a heavy parcel. The quickest route includes stairs. The longer route has a level path.",
+        "Third stop is closed for lunch. We can leave a clear note or agree a later time."
+      ],
+      "options": [
+        [
+          "Plan a rest stop",
+          "Split the route"
+        ],
+        [
+          "Take the level path",
+          "Ask the recipient"
+        ],
+        [
+          "Leave a clear note",
+          "Agree a later time"
+        ]
+      ],
+      "responses": [
+        [
+          "A rest stop belongs in the plan before someone needs rescuing. I am writing that in unusually large letters.",
+          "We each take what we can carry, then meet. Trust involves letting someone out of your sight without assuming the worst."
+        ],
+        [
+          "A delivery plan with people still functioning at the end. Advanced stuff.",
+          "They asked for the level entrance. Good thing we consulted the person actually receiving it."
+        ],
+        [
+          "No mystery package in an inconvenient doorway. An unusually civilized conclusion.",
+          "A deadline discussed honestly is better than a heroic promise nobody asked for."
+        ]
+      ],
+      "ending": "Shared load. Better delivery. Mildly unbearable lesson in cooperation. I will recover.",
+      "expression": 0
+    },
+    {
+      "character": "kade",
+      "stage": 5,
+      "intro": "I used to make plans to repay a mistake. This one is because I want there to be another journey after this one.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "Me too. We can keep our own destinations and decide together when the road is shared.",
+          "Then keep a place for me on the next route. Friend is not a lower class of delivery.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "This route card has a space marked rest. Use it. That instruction is also addressed to me.",
+      "expression": 1
+    },
+    {
+      "character": "ashe",
+      "stage": 1,
+      "intro": "This is a practice performance. Very small. WHISMUR has agreed to be the audience. It has not agreed to be a small audience.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Listen nearby",
+          "Stand beside him"
+        ]
+      ],
+      "responses": [
+        [
+          "Thank you. That was enough applause, WHISMUR. You can stop applauding the bench now.",
+          "I can manage the first note if somebody else is here when it happens."
+        ]
+      ],
+      "ending": "One song. No audition panel appeared out of the shrubbery. A promising beginning.",
+      "expression": 7
+    },
+    {
+      "character": "ashe",
+      "stage": 2,
+      "intro": "My uncle kept a place open at an audition. I never arrived. For a while I could not look at a noticeboard without reading it as an accusation.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Plan a tiny performance",
+          "Ask what he wants to play"
+        ]
+      ],
+      "responses": [
+        [
+          "One piece, a familiar place, and permission to leave afterward. That sounds like a plan made for a person.",
+          "The walking song. I know it well enough that I can hear it even when my hands forget."
+        ]
+      ],
+      "ending": "I can write to him without attaching a success story. I think he wanted news of me.",
+      "expression": 0
+    },
+    {
+      "character": "ashe",
+      "stage": 3,
+      "intro": "This piece has the rhythm of our footsteps. Yours are less predictable than mine. I mean that as a compliment. I think.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "I would like it to mean a date, if you want that too. The music should not have to ask on my behalf.",
+          "I would be proud to call it that. Friendship can have a dedication. The paper is not exclusively reserved.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "I will write the name you agree to. Not the one I hoped you would guess.",
+      "expression": 3
+    },
+    {
+      "character": "ashe",
+      "stage": 4,
+      "intro": "One song is enough. I am saying it before I invent twelve impossible conditions for allowing myself to start.",
+      "questions": [
+        "How would you like to respond?",
+        "The middle phrase goes wrong. There is still a room, a song, and a perfectly serviceable next note.",
+        "The song ends. Somebody asks for another. I wanted to play one today."
+      ],
+      "options": [
+        [
+          "Begin with one note",
+          "Ask the audience to sit"
+        ],
+        [
+          "Continue the phrase",
+          "Take a breath"
+        ],
+        [
+          "Thank them and finish",
+          "Offer another day"
+        ]
+      ],
+      "responses": [
+        [
+          "There. The first note was not perfect. It did successfully become the second note.",
+          "Thank you. A performance can be a shared room rather than a cliff with people below it."
+        ],
+        [
+          "The next note arrived. It did not demand a written apology for the last one.",
+          "A breath belongs in music. I am allowed one even if it was not printed there."
+        ],
+        [
+          "One was the plan. I can be pleased they listened without owing them the rest of the evening.",
+          "Another day sounds possible. I can look forward to it without promising tonight."
+        ]
+      ],
+      "ending": "I played because I wanted to. Not because being frightened had finally stopped. I am keeping that distinction.",
+      "expression": 0
+    },
+    {
+      "character": "ashe",
+      "stage": 5,
+      "intro": "An encore, by choice. I still get nervous. I also look forward to seeing who will be listening.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "I want that too. We can be close without making every song a declaration or every quiet day a problem.",
+          "Then I will keep a seat for you, and leave you free to choose it. That feels like a good tradition.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "This is the footsteps score. There is a rest in it. It means rest, not that somebody has gone away.",
+      "expression": 1
+    },
+    {
+      "character": "nico",
+      "stage": 1,
+      "intro": "A picnic with one spare chair. Grandmother insisted on it. The chair was more sociable than several paying customers.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Invite a tired traveler",
+          "Set a place first"
+        ]
+      ],
+      "responses": [
+        [
+          "A seat before a sales pitch. Good. People should not have to explain why they look tired.",
+          "There. An invitation with no obligation attached. Also a sandwich with structural ambitions."
+        ]
+      ],
+      "ending": "Someone sat for five minutes and left smiling. I am counting that as excellent attendance.",
+      "expression": 7
+    },
+    {
+      "character": "nico",
+      "stage": 2,
+      "intro": "Two batches. One imitates grandmother perfectly until you taste it. The other tastes like something I actually made on purpose.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Try his own recipe",
+          "Ask what he changed"
+        ]
+      ],
+      "responses": [
+        [
+          "More berry, less trying to win an argument with a memory. It turns out those are different ingredients.",
+          "She liked the crust dark. I like it soft. I spent a year treating that as a moral disagreement."
+        ]
+      ],
+      "ending": "I can love her cooking without turning my kitchen into a museum with burnt toast.",
+      "expression": 0
+    },
+    {
+      "character": "nico",
+      "stage": 3,
+      "intro": "Two seats reserved. I checked the chair stability twice. I would like to clarify the part of this meal that is not carpentry.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "I hoped so. Let us say it properly before I attempt to communicate through suspiciously shaped bread.",
+          "Then a very good meal with a very good friend. No disappointing menu substitution involved.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "The food can be a surprise. What we mean to each other should not have to be.",
+      "expression": 3
+    },
+    {
+      "character": "nico",
+      "stage": 4,
+      "intro": "Our imaginary customer wants something soft, not too sweet, with no berries. We have supplied flour, milk, and a remarkable quantity of opinions.",
+      "questions": [
+        "How would you like to respond?",
+        "One customer wants the filling separate. Our sample supplies include two little plates. An extravagant technological solution.",
+        "Last customer just wants somewhere to sit. They have brought their own lunch."
+      ],
+      "options": [
+        [
+          "Make a soft roll",
+          "Ask before seasoning"
+        ],
+        [
+          "Use two plates",
+          "Ask about the portion"
+        ],
+        [
+          "Offer the spare chair",
+          "Offer water too"
+        ]
+      ],
+      "responses": [
+        [
+          "Excellent. We have listened to the person instead of preparing my most impressive unrelated pastry.",
+          "Yes. Asking what someone enjoys is not a failure of artistic vision. My apron has been informed."
+        ],
+        [
+          "Problem solved without a speech about how the recipe was intended to be enjoyed.",
+          "A smaller portion, they say. Good. I am serving a person, not defending a blueprint."
+        ],
+        [
+          "A spare chair finally encountering its natural purpose. Grandmother would approve.",
+          "Water, no charge. Not every kind thing needs to become a new product."
+        ]
+      ],
+      "ending": "A kitchen that listens. I think that is the sort I want to run.",
+      "expression": 0
+    },
+    {
+      "character": "nico",
+      "stage": 5,
+      "intro": "A cafe plan. The spare chair stays. The address is still blank; I want to see a little more of the world before choosing a door.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "Yes. Room for us, and room for journeys neither of us has thought of yet.",
+          "The first invitation is yours. No expiry date. You do not have to earn your seat by arriving hungry.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "Keep the recipe card. It includes an instruction to make room. That part is not about the dough.",
+      "expression": 1
+    },
+    {
+      "character": "riven",
+      "stage": 1,
+      "intro": "A small card trick. Everyone knows it is a trick. The extraordinary bow, however, is performed entirely without assistance.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Invite a volunteer",
+          "Explain the rules"
+        ]
+      ],
+      "responses": [
+        [
+          "Only if you want to join in. Nobody has been selected by an ominous destiny or by me pointing very loudly.",
+          "You choose a card; I attempt to be impressive. If I fail, the card remains a card and I remain overdressed."
+        ]
+      ],
+      "ending": "A willing audience and one extremely excessive bow. Honest work, at last.",
+      "expression": 7
+    },
+    {
+      "character": "riven",
+      "stage": 2,
+      "intro": "I told my old friend the truth. It did not produce instant forgiveness. My career in dramatic shortcuts suffered a serious setback.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Ask what repair required",
+          "Listen without fixing it"
+        ]
+      ],
+      "responses": [
+        [
+          "Apologies, changed behavior, and time they were free to spend elsewhere. None could be replaced by a better speech.",
+          "Thank you. You are not here to take their place or declare the matter settled. I needed to learn that too."
+        ]
+      ],
+      "ending": "A reveal can finish a trick. Repairing trust has rather less convenient timing.",
+      "expression": 0
+    },
+    {
+      "character": "riven",
+      "stage": 3,
+      "intro": "No misdirection. No mysterious invitation on a velvet card. Would you like this outing to be a date?",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "Then yes means yes because you said it. A simple method. I am scandalized that I did not adopt it sooner.",
+          "Then friends. A sincere invitation does not become a trap when the answer changes the plan.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "There. Plainly asked, plainly answered. I may need a small theatrical bow to recover.",
+      "expression": 3
+    },
+    {
+      "character": "riven",
+      "stage": 4,
+      "intro": "An openly explained routine. We arrange the cards together. Nobody is tricked into volunteering, and the secret is not used to embarrass anyone.",
+      "questions": [
+        "How would you like to respond?",
+        "Second part: a volunteer wants to know where to stand. We can mark the spot or walk through it together.",
+        "Last part: somebody declines to volunteer. A lesser magician might insist they are secretly delighted."
+      ],
+      "options": [
+        [
+          "Explain the effect first",
+          "Ask the audience to help"
+        ],
+        [
+          "Mark a clear spot",
+          "Explain it together"
+        ],
+        [
+          "Thank them and move on",
+          "Perform without them"
+        ]
+      ],
+      "responses": [
+        [
+          "A puzzle offered honestly can still be delightful. The false emergency has been removed from the program.",
+          "A willing audience changes the entire room. Wonder does not become less valuable when everyone can leave."
+        ],
+        [
+          "A visible mark. The audience is allowed to know where the stage ends.",
+          "No surprise pull, no theatrical shove. The routine has mysteriously lost its most stressful feature."
+        ],
+        [
+          "An answer honored without turning it into another act. I find I prefer this version of myself.",
+          "A trick with no unwilling participant. The pigeons will have to generate their own publicity."
+        ]
+      ],
+      "ending": "Resolve, no hidden cards. It is an excellent title. I shall resist making it six words longer.",
+      "expression": 0
+    },
+    {
+      "character": "riven",
+      "stage": 5,
+      "intro": "An ordinary outing. I bought the refreshments normally. No dove brought the receipt. I find myself rather happy about this.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "I would like that. A mutual choice, renewed by how we treat each other, not maintained by a clever performance.",
+          "Then I choose that too. A good friend does not need to be dazzled into staying.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "Keep this signed trick card. It says: ask honestly. The signature is genuine. The flourish is regrettable.",
+      "expression": 1
+    },
+    {
+      "character": "emi",
+      "stage": 1,
+      "intro": "My first moon poem was about that sort of streetlamp. I defended the astronomy for weeks. The lamp declined to comment.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Listen to the poem",
+          "Sit without a joke"
+        ]
+      ],
+      "responses": [
+        [
+          "It was extremely sincere and contained four uses of silver. My aunt kept it anyway. That was the part I did not understand then.",
+          "Thank you. I occasionally become sincere if nobody startles me with a compliment."
+        ]
+      ],
+      "ending": "You can remember the terrible moon. Please also remember somebody bothered to read it.",
+      "expression": 7
+    },
+    {
+      "character": "emi",
+      "stage": 2,
+      "intro": "Three draft endings. One is clever, one is cruel, and one says what I meant. Naturally I hid the third under the others.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Keep the honest ending",
+          "Ask to hear all three"
+        ]
+      ],
+      "responses": [
+        [
+          "It says I wanted someone to stay. Astonishingly poor camouflage. My aunt would have put it on the good shelf.",
+          "You listened to the ugly drafts too. I thought being taken seriously required arriving already finished."
+        ]
+      ],
+      "ending": "I kept the honest one. You may witness my artistic downfall into meaning things.",
+      "expression": 0
+    },
+    {
+      "character": "emi",
+      "stage": 3,
+      "intro": "I wrote this while we traveled. No ironic footnote. I would like you to hear it before I regain my defensive punctuation.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "Yes, that was in the poem. I could have simply asked. Apparently I needed weather imagery first.",
+          "Then I am glad it is a friendship poem. Those deserve better endings than an embarrassed apology.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "We can be clear about this. I refuse to let an unattended metaphor make our decisions.",
+      "expression": 3
+    },
+    {
+      "character": "emi",
+      "stage": 4,
+      "intro": "Three people agreed to hear a reading outside the tent. Three actual people, with ears. There goes my anonymous reputation.",
+      "questions": [
+        "How would you like to respond?",
+        "Second verse. I can rush through the important line or pause long enough for them to hear it.",
+        "Someone asks which line matters most. I have prepared a distracting anecdote about punctuation."
+      ],
+      "options": [
+        [
+          "Read the quiet verse",
+          "Start with the lamp poem"
+        ],
+        [
+          "Leave a quiet pause",
+          "Read at her own pace"
+        ],
+        [
+          "Name the honest line",
+          "Ask her what she wants"
+        ]
+      ],
+      "responses": [
+        [
+          "A small honest verse is enough. I do not need to become somebody louder to be heard.",
+          "An excellent opening disaster. Now I can admit the new poem matters without pretending I have never been ridiculous."
+        ],
+        [
+          "There. A silence that belongs to the poem, rather than a joke hastily pushed in front of it.",
+          "My pace. That is allowed. I keep expecting poetry to come with a minimum speed limit."
+        ],
+        [
+          "The line about wanting company. Yes. I have now said it without an obscuring weather system.",
+          "I want to say what I wrote. The anecdote can remain in protective custody."
+        ]
+      ],
+      "ending": "I read it anyway. My hands shook. The poem survived. Both observations can be true.",
+      "expression": 0
+    },
+    {
+      "character": "emi",
+      "stage": 5,
+      "intro": "This travel journal has blank pages. Formerly a terrifying design flaw. I think I understand them better now.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "I want that too. We can make room for separate poems and still choose the same table.",
+          "Yes. A continuing friendship, with room for your life and mine. No consolation-prize stationery.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "Keep the handwritten poem. It ends with an open window. I am allowing some fresh air into the symbolism.",
+      "expression": 1
+    },
+    {
+      "character": "vera",
+      "stage": 1,
+      "intro": "Presenting the folding rest seat. Its first consultant gets to sit down. An audacious break with the tradition of testing things on unwilling friends.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Check the locking hinge",
+          "Ask who needs the seat"
+        ]
+      ],
+      "responses": [
+        [
+          "Locked, tested, and nobody underneath it while I demonstrate. My reputation for excitement has limits.",
+          "Somebody who needs a rest. They do not need a diagnosis or a persuasive speech to qualify."
+        ]
+      ],
+      "ending": "POKEMON included only if they want to. ELECTRIKE has requested a cushion. Negotiations are progressing.",
+      "expression": 7
+    },
+    {
+      "character": "vera",
+      "stage": 2,
+      "intro": "Three sketches. A very fast tool, a very loud tool, and a simple grip someone can use without hurting their hand.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Choose the useful grip",
+          "Ask the intended user"
+        ]
+      ],
+      "responses": [
+        [
+          "Dad would ask what problem it solves. For once I can answer before describing the motor.",
+          "We should have started there. Accessibility designed without asking people is often just an attractive new obstacle."
+        ]
+      ],
+      "ending": "I still like spectacular inventions. I would like people to enjoy using them too.",
+      "expression": 0
+    },
+    {
+      "character": "vera",
+      "stage": 3,
+      "intro": "No prototypes today. The bag contains lunch, a blanket, and no component I can describe as experimental.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "Yes, please. Actual date. No surprise product-testing waiver included.",
+          "Absolutely. I can want company without trying to upgrade it into something else.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "A walk can be the entire plan. This is deeply inconvenient news for my emergency planning notebook.",
+      "expression": 3
+    },
+    {
+      "character": "vera",
+      "stage": 4,
+      "intro": "A disconnected demonstration circuit. No live current. ELECTRIKE has chosen to watch from over there, which is a complete and valid job.",
+      "questions": [
+        "How would you like to respond?",
+        "Second check: the handle is hard to grip. We can make it larger or offer a different shape.",
+        "Last check: someone says they do not want to try it today. The device is ready. What next?"
+      ],
+      "options": [
+        [
+          "Inspect before connecting",
+          "Ask before involving anyone"
+        ],
+        [
+          "Make the handle larger",
+          "Offer another shape"
+        ],
+        [
+          "Thank them and stop",
+          "Offer another day"
+        ]
+      ],
+      "responses": [
+        [
+          "The damaged wire gets replaced, not hidden under enthusiasm. We can be excited after the safety check.",
+          "Agreed. Consent is not an obstacle between me and a successful demonstration. It is part of one."
+        ],
+        [
+          "That gives more room to hold it. We test with the person using it, not with my triumphant expression.",
+          "Different hands, different solutions. One universal grip was a very optimistic label."
+        ],
+        [
+          "Stopped. No injury to the device, and no requirement that somebody justify saying no.",
+          "Only if they want. The test schedule is not more important than the person."
+        ]
+      ],
+      "ending": "Trust before voltage. I should put that on the toolbox where I cannot claim not to have seen it.",
+      "expression": 0
+    },
+    {
+      "character": "vera",
+      "stage": 5,
+      "intro": "The rest-stop proposal has a wide entrance and more than one kind of seat. It also has a budget. I have made peace with two of those facts.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "I would like that. You are a person I choose, not a project I am going to finish.",
+          "Yes. A friendship with room to move, and permission to tell me when the machine is too loud.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "Keep this blueprint. The most important measurement says: ask the person who will use it.",
+      "expression": 1
+    },
+    {
+      "character": "lume",
+      "stage": 1,
+      "intro": "An ominous noise. A mysterious shadow. A portable hinge in need of oil. We may be witnessing the least demanding haunting in local history.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Inspect the hinge",
+          "Listen before deciding"
+        ]
+      ],
+      "responses": [
+        [
+          "A squeak. No ghost required. We may still tell a good story about the hinge.",
+          "An excellent pause. Not knowing yet is more honest than announcing a very marketable curse."
+        ]
+      ],
+      "ending": "Grandmother charged this sort of ghost rent. I suspect the ghost would have asked for maintenance.",
+      "expression": 7
+    },
+    {
+      "character": "lume",
+      "stage": 2,
+      "intro": "Two neighbors remembered different endings to her story. I almost corrected one. Then I realized whose voice I was about to lose.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Record both endings",
+          "Ask what each remembers"
+        ]
+      ],
+      "responses": [
+        [
+          "Two versions, with their names beside them. A memory can be precious without becoming the only permitted account.",
+          "One remembered a warning. One remembered a joke. She made room for both sorts of person."
+        ]
+      ],
+      "ending": "I do not have to recover every word to keep something kind alive.",
+      "expression": 0
+    },
+    {
+      "character": "lume",
+      "stage": 3,
+      "intro": "You appear in my travel story. I would prefer to ask how you want to be described instead of quietly assigning you a fate.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "I would like to explore that too. A story should not turn a hope into a promise someone never made.",
+          "Then friend belongs on the page. A very old and durable sort of magic, if we are speaking poetically.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "We can leave the uncertain parts open. Paper is surprisingly patient when you stop threatening it with an ending.",
+      "expression": 3
+    },
+    {
+      "character": "lume",
+      "stage": 4,
+      "intro": "This tale blames an absent traveler for a broken gate. Nobody asked the traveler. The gate appears to have been broken long before the arrival.",
+      "questions": [
+        "How would you like to respond?",
+        "The second account says a neighbor repaired the gate. The old tale never mentions that work.",
+        "The final line can blame a stranger or remember how the village helped. Both fit on the page."
+      ],
+      "options": [
+        [
+          "Ask whose voice is missing",
+          "Revise the unfair ending"
+        ],
+        [
+          "Include the repairer",
+          "Ask how it was repaired"
+        ],
+        [
+          "Remember the help",
+          "Leave room for accounts"
+        ]
+      ],
+      "responses": [
+        [
+          "The traveler, and the person who repaired it. A convenient villain can hide an astonishing amount of ordinary work.",
+          "The village fixes its gate together. Less dramatic, perhaps. Considerably more useful to the next traveler."
+        ],
+        [
+          "A name returned to the story. Sometimes that changes more than a dramatic new ending.",
+          "Ordinary skill, generously used. It deserves at least as much space as the invented curse."
+        ],
+        [
+          "A village with neighbors instead of a convenient villain. A considerable improvement in its prospects.",
+          "Yes. Someone else may know a detail we have not heard. The page need not pretend to be the last word."
+        ]
+      ],
+      "ending": "I can love an old tale and still refuse the part that treats somebody unfairly.",
+      "expression": 0
+    },
+    {
+      "character": "lume",
+      "stage": 5,
+      "intro": "I wrote an ordinary entry. We walked, we ate, you waited while I found a word. Nobody saved the world before lunch.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "I want that too. Love can join a life without being asked to replace everyone who is gone.",
+          "Yes. A friend who remembers kindly is not a lesser ending. I hope the next pages have room for both our names.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "Keep this booklet. Some stories have two endings. This one is allowed to continue.",
+      "expression": 1
+    },
+    {
+      "character": "mochi",
+      "stage": 1,
+      "intro": "The pocket inspection. One lunch parcel, one travel pouch, and a stern warning from the sandwich about decorative storage.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Test comfort first",
+          "Check the fastening"
+        ]
+      ],
+      "responses": [
+        [
+          "It sits without pulling. A promising development in the radical field of clothes people can actually wear.",
+          "Secure, but not so stiff that opening lunch becomes an athletic achievement. We are making progress."
+        ]
+      ],
+      "ending": "The sandwich has approved the trial. Its written review is several crumbs.",
+      "expression": 7
+    },
+    {
+      "character": "mochi",
+      "stage": 2,
+      "intro": "I won a prize for an outfit that looked like somebody else had made it. Everybody congratulated me. I went home and could not draw.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Ask what she wants to make",
+          "Look at the useful sketch"
+        ]
+      ],
+      "responses": [
+        [
+          "Something that lets people feel like themselves. It sounds obvious until applause starts offering very specific instructions.",
+          "The pockets work. The person can sit. I can see my own choices on the page. I missed that."
+        ]
+      ],
+      "ending": "A prize can be pleasant without being the only trustworthy opinion in the room.",
+      "expression": 0
+    },
+    {
+      "character": "mochi",
+      "stage": 3,
+      "intro": "I made this sketch with you in mind. Not a demand to wear anything. More a fairly well-dressed invitation.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "I hoped it could be. We can agree about that without agreeing on every color combination.",
+          "Then it is a friendship sketch, with the same excellent pockets. Practical affection is not reserved for couples.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "You get to choose what feels right. I am remarkably consistent about that, for someone carrying this many fabric samples.",
+      "expression": 3
+    },
+    {
+      "character": "mochi",
+      "stage": 4,
+      "intro": "A packing challenge. Lunch, map, repair kit. All supplied. There is no secret correct answer in which somebody forgets to eat.",
+      "questions": [
+        "How would you like to respond?",
+        "Next: the repair kit has a sharp needle. There is a closed inner pocket and a small supplied case.",
+        "Last: the map needs to stay dry. A flap or the supplied wrapping will work."
+      ],
+      "options": [
+        [
+          "Keep lunch accessible",
+          "Balance both sides"
+        ],
+        [
+          "Use the closed pocket",
+          "Use the needle case"
+        ],
+        [
+          "Close the flap",
+          "Wrap the map"
+        ]
+      ],
+      "responses": [
+        [
+          "Yes. Frequently needed things within reach. I am refusing the theory that inconvenience proves elegance.",
+          "Comfort and access, together. There is more than one successful arrangement. The bag is not grading your personality."
+        ],
+        [
+          "Protected and easy to identify. Nobody should discover sewing equipment by sitting on it.",
+          "A sensible case. Decorative suffering has once again failed to improve the outfit."
+        ],
+        [
+          "Secure. We can find the route without first drying an entire coastline.",
+          "Good. The map has survived lunch and weather. More than one arrangement can be a successful design."
+        ]
+      ],
+      "ending": "Room for lunch, and room for the person carrying it. An ambitious design philosophy.",
+      "expression": 0
+    },
+    {
+      "character": "mochi",
+      "stage": 5,
+      "intro": "Finished sketch. Working pockets. Space for things you care about, including the things I would not have thought to pack.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "I want that too. We can choose each other without tailoring either person into someone smaller.",
+          "Then this is a very good traveling friendship. No alterations required to make it count.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "Keep the sketch. The angry sandwich has signed the corner. I am choosing to call that professional recognition.",
+      "expression": 1
+    },
+    {
+      "character": "zuri",
+      "stage": 1,
+      "intro": "Portable practice board. Permission obtained. Three colors, one bird shaped like a bent spoon. The bird has seniority.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "Choose a warm color",
+          "Ask why the bird stays"
+        ]
+      ],
+      "responses": [
+        [
+          "Good. A sky that looks like someone left the door open for the sun. My brother would demand an even bigger brush.",
+          "It is how I drew them when we painted together. I can improve without evicting every ridiculous old friend."
+        ]
+      ],
+      "ending": "A small board is enough for a beginning. It does not have to become a permanent monument to deserve care.",
+      "expression": 7
+    },
+    {
+      "character": "zuri",
+      "stage": 2,
+      "intro": "Three neighbors are here to share what they want remembered. I brought a portable board, and an extremely important permission question.",
+      "questions": [
+        "How would you like to respond?",
+        "NEIGHBOR: The meeting place matters to me. We made friends there after I moved. You can use my words if you like.",
+        "NEIGHBOR: My friend always brought an extra chair. I would like that in the panel, if there is room."
+      ],
+      "options": [
+        [
+          "Ask about the garden",
+          "Ask permission first"
+        ],
+        [
+          "Ask how to credit them",
+          "Ask about the meeting place"
+        ],
+        [
+          "Make room for the chair",
+          "Ask about its meaning"
+        ]
+      ],
+      "responses": [
+        [
+          "NEIGHBOR: The little garden is my favorite place to sit. A drawing of the flowers would be lovely. I would rather not be in the picture myself.",
+          "NEIGHBOR: Thank you for asking. The garden, please. Not a portrait of me. I would like to choose that part."
+        ],
+        [
+          "NEIGHBOR: Use my first name beside the quote, please. I want to recognize my own voice.",
+          "NEIGHBOR: Nothing grand. A place where somebody learned my name. That is what I would like remembered."
+        ],
+        [
+          "NEIGHBOR: Thank you. Such a small thing to draw, for something that made a place for so many people.",
+          "NEIGHBOR: It meant you could arrive without having to ask whether you were welcome."
+        ]
+      ],
+      "ending": "I have their permission for a small panel. No borrowed wall, no claim to have spoken for everybody.",
+      "expression": 0
+    },
+    {
+      "character": "zuri",
+      "stage": 3,
+      "intro": "You have a place in the sketch if you want one. I would also like your company somewhere without a paint tin between us.",
+      "questions": [
+        "How would you like to respond?"
+      ],
+      "options": [
+        [
+          "I would like a date",
+          "I'm glad we're friends",
+          "I'm not sure yet"
+        ]
+      ],
+      "responses": [
+        [
+          "That is what I hoped. Thank you for asking directly before I attempted to communicate through composition.",
+          "Then company it is. You are already important to me; I do not need a romantic label to prove it.",
+          "There is no deadline. We can enjoy today and talk again when you want to."
+        ]
+      ],
+      "ending": "We choose what this is together. I can leave some space without being frightened of the blank part.",
+      "expression": 3
+    },
+    {
+      "character": "zuri",
+      "stage": 4,
+      "intro": "The old wall is gone. This panel will not replace it, or the people in that memory. It can carry something they helped make.",
+      "questions": [
+        "How would you like to respond?",
+        "The panel can include the garden and the meeting place without painting a neighbor who declined a portrait.",
+        "Last detail: somebody offers another memory. There is still a little room around the border."
+      ],
+      "options": [
+        [
+          "Paint a remembered detail",
+          "Leave room for new stories"
+        ],
+        [
+          "Use a shared symbol",
+          "Leave the figure out"
+        ],
+        [
+          "Invite their words",
+          "Plan a second panel"
+        ]
+      ],
+      "responses": [
+        [
+          "The enormous sky, then. And one terrible bird. A detail can hold a memory without pretending to preserve everything.",
+          "Yes. Keeping something does not mean refusing everything that comes afterward."
+        ],
+        [
+          "A garden bench, then. A place can suggest a welcome without borrowing somebody who said no.",
+          "Their decision stays theirs. Empty space is not an artistic emergency."
+        ],
+        [
+          "A few words in their own voice. The picture is better for making room.",
+          "A second panel, with permission again. Finishing one work does not require declaring the community complete."
+        ]
+      ],
+      "ending": "More than a wall. People remembered, permission respected, a story allowed to change hands.",
+      "expression": 0
+    },
+    {
+      "character": "zuri",
+      "stage": 5,
+      "intro": "This travel mural has more people than the first sketch. Everyone who helped gets a little space. The birds remain catastrophically aerodynamic.",
+      "questions": [
+        "Only one committed romance at a time. What do you both want?"
+      ],
+      "options": [
+        [
+          "Commit together",
+          "Stay close friends",
+          "Take more time"
+        ]
+      ],
+      "responses": [
+        [
+          "I would like that. With room for our friends, our work, and whichever road makes sense next.",
+          "Yes. A lasting friendship belongs in the picture. Nobody is being painted out to make the ending tidier.",
+          "We can take more time. The invitation will still be here."
+        ]
+      ],
+      "ending": "Keep this print. It includes you as you chose to appear. There is room around the edges for another journey.",
+      "expression": 1
+    }
+  ],
+  "gifts": {
+    "silas": [
+      [
+        "ORAN_BERRY",
+        30
+      ],
+      [
+        "REPEL",
+        15
+      ],
+      [
+        "POTION",
+        5
+      ]
+    ],
+    "kade": [
+      [
+        "SUPER_REPEL",
+        30
+      ],
+      [
+        "REPEL",
+        15
+      ],
+      [
+        "ORAN_BERRY",
+        5
+      ]
+    ],
+    "ashe": [
+      [
+        "CHESTO_BERRY",
+        30
+      ],
+      [
+        "ORAN_BERRY",
+        15
+      ],
+      [
+        "POTION",
+        5
+      ]
+    ],
+    "nico": [
+      [
+        "ORAN_BERRY",
+        30
+      ],
+      [
+        "PECHA_BERRY",
+        15
+      ],
+      [
+        "POTION",
+        5
+      ]
+    ],
+    "riven": [
+      [
+        "SMOKE_BALL",
+        30
+      ],
+      [
+        "POKE_BALL",
+        15
+      ],
+      [
+        "ORAN_BERRY",
+        5
+      ]
+    ],
+    "emi": [
+      [
+        "CHESTO_BERRY",
+        30
+      ],
+      [
+        "PECHA_BERRY",
+        15
+      ],
+      [
+        "POTION",
+        5
+      ]
+    ],
+    "vera": [
+      [
+        "PARALYZE_HEAL",
+        30
+      ],
+      [
+        "POTION",
+        15
+      ],
+      [
+        "ORAN_BERRY",
+        5
+      ]
+    ],
+    "lume": [
+      [
+        "RAWST_BERRY",
+        30
+      ],
+      [
+        "ORAN_BERRY",
+        15
+      ],
+      [
+        "POTION",
+        5
+      ]
+    ],
+    "mochi": [
+      [
+        "SILK_SCARF",
+        30
+      ],
+      [
+        "POKE_BALL",
+        15
+      ],
+      [
+        "ORAN_BERRY",
+        5
+      ]
+    ],
+    "zuri": [
+      [
+        "ASPEAR_BERRY",
+        30
+      ],
+      [
+        "POTION",
+        15
+      ],
+      [
+        "ORAN_BERRY",
+        5
+      ]
+    ]
+  },
+  "gift_replies": {
+    "silas": "A useful field supply. Thank you. I have recorded the gift without subjecting it to peer review.",
+    "kade": "Thanks. I will actually use this. That is an endorsement, despite my face doing its usual thing.",
+    "ashe": "Thank you. I had a longer thank-you prepared. That one was the important part.",
+    "nico": "Lovely. I promise not to describe anything in the first-aid kit as a mystery ingredient.",
+    "riven": "A genuine gift! Received with gratitude, and with no secret compartment involved.",
+    "emi": "Thank you. I accept thoughtful supplies as well as compliments. Slightly less evasively, in fact.",
+    "vera": "Thank you! Useful, portable, and apparently not in need of an experimental motor. Excellent.",
+    "lume": "Thank you. I shall keep it somewhere practical. A mysterious cupboard adds very little to a travel supply.",
+    "mochi": "Thank you! A useful thing, with a sensible place to keep it. A surprisingly strong combination.",
+    "zuri": "Thank you. Supplies matter. The less glamorous corner of a project is still part of the picture."
+  },
+  "rewards": {
+    "silas": [
+      "LIGHT_SCREEN",
+      "PSYCHIC",
+      "Annotated Field Notebook"
+    ],
+    "kade": [
+      "DIG",
+      "EARTHQUAKE",
+      "Courier Route Card"
+    ],
+    "ashe": [
+      "REST",
+      "HYPER_VOICE",
+      "Footsteps Score"
+    ],
+    "nico": [
+      "SUNNY_DAY",
+      "FLAMETHROWER",
+      "Spare-Chair Recipe Card"
+    ],
+    "riven": [
+      "REFLECT",
+      "DAZZLING_GLEAM",
+      "Signed Honest Trick Card"
+    ],
+    "emi": [
+      "PROTECT",
+      "SHADOW_BALL",
+      "Handwritten Poem"
+    ],
+    "vera": [
+      "THUNDER_WAVE",
+      "THUNDERBOLT",
+      "Folding-Seat Blueprint"
+    ],
+    "lume": [
+      "CALM_MIND",
+      "DREAM_EATER",
+      "Collected Stories Booklet"
+    ],
+    "mochi": [
+      "SUBSTITUTE",
+      "DAZZLING_GLEAM",
+      "Working-Pockets Sketch"
+    ],
+    "zuri": [
+      "RAIN_DANCE",
+      "ENERGY_BALL",
+      "Travel Mural Print"
+    ]
+  }
+}

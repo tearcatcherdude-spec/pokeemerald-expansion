@@ -612,6 +612,13 @@ static void Task_HandleMultichoiceInput(u8 taskId)
     }
 }
 
+bool32 ScriptMenu_IsMultichoiceActive(void)
+{
+    return FuncIsActiveTask(Task_HandleMultichoiceInput)
+        || FuncIsActiveTask(Task_HandleMultichoiceGridInput)
+        || FuncIsActiveTask(Task_HandleScrollingMultichoiceInput);
+}
+
 bool8 ScriptMenu_YesNo(u8 left, u8 top)
 {
     if (FuncIsActiveTask(Task_HandleYesNoInput) == TRUE)

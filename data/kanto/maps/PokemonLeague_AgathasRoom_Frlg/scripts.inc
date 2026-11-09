@@ -107,7 +107,7 @@ PokemonLeague_AgathasRoom_Text_Intro::
 
 PokemonLeague_AgathasRoom_Text_RematchIntro::
 	.string "I am AGATHA of the ELITE FOUR.\p"
-	.string "You're the child that OAK's taken\n"
+	.string "You're the trainer OAK has taken\n"
 	.string "under his wing, aren't you?\p"
 	.string "That old duff was once tough and\n"
 	.string "handsome.\p"
@@ -122,7 +122,7 @@ PokemonLeague_AgathasRoom_Text_RematchIntro::
 
 PokemonLeague_AgathasRoom_Text_Defeat::
 	.string "Oh, my!\n"
-	.string "You're something special, child!$"
+	.string "You're something special, trainer!$"
 
 PokemonLeague_AgathasRoom_Text_PostBattle::
 	.string "You win!\p"

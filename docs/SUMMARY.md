@@ -161,3 +161,4 @@
 - [Kanto adventure integration](kanto_adventure.md)
 
 - [Recruitable travelling cast](recruitable_cast.md)
+- [Companion bonds and personal events](companion_bonds.md)

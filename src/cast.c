@@ -1,5 +1,6 @@
 #include "global.h"
 #include "cast.h"
+#include "bonds.h"
 #include "pip.h"
 #include "pokemon.h"
 #include "event_data.h"
@@ -181,6 +182,7 @@ void Cast_RefreshIdentity(void)
 }
 void Cast_OnStep(void)
 {
+    Bonds_OnStep();
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     if (gSaveBlock3Ptr->cast.version == CAST_VERSION
      && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT)
@@ -239,9 +241,13 @@ bool32 Cast_TrySay(u32 id)
     {
         Say(who, sCastCharacters[who].lore[stage], sCastCharacters[who].loreExpression[stage]);
         p->loreStage[who]++;
+        Bonds_QueueObservation(who, TRUE);
     }
     else
+    {
         Say(who, comment->text, comment->expression);
+        Bonds_QueueObservation(who, FALSE);
+    }
     if (p->spoken[who] < 255)
         p->spoken[who]++;
     return TRUE;
@@ -258,6 +264,7 @@ void Cast_ClearPending(void)
 }
 void Cast_HidePortrait(void)
 {
+    Bonds_CancelMessage();
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     if (sPortraitSprite && sPortraitSprite <= MAX_SPRITES && gSprites[sPortraitSprite - 1].inUse
      && gSprites[sPortraitSprite - 1].template == &sPortraitTemplate)
@@ -324,6 +331,8 @@ void Script_CastAfterBattle(struct ScriptContext *ctx)
     {
         bool32 alreadyFriends = (gSaveBlock3Ptr->cast.recruited & (1 << sRecruitId)) != 0;
         gSaveBlock3Ptr->cast.recruited |= 1 << sRecruitId;
+        if(!alreadyFriends)
+            Bonds_Objective(sRecruitId,64); // Completing the original personal recruitment request.
         Say(sRecruitId, alreadyFriends ? sCastCharacters[sRecruitId].rejoin : sCastCharacters[sRecruitId].join, 1);
         gSpecialVar_Result = TRUE;
     }
@@ -383,6 +392,7 @@ bool32 Cast_TryPersonalTalk(void)
         return FALSE;
     Say(who, sCastCharacters[who].lore[stage], sCastCharacters[who].loreExpression[stage]);
     gSaveBlock3Ptr->cast.loreStage[who]++;
+    Bonds_QueueObservation(who, TRUE);
     return TRUE;
 #else
     return FALSE;
@@ -393,6 +403,23 @@ void Cast_ShowPortrait(u32 who, u32 expression)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
     ShowPortrait(who, expression);
+#endif
+}
+
+bool32 Cast_TryBondStory(void)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
+    static const u8 levels[] = {1,4,8,12,16,20};
+    u32 active=Cast_Active(),who,stage;
+    if(!active || !Cast_IsFollowing() || Pip_IsSceneSuspended()) return FALSE;
+    who=active-1;stage=gSaveBlock3Ptr->cast.loreStage[who];
+    if(stage>=6 || Bonds_Level(who)<levels[stage]) return FALSE;
+    Say(who,sCastCharacters[who].lore[stage],sCastCharacters[who].loreExpression[stage]);
+    gSaveBlock3Ptr->cast.loreStage[who]++;
+    Bonds_QueueObservation(who,TRUE);
+    return TRUE;
+#else
+    return FALSE;
 #endif
 }
 

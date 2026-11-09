@@ -1138,6 +1138,7 @@ static const struct MenuAction sMultichoiceList_Pip[] = {
     {COMPOUND_STRING("Head home")},
     {COMPOUND_STRING("Change company")},
     {COMPOUND_STRING("Keep walking")},
+    {COMPOUND_STRING("Companion Journal")},
 };
 
 static const struct MenuAction sMultichoiceList_Cast[] = {

@@ -1,0 +1,2362 @@
+[
+  {
+    "character": "silas",
+    "level": 40,
+    "trainer_index": 634,
+    "team": [
+      {
+        "species": "Magnezone",
+        "moves": [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Thunder Wave",
+          "Light Screen"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Porygon2",
+        "moves": [
+          "Tri Attack",
+          "Psybeam",
+          "Recover",
+          "Conversion"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Gardevoir",
+        "moves": [
+          "Psychic",
+          "Magical Leaf",
+          "Reflect",
+          "Calm Mind"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Roselia",
+        "moves": [
+          "Magical Leaf",
+          "Sludge Bomb",
+          "Stun Spore",
+          "Synthesis"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "silas",
+    "level": 50,
+    "trainer_index": 635,
+    "team": [
+      {
+        "species": "Magnezone",
+        "moves": [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Thunder Wave",
+          "Light Screen"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Porygon2",
+        "moves": [
+          "Tri Attack",
+          "Psybeam",
+          "Recover",
+          "Conversion"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Gardevoir",
+        "moves": [
+          "Psychic",
+          "Magical Leaf",
+          "Reflect",
+          "Calm Mind"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Roserade",
+        "moves": [
+          "Magical Leaf",
+          "Sludge Bomb",
+          "Stun Spore",
+          "Synthesis"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "silas",
+    "level": 60,
+    "trainer_index": 636,
+    "team": [
+      {
+        "species": "Magnezone",
+        "moves": [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Thunder Wave",
+          "Light Screen"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Porygon2",
+        "moves": [
+          "Tri Attack",
+          "Psybeam",
+          "Recover",
+          "Conversion"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Gardevoir",
+        "moves": [
+          "Psychic",
+          "Magical Leaf",
+          "Reflect",
+          "Calm Mind"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Roserade",
+        "moves": [
+          "Magical Leaf",
+          "Sludge Bomb",
+          "Stun Spore",
+          "Synthesis"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "silas",
+    "level": 70,
+    "trainer_index": 637,
+    "team": [
+      {
+        "species": "Magnezone",
+        "moves": [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Thunder Wave",
+          "Light Screen"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Porygon2",
+        "moves": [
+          "Tri Attack",
+          "Psybeam",
+          "Recover",
+          "Conversion"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Gardevoir",
+        "moves": [
+          "Psychic",
+          "Magical Leaf",
+          "Reflect",
+          "Calm Mind"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Roserade",
+        "moves": [
+          "Magical Leaf",
+          "Sludge Bomb",
+          "Stun Spore",
+          "Synthesis"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "kade",
+    "level": 40,
+    "trainer_index": 638,
+    "team": [
+      {
+        "species": "Sandslash",
+        "moves": [
+          "Slash",
+          "Dig",
+          "Rock Tomb",
+          "Sand Attack"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Raticate",
+        "moves": [
+          "Hyper Fang",
+          "Crunch",
+          "Quick Attack",
+          "Scary Face"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Houndoom",
+        "moves": [
+          "Flamethrower",
+          "Bite",
+          "Smog",
+          "Roar"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Machoke",
+        "moves": [
+          "Karate Chop",
+          "Brick Break",
+          "Rock Tomb",
+          "Focus Energy"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "kade",
+    "level": 50,
+    "trainer_index": 639,
+    "team": [
+      {
+        "species": "Sandslash",
+        "moves": [
+          "Slash",
+          "Dig",
+          "Rock Tomb",
+          "Sand Attack"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Raticate",
+        "moves": [
+          "Hyper Fang",
+          "Crunch",
+          "Quick Attack",
+          "Scary Face"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Houndoom",
+        "moves": [
+          "Flamethrower",
+          "Bite",
+          "Smog",
+          "Roar"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Machamp",
+        "moves": [
+          "Karate Chop",
+          "Brick Break",
+          "Rock Tomb",
+          "Focus Energy"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "kade",
+    "level": 60,
+    "trainer_index": 640,
+    "team": [
+      {
+        "species": "Sandslash",
+        "moves": [
+          "Slash",
+          "Dig",
+          "Rock Tomb",
+          "Sand Attack"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Raticate",
+        "moves": [
+          "Hyper Fang",
+          "Crunch",
+          "Quick Attack",
+          "Scary Face"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Houndoom",
+        "moves": [
+          "Flamethrower",
+          "Bite",
+          "Smog",
+          "Roar"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Machamp",
+        "moves": [
+          "Karate Chop",
+          "Brick Break",
+          "Rock Tomb",
+          "Focus Energy"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "kade",
+    "level": 70,
+    "trainer_index": 641,
+    "team": [
+      {
+        "species": "Sandslash",
+        "moves": [
+          "Slash",
+          "Dig",
+          "Rock Tomb",
+          "Sand Attack"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Raticate",
+        "moves": [
+          "Hyper Fang",
+          "Crunch",
+          "Quick Attack",
+          "Scary Face"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Houndoom",
+        "moves": [
+          "Flamethrower",
+          "Bite",
+          "Smog",
+          "Roar"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Machamp",
+        "moves": [
+          "Karate Chop",
+          "Brick Break",
+          "Rock Tomb",
+          "Focus Energy"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "ashe",
+    "level": 40,
+    "trainer_index": 642,
+    "team": [
+      {
+        "species": "Kricketune",
+        "moves": [
+          "X-Scissor",
+          "Sing",
+          "Slash",
+          "Focus Energy"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Loudred",
+        "moves": [
+          "Hyper Voice",
+          "Bite",
+          "Stomp",
+          "Rest"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Chimecho",
+        "moves": [
+          "Extrasensory",
+          "Uproar",
+          "Yawn",
+          "Reflect"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Golbat",
+        "moves": [
+          "Air Slash",
+          "Bite",
+          "Confuse Ray",
+          "Swift"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "ashe",
+    "level": 50,
+    "trainer_index": 643,
+    "team": [
+      {
+        "species": "Kricketune",
+        "moves": [
+          "X-Scissor",
+          "Sing",
+          "Slash",
+          "Focus Energy"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Exploud",
+        "moves": [
+          "Hyper Voice",
+          "Bite",
+          "Stomp",
+          "Rest"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Chimecho",
+        "moves": [
+          "Extrasensory",
+          "Uproar",
+          "Yawn",
+          "Reflect"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Crobat",
+        "moves": [
+          "Air Slash",
+          "Bite",
+          "Confuse Ray",
+          "Swift"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "ashe",
+    "level": 60,
+    "trainer_index": 644,
+    "team": [
+      {
+        "species": "Kricketune",
+        "moves": [
+          "X-Scissor",
+          "Sing",
+          "Slash",
+          "Focus Energy"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Exploud",
+        "moves": [
+          "Hyper Voice",
+          "Bite",
+          "Stomp",
+          "Rest"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Chimecho",
+        "moves": [
+          "Extrasensory",
+          "Uproar",
+          "Yawn",
+          "Reflect"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Crobat",
+        "moves": [
+          "Air Slash",
+          "Bite",
+          "Confuse Ray",
+          "Swift"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "ashe",
+    "level": 70,
+    "trainer_index": 645,
+    "team": [
+      {
+        "species": "Kricketune",
+        "moves": [
+          "X-Scissor",
+          "Sing",
+          "Slash",
+          "Focus Energy"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Exploud",
+        "moves": [
+          "Hyper Voice",
+          "Bite",
+          "Stomp",
+          "Rest"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Chimecho",
+        "moves": [
+          "Extrasensory",
+          "Uproar",
+          "Yawn",
+          "Reflect"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Crobat",
+        "moves": [
+          "Air Slash",
+          "Bite",
+          "Confuse Ray",
+          "Swift"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "nico",
+    "level": 40,
+    "trainer_index": 646,
+    "team": [
+      {
+        "species": "Magcargo",
+        "moves": [
+          "Lava Plume",
+          "Ancient Power",
+          "Amnesia",
+          "Yawn"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Breloom",
+        "moves": [
+          "Mach Punch",
+          "Mega Drain",
+          "Leech Seed",
+          "Headbutt"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Cherrim",
+        "moves": [
+          "Magical Leaf",
+          "Sunny Day",
+          "Helping Hand",
+          "Take Down"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Snorlax",
+        "moves": [
+          "Body Slam",
+          "Bite",
+          "Rest",
+          "Snore"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "nico",
+    "level": 50,
+    "trainer_index": 647,
+    "team": [
+      {
+        "species": "Magcargo",
+        "moves": [
+          "Lava Plume",
+          "Ancient Power",
+          "Amnesia",
+          "Yawn"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Breloom",
+        "moves": [
+          "Mach Punch",
+          "Mega Drain",
+          "Leech Seed",
+          "Headbutt"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Cherrim",
+        "moves": [
+          "Magical Leaf",
+          "Sunny Day",
+          "Helping Hand",
+          "Take Down"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Snorlax",
+        "moves": [
+          "Body Slam",
+          "Bite",
+          "Rest",
+          "Snore"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "nico",
+    "level": 60,
+    "trainer_index": 648,
+    "team": [
+      {
+        "species": "Magcargo",
+        "moves": [
+          "Lava Plume",
+          "Ancient Power",
+          "Amnesia",
+          "Yawn"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Breloom",
+        "moves": [
+          "Mach Punch",
+          "Mega Drain",
+          "Leech Seed",
+          "Headbutt"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Cherrim",
+        "moves": [
+          "Magical Leaf",
+          "Sunny Day",
+          "Helping Hand",
+          "Take Down"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Snorlax",
+        "moves": [
+          "Body Slam",
+          "Bite",
+          "Rest",
+          "Snore"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "nico",
+    "level": 70,
+    "trainer_index": 649,
+    "team": [
+      {
+        "species": "Magcargo",
+        "moves": [
+          "Lava Plume",
+          "Ancient Power",
+          "Amnesia",
+          "Yawn"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Breloom",
+        "moves": [
+          "Mach Punch",
+          "Mega Drain",
+          "Leech Seed",
+          "Headbutt"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Cherrim",
+        "moves": [
+          "Magical Leaf",
+          "Sunny Day",
+          "Helping Hand",
+          "Take Down"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Snorlax",
+        "moves": [
+          "Body Slam",
+          "Bite",
+          "Rest",
+          "Snore"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "riven",
+    "level": 40,
+    "trainer_index": 650,
+    "team": [
+      {
+        "species": "Kadabra",
+        "moves": [
+          "Psychic",
+          "Reflect",
+          "Recover",
+          "Shadow Ball"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Sableye",
+        "moves": [
+          "Shadow Claw",
+          "Fake Out",
+          "Confuse Ray",
+          "Knock Off"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Mismagius",
+        "moves": [
+          "Shadow Ball",
+          "Magical Leaf",
+          "Confuse Ray",
+          "Psybeam"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Mr. Mime",
+        "moves": [
+          "Psybeam",
+          "Reflect",
+          "Light Screen",
+          "Encore"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "riven",
+    "level": 50,
+    "trainer_index": 651,
+    "team": [
+      {
+        "species": "Alakazam",
+        "moves": [
+          "Psychic",
+          "Reflect",
+          "Recover",
+          "Shadow Ball"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Sableye",
+        "moves": [
+          "Shadow Claw",
+          "Fake Out",
+          "Confuse Ray",
+          "Knock Off"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Mismagius",
+        "moves": [
+          "Shadow Ball",
+          "Magical Leaf",
+          "Confuse Ray",
+          "Psybeam"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Mr. Mime",
+        "moves": [
+          "Psybeam",
+          "Reflect",
+          "Light Screen",
+          "Encore"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "riven",
+    "level": 60,
+    "trainer_index": 652,
+    "team": [
+      {
+        "species": "Alakazam",
+        "moves": [
+          "Psychic",
+          "Reflect",
+          "Recover",
+          "Shadow Ball"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Sableye",
+        "moves": [
+          "Shadow Claw",
+          "Fake Out",
+          "Confuse Ray",
+          "Knock Off"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Mismagius",
+        "moves": [
+          "Shadow Ball",
+          "Magical Leaf",
+          "Confuse Ray",
+          "Psybeam"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Mr. Mime",
+        "moves": [
+          "Psybeam",
+          "Reflect",
+          "Light Screen",
+          "Encore"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "riven",
+    "level": 70,
+    "trainer_index": 653,
+    "team": [
+      {
+        "species": "Alakazam",
+        "moves": [
+          "Psychic",
+          "Reflect",
+          "Recover",
+          "Shadow Ball"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Sableye",
+        "moves": [
+          "Shadow Claw",
+          "Fake Out",
+          "Confuse Ray",
+          "Knock Off"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Mismagius",
+        "moves": [
+          "Shadow Ball",
+          "Magical Leaf",
+          "Confuse Ray",
+          "Psybeam"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Mr. Mime",
+        "moves": [
+          "Psybeam",
+          "Reflect",
+          "Light Screen",
+          "Encore"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "emi",
+    "level": 40,
+    "trainer_index": 654,
+    "team": [
+      {
+        "species": "Noctowl",
+        "moves": [
+          "Air Slash",
+          "Confusion",
+          "Hypnosis",
+          "Reflect"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Kirlia",
+        "moves": [
+          "Psychic",
+          "Magical Leaf",
+          "Calm Mind",
+          "Double Team"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Honchkrow",
+        "moves": [
+          "Wing Attack",
+          "Feint Attack",
+          "Haze",
+          "Taunt"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Lopunny",
+        "moves": [
+          "Strength",
+          "Quick Attack",
+          "Charm",
+          "Jump Kick"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "emi",
+    "level": 50,
+    "trainer_index": 655,
+    "team": [
+      {
+        "species": "Noctowl",
+        "moves": [
+          "Air Slash",
+          "Confusion",
+          "Hypnosis",
+          "Reflect"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Gardevoir",
+        "moves": [
+          "Psychic",
+          "Magical Leaf",
+          "Calm Mind",
+          "Double Team"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Honchkrow",
+        "moves": [
+          "Wing Attack",
+          "Feint Attack",
+          "Haze",
+          "Taunt"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Lopunny",
+        "moves": [
+          "Strength",
+          "Quick Attack",
+          "Charm",
+          "Jump Kick"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "emi",
+    "level": 60,
+    "trainer_index": 656,
+    "team": [
+      {
+        "species": "Noctowl",
+        "moves": [
+          "Air Slash",
+          "Confusion",
+          "Hypnosis",
+          "Reflect"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Gardevoir",
+        "moves": [
+          "Psychic",
+          "Magical Leaf",
+          "Calm Mind",
+          "Double Team"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Honchkrow",
+        "moves": [
+          "Wing Attack",
+          "Feint Attack",
+          "Haze",
+          "Taunt"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Lopunny",
+        "moves": [
+          "Strength",
+          "Quick Attack",
+          "Charm",
+          "Jump Kick"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "emi",
+    "level": 70,
+    "trainer_index": 657,
+    "team": [
+      {
+        "species": "Noctowl",
+        "moves": [
+          "Air Slash",
+          "Confusion",
+          "Hypnosis",
+          "Reflect"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Gardevoir",
+        "moves": [
+          "Psychic",
+          "Magical Leaf",
+          "Calm Mind",
+          "Double Team"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Honchkrow",
+        "moves": [
+          "Wing Attack",
+          "Feint Attack",
+          "Haze",
+          "Taunt"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Lopunny",
+        "moves": [
+          "Strength",
+          "Quick Attack",
+          "Charm",
+          "Jump Kick"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "vera",
+    "level": 40,
+    "trainer_index": 658,
+    "team": [
+      {
+        "species": "Manectric",
+        "moves": [
+          "Thunderbolt",
+          "Bite",
+          "Thunder Wave",
+          "Quick Attack"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Magneton",
+        "moves": [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Thunder Wave",
+          "Light Screen"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Electrode",
+        "moves": [
+          "Spark",
+          "Swift",
+          "Light Screen",
+          "Screech"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Pachirisu",
+        "moves": [
+          "Spark",
+          "Super Fang",
+          "Charm",
+          "Quick Attack"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "vera",
+    "level": 50,
+    "trainer_index": 659,
+    "team": [
+      {
+        "species": "Manectric",
+        "moves": [
+          "Thunderbolt",
+          "Bite",
+          "Thunder Wave",
+          "Quick Attack"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Magnezone",
+        "moves": [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Thunder Wave",
+          "Light Screen"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Electrode",
+        "moves": [
+          "Spark",
+          "Swift",
+          "Light Screen",
+          "Screech"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Pachirisu",
+        "moves": [
+          "Spark",
+          "Super Fang",
+          "Charm",
+          "Quick Attack"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "vera",
+    "level": 60,
+    "trainer_index": 660,
+    "team": [
+      {
+        "species": "Manectric",
+        "moves": [
+          "Thunderbolt",
+          "Bite",
+          "Thunder Wave",
+          "Quick Attack"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Magnezone",
+        "moves": [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Thunder Wave",
+          "Light Screen"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Electrode",
+        "moves": [
+          "Spark",
+          "Swift",
+          "Light Screen",
+          "Screech"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Pachirisu",
+        "moves": [
+          "Spark",
+          "Super Fang",
+          "Charm",
+          "Quick Attack"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "vera",
+    "level": 70,
+    "trainer_index": 661,
+    "team": [
+      {
+        "species": "Manectric",
+        "moves": [
+          "Thunderbolt",
+          "Bite",
+          "Thunder Wave",
+          "Quick Attack"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Magnezone",
+        "moves": [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Thunder Wave",
+          "Light Screen"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Electrode",
+        "moves": [
+          "Spark",
+          "Swift",
+          "Light Screen",
+          "Screech"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Pachirisu",
+        "moves": [
+          "Spark",
+          "Super Fang",
+          "Charm",
+          "Quick Attack"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "lume",
+    "level": 40,
+    "trainer_index": 662,
+    "team": [
+      {
+        "species": "Ninjask",
+        "moves": [
+          "X-Scissor",
+          "Aerial Ace",
+          "Mind Reader",
+          "Double Team"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Dusclops",
+        "moves": [
+          "Shadow Punch",
+          "Will-O-Wisp",
+          "Payback",
+          "Confuse Ray"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Grumpig",
+        "moves": [
+          "Psybeam",
+          "Power Gem",
+          "Confuse Ray",
+          "Magic Coat"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Noctowl",
+        "moves": [
+          "Air Slash",
+          "Confusion",
+          "Hypnosis",
+          "Reflect"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "lume",
+    "level": 50,
+    "trainer_index": 663,
+    "team": [
+      {
+        "species": "Ninjask",
+        "moves": [
+          "X-Scissor",
+          "Aerial Ace",
+          "Mind Reader",
+          "Double Team"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Dusknoir",
+        "moves": [
+          "Shadow Punch",
+          "Will-O-Wisp",
+          "Payback",
+          "Confuse Ray"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Grumpig",
+        "moves": [
+          "Psybeam",
+          "Power Gem",
+          "Confuse Ray",
+          "Magic Coat"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Noctowl",
+        "moves": [
+          "Air Slash",
+          "Confusion",
+          "Hypnosis",
+          "Reflect"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "lume",
+    "level": 60,
+    "trainer_index": 664,
+    "team": [
+      {
+        "species": "Ninjask",
+        "moves": [
+          "X-Scissor",
+          "Aerial Ace",
+          "Mind Reader",
+          "Double Team"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Dusknoir",
+        "moves": [
+          "Shadow Punch",
+          "Will-O-Wisp",
+          "Payback",
+          "Confuse Ray"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Grumpig",
+        "moves": [
+          "Psybeam",
+          "Power Gem",
+          "Confuse Ray",
+          "Magic Coat"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Noctowl",
+        "moves": [
+          "Air Slash",
+          "Confusion",
+          "Hypnosis",
+          "Reflect"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "lume",
+    "level": 70,
+    "trainer_index": 665,
+    "team": [
+      {
+        "species": "Ninjask",
+        "moves": [
+          "X-Scissor",
+          "Aerial Ace",
+          "Mind Reader",
+          "Double Team"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Dusknoir",
+        "moves": [
+          "Shadow Punch",
+          "Will-O-Wisp",
+          "Payback",
+          "Confuse Ray"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Grumpig",
+        "moves": [
+          "Psybeam",
+          "Power Gem",
+          "Confuse Ray",
+          "Magic Coat"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Noctowl",
+        "moves": [
+          "Air Slash",
+          "Confusion",
+          "Hypnosis",
+          "Reflect"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "mochi",
+    "level": 40,
+    "trainer_index": 666,
+    "team": [
+      {
+        "species": "Lopunny",
+        "moves": [
+          "Strength",
+          "Jump Kick",
+          "Charm",
+          "Quick Attack"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Delcatty",
+        "moves": [
+          "Swift",
+          "Fake Out",
+          "Sing",
+          "Feint Attack"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Vespiquen",
+        "moves": [
+          "Attack Order",
+          "Power Gem",
+          "Defend Order",
+          "Heal Order"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Roselia",
+        "moves": [
+          "Magical Leaf",
+          "Sludge Bomb",
+          "Stun Spore",
+          "Synthesis"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "mochi",
+    "level": 50,
+    "trainer_index": 667,
+    "team": [
+      {
+        "species": "Lopunny",
+        "moves": [
+          "Strength",
+          "Jump Kick",
+          "Charm",
+          "Quick Attack"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Delcatty",
+        "moves": [
+          "Swift",
+          "Fake Out",
+          "Sing",
+          "Feint Attack"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Vespiquen",
+        "moves": [
+          "Attack Order",
+          "Power Gem",
+          "Defend Order",
+          "Heal Order"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Roserade",
+        "moves": [
+          "Magical Leaf",
+          "Sludge Bomb",
+          "Stun Spore",
+          "Synthesis"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "mochi",
+    "level": 60,
+    "trainer_index": 668,
+    "team": [
+      {
+        "species": "Lopunny",
+        "moves": [
+          "Strength",
+          "Jump Kick",
+          "Charm",
+          "Quick Attack"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Delcatty",
+        "moves": [
+          "Swift",
+          "Fake Out",
+          "Sing",
+          "Feint Attack"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Vespiquen",
+        "moves": [
+          "Attack Order",
+          "Power Gem",
+          "Defend Order",
+          "Heal Order"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Roserade",
+        "moves": [
+          "Magical Leaf",
+          "Sludge Bomb",
+          "Stun Spore",
+          "Synthesis"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "mochi",
+    "level": 70,
+    "trainer_index": 669,
+    "team": [
+      {
+        "species": "Lopunny",
+        "moves": [
+          "Strength",
+          "Jump Kick",
+          "Charm",
+          "Quick Attack"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Delcatty",
+        "moves": [
+          "Swift",
+          "Fake Out",
+          "Sing",
+          "Feint Attack"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Vespiquen",
+        "moves": [
+          "Attack Order",
+          "Power Gem",
+          "Defend Order",
+          "Heal Order"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Roserade",
+        "moves": [
+          "Magical Leaf",
+          "Sludge Bomb",
+          "Stun Spore",
+          "Synthesis"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "zuri",
+    "level": 40,
+    "trainer_index": 670,
+    "team": [
+      {
+        "species": "Smeargle",
+        "moves": [
+          "Hyper Voice",
+          "Aerial Ace",
+          "Thunder Wave",
+          "Mimic"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Chatot",
+        "moves": [
+          "Chatter",
+          "Sing",
+          "Uproar",
+          "Mirror Move"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Ambipom",
+        "moves": [
+          "Double Hit",
+          "Aerial Ace",
+          "Sand Attack",
+          "Swift"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Spinda",
+        "moves": [
+          "Dizzy Punch",
+          "Teeter Dance",
+          "Feint Attack",
+          "Psybeam"
+        ],
+        "level": 40,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "zuri",
+    "level": 50,
+    "trainer_index": 671,
+    "team": [
+      {
+        "species": "Smeargle",
+        "moves": [
+          "Hyper Voice",
+          "Aerial Ace",
+          "Thunder Wave",
+          "Mimic"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Chatot",
+        "moves": [
+          "Chatter",
+          "Sing",
+          "Uproar",
+          "Mirror Move"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Ambipom",
+        "moves": [
+          "Double Hit",
+          "Aerial Ace",
+          "Sand Attack",
+          "Swift"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Spinda",
+        "moves": [
+          "Dizzy Punch",
+          "Teeter Dance",
+          "Feint Attack",
+          "Psybeam"
+        ],
+        "level": 50,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "zuri",
+    "level": 60,
+    "trainer_index": 672,
+    "team": [
+      {
+        "species": "Smeargle",
+        "moves": [
+          "Hyper Voice",
+          "Aerial Ace",
+          "Thunder Wave",
+          "Mimic"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Chatot",
+        "moves": [
+          "Chatter",
+          "Sing",
+          "Uproar",
+          "Mirror Move"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Ambipom",
+        "moves": [
+          "Double Hit",
+          "Aerial Ace",
+          "Sand Attack",
+          "Swift"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Spinda",
+        "moves": [
+          "Dizzy Punch",
+          "Teeter Dance",
+          "Feint Attack",
+          "Psybeam"
+        ],
+        "level": 60,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  },
+  {
+    "character": "zuri",
+    "level": 70,
+    "trainer_index": 673,
+    "team": [
+      {
+        "species": "Smeargle",
+        "moves": [
+          "Hyper Voice",
+          "Aerial Ace",
+          "Thunder Wave",
+          "Mimic"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Chatot",
+        "moves": [
+          "Chatter",
+          "Sing",
+          "Uproar",
+          "Mirror Move"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Ambipom",
+        "moves": [
+          "Double Hit",
+          "Aerial Ace",
+          "Sand Attack",
+          "Swift"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      },
+      {
+        "species": "Spinda",
+        "moves": [
+          "Dizzy Punch",
+          "Teeter Dance",
+          "Feint Attack",
+          "Psybeam"
+        ],
+        "level": 70,
+        "ivs": 20,
+        "evs": 0,
+        "held_item": null
+      }
+    ]
+  }
+]

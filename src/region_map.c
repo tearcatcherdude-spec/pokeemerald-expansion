@@ -1,4 +1,5 @@
 #include "global.h"
+#include "bond_journal.h"
 #include "main.h"
 #include "text.h"
 #include "menu.h"
@@ -741,14 +742,14 @@ bool8 LoadRegionMapGfx(void)
     switch (sRegionMap->initStep)
     {
     case 0:
-        regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
+        regionMapType = GetRegionMapType(Bonds_DisplayedMapSection(gMapHeader.regionMapSectionId));
         if (sRegionMap->bgManaged)
             DecompressAndCopyTileDataToVram(sRegionMap->bgNum, gRegionMapInfos[regionMapType].regionMapGfx, 0, 0, 0);
         else
             DecompressDataWithHeaderVram(gRegionMapInfos[regionMapType].regionMapGfx, (u16 *)BG_CHAR_ADDR(2));
         break;
     case 1:
-        regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
+        regionMapType = GetRegionMapType(Bonds_DisplayedMapSection(gMapHeader.regionMapSectionId));
         if (sRegionMap->bgManaged)
         {
             if (!FreeTempTileDataBuffersIfPossible())
@@ -760,7 +761,7 @@ bool8 LoadRegionMapGfx(void)
         }
         break;
     case 2:
-        regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
+        regionMapType = GetRegionMapType(Bonds_DisplayedMapSection(gMapHeader.regionMapSectionId));
         if (!FreeTempTileDataBuffersIfPossible())
             LoadPalette(gRegionMapInfos[regionMapType].regionMapPalette, BG_PLTT_ID(7), 3 * PLTT_SIZE_4BPP);
         break;
@@ -824,6 +825,7 @@ void BlendRegionMap(u16 color, u32 coeff)
 
 void FreeRegionMapIconResources(void)
 {
+    Bonds_FreeMapPin();
     if (sRegionMap->cursorSprite != NULL)
     {
         DestroySprite(sRegionMap->cursorSprite);
@@ -1192,10 +1194,10 @@ static mapsec_u16_t GetMapSecIdAt(u16 x, u16 y)
     y -= MAPCURSOR_Y_MIN;
     x -= MAPCURSOR_X_MIN;
 
-    switch (GetCurrentRegion())
+    switch (GetRegionForSectionId(Bonds_DisplayedMapSection(gMapHeader.regionMapSectionId)))
     {
     case REGION_KANTO:
-        switch (GetKantoSubregion(gMapHeader.regionMapSectionId))
+        switch (GetKantoSubregion(Bonds_DisplayedMapSection(gMapHeader.regionMapSectionId)))
         {
         case KANTO_SUBREGION_SEVII123:
                 return sRegionMapSections_Sevii123[y][x];
@@ -1223,6 +1225,9 @@ static void InitMapBasedOnPlayerLocation(void)
     u16 dimensionScale;
     u16 xOnMap;
     struct WarpData *warp;
+
+    if(Bonds_PositionMapView(sRegionMap))
+        return;
 
     if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_SS_TIDAL_CORRIDOR)
         && (gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_SS_TIDAL_CORRIDOR)
@@ -1710,6 +1715,7 @@ void CreateRegionMapCursor(u16 tileTag, u16 paletteTag)
         sRegionMap->cursorSprite->data[2] = OBJ_PLTT_ID(IndexOfSpritePaletteTag(paletteTag)) + 1;
         sRegionMap->cursorSprite->data[3] = TRUE;
     }
+    Bonds_CreateMapPin(sRegionMap);
 }
 
 static void FreeRegionMapCursorSprite(void)
@@ -2328,7 +2334,7 @@ static const struct FlyLocation sFlyLocations[] =
 
 static void CreateFlyDestIcons(void)
 {
-    enum RegionMapType regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
+    enum RegionMapType regionMapType = GetRegionMapType(Bonds_DisplayedMapSection(gMapHeader.regionMapSectionId));
     u32 i;
     u16 x;
     u16 y;

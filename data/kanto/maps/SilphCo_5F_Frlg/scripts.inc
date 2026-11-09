@@ -69,7 +69,7 @@ SilphCo_5F_Text_YoureOurHeroThankYou::
 	.string "You're our hero! Thank you!$"
 
 SilphCo_5F_Text_Grunt1Intro::
-	.string "I heard a kid was wandering\n"
+	.string "I heard a trainer was wandering\n"
 	.string "around.$"
 
 SilphCo_5F_Text_Grunt1Defeat::

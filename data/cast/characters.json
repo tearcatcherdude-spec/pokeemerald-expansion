@@ -49,7 +49,8 @@
     "farewell": "I will be in OLDALE. If a bush appears to be covered in notes, please check whether it is me.",
     "x": 11,
     "y": 15,
-    "local_id": 8
+    "local_id": 8,
+    "life_stage": "adult"
   },
   {
     "name": "kade",
@@ -101,7 +102,8 @@
     "farewell": "I will be back on ROUTE 2. Take your time. That is not courier advice; it is friend advice.",
     "x": 12,
     "y": 61,
-    "local_id": 8
+    "local_id": 8,
+    "life_stage": "adult"
   },
   {
     "name": "ashe",
@@ -153,7 +155,8 @@
     "farewell": "I will be on ROUTE 3. If you hear humming, the song may have acquired a second line.",
     "x": 12,
     "y": 9,
-    "local_id": 12
+    "local_id": 12,
+    "life_stage": "adult"
   },
   {
     "name": "nico",
@@ -205,7 +208,8 @@
     "farewell": "Find me on ROUTE 104. I will save you something, unless MUNCHLAX has filed an exceptionally persuasive appeal.",
     "x": 20,
     "y": 53,
-    "local_id": 37
+    "local_id": 37,
+    "life_stage": "adult"
   },
   {
     "name": "riven",
@@ -257,7 +261,8 @@
     "farewell": "Back to VERMILION for me. No smoke, no vanishing. Just a rather grateful goodbye.",
     "x": 15,
     "y": 18,
-    "local_id": 11
+    "local_id": 11,
+    "life_stage": "adult"
   },
   {
     "name": "emi",
@@ -309,7 +314,8 @@
     "farewell": "I will be on ROUTE 102. Same sign, slightly less stationary poem. See you soon.",
     "x": 40,
     "y": 12,
-    "local_id": 12
+    "local_id": 12,
+    "life_stage": "adult"
   },
   {
     "name": "vera",
@@ -361,7 +367,8 @@
     "farewell": "I will be in SLATEPORT. Knock before entering anything labelled experimental. Especially my lunch box.",
     "x": 20,
     "y": 22,
-    "local_id": 38
+    "local_id": 38,
+    "life_stage": "adult"
   },
   {
     "name": "lume",
@@ -413,7 +420,8 @@
     "farewell": "Back to VERDANTURF. I will keep listening. Bring me a story if you feel like sharing one.",
     "x": 13,
     "y": 13,
-    "local_id": 8
+    "local_id": 8,
+    "life_stage": "adult"
   },
   {
     "name": "mochi",
@@ -465,7 +473,8 @@
     "farewell": "I will be in CERULEAN. If a sleeve tears, you know where to find me. For other reasons too.",
     "x": 23,
     "y": 23,
-    "local_id": 15
+    "local_id": 15,
+    "life_stage": "adult"
   },
   {
     "name": "zuri",
@@ -517,6 +526,7 @@
     "farewell": "I will be in CELADON. Keep noticing things. You do not have to turn every good moment into a masterpiece.",
     "x": 21,
     "y": 21,
-    "local_id": 18
+    "local_id": 18,
+    "life_stage": "adult"
   }
 ]

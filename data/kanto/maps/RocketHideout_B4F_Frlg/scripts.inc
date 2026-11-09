@@ -145,7 +145,7 @@ RocketHideout_B4F_Text_GiovanniDefeat::
 RocketHideout_B4F_Text_GiovanniPostBattle::
 	.string "I see that you raise POKéMON with\n"
 	.string "utmost care.\p"
-	.string "A child like you would never\n"
+	.string "A newcomer like you would never\n"
 	.string "understand what I hope to achieve.\p"
 	.string "I shall step aside this time!\p"
 	.string "I hope we meet again…$"

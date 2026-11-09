@@ -1,4 +1,5 @@
 #include "global.h"
+#include "bonds.h"
 #include "cast.h"
 #include "event_data.h"
 #include "kanto_progress.h"
@@ -238,7 +239,11 @@ u8 FlagSet(u16 id)
     id = KantoProgress_RegionalFlagId(id);
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
+    {
+        bool32 fresh=(*ptr & (1 << (id & 7)))==0;
         *ptr |= 1 << (id & 7);
+        if(fresh) Bonds_OnObjectiveFlag(id);
+    }
     return 0;
 }
 

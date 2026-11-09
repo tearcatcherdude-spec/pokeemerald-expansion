@@ -1,4 +1,5 @@
 #include "global.h"
+#include "bond_journal.h"
 #include "pip.h"
 #include "overworld.h"
 #include "battle_pyramid.h"
@@ -1900,6 +1901,7 @@ void CB2_Overworld(void)
         SetVBlankCallback(NULL);
     OverworldBasic();
     Pip_TryRegroupAfterScene();
+    Bonds_UpdateField();
     if (fading)
     {
         SetFieldVBlankCallback();

@@ -53,3 +53,28 @@ Run the cast source validator and actual compiled artwork verifier in addition t
 the original baseline and Kanto checks. Native emulator checks must use the exact
 packaged binary and normal-save migration; do not claim a continuous playthrough
 from arranged test positions or parties.
+
+# Companion bonds continuity
+
+PR #10, `feature/companion-bonds`, extends PR #9 commit
+abca44ff33711c59df08e0734d41e658263c6128. SaveBlocks 1/2/3 stay unchanged.
+Bond v1 appends 416 bytes after the released 34144-byte PC/fusion prefix;
+PokemonStorage is 34560 bytes of a 35712-byte allowance. Never move the prefix,
+shrink boxes, erase fusion slots, or reuse Hall of Fame/special save sectors.
+Normal legacy saves have zero bytes in the appended tail, preserving checksums.
+Keep the magic/version and individual bond record offsets stable after release.
+
+The 634 existing Kanto/cast trainer entries stay unchanged. Trial entries
+634..673 are new, with separate practice behavior; never replace the early
+recruitment teams. Gift consumption requires an explicit preview and confirmation.
+Only newly finished observations award EXP; old heard/declined comments never
+replay for farming. No companion-switch, save/load or door-loop outing resets.
+
+Build authored bond data with `dev_scripts/build_bonds.py`; cast regeneration
+also calls it so it cannot silently erase journal wiring or practice teams.
+`data/bonds/events.json` is the runtime placement manifest; the original handoff
+JSON remains a proposal snapshot. No existing map geometry/events are rewritten.
+Temporary scene actors use local IDs F0..F2 and must be removed on cancel, finish
+and map changes without removing original actors or duplicating the follower.
+Run `validate_bonds.py` plus all previous source/artwork checks and native normal
+save, marker-route, journal, reward-once, branch-choice and loss/retry checks.

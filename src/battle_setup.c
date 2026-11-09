@@ -1,4 +1,6 @@
 #include "global.h"
+#include "bonds.h"
+#include "bond_journal.h"
 #include "data.h"
 #include "main.h"
 #include "battle.h"
@@ -1421,6 +1423,11 @@ bool8 GetTrainerFlag(void)
 
 static void SetBattledTrainersFlags(void)
 {
+    // Only an actual first victory renews the outing. Script-set trainer flags
+    // and repeat rematches must not allow gift/walking-cap resets.
+    if (!FlagGet(GetTrainerAFlag())
+     || (TRAINER_BATTLE_PARAM.opponentB != 0 && !FlagGet(GetTrainerBFlag())))
+        Bonds_RenewOuting();
     if (TRAINER_BATTLE_PARAM.opponentB != 0)
         FlagSet(GetTrainerBFlag());
     FlagSet(GetTrainerAFlag());
@@ -1468,7 +1475,7 @@ void BattleSetup_StartTrainerBattle(void)
         }
     }
 
-    if (TRAINER_BATTLE_PARAM.earlyRival && GetRivalBattleFlags() & RIVAL_BATTLE_TUTORIAL)
+    if (TRAINER_BATTLE_PARAM.earlyRival && (GetRivalBattleFlags() & RIVAL_BATTLE_TUTORIAL) && !Bonds_IsTraining())
         gBattleTypeFlags |= BATTLE_TYPE_FIRST_BATTLE;
 
     if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)

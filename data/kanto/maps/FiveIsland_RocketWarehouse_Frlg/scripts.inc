@@ -211,7 +211,7 @@ FiveIsland_RocketWarehouse_Text_Grunt1PostBattle::
 FiveIsland_RocketWarehouse_Text_Grunt3Intro::
 	.string "I got word about you from the\n"
 	.string "others.\p"
-	.string "But there's no way a kid like you'd\n"
+	.string "But there's no way a rookie like you'd\n"
 	.string "know our BOSS GIOVANNI!$"
 
 FiveIsland_RocketWarehouse_Text_Grunt3Defeat::
@@ -254,7 +254,7 @@ FiveIsland_RocketWarehouse_Text_Admin2Intro::
 	.string "It's such an obvious attempt to\n"
 	.string "cause confusion in our ranks.\p"
 	.string "Fortunately, we're not so ignorant\n"
-	.string "to fall for the lies of a child!\p"
+	.string "to fall for the lies of a newcomer!\p"
 	.string "And now, I'll show you how scary\n"
 	.string "an angry adult can be!$"
 
