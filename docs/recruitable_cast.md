@@ -43,7 +43,7 @@ Their neutral portraits also identify the trainers on the battle introduction.
 
 The ten voices cover the same 402 live Pip source contexts in both regions: places,
 NPCs, leaders, objects, travel, milestones and resolved living-world scenes. The
-current authored set contains 910 distinct reactions plus 60 backstory passages.
+current authored set contains 940 distinct reactions plus 60 backstory passages.
 Equivalent wording shares a canonical memory bit within that character. A heard
 or declined offer is spent; moving to a similar shelf or cycling companions does
 not produce the same line again. When nothing is fresh they remain quiet.

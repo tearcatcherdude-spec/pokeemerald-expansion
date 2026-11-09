@@ -310,7 +310,7 @@ bool32 Pip_TrySay(const u8 *text)
 #if FNPC_ENABLE_NPC_FOLLOWERS
     u32 id = MemoryIndex(text);
     if (Cast_IsFollowing())
-        return !sSceneSuspended && Cast_TrySay(id);
+        return text != NULL && !sSceneSuspended && Cast_TrySay(id);
     if (!Pip_IsFollowing() || sSceneSuspended || id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text))
         return FALSE;
     gSaveBlock3Ptr->pipHeard[id / 8] |= 1 << (id % 8);
@@ -345,7 +345,7 @@ void Script_PipChooseDialogue(struct ScriptContext *ctx)
 void Pip_BeginKantoNPCInteraction(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
-    sKantoInteractionActive = ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
+    sKantoInteractionActive = Cast_IsFollowing() || ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
     sKantoReactionHandled = FALSE;
     sKantoTalkGroup = gSaveBlock1Ptr->location.mapGroup;
     sKantoTalkMap = gSaveBlock1Ptr->location.mapNum;
@@ -354,7 +354,7 @@ void Pip_BeginKantoNPCInteraction(void)
 }
 void Script_PipBeginKantoNPCReaction(struct ScriptContext *ctx)
 {
-    if (!ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    if (!ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum) && !Cast_IsFollowing())
     {
 #if FNPC_ENABLE_NPC_FOLLOWERS
         BeginReaction(ctx);
@@ -375,7 +375,7 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
     if (!sSavedTextValid || gSpecialVar_LastTalked == OBJ_EVENT_ID_NPC_FOLLOWER
      || id >= OBJECT_EVENTS_COUNT || !gObjectEvents[id].active)
         return;
-    if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+    if (Cast_IsFollowing() || ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
     {
         if (!sKantoInteractionActive || sKantoReactionHandled
          || sKantoTalkGroup != gSaveBlock1Ptr->location.mapGroup
@@ -422,6 +422,9 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
             break;
         }
     }
+    if (Cast_IsFollowing() && !ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum)
+     && FreshNPCOffer(text) == NULL)
+        text = FreshLocation();
     const u8 *personScript = GetObjectEventScriptPointerByObjectEventId(id);
     for (u32 i = 0; i < ARRAY_COUNT(sPipKantoScenes); i++)
         if (sPipKantoScenes[i].script == personScript)

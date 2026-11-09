@@ -1,7 +1,7 @@
 [
   {
     "character": "silas",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -2991,10 +2991,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "I like how it changes when you stand somewhere else. A useful principle beyond paintings.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "A model with clear rules. Delightful. My real experiments keep introducing new variables.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -3036,11 +3036,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "A meal is a perfectly respectable reason to pause an experiment.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "A matching set, carefully arranged. My laboratory cups have formed a less disciplined society.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -3117,11 +3117,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "A meal is a perfectly respectable reason to pause an experiment.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "A cup with a comfortable handle. A small successful design deserves recognition.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,
@@ -3631,7 +3631,7 @@
   },
   {
     "character": "kade",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -6621,10 +6621,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "Someone spent time on that. We do not have to understand it to respect the work.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "Whoever is playing deserves a warning before we lean on the reset button.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -6666,11 +6666,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "That belongs to someone. We can ask rather than develop a theory of unattended lunch.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "Someone washed and stacked those. We can leave the arrangement intact.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -6747,11 +6747,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "That belongs to someone. We can ask rather than develop a theory of unattended lunch.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "Someone put it down intending to come back. Let us leave it where they expect.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,
@@ -7261,7 +7261,7 @@
   },
   {
     "character": "ashe",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -10251,10 +10251,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "It makes me think of a song without words. Conveniently, I know several unfinished ones.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "I am trying to enjoy the game without analysing the little victory tune. Failing pleasantly.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -10296,11 +10296,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "A kitchen sounds like an orchestra that expects dinner to happen afterwards.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "The plates make a pleasing rhythm. I shall enjoy it without attempting a solo.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -10377,11 +10377,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "A kitchen sounds like an orchestra that expects dinner to happen afterwards.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "I like the little ring a spoon makes. I also respect a cup that is not mine.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,
@@ -10891,7 +10891,7 @@
   },
   {
     "character": "nico",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -13881,10 +13881,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "The colours remind me of fruit. I am prepared to admit that may be a personal problem.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "If we play, I propose a snack break before we begin referring to dinner as just one more turn.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -13926,11 +13926,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "Whoever made this cared about the edges. You can tell. Also I am hungry.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "Clean dishes! The unglamorous half of every successful feast.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -14007,11 +14007,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "Whoever made this cared about the edges. You can tell. Also I am hungry.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "There might be tea later. I support this quietly promising arrangement.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,
@@ -14521,7 +14521,7 @@
   },
   {
     "character": "riven",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -17511,10 +17511,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "The frame has excellent stage presence. The picture seems quite secure about it.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "A world inside a little screen. I can fit one card up a sleeve. The competition is unreasonable.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -17556,11 +17556,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "I shall perform my most difficult trick: leaving someone else's dessert alone.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "A beautiful arrangement of breakable objects. A sensible place to keep my hands still.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -17637,11 +17637,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "I shall perform my most difficult trick: leaving someone else's dessert alone.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "An unattended cup is not a volunteer for a disappearing trick.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,
@@ -18151,7 +18151,7 @@
   },
   {
     "character": "emi",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -21141,10 +21141,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "I like it. I am trying to let that be enough before inventing a clever opinion.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "An adventure with a pause button. I have several proposals for its real-world application.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -21186,11 +21186,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "The food smells good. A devastatingly original observation. I stand by it.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "All the plates match. A household willing to commit to continuity.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -21267,11 +21267,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "The food smells good. A devastatingly original observation. I stand by it.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "A beverage waiting patiently. Better emotional regulation than most of us.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,
@@ -21781,7 +21781,7 @@
   },
   {
     "character": "vera",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -24771,10 +24771,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "I keep thinking about how they made it. Then I remember to look at what they made.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "Somebody made all those moving things out of instructions. I would like to see the untidy first version.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -24816,11 +24816,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "A good kitchen is a workshop where the mistakes are occasionally delicious.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "A proper drying place keeps little problems from becoming somebody else's morning.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -24897,11 +24897,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "A good kitchen is a workshop where the mistakes are occasionally delicious.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "The handle is the bit that makes it useful. It is worth getting the little things right.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,
@@ -25411,7 +25411,7 @@
   },
   {
     "character": "lume",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -28401,10 +28401,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "The artist is not here to explain it. We can be curious without pretending to know their whole life.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "A game is a story that makes room for somebody else to choose. I like that part.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -28446,11 +28446,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "Food can carry a family story without needing anyone to explain it out loud.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "Ordinary work like this is how a house keeps being a home.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -28527,11 +28527,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "Food can carry a family story without needing anyone to explain it out loud.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "Some people keep a favourite cup for years. Familiar things can make a day easier.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,
@@ -29041,7 +29041,7 @@
   },
   {
     "character": "mochi",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -32031,10 +32031,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "The colours do not match in the obvious way. They still make room for each other.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "I like a character outfit that looks good while running into a wall for the fourth time.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -32076,11 +32076,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "There is room at that table for one more chair. I like places that notice.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "They chose a set they like and actually use it. Better than keeping everything beautiful in a box.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -32157,11 +32157,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "There is room at that table for one more chair. I like places that notice.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "A comfortable handle, room for your hand, nothing showing off. Good design.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,
@@ -32671,7 +32671,7 @@
   },
   {
     "character": "zuri",
-    "unique_comments": 91,
+    "unique_comments": 94,
     "comments": [
       {
         "source_id": 0,
@@ -35661,10 +35661,10 @@
       {
         "source_id": 337,
         "source": "sPipKantoObject_1",
-        "subject": "art",
-        "expression": "soft_smile",
-        "text": "You can see where they changed their mind. Please tell me nobody is going to paint over that bit.",
-        "memory_id": 230,
+        "subject": "game",
+        "expression": "laughing",
+        "text": "Look how much a few little pixels can make you feel. Somebody knew what mattered.",
+        "memory_id": 337,
         "topic": "art"
       },
       {
@@ -35706,11 +35706,11 @@
       {
         "source_id": 342,
         "source": "sPipKantoObject_6",
-        "subject": "food",
-        "expression": "soft_smile",
-        "text": "Look at how the dishes have been set out. Somebody wanted the meal to feel welcoming.",
-        "memory_id": 212,
-        "topic": "food"
+        "subject": "dishes",
+        "expression": "neutral",
+        "text": "The small chips tell me these have had a useful life. I hope nobody feels ashamed of them.",
+        "memory_id": 342,
+        "topic": "road"
       },
       {
         "source_id": 343,
@@ -35787,11 +35787,11 @@
       {
         "source_id": 351,
         "source": "sPipKantoObject_15",
-        "subject": "food",
+        "subject": "cup",
         "expression": "soft_smile",
-        "text": "Look at how the dishes have been set out. Somebody wanted the meal to feel welcoming.",
-        "memory_id": 212,
-        "topic": "food"
+        "text": "I would draw the light on it before somebody takes the next sip.",
+        "memory_id": 351,
+        "topic": "road"
       },
       {
         "source_id": 352,

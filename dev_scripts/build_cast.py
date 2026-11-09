@@ -112,7 +112,7 @@ def dialogue(characters):
  source=(ROOT/'src/data/pip_memory_catalogue.h').read_text().split('sPipMemoryCatalogue[] = {',1)[1].split('};',1)[0]
  symbols=re.findall(r'^\s*(\w+),',source,re.M)
  assert len(symbols)==408
- objects=['food','art','computer','machine','blueprint','burglary','food','food','privacy','food','art','phone','machine','shop','food','food','machine','tools','book','shop']
+ objects=['food','game','computer','machine','blueprint','burglary','dishes','food','privacy','food','art','phone','machine','shop','food','cup','machine','tools','book','shop']
  world=['home','food','cave','bike','food','privacy','rest','home','privacy','home','food','legend','scientist','phone','progress','scientist','sea','burglary','grass','art','sea']
  towns=[k for k in VOICE if k.isupper()]
  def subject(symbol):
@@ -156,7 +156,7 @@ def dialogue(characters):
   if key in topicNames:return key
   if key in ['LITTLEROOT_TOWN','OLDALE_TOWN','PALLET_TOWN','FORTREE_CITY','SOOTOPOLIS_CITY','PACIFIDLOG_TOWN']:return 'home'
   if key in ['computer','machine','blueprint','tools','scientist','RUSTBORO_CITY','MAUVILLE_CITY','MOSSDEEP_CITY','CINNABAR_ISLAND']:return 'work'
-  if key in ['LILYCOVE_CITY','DEWFORD_TOWN','CERULEAN_CITY','CELADON_CITY','scene2']:return 'art'
+  if key in ['game','LILYCOVE_CITY','DEWFORD_TOWN','CERULEAN_CITY','CELADON_CITY','scene2']:return 'art'
   if key in ['nurse','progress','later_progress','champion','EVER_GRANDE_CITY','INDIGO_PLATEAU','scene3']:return 'care'
   if key in ['VERDANTURF_TOWN','LAVARIDGE_TOWN','scene11']:return 'rest'
   if key in ['book','picturebook','PEWTER_CITY']:return 'book'
