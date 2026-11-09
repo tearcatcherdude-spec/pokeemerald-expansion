@@ -22,6 +22,7 @@ bool32 CompanionDialogue_SetMode(u32 mode);
 void CompanionDialogue_BeginInteraction(const u8 *script);
 void CompanionDialogue_RecordMessage(struct ScriptContext *ctx, const u8 *message);
 bool32 CompanionDialogue_FinishInteraction(struct ScriptContext *ctx);
+void CompanionDialogue_AfterScript(void);
 bool32 CompanionDialogue_IsInteractionActive(void);
 void CompanionDialogue_ResetSession(void);
 // 0 = no recent interaction, 1 = spoke, 2 = deliberately quiet.

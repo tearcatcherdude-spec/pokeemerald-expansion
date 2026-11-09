@@ -576,7 +576,7 @@ static const struct ContextReply sContextReplies[][COMPANION_VOICE_COUNT] = {
   {COMPOUND_STRING("ASHE: CLEFAIRY from the moon.\nThat would explain the excellent\lnight-time atmosphere, if the\lrumour is true.$"), 0},
   {COMPOUND_STRING("NICO: A rumour about the moon. I\ncan supply star-shaped biscuits\lwithout claiming they prove\lanything.$"), 0},
   {COMPOUND_STRING("RIVEN: A lunar origin story.\nSplendid premise; I would still\llike to hear the witnesses.$"), 0},
-  {COMPOUND_STRING("EMI: CLEFAIRY may be from the\nmoon. I have already mistaken a\lstreetlamp for it, so I shall\labstain.$"), 0},
+  {COMPOUND_STRING("EMI: CLEFAIRY may be from the\nmoon. I write poems about it,\lnot travel guides.$"), 0},
   {COMPOUND_STRING("VERA: An intriguing theory. I\nwould like measurements before\ladding lunar landing gear to a\lPOKE BALL.$"), 0},
   {COMPOUND_STRING("LUME: They said rumour, and that\ndistinction matters. We can\lenjoy the story without\lpresenting it as a finding.$"), 0},
   {COMPOUND_STRING("MOCHI: A moon story suits\nCLEFAIRY beautifully. A\lflattering story can still need\levidence.$"), 0},

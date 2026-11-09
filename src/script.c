@@ -1,4 +1,5 @@
 #include "global.h"
+#include "companion_dialogue.h"
 #include "pip.h"
 #include "script.h"
 #include "event_data.h"
@@ -303,7 +304,8 @@ bool8 ScriptContext_RunScript(void)
         sGlobalScriptContextStatus = CONTEXT_SHUTDOWN;
         UnlockPlayerFieldControls();
         Pip_TryRegroupAfterScene();
-        return FALSE;
+        CompanionDialogue_AfterScript();
+        return ScriptContext_IsEnabled();
     }
 
     return TRUE;

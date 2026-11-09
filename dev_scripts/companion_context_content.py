@@ -536,7 +536,7 @@ Maybe from the moon. We can be curious without pretending we already know.|
 CLEFAIRY from the moon. That would explain the excellent night-time atmosphere, if the rumour is true.|
 A rumour about the moon. I can supply star-shaped biscuits without claiming they prove anything.|
 A lunar origin story. Splendid premise; I would still like to hear the witnesses.|
-CLEFAIRY may be from the moon. I have already mistaken a streetlamp for it, so I shall abstain.|
+CLEFAIRY may be from the moon. I write poems about it, not travel guides.|
 An intriguing theory. I would like measurements before adding lunar landing gear to a POKE BALL.|
 They said rumour, and that distinction matters. We can enjoy the story without presenting it as a finding.|
 A moon story suits CLEFAIRY beautifully. A flattering story can still need evidence.|

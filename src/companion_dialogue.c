@@ -20,6 +20,7 @@ extern const u8 CompanionDialogue_EventScript_React[];
 
 static EWRAM_DATA bool8 sActive = FALSE;
 static EWRAM_DATA bool8 sOffering = FALSE;
+static EWRAM_DATA bool8 sFinishPending = FALSE;
 static EWRAM_DATA bool8 sHasRecent = FALSE;
 static EWRAM_DATA u8 sGroup = 0, sMap = 0, sVoice = 0;
 static EWRAM_DATA u16 sContext = NO_CONTEXT;
@@ -37,7 +38,7 @@ static struct CompanionDialogueProgress *Progress(void)
 }
 void CompanionDialogue_ResetSession(void)
 {
-    sActive = sOffering = sHasRecent = FALSE;
+    sActive = sOffering = sHasRecent = sFinishPending = FALSE;
     sContext = NO_CONTEXT;
     sMessage = sLegacy = NULL;
 }
@@ -173,22 +174,29 @@ bool32 CompanionDialogue_FinishInteraction(struct ScriptContext *ctx)
     sActive = FALSE;
     sContext = CompanionDialogue_ContextForMessage(sMessage);
     sLegacy = Pip_GetExactObjectReaction(sMessage);
-    if (CompanionDialogue_GetMode() != COMPANION_DIALOGUE_NORMAL || !SameSituation())
+    if (CompanionDialogue_GetMode() != COMPANION_DIALOGUE_NORMAL
+     || (sContext >= ARRAY_COUNT(sContextReplies) && sLegacy == NULL))
         return FALSE;
-    if (!Offer())
-        return FALSE;
-    sHasRecent = FALSE;
-    sOffering = TRUE;
+    sFinishPending = TRUE;
     sResult = gSpecialVar_Result;
     sLastTalked = gSpecialVar_LastTalked;
     sComparison = ctx->comparisonResult;
     memcpy(sData, ctx->data, sizeof(sData));
     memcpy(sText, gStringVar4, sizeof(sText));
     memcpy(sSpeaker, gStringVar1, sizeof(sSpeaker));
-    // The original script has ended, so no reaction can interrupt its choices,
-    // movement, trainer setup, gifts, or story branches.
-    ScriptJump(ctx, CompanionDialogue_EventScript_React);
-    return TRUE;
+    // Let the original context actually stop and the follower regroup first.
+    return FALSE;
+}
+void CompanionDialogue_AfterScript(void)
+{
+    if (!sFinishPending)
+        return;
+    sFinishPending = FALSE;
+    if (CompanionDialogue_GetMode() != COMPANION_DIALOGUE_NORMAL || !Offer())
+        return;
+    sHasRecent = FALSE;
+    sOffering = TRUE;
+    ScriptContext_SetupScript(CompanionDialogue_EventScript_React);
 }
 u32 CompanionDialogue_TryManualTalk(void)
 {

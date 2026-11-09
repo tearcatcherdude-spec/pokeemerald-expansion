@@ -36,7 +36,8 @@ def main():
     assert 'sContextMessages[i].message == message' in engine
     assert 'StringCompare' not in engine and 'graphicsId' not in engine
     assert 'Pip_TryOfferExact(sLegacy)' in engine
-    assert 'ScriptJump(ctx, CompanionDialogue_EventScript_React)' in engine
+    assert 'ScriptContext_SetupScript(CompanionDialogue_EventScript_React)' in engine
+    assert 'CompanionDialogue_AfterScript();' in (ROOT/'src/script.c').read_text()
     assert 'Pip_GetExactObjectReaction(sMessage)' in engine
     storage=(ROOT/'include/pokemon_storage_system.h').read_text()
     assert storage.index('struct BondProgress bonds;')<storage.index('struct CompanionDialogueProgress companionDialogue;')
