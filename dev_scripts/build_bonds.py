@@ -1,6 +1,6 @@
 """Build append-only bond content; never alter existing map events or terrain."""
 import json, pathlib, struct, textwrap, re
-from bond_scenes import TASKS, GIFTS, GIFT_REPLIES, REWARDS, CHALLENGES, NEIGHBOR_QUESTIONS
+from bond_scenes import TASKS, GIFTS, GIFT_REPLIES, REWARDS, CHALLENGES, NEIGHBOR_QUESTIONS, TRIAL_ENDINGS
 from bond_teams import TEAMS, EVOLUTIONS
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 NAMES = ['silas','kade','ashe','nico','riven','emi','vera','lume','mochi','zuri']
@@ -51,7 +51,11 @@ def place(events):
         # These are placements awaiting native route/screenshot checks, never a
         # claim that a collision-bit check substitutes for game validation.
         e['status']='PLACED_PENDING_NATIVE_VALIDATION'
-        e['marker_instruction']=f'Heart marker {abs(e["marker_tile"]["x"]-e["marker_tile"]["landmark_approach"][0])} tiles '+('east' if e['marker_tile']['x']>=e['marker_tile']['landmark_approach'][0] else 'west')+' of the entrance approach.'
+        tile=e['marker_tile'];dx=tile['x']-tile['landmark_approach'][0];dy=tile['y']-tile['landmark_approach'][1]
+        directions=[]
+        if dx:directions.append(str(abs(dx))+' '+('east' if dx>0 else 'west'))
+        if dy:directions.append(str(abs(dy))+' '+('south' if dy>0 else 'north'))
+        e['marker_instruction']=('From the northern market approach: ' if token is None else 'From just outside the entrance: ')+', '.join(directions)+'.'
     return events
 
 def main():
@@ -98,7 +102,7 @@ def main():
             row={'character':name,'stage':stage+1,'intro':intro,'questions':questions,'options':options,'responses':responses,'ending':ending,'expression':expression}
             scenes.append(row)
             arr=lambda values:'{'+', '.join(ct(v) for v in values)+'}'
-            out.append('    {.intro = '+ct(name.upper()+': '+intro)+', .questions = '+arr(questions)+', .options = {'+', '.join(arr(v) for v in options)+'}, .responses = {'+', '.join(arr([name.upper()+': '+v for v in values]) for values in responses)+'}, .ending = '+ct(name.upper()+': '+ending)+f', .rounds = {len(options)}, .expression = {expression}'+'},\n')
+            out.append('    {.intro = '+ct(name.upper()+': '+intro)+', .questions = '+arr(questions)+', .options = {'+', '.join(arr(v) for v in options)+'}, .responses = {'+', '.join(arr([v if v.startswith('NEIGHBOR:') else name.upper()+': '+v for v in values]) for values in responses)+'}, .ending = '+ct(name.upper()+': '+ending)+f', .rounds = {len(options)}, .expression = {expression}'+'},\n')
     out.append('};\nstatic const struct BondGift sBondGifts[10][3] = {\n')
     for name in NAMES: out.append('    {'+', '.join('{ITEM_'+item+f', {value}'+'}' for item,value in GIFTS[name])+'},\n')
     out.append('};\nstatic const u8 *const sBondGiftReplies[10] = {\n')
@@ -107,6 +111,9 @@ def main():
     for name in NAMES: out.append('    {MOVE_'+REWARDS[name][0]+', MOVE_'+REWARDS[name][1]+'},\n')
     out.append('};\nstatic const u8 *const sBondKeepsakes[10] = {\n')
     out.extend('    '+ct(REWARDS[name][2])+',\n' for name in NAMES)
+    out.append('};\n')
+    out.append('static const u8 *const sBondTrialEndings[10] = {\n')
+    out.extend('    '+ct(name.upper()+': '+TRIAL_ENDINGS[name])+',\n' for name in NAMES)
     out.append('};\n')
     write('src/data/bond_scenes.h',''.join(out))
     write('data/bonds/dialogue_review.json',json.dumps({'scenes':scenes,'gifts':GIFTS,'gift_replies':GIFT_REPLIES,'rewards':REWARDS},indent=2)+'\n')

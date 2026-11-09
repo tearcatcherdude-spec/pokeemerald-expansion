@@ -112,6 +112,8 @@ Bonds_EventScript_Marker::
 	callnative Script_BondsMeet
 	goto_if_eq VAR_RESULT, FALSE, Bonds_EventScript_MarkerError
 Bonds_EventScript_SceneBegin::
+	callnative Script_BondsSceneIntro
+	msgbox gStringVar4, MSGBOX_DEFAULT
 	callnative Script_BondsSceneRoute
 	goto_if_ne VAR_RESULT, FALSE, Bonds_EventScript_EventTrial
 Bonds_EventScript_Scene::

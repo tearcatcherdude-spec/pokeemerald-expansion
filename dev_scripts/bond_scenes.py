@@ -159,3 +159,16 @@ NEIGHBOR_QUESTIONS = [
 ('NEIGHBOR: The meeting place matters to me. We made friends there after I moved. You can use my words if you like.', 'Ask how to credit them', 'Ask about the meeting place', 'NEIGHBOR: Use my first name beside the quote, please. I want to recognize my own voice.', 'NEIGHBOR: Nothing grand. A place where somebody learned my name. That is what I would like remembered.'),
 ('NEIGHBOR: My friend always brought an extra chair. I would like that in the panel, if there is room.', 'Make room for the chair', 'Ask about its meaning', 'NEIGHBOR: Thank you. Such a small thing to draw, for something that made a place for so many people.', 'NEIGHBOR: It meant you could arrive without having to ask whether you were welcome.'),
 ]
+
+TRIAL_ENDINGS = {
+'silas':'The battle gave us observations, not a ranking of people. Asking what you noticed was the useful part. I would like to keep doing that.',
+'kade':'We each carried part of that. Neither person had to prove they could do everything alone. I am reluctantly recommending the method.',
+'ashe':'I made a mistake and continued. You did too. A battle can be practice rather than a public verdict on whether we should try again.',
+'nico':'Four different teammates, four different needs. Listening worked better than insisting they all follow my most impressive recipe.',
+'riven':'The rules were clear, and you chose to participate. It was still exciting. An important discovery for a man with this many unnecessary capes.',
+'emi':'I tried something in front of another person. Some of it worked. Some did not. I did not have to turn either result into a joke to survive it.',
+'vera':'A proper test, with an agreed end and recovery afterward. Enthusiasm is better when the people involved can trust what happens next.',
+'lume':'We can describe what happened without inventing a villain or a destiny. Two people practiced together, and learned something. Worth remembering.',
+'mochi':'A coordinated team still needs room for each member. Forcing everybody into the same shape would have made a remarkably uncomfortable battle.',
+'zuri':'Different partners needed different space. The whole picture worked better when we let them contribute instead of treating them as matching colors.',
+}

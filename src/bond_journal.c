@@ -386,14 +386,20 @@ void Script_BondsScenePage(struct ScriptContext *ctx)
     else if(sScenePage==3) {Text(scene->responses[sSceneRound][sSceneChoice]);sScenePage=4;}
     else if(sScenePage==4)
     {
-        if(sTrialWon) {Text(COMPOUND_STRING("You finish the practice battle\nand talk through what each of you\lnoticed. Winning was not a promise\lof romance, or a test of worth.$"));sScenePage=5;}
+        if(sTrialWon) {Text(sBondTrialEndings[sWho]);sScenePage=5;}
         else if(sSceneRound+1<scene->rounds)
         {sSceneRound++;Text(scene->questions[sSceneRound]);sScenePage=2;}
         else {Text(scene->ending);sScenePage=5;}
     }
     else {gSpecialVar_Result=3;return;}
-    Cast_ShowPortrait(sWho,sScenePage==1?scene->expression:sScenePage==4?1:0);
+    if(sWho==9 && (sSceneEvent-1)%5==1 && ((sScenePage==2 && sSceneRound>0) || sScenePage==4))
+        Cast_HidePortrait(); // The temporary neighbors speak in their own voices.
+    else Cast_ShowPortrait(sWho,sScenePage==1?scene->expression:sScenePage==4?1:0);
     gSpecialVar_Result=1;
+}
+void Script_BondsSceneIntro(struct ScriptContext *ctx)
+{
+    if(sSceneEvent && sScenePage==0) Script_BondsScenePage(ctx);
 }
 void Script_BondsSceneChoiceMenu(struct ScriptContext *ctx)
 {

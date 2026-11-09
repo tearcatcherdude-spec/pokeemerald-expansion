@@ -34,6 +34,7 @@ void Script_BondsGiftMenu(struct ScriptContext *ctx);
 void Script_BondsGiftPreview(struct ScriptContext *ctx);
 void Script_BondsGiftCommit(struct ScriptContext *ctx);
 void Script_BondsScenePage(struct ScriptContext *ctx);
+void Script_BondsSceneIntro(struct ScriptContext *ctx);
 void Script_BondsSceneChoiceMenu(struct ScriptContext *ctx);
 void Script_BondsSceneChoice(struct ScriptContext *ctx);
 void Script_BondsSceneComplete(struct ScriptContext *ctx);
