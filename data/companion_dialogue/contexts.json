@@ -4948,6 +4948,3673 @@
           "text": "The League is a powerful landmark. It does not erase the smaller places that made this journey ours."
         }
       ]
+    },
+    {
+      "id": 71,
+      "key": "ship_scanner_search",
+      "subject": "Stern's aide has been searching the wreck for a scanner without success.",
+      "sources": {
+        "AbandonedShip_CaptainsOffice_Text_NoSuccessFindingScanner": {
+          "path": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+          "text": "I'm investigating this ship on behalf\\nof CAPT. STERN.\\pHe also asked me to find a SCANNER,\\nbut I haven't had any success\u2026$",
+          "sha256": "49b2aba8fad54dc26e9fce14538fcc0bf9084e4926c73a57406618765563ad7b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Looking for a scanner in a wreck. I lose things in a bag with one pocket, so I respect the ambition."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "He has kept searching despite the conditions. A systematic sweep might help more than another hopeful lap."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He could use another pair of eyes. We should check rooms carefully, including the way back out."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "He sounds tired of finding everything except the thing he came for. I know that feeling with lost verses."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I hope he brought something to eat. Searching a whole ship on an empty stomach makes every room longer."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The assignment was probably shorter when Stern described it. They usually leave out the flooded corridors."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A missing instrument, a ruined ship, a patient researcher. I would read his notebook before his report."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A scanner could slip behind a lot of broken fittings here. I would start with places the floor tilts toward."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "This ship has held on to plenty of things. We can search without disturbing everything that stayed behind."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "His expedition could use a dry place to put the things he does find. Even discovery needs somewhere to sit."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "We should compare the rooms he searched with the ones he missed. A rough sketch would give us somewhere to begin."
+        }
+      ]
+    },
+    {
+      "id": 72,
+      "key": "ship_scanner_delivery",
+      "subject": "The aide recognizes the scanner we carry and asks us to take it to Stern while he investigates.",
+      "sources": {
+        "AbandonedShip_CaptainsOffice_Text_OhCanYouDeliverScanner": {
+          "path": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+          "text": "Oh! That's a SCANNER!\\pListen, can I get you to deliver that\\nto CAPT. STERN?\\pI want to investigate this ship a\\nlittle more.$",
+          "sha256": "7af102ae51ba7490a3d1c421f76788a4fc34bf7e85f9ef67c7cf24d824cde919"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "We found the scanner, and he found someone to deliver it. Everybody's expedition is going beautifully."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Stern should receive the instrument while his aide records the site. That is a sensible division of the work."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We have the scanner and he has more ship to check. Taking it to Stern seems fair."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "He wants to finish looking around. I understand wanting one more minute somewhere that keeps asking questions."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "We can carry it back. He should still come ashore before the ship makes that decision for him."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "Our reward for finding important equipment is becoming its courier. An unexpectedly practical plot twist."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "He looked at the scanner like a missing line had finally come back to him. Let us get it to Stern safely."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I want to inspect it, but Stern gets the intact version first. I am practicing this particular kind of restraint."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "An old ship has finally given up what he was seeking. We should see the little journey through."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He is trusting us with the delivery. I would wrap the scanner before our bag introduces it to the rocks."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "We know where it belongs now. A clear destination is a lovely improvement over another locked room."
+        }
+      ]
+    },
+    {
+      "id": 73,
+      "key": "ship_cactus_name",
+      "subject": "The aide identifies the old wreck as the S.S. Cactus.",
+      "sources": {
+        "AbandonedShip_CaptainsOffice_Text_ThisIsSSCactus": {
+          "path": "data/maps/AbandonedShip_CaptainsOffice/scripts.inc",
+          "text": "This ship is called S.S. CACTUS.\\nIt seems to be from an earlier era.$",
+          "sha256": "f833936b28e423c71661dfc44533c72594b4898d3993c90714f29d11ab6cdd96"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "The S.S. Cactus. I feel someone in the naming department had a very optimistic understanding of watering."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The name gives us something to look for in older shipping records. A vessel deserves more history than its wreck."
+        },
+        {
+          "voice": "kade",
+          "expression": "sad",
+          "text": "S.S. Cactus. Strange name for a ship, but somebody used to be proud to see it come into port."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "It had a name long before it was a place to search. That makes the empty rooms feel a little different."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I wonder what the crew ate on long voyages. There were ordinary dinners here before all this."
+        },
+        {
+          "voice": "riven",
+          "expression": "sad",
+          "text": "S.S. Cactus is an excellent name for a ship in a story. I wish this one had received a gentler ending."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "There is something stubborn about that name. Even wrecked, the ship still has people asking after it."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "An older vessel means older construction methods. Some of these joints have lasted better than the rest of the ship."
+        },
+        {
+          "voice": "lume",
+          "expression": "sad",
+          "text": "A name helps us remember that people belonged here. We should move through it kindly."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "The name sounds almost cheerful. I hope somebody still remembers what it looked like with fresh paint."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would like to find a picture of it afloat. The wreck tells us how it ended, but there was a whole voyage before that."
+        }
+      ]
+    },
+    {
+      "id": 74,
+      "key": "celadon_gym_spectator",
+      "subject": "An old man outside the gym leers at the women inside.",
+      "sources": {
+        "CeladonCity_Text_GymIsGreatFullOfWomen": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "Heheh! This GYM is great!\\nIt's full of women!$",
+          "sha256": "a88eb54f0ae532535785f06d2d26376d287d8d5a462febdede243972b7bc6b17"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "annoyed",
+          "text": "He has mistaken a Gym for an invitation. I hope the first thing they teach him is how to leave."
+        },
+        {
+          "voice": "silas",
+          "expression": "annoyed",
+          "text": "The women inside are training. His commentary contributes remarkably little to that activity."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "They came here to train. He can find somewhere else to stand."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I would rather hear about their Pokemon. They probably have more interesting things to say than he does."
+        },
+        {
+          "voice": "nico",
+          "expression": "annoyed",
+          "text": "They deserve to do their work without an audience like that. Let us give them some room."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has volunteered for the role of unpleasant man outside a building. Nobody needed that role filled."
+        },
+        {
+          "voice": "emi",
+          "expression": "annoyed",
+          "text": "I hope the flowers by that window have thorns and very good aim."
+        },
+        {
+          "voice": "vera",
+          "expression": "annoyed",
+          "text": "That window could use a blind. I suddenly feel very motivated to install one."
+        },
+        {
+          "voice": "lume",
+          "expression": "annoyed",
+          "text": "Being welcome in a place is something you should care about. He seems to have missed that part."
+        },
+        {
+          "voice": "mochi",
+          "expression": "annoyed",
+          "text": "He has spent all this time looking and still failed to notice that these are people with things to do."
+        },
+        {
+          "voice": "zuri",
+          "expression": "annoyed",
+          "text": "I would ask the trainers what they think of their Gym. Their view of the place matters rather more."
+        }
+      ]
+    },
+    {
+      "id": 75,
+      "key": "celadon_corner_reputation",
+      "subject": "A resident says the Game Corner damages Celadon's beautiful image.",
+      "sources": {
+        "CeladonCity_Text_GameCornerIsBadForCitysImage": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "CELADON takes pride in its efforts\\nto keep the city beautiful.\\pThat's why the new GAME CORNER is\\nbad for our city's image.$",
+          "sha256": "b7d6939b6156cc91cb314d7bd97c6365c7ec06c57b7ce3168d36abdb40b7bc82"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "They polish the city, then put a place here where people lose their lunch money. That is a complicated shine."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "I would ask how the Game Corner affects residents as well as how it looks beside the gardens."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "If it is hurting people, that matters more than whether it spoils the view."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "A city can look lovely while somebody inside it is having a terrible evening. Both things deserve noticing."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Pretty streets are good. People being able to afford their next meal is good too."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The flowers make a convincing first impression. I would still like to hear what the neighbors say after closing time."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "She wants her city to be beautiful. I hope that includes being gentle with the people who live in it."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "You cannot fix what a place does by repainting its sign. I have tried smaller versions of that mistake."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A beautiful place should be somewhere people feel safe coming home to."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Celadon has put thought into its appearance. I would like the same attention paid to what happens behind the doors."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The Game Corner belongs in the picture of this city too. Cropping it out would not tell us much."
+        }
+      ]
+    },
+    {
+      "id": 76,
+      "key": "celadon_slots_loss",
+      "subject": "A man regrets losing all his coins at the slots instead of exchanging them for prizes.",
+      "sources": {
+        "CeladonCity_Text_BlewItAllAtSlots": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "Moan\u2026\\nI blew it all at the slots!\\pI knew I should have cashed in my\\nCOINS for prizes!$",
+          "sha256": "5da3e35e0b88f74a77002936995a370eacdee8f38687e29cb622e659b6123881"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "sad",
+          "text": "He looks miserable. I think the best thing the machine could give him now is a reason to stop feeding it."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Each loss does not make the next turn kinder. I hope he can step away before trying to recover everything."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He has lost enough. Walking away now is allowed, even if it feels like leaving something unfinished."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "He keeps hearing the moment when he could have stopped. That is a hard bit of noise to sit with."
+        },
+        {
+          "voice": "nico",
+          "expression": "sad",
+          "text": "I would rather help him find a meal than another coin. He needs something that will actually stay with him."
+        },
+        {
+          "voice": "riven",
+          "expression": "sad",
+          "text": "That is an awful ending to an evening. He does not have to buy another chance at a better one."
+        },
+        {
+          "voice": "emi",
+          "expression": "sad",
+          "text": "Regret can make a very convincing argument for doing the same thing again. I hope he gets some distance first."
+        },
+        {
+          "voice": "vera",
+          "expression": "annoyed",
+          "text": "The machine has no reason to care how much he has lost. He should get advice from somebody who does."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "We can be kind to him without helping him keep playing."
+        },
+        {
+          "voice": "mochi",
+          "expression": "sad",
+          "text": "He wanted a prize and ended up paying for a very unpleasant memory. Let us avoid making him feel smaller."
+        },
+        {
+          "voice": "zuri",
+          "expression": "sad",
+          "text": "I wish I had met him before the last coin. Since we did not, we can at least listen now."
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "key": "celadon_poliwrath_friend",
+      "subject": "A trainer proudly introduces his trusted Poliwrath and explains using a Water Stone.",
+      "sources": {
+        "CeladonCity_Text_MyTrustedPalPoliwrath": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "This is my trusted pal, POLIWRATH.\\pIt evolved from a POLIWHIRL when\\nI used a WATER STONE.$",
+          "sha256": "a5270fef9c3c6282331e0815cec1682999f4c1d37286e89a469df9252ccb22e4"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "He calls Poliwrath his trusted pal before explaining the Water Stone. I think he has the important bits in order."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He remembers how it evolved, but he introduces it as a friend. The stone was only one part of their history."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Poliwrath looks like someone he can count on. That is worth being proud of."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like an introduction that tells us they trust each other. The evolution detail can be the second verse."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "He sounds fond of the Poliwhirl it was as well as the Poliwrath it became. I like that."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "One Water Stone, a dramatic transformation, and still the same trusted pal. A very good character arc."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "It changed shape and kept its place beside him. There is a comforting story in that."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "A Water Stone did the evolving. Keeping a friend took a little more work than picking up a stone."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "It is lovely to hear someone talk about an evolved Pokemon without treating its earlier self as a mistake."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He is proud of his friend. Poliwrath is wearing the introduction rather well."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "That sounds like a picture they have taken more than once, with a different Pokemon shape beside the same smile."
+        }
+      ]
+    },
+    {
+      "id": 78,
+      "key": "celadon_poliwrath_greeting",
+      "subject": "The trainer-owned Poliwrath responds when greeted.",
+      "sources": {
+        "CeladonCity_Text_Poliwrath": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "POLIWRATH: Ribi ribit!$",
+          "sha256": "b873ac86454ce92821efa93bb4b6dc64e92048931e2f720e7beb6ee12c9f18da"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Ribi ribit to you too. I have decided to assume that was friendly and not a critique of my posture."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "That is a confident greeting. I shall answer politely and leave the translation to someone qualified."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "It seems comfortable beside its trainer. We can say hello without making it an interview."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "There is a nice little rhythm to that call. I will resist answering at full volume indoors."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Hello, Poliwrath. I hope we have not interrupted an important part of standing peacefully with your friend."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A short introduction with excellent projection. It has the stage presence for a longer speech if it wants one."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "It has said its piece. I respect a conversation that knows when it has finished."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "That sounded energetic. I am keeping my measuring tape well away from those arms."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "We have been acknowledged. A small greeting can be enough."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "Poliwrath carries itself very well. That spiral is quite a statement without any help from us."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I like that it answered for itself after its trainer introduced it. Everyone gets a turn."
+        }
+      ]
+    },
+    {
+      "id": 79,
+      "key": "celadon_direct_threat",
+      "subject": "A Rocket grunt threatens to punch the player for looking at him.",
+      "sources": {
+        "CeladonCity_Text_GetLostOrIllPunchYou": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "What are you staring at?\\nGet lost, or I'll punch you.$",
+          "sha256": "c8ea0d99313827c1e73b0f658362ada6d2a89bdbfcfd86e3e417af3a7d28cbdf"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "surprised",
+          "text": "That escalated quickly. I would like to cancel the staring contest before he invents an entry fee."
+        },
+        {
+          "voice": "silas",
+          "expression": "annoyed",
+          "text": "We looked in his direction and he threatened violence. I see no reason to continue collecting evidence of his character."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "Stay beside me. We can move away without giving him the confrontation he wants."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "He has made a lot of noise over being noticed. Let us find a quieter stretch of pavement."
+        },
+        {
+          "voice": "nico",
+          "expression": "sad",
+          "text": "You did not deserve that. We can keep some distance and keep each other company."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has prepared one line and it is a threat. I would decline the rest of the performance."
+        },
+        {
+          "voice": "emi",
+          "expression": "sad",
+          "text": "We do not have to be brave for his benefit. Come on, let us get out of reach."
+        },
+        {
+          "voice": "vera",
+          "expression": "annoyed",
+          "text": "I am annoyed, but I am also staying outside punching distance. Both seem sensible."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Threatening someone does not make the street his. We can still choose a safer part of it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "annoyed",
+          "text": "He has confused having fists with having something worth saying. We should leave him to untangle that."
+        },
+        {
+          "voice": "zuri",
+          "expression": "annoyed",
+          "text": "I saw what happened. You were looking at a person on a street; he chose to make it ugly."
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "key": "celadon_rocket_obstruction",
+      "subject": "A grunt orders the player to keep out of Team Rocket's way.",
+      "sources": {
+        "CeladonCity_Text_KeepOutOfTeamRocketsWay": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "Keep out of TEAM ROCKET's way!$",
+          "sha256": "2f4f49d8feac50a99d822b319394040a2d9561b65b04f03b2acff781f1a2cb8c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "Apparently the pavement has an executive board now. I was happier when it was just pavement."
+        },
+        {
+          "voice": "silas",
+          "expression": "annoyed",
+          "text": "Their instructions are very clear about what they want and entirely silent about anyone else's needs."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "They are trying to make everyone step aside for them. We can keep our distance without agreeing with them."
+        },
+        {
+          "voice": "ashe",
+          "expression": "annoyed",
+          "text": "He talks like the whole street belongs to his uniform. I hope the neighbors are tired of hearing it too."
+        },
+        {
+          "voice": "nico",
+          "expression": "annoyed",
+          "text": "There are people here trying to get through an ordinary day. Rocket could start by keeping out of their way."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He is blocking a street while complaining about obstructions. That is almost a complete little comedy."
+        },
+        {
+          "voice": "emi",
+          "expression": "sad",
+          "text": "They make every doorway feel narrower. I would like this city better without that."
+        },
+        {
+          "voice": "vera",
+          "expression": "smug",
+          "text": "If they want clear routes, perhaps they could stop standing in all of them."
+        },
+        {
+          "voice": "lume",
+          "expression": "sad",
+          "text": "We should notice who has to make themselves small whenever Rocket passes. They deserve their street back."
+        },
+        {
+          "voice": "mochi",
+          "expression": "annoyed",
+          "text": "That uniform seems to come with an extraordinary opinion of its own importance."
+        },
+        {
+          "voice": "zuri",
+          "expression": "annoyed",
+          "text": "I am going to remember the people they keep pushing aside. They belong in the story of this street too."
+        }
+      ]
+    },
+    {
+      "id": 81,
+      "key": "celadon_hot_tea",
+      "subject": "A boy burned his tongue on hot tea from the mansion and says it needs to cool.",
+      "sources": {
+        "CeladonCity_Text_ScaldedTongueOnTea": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "Aaaagh, ow\u2026\\nI scalded my tongue!\\pThis nice old lady in the MANSION\\ngave me some TEA.\\pBut it was boiling hot!\\nGotta cool it to drink it.$",
+          "sha256": "ef7dfaf5f4f7b36057cf299969821fd0fafbfc3e53f96d69615561305999e52f"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "The tea came with a lesson. Unfortunately the lesson went directly onto his tongue."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He has discovered the difference between being offered tea and being offered drinkable-temperature tea."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He should let it cool. The cup will still be there after his tongue stops regretting it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "flustered",
+          "text": "There is a particular silence after burning your tongue. Your mouth has a lot to say and no wish to say it."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Small sips, once it cools. Good tea should not require a recovery period."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A gift, a moment of enthusiasm, a tragic reversal. All accomplished before the first proper sip."
+        },
+        {
+          "voice": "emi",
+          "expression": "flustered",
+          "text": "I understand accepting warmth a little too eagerly. His tongue has been more literal about it than mine."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "We could give the cup a handle marked WAIT. I suspect I would occasionally ignore it too."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Something kind can still need a little patience before it is ready for you. In this case, a cup of tea."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He has the tea and the wisdom now. I hope he gets to enjoy them together after it cools."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I was going to ask how the tea tasted. I think that question will have to wait with the tea."
+        }
+      ]
+    },
+    {
+      "id": 82,
+      "key": "celadon_stolen_scope",
+      "subject": "A scientist lost sight of the person who stole the Silph Scope.",
+      "sources": {
+        "CeladonCity_Text_SomeoneStoleSilphScope": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "Oh, what am I to do\u2026\\pSomeone stole our SILPH SCOPE.\\pThe thief came running this way,\\nI'm sure of it.\\pBut I lost sight of him!\\nWhere'd he go?$",
+          "sha256": "3278973a04ecd2b5e8854879e114e180422fe6c334c784e01a88d890a6802546"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "He lost a whole piece of lab equipment to someone running past. I would like our next exciting discovery to be its return."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "He saw which way the thief ran. We should keep that detail separate from guesses about where they went next."
+        },
+        {
+          "voice": "kade",
+          "expression": "sad",
+          "text": "He sounds shaken. If we find anything, we should bring him something firmer than another rumor."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "He keeps returning to the moment he lost sight of the thief. I hope we can give that thought somewhere to go."
+        },
+        {
+          "voice": "nico",
+          "expression": "sad",
+          "text": "The missing equipment matters, and so does the person left standing here worrying about it."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The thief made a dramatic exit. I would prefer an equally clear entrance with the stolen equipment returned."
+        },
+        {
+          "voice": "emi",
+          "expression": "sad",
+          "text": "His work has been turned into a search. That is a cruel way to interrupt someone's ordinary day."
+        },
+        {
+          "voice": "vera",
+          "expression": "annoyed",
+          "text": "I want that instrument recovered intact. Whoever took it has already demonstrated poor laboratory manners."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "We should remember what he actually saw. Frightened people should not have to compete with exciting guesses."
+        },
+        {
+          "voice": "mochi",
+          "expression": "sad",
+          "text": "He has lost the Scope and his sense of where to begin. We can at least take his account seriously."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "He had a direction to point in until the thief disappeared. I would start there, then ask who else saw them."
+        }
+      ]
+    },
+    {
+      "id": 83,
+      "key": "saffron_claimed_city",
+      "subject": "Rocket grunts claim Saffron as territory for their organization.",
+      "sources": {
+        "SaffronCity_Text_BossTakeTownForTeamRocket": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "BOSS said he'll take this town\\nin the name of TEAM ROCKET!$",
+          "sha256": "12b19cafd1cf9d62798195fa55b178e18cc415d3692250a18a5407e762e7f295"
+        },
+        "SaffronCity_Text_SaffronBelongsToTeamRocket": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "SAFFRON belongs to TEAM ROCKET!$",
+          "sha256": "513beb65206cfc23a6ff0c8e4f8f72b62a0579afadec5ec88bc924faa4c7b140"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "They talk about owning a whole city. I would struggle to keep track of its keys."
+        },
+        {
+          "voice": "silas",
+          "expression": "annoyed",
+          "text": "A city is full of people with their own work and lives. Calling it property leaves out almost everything important."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "People live here. Rocket does not get to make them into part of its haul."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "I wonder how many people have heard that line on the way home. Once would be enough for me."
+        },
+        {
+          "voice": "nico",
+          "expression": "sad",
+          "text": "They are talking about somebody's home as if it is a thing to pocket. I hate that."
+        },
+        {
+          "voice": "riven",
+          "expression": "annoyed",
+          "text": "They have announced ownership of the setting. The people living in it might have revisions."
+        },
+        {
+          "voice": "emi",
+          "expression": "annoyed",
+          "text": "There are ordinary names on these doors. I would like those names to matter more than Rocket's."
+        },
+        {
+          "voice": "vera",
+          "expression": "annoyed",
+          "text": "You cannot put a city under your name and call all its problems somebody else's responsibility."
+        },
+        {
+          "voice": "lume",
+          "expression": "sad",
+          "text": "A place belongs to the lives being lived in it. A shouted claim cannot replace them."
+        },
+        {
+          "voice": "mochi",
+          "expression": "annoyed",
+          "text": "Their name is on their uniforms already. I see no reason it needs to be on everyone's home as well."
+        },
+        {
+          "voice": "zuri",
+          "expression": "annoyed",
+          "text": "I would rather make a record of Saffron's residents than another picture of Rocket claiming the street."
+        }
+      ]
+    },
+    {
+      "id": 84,
+      "key": "saffron_criminal_thrill",
+      "subject": "A Rocket grunt boasts that criminal life makes him feel alive.",
+      "sources": {
+        "SaffronCity_Text_CriminalLifeMakesMeFeelAlive": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "My life as a criminal makes me feel\\nso alive!$",
+          "sha256": "53afe63f9fff83bfa63c05866b60a602b40e18595049e28ffdcebd378d938583"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "He could have tried a brisk walk. Much less paperwork for everyone else."
+        },
+        {
+          "voice": "silas",
+          "expression": "annoyed",
+          "text": "He is describing excitement without mentioning who has to suffer for it. That is a rather important omission."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "He can find a hobby that does not leave other people frightened."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "I understand needing to feel something. I do not understand deciding that everyone else must pay for it."
+        },
+        {
+          "voice": "nico",
+          "expression": "annoyed",
+          "text": "He could learn to cook for people. There is plenty of panic available without robbing anybody."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has confused making a dramatic entrance with giving anyone a reason to be glad he arrived."
+        },
+        {
+          "voice": "emi",
+          "expression": "annoyed",
+          "text": "Feeling alive is a poor excuse for making a place harder to live in."
+        },
+        {
+          "voice": "vera",
+          "expression": "smug",
+          "text": "I have felt very alive repairing something while it was smoking. I still recommend safer hobbies."
+        },
+        {
+          "voice": "lume",
+          "expression": "annoyed",
+          "text": "He is treating other people's fear like a cure for his boredom."
+        },
+        {
+          "voice": "mochi",
+          "expression": "annoyed",
+          "text": "If being memorable is the aim, he has chosen a very unfortunate way to achieve it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "annoyed",
+          "text": "He gets to call this exciting. The people avoiding his uniform probably have other words for it."
+        }
+      ]
+    },
+    {
+      "id": 85,
+      "key": "saffron_rude_pedestrian",
+      "subject": "A grunt complains that the player walked into him.",
+      "sources": {
+        "SaffronCity_Text_WatchWhereYoureWalking": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "Ow!\\nWatch where you're walking!$",
+          "sha256": "fccca207c1354695b12b56a08000b4b0bd97b88e7df278fd337895a10d11be18"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "All right, we will leave him more room. I had not realized his temper needed its own lane."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "We can give him space. I would prefer the correction without the shouting, but the space is easy enough."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Let us step around him. A crowded pavement does not need help becoming an argument."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "He is loud enough that I should have noticed him before we got that close."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Sorry about the bump. We can keep moving before everybody on the street gets a turn to comment."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A brief collision and a very committed delivery. We can exit this scene gracefully."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "I would like enough pavement for both of us to pass without acquiring a new enemy."
+        },
+        {
+          "voice": "vera",
+          "expression": "smug",
+          "text": "I can avoid him. Avoiding the volume might take a wider route."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "We can acknowledge a bump without accepting a whole quarrel along with it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "He has made his preferred walking distance clear. I am happy to add a little extra."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I will look ahead. We have both had enough surprises from people in that uniform."
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "key": "saffron_global_exploitation",
+      "subject": "A grunt boasts that controlling Silph will let Rocket exploit Pokemon worldwide.",
+      "sources": {
+        "SaffronCity_Text_WeCanExploitMonsAroundWorld": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "With SILPH under control, we can\\nexploit POK\u00e9MON around the world!\\pWe'll get stinking rich, yeahah!$",
+          "sha256": "67c11dc7a09baf4f387954b4e5f2b32d8aa1d7e530eab1137d2f73e641b76989"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "annoyed",
+          "text": "He has said the horrible part out loud as if it is the selling point. That makes this very easy to dislike."
+        },
+        {
+          "voice": "silas",
+          "expression": "annoyed",
+          "text": "He understands the reach of the technology and has chosen the worst possible use for it."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "He means hurting Pokemon on a bigger scale. We should take that threat seriously."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "He says it so casually. I keep thinking about all the Pokemon who would never know why this happened to them."
+        },
+        {
+          "voice": "nico",
+          "expression": "sad",
+          "text": "Pokemon have people and places they trust. He is talking about taking that away for money."
+        },
+        {
+          "voice": "riven",
+          "expression": "annoyed",
+          "text": "There is no clever interpretation that makes his plan less ugly. He has been quite specific."
+        },
+        {
+          "voice": "emi",
+          "expression": "sad",
+          "text": "I wish he sounded less pleased with himself. This is a frightening thing to hear someone want."
+        },
+        {
+          "voice": "vera",
+          "expression": "annoyed",
+          "text": "Silph's machines could help Pokemon. I am furious that he sees better tools and thinks only of bigger cages."
+        },
+        {
+          "voice": "lume",
+          "expression": "sad",
+          "text": "He is imagining a world where being powerful is enough to make taking things acceptable."
+        },
+        {
+          "voice": "mochi",
+          "expression": "annoyed",
+          "text": "He has reduced living creatures to something he expects to profit from. They deserve better than that."
+        },
+        {
+          "voice": "zuri",
+          "expression": "annoyed",
+          "text": "I am remembering those words exactly. Nobody should get to soften this plan into something harmless afterward."
+        }
+      ]
+    },
+    {
+      "id": 87,
+      "key": "saffron_suspect_guard",
+      "subject": "The Rocket door guard claims to exclude suspicious children.",
+      "sources": {
+        "SaffronCity_Text_ImASecurityGuard": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "I'm a security guard.\\pSuspicious kids I don't allow in!$",
+          "sha256": "a615d06e0fc2de2134f14fb11aaebfc6518f8c188b706672061fb4c71d8fce16"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "annoyed",
+          "text": "His security policy appears to be deciding we look easier to stop than his coworkers."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "He has supplied a job title, but very little reason to trust his judgment."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "He is using the doorway to decide who gets heard. Let us remember who he is keeping out."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "He sounds very certain about strangers and rather quiet about the people already inside."
+        },
+        {
+          "voice": "nico",
+          "expression": "sad",
+          "text": "People should feel safer because a guard is there. I do not think he is having that effect."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has a title and a doorway. He seems to think the combination removes the need for an explanation."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "He is very interested in whether we belong here. I have a few questions about him, too."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I would like to see a security plan that includes checking the people in Rocket uniforms."
+        },
+        {
+          "voice": "lume",
+          "expression": "annoyed",
+          "text": "Protecting a place should include caring about the people who need to enter it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "He has put a lot of confidence into that introduction. The uniform is undermining the rest of it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would ask somebody from Silph whether they recognize their own supposed guard."
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "key": "saffron_sleeping_guard",
+      "subject": "The previously obstructive door guard is asleep.",
+      "sources": {
+        "SaffronCity_Text_HesTakingASnooze": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "\u2026\\nSnore\u2026\\pHah! He's taking a snooze!$",
+          "sha256": "eb6066d594f3ca4fcad0bbba7dbd19838bb3b3a5bee77684e9ddf9f97e3c1be1"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "He is inspecting the backs of his eyelids. Apparently the building passed."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "His attention has moved elsewhere. I suggest we take the opening without waking him to discuss it."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He is asleep. We can get past without turning that into another confrontation."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I have no wish to contribute a loud note to this particular silence."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Let him rest. He has finally found a way to stand there without making everyone else's day worse."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "An imposing guard defeated by an ordinary nap. I appreciate a modest plot development."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "He has become significantly easier to be near. We can leave the snoring undisturbed."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I am usually in favor of a backup system. Today I am pleased this guard appears to have none."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A quiet doorway is a welcome change. Let us make gentle use of it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "He is wearing the same uniform with a much less demanding attitude. I prefer this version."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I will remember his face. For now, I am happy to remember it with his eyes closed."
+        }
+      ]
+    },
+    {
+      "id": 89,
+      "key": "saffron_victory_praise",
+      "subject": "A resident praises the trainer for defeating Team Rocket alone.",
+      "sources": {
+        "SaffronCity_Text_YouBeatTeamRocket": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "You beat TEAM ROCKET all alone?\\nThat's amazing!$",
+          "sha256": "6a1a4c8f63616d4c921e8e64b4a4e66636049b3336f85074475609f65aae0295"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "All alone? Your Pokemon might want a small amendment. Probably delivered by everybody at once."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "You did difficult work, and your team stood beside you through it. I would put all of that in the account."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "You earned that thanks. You also deserve a chance to rest instead of immediately proving yourself again."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It sounds different when someone says it out here in the street. We can let the good part sink in."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "You helped people feel safe again. I hope you remember to let somebody look after you for a little while."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "That is a wonderful review. I would add the Pokemon to the credits before printing it."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "You did something that matters to people you may never meet. It is all right to feel proud of that."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "You dealt with Rocket, and he has noticed. I would like that followed by a comfortable chair for you."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Accept the thanks. People need a way to say what their safety means to them."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "You can stand a little taller for that. I will handle being embarrassing about how proud I am later."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "He is putting a face to the person who helped his city. I am glad he got to tell you."
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "key": "saffron_safe_streets",
+      "subject": "A youngster is relieved that Rocket is gone and it is safe to go outside.",
+      "sources": {
+        "SaffronCity_Text_SafeToGoOutAgain": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "Yeah! TEAM ROCKET is gone!\\nIt's safe to go out again!$",
+          "sha256": "8014a398c02d728d53ceebd25f53227fc9c7ce57d97861862cf4c3d8a3a0b625"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Being able to go outside should be an ordinary thing to celebrate. I am glad it gets to be ordinary again."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "That is what the fighting changed for someone here: an open door without fear on the other side."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Good. He should get to think about where he wants to go, instead of whether he is allowed to feel safe."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I would like to hear the city fill up with little conversations like that one."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope he has a lovely, completely uneventful walk. He has waited long enough for one."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A happy ending expressed as a trip outside. It does not need to be grander to matter."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "He can go out again. A small sentence with a great deal of relief inside it."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "That is a result I can appreciate without taking anything apart to check it."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Safety lets people have ordinary wishes again. I hope he gets a day full of them."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I am very much in favor of his next outing being memorable for something pleasantly boring."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would rather photograph that relief than any of Rocket's dramatic poses."
+        }
+      ]
+    },
+    {
+      "id": 91,
+      "key": "saffron_returning_residents",
+      "subject": "A resident hopes people who fled Rocket will return to Saffron.",
+      "sources": {
+        "SaffronCity_Text_PeopleComingBackToSaffron": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "People fled from here in droves\\nwhen those ROCKETS came.\\pThey should be flocking back to\\nSAFFRON now.$",
+          "sha256": "ba3baf84c4f22e874982b8de9c820e686879d55371a823ef117438bed9fa319b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "I hope they get to come home to something as boring and wonderful as having to unpack."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "It may take time before everyone trusts the streets again. I hope they are welcomed at whatever pace they need."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Getting Rocket out was one thing. Helping people feel they can return is the next part."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I wonder which familiar sound people will notice first when they come home."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope someone is keeping a place at the table for the people who left."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The city is waiting for its people to return. I would like the next chapter to take its time with that."
+        },
+        {
+          "voice": "emi",
+          "expression": "sad",
+          "text": "Coming home can be frightening after you had to leave. I hope nobody rushes them through the feeling."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "There will be doors to fix and belongings to bring back. I can think of useful things to do here now."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A place is still changing after the danger ends. The returning people should get a say in how."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I hope they find familiar things waiting for them. An ordinary room can mean a great deal after being away."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would like to see the same street in a few weeks, when the people who know it best are back in it."
+        }
+      ]
+    },
+    {
+      "id": 92,
+      "key": "saffron_late_reporter",
+      "subject": "A visitor flew in after reading about Silph and regrets missing the media action.",
+      "sources": {
+        "SaffronCity_Text_FlewHereOnPidgeot": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "I flew here on my PIDGEOT when\\nI read about SILPH.\\pIt's already over?\\nI missed the media action\u2026$",
+          "sha256": "039cc0422fc0079a6256ee216eb68dc33fe09cebe7fc6046290c3ea2409ce578"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "He missed the frightening part and still has a Pidgeot ride to talk about. That seems like a very decent afternoon."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "He could still ask residents what happened. The end of the commotion is not the end of the story."
+        },
+        {
+          "voice": "kade",
+          "expression": "annoyed",
+          "text": "People here had to live through it. I would prefer a little more relief and a little less disappointment from him."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "He arrived after the loudest part. There are still people worth listening to now that it is quiet."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "His Pidgeot brought him here safely. I hope the bird gets a better review than the timing of the trip."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He wanted the dramatic scene and arrived for the consequences. Those are usually worth staying for."
+        },
+        {
+          "voice": "emi",
+          "expression": "annoyed",
+          "text": "Missing someone else's worst afternoon does not seem like a terrible loss to me."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "There is probably plenty to learn about how Silph gets working again. That might involve less posing for cameras."
+        },
+        {
+          "voice": "lume",
+          "expression": "annoyed",
+          "text": "The people who are recovering from this should not have to apologize for being less exciting now."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "He still has the chance to be useful. Arriving late does not prevent arriving kindly."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "A camera can record people rebuilding their day, too. You have to be interested in them after the headline."
+        }
+      ]
+    },
+    {
+      "id": 93,
+      "key": "saffron_pidgeot_greeting",
+      "subject": "The visitor's Pidgeot responds to being greeted.",
+      "sources": {
+        "SaffronCity_Text_Pidgeot": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "PIDGEOT: Bi bibii!$",
+          "sha256": "33f098e3368fbe922ec1a106c680f96c5aa8ecf20e3112ffbe1d842d25725d5f"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "Pidgeot has made its statement. I think it is the only person here entitled to complain about the flight."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "That bird did the actual traveling work. I hope its trainer has planned a proper rest for it."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Pidgeot looks ready for a break. We can keep the greeting short."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "That is a fine voice to arrive on. I would like to hear it somewhere without so much street noise."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Hello, Pidgeot. I hope there is water and a good meal in your immediate plans."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "An impressive entrance followed by a very brief interview. Pidgeot understands pacing."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "It has crossed a lot of sky to stand here. That seems like enough work for one conversation."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I am keeping my hands away from those flight feathers. They have had a busy day."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "We can greet it without asking it for anything. It has already carried someone a long way."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "Those feathers have survived the trip beautifully. I hope it gets somewhere comfortable to settle them."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would ask permission before taking a picture. After that flight, it may prefer a quiet patch of shade."
+        }
+      ]
+    },
+    {
+      "id": 94,
+      "key": "saffron_boss_escape",
+      "subject": "A witness says the Rocket boss escaped from Silph.",
+      "sources": {
+        "SaffronCity_Text_SawRocketBossEscaping": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "I saw the ROCKET BOSS escaping\\nSILPH's building.$",
+          "sha256": "632c3677942d735f038150134dd87af01c302c72d781715f99430314a751826c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "I wish he had been running toward a new and honest profession. I am not putting much money on that."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "That is a witness account worth keeping. We should distinguish seeing him escape from knowing where he went."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He got away. That does not undo the people who are safer because his operation here ended."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "It is hard to know someone responsible can simply leave the noise behind him."
+        },
+        {
+          "voice": "nico",
+          "expression": "sad",
+          "text": "The city still deserves its relief. His escape is something to take seriously without taking that away from everyone."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The villain has exited. I would like somebody to stop giving him doors."
+        },
+        {
+          "voice": "emi",
+          "expression": "sad",
+          "text": "He left the people here to live with what happened. I hope they get to decide what comes next."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I would like to know which exit he used. A useful security review could begin with that actual question."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "An escape means there is unfinished harm to answer for. It also means the people here have room to breathe today."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "He may have made his getaway, but he has left quite a few people who can describe him."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would ask the witness where he was standing and which way the boss went. The details matter now."
+        }
+      ]
+    },
+    {
+      "id": 95,
+      "key": "saffron_dismissive_grunt",
+      "subject": "A grunt dismisses the player and orders them to leave.",
+      "sources": {
+        "SaffronCity_Text_WhatDoYouWantGetLost": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "What do you want?\\nGet lost!$",
+          "sha256": "8fe6cce67ba0edf6e21b113e30590c8164fd9e880724f39cecf3e36c0cda6d5f"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "He asked what we wanted and dismissed us before we could answer. A remarkably efficient waste of a question."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "I do not think he was collecting answers. We can spend our time with someone who is."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We heard him. We can keep moving and remember who is making this street unpleasant."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "That was more an instruction than a conversation. I would rather find someone interested in the second kind."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "We can leave him alone. There are plenty of people here who might actually need someone to talk to."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has ended the scene before the other character's first line. A very limited approach to dialogue."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "I have been dismissed by better doors than this one. Come on."
+        },
+        {
+          "voice": "vera",
+          "expression": "annoyed",
+          "text": "He seems determined to be an obstacle. I am not going to spend the afternoon explaining the problem to him."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "We can choose to leave without deciding he had the right to chase us away."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "He has made a rather poor introduction. I am comfortable allowing it to stay that brief."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "That tells us how he wants to be remembered. I would rather spend the next conversation learning about someone else."
+        }
+      ]
+    },
+    {
+      "id": 96,
+      "key": "museum_fine_arts_and_battles",
+      "subject": "A schoolkid says enjoying Pokemon battles should leave room for the fine arts.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_MustntForgetLoveForFineArts": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "Battling with POK\u00e9MON is fun,\\nI'll grant you that.\\pBut one mustn't forget our love for\\nthe fine arts.$",
+          "sha256": "6e3c20cba91a2782ebdf9c270530517096e4606a960eb97c363bcbe18b62f1e2"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "I can enjoy battles and paintings. My bag already contains both healing items and a very flattened museum ticket."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He is right that training need not use up all our curiosity. I rather like being reminded of that here."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "We can have more than one thing we care about. It helps to spend a day remembering that."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I am glad he said that. A battle tells us something about a Pokemon; a painting can notice something else."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "There is room in a day for battling, good food, and looking at something someone made with care."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "I agree with his artistic principles. I am slightly alarmed by how confidently he has issued them."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "We do not have to turn everything we love into a competition. This is a pleasant room to remember that in."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I build things to do jobs. It is good to look at things someone made simply because they wanted them to exist."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Spending time with something beautiful is a way of paying attention, too."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He has a strong opinion about how we should spend our afternoon. For once, I think I will take the suggestion."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "Looking at how other people see Pokemon might help us notice our own team differently."
+        }
+      ]
+    },
+    {
+      "id": 97,
+      "key": "museum_artist_inspiration",
+      "subject": "An artist praises the museum's paintings and its supportive curator.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_ThisMuseumIsInspiration": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "This ART MUSEUM\u2026 Well, you could\\nsee many fantastic paintings.\\pAnd the CURATOR is a wonderful person.\\pAmong artists like myself, this MUSEUM\\nis an inspiration.$",
+          "sha256": "c1f8328028ad48ef81cbd6dadc978a72ad620704d66623765ff079ffbde2ff5c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "I like a museum that sends artists home wanting to make things. I may leave with a much less impressive sketch."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The curator has helped make a place where artists want to learn from one another. That is valuable work."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "It sounds like the people here make it easier to keep trying. I can understand coming back for that."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Some rooms make you hear the next thing you want to write. I think this room does that for him in color."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "He talks about the curator as warmly as the paintings. Someone has made him feel welcome here."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "He has found a room full of work that makes him want to begin his own. I know how precious that can be."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "I like hearing an artist sound encouraged. We should get to hear that more often."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "Seeing how somebody solved a problem can make your hands itch to try. I suspect he knows that feeling."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Good work can give other people permission to begin. This museum seems to have done that for him."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He admires the work and the person who made space for it. I think that is a very fair compliment."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would love to ask which painting first made him want to pick up his own tools again."
+        }
+      ]
+    },
+    {
+      "id": 98,
+      "key": "museum_child_sees_mother",
+      "subject": "A child likes a portrait because its subject reminds him of his mother.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_ThisLadyIsPretty": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "This lady is pretty!\\nShe's like Mommy!$",
+          "sha256": "68708f905d2b2e23f292d88f7043db881e394e755d245760118aa0d09345c2ba"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "He has found his favorite person in a painting. That is a very strong recommendation for the painting."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He connected the portrait with someone he loves. That is a rather lovely thing for an image to do."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "It reminded him of his mother. He does not need a longer reason to like it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Sometimes a face in a painting feels familiar before you can explain why. He found his explanation immediately."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope he tells his mother that. It sounds like the sort of thing she would keep for a long time."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The critics can finish their essays. He has delivered his entire review in two sentences, and it works."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "He looked at a stranger's face and found something that felt like home."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I think we can leave his analysis exactly as it is. He has explained the important part."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "He is seeing the painting through the person who makes him feel loved. I like that way of looking."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "The artist has acquired a very enthusiastic little admirer. His mother has an even better compliment waiting for her."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "That is why I like pictures of ordinary people. Somebody can recognize a little of their own life in them."
+        }
+      ]
+    },
+    {
+      "id": 99,
+      "key": "museum_mother_sees_son",
+      "subject": "A mother says the Pokemon in a painting is adorable like her little boy.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_ThisPokemonIsAdorable": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "This POK\u00e9MON is adorable!\\nJust like our little boy!$",
+          "sha256": "e50b60c1db8f1098180b81ed51f4e71d0a4c6287fbcb06de693f6ca2bd87a58f"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The family resemblance appears to be concentrated entirely in being adorable. I accept the finding."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "She sees something of her son in that Pokemon. People bring their own little histories to a painting."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "She sounds fond of her boy. I am happy to let the painting take a share of the compliment."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "She has found somebody she loves in the picture too. I hope they compare notes on the way home."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope her boy gets to hear himself described that kindly when they are away from the painting, too."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The painting has become a family portrait through sheer parental enthusiasm. An excellent transformation."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "That is a sweet way to look at a picture. I would like to be described with that much uncomplicated fondness."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I am choosing not to ask which features they share. I suspect the answer is simply that she loves him."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Love makes people notice little familiar things. The painting has given hers somewhere to land."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "She has made her opinion of her son wonderfully clear. I think the Pokemon can be pleased with the comparison."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would rather remember the way she said that than try to work out an actual physical resemblance."
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "key": "museum_new_paintings_visitor",
+      "subject": "A visitor hurried over after hearing about new paintings and asks whether they are upstairs.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_HeardMuseumGotNewPaintings": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "I'd heard that this ART MUSEUM got\\nin some new paintings.\\pSo, naturally I hurried over.\\pAre the new paintings up on\\nthe second floor?$",
+          "sha256": "1fc51225a11338d9a83e64c809872018639a93bf9bc07a21aec8afc3a44c7cdf"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "She heard there were new paintings and came running. I appreciate an emergency that can be solved by taking the stairs."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The new collection has already drawn someone back. I hope the curator gets to hear how eager she was to see it."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "It is nice to see someone this excited about something peaceful. We can point her toward the curator."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "She has been looking forward to seeing work she has not met yet. I like that kind of anticipation."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope the paintings are worth the hurry. Either way, she should take a breath before doing the stairs."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "An audience arriving because it genuinely wants to be here. Someone should tell the artists how that feels."
+        },
+        {
+          "voice": "emi",
+          "expression": "flustered",
+          "text": "I understand hurrying somewhere because there is something new to look at. I tend to pretend I was walking casually."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I would ask where the new exhibits are too. Otherwise I might inspect an old frame for twenty minutes and miss the point."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "She came back because the place still has things to show her. That is a good relationship to have with a museum."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I hope she gets a little time to enjoy them after making such a determined entrance."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I like returning to a familiar place when it has something new to tell me. She clearly does too."
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "key": "museum_cheerful_curator",
+      "subject": "A visitor notices that the curator has seemed unusually cheerful lately.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_CuratorHasBeenCheerful": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "Lately, the CURATOR has been\\nunusually cheerful.\\pI bet something good happened for him.\\nDefinitely.$",
+          "sha256": "529dff9d2a3b3ee2aa6e05d0493019f0a2668ef113d674be6bcbde0e2ac65568"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "I hope it is something wonderful and ordinary, like finding exactly the right place for a painting."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "She noticed a change in him. It is nice to hear somebody observing a neighbor's happiness for once."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Good. Looking after this place seems to matter to him. I hope it is giving him something back."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Maybe he has something to look forward to when he opens the doors now. That can change how a whole day sounds."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope whatever cheered him up lasts a while. People who welcome everyone else deserve good days too."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The curator has become the museum's most discussed new exhibit. I hope he is enjoying the attention."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "People have noticed him being happy. I would like him to keep getting reasons to be."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I hope a long-running problem finally got fixed. That sort of happiness can look suspiciously large from outside."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "It is kind that she noticed. We cannot always solve someone's difficulties, but we can notice when they ease."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "Whatever it is, it seems to suit him. Happiness is doing excellent work on his presentation."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "Somebody has seen him often enough to recognize a good stretch of days. I like that this place has regulars."
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "key": "museum_aspiring_exhibitor",
+      "subject": "An aspiring artist studies the collection and dreams of exhibiting here someday.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_AimToSeeGreatPaintings": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "I aim to see many great paintings\\nhere and learn from them.\\pI have this dream of one day having\\nmy artwork exhibited here.$",
+          "sha256": "f2e5fd746aa3a895f9930c2338c4cdbf797237a0440a35b77087806cfbaf7ced"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "I hope we come back one day and he is standing beside a painting with his own name under it."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He has a place he hopes to reach and examples he wants to learn from. That is a good beginning."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "I hope he keeps making things after he goes home. The wishing part deserves a chance to become work."
+        },
+        {
+          "voice": "ashe",
+          "expression": "flustered",
+          "text": "It is brave to say where you hope your work will end up. I usually mumble that part."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I would like him to have somebody who asks to see what he has made, even before it belongs in a museum."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "He has named his dream out loud. I know that can feel more dangerous than presenting the finished work."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "I hope he keeps some early attempts. It is easy to forget how far you have come when you only keep the good pages."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "He should study how they were made as well as how they look. There is a lot of useful work hiding behind a finished surface."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "He is looking at other people's achievements and finding room for his own future in them."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I hope he knows his work can matter to somebody before a museum agrees to hang it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would like to see what he is making now. The beginning of that story deserves a record too."
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "key": "museum_welcome_to_browse",
+      "subject": "After we say we have not viewed the collection, the curator politely gives us time.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_NotDisturbYouTakeYourTime": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "Ah, then let me not disturb you.\\nPlease, do take your time.$",
+          "sha256": "294cb1252b4df49d861664bbe4fd54b67a0cc49223e29d9242ee29deabb37d9c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "Permission to wander slowly. I believe I have been training for this museum visit my entire life."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He wants us to actually look before answering questions about the collection. I appreciate that order of operations."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "He is giving us room to enjoy the place. We can take him at his word."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like being allowed to spend time with a painting without having to explain what I think of it yet."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "That was kind. We can look around at whatever pace feels good."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has given the audience time to settle in. A surprisingly rare and considerate artistic decision."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "It is nice when an invitation to look does not come with a deadline."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I will try to interpret taking our time as looking carefully, rather than inspecting how every frame is attached."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "We are allowed to be here before we know what to say about it. That feels welcoming."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He is letting us discover what we like without choosing it for us. I think he is good at this."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would like to make another slow pass through the room. Some details only arrive after the first look."
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "key": "museum_uninterested_guest",
+      "subject": "The curator remains welcoming after we say paintings are not our interest.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_HonoredYoudVisitInSpiteOfThat": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "I see\u2026\\pI'm honored that you would visit\\nus in spite of that.$",
+          "sha256": "3b37d2218db3b4ee73c823c0571ce7ec0b00d0263d51b6d535cf7e14f849ce3b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "We admitted we were not especially interested, and he was still pleased we came. That makes me want to look a little harder."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He has left room for curiosity to develop without demanding that we already possess it."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He took an honest answer kindly. I think we can return the favor by being considerate guests."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "He did not turn liking art into an entrance requirement. I am glad about that."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "There is room here for people who are still finding out what they enjoy. He has made that very clear."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A host who can hear that and still make someone welcome has earned rather more of my interest."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "We did not have to pretend. I like this place better for that."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "He is happy we showed up before we understood what we might learn here. That is how quite a few of my interests started."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "An invitation can remain kind after someone says no. He seems to understand that."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He has handled a fairly blunt answer with considerable grace. We should try to match it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "Sometimes you come somewhere for company and discover an interest later. He is leaving that possibility open."
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "key": "museum_greeter",
+      "subject": "The greeter welcomes visitors to the museum's Pokemon artwork collection.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "Welcome to LILYCOVE MUSEUM.\\pPlease take the time to enjoy our\\ncollection of fantastic artwork\\lfeaturing POK\u00e9MON.$",
+          "sha256": "789141cf4c7f8164371471e8e8d89f1cd7dbd71b72263741b3f0e09229589ad8"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Pokemon paintings, a quiet room, and permission to linger. This is an unusually promising set of instructions."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "I would like to see which details the artists noticed first. We spend so much time looking for battle information."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "We have time for a look. The paintings are unlikely to demand a rematch."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like the hush in here. Everyone is having a conversation with something that does not need to interrupt."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Somebody has made a comfortable place to look at things people cared about. I am glad we came in."
+        },
+        {
+          "voice": "riven",
+          "expression": "flustered",
+          "text": "I shall attempt to enjoy the art without mentally rehearsing an impressive opinion for the curator."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "I want to look around slowly. There is no need to have a favorite before we have seen anything."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I will look at the paintings before I look at the fittings. You may remind me of that promise."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "It is lovely to enter somewhere that wants us to notice Pokemon without asking what we can get from them."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I would like to see how the artists use color. It is such a generous room to borrow ideas from."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I am interested in what caught each artist's eye. There are so many ways to look at the same Pokemon."
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "key": "museum_regional_pride",
+      "subject": "A resident praises the museum's regional appeal and reports a trainer supplied the upstairs paintings.",
+      "sources": {
+        "LilycoveCity_LilycoveMuseum_1F_Text_MuseumTouristDestination": {
+          "path": "data/maps/LilycoveCity_LilycoveMuseum_1F/scripts.inc",
+          "text": "The ART MUSEUM has become a favorite\\ntourist destination.\\pIt's great for LILYCOVE\u2026\\nNo, great for the HOENN region!\\pThis is what I've heard--a lone TRAINER\\nprocured all the paintings upstairs.$",
+          "sha256": "daf91eb7224b6bde4880852ab21a2bd33f9e905fbd5534f24a1a0b89dca69acf"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "One trainer filled an exhibit, and now people travel to see it. I am going to be more careful about throwing away my doodles."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The paintings have given people another reason to visit Hoenn. I like seeing a trainer's work reach beyond the battlefield."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Someone put a lot of effort into that collection. It is good to hear that people have noticed."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I hope the visiting people spend a little time with each painting. It sounds as if the collection has earned it."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "The artists, the trainer, the people who keep this place open. I hope the good news reaches all of them."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A lone trainer becomes an unlikely patron of the arts. I would absolutely read that story."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "It is nice that a trainer is being remembered here for bringing something beautiful into a room."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "Collecting paintings sounds simple until you try getting every last part of a collection into place. Someone stuck with it."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A gift to one room has become something the whole region can enjoy. That is a lovely kind of consequence."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "People are coming to Lilycove for something they want to spend time looking at. The collection must be doing something right."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would like to meet the people who traveled here for the paintings. Each one will have arrived with a different expectation."
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "key": "fortree_sky_witness",
+      "subject": "A man reports a huge flying Pokemon heading toward Route 131, then notices our singed smell.",
+      "sources": {
+        "FortreeCity_Text_SawGiganticPokemonInSky": {
+          "path": "data/maps/FortreeCity/scripts.inc",
+          "text": "No one believes me, but I saw this\\ngigantic POK\u00e9MON in the sky.\\pIt seemed to squirm as it flew toward\\nROUTE 131.\\pBy the way\u2026 Sniff\u2026\\nUm\u2026 You, uh\u2026smell singed.\\pWere you at a volcano or something?$",
+          "sha256": "84f7c9a44e1f6bdf7448a2bbafab77ea9c7ddf54409ff1e05f671009d3526189"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "surprised",
+          "text": "An enormous Pokemon headed toward Route 131, and he has still found time to review our smell. A thorough witness."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Route 131 gives his sighting a useful direction. Our smoky clothes are less relevant, but evidently quite persuasive."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We should remember where it was heading. We can deal with smelling like a campfire afterward."
+        },
+        {
+          "voice": "ashe",
+          "expression": "smug",
+          "text": "He described something enormous in the sky, then brought us straight back down to our laundry."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope he finds somebody who takes the sighting seriously. Meanwhile, we could probably use a wash and a meal."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A gigantic creature crossing the sky, followed by a critique of the protagonist's scent. I admire the abrupt change of scale."
+        },
+        {
+          "voice": "emi",
+          "expression": "flustered",
+          "text": "I would like to hear more about the thing he saw. I would like to hear less about our current resemblance to burnt toast."
+        },
+        {
+          "voice": "vera",
+          "expression": "surprised",
+          "text": "I want details about how it moved. Unfortunately, he has become distracted by evidence that we have been near fire."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "We can listen without deciding what he saw yet. We can also admit that we could do with clean clothes."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "He may have witnessed something remarkable. We appear to have brought our own, considerably less glamorous evidence of adventure."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would ask which way he was facing and how long he saw it. Then I would find somewhere to wash this shirt."
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "key": "fortree_gym_challenger_ready",
+      "subject": "With the obstruction gone, the woman is eager to challenge Winona with her cherished Pokemon.",
+      "sources": {
+        "FortreeCity_Text_ThisTimeIllBeatWinona": {
+          "path": "data/maps/FortreeCity/scripts.inc",
+          "text": "I've got my pride-and-joy POK\u00e9MON\\nwith me. This time, I'll beat WINONA.$",
+          "sha256": "03419c226fd12c686660faa42dd7810d56d7135b6f10494471ecaa911b02c3f7"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "She has her favorite Pokemon and another attempt in mind. I am rooting for a very proud walk back out of that Gym."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "She has clearly thought about this challenge before. I hope her confidence comes with a plan she and her Pokemon trust."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "She is ready to try again. That deserves some respect before anybody knows the result."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "She sounds glad just to have a clear way to the door. I hope the rest of her day keeps opening up."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I like hearing how proud she is of her Pokemon. I hope they get a good rest afterward, however the battle goes."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The path is clear and our challenger has returned with determination. I am invested in this local sequel."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "Trying again with a Pokemon she loves is a good reason to walk up those steps."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "She has her partner ready. I would like to know what she changed after her last attempt."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "She can reach the challenge she chose now. It is a small freedom worth enjoying."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I hope she gets to keep that pride in her Pokemon through the whole battle, including the difficult bits."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would like to be here when she comes back out. Win or lose, she will have a story worth hearing."
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "key": "fortree_rain_and_roots",
+      "subject": "A girl explains that Fortree depends on rainwater, soil and the trees supporting its homes.",
+      "sources": {
+        "FortreeCity_Text_TreesGrowByDrinkingRainwater": {
+          "path": "data/maps/FortreeCity/scripts.inc",
+          "text": "The ground absorbs rainwater, and\\ntrees grow by drinking that water\u2026\\pOur FORTREE CITY exists because\\nthere's both water and soil.$",
+          "sha256": "8b90a390c23e34451ea380d7498703cbbe5cf93c6b34e95777414dcb14e90d20"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The whole city depends on water and soil. I will try to remember that before complaining about another rainy day."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "She has followed the city all the way down to its foundations. The roots are doing much more work than the walkways suggest."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "People live up here because something below them keeps growing. It is worth remembering what needs looking after."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It makes the rain sound less like an interruption when you think of everything it is keeping alive."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "These homes have living things under them that need water too. This city has quite a large household to look after."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "An entire city held up by trees drinking quietly beneath it. That is rather better than a decorative metaphor."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "I like that she sees the soil from all the way up here. It is easy to forget what a beautiful place rests on."
+        },
+        {
+          "voice": "vera",
+          "expression": "surprised",
+          "text": "These houses have foundations that grow. I would love to know how the builders leave room for the trees to change."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Rain, roots, homes. She has noticed the relationship holding the whole place together."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "It is a lovely city, and she knows what lets it stay lovely. I appreciate that kind of attention."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I should take a picture of the roots too. A photograph of the treetops would leave out half the story."
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "key": "fortree_lively_elder",
+      "subject": "An old man credits treehouse living with making everyone lively and says he feels thirty years younger.",
+      "sources": {
+        "FortreeCity_Text_EveryoneHealthyAndLively": {
+          "path": "data/maps/FortreeCity/scripts.inc",
+          "text": "The CITY consists of homes built on\\ntrees.\\pPerhaps because of that lifestyle,\\neveryone is healthy and lively.\\pWhy, even myself--I feel as if I've\\ngrown thirty years younger.$",
+          "sha256": "5a55c39a1e2143556a0c1763344d6b33162da6a377a0ea6f0da5981e64899145"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "Thirty years younger! I would settle for whatever these trees can do about the last staircase."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He feels well, which is lovely. I would need more than one cheerful resident before assigning the credit to treehouses."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "He sounds happy living here. That is a better advertisement than any sign they could put at the entrance."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "He has the energy to make the claim convincingly. I will leave the exact number of years to him."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Fresh air, movement, neighbors to talk to. I can see why he enjoys his days here."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has given the trees credit for thirty years of rejuvenation. I hope he also remembers whoever maintains the bridges."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "I would like to find somewhere I can grow older and still feel that pleased to wake up in it."
+        },
+        {
+          "voice": "vera",
+          "expression": "smug",
+          "text": "I am glad the stairs are keeping him lively. They are currently making me reconsider how many tools I carry."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "He feels at home in his body and in this place. That is a good thing to hear someone say."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He is wearing those claimed thirty years very confidently. I do not think he needs us to check the arithmetic."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "His enthusiasm would make a lovely portrait. I would label it with his own description of the place."
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "key": "fortree_window_bugs",
+      "subject": "A resident likes treehouse life but is startled when Bug Pokemon come through the windows.",
+      "sources": {
+        "FortreeCity_Text_BugPokemonComeThroughWindow": {
+          "path": "data/maps/FortreeCity/scripts.inc",
+          "text": "Living on top of trees is okay.\\pBut sometimes BUG POK\u00e9MON come in\\nthrough windows.\\lIt can be really startling.$",
+          "sha256": "3fc73d1f257de5f186df70e1145623cb9e7fb5969860b9b9b6a14d98d3c93aa8"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "surprised",
+          "text": "The windows apparently come with surprise residents. I hope the rent agreement is very clear about that."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The homes share the trees with Pokemon that were already using them. Some careful window screens might help everyone coexist."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "I can enjoy a Pokemon and still prefer it to announce itself before landing beside my pillow."
+        },
+        {
+          "voice": "ashe",
+          "expression": "surprised",
+          "text": "An unexpected wingbeat in a quiet room would startle me too. Especially if I had just put the instrument down."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope they can guide the visitors back outside without hurting them. Then perhaps fit a screen."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "It is difficult to deliver a composed speech about life in harmony with nature when nature has just landed on your face."
+        },
+        {
+          "voice": "emi",
+          "expression": "flustered",
+          "text": "I like bugs much better when I know whether one is about to be on me."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A light screen and a frame that fits the growing window space. I am already sketching something in my head."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "They are sharing a home with the tree's other inhabitants. It might help to agree on which parts have doors."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "I would rather choose my room's accents than have them fly in and choose me. A screen seems fair."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "The surprise is the difficult part. I could admire a visiting Pokemon much more easily after it lets me notice it arriving."
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "key": "fortree_trade_evolution_rumor",
+      "subject": "A boy has heard that some Pokemon evolve through trading.",
+      "sources": {
+        "FortreeCity_Text_PokemonThatEvolveWhenTraded": {
+          "path": "data/maps/FortreeCity/scripts.inc",
+          "text": "There are POK\u00e9MON that evolve when\\nyou trade them! That's what I heard.$",
+          "sha256": "dd9e9c4f5c7fe4a20ae06419b35346bf65a98d10ded4baf244b9dd72bb26945b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "Some Pokemon evolve when traded. I wish changing my address made me taller and better at carrying groceries."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Some species do respond to trading that way. It is worth learning what a particular partner needs before arranging a trade."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We should think about the Pokemon and the person receiving it before making that decision."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "It is a strange sort of change to imagine: a new person waiting for you, and a new shape on the way."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope every Pokemon making that trip has somebody kind waiting at the other end."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "An evolution brought on by an exchange. The Pokemon has a much more dramatic handover than the paperwork suggests."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "I would want to know I was going somewhere gentle before agreeing to a change that big."
+        },
+        {
+          "voice": "vera",
+          "expression": "surprised",
+          "text": "I would like to understand what part of the process causes the change. I am absolutely not volunteering anyone for an experiment."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Some changes happen through a relationship with someone new. That does not make the old relationship unimportant."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I hope trainers discuss what they actually want from the trade. A surprising evolution should not be the only thing they consider."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would like before-and-after pictures, with both trainers in them. There are two sides to that little history."
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "key": "dewford_fishing_instructions",
+      "subject": "The fisherman explains facing the water and timing rod pulls when a Pokemon bites.",
+      "sources": {
+        "DewfordTown_Text_ThrowInFishingAdvice": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "And, as an added bonus, I'll even throw\\nin a little fishing advice!\\pFirst, you want to face the water,\\nthen use the ROD.\\pFocus your mind\u2026\\nIf you get a bite, pull on the ROD.\\pSometimes you can snag something\\nimmediately, but with bigger catches,\\lyou need to time the pulls on your ROD\\lto haul them in.$",
+          "sha256": "d1f977d9dbef09f58257eaa9587b612d72014fcd3a0443ad081a740b67fbf6d8"
+        },
+        "DewfordTown_Text_FishingAdvice": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "Oh, hey, don't get down on yourself!\\nI'll give you a little fishing advice.\\pFirst, you want to face the water,\\nthen use the ROD.\\pFocus your mind\u2026\\nIf you get a bite, pull the ROD.\\pSometimes you can snag something\\nimmediately, but with bigger catches,\\lyou need to time the pulls on your ROD\\lto haul them in.$",
+          "sha256": "6e40f3dc945f5b75770505f3272422973bebf39d7a60be5a1449a99cf1992058"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "Face the water, wait for a bite, and pull at the right moment. I am particularly pleased he specified the water part."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "He has given us a clear sequence to practice. Waiting for the right signal matters more than hauling at every twitch."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "We can learn the timing without rushing ourselves. He seems willing to explain it again if we need him."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "That sounds like listening for the beat before you come in. Except the beat may be an annoyed fish."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I am glad he included advice with the encouragement. People need something to try, not just a demand to get better."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "There is a pause, a cue, and a decisive movement. I did not expect fishing to sound quite so much like rehearsal."
+        },
+        {
+          "voice": "emi",
+          "expression": "flustered",
+          "text": "I can manage the waiting. I suspect the sudden moment when I have to act will be where it becomes interesting."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I will try the technique before redesigning the rod. Please remember that I have said this out loud."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "We can pay attention to what is happening at the other end of the line. Pulling harder at everything is rarely helpful."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I appreciate instructions that tell us what to notice. It gives the waiting a little purpose."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I want to learn the difference between a bite and the water moving. That seems like a better place to start than guessing."
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "key": "dewford_fishing_declined",
+      "subject": "The fisherman accepts our decision not to take up fishing.",
+      "sources": {
+        "DewfordTown_Text_ThatsTooBadThen": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "Oh, is that so?\\nThat's too bad, then.$",
+          "sha256": "8d1a0f4797fc6284a9e4982114041fb6f58771466df878d44b91940f1952adcc"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "We have disappointed a fisherman by declining to become another fisherman. I think everyone will recover."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "He offered, and we answered honestly. We can be grateful for the offer without taking up the activity."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We can decide how we want to spend the afternoon. He seems able to live with that."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I would rather say no gently than stand beside the water pretending to have a wonderful time."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "It was kind of him to offer. We do not need to turn every kind offer into another thing to carry."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A fishing career has ended before its first cast. I hope nobody had commissioned a commemorative portrait."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "It is a relief when declining something is allowed to be the whole conversation."
+        },
+        {
+          "voice": "vera",
+          "expression": "flustered",
+          "text": "One fewer tool in the bag today. I am trying to experience that as a positive development."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "We can leave a possibility open without agreeing to it now."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He was hoping to share an interest. I hope he finds someone delighted to spend the afternoon on it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "There are other things to do by the sea. We can appreciate the place without needing to catch anything in it."
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "key": "dewford_fishing_success",
+      "subject": "After we report good fishing, the fisherman enthusiastically encourages us.",
+      "sources": {
+        "DewfordTown_Text_GreatHaulInSomeBigOnes": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "Is that right! That's great!\\nHaul in some big ones!$",
+          "sha256": "2402b83a1143b4451ca7969db2688401920c78ce5df119011dab5a2ca0a5f970"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "He is pleased for us. I am pleased that a successful conversation about fishing did not require holding up a fish."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He enjoys hearing that his advice has worked out. Sharing a skill can be satisfying long after the first lesson."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "He asked how we were doing and was glad to hear the answer. I like that."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "His enthusiasm has enough energy for both ends of the pier. I hope the catches have been worth it."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "It sounds as if our good news has improved his afternoon too. That is a nice result for a short conversation."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has promoted us directly to hauling in the big ones. I admire his confidence in a very brief progress report."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "I like being encouraged without having to prove every detail of what went well."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "He seems happy we are getting the hang of it. I shall resist turning that into a promise to catch something enormous."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "He has made room in his own enjoyment for somebody else's success."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "That was a generous reaction. We should tell people when their advice helped us more often."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "He sounds like he would enjoy hearing about the first catch as much as the biggest one."
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "key": "dewford_briney_waiting_letter",
+      "subject": "Briney offers to wait while we deliver the letter to Steven.",
+      "sources": {
+        "DewfordTown_Text_GoDeliverIllBeWaiting": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "MR. BRINEY: Then you go on and deliver\\nthe LETTER. I'll be waiting.$",
+          "sha256": "44f7fdc7ca81def1cd183bea876d0290904a690b41a60e3106efcb127e970836"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Briney will wait while we deliver the letter. I am glad our timetable has room for us to find the right person."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "We have someone expecting a letter and someone willing to wait for us. The next part is pleasantly clear."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He is giving us time to finish what we came for. Let us keep the letter safe and get it delivered."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Knowing someone will still be here when we get back makes a strange island feel less strange."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "It is kind that he is willing to wait. I hope he and Peeko have somewhere comfortable to spend the time."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The captain has allowed our important errand to proceed without an ominous deadline. I appreciate his taste in suspense."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "I like knowing there is a familiar face waiting for the return trip."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "We can finish one delivery before planning the next journey. An unfamiliar but promising approach to errands."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "He has offered us something useful and quiet: time to do what we said we would do."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I would like to get back without the letter and with a thank-you ready for the person who waited."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "We have a small route through this place now: find Steven, deliver the letter, come back to Briney."
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "key": "dewford_briney_flexible_departure",
+      "subject": "After we cancel the destination choice, Briney says he can sail when we are ready.",
+      "sources": {
+        "DewfordTown_Text_JustTellMeWhenYouNeedToSetSail": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "MR. BRINEY: You just tell me whenever\\nyou need to set sail again!$",
+          "sha256": "53d24dba6450a316ad6259b20e9f9082acc268480aba63f324f7a5ed04b0a586"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "A captain who lets us finish wandering first. This may be the most luxurious part of the voyage."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "We can decide when we have finished here instead of choosing a destination simply because the question came up."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "He is ready when we are. We can take a little time to work out where we actually want to go."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like a journey that has room for a pause before the next departure."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "We can have a look around without worrying that we have already kept the boat too long."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "Briney has paused the voyage without making the pause feel like a failure of the plot. A considerate captain."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "There is something comforting about being allowed to change your mind before leaving."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "Good. I would rather choose a destination before the boat starts moving than improvise one afterward."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "He is letting the next journey remain a choice. That is a kindness worth noticing."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "We can leave when we are ready. I hope that includes enough time to make sure nothing is missing from our bag."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "There is time to see the place we are in before we start thinking only about the next one."
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "key": "dewford_trend_agreement",
+      "subject": "The trend enthusiast is delighted that we agree with his current favorite phrase.",
+      "sources": {
+        "DewfordTown_Text_YeahDefinitionOfInRightNow": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "Yeah, absolutely right!\\p\u201c{STR_VAR_1}\u201d is the\\ndefinition of \u201cin\u201d right now.$",
+          "sha256": "5eef3bd7cfb846546aa44b8b4e5c203aa3882c428f2eacd5a0aef30adc53fe48"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "He is very pleased we agree. I hope the phrase survives the walk to the next street."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He wanted to share an enthusiasm and found someone willing to listen. That is a pleasant use of a conversation."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "He likes it, we said we liked it, and everyone can carry on having a decent afternoon."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I usually need a little longer before declaring something the sound of an entire moment. He has committed impressively quickly."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I am glad our answer made him happy. I hope he enjoys it even after the next fashionable thing arrives."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has crowned the phrase ruler of the present moment. I expect the reign will be brief but passionately documented."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "I tend to like things quietly. He seems to enjoy liking them loudly enough for the rest of the island."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "He sounds ready to put it on a sign. I would suggest waiting until the paint from the last one dries."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "People can enjoy small things together. I hope he gets to keep that part even when the phrase changes."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "He is wonderfully confident about the current fashion. I would still give it a week before ordering matching accessories."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would like to hear what he thinks is fashionable when we come back. That could be a little history of its own."
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "key": "dewford_trend_sudden_expert",
+      "subject": "On hearing our new phrase, the enthusiast abruptly claims he knew it all along and rejects the old trend.",
+      "sources": {
+        "DewfordTown_Text_OfCourseIKnowAboutThat": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "Hunh?\\n\u201c{STR_VAR_2}\u201d?\\p\u2026 \u2026\\p\u2026Uh\u2026 Yeah! That's right!\\nYeah, I knew that! Knew it all along!\\pOf course I know about that!\\n\u201c{STR_VAR_2},\u201d right?\\pYeah, that's it, it's there!\\nIsn't \u201c{STR_VAR_2}\u201d\\lthe coolest, or what?\\pIt's the hippest thing in hip.\\nYou think I'd not know about it?\\p\u201c{STR_VAR_1}\u201d\u2026\\nIt's, like, so five minutes ago.\\pNow, \u201c{STR_VAR_2}\u201d is\\nwhat's vital and in tune with the times!$",
+          "sha256": "0648ee081a32afd724e1e044b847dbe35215ff40efde3b2727af543462053f34"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "That pause was the sound of him knowing it all along for the very first time."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "He has revised his opinion and immediately misdated the revision. I would accept a simple admission that he likes the new idea."
+        },
+        {
+          "voice": "kade",
+          "expression": "smug",
+          "text": "He is allowed to change his mind. The elaborate story about never needing to is doing most of the work here."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "You can hear the exact moment he changes key and hopes nobody noticed."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "It would have been fine to say he had just learned something he liked. I hope he knows that."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "An astonishing performance of lifelong expertise, following several seconds of complete bewilderment."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "I recognized that pause. It is the gap between having no idea and deciding nobody can be allowed to know."
+        },
+        {
+          "voice": "vera",
+          "expression": "smug",
+          "text": "I have had to admit to not knowing things much more loudly than that. He would survive saying it once."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "There is no shame in finding something new interesting. He is making discovery sound much more difficult than it needs to be."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "He changed fashions halfway through the conversation and would like the record to show he was already dressed for it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would like to keep both versions of what he said. They make a more interesting portrait together."
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "key": "dewford_trend_disagreement",
+      "subject": "After hearing our alternative phrase, the enthusiast says he still prefers his original trend.",
+      "sources": {
+        "DewfordTown_Text_XHuhIThinkYIsCool": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "Hmm\u2026\\n\u201c{STR_VAR_2},\u201d huh?\\pBut personally, I think\\n\u201c{STR_VAR_1}\u201d\\lis what's real in cool.$",
+          "sha256": "998cec528a08716ccc2b8dbf1a4c6778301a15bd4859c2bafea036f3eb9e1515"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "He heard our suggestion and still likes his own. I am relieved the island will not require a referendum."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "We offered an alternative, and he kept his preference. That is an entirely reasonable conclusion to the experiment."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We do not have to agree about a favorite phrase. Neither of us needs to win this."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Sometimes a different idea just does not have the sound someone wanted. He is allowed to keep his own."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "He knows what he enjoys. We can let him have that without turning the conversation sour."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "Our proposal has received a polite local review. I shall endeavor to survive without a dramatic public response."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "We can leave with different favorite things and still have had a perfectly good conversation."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "He considered the alternative and stuck with what works for him. I can respect that decision."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "An exchange of opinions does not have to end with somebody giving theirs away."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "I do not need everyone on this island to share my tastes. Keeping up with my own is already quite enough work."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would rather hear a preference he actually holds than a compliment he thinks we want."
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "key": "dewford_trend_future_news",
+      "subject": "The enthusiast invites us to bring news of future trends.",
+      "sources": {
+        "DewfordTown_Text_HearOfAnyTrendsComeShareWithMe": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "Well, if you hear of any happening new\\ntrends, come share them with me, okay?$",
+          "sha256": "16e5991a90f11b7334b1c527e146f6a4f37e3faca4d579ab6388cbd826d60579"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "smug",
+          "text": "We have been appointed overseas correspondents for the island's favorite phrase. I hope the position includes snacks."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "He is curious about what people elsewhere are enjoying. We can bring him something we genuinely noticed on our travels."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "He has given us a reason to say hello again. I would rather bring a real story than make something up to impress him."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I might bring him a tune somebody is humming somewhere else. I cannot promise it will still be fashionable when we arrive."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I would enjoy telling him about something people were pleased to share with us. That seems worth bringing home."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "He wants news from the world, delivered one very enthusiastic conversation at a time. I can see the appeal."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "I will remember that somebody here wants to hear about little things we find interesting along the way."
+        },
+        {
+          "voice": "vera",
+          "expression": "surprised",
+          "text": "I should ask whether he wants working examples. My idea of a happening new thing may require a small demonstration."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "He has left the conversation open for our return. I like a goodbye that makes room for another visit."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I may bring him news of a color everyone is wearing somewhere else. He can decide for himself whether it suits Dewford."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I could bring a picture of something people have made popular in another town. It would give him more to ask about."
+        }
+      ]
+    },
+    {
+      "id": 122,
+      "key": "sootopolis_brick_break_explanation",
+      "subject": "The martial artist identifies Brick Break but declares the move too horrible to describe.",
+      "sources": {
+        "SootopolisCity_House1_Text_ExplainBrickBreak": {
+          "path": "data/maps/SootopolisCity_House1/scripts.inc",
+          "text": "TM31 contains BRICK BREAK! It's a move\\nso horrible that I can't describe it.$",
+          "sha256": "9b9dd2b8dd1a9fcf161fa735c68243367e9d7d0a57aa53a0cbae989a01c6f53d"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "surprised",
+          "text": "He has given the move a name and declined to describe it. I would like the wall's opinion before we try it indoors."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "He has identified the technique, but I would still appreciate actual instructions before calling the demonstration necessary."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We can learn what it does without testing it on his furniture."
+        },
+        {
+          "voice": "ashe",
+          "expression": "surprised",
+          "text": "That description leaves a great deal to the imagination. I am suddenly noticing how much of this room is breakable."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I would like the Pokemon using it to know more about the plan than we currently do."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has achieved an impressive amount of suspense for a move with such a direct name."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "I think the name has already done most of the describing. The rest of the room would like us to stop there."
+        },
+        {
+          "voice": "vera",
+          "expression": "surprised",
+          "text": "I am interested in how it breaks through a barrier. I will investigate somewhere that is supposed to have broken things."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Being able to break something is a reason to think carefully about when you use it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "smug",
+          "text": "I hope the technique comes with more guidance than his sales presentation. I am becoming rather attached to intact doorways."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would ask for a demonstration in an appropriate training space. I have no wish to document the destruction of his home."
+        }
+      ]
+    },
+    {
+      "id": 123,
+      "key": "sootopolis_kecleon_house_greeting",
+      "subject": "The Kecleon living with the martial artist responds to a greeting.",
+      "sources": {
+        "SootopolisCity_House1_Text_Kecleon": {
+          "path": "data/maps/SootopolisCity_House1/scripts.inc",
+          "text": "KECLEON: Puu puhyaah.$",
+          "sha256": "6796edbe9bafce5710a8de7b5ae8e0b62550dfc89a48285d3cbc5734c0a0d61e"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "That sounded friendly. I am accepting it as permission to continue having no idea where Kecleon is looking."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "It seems comfortable sharing the house. I would like to learn how its routine fits around all that training."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "We can say hello and let it go back to its day. It does not need to perform for us."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It has an interesting little call. I think I would recognize it even if I could not immediately spot the Pokemon."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Hello, Kecleon. I hope living with a martial artist still involves plenty of peaceful meals."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A brief reply from someone who could make an entrance almost anywhere. Such admirable restraint."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "I am glad it answered. A quiet Pokemon can still have something it wants to say."
+        },
+        {
+          "voice": "vera",
+          "expression": "surprised",
+          "text": "I would love to understand how it changes color. For now, I am keeping the questions out of its face."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "It gets to be at home here. We should be considerate visitors in its space too."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "Kecleon has more control over its color scheme than I will ever manage. I admire the flexibility."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would ask before taking a picture. Changing color should not mean losing the right to be left alone."
+        }
+      ]
     }
   ]
 }

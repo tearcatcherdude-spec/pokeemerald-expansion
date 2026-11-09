@@ -624,3 +624,5 @@ annoyed~They are trying to decide who belongs in this street. We should not have
 # Whole-game expansion; preserve the released first 47 IDs above.
 from companion_world_objects import ROWS as WORLD_OBJECT_ROWS
 ROWS.extend(WORLD_OBJECT_ROWS)
+from companion_world_people import ROWS as WORLD_PEOPLE_ROWS
+ROWS.extend(WORLD_PEOPLE_ROWS)
