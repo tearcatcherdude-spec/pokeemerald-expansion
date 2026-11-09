@@ -1,3 +1,21 @@
+Current writing checkpoint (2026-11-09): 1,068 authored situations, bound to
+1,095 exact message labels, with eleven independently authored voices (11,748
+replies). Full-game coverage remains unfinished. Remaining work includes later
+Hoenn routes, remaining interiors, dungeons, story endings, League/postgame,
+objects and native/dynamic interactions. These counts describe authored bindings,
+not a percentage of NPCs or a completed playthrough.
+
+The 914-situation commit `bf2386d98cd7210d11f6437e8d155e724650574b`
+has compiled as Emerald. The earlier 330-situation commit
+`7a3acaeebc8b6493930042ff4ba14b6d14dfcdeb` passed its full GitHub CI and
+starter regression. On that exact ROM, native interpreter fixtures verified all
+1,100 replies in the newly appended 100-situation Kanto module, including exact
+wording, portrait-expression pixels, finished-print EXP and spent memory. Separate
+physical-field fixtures passed a trainer-sight approach/native victorious battle
+and Oldale's coordinate-triggered blocked-path scene. Those fixtures use prepared
+parties, positions and story flags; they are not a continuous playthrough. Current
+later writing has source validation and awaits its own compiled/native checks.
+
 The full-game companion expansion continues from tested PR #11 commit
 79ec91c79bd03c426c64f824415befdfe99d351d. It is one project with one intended
 completed expansion, not an early-game-only scope or a sequence of pilot releases.
@@ -40,7 +58,8 @@ aliases must be assigned within the original 736-context record; later contexts
 use the host bridge. Unknown newer history formats retain their anchor and stay
 quiet rather than being treated as an empty save.
 
-Two interaction issues are being addressed locally:
+The following interaction fixes are implemented and covered by the earlier
+exact-ROM storage milestone checks below:
 
 - Imported Kanto furniture must select its native interaction family from the
   current layout format, not solely the executable's Emerald/FRLG build flag.
@@ -48,8 +67,8 @@ Two interaction issues are being addressed locally:
   last actual NPC speaker. Unknown NPC text and bag-full failures still invalidate
   earlier candidates. This uses exact receipt identities, never wording guesses.
 
-These changes are not yet a compiled or delivered full-game build. Source checks
-passing does not substitute for new exact-ROM/native interaction validation.
+A compiled checkpoint does not constitute the completed full-game expansion.
+Source validation and exact-ROM interaction validation are reported separately.
 
 Save capacity is a real design constraint. The released normal save has 536
 unused bytes per slot across all four storage areas; the existing 1012-byte

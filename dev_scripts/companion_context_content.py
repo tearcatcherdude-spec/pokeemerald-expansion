@@ -644,3 +644,7 @@ from companion_routes_105_119 import ROWS as HOENN_ROUTE_ROWS
 ROWS.extend(HOENN_ROUTE_ROWS)
 from companion_kanto_interiors_routes_extra import ROWS as KANTO_INTERIOR_ROUTE_EXTRA_ROWS
 ROWS.extend(KANTO_INTERIOR_ROUTE_EXTRA_ROWS)
+from companion_route_registrations import ROWS as ROUTE_REGISTRATION_ROWS
+ROWS.extend(ROUTE_REGISTRATION_ROWS)
+from companion_hoenn_interiors_extra import ROWS as HOENN_INTERIOR_EXTRA_ROWS
+ROWS.extend(HOENN_INTERIOR_EXTRA_ROWS)

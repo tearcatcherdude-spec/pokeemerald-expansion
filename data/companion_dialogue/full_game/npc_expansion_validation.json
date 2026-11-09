@@ -1,0 +1,52 @@
+{
+  "source_commit": "7a3acaeebc8b6493930042ff4ba14b6d14dfcdeb",
+  "rom_sha256": "841b25a917eb231779588883699383843a46dd4e4393e16fd4f7bbe79d98f3c6",
+  "new_context_range": [
+    230,
+    330
+  ],
+  "new_reply_count": 1100,
+  "checks": [
+    {
+      "suite": "dialogue-expansion-checks",
+      "report": {
+        "checks": [
+          "All 100 Pip authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Silas authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Kade authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Ashe authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Nico authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Riven authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Emi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Vera authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Lume authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Mochi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Zuri authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once"
+        ],
+        "rom_sha256": "841b25a917eb231779588883699383843a46dd4e4393e16fd4f7bbe79d98f3c6",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    },
+    {
+      "suite": "approached-trainer-checks",
+      "report": {
+        "checks": [
+          "A real trainer-sight approach and native victorious battle defer the exact post-battle Silas reply until return, award EXP once, and release portrait/controls"
+        ],
+        "rom_sha256": "841b25a917eb231779588883699383843a46dd4e4393e16fd4f7bbe79d98f3c6",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    },
+    {
+      "suite": "coordinate-dialogue-checks",
+      "report": {
+        "checks": [
+          "Stepping into the actual Oldale coordinate scene completes its NPC movements before the matching reply, without an A-button interaction or injected script; portrait, controls and one-time EXP behave correctly"
+        ],
+        "rom_sha256": "841b25a917eb231779588883699383843a46dd4e4393e16fd4f7bbe79d98f3c6",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    }
+  ],
+  "limitations": "Prepared native interpreter and physical-field fixtures, not a continuous playthrough or proof all physical NPCs reach every binding. Later modules require separate validation."
+}
