@@ -112,9 +112,35 @@ timeout and absent-helper saving. Prepared save fixtures hold background field
 callbacks idle; these are not whole-game playthroughs or desktop Scripting UI
 tests. Separate real A-button tests passed all 16 existing behavior groups,
 including both regions, all voices/portraits, modes, decline/repeat and EXP.
-Later source changes for one-time legacy import and unknown-format handling
-require a new compiled build and repeat of the affected native checks.
+Final storage-milestone verification used commit
+`c38a6b059f4e9caadb27b775daf6065fb24815b5`, including one-time legacy import and
+unknown-format preservation. CI run 42631520818 passed every required job:
+5493 passed, 19 upstream known failures, 9 expected failures, 419 TODOs, 5940
+total, zero unexpected failures. ROM SHA-256:
+`1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5`.
+The exact ROM passed 53 grouped native checks, including all 781 authored
+replies executed via real interpreter fixtures, exact cast expression pixels,
+completed-observation EXP, the 13 storage groups, three retained-object/scene
+and migration groups, six native-printer groups, actual NPC/mode/state checks
+and an actual imported Kanto TV tile accessed from walkable floor with A.
+See `data/companion_dialogue/full_game/history_validation.json` for the grouped
+evidence and limitations. Catalogue message fixtures are not physical visits to
+781 NPCs. No continuous whole-game playthrough or desktop Scripting UI operation
+is claimed.
+
+The prepared helper now finds its history folder beside its own Lua file; its
+generated wrapper passed a moved-folder test with spaces in the path. A packaged
+helper does not need Python while playing. Migration uses normal .sav files;
+load older emulator states in their original ROM and save in-game before moving
+the .sav. Retain a pre-upgrade backup because older ROMs cannot reliably read the
+new SaveBlock2 checksum. Matching-ROM save-state rollback was tested separately.
+
 The current full expansion remains unfinished, with only 71 authored contexts.
+`python dev_scripts/check_full_dialogue_readiness.py` deliberately fails while
+final-message eligibility, interaction-root/native-hook reviews or eligible
+bindings are incomplete. `--report-only` prints the gaps without failing a
+development build. Successful build/storage tests cannot turn these unreviewed
+source entries into completed whole-world dialogue coverage.
 
 Release requires reviewed eligibility/bindings and voice coverage throughout the
 intended game, source/artwork checks, successful builds/tests, native branch and

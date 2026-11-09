@@ -1,11 +1,11 @@
 """Prepare the one-file mGBA helper beside a development ROM.
 
 Does not launch/control mGBA or open/change any .sav or history snapshot.
-Run again after moving the folder, because the generated helper has an absolute
-history path. Python is needed for setup only, not while playing.
+The generated helper finds its own folder through Lua's source filename, as
+provided by mGBA's file loader. It remains portable when the game folder moves.
+Python is used by development packaging, not while playing.
 """
 import argparse
-import json
 from pathlib import Path
 
 
@@ -17,11 +17,14 @@ def install(directory):
     history.mkdir(exist_ok=True)
     source = Path(__file__).with_name('mgba_history.lua').read_text(encoding='utf-8')
     helper = directory / 'load-companion-history.lua'
-    # Lua accepts these JSON-style escapes for Windows paths and ordinary Unicode.
-    quoted = json.dumps(history.as_posix(), ensure_ascii=False)
     content = ('-- Generated Emerald companion history helper.\n'
                'local adapter = (function()\n' + source + '\nend)()\n'
-               'adapter.attach(emu, callbacks, ' + quoted + ')\n'
+               'assert(emu, "Open the matching Emerald ROM before loading this helper.")\n'
+               'local filename = debug.getinfo(1, "S").source\n'
+               'assert(filename:sub(1,1) == "@", "Load this helper from its Lua file.")\n'
+               'filename = filename:sub(2):gsub("\\\\", "/")\n'
+               'local directory = filename:match("^(.*)/") or "."\n'
+               'adapter.attach(emu, callbacks, directory .. "/companion-history")\n'
                'console:log("Emerald companion history helper attached.")\n')
     helper.write_text(content, encoding='utf-8')
     return helper

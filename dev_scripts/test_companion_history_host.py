@@ -7,10 +7,13 @@ from pathlib import Path
 import struct
 import sys
 import tempfile
+import shutil
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'history-test-deps'))
 from lupa.lua54 import LuaRuntime
 from companion_history_snapshots import encode, PAYLOAD_BYTES
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools/companion_history'))
+from install_helper import install
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 0x02000000
@@ -105,6 +108,25 @@ def run():
         # A file creation failure is explicitly rejected before success ACK.
         failed = adapter[b'attach'](emu, callbacks, (directory + '/absent/subdir').encode())
         assert request(failed, 2, dense) == 2
+        # mGBA names file-loaded chunks with '@absolute/path'. Exercise the
+        # actual generated wrapper after moving it to a folder with spaces.
+        original = Path(directory) / 'original'
+        moved = Path(directory) / 'moved game folder'
+        original.mkdir(); moved.mkdir(); (moved / 'companion-history').mkdir()
+        helper = install(original)
+        relocated = moved / helper.name
+        shutil.copyfile(helper, relocated)
+        captured = []
+        callbacks[b'add'] = lambda _, name, fn: captured.append(fn) or len(captured)
+        lua.globals()[b'emu'] = emu
+        lua.globals()[b'callbacks'] = callbacks
+        logger = lua.table(); logger[b'log'] = lambda *_: None
+        lua.globals()[b'console'] = logger
+        lua.compile(relocated.read_bytes(), name=b'@' + str(relocated).encode())()
+        assert captured
+        assert request(captured[-1], 2, dense) == 1
+        moved_file = moved / 'companion-history' / (hashlib.sha256(dense).hexdigest() + '.history')
+        assert moved_file.read_bytes() == dense
     print('PASS: actual Lua SHA-256, prepare/load, both anchors, dense history, missing/corrupt/wrong-game rejection, pointer guard, IO failure, ACK ordering. Mock API only.')
 
 
