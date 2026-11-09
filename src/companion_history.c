@@ -53,6 +53,9 @@ static bool32 HasAnchor(void)
 
 static void InitMailbox(void)
 {
+    // Make the ROM descriptor a live linker dependency; a source-level export
+    // alone is discarded by --gc-sections because the game doesn't read it.
+    asm volatile ("" : : "r" (&gCompanionHistoryDescriptor));
     memset(&gCompanionHistoryMailbox, 0, sizeof(gCompanionHistoryMailbox));
     gCompanionHistoryMailbox.magic = MAILBOX_MAGIC;
     gCompanionHistoryMailbox.version = 1;

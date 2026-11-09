@@ -130,7 +130,12 @@ bool32 CompanionDialogue_IsSystemReceipt(const u8 *message)
 }
 void CompanionDialogue_RecordMessage(struct ScriptContext *ctx, const u8 *message)
 {
-    if (sActive && !sOffering && ScriptContext_IsGlobal(ctx))
+    if (ScriptContext_IsGlobal(ctx))
+        CompanionDialogue_RecordNativeMessage(message);
+}
+void CompanionDialogue_RecordNativeMessage(const u8 *message)
+{
+    if (sActive && !sOffering)
     {
         // Unknown NPC/dynamic messages always replace the previous candidate.
         // Explicit system receipts preserve the last actual speaker.
@@ -281,6 +286,7 @@ u32 CompanionDialogue_GetMode(void) { return COMPANION_DIALOGUE_NORMAL; }
 bool32 CompanionDialogue_SetMode(u32 mode) { return FALSE; }
 void CompanionDialogue_BeginInteraction(const u8 *script) {}
 void CompanionDialogue_RecordMessage(struct ScriptContext *ctx, const u8 *message) {}
+void CompanionDialogue_RecordNativeMessage(const u8 *message) {}
 bool32 CompanionDialogue_FinishInteraction(struct ScriptContext *ctx) { return FALSE; }
 void CompanionDialogue_AfterScript(void) {}
 bool32 CompanionDialogue_IsInteractionActive(void) { return FALSE; }
@@ -290,7 +296,7 @@ void Script_CompanionDialogueChoose(struct ScriptContext *ctx) {}
 void Script_CompanionDialogueRestore(struct ScriptContext *ctx) {}
 void Script_CompanionDialogueSetMode(struct ScriptContext *ctx) {}
 void Script_CompanionDialogueBufferMode(struct ScriptContext *ctx) {}
-u32 CompanionDialogue_ContextForMessage(const u8 *message) { return COMPANION_CONTEXT_CAPACITY; }
+u32 CompanionDialogue_ContextForMessage(const u8 *message) { return COMPANION_NO_CONTEXT; }
 bool32 CompanionDialogue_IsSystemReceipt(const u8 *message) { return FALSE; }
 bool32 CompanionDialogue_HasSpent(u32 voice, u32 context) { return TRUE; }
 #endif

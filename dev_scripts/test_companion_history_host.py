@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = 0x02000000
 MAILBOX = BASE + 0x100
 SNAPSHOT = BASE + 0x1000
-FRAME = BASE + 0x80
+FRAME = 0x030066DC # Actual game's frame counter resides in IWRAM.
 
 
 def run():
@@ -30,6 +30,8 @@ def run():
     writes = []
 
     def read(address, length):
+        if address == FRAME and length == 4:
+            return bytes(4)
         if 0x08000000 <= address < 0x08000000 + len(rom):
             return bytes(rom[address - 0x08000000:address - 0x08000000 + length])
         assert BASE <= address and address + length <= BASE + len(ram)

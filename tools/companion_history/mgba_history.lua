@@ -37,6 +37,9 @@ function M.sha256(data)
 end
 local function hex(s) return (s:gsub('.',function(c) return string.format('%02x',c:byte()) end)) end
 local function inRam(p,n) return p>=0x02000000 and p+n<=0x02040000 and p%4==0 end
+local function frameInRam(p)
+  return p%4==0 and (inRam(p,4) or (p>=0x03000000 and p+4<=0x03008000))
+end
 local function readFile(path)
   local f=assert(io.open(path,'rb'))
   local data=f:read('a'); assert(f:close()); return data
@@ -79,9 +82,10 @@ function M.attach(emu,callbacks,directory)
       if (offset+pos-1)%4==0 and pos+27<=#bytes then
         local version,mailbox,snapshot,length,frame=string.unpack('<I4I4I4I4I4',bytes,pos+8)
         if version==1 and length==16928 and inRam(mailbox,92) and inRam(snapshot,length)
-          and inRam(frame,4) and (mailbox+92<=snapshot or snapshot+length<=mailbox) then
+          and frameInRam(frame) and (mailbox+92<=snapshot or snapshot+length<=mailbox) then
           assert(descriptor==nil or descriptor.address==offset+pos-1,'Ambiguous history descriptor')
-          descriptor={address=offset+pos-1,mailbox=mailbox,snapshot=snapshot,frame=frame}
+          descriptor={address=offset+pos-1,mailbox=mailbox,snapshot=snapshot,frame=frame,
+                      bytes=bytes:sub(pos,pos+27)}
         end
       end
       pos=bytes:find('ECHOBRD1',pos+1,true)
@@ -93,6 +97,7 @@ function M.attach(emu,callbacks,directory)
     for i=1,#data do emu:write8(address+i-1,data:byte(i)) end
   end
   local function frame()
+    if emu:readRange(0x08000000+descriptor.address,28)~=descriptor.bytes then return end
     if emu:read32(b)~=0x314d4345 or emu:read32(b+4)~=1 then return end
     -- Revalidate every request: another ROM or restored state must not turn this
     -- into an arbitrary memory/file writer. Data files never supply addresses.

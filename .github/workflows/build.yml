@@ -81,6 +81,9 @@ jobs:
           wc -l /tmp/kanto-scripts-first-pass.s
           tail -n 30 /tmp/kanto-scripts-first-pass.s
 
+      - name: Verify compiled companion history bridge
+        run: python3 dev_scripts/verify_companion_history_rom.py pokeemerald.gba pokeemerald.map
+
       - name: Verify compiled Pip artwork
         run: python3 dev_scripts/verify_pip_rom.py pokeemerald.gba pokeemerald.map
 
