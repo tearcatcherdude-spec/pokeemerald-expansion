@@ -648,3 +648,11 @@ from companion_route_registrations import ROWS as ROUTE_REGISTRATION_ROWS
 ROWS.extend(ROUTE_REGISTRATION_ROWS)
 from companion_hoenn_interiors_extra import ROWS as HOENN_INTERIOR_EXTRA_ROWS
 ROWS.extend(HOENN_INTERIOR_EXTRA_ROWS)
+from companion_kanto_gym_people import ROWS as KANTO_GYM_ROWS
+ROWS.extend(KANTO_GYM_ROWS)
+from companion_kanto_interiors_final import ROWS as KANTO_INTERIOR_FINAL_ROWS
+ROWS.extend(KANTO_INTERIOR_FINAL_ROWS)
+from companion_shared_objects import ROWS as SHARED_OBJECT_ROWS
+ROWS.extend(SHARED_OBJECT_ROWS)
+from companion_routes_120_134 import ROWS as HOENN_LATE_ROUTE_ROWS
+ROWS.extend(HOENN_LATE_ROUTE_ROWS)

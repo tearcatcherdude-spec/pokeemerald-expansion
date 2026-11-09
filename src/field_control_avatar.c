@@ -795,26 +795,31 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
         }
         if (ShouldDoWallyCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(MauvilleCity_EventScript_RegisterWallyCall);
             ScriptContext_SetupScript(MauvilleCity_EventScript_RegisterWallyCall);
             return TRUE;
         }
         if (ShouldDoScottFortreeCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(Route119_EventScript_ScottWonAtFortreeGymCall);
             ScriptContext_SetupScript(Route119_EventScript_ScottWonAtFortreeGymCall);
             return TRUE;
         }
         if (ShouldDoScottBattleFrontierCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall);
             ScriptContext_SetupScript(LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall);
             return TRUE;
         }
         if (ShouldDoRoxanneCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(RustboroCity_Gym_EventScript_RegisterRoxanne);
             ScriptContext_SetupScript(RustboroCity_Gym_EventScript_RegisterRoxanne);
             return TRUE;
         }
         if (ShouldDoRivalRayquazaCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall);
             ScriptContext_SetupScript(MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall);
             return TRUE;
         }

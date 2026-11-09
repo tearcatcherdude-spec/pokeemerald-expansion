@@ -48,5 +48,47 @@
       }
     }
   ],
-  "limitations": "Prepared native interpreter and physical-field fixtures, not a continuous playthrough or proof all physical NPCs reach every binding. Later modules require separate validation."
+  "limitations": "Prepared native interpreter and physical-field fixtures, not a continuous playthrough or proof all physical NPCs reach every binding. Later modules require separate validation.",
+  "extended_history_validation": {
+    "source_commit": "bf2386d98cd7210d11f6437e8d155e724650574b",
+    "rom_sha256": "eef6f069ddd343b7d8876155712244f7acf2623b091e34440a149482759a1261",
+    "context_range": [
+      700,
+      790
+    ],
+    "reply_count": 990,
+    "adapter": "Actual Lua 5.4 helper and mGBA libretro core memory API; not the desktop Scripting UI.",
+    "checks": [
+      {
+        "suite": "dialogue-expansion-checks",
+        "report": {
+          "checks": [
+            "All 90 Pip authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Silas authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Kade authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Ashe authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Nico authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Riven authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Emi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Vera authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Lume authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Mochi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Zuri authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once"
+          ],
+          "rom_sha256": "eef6f069ddd343b7d8876155712244f7acf2623b091e34440a149482759a1261",
+          "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+        }
+      },
+      {
+        "suite": "extended-npc-save-checks",
+        "report": {
+          "checks": [
+            "An actual Kanto NPC above context 736 gives the exact contextual reply, writes a verified snapshot, stays spent after normal save/reset/Continue, and remains independently fresh for another companion"
+          ],
+          "rom_sha256": "eef6f069ddd343b7d8876155712244f7acf2623b091e34440a149482759a1261",
+          "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+        }
+      }
+    ]
+  }
 }

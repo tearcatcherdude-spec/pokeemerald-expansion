@@ -1,5 +1,5 @@
-Current writing checkpoint (2026-11-09): 1,068 authored situations, bound to
-1,095 exact message labels, with eleven independently authored voices (11,748
+Current writing checkpoint (2026-11-09): 1,470 authored situations, bound to
+1,516 exact message labels, with eleven independently authored voices (16,170
 replies). Full-game coverage remains unfinished. Remaining work includes later
 Hoenn routes, remaining interiors, dungeons, story endings, League/postgame,
 objects and native/dynamic interactions. These counts describe authored bindings,
@@ -13,8 +13,12 @@ starter regression. On that exact ROM, native interpreter fixtures verified all
 wording, portrait-expression pixels, finished-print EXP and spent memory. Separate
 physical-field fixtures passed a trainer-sight approach/native victorious battle
 and Oldale's coordinate-triggered blocked-path scene. Those fixtures use prepared
-parties, positions and story flags; they are not a continuous playthrough. Current
-later writing has source validation and awaits its own compiled/native checks.
+parties, positions and story flags; they are not a continuous playthrough. On the 914-situation ROM, all 990 interpreter replies across contexts 700-789
+passed with the actual Lua adapter, spanning the original 736-context boundary.
+An actual Kanto NPC above that boundary also retained Silas's spent comment
+after normal save/reset/Continue while Emi remained independently fresh. Later
+writing and the new map-frame/scheduled-call hooks await their compiled/native
+checks.
 
 The full-game companion expansion continues from tested PR #11 commit
 79ec91c79bd03c426c64f824415befdfe99d351d. It is one project with one intended
