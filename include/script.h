@@ -70,6 +70,7 @@ u32 ScriptPeekWord(struct ScriptContext *ctx);
 void LockPlayerFieldControls(void);
 void UnlockPlayerFieldControls(void);
 bool8 ArePlayerFieldControlsLocked(void);
+bool32 ScriptContext_IsGlobal(const struct ScriptContext *ctx);
 void ScriptContext_Init(void);
 bool8 ScriptContext_IsEnabled(void);
 bool8 ScriptContext_RunScript(void);

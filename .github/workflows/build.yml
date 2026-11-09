@@ -35,6 +35,9 @@ jobs:
       - name: Validate companion bonds
         run: python3 dev_scripts/validate_bonds.py
 
+      - name: Validate contextual companion dialogue
+        run: python3 dev_scripts/validate_companion_dialogue.py
+
       - name: Install binutils
         run: |
           sudo apt-get update
@@ -100,6 +103,9 @@ jobs:
       - name: Validate accepted project baseline
         run: python3 dev_scripts/validate_project_baseline.py
 
+      - name: Validate contextual companion dialogue
+        run: python3 dev_scripts/validate_companion_dialogue.py
+
       - name: Install binutils
         run: |
           sudo apt-get update
@@ -138,6 +144,9 @@ jobs:
       - name: Validate accepted project baseline
         run: python3 dev_scripts/validate_project_baseline.py
 
+      - name: Validate contextual companion dialogue
+        run: python3 dev_scripts/validate_companion_dialogue.py
+
       - name: Install binutils
         run: |
           sudo apt-get update
@@ -175,6 +184,9 @@ jobs:
 
       - name: Validate accepted project baseline
         run: python3 dev_scripts/validate_project_baseline.py
+
+      - name: Validate contextual companion dialogue
+        run: python3 dev_scripts/validate_companion_dialogue.py
 
       - name: Install binutils
         run: |
@@ -215,6 +227,9 @@ jobs:
 
       - name: Validate accepted project baseline
         run: python3 dev_scripts/validate_project_baseline.py
+
+      - name: Validate contextual companion dialogue
+        run: python3 dev_scripts/validate_companion_dialogue.py
 
       - name: Install binutils
         run: |

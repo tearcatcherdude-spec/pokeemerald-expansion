@@ -1139,6 +1139,14 @@ static const struct MenuAction sMultichoiceList_Pip[] = {
     {COMPOUND_STRING("Change company")},
     {COMPOUND_STRING("Keep walking")},
     {COMPOUND_STRING("Companion Journal")},
+    {COMPOUND_STRING("Dialogue setting")},
+};
+
+static const struct MenuAction sMultichoiceList_CompanionDialogue[] = {
+    {COMPOUND_STRING("Normal")},
+    {COMPOUND_STRING("Only when asked")},
+    {COMPOUND_STRING("Silent")},
+    {COMPOUND_STRING("Cancel")},
 };
 
 static const struct MenuAction sMultichoiceList_Cast[] = {
@@ -1318,6 +1326,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
     [MULTI_CAST_ROSTER] = MULTICHOICE(sMultichoiceList_Cast),
     [MULTI_PIP_COMPANION] = MULTICHOICE(sMultichoiceList_Pip),
+    [MULTI_COMPANION_DIALOGUE] = MULTICHOICE(sMultichoiceList_CompanionDialogue),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
 };
 

@@ -61,7 +61,9 @@ TEST("PokemonStorage is backwards compatible")
     EXPECT_EQ(offsetof(struct BondPerson, objectives), 22);
     EXPECT_EQ(offsetof(struct BondProgress, people), 16);
     EXPECT_EQ(sizeof(struct BondProgress), 416);
-    EXPECT_EQ(sizeof(struct PokemonStorage), T_POKEMONSTORAGE_SIZE + 416);
+    EXPECT_EQ(offsetof(struct PokemonStorage, companionDialogue), T_POKEMONSTORAGE_SIZE + 416);
+    EXPECT_EQ(sizeof(struct CompanionDialogueProgress), 1020);
+    EXPECT_EQ(sizeof(struct PokemonStorage), T_POKEMONSTORAGE_SIZE + 416 + 1020);
     EXPECT_LE(sizeof(struct PokemonStorage), 9 * 3968);
 }
 

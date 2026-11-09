@@ -1,4 +1,5 @@
 #include "global.h"
+#include "companion_dialogue.h"
 #include "pip.h"
 #include "script.h"
 #include "event_data.h"
@@ -272,6 +273,11 @@ bool8 ScriptContext_IsEnabled(void)
 }
 
 // Re-initializes the global script context to zero.
+bool32 ScriptContext_IsGlobal(const struct ScriptContext *ctx)
+{
+    return ctx == &sGlobalScriptContext;
+}
+
 void ScriptContext_Init(void)
 {
     Pip_ResetSceneState();
@@ -298,7 +304,8 @@ bool8 ScriptContext_RunScript(void)
         sGlobalScriptContextStatus = CONTEXT_SHUTDOWN;
         UnlockPlayerFieldControls();
         Pip_TryRegroupAfterScene();
-        return FALSE;
+        CompanionDialogue_AfterScript();
+        return ScriptContext_IsEnabled();
     }
 
     return TRUE;

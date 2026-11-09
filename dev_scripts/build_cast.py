@@ -144,6 +144,7 @@ def register(characters):
  'Cast_Text_Unavailable::','\t.string "Your current escort needs you.\\nThere is no room to change company\\lright now.$"','Cast_Text_Locked::','\t.string "Befriend that trainer first.\\nYour current companion will stay.$"','Cast_Text_Dismiss::','\t.string "Part ways for now?\\nThey will return to where you met.$"']
  if (ROOT/'data/bonds/journal.inc').exists():
   scripts.insert(scripts.index('\tmultichoice 0, 0, MULTI_PIP_COMPANION, FALSE')+1,'\tgoto_if_eq VAR_RESULT, 4, Bonds_EventScript_Journal')
+  scripts.insert(scripts.index('\tmultichoice 0, 0, MULTI_PIP_COMPANION, FALSE')+1,'\tgoto_if_eq VAR_RESULT, 5, CompanionDialogue_EventScript_Settings')
  (ROOT/'data/cast/recruitment.inc').write_text('\n'.join(scripts)+'\n')
 
 def dialogue(characters):
@@ -217,7 +218,7 @@ def dialogue(characters):
    code.append('  {'+ctext(text,c['name'])+', '+str(EXPRESSIONS.index(emotion))+', '+hex(bit)+'}, // '+str(i)+' '+symbols[i])
    ids.append(first.setdefault(text,i));records.append(dict(source_id=i,source=symbols[i],subject=key,expression=emotion,text=text,memory_id=ids[-1],topic=t))
   code.append(' },');memory.append(ids);review.append(dict(character=c['name'],unique_comments=len(first),comments=records))
- code += ['};','static const u16 sCastContextMemoryId[CAST_COUNT][CAST_SOURCE_COUNT] = {']+[' {'+', '.join(map(str,ids))+'},' for ids in memory]+['};','static const u16 sCastLoreTriggers[CAST_COUNT][6] = {']+[' {'+', '.join(hex(1<<topicNames.index(k)) for k in row)+'},' for row in triggers]+['};']
+ code += ['};','static const u16 sCastContextMemoryId[CAST_COUNT][CAST_SOURCE_COUNT] = {']+[' {'+', '.join(map(str,ids))+'},' for ids in memory]+['};']
  (ROOT/'src/data/cast_dialogue.h').write_text('\n'.join(code)+'\n')
  save('data/cast/dialogue_review.json',review)
  save('data/cast/dialogue_contract.json',dict(source_slots=symbols,expressions=EXPRESSIONS,characters=NAMES,topics=topicNames,memory_capacity=448,semantics='Each character has an independent spent bit. Offering/declining spends the canonical wording; accepting a pending offer is allowed once. No generic cycling.'))

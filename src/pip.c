@@ -1,4 +1,5 @@
 #include "global.h"
+#include "companion_dialogue.h"
 #include "pip.h"
 #include "cast.h"
 #include "parallel_watch.h"
@@ -15,6 +16,19 @@
 
 #if FNPC_ENABLE_NPC_FOLLOWERS
 extern const u8 Cozy_EventScript_Companion[];
+extern const u8 LivingKanto_Scene0_After[];
+extern const u8 LivingKanto_Scene1_After[];
+extern const u8 LivingKanto_Scene2_After[];
+extern const u8 LivingKanto_Scene3_After[];
+extern const u8 LivingKanto_Scene4_After[];
+extern const u8 LivingKanto_Scene5_After[];
+extern const u8 LivingKanto_Scene6_After[];
+extern const u8 LivingKanto_Scene7_After[];
+extern const u8 LivingKanto_Scene8_After[];
+extern const u8 LivingKanto_Scene9_After[];
+extern const u8 LivingKanto_Scene10_After[];
+extern const u8 LivingKanto_Scene11_After[];
+
 extern const u8 Text_PictureBookShelf[], Text_BookShelf[], Text_PokemonCenterBookShelf[];
 extern const u8 Text_Vase[], Text_EmptyTrashCan[], Text_ShopShelf[], Text_Blueprint[];
 extern const u8 Cozy_Text_PictureBookShelf[], Cozy_Text_BookShelf[], Cozy_Text_Vase[];
@@ -28,7 +42,6 @@ static EWRAM_DATA u8 sKantoTalkMap = 0;
 static EWRAM_DATA u8 sKantoTalkLocalId = 0;
 static EWRAM_DATA u16 sSavedResult = 0;
 static EWRAM_DATA u16 sSavedLastTalked = 0;
-static EWRAM_DATA u16 sReactionGraphics = 0;
 static EWRAM_DATA const u8 *sPendingReaction = NULL;
 static EWRAM_DATA u32 sSavedMessage = 0;
 static EWRAM_DATA bool8 sSavedTextValid = FALSE;
@@ -164,7 +177,9 @@ static void BeginReaction(struct ScriptContext *ctx)
     sSavedTextValid = FALSE;
     sPendingReaction = NULL;
     gSpecialVar_Result = FALSE;
-    if (!Pip_IsFollowing() || sSceneSuspended)
+    if (!Pip_IsFollowing() || sSceneSuspended
+     || CompanionDialogue_IsInteractionActive()
+     || CompanionDialogue_GetMode() != COMPANION_DIALOGUE_NORMAL)
         return;
     memcpy(sSavedText, gStringVar4, sizeof(gStringVar4));
     memcpy(sSavedSpeaker, gStringVar1, sizeof(gStringVar1));
@@ -227,6 +242,7 @@ void Pip_ResetSceneState(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
     sSceneSuspended = FALSE;
+    CompanionDialogue_ResetSession();
 #endif
 }
 
@@ -309,6 +325,8 @@ bool32 Pip_TrySay(const u8 *text)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
     u32 id = MemoryIndex(text);
+    if (CompanionDialogue_GetMode() == COMPANION_DIALOGUE_SILENT)
+        return FALSE;
     if (Cast_IsFollowing())
         return text != NULL && !sSceneSuspended && Cast_TrySay(id);
     if (!Pip_IsFollowing() || sSceneSuspended || id >= ARRAY_COUNT(sPipMemoryCatalogue) || Pip_HasHeard(text))
@@ -325,6 +343,13 @@ void Script_PipChooseDialogue(struct ScriptContext *ctx)
 {
     gSpecialVar_Result = FALSE;
 #if FNPC_ENABLE_NPC_FOLLOWERS
+    u32 mode = CompanionDialogue_GetMode();
+    u32 recent = CompanionDialogue_TryManualTalk();
+    if (recent != 0 || mode == COMPANION_DIALOGUE_SILENT)
+    {
+        gSpecialVar_Result = recent == 1;
+        return;
+    }
     if (!sSceneSuspended && Cast_TryPersonalTalk())
     {
         gSpecialVar_Result = TRUE;
@@ -384,47 +409,6 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
             return;
         sKantoReactionHandled = TRUE;
     }
-    sReactionGraphics = gObjectEvents[id].graphicsId;
-    // Generic strangers do not need the same six jokes. Only specific subjects
-    // with something new to add offer a reaction.
-    switch (sReactionGraphics)
-    {
-    case OBJ_EVENT_GFX_HIKER_FRLG:
-    case OBJ_EVENT_GFX_HIKER: text = sPipHiker; break;
-    case OBJ_EVENT_GFX_FISHERMAN: text = sPipFisherman; break;
-    case OBJ_EVENT_GFX_SAILOR_FRLG:
-    case OBJ_EVENT_GFX_SAILOR: text = sPipSailor; break;
-    case OBJ_EVENT_GFX_SCIENTIST_1:
-    case OBJ_EVENT_GFX_SCIENTIST_2: text = sPipScientist; break;
-    case OBJ_EVENT_GFX_NURSE_FRLG:
-    case OBJ_EVENT_GFX_NURSE: text = sPipNurse; break;
-    }
-    if (ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
-    {
-        switch (sReactionGraphics)
-        {
-        case OBJ_EVENT_GFX_BROCK: text = sPipAdventure_BROCK; break;
-        case OBJ_EVENT_GFX_MISTY: text = sPipAdventure_MISTY; break;
-        case OBJ_EVENT_GFX_LT_SURGE: text = sPipAdventure_LT_SURGE; break;
-        case OBJ_EVENT_GFX_ERIKA: text = sPipAdventure_ERIKA; break;
-        case OBJ_EVENT_GFX_KOGA: text = sPipAdventure_KOGA; break;
-        case OBJ_EVENT_GFX_SABRINA: text = sPipAdventure_SABRINA; break;
-        case OBJ_EVENT_GFX_BLAINE: text = sPipAdventure_BLAINE; break;
-        case OBJ_EVENT_GFX_GIOVANNI: text = sPipAdventure_GIOVANNI; break;
-        case OBJ_EVENT_GFX_PROF_OAK: text = sPipAdventure_PROF_OAK; break;
-        case OBJ_EVENT_GFX_LORELEI: text = sPipAdventure_LORELEI; break;
-        case OBJ_EVENT_GFX_BRUNO: text = sPipAdventure_BRUNO; break;
-        case OBJ_EVENT_GFX_AGATHA: text = sPipAdventure_AGATHA; break;
-        case OBJ_EVENT_GFX_LANCE: text = sPipAdventure_LANCE; break;
-        case OBJ_EVENT_GFX_BLUE: text = sPipAdventure_BLUE; break;
-        default:
-            if (FreshNPCOffer(text) == NULL) text = FreshKantoLocationFor(TRUE);
-            break;
-        }
-    }
-    if (Cast_IsFollowing() && !ParallelWatch_IsKanto(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum)
-     && FreshNPCOffer(text) == NULL)
-        text = FreshLocation();
     const u8 *personScript = GetObjectEventScriptPointerByObjectEventId(id);
     for (u32 i = 0; i < ARRAY_COUNT(sPipKantoScenes); i++)
         if (sPipKantoScenes[i].script == personScript)
@@ -437,6 +421,60 @@ void Script_PipBeginNPCReaction(struct ScriptContext *ctx)
     gSpecialVar_Result = FALSE;
 #endif
 }
+const u8 *Pip_GetExactObjectReaction(const u8 *original)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    const u8 *text = NULL;
+    if (original == Text_PictureBookShelf) text = Cozy_Text_PictureBookShelf;
+    else if (original == Text_BookShelf || original == Text_PokemonCenterBookShelf) text = Cozy_Text_BookShelf;
+    else if (original == Text_Vase) text = Cozy_Text_Vase;
+    else if (original == Text_EmptyTrashCan) text = Cozy_Text_EmptyTrashCan;
+    else if (original == Text_ShopShelf) text = Cozy_Text_ShopShelf;
+    else if (original == Text_Blueprint) text = Cozy_Text_Blueprint;
+    for (u32 i = 0; i < ARRAY_COUNT(sPipKantoObjects); i++)
+        if (original == sPipKantoObjects[i].original)
+        {
+            text = sPipKantoObjects[i].comment;
+            break;
+        }
+    // Preserve the released paired-scene replies, bound to the actual final
+    // dialogue rather than merely noticing that a quest flag is set.
+    static const u8 *const completedScenes[] = {
+        LivingKanto_Scene0_After,
+        LivingKanto_Scene1_After,
+        LivingKanto_Scene2_After,
+        LivingKanto_Scene3_After,
+        LivingKanto_Scene4_After,
+        LivingKanto_Scene5_After,
+        LivingKanto_Scene6_After,
+        LivingKanto_Scene7_After,
+        LivingKanto_Scene8_After,
+        LivingKanto_Scene9_After,
+        LivingKanto_Scene10_After,
+        LivingKanto_Scene11_After,
+    };
+    for (u32 i = 0; i < ARRAY_COUNT(completedScenes); i++)
+        if (original == completedScenes[i] && FlagGet(sPipKantoScenes[i * 2].resolvedFlag))
+            return sPipKantoScenes[i * 2].text;
+    return text;
+#else
+    return NULL;
+#endif
+}
+bool32 Pip_TryOfferExact(const u8 *text)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    u16 result = gSpecialVar_Result;
+    sPendingReaction = NULL;
+    OfferReaction(text);
+    bool32 offered = sPendingReaction != NULL;
+    gSpecialVar_Result = result;
+    return offered;
+#else
+    return FALSE;
+#endif
+}
+
 void Script_PipBeginObjectReaction(struct ScriptContext *ctx)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
@@ -446,19 +484,7 @@ void Script_PipBeginObjectReaction(struct ScriptContext *ctx)
     if (!sSavedTextValid)
         return;
     original = (const u8 *)sSavedMessage;
-    if (original == Text_PictureBookShelf) text = Cozy_Text_PictureBookShelf;
-    else if (original == Text_BookShelf || original == Text_PokemonCenterBookShelf) text = Cozy_Text_BookShelf;
-    else if (original == Text_Vase) text = Cozy_Text_Vase;
-    else if (original == Text_EmptyTrashCan) text = Cozy_Text_EmptyTrashCan;
-    else if (original == Text_ShopShelf) text = Cozy_Text_ShopShelf;
-    else if (original == Text_Blueprint) text = Cozy_Text_Blueprint;
-    else text = FreshLocation();
-    for (u32 i = 0; i < ARRAY_COUNT(sPipKantoObjects); i++)
-        if (original == sPipKantoObjects[i].original)
-        {
-            text = sPipKantoObjects[i].comment;
-            break;
-        }
+    text = Pip_GetExactObjectReaction(original);
     OfferReaction(text);
 #else
     gSpecialVar_Result = FALSE;

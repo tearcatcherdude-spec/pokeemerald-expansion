@@ -1,4 +1,5 @@
 #include "global.h"
+#include "companion_dialogue.h"
 #include "frontier_util.h"
 #include "battle_setup.h"
 #include "battle_util.h"
@@ -120,6 +121,8 @@ bool8 ScrCmd_end(struct ScriptContext *ctx)
     Script_RequestEffects(SCREFF_V1);
 
     FlagClear(FLAG_SAFE_FOLLOWER_MOVEMENT);
+    if (CompanionDialogue_FinishInteraction(ctx))
+        return FALSE;
     StopScript(ctx);
     return FALSE;
 }
@@ -1688,6 +1691,7 @@ bool8 ScrCmd_message(struct ScriptContext *ctx)
 
     if (msg == NULL)
         msg = (const u8 *)ctx->data[0];
+    CompanionDialogue_RecordMessage(ctx, msg);
     ShowFieldMessage(msg);
     return FALSE;
 }
