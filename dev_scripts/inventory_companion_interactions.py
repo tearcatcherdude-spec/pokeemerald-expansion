@@ -72,9 +72,24 @@ def collect_roots(blocks):
 def write(name,data):
     (OUT/name).write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 
+def native_text_edges():
+    # Reviewed static-pointer path: ShowPokedexRatingMessage ->
+    # GetPokedexRatingText -> sBirchDexRatingTexts. This does not infer text
+    # from arbitrary C identifiers or claim the National-Dex branch displays it.
+    source=(ROOT/'src/birch_pc.c').read_text(encoding='utf-8')
+    array=re.search(r'sBirchDexRatingTexts\[BIRCH_DEX_STRINGS\]\s*=\s*\{(.*?)\};',source,re.S)
+    assert array is not None, 'Review changed Birch native rating table'
+    labels=re.findall(r'\bgBirchDexRatingText_\w+\b',array[1])
+    assert len(labels)==len(set(labels))==21
+    return {'ShowPokedexRatingMessage': labels}
+
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     blocks=read_sources(); sources=text_blocks(); maps,roots=collect_roots(blocks)
+    # Assembly-selected variants are text addresses, not executable scripts.
+    for label in sources:
+        if label in blocks:blocks[label]['is_text']=True
+    native_edges=native_text_edges()
     catalogue=json.loads((ROOT/'data/companion_dialogue/contexts.json').read_text())
     approved={label:row['id'] for row in catalogue['contexts'] for label in row['sources']}
     pilot={label:row['id'] for row in catalogue['contexts'][:47] for label in row['sources']}
@@ -90,6 +105,8 @@ def main():
             else:
                 native.update(block['native_calls'])
                 todo.extend(n for n in block['refs'] if n in blocks and n not in visited)
+                for function in block['native_calls']:
+                    todo.extend(n for n in native_edges.get(function,[]) if n in blocks and n not in visited)
         for text in texts:users[text].append(root)
         for name in native:native_users[name].add(root)
         root_rows.append(dict(script=root,placements=placements,text_labels=sorted(texts),
@@ -110,7 +127,8 @@ def main():
     write('message_worklist.json',source_rows)
     write('identical_source_candidates.json',[dict(labels=labels,text=text,approved_alias=False)
          for text,labels in sorted(identical.items(),key=lambda p:(-len(p[1]),p[0])) if len(labels)>1])
-    write('native_hook_worklist.json',[dict(function=name,roots=sorted(rs),review_status='unreviewed')
+    write('native_hook_worklist.json',[dict(function=name,roots=sorted(rs),review_status='unreviewed',
+                                         static_text_labels=native_edges.get(name,[]))
          for name,rs in sorted(native_users.items())])
     counts=Counter(p['kind'] for row in root_rows for p in row['placements'])
     summary=dict(method='Static explicit label references, all branches. No automatic semantic grouping or terminal-message claim.',

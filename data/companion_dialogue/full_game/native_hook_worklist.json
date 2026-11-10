@@ -4,7 +4,8 @@
     "roots": [
       "EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "AnimateElevator",
@@ -14,49 +15,56 @@
       "SilphCo_Elevator_EventScript_FloorSelect",
       "TrainerTower_Elevator_EventScript_FloorSelect"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "AnimateTeleporterCable",
     "roots": [
       "Route25_SeaCottage_EventScript_Computer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "AnimateTeleporterHousing",
     "roots": [
       "Route25_SeaCottage_EventScript_Computer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Bag_ChooseBerry",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Bag_ChooseMulch",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BattlePyramidChooseMonHeldItems",
     "roots": [
       "BattleFrontier_BattlePyramidLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BattleSetup_StartLatiBattle",
     "roots": [
       "SouthernIsland_Interior_EventScript_TryLatiEncounter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BattleSetup_StartLegendaryBattle",
@@ -76,14 +84,16 @@
       "SkyPillar_Top_EventScript_Rayquaza",
       "TerraCave_End_EventScript_Groudon"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BattleTowerReconnectLink",
     "roots": [
       "BattleFrontier_BattleTowerMultiBattleRoom_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BedroomPC",
@@ -92,7 +102,8 @@
       "LittlerootTown_BrendansHouse_2F_EventScript_PC",
       "LittlerootTown_MaysHouse_2F_EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferBattleFrontierTutorMoveName",
@@ -100,21 +111,24 @@
       "BattleFrontier_Lounge7_EventScript_LeftMoveTutor",
       "BattleFrontier_Lounge7_EventScript_RightMoveTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferBattleTowerElevatorFloors",
     "roots": [
       "BattleFrontier_BattleTowerElevator_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferContestTrainerAndMonNames",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferContestWinnerMonName",
@@ -122,21 +136,24 @@
       "ContestHall_MapScripts",
       "LilycoveCity_ContestLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferContestWinnerTrainerName",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferDeepLinkPhrase",
     "roots": [
       "DewfordTown_Hall_EventScript_Man"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferEReaderTrainerName",
@@ -144,7 +161,8 @@
       "SevenIsland_House_Room1_EventScript_OldWoman",
       "SootopolisCity_MysteryEventsHouse_1F_EventScript_OldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferFanClubTrainerName",
@@ -159,35 +177,40 @@
       "LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanM",
       "LilycoveCity_PokemonTrainerFanClub_EventScript_Woman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferFavorLadyItemName",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferFavorLadyPlayerName",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferFavorLadyRequest",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferLottoTicketNumber",
     "roots": [
       "LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferMonNickname",
@@ -196,7 +219,8 @@
       "PalletTown_RivalsHouse_EventScript_Daisy",
       "SlateportCity_NameRatersHouse_EventScript_NameRater"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferMoveDeleterNicknameAndMove",
@@ -204,35 +228,40 @@
       "FuchsiaCity_House3_EventScript_MoveDeleter",
       "LilycoveCity_MoveDeletersHouse_EventScript_MoveDeleter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferQuizAuthorNameAndCheckIfLady",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferQuizCorrectAnswer",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferQuizPrizeItem",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferQuizPrizeName",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferTMHMMoveName",
@@ -240,7 +269,8 @@
       "EventScript_HiddenItemScript",
       "MauvilleCity_GameCorner_EventScript_PrizeCornerTMs"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferTrendyPhraseString",
@@ -258,7 +288,8 @@
       "DewfordTown_Hall_EventScript_Twin",
       "DewfordTown_Hall_EventScript_Woman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferUnionRoomPlayerName",
@@ -302,21 +333,24 @@
       "VermilionCity_PokemonCenter_1F_EventScript_Nurse",
       "ViridianCity_PokemonCenter_1F_EventScript_Nurse"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "BufferVarsForIVRater",
     "roots": [
       "BattleFrontier_Lounge1_EventScript_Breeder"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CB2_StartCreditsSequence",
     "roots": [
       "KantoIndigoPlateau_Exterior_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CableCar",
@@ -324,7 +358,8 @@
       "MtChimney_CableCarStation_EventScript_Attendant",
       "Route112_CableCarStation_EventScript_Attendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CableCarWarp",
@@ -332,7 +367,8 @@
       "MtChimney_CableCarStation_EventScript_Attendant",
       "Route112_CableCarStation_EventScript_Attendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CalculatePlayerPartyCount",
@@ -345,14 +381,16 @@
       "Route117_PokemonDayCare_EventScript_DaycareWoman",
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CallFrontierUtilFunc",
     "roots": [
       "BattleFrontier_BattleTowerLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CallTrainerTowerFunc",
@@ -360,21 +398,24 @@
       "TrainerTower_EventScript_DoubleBattleTriggerTop",
       "TrainerTower_EventScript_SingleBattleTrigger"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CanWaterBerryPlot",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CapeBrinkGetMoveToTeachLeadPokemon",
     "roots": [
       "TwoIsland_CapeBrink_House_EventScript_StarterTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChangePokemonNickname",
@@ -400,84 +441,96 @@
       "SilphCo_7F_EventScript_LaprasGuy",
       "SlateportCity_NameRatersHouse_EventScript_NameRater"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckAddCoins",
     "roots": [
       "EventScript_HiddenItemScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckDaycareMonReceivedMail",
     "roots": [
       "Route117_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckForPlayersHouseNews",
     "roots": [
       "EventScript_TV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckInteractedWithFriendsSandOrnament",
     "roots": [
       "SecretBase_EventScript_SandOrnament"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckLeadMonBeauty",
     "roots": [
       "SlateportCity_PokemonFanClub_EventScript_Chairman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckLeadMonCool",
     "roots": [
       "SlateportCity_PokemonFanClub_EventScript_Chairman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckLeadMonCute",
     "roots": [
       "SlateportCity_PokemonFanClub_EventScript_Chairman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckLeadMonSmart",
     "roots": [
       "SlateportCity_PokemonFanClub_EventScript_Chairman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckLeadMonTough",
     "roots": [
       "SlateportCity_PokemonFanClub_EventScript_Chairman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckPlayerHasSecretBase",
     "roots": [
       "MossdeepCity_House4_EventScript_NinjaBoy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CheckRelicanthWailord",
     "roots": [
       "SealedChamber_InnerRoom_EventScript_BrailleBackWall"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChooseHalfPartyForBattle",
@@ -494,21 +547,24 @@
       "SevenIsland_House_Room1_EventScript_OldWoman",
       "SootopolisCity_MysteryEventsHouse_1F_EventScript_OldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChooseItemsToTossFromPyramidBag",
     "roots": [
       "BattleFrontier_BattlePyramidLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChooseMonForMoveRelearner",
     "roots": [
       "TwoIsland_House_EventScript_MoveManiac"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChooseMonForMoveTutor",
@@ -530,7 +586,8 @@
       "VictoryRoad_2F_EventScript_DoubleEdgeTutor",
       "ViridianCity_EventScript_DreamEaterTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChooseMonForWirelessMinigame",
@@ -538,14 +595,16 @@
       "MossdeepCity_GameCorner_1F_EventScript_OldMan",
       "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChoosePartyForBattleFrontier",
     "roots": [
       "BattleFrontier_BattleDomePreBattleRoom_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChoosePartyMon",
@@ -565,7 +624,8 @@
       "UndergroundPath_NorthEntrance_EventScript_Saige",
       "VermilionCity_House2_EventScript_Elyssa"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChooseSendDaycareMon",
@@ -573,14 +633,16 @@
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman",
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ChooseStarter",
     "roots": [
       "Route101_EventScript_BirchsBag"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ClearLinkContestFlags",
@@ -589,14 +651,16 @@
       "LilycoveCity_ContestLobby_EventScript_ContestReceptionist",
       "LilycoveCity_ContestLobby_EventScript_LinkContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ClearQuizLadyPlayerAnswer",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CloseBattleFrontierTutorWindow",
@@ -604,7 +668,8 @@
       "BattleFrontier_Lounge7_EventScript_LeftMoveTutor",
       "BattleFrontier_Lounge7_EventScript_RightMoveTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CloseBattlePikeCurtain",
@@ -617,7 +682,8 @@
       "BattleFrontier_BattlePikeThreePathRoom_EventScript_LeftRoomWarp",
       "BattleFrontier_BattlePikeThreePathRoom_EventScript_RightRoomWarp"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CloseBattlePointsWindow",
@@ -630,14 +696,16 @@
       "BattleFrontier_Lounge7_EventScript_LeftMoveTutor",
       "BattleFrontier_Lounge7_EventScript_RightMoveTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CloseDeptStoreElevatorWindow",
     "roots": [
       "LilycoveCity_DepartmentStoreElevator_EventScript_Attendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CloseElevatorCurrentFloorWindow",
@@ -647,7 +715,8 @@
       "SilphCo_Elevator_EventScript_FloorSelect",
       "TrainerTower_Elevator_EventScript_FloorSelect"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CloseFrontierExchangeCornerItemIconWindow",
@@ -657,7 +726,8 @@
       "BattleFrontier_ExchangeServiceCorner_EventScript_HoldItemClerk",
       "BattleFrontier_ExchangeServiceCorner_EventScript_VitaminClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CloseLink",
@@ -707,7 +777,8 @@
       "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy",
       "VerdanturfTown_PokemonCenter_2F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CloseMuseumFossilPic",
@@ -715,7 +786,8 @@
       "PewterCity_Museum_1F_EventScript_AerodactylFossil",
       "PewterCity_Museum_1F_EventScript_KabutopsFossil"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ColosseumPlayerSpotTriggered",
@@ -733,42 +805,48 @@
       "EventScript_BattleColosseum_4P_PlayerSpot2",
       "EventScript_BattleColosseum_4P_PlayerSpot3"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CompareHeracrossSize",
     "roots": [
       "SixIsland_WaterPath_House1_EventScript_Beauty"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CompareLotadSize",
     "roots": [
       "SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CompareMagikarpSize",
     "roots": [
       "Route12_FishingHouse_EventScript_FishingGuruBrother"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CompareSeedotSize",
     "roots": [
       "SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotBrother"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CopyCurSecretBaseOwnerName_StrVar1",
     "roots": [
       "SecretBase_EventScript_RecordMixingPC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CopyEReaderTrainerGreeting",
@@ -776,14 +854,16 @@
       "KantoSevenIsland_House_Room2_MapScripts",
       "SootopolisCity_MysteryEventsHouse_B1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CountPartyAliveNonEggMons",
     "roots": [
       "Route117_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CountPartyAliveNonEggMons_IgnoreVar0x8004Slot",
@@ -792,7 +872,8 @@
       "Route117_PokemonDayCare_EventScript_DaycareWoman",
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CountPartyNonEggMons",
@@ -802,7 +883,8 @@
       "Route117_PokemonDayCare_EventScript_DaycareWoman",
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CountPlayerMuseumPaintings",
@@ -811,7 +893,8 @@
       "LilycoveCity_EventScript_MuseumSign",
       "LilycoveCity_LilycoveMuseum_2F_EventScript_Curator"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CountPlayerTrainerStars",
@@ -835,14 +918,16 @@
       "TrainerHill_Entrance_EventScript_Nurse",
       "VerdanturfTown_PokemonCenter_1F_EventScript_Nurse"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CreateAbnormalWeatherEvent",
     "roots": [
       "Route119_WeatherInstitute_2F_EventScript_WeatherScientist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "CreateInGameTradePokemon",
@@ -857,35 +942,40 @@
       "UndergroundPath_NorthEntrance_EventScript_Saige",
       "VermilionCity_House2_EventScript_Elyssa"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DaisyMassageServices",
     "roots": [
       "PalletTown_RivalsHouse_EventScript_Daisy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DeclinedSecretBaseBattle",
     "roots": [
       "SecretBase_EventScript_RecordMixTrainer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DestroyMewEmergingGrassSprite",
     "roots": [
       "FarawayIsland_Interior_EventScript_Mew"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DidFavorLadyLikeItem",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DisableMsgBoxWalkaway",
@@ -913,7 +1003,8 @@
       "VictoryRoad_2F_EventScript_DoubleEdgeTutor",
       "ViridianCity_EventScript_DreamEaterTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DisplayBerryPowderVendorMenu",
@@ -921,14 +1012,16 @@
       "CeruleanCity_House5_EventScript_BerryPowderMan",
       "SlateportCity_EventScript_BerryPowderClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoBattlePyramidMonsHaveHeldItem",
     "roots": [
       "BattleFrontier_BattlePyramidLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoBerryBlending",
@@ -938,14 +1031,16 @@
       "BerryBlender_EventScript_BerryBlender3",
       "BerryBlender_EventScript_BerryBlenderLink"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoCableClubWarp",
     "roots": [
       "Common_EventScript_DirectCornerAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoContestHallWarp",
@@ -953,7 +1048,8 @@
       "LilycoveCity_ContestLobby_EventScript_ContestReceptionist",
       "LilycoveCity_ContestLobby_EventScript_LinkContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoDeoxysRockInteraction",
@@ -961,14 +1057,16 @@
       "BirthIsland_Exterior_EventScript_Triangle",
       "BirthIsland_Exterior_Frlg_EventScript_Triangle"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoDomeConfetti",
     "roots": [
       "BattleFrontier_BattleDomeBattleRoom_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoInGameTradeScene",
@@ -983,14 +1081,16 @@
       "UndergroundPath_NorthEntrance_EventScript_Saige",
       "VermilionCity_House2_EventScript_Elyssa"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoLotteryCornerComputerEffect",
     "roots": [
       "LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoMirageTowerCeilingCrumble",
@@ -998,7 +1098,8 @@
       "MirageTower_4F_EventScript_ClawFossil",
       "MirageTower_4F_EventScript_RootFossil"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoOrbEffect",
@@ -1006,14 +1107,16 @@
       "MagmaHideout_4F_EventScript_Maxie",
       "SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoPCTurnOffEffect",
     "roots": [
       "EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoPCTurnOnEffect",
@@ -1023,14 +1126,16 @@
       "LittlerootTown_BrendansHouse_2F_EventScript_PC",
       "LittlerootTown_MaysHouse_2F_EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoPokeNews",
     "roots": [
       "EventScript_TV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoPokemonLeagueLightingEffect",
@@ -1041,14 +1146,16 @@
       "KantoPokemonLeague_LancesRoom_MapScripts",
       "KantoPokemonLeague_LoreleisRoom_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoSSAnneDepartureCutscene",
     "roots": [
       "KantoSSAnne_Exterior_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoSeagallopFerryScene",
@@ -1071,21 +1178,24 @@
       "VermilionCity_EventScript_CheckTicketRight",
       "VermilionCity_EventScript_FerrySailor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoSealedChamberShakingEffect_Long",
     "roots": [
       "SealedChamber_InnerRoom_EventScript_BrailleBackWall"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoSealedChamberShakingEffect_Short",
     "roots": [
       "SealedChamber_InnerRoom_EventScript_BrailleBackWall"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoSecretBasePCTurnOffEffect",
@@ -1093,7 +1203,8 @@
       "SecretBase_EventScript_PC",
       "SecretBase_EventScript_RecordMixingPC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoSpecialTrainerBattle",
@@ -1102,35 +1213,40 @@
       "SecretBase_EventScript_RecordMixTrainer",
       "SootopolisCity_MysteryEventsHouse_B1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoTVShow",
     "roots": [
       "EventScript_TV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoTVShowInSearchOfTrainers",
     "roots": [
       "EventScript_TV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoWaldaNamingScreen",
     "roots": [
       "RustboroCity_Flat1_2F_EventScript_WaldasDad"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoWateringBerryTreeAnim",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoesPartyHaveEnigmaBerry",
@@ -1138,14 +1254,16 @@
       "Common_EventScript_DirectCornerAttendant",
       "Common_EventScript_UnionRoomAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoesPlayerHaveNoDecorations",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DoesPlayerPartyContainSpecies",
@@ -1154,7 +1272,8 @@
       "Route12_FishingHouse_EventScript_FishingGuruBrother",
       "SixIsland_WaterPath_House1_EventScript_Beauty"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DrawElevatorCurrentFloorWindow",
@@ -1164,7 +1283,8 @@
       "SilphCo_Elevator_EventScript_FloorSelect",
       "TrainerTower_Elevator_EventScript_FloorSelect"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DrawSeagallopDestinationMenu",
@@ -1180,7 +1300,8 @@
       "VermilionCity_EventScript_CheckTicketRight",
       "VermilionCity_EventScript_FerrySailor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DrawWholeMapView",
@@ -1371,14 +1492,16 @@
       "VictoryRoad_2F_EventScript_FloorSwitch2",
       "VictoryRoad_3F_EventScript_FloorSwitch"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "DrewSecretBaseBattle",
     "roots": [
       "SecretBase_EventScript_RecordMixTrainer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "EnableNationalPokedex",
@@ -1387,21 +1510,24 @@
       "PalletTown_ProfessorOaksLab_EventScript_ProfOak",
       "WatchLab_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "EndLotteryCornerComputerEffect",
     "roots": [
       "LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "EnterHallOfFame",
     "roots": [
       "KantoPokemonLeague_HallOfFame_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "EnterSafariMode",
@@ -1411,7 +1537,8 @@
       "FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerRight",
       "Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ExitSafariMode",
@@ -1419,7 +1546,8 @@
       "KantoFuchsiaCity_SafariZone_Entrance_MapScripts",
       "SafariZone_South_EventScript_ExitAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "FadeOutOrbEffect",
@@ -1427,28 +1555,32 @@
       "MagmaHideout_4F_EventScript_Maxie",
       "SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "FavorLadyGetPrize",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "FieldShowRegionMap",
     "roots": [
       "EventScript_RegionMap"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "FinishCyclingRoadChallenge",
     "roots": [
       "Route110_EventScript_CyclingChallengeEnd"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ForcePlayerOntoBike",
@@ -1456,49 +1588,56 @@
       "KantoRoute16_MapScripts",
       "KantoRoute18_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ForcePlayerToStartSurfing",
     "roots": [
       "KantoSeafoamIslands_B4F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "FoundAbandonedShipRoom1Key",
     "roots": [
       "AbandonedShip_HiddenFloorRooms_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "FoundAbandonedShipRoom2Key",
     "roots": [
       "AbandonedShip_HiddenFloorRooms_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "FoundAbandonedShipRoom4Key",
     "roots": [
       "AbandonedShip_HiddenFloorRooms_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "FoundAbandonedShipRoom6Key",
     "roots": [
       "AbandonedShip_HiddenFloorRooms_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "FoundBlackGlasses",
     "roots": [
       "Route116_EventScript_GlassesMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GabbyAndTyAfterInterview",
@@ -1516,7 +1655,8 @@
       "GabbyAndTy_EventScript_TyBattle5",
       "GabbyAndTy_EventScript_TyBattle6"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GabbyAndTyBeforeInterview",
@@ -1534,7 +1674,8 @@
       "GabbyAndTy_EventScript_TyBattle5",
       "GabbyAndTy_EventScript_TyBattle6"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GabbyAndTyGetBattleNum",
@@ -1543,7 +1684,8 @@
       "Route118_MapScripts",
       "Route120_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GabbyAndTyGetLastBattleTrivia",
@@ -1559,7 +1701,8 @@
       "GabbyAndTy_EventScript_TyBattle5",
       "GabbyAndTy_EventScript_TyBattle6"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GabbyAndTyGetLastQuote",
@@ -1575,35 +1718,40 @@
       "GabbyAndTy_EventScript_TyBattle5",
       "GabbyAndTy_EventScript_TyBattle6"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GameClear",
     "roots": [
       "EverGrandeCity_HallOfFame_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GenerateContestRand",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GenerateGiddyLine",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetAbnormalWeatherMapNameAndType",
     "roots": [
       "Route119_WeatherInstitute_2F_EventScript_WeatherScientist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetBattleOutcome",
@@ -1683,21 +1831,24 @@
       "World_EventScript_Rare8_0",
       "World_EventScript_Rare9_0"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetBattlePyramidHint",
     "roots": [
       "BattleFrontier_BattlePyramidLobby_EventScript_HintGiver"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetContestLadyCategory",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_ContestLadyMon"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetContestLadyMonSpecies",
@@ -1705,21 +1856,24 @@
       "LilycoveCity_PokemonCenter_1F_EventScript_ContestLadyMon",
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetContestMonCondition",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetContestMultiplayerId",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetContestPlayerId",
@@ -1727,28 +1881,32 @@
       "ContestHall_MapScripts",
       "LilycoveCity_ContestLobby_EventScript_LinkContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetContestWinnerId",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetCostToWithdrawRoute5DaycareMon",
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetCurSecretBaseRegistrationValidity",
     "roots": [
       "SecretBase_EventScript_RecordMixingPC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetDaycareCostAndPrepareString",
@@ -1756,7 +1914,8 @@
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman",
       "Route117_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetDaycareMonNicknames",
@@ -1764,7 +1923,8 @@
       "FourIsland_EventScript_DaycareMan",
       "Route117_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetDaycareState",
@@ -1774,21 +1934,24 @@
       "Route117_EventScript_DaycareMan",
       "Route117_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetDaysUntilPacifidlogTMAvailable",
     "roots": [
       "PacifidlogTown_House2_EventScript_FanClubYoungerBrother"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetDeptStoreDefaultFloorChoice",
     "roots": [
       "LilycoveCity_DepartmentStoreElevator_EventScript_Attendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetDewfordHallPaintingNameIndex",
@@ -1797,7 +1960,8 @@
       "DewfordTown_Hall_EventScript_PsychicM",
       "DewfordTown_Hall_EventScript_SchoolKidM"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetElevatorFloor",
@@ -1807,14 +1971,16 @@
       "SilphCo_Elevator_EventScript_FloorSelect",
       "TrainerTower_Elevator_EventScript_FloorSelect"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetFavorLadyState",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetFirstFreePokeblockSlot",
@@ -1825,7 +1991,8 @@
       "BerryBlender_EventScript_BerryBlenderLink",
       "BerryBlender_EventScript_Blender1ExpertM"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetFrlgPokedexCount",
@@ -1838,7 +2005,8 @@
       "Route2_EastBuilding_EventScript_Aide",
       "WatchPallet_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetFrontierBattlePoints",
@@ -1851,7 +2019,8 @@
       "BattleFrontier_Lounge7_EventScript_LeftMoveTutor",
       "BattleFrontier_Lounge7_EventScript_RightMoveTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetGabbyAndTyLocalIds",
@@ -1869,7 +2038,8 @@
       "GabbyAndTy_EventScript_TyBattle5",
       "GabbyAndTy_EventScript_TyBattle6"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetHeracrossSizeRecordInfo",
@@ -1877,7 +2047,8 @@
       "SixIsland_WaterPath_House1_EventScript_Beauty",
       "SixIsland_WaterPath_House1_EventScript_SizeRecord"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetInGameTradeSpeciesInfo",
@@ -1892,14 +2063,16 @@
       "UndergroundPath_NorthEntrance_EventScript_Saige",
       "VermilionCity_House2_EventScript_Elyssa"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetItemBallIdAndAmountFromTemplate",
     "roots": [
       "Common_EventScript_FindItem"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetLeadMonFriendship",
@@ -1907,7 +2080,8 @@
       "FiveIsland_WaterLabyrinth_EventScript_EggGentleman",
       "PalletTown_RivalsHouse_EventScript_Daisy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetLeadMonFriendshipScore",
@@ -1916,21 +2090,24 @@
       "SlateportCity_PokemonFanClub_EventScript_SootheBellWoman",
       "VerdanturfTown_FriendshipRatersHouse_EventScript_FriendshipRater"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetLilycoveSSTidalSelection",
     "roots": [
       "LilycoveCity_Harbor_EventScript_FerryAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetLinkPartnerNames",
     "roots": [
       "BerryBlender_EventScript_BerryBlenderLink"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetLotadSizeRecordInfo",
@@ -1938,7 +2115,8 @@
       "SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother",
       "SootopolisCity_LotadAndSeedotHouse_EventScript_LotadSizeRecord"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetMagikarpSizeRecordInfo",
@@ -1946,21 +2124,24 @@
       "Route12_FishingHouse_EventScript_FishingGuruBrother",
       "Route12_FishingHouse_EventScript_MagikarpRecordSign"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetMartEmployeeObjectEventId",
     "roots": [
       "EventScript_Questionnaire"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetMomOrDadStringForTVMessage",
     "roots": [
       "EventScript_TV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetNumFansOfPlayerInTrainerFanClub",
@@ -1974,14 +2155,16 @@
       "LilycoveCity_PokemonTrainerFanClub_EventScript_PokefanM",
       "LilycoveCity_PokemonTrainerFanClub_EventScript_Woman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetNumLevelsGainedForRoute5DaycareMon",
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetNumLevelsGainedFromDaycare",
@@ -1989,7 +2172,8 @@
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman",
       "Route117_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetNumMovesSelectedMonHas",
@@ -1997,7 +2181,8 @@
       "FuchsiaCity_House3_EventScript_MoveDeleter",
       "LilycoveCity_MoveDeletersHouse_EventScript_MoveDeleter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetPCBoxToSendMon",
@@ -2017,7 +2202,8 @@
       "SaffronCity_Dojo_EventScript_HitmonleeBall",
       "SilphCo_7F_EventScript_LaprasGuy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetPlayerAvatarBike",
@@ -2026,7 +2212,8 @@
       "Route110_SeasideCyclingRoadNorthEntrance_EventScript_BikeCheck",
       "Route110_SeasideCyclingRoadSouthEntrance_EventScript_BikeCheck"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetPlayerBigGuyGirlString",
@@ -2044,7 +2231,8 @@
       "ThreeIsland_BerryForest_EventScript_Lostelle",
       "ThreeIsland_House1_EventScript_Lostelle"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetPlayerFacingDirection",
@@ -2052,56 +2240,64 @@
       "FiveIsland_RocketWarehouse_EventScript_Admin1",
       "LavaridgeTown_EventScript_HotSpringsTrigger"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetPlayerTrainerIdOnesDigit",
     "roots": [
       "Route120_EventScript_BerryBeauty"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetPokeblockFeederInFront",
     "roots": [
       "EventScript_PokeBlockFeeder"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetPokeblockNameByMonNature",
     "roots": [
       "MossdeepCity_House1_EventScript_BlackBelt"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetProfOaksRatingMessage",
     "roots": [
       "PalletTown_ProfessorOaksLab_EventScript_ProfOak"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetQuizAuthor",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetQuizLadyState",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetRandomActiveShowIdx",
     "roots": [
       "EventScript_TV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetRandomSlotMachineId",
@@ -2126,14 +2322,16 @@
       "CeladonCity_GameCorner_EventScript_SlotMachine8",
       "CeladonCity_GameCorner_EventScript_SlotMachine9"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetRecordedCyclingRoadResults",
     "roots": [
       "Route110_EventScript_CyclingRoadResultsSign"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetRivalSonDaughterString",
@@ -2142,7 +2340,8 @@
       "LittlerootTown_MaysHouse_1F_MapScripts",
       "RivalsHouse_1F_EventScript_RivalMom"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetSeagallopNumber",
@@ -2160,21 +2359,24 @@
       "VermilionCity_EventScript_CheckTicketRight",
       "VermilionCity_EventScript_FerrySailor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetSecretBaseNearbyMapName",
     "roots": [
       "MossdeepCity_House4_EventScript_NinjaBoy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetSecretBaseOwnerAndState",
     "roots": [
       "SecretBase_EventScript_RecordMixTrainer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetSeedotSizeRecordInfo",
@@ -2182,7 +2384,8 @@
       "SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotBrother",
       "SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotSizeRecord"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetSelectedMonNicknameAndSpecies",
@@ -2191,7 +2394,8 @@
       "Route117_PokemonDayCare_EventScript_DaycareWoman",
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetSelectedSeagallopDestination",
@@ -2207,14 +2411,16 @@
       "VermilionCity_EventScript_CheckTicketRight",
       "VermilionCity_EventScript_FerrySailor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetSelectedTVShow",
     "roots": [
       "EventScript_TV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetSlotMachineId",
@@ -2232,14 +2438,16 @@
       "MauvilleCity_GameCorner_EventScript_SlotMachine8",
       "MauvilleCity_GameCorner_EventScript_SlotMachine9"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetStarterPokemon",
     "roots": [
       "KantoPokemonLeague_ChampionsRoom_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetTradeSpecies",
@@ -2254,28 +2462,32 @@
       "UndergroundPath_NorthEntrance_EventScript_Saige",
       "VermilionCity_House2_EventScript_Elyssa"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetTraderTradedFlag",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GetWeekCount",
     "roots": [
       "MossdeepCity_SpaceCenter_1F_EventScript_RocketLaunchCounter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GiddyShouldTellAnotherTale",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GiveEggFromDaycare",
@@ -2283,7 +2495,8 @@
       "FourIsland_EventScript_DaycareMan",
       "Route117_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GiveFrontierBattlePoints",
@@ -2291,28 +2504,32 @@
       "BattleFrontier_Lounge3_EventScript_Gambler",
       "BattleFrontier_ScottsHouse_EventScript_Scott"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GiveLeadMonEffortRibbon",
     "roots": [
       "SlateportCity_EventScript_EffortRibbonWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GiveMonArtistRibbon",
     "roots": [
       "LilycoveCity_ContestLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "GiveMonContestRibbon",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasAllHoennMons",
@@ -2320,42 +2537,48 @@
       "LilycoveCity_CoveLilyMotel_2F_EventScript_GameDesigner",
       "LittlerootTown_ProfessorBirchsLab_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasAllKantoMons",
     "roots": [
       "CeladonCity_Condominiums_3F_EventScript_Designer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasAllMons",
     "roots": [
       "PalletTown_ProfessorOaksLab_EventScript_ProfOak"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasAnotherPlayerGivenFavorLadyItem",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasAtLeastOneBerry",
     "roots": [
       "Common_EventScript_DirectCornerAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasBardSongBeenChanged",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasEnoughBerryPowder",
@@ -2363,49 +2586,56 @@
       "CeruleanCity_House5_EventScript_BerryPowderMan",
       "SlateportCity_EventScript_BerryPowderClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasEnoughMonsForDoubleBattle",
     "roots": [
       "Common_EventScript_DirectCornerAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasHipsterTaughtWord",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasLearnedAllMovesFromCapeBrinkTutor",
     "roots": [
       "TwoIsland_CapeBrink_House_EventScript_StarterTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasMonWonThisContestBefore",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasPlayerGivenContestLadyPokeblock",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HasStorytellerAlreadyRecorded",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HealPlayerParty",
@@ -2499,42 +2729,48 @@
       "VermilionCity_PokemonCenter_1F_EventScript_Nurse",
       "ViridianCity_PokemonCenter_1F_EventScript_Nurse"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HideContestEntryMonPic",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "HipsterTryTeachWord",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IncrementDailyPickedBerries",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IncrementDailyPlantedBerries",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "InitBirchState",
     "roots": [
       "PetalburgCity_Gym_EventScript_Norman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "InitElevatorFloorSelectMenuPos",
@@ -2544,7 +2780,8 @@
       "SilphCo_Elevator_EventScript_FloorSelect",
       "TrainerTower_Elevator_EventScript_FloorSelect"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "InitRoamer",
@@ -2554,7 +2791,8 @@
       "LittlerootTown_MaysHouse_1F_MapScripts",
       "OneIsland_PokemonCenter_1F_EventScript_Celio"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "InitSecretBaseDecorationSprites",
@@ -2562,7 +2800,8 @@
       "LittlerootTown_BrendansHouse_2F_MapScripts",
       "LittlerootTown_MaysHouse_2F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "InitUnionRoom",
@@ -2622,14 +2861,16 @@
       "VerdanturfTown_PokemonCenter_1F_MapScripts",
       "WatchCenter_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "InteractWithShieldOrTVDecoration",
     "roots": [
       "SecretBase_EventScript_ShieldOrToyTV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "InterviewAfter",
@@ -2639,7 +2880,8 @@
       "SlateportCity_OceanicMuseum_1F_EventScript_Reporter",
       "SlateportCity_PokemonFanClub_EventScript_Reporter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "InterviewBefore",
@@ -2652,7 +2894,8 @@
       "SlateportCity_OceanicMuseum_1F_EventScript_Reporter",
       "SlateportCity_PokemonFanClub_EventScript_Reporter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsBadEggInParty",
@@ -2660,14 +2903,16 @@
       "Common_EventScript_DirectCornerAttendant",
       "Common_EventScript_UnionRoomAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsContestDebugActive",
     "roots": [
       "LilycoveCity_ContestLobby_EventScript_ContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsContestWithRSPlayer",
@@ -2675,14 +2920,16 @@
       "ContestHall_MapScripts",
       "LilycoveCity_ContestLobby_EventScript_LinkContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsDecorationCategoryFull",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsDodrioInParty",
@@ -2690,14 +2937,16 @@
       "MossdeepCity_GameCorner_1F_EventScript_OldMan",
       "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsEnigmaBerryValid",
     "roots": [
       "PetalburgCity_Gym_EventScript_Norman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsEnoughForCostInVar0x8005",
@@ -2706,7 +2955,8 @@
       "Route117_PokemonDayCare_EventScript_DaycareWoman",
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsFanClubMemberFanOfPlayer",
@@ -2721,42 +2971,48 @@
       "LilycoveCity_PokemonTrainerFanClub_EventScript_Woman",
       "LilycoveCity_PokemonTrainerFanClub_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsFavorLadyThresholdMet",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsGabbyAndTyShowOnTheAir",
     "roots": [
       "EventScript_TV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsGrassTypeInParty",
     "roots": [
       "Route123_EventScript_GigaDrainGirl"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsLastMonThatKnowsSurf",
     "roots": [
       "LilycoveCity_MoveDeletersHouse_EventScript_MoveDeleter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsLeadMonNicknamedOrNotEnglish",
     "roots": [
       "SlateportCity_PokemonFanClub_EventScript_Reporter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsMirageIslandPresent",
@@ -2764,7 +3020,8 @@
       "PacifidlogTown_House5_EventScript_MirageIslandWatcher",
       "Route130_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsMonOTIDNotPlayers",
@@ -2772,7 +3029,8 @@
       "LavenderTown_House2_EventScript_NameRater",
       "SlateportCity_NameRatersHouse_EventScript_NameRater"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsNationalPokedexEnabled",
@@ -2784,7 +3042,8 @@
       "OneIsland_PokemonCenter_1F_EventScript_Celio",
       "ThreeIsland_DunsparceTunnel_EventScript_Prospector"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsPlayerLeftOfVermilionSailor",
@@ -2802,7 +3061,8 @@
       "VermilionCity_EventScript_CheckTicketRight",
       "VermilionCity_EventScript_FerrySailor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsPlayerNotInTrainerTowerLobby",
@@ -2828,7 +3088,8 @@
       "VermilionCity_PokemonCenter_1F_EventScript_Nurse",
       "ViridianCity_PokemonCenter_1F_EventScript_Nurse"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsPokemonJumpSpeciesInParty",
@@ -2836,7 +3097,8 @@
       "MossdeepCity_GameCorner_1F_EventScript_OldMan",
       "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsPokerusInParty",
@@ -2860,21 +3122,24 @@
       "TrainerHill_Entrance_EventScript_Nurse",
       "VerdanturfTown_PokemonCenter_1F_EventScript_Nurse"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsQuizAnswerCorrect",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsQuizLadyWaitingForChallenger",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsSelectedMonEgg",
@@ -2884,28 +3149,32 @@
       "LilycoveCity_MoveDeletersHouse_EventScript_MoveDeleter",
       "TwoIsland_House_EventScript_MoveManiac"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsStarterInParty",
     "roots": [
       "PetalburgCity_PokemonCenter_1F_EventScript_Woman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsThereMonInRoute5Daycare",
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsTrainerReadyForRematch",
     "roots": [
       "PetalburgCity_Gym_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsTrainerRegistered",
@@ -2918,14 +3187,16 @@
       "Route116_EventScript_Jerry",
       "Route116_EventScript_Karen"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsTrendyPhraseBoring",
     "roots": [
       "DewfordTown_Hall_EventScript_Girl"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsWirelessAdapterConnected",
@@ -2939,63 +3210,72 @@
       "MossdeepCity_GameCorner_1F_EventScript_OldMan",
       "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "IsWirelessContest",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LeadMonHasEffortRibbon",
     "roots": [
       "SlateportCity_EventScript_EffortRibbonWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LinkContestTryHideWirelessIndicator",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LinkContestTryShowWirelessIndicator",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LinkContestWaitForConnection",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LinkRetireStatusWithBattleTowerPartner",
     "roots": [
       "BattleFrontier_BattleTowerMultiBattleRoom_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LoadLinkContestPlayerPalettes",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LoadPlayerBag",
     "roots": [
       "Common_EventScript_DirectCornerAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LoadPlayerParty",
@@ -3027,21 +3307,24 @@
       "SootopolisCity_MysteryEventsHouse_B1F_MapScripts",
       "VerdanturfTown_BattleTentBattleRoom_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LoadWallyZigzagoon",
     "roots": [
       "PetalburgCity_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LookThroughPorthole",
     "roots": [
       "SSTidalCorridor_EventScript_Porthole"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LoopWingFlapSE",
@@ -3049,14 +3332,16 @@
       "NavelRock_Summit_EventScript_HoOh",
       "NavelRock_Top_EventScript_HoOh"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "LostSecretBaseBattle",
     "roots": [
       "SecretBase_EventScript_RecordMixTrainer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "MauvilleGymDeactivatePuzzle",
@@ -3064,7 +3349,8 @@
       "MauvilleCity_Gym_EventScript_Wattson",
       "MauvilleCity_Gym_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "MauvilleGymPressSwitch",
@@ -3075,7 +3361,8 @@
       "MauvilleCity_Gym_EventScript_Switch4",
       "MauvilleCity_Gym_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "MauvilleGymSetDefaultBarriers",
@@ -3085,7 +3372,8 @@
       "MauvilleCity_Gym_EventScript_Switch3",
       "MauvilleCity_Gym_EventScript_Switch4"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "MonOTNameNotPlayer",
@@ -3093,7 +3381,8 @@
       "LavenderTown_House2_EventScript_NameRater",
       "SlateportCity_NameRatersHouse_EventScript_NameRater"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "MoveDeleterChooseMoveToForget",
@@ -3101,7 +3390,8 @@
       "FuchsiaCity_House3_EventScript_MoveDeleter",
       "LilycoveCity_MoveDeletersHouse_EventScript_MoveDeleter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "MoveDeleterForgetMove",
@@ -3109,7 +3399,8 @@
       "FuchsiaCity_House3_EventScript_MoveDeleter",
       "LilycoveCity_MoveDeletersHouse_EventScript_MoveDeleter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "MoveElevator",
@@ -3118,91 +3409,104 @@
       "LilycoveCity_DepartmentStoreElevator_EventScript_Attendant",
       "TrainerHill_Elevator_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "MoveOutOfSecretBase",
     "roots": [
       "SecretBase_EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionApplyMulch",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionBerryHasPests",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionBerryHasWeed",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionGetBerryCountString",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionGetBerryName",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionGetBerryTreeData",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionPickBerryTree",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionPlantBerryTree",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionPullBerryWeed",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionRemoveBerryTree",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ObjectEventInteractionWaterBerryTree",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "OffsetCameraForBattle",
@@ -3210,7 +3514,8 @@
       "BattleFrontier_BattleArenaBattleRoom_MapScripts",
       "BattleFrontier_BattleTowerMultiCorridor_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "OpenMuseumFossilPic",
@@ -3218,28 +3523,32 @@
       "PewterCity_Museum_1F_EventScript_AerodactylFossil",
       "PewterCity_Museum_1F_EventScript_KabutopsFossil"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "OpenPokeblockCaseForContestLady",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "OpenPokeblockCaseOnFeeder",
     "roots": [
       "EventScript_PokeBlockFeeder"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "OpenPokenavForTutorial",
     "roots": [
       "RustboroCity_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PetalburgGymSlideOpenRoomDoors",
@@ -3254,7 +3563,8 @@
       "PetalburgCity_Gym_EventScript_Randall",
       "PetalburgCity_Gym_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PetalburgGymUnlockRoomDoors",
@@ -3269,21 +3579,24 @@
       "PetalburgCity_Gym_EventScript_Randall",
       "PetalburgCity_Gym_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PickLotteryCornerTicket",
     "roots": [
       "LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PlayBardSong",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PlayRoulette",
@@ -3291,7 +3604,8 @@
       "Roulette_EventScript_Table1",
       "Roulette_EventScript_Table2"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PlayerEnteredTradeSeat",
@@ -3301,7 +3615,8 @@
       "TradeCenter_EventScript_Chair0",
       "TradeCenter_EventScript_Chair1"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PlayerFaceTrainerAfterBattle",
@@ -3367,7 +3682,8 @@
       "Route128_EventScript_Isaiah",
       "Route128_EventScript_Katelyn"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PlayerHasBerries",
@@ -3379,14 +3695,16 @@
       "BerryBlender_EventScript_Blender1ExpertM",
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PlayerHasMulch",
     "roots": [
       "BerryTreeScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PlayerNotAtTrainerHillEntrance",
@@ -3410,28 +3728,32 @@
       "TrainerHill_Entrance_EventScript_Nurse",
       "VerdanturfTown_PokemonCenter_1F_EventScript_Nurse"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PlayerPC",
     "roots": [
       "EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PlayerPartyContainsSpeciesWithPlayerID",
     "roots": [
       "FiveIsland_WaterLabyrinth_EventScript_EggGentleman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PrepSecretBaseBattleFlags",
     "roots": [
       "SecretBase_EventScript_RecordMixTrainer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PrintPlayerBerryPowderAmount",
@@ -3439,49 +3761,56 @@
       "CeruleanCity_House5_EventScript_BerryPowderMan",
       "SlateportCity_EventScript_BerryPowderClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PutFanClubSpecialOnTheAir",
     "roots": [
       "LilycoveCity_PokemonTrainerFanClub_EventScript_Interviewer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PutLilycoveContestLadyShowOnTheAir",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "PutMonInRoute5Daycare",
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "QuizLadyGetPlayerAnswer",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "QuizLadyPickNewQuestion",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "QuizLadyShowQuizQuestion",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "RecordMixingPlayerSpotTriggered",
@@ -3491,7 +3820,8 @@
       "EventScript_RecordCenter_Spot2",
       "EventScript_RecordCenter_Spot3"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ReducePlayerPartyToSelectedMons",
@@ -3499,7 +3829,8 @@
       "SevenIsland_House_Room1_EventScript_OldWoman",
       "SootopolisCity_MysteryEventsHouse_1F_EventScript_OldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "RejectEggFromDayCare",
@@ -3507,7 +3838,8 @@
       "FourIsland_EventScript_DaycareMan",
       "Route117_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "RemoveBerryPowderVendorMenu",
@@ -3515,7 +3847,8 @@
       "CeruleanCity_House5_EventScript_BerryPowderMan",
       "SlateportCity_EventScript_BerryPowderClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "RemoveCameraObject",
@@ -3528,7 +3861,8 @@
       "SootopolisCity_MapScripts",
       "SouthernIsland_Interior_EventScript_TryLatiEncounter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "RemoveRecordsWindow",
@@ -3560,14 +3894,16 @@
       "LilycoveCity_ContestLobby_EventScript_BerryBlenderSpeedRecords",
       "LilycoveCity_ContestLobby_EventScript_LinkContestResults"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ResetHealLocationFromDewford",
     "roots": [
       "PetalburgCity_Gym_EventScript_Norman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ResetSSTidalFlag",
@@ -3575,28 +3911,32 @@
       "SSTidalCorridor_MapScripts",
       "SSTidalRooms_EventScript_Bed"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ResetTVShowState",
     "roots": [
       "EventScript_TV"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ResetTrickHouseNuggetFlag",
     "roots": [
       "Route110_TrickHouseEnd_EventScript_TrickMaster"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "RetrieveLotteryNumber",
     "roots": [
       "LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "RotatingGate_InitPuzzle",
@@ -3604,7 +3944,8 @@
       "FortreeCity_Gym_MapScripts",
       "Route110_TrickHousePuzzle6_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "RotatingGate_InitPuzzleAndGraphics",
@@ -3612,7 +3953,8 @@
       "FortreeCity_Gym_MapScripts",
       "Route110_TrickHousePuzzle6_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "RunUnionRoom",
@@ -3621,21 +3963,24 @@
       "KantoUnionRoom_MapScripts",
       "UnionRoom_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SampleResortGorgeousMonAndReward",
     "roots": [
       "FiveIsland_ResortGorgeous_House_EventScript_Selphy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SaveBardSongLyrics",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SaveGame",
@@ -3652,14 +3997,16 @@
       "TrainerHill_Entrance_MapScripts",
       "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SaveMuseumContestPainting",
     "roots": [
       "LilycoveCity_ContestLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SavePlayerParty",
@@ -3702,7 +4049,8 @@
       "VerdanturfTown_BattleTentLobby_EventScript_Attendant",
       "VerdanturfTown_BattleTentLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ScriptCheckFreePokemonStorageSpace",
@@ -3712,7 +4060,8 @@
       "FuchsiaCity_SafariZone_Entrance_EventScript_EntryTriggerRight",
       "Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ScriptGetPartyMonSpecies",
@@ -3723,7 +4072,8 @@
       "PalletTown_RivalsHouse_EventScript_Daisy",
       "SlateportCity_NameRatersHouse_EventScript_NameRater"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ScriptGetPokedexInfo",
@@ -3732,49 +4082,56 @@
       "LittlerootTown_ProfessorBirchsLab_EventScript_Birch",
       "ProfBirch_EventScript_RatePokedexOrRegister"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ScriptMenu_CreateLilycoveSSTidalMultichoice",
     "roots": [
       "LilycoveCity_Harbor_EventScript_FerryAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ScriptMenu_CreatePCMultichoice",
     "roots": [
       "EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ScriptMenu_CreateStartMenuForPokenavTutorial",
     "roots": [
       "RustboroCity_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_BondsClose",
     "roots": [
       "Cozy_EventScript_Recruit"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_BondsJournalIntro",
     "roots": [
       "Cozy_EventScript_Recruit"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_BondsSelect",
     "roots": [
       "Cozy_EventScript_Recruit"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_BufferContestLadyCategoryAndMonName",
@@ -3782,7 +4139,8 @@
       "LilycoveCity_PokemonCenter_1F_EventScript_ContestLadyMon",
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_BufferFanClubTrainerName",
@@ -3796,7 +4154,8 @@
       "SaffronCity_PokemonTrainerFanClub_EventScript_Woman",
       "SaffronCity_PokemonTrainerFanClub_EventScript_Youngster"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CastAfterBattle",
@@ -3812,7 +4171,8 @@
       "Cast_EventScript_Meet_Vera",
       "Cast_EventScript_Meet_Zuri"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CastBufferSpeaker",
@@ -3820,7 +4180,8 @@
       "LittlerootTown_EventScript_BrendansHouseSign",
       "LittlerootTown_EventScript_MaysHouseSign"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CastCommitRequirement",
@@ -3836,7 +4197,8 @@
       "Cast_EventScript_Meet_Vera",
       "Cast_EventScript_Meet_Zuri"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CastHidePortrait",
@@ -3853,7 +4215,8 @@
       "Cast_EventScript_Meet_Zuri",
       "Cozy_EventScript_Recruit"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CastJoin",
@@ -3869,7 +4232,8 @@
       "Cast_EventScript_Meet_Vera",
       "Cast_EventScript_Meet_Zuri"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CastRecruitStatus",
@@ -3885,21 +4249,24 @@
       "Cast_EventScript_Meet_Vera",
       "Cast_EventScript_Meet_Zuri"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CastSwitchRoster",
     "roots": [
       "Cozy_EventScript_Recruit"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_ClearDowsingColor",
     "roots": [
       "EventScript_HiddenItemScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_ClearHeldMovement",
@@ -3910,21 +4277,24 @@
       "TradeCenter_EventScript_Attendant",
       "TradeCenter_EventScript_Attendant_Frlg"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CompanionDialogueBufferMode",
     "roots": [
       "Cozy_EventScript_Recruit"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CompanionDialogueSetMode",
     "roots": [
       "Cozy_EventScript_Recruit"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CozyWorldPipReaction",
@@ -3988,7 +4358,8 @@
       "World_EventScript_Scene9_0",
       "World_EventScript_Scene9_1"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CozyWorldPrepareRare",
@@ -4010,7 +4381,8 @@
       "World_EventScript_Rare8_0",
       "World_EventScript_Rare9_0"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_CozyWorldTrainRare",
@@ -4032,21 +4404,24 @@
       "World_EventScript_Rare8_0",
       "World_EventScript_Rare9_0"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_DoRayquazaScene",
     "roots": [
       "SootopolisCity_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_DoesFavorLadyLikeItem",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_FacePlayer",
@@ -4057,35 +4432,40 @@
       "TradeCenter_EventScript_Attendant",
       "TradeCenter_EventScript_Attendant_Frlg"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_FadeOutMapMusic",
     "roots": [
       "SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_FavorLadyOpenBagMenu",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_GetCurrentMauvilleMan",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_GetLilycoveLadyId",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_GetNumFansOfPlayerInTrainerFanClub",
@@ -4099,7 +4479,8 @@
       "SaffronCity_PokemonTrainerFanClub_EventScript_Woman",
       "SaffronCity_PokemonTrainerFanClub_EventScript_Youngster"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_IsFanClubMemberFanOfPlayer",
@@ -4114,14 +4495,16 @@
       "SaffronCity_PokemonTrainerFanClub_EventScript_Woman",
       "SaffronCity_PokemonTrainerFanClub_EventScript_Youngster"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_KantoCheckAnyChampionRecord",
     "roots": [
       "EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_PipBeginNPCReaction",
@@ -4533,7 +4916,8 @@
       "ViridianCity_School_EventScript_PokemonJournal",
       "ViridianCity_School_EventScript_Woman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_PipBeginObjectReaction",
@@ -4541,14 +4925,16 @@
       "LittlerootTown_EventScript_BrendansHouseSign",
       "LittlerootTown_EventScript_MaysHouseSign"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_PipChooseDialogue",
     "roots": [
       "Cozy_EventScript_Recruit"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_PipChooseObjectDialogue",
@@ -4556,7 +4942,8 @@
       "LittlerootTown_EventScript_BrendansHouseSign",
       "LittlerootTown_EventScript_MaysHouseSign"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_PipEndNPCReaction",
@@ -4970,28 +5357,32 @@
       "ViridianCity_School_EventScript_PokemonJournal",
       "ViridianCity_School_EventScript_Woman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_ResetUnionRoomTrade",
     "roots": [
       "Common_EventScript_UnionRoomAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_StorytellerDisplayStory",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_StorytellerInitializeRandomStat",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_TryGainNewFanFromCounter",
@@ -5001,35 +5392,40 @@
       "BattleFrontier_BattleTowerMultiPartnerRoom_EventScript_Attendant",
       "EverGrandeCity_DrakesRoom_EventScript_Drake"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_TryGainNewFanFromCounterFrlg",
     "roots": [
       "PokemonLeague_LancesRoom_EventScript_Lance"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_TryLoseFansFromPlayTime",
     "roots": [
       "KantoSaffronCity_PokemonTrainerFanClub_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_UpdateDowseState",
     "roots": [
       "EventScript_HiddenItemScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Script_UpdateTrainerFanClubGameClear",
     "roots": [
       "KantoPokemonLeague_HallOfFame_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ScrollRankingHallRecordsWindow",
@@ -5045,14 +5441,16 @@
       "BattleFrontier_RankingHall_EventScript_TowerMultisRecords",
       "BattleFrontier_RankingHall_EventScript_TowerSinglesRecords"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SeafoamIslandsB4F_CurrentDumpsPlayerOnLand",
     "roots": [
       "KantoSeafoamIslands_B4F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetBattleTowerLinkPlayerGfx",
@@ -5060,21 +5458,24 @@
       "BattleFrontier_BattleTowerMultiBattleRoom_MapScripts",
       "BattleFrontier_BattleTowerMultiCorridor_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetBattledOwnerFromResult",
     "roots": [
       "SecretBase_EventScript_RecordMixTrainer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetCB2WhiteOut",
     "roots": [
       "MossdeepCity_SpaceCenter_2F_EventScript_Steven"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetCableClubWarp",
@@ -5082,35 +5483,40 @@
       "Common_EventScript_DirectCornerAttendant",
       "Common_EventScript_UnionRoomAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetChampionSaveWarp",
     "roots": [
       "EverGrandeCity_HallOfFame_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetContestCategoryStringVarForInterview",
     "roots": [
       "LilycoveCity_ContestLobby_EventScript_Reporter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetContestLadyGivenPokeblock",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetContestTrainerGfxIds",
     "roots": [
       "LilycoveCity_ContestLobby_EventScript_ContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetDaycareCompatibilityString",
@@ -5119,7 +5525,8 @@
       "Route117_EventScript_DaycareMan",
       "Route117_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetDeoxysRockPalette",
@@ -5127,14 +5534,16 @@
       "BirthIsland_Exterior_MapScripts",
       "KantoBirthIsland_Exterior_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetDeptStoreFloor",
     "roots": [
       "LilycoveCity_DepartmentStoreElevator_EventScript_Attendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetEReaderTrainerGfxId",
@@ -5142,14 +5551,16 @@
       "KantoSevenIsland_House_Room2_MapScripts",
       "SootopolisCity_MysteryEventsHouse_B1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetFavorLadyState_Complete",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetHiddenItemFlag",
@@ -5176,42 +5587,48 @@
       "SilphCo_9F_EventScript_Door3",
       "SilphCo_9F_EventScript_Door4"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetHipsterTaughtWord",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetIcefallCaveCrackedIceMetatiles",
     "roots": [
       "KantoFourIsland_IcefallCave_1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetLilycoveLadyGfx",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetLinkContestPlayerGfx",
     "roots": [
       "LilycoveCity_ContestLobby_EventScript_LinkContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetMauvilleOldManObjEventGfx",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetMewAboveGrass",
@@ -5219,56 +5636,64 @@
       "FarawayIsland_Interior_EventScript_Mew",
       "FarawayIsland_Interior_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetMirageTowerVisibility",
     "roots": [
       "Route111_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetPacifidlogTMReceivedDay",
     "roots": [
       "PacifidlogTown_House2_EventScript_FanClubYoungerBrother"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetPostgameFlags",
     "roots": [
       "OneIsland_PokemonCenter_1F_EventScript_Celio"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetQuizLadyState_Complete",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetQuizLadyState_GivePrize",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetRoute119Weather",
     "roots": [
       "Route119_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetRoute123Weather",
     "roots": [
       "Route123_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetSSTidalFlag",
@@ -5276,7 +5701,8 @@
       "SSTidalCorridor_MapScripts",
       "SSTidalRooms_EventScript_Bed"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetSeenMon",
@@ -5291,21 +5717,24 @@
       "Route25_SeaCottage_EventScript_Computer",
       "SSAnne_2F_Room1_EventScript_Gentleman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetSootopolisGymCrackedIceMetatiles",
     "roots": [
       "SootopolisCity_Gym_1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetTrickHouseNuggetFlag",
     "roots": [
       "Route110_TrickHouseEnd_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetUnlockedPokedexFlags",
@@ -5313,7 +5742,8 @@
       "LittlerootTown_ProfessorBirchsLab_MapScripts",
       "PalletTown_ProfessorOaksLab_EventScript_ProfOak"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetVermilionTrashCans",
@@ -5335,7 +5765,8 @@
       "VermilionCity_Gym_EventScript_TrashCan8",
       "VermilionCity_Gym_EventScript_TrashCan9"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SetWalkingIntoSignVars",
@@ -5343,7 +5774,8 @@
       "PalletTown_EventScript_SignLady",
       "PalletTown_EventScript_SignLadyTrigger"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShakeCamera",
@@ -5358,7 +5790,8 @@
       "SkyPillar_Top_EventScript_AwakenRayquaza",
       "SootopolisCity_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShakeScreen",
@@ -5373,14 +5806,16 @@
       "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch7",
       "SixIsland_DottedHole_SapphireRoom_EventScript_Sapphire"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShouldContestLadyShowGoOnAir",
     "roots": [
       "LilycoveCity_PokemonCenter_1F_EventScript_LilycoveLady"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShouldDistributeEonTicket",
@@ -5404,7 +5839,8 @@
       "SootopolisCity_PokemonCenter_2F_MapScripts",
       "VerdanturfTown_PokemonCenter_2F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShouldDoBrailleRegicePuzzle",
@@ -5412,21 +5848,24 @@
       "IslandCave_EventScript_CaveEntranceMiddle",
       "IslandCave_EventScript_CaveEntranceSide"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShouldHideFanClubInterviewer",
     "roots": [
       "LilycoveCity_PokemonTrainerFanClub_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShouldReadyContestArtist",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShouldShowBoxWasFullMessage",
@@ -5446,7 +5885,8 @@
       "SaffronCity_Dojo_EventScript_HitmonleeBall",
       "SilphCo_7F_EventScript_LaprasGuy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShouldTryGetTrainerScript",
@@ -5460,7 +5900,8 @@
       "LavaridgeTown_Gym_B1F_EventScript_Jeff",
       "LavaridgeTown_Gym_B1F_EventScript_Keegan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShouldTryRematchBattle",
@@ -5777,7 +6218,8 @@
       "ThreeIsland_BondBridge_EventScript_Violet",
       "VictoryRoad_1F_EventScript_ExitWally"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowBattlePointsWindow",
@@ -5790,14 +6232,16 @@
       "BattleFrontier_Lounge7_EventScript_LeftMoveTutor",
       "BattleFrontier_Lounge7_EventScript_RightMoveTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowBerryBlenderRecordWindow",
     "roots": [
       "LilycoveCity_ContestLobby_EventScript_BerryBlenderSpeedRecords"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowBerryCrushRankings",
@@ -5805,14 +6249,16 @@
       "CeruleanCity_House5_EventScript_BerryCrushRankings",
       "SlateportCity_EventScript_BerryCrushRankingsSign"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowContestEntryMonPic",
     "roots": [
       "ContestHall_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowDaycareLevelMenu",
@@ -5820,14 +6266,16 @@
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman",
       "Route117_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowDeptStoreElevatorFloorSelect",
     "roots": [
       "LilycoveCity_DepartmentStoreElevator_EventScript_Attendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowDodrioBerryPickingRecords",
@@ -5835,7 +6283,8 @@
       "MossdeepCity_GameCorner_1F_EventScript_DodrioBerryPickingRecords",
       "TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowEasyChatProfile",
@@ -5843,7 +6292,8 @@
       "MysteryEventClub_EventScript_Woman",
       "ProfileMan_EventScript_Man"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowEasyChatScreen",
@@ -5874,7 +6324,8 @@
       "SlateportCity_OceanicMuseum_1F_EventScript_Reporter",
       "SlateportCity_PokemonFanClub_EventScript_Reporter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowFieldMessageStringVar4",
@@ -5885,7 +6336,8 @@
       "Route117_EventScript_DaycareMan",
       "SootopolisCity_MysteryEventsHouse_B1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowFrontierExchangeCornerItemIconWindow",
@@ -5895,35 +6347,40 @@
       "BattleFrontier_ExchangeServiceCorner_EventScript_HoldItemClerk",
       "BattleFrontier_ExchangeServiceCorner_EventScript_VitaminClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowFrontierGamblerGoMessage",
     "roots": [
       "BattleFrontier_Lounge3_EventScript_Gambler"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowFrontierGamblerLookingMessage",
     "roots": [
       "BattleFrontier_Lounge3_EventScript_Gambler"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowFrontierManiacMessage",
     "roots": [
       "BattleFrontier_Lounge2_EventScript_FrontierManiac"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowLinkBattleRecords",
     "roots": [
       "EventScript_CableBoxResults"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowMapNamePopup",
@@ -5931,14 +6388,16 @@
       "BattleFrontier_BattlePyramidFloor_MapScripts",
       "BattleFrontier_BattlePyramidTop_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowNatureGirlMessage",
     "roots": [
       "BattleFrontier_Lounge5_EventScript_NatureGirl"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowPokedexRatingMessage",
@@ -5947,7 +6406,30 @@
       "LittlerootTown_ProfessorBirchsLab_EventScript_Birch",
       "ProfBirch_EventScript_RatePokedexOrRegister"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": [
+      "gBirchDexRatingText_LessThan10",
+      "gBirchDexRatingText_LessThan20",
+      "gBirchDexRatingText_LessThan30",
+      "gBirchDexRatingText_LessThan40",
+      "gBirchDexRatingText_LessThan50",
+      "gBirchDexRatingText_LessThan60",
+      "gBirchDexRatingText_LessThan70",
+      "gBirchDexRatingText_LessThan80",
+      "gBirchDexRatingText_LessThan90",
+      "gBirchDexRatingText_LessThan100",
+      "gBirchDexRatingText_LessThan110",
+      "gBirchDexRatingText_LessThan120",
+      "gBirchDexRatingText_LessThan130",
+      "gBirchDexRatingText_LessThan140",
+      "gBirchDexRatingText_LessThan150",
+      "gBirchDexRatingText_LessThan160",
+      "gBirchDexRatingText_LessThan170",
+      "gBirchDexRatingText_LessThan180",
+      "gBirchDexRatingText_LessThan190",
+      "gBirchDexRatingText_LessThan200",
+      "gBirchDexRatingText_DexCompleted"
+    ]
   },
   {
     "function": "ShowPokemonJumpRecords",
@@ -5955,14 +6437,16 @@
       "MossdeepCity_GameCorner_1F_EventScript_PokemonJumpRecords",
       "TwoIsland_JoyfulGameCorner_EventScript_ShowPokemonJumpRecords"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowPokemonStorageSystemPC",
     "roots": [
       "EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowRankingHallRecordsWindow",
@@ -5978,7 +6462,8 @@
       "BattleFrontier_RankingHall_EventScript_TowerMultisRecords",
       "BattleFrontier_RankingHall_EventScript_TowerSinglesRecords"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowScrollableMultichoice",
@@ -5998,14 +6483,16 @@
       "SlateportCity_EventScript_BerryPowderClerk",
       "VerdanturfTown_BattleTentLobby_EventScript_RulesBoard"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowSecretBaseDecorationMenu",
     "roots": [
       "SecretBase_EventScript_PC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowSecretBaseRegistryMenu",
@@ -6013,7 +6500,8 @@
       "SecretBase_EventScript_PC",
       "SecretBase_EventScript_RecordMixingPC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowTrainerHillRecords",
@@ -6022,7 +6510,8 @@
       "TrainerHill_Entrance_EventScript_Records",
       "TrainerTower_Lobby_EventScript_ShowRecords"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ShowWirelessCommunicationScreen",
@@ -6030,7 +6519,8 @@
       "CableClub_EventScript_ShowWirelessCommunicationScreen_Frlg",
       "EventScript_WirelessBoxResults"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SpawnCameraObject",
@@ -6045,35 +6535,40 @@
       "SootopolisCity_MapScripts",
       "SouthernIsland_Interior_EventScript_TryLatiEncounter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SpawnLinkPartnerObjectEvent",
     "roots": [
       "BerryBlender_EventScript_BerryBlenderLink"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Special_AreLeadMonEVsMaxedOut",
     "roots": [
       "SlateportCity_EventScript_EffortRibbonWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Special_BeginCyclingRoadChallenge",
     "roots": [
       "Route110_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Special_HasMoveToRelearn",
     "roots": [
       "FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Special_ShowDiploma",
@@ -6081,7 +6576,8 @@
       "CeladonCity_Condominiums_3F_EventScript_Designer",
       "LilycoveCity_CoveLilyMotel_2F_EventScript_GameDesigner"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "Special_ViewWallClock",
@@ -6089,35 +6585,40 @@
       "LittlerootTown_BrendansHouse_2F_EventScript_WallClock",
       "LittlerootTown_MaysHouse_2F_EventScript_WallClock"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StartMarowakBattle",
     "roots": [
       "PokemonTower_6F_EventScript_MarowakGhost"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StartMirageTowerDisintegration",
     "roots": [
       "Route111_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StartMirageTowerFossilFallAndSink",
     "roots": [
       "Route111_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StartMirageTowerShake",
     "roots": [
       "Route111_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StartOldManTutorialBattle",
@@ -6126,14 +6627,16 @@
       "ViridianCity_EventScript_TutorialTriggerLeft",
       "ViridianCity_EventScript_TutorialTriggerRight"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StartPlayerDescendMirageTower",
     "roots": [
       "Route111_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StartRegiBattle",
@@ -6142,7 +6645,8 @@
       "DesertRuins_EventScript_Regirock",
       "IslandCave_EventScript_Regice"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StartWallClock",
@@ -6150,28 +6654,32 @@
       "LittlerootTown_BrendansHouse_2F_EventScript_WallClock",
       "LittlerootTown_MaysHouse_2F_EventScript_WallClock"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StartWallyTutorialBattle",
     "roots": [
       "PetalburgCity_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StickerManGetBragFlags",
     "roots": [
       "FourIsland_House2_EventScript_StickerMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StorePlayerCoordsInVars",
     "roots": [
       "SootopolisCity_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StoreSelectedPokemonInDaycare",
@@ -6179,28 +6687,32 @@
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman",
       "Route117_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StorytellerGetFreeStorySlot",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StorytellerStoryListMenu",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "StorytellerUpdateStat",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SubtractMoneyFromVar0x8005",
@@ -6209,14 +6721,16 @@
       "Route117_PokemonDayCare_EventScript_DaycareWoman",
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "SwapRegisteredBike",
     "roots": [
       "MauvilleCity_BikeShop_EventScript_Rydel"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TakeBerryPowder",
@@ -6224,7 +6738,8 @@
       "CeruleanCity_House5_EventScript_BerryPowderMan",
       "SlateportCity_EventScript_BerryPowderClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TakeFrontierBattlePoints",
@@ -6237,7 +6752,8 @@
       "BattleFrontier_Lounge7_EventScript_LeftMoveTutor",
       "BattleFrontier_Lounge7_EventScript_RightMoveTutor"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TakePokemonFromDaycare",
@@ -6245,14 +6761,16 @@
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman",
       "Route117_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TakePokemonFromRoute5Daycare",
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TeachMoveRelearnerMove",
@@ -6260,42 +6778,48 @@
       "FallarborTown_MoveRelearnersHouse_EventScript_MoveRelearner",
       "TwoIsland_House_EventScript_MoveManiac"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ToggleCurSecretBaseRegistry",
     "roots": [
       "SecretBase_EventScript_RecordMixingPC"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TraderDoDecorationTrade",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TraderMenuGetDecoration",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TraderShowDecorationMenu",
     "roots": [
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryBattleLinkup",
     "roots": [
       "Common_EventScript_DirectCornerAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryBecomeLinkLeader",
@@ -6306,35 +6830,40 @@
       "MossdeepCity_GameCorner_1F_EventScript_OldMan",
       "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryBerryBlenderLinkup",
     "roots": [
       "BerryBlender_EventScript_BerryBlenderLink"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryBufferWaldaPhrase",
     "roots": [
       "RustboroCity_Flat1_2F_EventScript_WaldasDad"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryContestEModeLinkup",
     "roots": [
       "LilycoveCity_ContestLobby_EventScript_LinkContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryContestGModeLinkup",
     "roots": [
       "LilycoveCity_ContestLobby_EventScript_LinkContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryEnterContestMon",
@@ -6342,21 +6871,24 @@
       "LilycoveCity_ContestLobby_EventScript_ContestReceptionist",
       "LilycoveCity_ContestLobby_EventScript_LinkContestReceptionist"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryGetWallpaperWithWaldaPhrase",
     "roots": [
       "RustboroCity_Flat1_2F_EventScript_WaldasDad"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryHideBattleTowerReporter",
     "roots": [
       "BattleFrontier_BattleTowerLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryJoinLinkGroup",
@@ -6367,21 +6899,24 @@
       "MossdeepCity_GameCorner_1F_EventScript_OldMan",
       "TwoIsland_JoyfulGameCorner_EventScript_LostellesDaddy"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryLoseFansFromPlayTime",
     "roots": [
       "LilycoveCity_PokemonTrainerFanClub_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryPutLotteryWinnerReportOnAir",
     "roots": [
       "LilycoveCity_DepartmentStore_1F_EventScript_LotteryClerk"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryPutNameRaterShowOnTheAir",
@@ -6389,42 +6924,48 @@
       "LavenderTown_House2_EventScript_NameRater",
       "SlateportCity_NameRatersHouse_EventScript_NameRater"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryPutTrainerFanClubOnAir",
     "roots": [
       "LilycoveCity_PokemonTrainerFanClub_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryPutTreasureInvestigatorsOnAir",
     "roots": [
       "EventScript_HiddenItemScript"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryRecordMixLinkup",
     "roots": [
       "Common_EventScript_DirectCornerAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryStoreHeldItemsInPyramidBag",
     "roots": [
       "BattleFrontier_BattlePyramidLobby_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TryTradeLinkup",
     "roots": [
       "Common_EventScript_DirectCornerAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TurnOffTVScreen",
@@ -6433,7 +6974,8 @@
       "LittlerootTown_BrendansHouse_1F_MapScripts",
       "LittlerootTown_MaysHouse_1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "TurnOnTVScreen",
@@ -6441,7 +6983,8 @@
       "LittlerootTown_BrendansHouse_1F_MapScripts",
       "LittlerootTown_MaysHouse_1F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "UpdateBattlePointsWindow",
@@ -6452,14 +6995,16 @@
       "BattleFrontier_ExchangeServiceCorner_EventScript_VitaminClerk",
       "BattleFrontier_Lounge3_EventScript_Gambler"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "UpdateCyclingRoadState",
     "roots": [
       "Route110_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "UpdateFollowingPokemon",
@@ -6508,35 +7053,40 @@
       "TrainerHill_Entrance_MapScripts",
       "VerdanturfTown_PokemonCenter_1F_EventScript_Nurse"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "UpdateLoreleiDollCollection",
     "roots": [
       "KantoFourIsland_LoreleisHouse_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "UpdateShoalTideFlag",
     "roots": [
       "ShoalCave_LowTideEntranceRoom_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "UpdateTrainerCardPhotoIcons",
     "roots": [
       "CeladonCity_GameCorner_EventScript_PhotoPrinter"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "UpdateTrainerFanClubGameClear",
     "roots": [
       "EverGrandeCity_HallOfFame_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ValidateEReaderTrainer",
@@ -6544,14 +7094,16 @@
       "KantoSevenIsland_House_Room1_MapScripts",
       "SevenIsland_House_Room1_EventScript_OldWoman"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ValidateMixingGameLanguage",
     "roots": [
       "Common_EventScript_DirectCornerAttendant"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "ValidateSavedWonderCard",
@@ -6593,7 +7145,8 @@
       "SootopolisCity_PokemonCenter_2F_MapScripts",
       "VerdanturfTown_PokemonCenter_2F_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "WaitWeather",
@@ -6602,20 +7155,23 @@
       "SkyPillar_Outside_MapScripts",
       "SootopolisCity_MapScripts"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "WonSecretBaseBattle",
     "roots": [
       "SecretBase_EventScript_RecordMixTrainer"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   },
   {
     "function": "WonderNews_GetRewardInfo",
     "roots": [
       "CeruleanCity_House4_EventScript_WonderNewsBerryMan"
     ],
-    "review_status": "unreviewed"
+    "review_status": "unreviewed",
+    "static_text_labels": []
   }
 ]

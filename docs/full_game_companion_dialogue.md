@@ -1,7 +1,7 @@
-Current writing checkpoint (2026-11-09): 1,700 authored situations, bound to
-1,748 exact message labels, with eleven independently authored voices (18,700
-replies). Full-game coverage remains unfinished. Remaining work includes later
-Hoenn routes, remaining interiors, dungeons, story endings, League/postgame,
+Current writing checkpoint (2026-11-09): 2,246 authored situations, bound to
+2,309 exact message labels, with eleven independently authored voices (24,706
+replies). Full-game coverage remains unfinished. Remaining work includes ordinary
+field branches, remaining interiors, story endings, League/postgame,
 objects and native/dynamic interactions. These counts describe authored bindings,
 not a percentage of NPCs or a completed playthrough.
 
@@ -20,7 +20,16 @@ after normal save/reset/Continue while Emi remained independently fresh. The 1,4
 has compiled. Native checks passed the actual museum map-frame introduction and
 a physical-step scheduled Roxanne call, plus companion-menu Ask and Silent
 behavior for automatic scenes. Later writing awaits its own compiled/native
-checks.
+checks. The 1,700-situation ROM additionally passed all 132 Berry-state reply
+fixtures and actual watering/harvest interactions. A real Kanto Name Rater
+party-selection/refusal flow passed on the 1,470-situation ROM. Native Birch
+rating table addresses are now explicit inventory edges; conditional Berry text
+variants retain their whole assembly guards for review and source-drift checks.
+
+Standalone successful item notices can now provide their own authored topic when
+they are the first field message. Any earlier NPC/dynamic message, including an
+unknown one, prevents a receipt from replacing it. That new pickup behavior awaits
+its own exact-ROM checks; gift receipts still preserve the actual conversation.
 
 The full-game companion expansion continues from tested PR #11 commit
 79ec91c79bd03c426c64f824415befdfe99d351d. It is one project with one intended

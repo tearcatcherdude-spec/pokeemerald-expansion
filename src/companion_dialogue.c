@@ -33,6 +33,7 @@ static EWRAM_DATA bool8 sActive = FALSE;
 static EWRAM_DATA bool8 sOffering = FALSE;
 static EWRAM_DATA bool8 sFinishPending = FALSE;
 static EWRAM_DATA bool8 sHasRecent = FALSE;
+static EWRAM_DATA bool8 sSawMessage = FALSE;
 static EWRAM_DATA u8 sGroup = 0, sMap = 0, sVoice = 0;
 static EWRAM_DATA u16 sContext = 0; // ResetSession installs the sentinel.
 static EWRAM_DATA const u8 *sMessage = NULL;
@@ -50,6 +51,7 @@ static struct CompanionDialogueProgress *Progress(void)
 void CompanionDialogue_ResetSession(void)
 {
     sActive = sOffering = sHasRecent = sFinishPending = FALSE;
+    sSawMessage = FALSE;
     sContext = NO_CONTEXT;
     sMessage = sLegacy = NULL;
 }
@@ -166,10 +168,14 @@ void CompanionDialogue_RecordNativeMessage(const u8 *message)
 {
     if (sActive && !sOffering)
     {
-        // Unknown NPC/dynamic messages always replace the previous candidate.
-        // Explicit system receipts preserve the last actual speaker.
-        if (!CompanionDialogue_IsSystemReceipt(message))
+        // A standalone pickup can speak for itself. Once any NPC/dynamic text
+        // has appeared, even unknown text, receipts must preserve that subject
+        // rather than turn an unreviewed conversation into a generic gift line.
+        if (!CompanionDialogue_IsSystemReceipt(message) || !sSawMessage)
+        {
             sMessage = message;
+            sSawMessage = TRUE;
+        }
     }
 }
 u32 CompanionDialogue_ContextForMessage(const u8 *message)

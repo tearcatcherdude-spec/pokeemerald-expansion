@@ -105,5 +105,52 @@
       "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
     },
     "limitations": "Prepared story, party and position fixtures; actual map-frame introduction, physical-step scheduled call and companion menu; not a continuous playthrough."
+  },
+  "party_menu_validation": {
+    "source_commit": "cff113cec1c0b9bacf03a84e8c87801362a630f7",
+    "rom_sha256": "f817040f7dffb52e82f63a7744c7c20506591e5a827898f436af73942cf7278d",
+    "report": {
+      "checks": [
+        "Actual Name Rater conversation survives party-menu selection and returns the exact traded-Pokemon refusal reply, with once-only EXP and released controls"
+      ],
+      "rom_sha256": "f817040f7dffb52e82f63a7744c7c20506591e5a827898f436af73942cf7278d",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    }
+  },
+  "berry_validation": {
+    "source_commit": "4db7431c2f6ddd0fb3e9c550dd9469fc7651b53e",
+    "rom_sha256": "9e194b859592efcec31a8fd72acbefe4d8bc568a531335a7e11552ce884539d5",
+    "context_range": [
+      1470,
+      1482
+    ],
+    "reply_count": 132,
+    "reports": [
+      {
+        "checks": [
+          "All 12 Pip authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Silas authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Kade authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Ashe authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Nico authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Riven authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Emi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Vera authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Lume authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Mochi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Zuri authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once"
+        ],
+        "rom_sha256": "9e194b859592efcec31a8fd72acbefe4d8bc568a531335a7e11552ce884539d5",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "An actual growing tree watering choice and native animation end with the exact successful-care reply, without retaining the earlier unwatered choice",
+          "Actual ripe-tree picking stores the berries before the distinct harvest reply, preserving real inventory effects and once-only EXP"
+        ],
+        "rom_sha256": "9e194b859592efcec31a8fd72acbefe4d8bc568a531335a7e11552ce884539d5",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
   }
 }

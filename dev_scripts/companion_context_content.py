@@ -662,3 +662,17 @@ from companion_hoenn_interiors_final import ROWS as HOENN_INTERIOR_FINAL_ROWS
 ROWS.extend(HOENN_INTERIOR_FINAL_ROWS)
 from companion_kanto_interiors_remaining import ROWS as KANTO_INTERIOR_REMAINING_ROWS
 ROWS.extend(KANTO_INTERIOR_REMAINING_ROWS)
+from companion_hoenn_dungeon_people import ROWS as HOENN_DUNGEON_ROWS
+ROWS.extend(HOENN_DUNGEON_ROWS)
+from companion_town_signs import ROWS as TOWN_SIGN_ROWS
+ROWS.extend(TOWN_SIGN_ROWS)
+from companion_kanto_dungeon_people import ROWS as KANTO_DUNGEON_ROWS
+ROWS.extend(KANTO_DUNGEON_ROWS)
+from companion_hoenn_interiors_remaining import ROWS as HOENN_INTERIOR_REMAINING_ROWS
+ROWS.extend(HOENN_INTERIOR_REMAINING_ROWS)
+from companion_hoenn_dungeon_civilians import ROWS as HOENN_DUNGEON_CIVILIAN_ROWS
+ROWS.extend(HOENN_DUNGEON_CIVILIAN_ROWS)
+from companion_route_team_refusals import ROWS as ROUTE_TEAM_REFUSAL_ROWS
+ROWS.extend(ROUTE_TEAM_REFUSAL_ROWS)
+from companion_item_objects import ROWS as ITEM_OBJECT_ROWS
+ROWS.extend(ITEM_OBJECT_ROWS)
