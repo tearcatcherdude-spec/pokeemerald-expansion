@@ -1,9 +1,8 @@
-Current writing checkpoint (2026-11-09): 2,246 authored situations, bound to
-2,309 exact message labels, with eleven independently authored voices (24,706
-replies). Full-game coverage remains unfinished. Remaining work includes ordinary
-field branches, remaining interiors, story endings, League/postgame,
-objects and native/dynamic interactions. These counts describe authored bindings,
-not a percentage of NPCs or a completed playthrough.
+Current writing checkpoint (2026-11-10): 3,323 authored situations, bound to
+3,396 exact message labels, with eleven independently authored voices (36,553
+replies). Full-game coverage remains unfinished. Remaining work includes final
+service branches, objects and native/dynamic interactions. These counts describe
+authored bindings, not a percentage of NPCs or a completed playthrough.
 
 The 914-situation commit `bf2386d98cd7210d11f6437e8d155e724650574b`
 has compiled as Emerald. The earlier 330-situation commit
@@ -28,8 +27,10 @@ variants retain their whole assembly guards for review and source-drift checks.
 
 Standalone successful item notices can now provide their own authored topic when
 they are the first field message. Any earlier NPC/dynamic message, including an
-unknown one, prevents a receipt from replacing it. That new pickup behavior awaits
-its own exact-ROM checks; gift receipts still preserve the actual conversation.
+unknown one, prevents a receipt from replacing it. The 2,246-situation ROM passed actual Potion pickup, receipt precedence,
+unknown/dynamic invalidation, bag-full failure and interaction-reset checks.
+Actual Birch regional and National rating conversations also passed. Newly
+added custom gift/contact receipts await the next compiled ROM checks.
 
 The full-game companion expansion continues from tested PR #11 commit
 79ec91c79bd03c426c64f824415befdfe99d351d. It is one project with one intended

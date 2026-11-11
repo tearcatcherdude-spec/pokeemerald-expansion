@@ -1,0 +1,143 @@
+{
+  "scope": "Static human-ending audit of BattleFrontier and EverGrande map scripts against published contexts and every authored companion module, including unpublished ROWS. Source evidence is not emulator coverage.",
+  "authored_checkpoint": {"module": "dev_scripts/companion_hoenn_postgame_audit.py", "contexts": 20, "labels": 20, "replies": 220},
+  "findings": [
+    "LongDreamedAboutBattleFrontier is defined in BattleDomeLobby/scripts.inc but the actual Man3 actor root is referenced by OutsideWest/map.json. It is newly authored rather than discarded as unused.",
+    "Six party-eligibility branches end with dedicated generic farewells, distinct from cancellation. Their earlier level/species/item details are intermediate. Factory rental entry has no equivalent ordinary-party rejection.",
+    "Arena cancellation AwaitAnotherChallenge and Pyramid AwaitFutureChallenge differ from their post-event farewells and are newly authored.",
+    "Seven invalid-interruption messages really end the lobby callback, but native prompt visibility on resume remains untested. They are not presented as battle losses.",
+    "Tower initial Salon instruction and Pike resumed-challenge farewell are terminal map-script speech, newly authored. Existing content already covers continued partner search and ordinary Pike hints."
+  ],
+  "excluded": [
+    {
+      "kind": "intermediate_menu",
+      "source": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+      "scripts": ["ChooseFacilityToLearnAbout", "ChooseRuleToLearnAbout", "ChooseFrontierPassInfoToLearnAbout"],
+      "label_prefix": "BattleFrontier_ReceptionGate_Text_",
+      "labels": ["BattleTowerInfo", "BattleDomeInfo", "BattlePalaceInfo", "BattleArenaInfo", "BattleFactoryInfo", "BattlePikeInfo", "BattlePyramidInfo", "RankingHallInfo", "ExchangeCornerInfo", "LevelModeInfo", "Level50Info", "OpenLevelInfo", "MonEntryInfo", "HoldItemsInfo", "SymbolsInfo", "RecordedBattleInfo", "BattlePointsInfo"],
+      "reason": "Selected pages return to the chooser. All three guide exits finish with already-authored EnjoyBattleFrontier. Choice prompts and introductions are intermediate."
+    },
+    {
+      "kind": "intermediate_scene",
+      "source": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
+      "label_prefix": "BattleFrontier_ReceptionGate_Text_",
+      "labels": ["FirstTimeHereThisWay", "WelcomeToBattleFrontier", "IssueFrontierPass", "ObtainedFrontierPass", "PlacedTrainerCardInFrontierPass", "IfItIsntPlayerYouCame", "OhMrScottGoodDay"],
+      "reason": "Initial scene continues through ScottGreatToSeeYouHere, then movement/removal/release. EnjoyBattleFrontier is separately terminal on repeat greeter and guide exits."
+    },
+    {
+      "kind": "intermediate_exchange",
+      "source": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
+      "label_prefix": "BattleFrontier_ExchangeServiceCorner_Text_",
+      "labels": ["WelcomePleaseChoosePrize", "ConfirmPurchase", "DontHaveEnoughPoints", "HereIsYourPrize", "WellSendItToPC"],
+      "reason": "Success and insufficient-points messages return to prize selection. Final goodbye, bag-full and decoration-storage-full are separately authored."
+    },
+    {
+      "kind": "intermediate_rating",
+      "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
+      "label_prefix": "BattleFrontier_Lounge1_Text_",
+      "labels": ["PokemonBreederIntro", "LetsLookAtYourPokemon", "EvenICantTell", "AverageAbility", "BetterThanAverageAbility", "ImpressiveAbility", "OutstandingAbility", "BestAspectHP", "BestAspectAtk", "BestAspectDef", "BestAspectSpeed", "BestAspectSpAtk", "BestAspectSpDef"],
+      "reason": "Egg rejection returns to selection. General rating and best-stat labels precede a final Stat quality assessment. Four final quality outcomes and cancellation are already authored."
+    },
+    {
+      "kind": "intermediate_native_advice",
+      "source": "data/maps/BattleFrontier_Lounge2/scripts.inc",
+      "label_prefix": "BattleFrontier_Lounge2_Text_",
+      "labels": ["FrontierManiacIntro", "SwingByForTheLatestWord", "BattleTowerIsHottest", "FacilityIsHottest"],
+      "reason": "These precede ShowFrontierManiacMessage; its 26 proven static final pointers are authored."
+    },
+    {
+      "kind": "intermediate_wager",
+      "source": "data/maps/BattleFrontier_Lounge3/scripts.inc",
+      "label_prefix": "BattleFrontier_Lounge3_Text_",
+      "labels": ["YouLookToughExplainGambling", "HowAboutEnteringEventForMe", "SpotMeSomeBattlePoints", "HowMuchCanYouSpot", "ThanksOffYouGo", "YouDontHaveEnoughPoints", "HelloChampHeresYourPoints", "ObtainedBattlePoints", "Oh"],
+      "reason": "Prompts continue, insufficient points loops, ThanksOffYouGo is overwritten by native Go text, and reward greeting/receipt is overwritten by ThinkOfMeForAnotherChallenge. Actual Go/decline/loss/payout finals are authored."
+    },
+    {
+      "kind": "intermediate_tutor",
+      "source": "data/maps/BattleFrontier_Lounge7/scripts.inc",
+      "label_prefix": "BattleFrontier_Lounge7_Text_",
+      "labels": ["LeftTutorIntro", "RightTutorIntro", "LeftTutorWelcomeBack", "RightTutorWelcomeBack", "TeachWhichMove", "MoveWillBeXBattlePoints", "TeachMoveToWhichMon", "HaventGotEnoughPoints"],
+      "reason": "These feed selection and teaching loops. Final YouDontWantTo and successful IllTakeBattlePoints are authored."
+    },
+    {
+      "kind": "intermediate_gifts",
+      "source": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
+      "label_prefix": "BattleFrontier_ScottsHouse_Text_",
+      "labels": ["WelcomeToBattleFrontier", "HowMuchEffortItTookToMakeReal", "HaveThisAsMementoOfOurPathsCrossing", "ObtainedXBattlePoints", "Beat50TrainersInARow", "Beat100TrainersInARow"],
+      "reason": "Introductory gift concludes ExplainBattlePoints. Both shield offers finish ExpectingToHearEvenGreaterThings or ComeBackForThisLater. Berry-success offer is preserved only through whitelisted item receipts; failed delivery ends BerryPocketStuffed. Separate actual outcomes are authored."
+    },
+    {
+      "kind": "intermediate_facility_service",
+      "map_names": ["BattleArenaLobby", "BattleDomeLobby", "BattleFactoryLobby", "BattlePalaceLobby", "BattlePikeLobby", "BattlePyramidLobby", "BattleTowerLobby"],
+      "source_prefix": "data/maps/BattleFrontier_",
+      "reason": "Welcome, explanation, level selection, party selection, save and record questions, point/ribbon announcements and results are not separate endings. Branches continue to authored final farewells, eligibility-end labels, disqualification, cancellation or forced warp. Rules-board pages loop to ReadWhichHeading, itself a question rather than a descriptive ending."
+    },
+    {
+      "kind": "warp_overwritten_brains",
+      "labels": ["BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime", "BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain", "BattleFrontier_BattleDomeBattleRoom_Text_WontUnderestimateYouNextTime", "BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter", "BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred", "BattleFrontier_BattleFactoryBattleRoom_Text_LastTimeILoseToYou", "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime", "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain", "BattleFrontier_BattleArenaBattleRoom_Text_GoingToBeFunNextTime", "BattleFrontier_BattleArenaBattleRoom_Text_IfWeBattleAgainWontLose", "BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear", "BattleFrontier_BattlePikeRoomNormal_Text_IWontForget", "BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting", "BattleFrontier_BattlePyramidTop_Text_FarewellForNow"],
+      "reason": "Each final-looking victory statement proceeds through forced warp to lobby speech, or via Pike final room before lobby. No pre-warp reaction opportunity established. Earlier introductions, challenges, pass requests, symbol receipts and announcements are intermediate."
+    },
+    {
+      "kind": "warp_overwritten_corridor",
+      "sources": ["data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc", "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc", "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc"],
+      "labels": ["BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn", "BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame", "BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes", "BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered", "BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature", "BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons"],
+      "reason": "On-frame movement cutscenes continue directly through a forced door warp and battle setup. No retained reaction opportunity demonstrated."
+    },
+    {
+      "kind": "warp_or_gameclear_league",
+      "sources": ["data/maps/EverGrandeCity_ChampionsRoom/scripts.inc", "data/maps/EverGrandeCity_HallOfFame/scripts.inc"],
+      "labels": ["EverGrandeCity_ChampionsRoom_Text_MayCongratulations", "EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations", "EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames"],
+      "reason": "Rival congratulations return to forced Hall of Fame warp. Hall of Fame final speech proceeds through recording effect, GameClear and credits. Earlier Wallace/rival/Birch speech is intermediate. Actual four Elite Four postbattle/repeat endpoints are authored."
+    },
+    {
+      "kind": "warp_overwritten_partner_acceptance",
+      "source": "data/maps/BattleFrontier_BattleTowerMultiPartnerRoom/scripts.inc",
+      "native_source": "src/battle_tower.c",
+      "reason": "PARTNER_MSGID_ACCEPT then movement, removeobject, warpsilent to same map; on-frame attendant ThankYouForChoosingPartner and elevator warp follow. Accept pointers are static but not proven retained endings. Intro/Mon1/Mon2Ask precede the choice. All 66 actual terminal PARTNER_MSGID_REJECT pointers are authored."
+    },
+    {
+      "kind": "dynamic_easy_chat_buffer",
+      "source": "data/maps/BattleFrontier_BattlePikeRoomNormal/scripts.inc",
+      "root": "BattleFrontier_BattlePikeRoomNormal_EventScript_NormalNPC",
+      "message": "gStringVar4",
+      "native_evidence": "src/battle_pike.c:751 BufferNPCMessage selects speechId from sNPCTable by progress and calls FrontierSpeechToString(sNPCSpeeches[speechId]); script subsequently prints gStringVar4.",
+      "reason": "Easy Chat composition is not a proven exact static text pointer. No sprite-class or generic-room fallback authored."
+    },
+    {
+      "kind": "dynamic_native_printer",
+      "source": "data/scripts/apprentice.inc",
+      "root": "BattleFrontier_BattleTowerLobby_EventScript_Apprentice",
+      "native_source": "src/apprentice.c",
+      "native_evidence": "PrintApprenticeMessage expands into gStringVar4 then uses AddTextPrinterForMessage(TRUE). It does not present the selected original pointer through ShowFieldMessage. FirstMeeting rejection loops back to WhichLvlMode.",
+      "reason": "Counseling question/answer states and printer source identity require an explicit reviewed runtime hook. This is distinct from proven static Tower tag-partner rejection messages."
+    },
+    {
+      "kind": "dynamic_battle_speech",
+      "map_names": ["BattleTowerBattleRoom", "BattleTowerMultiBattleRoom", "BattleArenaBattleRoom", "BattleDomeBattleRoom", "BattleFactoryBattleRoom", "BattlePikeRoomNormal"],
+      "message": "gStringVar4",
+      "reason": "Native opponent introductions use trainer/Easy Chat buffers and are followed by battle. No inferred static binding or generic trainer reply authored."
+    },
+    {
+      "kind": "unreferenced_or_unused",
+      "labels": ["BattleFrontier_OutsideWest_Text_ThisIsBattleTower", "BattleFrontier_OutsideWest_Text_CantFindBattleTower", "BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa", "BattleFrontier_OutsideWest_Text_BattleDomeSign2", "BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction", "BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction", "BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction", "BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom", "BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize", "BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend"],
+      "reason": "Unused scripts/texts or no active references found. No accessible actor ending demonstrated. LongDreamedAboutBattleFrontier is specifically not excluded: OutsideWest map really references its cross-file Man3 root."
+    },
+    {
+      "kind": "outside_human_scope",
+      "labels": ["BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant", "BattleFrontier_PokemonCenter_1F_Text_Skitty", "BattleFrontier_BattlePikeRoomNormal_Text_Silence"],
+      "reason": "Pokemon observation, cry or silence rather than human speech. Background/creature descriptions belong to a separate module."
+    },
+    {
+      "kind": "shared_service_scope",
+      "labels": ["gText_PleaseComeAgain", "CableClub_Text_IncorrectNumberOfParticipants", "Text_PlayersMadeDifferentSelections"],
+      "reason": "Genuine shared shop/link-service endpoints flagged to root. Do not bind globally shared labels with Frontier-specific assumptions."
+    }
+  ],
+  "static_native_evidence": [
+    {"function": "ShowFrontierGamblerGoMessage", "source": "src/field_specials.c:2965", "table": "sFrontierGamblerGoMessages", "unique_final_labels": 12, "module": "companion_hoenn_postgame_people.py", "terminal_path": "Lounge3 FinishBet or ChallengeNotAttempted: special/waitmessage/waitbutton/release/end"},
+    {"function": "ShowFrontierManiacMessage", "source": "src/field_specials.c:2152", "table": "sFrontierManiacMessages", "unique_final_labels": 26, "module": "companion_hoenn_postgame_remaining.py", "terminal_path": "Lounge2 GiveAdvice: special/waitmessage/waitbutton/release/end"},
+    {"function": "ShowNatureGirlMessage", "source": "src/field_specials.c:2923", "table": "gNaturesInfo[nature].natureGirlMessage in src/pokemon.c", "unique_final_labels": 9, "module": "companion_hoenn_postgame_remaining.py", "terminal_path": "Lounge5 valid non-Egg selection: special/waitmessage/waitbutton/release/end"},
+    {"function": "DoPartnerTrainerMessage", "source": "src/battle_tower.c:1348", "tables": ["sPartnerTrainerTextTables", "sPartnerApprenticeTextTables"], "unique_reject_labels": 66, "module": "companion_hoenn_partner_rejections.py", "terminal_path": "TowerMultiPartnerRoom RejectPartner: PARTNER_MSGID_REJECT/waitmessage/waitbutton/release/end", "excluded_msgids": ["INTRO", "MON1", "MON2_ASK", "ACCEPT"]}
+  ],
+  "limits": ["No native prompt-visibility or memory-spending claim follows from static source review.", "Shared services, apprentice native printer and Easy Chat routes remain explicit separate coverage work.", "No engine changes, shared generation, build or commit performed by this author."]
+}

@@ -152,5 +152,29 @@
         "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
       }
     ]
+  },
+  "pickup_and_rating_validation": {
+    "source_commit": "093b3ee4ff7099fdd43e4c1a5d714b6f376dab8c",
+    "reports": [
+      {
+        "checks": [
+          "An actual Route102 item ball gives a Potion, hides the collected object, and offers the exact standalone-pickup reply with one EXP award",
+          "A known NPC topic keeps precedence over a later successful receipt; the generic receipt topic remains fresh",
+          "Unknown NPC text and dynamic buffers cannot be masked by a later success receipt",
+          "A bag-full failure after an obtained-item notice invalidates that optimistic notice without offering or spending a success reply",
+          "Starting another interaction resets the prior unknown/failure state, allowing its own standalone discovery topic"
+        ],
+        "rom_sha256": "14c29ad13e9111e60c1ba80fdf8cd91700758457bbed3b527e52bae7390073c9",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "The actual lab NPC selects its regional assessment through native ShowPokedexRatingMessage and gives the exact assessment-specific Silas reply",
+          "With National Dex enabled, the later nationwide summary replaces the intermediate regional assessment; only Emi final-topic history and EXP are spent"
+        ],
+        "rom_sha256": "14c29ad13e9111e60c1ba80fdf8cd91700758457bbed3b527e52bae7390073c9",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
   }
 }

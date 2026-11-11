@@ -13,7 +13,7 @@ def add(key, labels, subject, lines):
     assert len(replies) == 11, (key, len(replies))
     ROWS.append(dict(key=key, labels=labels.split(), subject=subject, replies=replies))
 
-add('roxanne_contact_added','RustboroCity_Gym_Text_RegisteredRoxanne',
+add('roxanne_contact_added','RustboroCity_Gym_Text_RegisteredRoxanne RustboroCity_Gym_Text_RoxanneRegisterCall',
     'Roxanne has been registered as a PokeNav contact after inviting future challenges.', '''
 S~Roxanne has joined the contacts. I hope the next call does not come with a surprise exam.|
 S~I would enjoy hearing which part of her training she is reconsidering.|

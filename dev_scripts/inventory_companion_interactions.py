@@ -29,6 +29,12 @@ def read_sources():
                 native_calls=sorted(set(re.findall(r'\b(?:callnative|gotonative|special|specialvar)\s+(?:\w+,\s*)?(\w+)',clean))))
     for label,value in global_c_text_blocks().items():
         blocks[label]=dict(path=value['path'],body='',is_text=True,refs=set(),native_calls=[])
+    # This reviewed script macro selects a native dispatch with a literal
+    # rejection message ID. Do not expand the introductory/acceptance variants
+    # into final-message coverage.
+    for block in blocks.values():
+        if re.search(r'\btower_dopartnermsg\s+PARTNER_MSGID_REJECT\b',block['body']):
+            block['native_calls'].append('DoPartnerTrainerMessage')
     return blocks
 
 def collect_roots(blocks):
@@ -81,7 +87,31 @@ def native_text_edges():
     assert array is not None, 'Review changed Birch native rating table'
     labels=re.findall(r'\bgBirchDexRatingText_\w+\b',array[1])
     assert len(labels)==len(set(labels))==21
-    return {'ShowPokedexRatingMessage': labels}
+    edges={'ShowPokedexRatingMessage': labels}
+    frontier=(ROOT/'src/field_specials.c').read_text(encoding='utf-8')
+    for function,table,count in [
+        ('ShowFrontierGamblerGoMessage','sFrontierGamblerGoMessages',12),
+        ('ShowFrontierManiacMessage','sFrontierManiacMessages',26),
+    ]:
+        array=re.search(re.escape(table)+r'(?:\[[^\]]*\])+\s*=\s*\{(.*?)^[ \t]*\};',frontier,re.M|re.S)
+        assert array is not None, ('Review changed Frontier native table',table)
+        texts=sorted(set(re.findall(r'\bBattleFrontier_\w+_Text_\w+\b',array[1])))
+        assert len(texts)==count, (table,len(texts))
+        edges[function]=texts
+    natures=(ROOT/'src/pokemon.c').read_text(encoding='utf-8')
+    texts=sorted(set(re.findall(r'\.natureGirlMessage\s*=\s*(BattleFrontier_\w+_Text_\w+)',natures)))
+    assert len(texts)==9, 'Review changed Nature Girl pointer fields'
+    edges['ShowNatureGirlMessage']=texts
+    tower=(ROOT/'src/battle_tower.c').read_text(encoding='utf-8')
+    definitions=dict(re.findall(r'\b(\w+)\[\s*\]\s*=\s*\{\s*PARTNER_TEXTS\((\w+)\)\s*\};',tower))
+    used=set()
+    for table in ['sPartnerTrainerTextTables','sPartnerApprenticeTextTables']:
+        array=re.search(re.escape(table)+r'(?:\[[^\]]*\])+\s*=\s*\{(.*?)^[ \t]*\};',tower,re.M|re.S)
+        assert array is not None, ('Review changed partner dispatch table',table)
+        used.update(re.findall(r'\bsPartner(?:Apprentice)?Texts\w*\b',array[1]))
+    assert len(used)==66 and used<=definitions.keys(), 'Review changed used partner text families'
+    edges['DoPartnerTrainerMessage']=sorted('BattleFrontier_BattleTowerMultiPartnerRoom_Text_'+definitions[name]+'Reject' for name in used)
+    return edges
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)

@@ -28,6 +28,19 @@ extern const u8 gText_TheDecorWasTransferredToThePC[];
 extern const u8 gText_PlayerFoundOneItem[];
 extern const u8 gText_PlayerFoundItems[];
 extern const u8 gText_RegisteredTrainerinPokeNav[];
+extern const u8 PewterCity_Museum_1F_Text_ReceivedOldAmberFromMan[];
+extern const u8 CeladonCity_Restaurant_Text_ReceivedCoinCaseFromMan[];
+extern const u8 CeladonCity_GameCorner_Text_Received10CoinsFromMan[];
+extern const u8 CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy[];
+extern const u8 CeladonCity_GameCorner_Text_Received20CoinsFromMan[];
+extern const u8 TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy[];
+extern const u8 RustboroCity_Gym_Text_RegisteredRoxanne[];
+extern const u8 DewfordTown_Gym_Text_RegisteredBrawly[];
+extern const u8 MauvilleCity_Gym_Text_RegisteredWattson[];
+extern const u8 LavaridgeTown_Gym_1F_Text_RegisteredFlannery[];
+extern const u8 FortreeCity_Gym_Text_RegisteredWinona[];
+extern const u8 MossdeepCity_Gym_Text_RegisteredTateAndLiza[];
+extern const u8 SootopolisCity_Gym_1F_Text_RegisteredJuan[];
 
 static EWRAM_DATA bool8 sActive = FALSE;
 static EWRAM_DATA bool8 sOffering = FALSE;
@@ -153,6 +166,22 @@ bool32 CompanionDialogue_IsSystemReceipt(const u8 *message)
         gText_PlayerPutItemInBag, gText_ObtainedTheDecor,
         gText_TheDecorWasTransferredToThePC, gText_PlayerFoundOneItem,
         gText_PlayerFoundItems, gText_RegisteredTrainerinPokeNav,
+        // Imported custom success notices have the same role as the generic
+        // receipts. Their callers check space/coin capacity before displaying
+        // them; failure messages remain ordinary candidate-invalidating text.
+        PewterCity_Museum_1F_Text_ReceivedOldAmberFromMan,
+        CeladonCity_Restaurant_Text_ReceivedCoinCaseFromMan,
+        CeladonCity_GameCorner_Text_Received10CoinsFromMan,
+        CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy,
+        CeladonCity_GameCorner_Text_Received20CoinsFromMan,
+        TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy,
+        RustboroCity_Gym_Text_RegisteredRoxanne,
+        DewfordTown_Gym_Text_RegisteredBrawly,
+        MauvilleCity_Gym_Text_RegisteredWattson,
+        LavaridgeTown_Gym_1F_Text_RegisteredFlannery,
+        FortreeCity_Gym_Text_RegisteredWinona,
+        MossdeepCity_Gym_Text_RegisteredTateAndLiza,
+        SootopolisCity_Gym_1F_Text_RegisteredJuan,
     };
     for (u32 i = 0; i < ARRAY_COUNT(receipts); i++)
         if (message == receipts[i])

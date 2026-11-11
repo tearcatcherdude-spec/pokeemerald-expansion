@@ -676,3 +676,38 @@ from companion_route_team_refusals import ROWS as ROUTE_TEAM_REFUSAL_ROWS
 ROWS.extend(ROUTE_TEAM_REFUSAL_ROWS)
 from companion_item_objects import ROWS as ITEM_OBJECT_ROWS
 ROWS.extend(ITEM_OBJECT_ROWS)
+from companion_hoenn_field_people import ROWS as HOENN_FIELD_ROWS
+ROWS.extend(HOENN_FIELD_ROWS)
+from companion_kanto_ship_and_field import ROWS as KANTO_SHIP_FIELD_ROWS
+ROWS.extend(KANTO_SHIP_FIELD_ROWS)
+from companion_kanto_signs import ROWS as KANTO_SIGN_ROWS
+ROWS.extend(KANTO_SIGN_ROWS)
+from companion_sevii_one_three import ROWS as SEVII_ONE_THREE_ROWS
+ROWS.extend(SEVII_ONE_THREE_ROWS)
+from companion_hoenn_postgame_people import ROWS as HOENN_POSTGAME_ROWS
+ROWS.extend(HOENN_POSTGAME_ROWS)
+from companion_kanto_signs_extra import ROWS as KANTO_SIGN_EXTRA_ROWS
+ROWS.extend(KANTO_SIGN_EXTRA_ROWS)
+from companion_kanto_gift_followups import ROWS as KANTO_GIFT_FOLLOWUP_ROWS
+ROWS.extend(KANTO_GIFT_FOLLOWUP_ROWS)
+from companion_sevii_four_seven import ROWS as SEVII_FOUR_FIVE_ROWS
+ROWS.extend(SEVII_FOUR_FIVE_ROWS)
+from companion_hoenn_town_field_people import ROWS as HOENN_TOWN_FIELD_ROWS
+ROWS.extend(HOENN_TOWN_FIELD_ROWS)
+from companion_hoenn_postgame_remaining import ROWS as HOENN_POSTGAME_REMAINING_ROWS
+ROWS.extend(HOENN_POSTGAME_REMAINING_ROWS)
+from companion_hoenn_battle_endpoints import ROWS as HOENN_BATTLE_ENDPOINT_ROWS
+ROWS.extend(HOENN_BATTLE_ENDPOINT_ROWS)
+from companion_hoenn_partner_rejections import ROWS as HOENN_PARTNER_REJECTION_ROWS
+ROWS.extend(HOENN_PARTNER_REJECTION_ROWS)
+from companion_sevii_six_seven import ROWS as SEVII_SIX_SEVEN_ROWS
+ROWS.extend(SEVII_SIX_SEVEN_ROWS)
+from companion_kanto_pair_endings import ROWS as KANTO_PAIR_ENDING_ROWS
+ROWS.extend(KANTO_PAIR_ENDING_ROWS)
+from companion_sevii_meadow_followups import ROWS as SEVII_MEADOW_FOLLOWUP_ROWS
+ROWS.extend(SEVII_MEADOW_FOLLOWUP_ROWS)
+from companion_hoenn_postgame_audit import ROWS as HOENN_POSTGAME_AUDIT_ROWS
+ROWS.extend(HOENN_POSTGAME_AUDIT_ROWS)
+
+from companion_hoenn_final_audit import ROWS as HOENN_FINAL_AUDIT_ROWS
+ROWS.extend(HOENN_FINAL_AUDIT_ROWS)
