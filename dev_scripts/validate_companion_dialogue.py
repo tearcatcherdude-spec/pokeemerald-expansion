@@ -22,6 +22,9 @@ def main():
     for i,(row,authored) in enumerate(zip(contexts,ROWS)):
         assert (row['id'],row['key'])==(i,authored['key'])
         assert set(row['sources'])==set(authored['labels'])
+        if row.get('retired'):
+            assert i>=47 and authored.get('retired')==row['retired'] and not row['sources']
+            assert set(row['retired_sources'])==set(authored['retired_sources'])
         for label,original in row['sources'].items():
             assert label not in seen, ('Duplicate binding',label)
             seen.add(label)
@@ -57,6 +60,7 @@ def main():
     for f in ['data/scripts/cozy_companion.inc','data/cast/recruitment.inc']:
         assert 'goto_if_eq VAR_RESULT, 5, CompanionDialogue_EventScript_Settings' in (ROOT/f).read_text()
     assert 'CompanionDialogue_EventScript_Settings' in (ROOT/'dev_scripts/build_cast.py').read_text()
-    print(f'PASS: {len(contexts)} reviewed contexts, {len(seen)} exact branch bindings, {len(contexts)*11} distinct replies; no sprite/place/lore substitution; three saved modes; append-only storage.')
+    active=sum(not r.get('retired') for r in contexts)
+    print(f'PASS: {active} active contexts ({len(contexts)} reserved IDs), {len(seen)} exact branch bindings, {active*11} distinct replies; no sprite/place/lore substitution; three saved modes; append-only storage.')
 
 if __name__=='__main__':main()

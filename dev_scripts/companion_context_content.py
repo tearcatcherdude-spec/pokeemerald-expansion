@@ -745,3 +745,25 @@ ROWS.extend(KANTO_STICKER_FOLLOWUP_ROWS)
 
 from companion_hoenn_apprentice import ROWS as HOENN_APPRENTICE_ROWS
 ROWS.extend(HOENN_APPRENTICE_ROWS)
+
+from companion_kanto_journals import ROWS as KANTO_JOURNAL_ROWS
+ROWS.extend(KANTO_JOURNAL_ROWS)
+
+from companion_hoenn_secret_base_postgame import ROWS as HOENN_SECRET_BASE_POSTGAME_ROWS
+ROWS.extend(HOENN_SECRET_BASE_POSTGAME_ROWS)
+from companion_hoenn_callback_finals import ROWS as HOENN_CALLBACK_FINAL_ROWS
+ROWS.extend(HOENN_CALLBACK_FINAL_ROWS)
+
+from companion_kanto_personal_objects import ROWS as KANTO_PERSONAL_OBJECT_ROWS
+ROWS.extend(KANTO_PERSONAL_OBJECT_ROWS)
+
+# Retired IDs remain reserved; their source/wording is retained for audit only.
+# This scientist always follows the first remark with IFoundThisPlace.
+for row in ROWS:
+    if row['key'] == 'sevii67_ruin_blocked_scientist':
+        row['retired_sources'] = row['labels']
+        row['labels'] = []
+        row['retired'] = 'Intermediate speech, always superseded by SixIsland_RuinValley_Text_IFoundThisPlace.'
+
+from companion_hoenn_last_gifts import ROWS as HOENN_LAST_GIFT_ROWS
+ROWS.extend(HOENN_LAST_GIFT_ROWS)

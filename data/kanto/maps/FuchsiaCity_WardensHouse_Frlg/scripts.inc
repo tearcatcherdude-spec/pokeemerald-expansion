@@ -14,7 +14,7 @@ FuchsiaCity_WardensHouse_EventScript_Warden::
 	end
 
 FuchsiaCity_WardensHouse_EventScript_GiveGoldTeeth::
-	checkitemspace ITEM_HM04
+	additem ITEM_HM04
 	goto_if_eq KANTO_VAR_RESULT, FALSE, FuchsiaCity_WardensHouse_EventScript_HM04NoRoom
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playfanfare MUS_OBTAIN_TMHM
@@ -26,7 +26,7 @@ FuchsiaCity_WardensHouse_EventScript_GiveGoldTeeth::
 	checkplayergender
 	call_if_eq KANTO_VAR_RESULT, MALE, FuchsiaCity_WardensHouse_EventScript_WardenThanksMale
 	call_if_eq KANTO_VAR_RESULT, FEMALE, FuchsiaCity_WardensHouse_EventScript_WardenThanksFemale
-	giveitem_msg FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden, ITEM_HM04
+	msgreceiveditem FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden, ITEM_HM04
 	setflag KANTO_FLAG_GOT_HM04
 	removeitem ITEM_GOLD_TEETH
 	release

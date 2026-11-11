@@ -211103,13 +211103,7 @@
       "id": 3054,
       "key": "sevii67_ruin_blocked_scientist",
       "subject": "The scientist admits he cannot enter the ruins.",
-      "sources": {
-        "SixIsland_RuinValley_Text_CantFigureOutHowToGetInside": {
-          "path": "data/kanto/maps/SixIsland_RuinValley_Frlg/scripts.inc",
-          "text": "I can't figure out how I'm supposed\\nto get inside.$",
-          "sha256": "5d7fc4acfab90289cf073679485f990b9655dc9dc29ff9c555b6f1820ae07d67"
-        }
-      },
+      "sources": {},
       "replies": [
         {
           "voice": "pip",
@@ -211166,7 +211160,15 @@
           "expression": "neutral",
           "text": "I wonder which approaches he has already tried."
         }
-      ]
+      ],
+      "retired": "Intermediate speech, always superseded by SixIsland_RuinValley_Text_IFoundThisPlace.",
+      "retired_sources": {
+        "SixIsland_RuinValley_Text_CantFigureOutHowToGetInside": {
+          "path": "data/kanto/maps/SixIsland_RuinValley_Frlg/scripts.inc",
+          "text": "I can't figure out how I'm supposed\\nto get inside.$",
+          "sha256": "5d7fc4acfab90289cf073679485f990b9655dc9dc29ff9c555b6f1820ae07d67"
+        }
+      }
     },
     {
       "id": 3055,
@@ -273965,6 +273967,4013 @@
           "voice": "zuri",
           "expression": "soft_smile",
           "text": "I'd like to hear which choice they first make differently once they're out on their own."
+        }
+      ]
+    },
+    {
+      "id": 3963,
+      "key": "kanto_journal_brock",
+      "subject": "A Journal says Brock seldom laughs but struggles to stop once he starts.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureBrock": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature: PEWTER GYM\\nLEADER BROCK!\\pBROCK rarely laughs, but is said to\\nbe unable to stop if he starts.$",
+          "sha256": "56abfd4f89a818a4023b9ffa7b244f7e9534d581cbd5644490e6ba83ebdea466"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "I want to hear the joke that gets through his defenses."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "An infrequent laugh is not necessarily a small one."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good. Everyone should have something that gets them laughing."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I like imagining the serious face finally giving up."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "The quietest person at dinner can start the biggest laughing fit."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A stern exterior guarding an absolutely catastrophic giggle."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A stone face with a hidden structural weakness."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Now I want to know what reliably triggers it."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Even a mountain can discover it has an echo."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Somebody has definitely made him laugh at the worst possible moment."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "That is a side of him I hope his friends get to see."
+        }
+      ]
+    },
+    {
+      "id": 3964,
+      "key": "kanto_journal_misty",
+      "subject": "A Journal says Misty deeply admires Lorelei.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureMisty": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature: CERULEAN GYM\\nLEADER MISTY!\\pMISTY is said to worship LORELEI\\nof the ELITE FOUR.$",
+          "sha256": "1151b36f727d5332208137d9978a06c6032de434fc3c983de300700add7179fb"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Even a Gym Leader can have someone she hopes to impress."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A respected example can give ambition a useful direction."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Nothing wrong with looking up to someone good."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I wonder if Lorelei knows what her example means to Misty."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "It is nice to know even confident people started by admiring someone."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A formidable trainer with a formidable favorite."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A little admiration beneath all that confidence."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Studying someone skilled can help you set concrete goals."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Even a strong current began by finding somewhere to flow."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I hope she gets to tell Lorelei without a magazine doing it first."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would ask which part of Lorelei's style first caught her attention."
+        }
+      ]
+    },
+    {
+      "id": 3965,
+      "key": "kanto_journal_ltsurge",
+      "subject": "A Journal repeats a rumor that Surge piloted a plane powered by Pokemon electricity.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureLtSurge": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature: VERMILION GYM\\nLEADER LT. SURGE!\\pLT. SURGE is rumored to have been\\na pilot while home in America.\\pHe used the electricity generated\\nby POK\u00e9MON to power his plane.$",
+          "sha256": "8b4f5ae6e7754ffac01d10551568506a6957eb4cc43d8e9b8a937380002b6b8c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A Pokemon-powered plane? I would spend the whole trip thanking the Pokemon."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "I would need more than a rumor before assessing that power system."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Hope the Pokemon got a say in being the engine."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I wonder what that sounded like from the ground."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "That is a story I would like to hear over a very long lunch."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An aviation story with an unusually lively power source."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A plane depending on a creature having a sufficiently good day."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I have questions about the regulator. Several questions."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "If the story is true, those partners shared quite a sky."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "He must get asked about that at every gathering."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would love to see an actual photograph from that part of his life."
+        }
+      ]
+    },
+    {
+      "id": 3966,
+      "key": "kanto_journal_erika",
+      "subject": "A Journal repeats a rumor that Erika often naps in the Gym.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureErika": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature: CELADON GYM\\nLEADER ERIKA!\\pRumor has it that if you peek into\\nCELADON GYM, you can often\\lsee ERIKA snoozing.$",
+          "sha256": "b57f0b3b8cc9fce7a6fbb144b90b38846100e8a6be83ce114eace337025afb4c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A little nap among plants sounds extremely easy to understand."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Rest is ordinary. Turning it into a feature is the stranger part."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Let her rest if nothing needs doing."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A quiet room full of leaves would make a lovely place to drift off."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A well-earned nap after lunch can improve everybody's afternoon."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An exclusive report: local woman occasionally becomes tired."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A flower garden with an excellent sleep endorsement."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Comfortable environment confirmed. Productivity conclusions unproven."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A little stillness among growing things is no great mystery."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Peeking at someone asleep is not a hobby I plan to encourage."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I hope people let her have the quiet the place was made for."
+        }
+      ]
+    },
+    {
+      "id": 3967,
+      "key": "kanto_journal_koga",
+      "subject": "A Journal describes Koga medical knowledge and medicines he prepares for his Pokemon.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureKoga": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature: FUCHSIA GYM\\nLEADER KOGA!\\pKOGA is said to have a thorough\\nknowledge of medicine.\\pHe even concocts medicine to nurse\\nhis POK\u00e9MON to health.$",
+          "sha256": "60bfd41dd924db066864f3c07deab5ea7789665ac2ca76a5e5de791db1a477b8"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "I like knowing those partners have someone who knows how to help them."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Knowing how to treat harm matters alongside knowing how to inflict it."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "A strong trainer should know how to care for the team afterward."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "That is a quieter kind of skill than the Gym shows off."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Making something that helps a partner recover takes patient care."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The poison specialist also knows the restorative chapter."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A useful reminder that dangerous knowledge can have gentle work to do."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I would ask how he checks the preparations are safe."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "The same careful hands can tend what they know could be hurt."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "That deserves as much attention as the intimidating reputation."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would rather hear about a partner recovering than another frightening trick."
+        }
+      ]
+    },
+    {
+      "id": 3968,
+      "key": "kanto_journal_sabrina",
+      "subject": "A Journal says Sabrina can communicate with her Pokemon in battle without speaking.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureSabrina": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature: SAFFRON GYM\\nLEADER SABRINA!\\pPeople say that SABRINA can\\ncommunicate with her POK\u00e9MON\\lduring battle without speaking.$",
+          "sha256": "b13e9646c725779ea7c54b62ebdd2d910cd46da69c442eaf6d2a0878df1d88cc"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "I would still say thank you out loud. It feels nice to hear."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The report describes silent coordination. The mechanism remains worth asking about."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "If the team understands, the orders do not need an audience."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I wonder whether it feels like a voice or something without words."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I hope there is still room for an ordinary comforting word afterward."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A commanding performance with no lines for the audience to quote."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "An entire conversation the room is not invited to hear."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "An unusually direct communication channel, if the account is accurate."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Some understanding may arrive before a word can put on its coat."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "People already assume I should know what they mean. She might actually manage."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would like to know what the Pokemon notice first when she reaches out."
+        }
+      ]
+    },
+    {
+      "id": 3969,
+      "key": "kanto_journal_blaine",
+      "subject": "A Journal claims Blaine removes his shades when devising quiz questions.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureBlaine": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature: CINNABAR GYM\\nLEADER BLAINE!\\pBLAINE is said to remove his dark\\nshades only when he is thinking up\\lnew quiz questions.$",
+          "sha256": "88f366b6d7a1f635ba5fb2871a607c97dcb99219a12474f812b84c27c285d9db"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "The glasses come off. Somewhere, a perfectly innocent question becomes a trap."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "I doubt the eyewear is necessary, but rituals can help concentration."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "The important part is whether the question makes sense."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "Maybe that is how people know to leave him to his thoughts."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Everyone has a small habit when thinking through something difficult."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The shades are apparently the curtain between us and another quiz."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A warning signal for the approach of organized trivia."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I want to test whether he writes better questions without them."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A little uncovered gaze, searching for something else to ask."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Someone noticed that often enough to make it his public fact."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I wonder whether he knows people have identified his thinking face."
+        }
+      ]
+    },
+    {
+      "id": 3970,
+      "key": "kanto_journal_lorelei",
+      "subject": "A Journal praises Lorelei calculated battling and teases an unspecified surprising secret.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureLorelei": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature:\\nELITE FOUR's LORELEI!\\pKnown for her logical, calculated,\\nand cool battling style, LORELEI\\lhas a surprising secret!$",
+          "sha256": "5edd3435c5f7b9902bc959eb2758047c43d4548da86e3739b33449542fde40e0"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "They cannot just say secret and leave the page looking that pleased."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The battle description is useful. The unspecified secret is a sales device."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "If she wants to keep something private, let her."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I would rather hear what she enjoys when she chooses to tell us."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "We know she can battle. We do not need every other part of her life."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A magnificent little hook with no fish attached."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "An entire paragraph trying to sell us an unopened drawer."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Precise battling described precisely. Then the article gives up on precision."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Some doors belong to the person who closes them."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Being impressive in public does not make her private life a prize."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would prefer a question she wants to answer to a secret someone wants to expose."
+        }
+      ]
+    },
+    {
+      "id": 3971,
+      "key": "kanto_journal_bruno",
+      "subject": "A Journal attributes Bruno joining the Elite Four to his desire to battle the strongest trainers.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureBruno": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature:\\nELITE FOUR's BRUNO!\\pBRUNO apparently joined the ELITE\\nFOUR out of his burning ambition to\\lbattle the best TRAINERS.$",
+          "sha256": "a746a7694f733d1e3d13c7785fdad013546c8ada5d9505995048fe272a7f390e"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "He found a job where the difficult part is exactly what he wanted."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A demanding position aligned with a clear personal ambition."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He wanted strong opponents. He put himself where they would arrive."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "It must feel good to reach a place you worked toward."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "That kind of work takes more than wanting it on one determined morning."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An ambition with the courage to choose a very inconvenient workplace."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "He built a life in the path of very formidable visitors."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Clear objective. Extremely demanding implementation."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A strong wish can become the place where someone stands."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I hope he has something he enjoys on the days nobody challenges him."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would ask what the best battle taught him, rather than just who won."
+        }
+      ]
+    },
+    {
+      "id": 3972,
+      "key": "kanto_journal_agatha",
+      "subject": "A Journal reports that Agatha and Oak were rival trainers when young.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureAgatha": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature:\\nELITE FOUR's AGATHA!\\pIn her youth, AGATHA and PROF.\\nOAK were rivals who vied for\\lsupremacy as TRAINERS.$",
+          "sha256": "71b7fc34fe3ed69c51cbd45e52e0008228ad960d7b63dc9ddaf26db77d0d07bb"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Those two used to challenge each other? That must have been a lively route."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Their shared history predates the roles we know them for."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Old rivals tend to remember things no title can erase."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I wonder if either still remembers one particular match perfectly."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I can imagine a very competitive conversation over tea."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Two impressive careers with an old argument tucked into the roots."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A rivalry old enough to have collected its own ghosts."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Competition may have helped shape both of them."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Long years do not always quiet a familiar challenge."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "She probably knows stories that would make his students sit very still."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would love to see a photograph from a day they still thought everything was ahead."
+        }
+      ]
+    },
+    {
+      "id": 3973,
+      "key": "kanto_journal_lance",
+      "subject": "A Journal suggests Lance grandfather is an elder of a renowned dragon-master clan.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureLance": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature:\\nELITE FOUR's LANCE!\\pLANCE's grandfather is thought to\\nbe the elder of a famous clan of\\ldragon masters.$",
+          "sha256": "231340e431a5f628ca58d88aa2149918be32f0ccfdde93482cb6148e63d74428"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Imagine bringing home your first Pokemon when the family specializes in dragons."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A possible family tradition, though the article leaves the relationship tentative."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "His family may have taught him plenty. He still had to do the work."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "That sounds like a childhood with some very large expectations."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Family knowledge can be a gift. It can also arrive with instructions nobody asked for."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A family tree with an unusually high chance of breathing fire."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "An impressive inheritance, with teeth attached."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I would ask what practical knowledge was passed down."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Some families carry their old stories on very large wings."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I hope he got to choose what part of the family story became his."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I wonder which small lesson from his grandfather he still uses."
+        }
+      ]
+    },
+    {
+      "id": 3974,
+      "key": "kanto_journal_profoak",
+      "subject": "A Journal reports Oak lives with his grandchildren Daisy and the rival.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureProfOak": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature: PROF. OAK,\\nthe POK\u00e9MON Researcher!\\pPROF. OAK reportedly lives with his\\ngrandchildren DAISY and {RIVAL}.$",
+          "sha256": "2507b340843f98c0c094485e88e5344a10a7991beb59cdbee8b0aa953160ac02"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A busy household, a busy lab. I hope someone reminds him to eat."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Living arrangements are a small part of a life. The article gives us only that part."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Being somebody's grandfather matters alongside the famous job."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "It is strange to read a familiar family detail in a feature."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I wonder who notices first when everyone has missed lunch."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The celebrated professor also has ordinary household negotiations."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A grand public name, with a very ordinary front door."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I hope the household gets more quiet than the lab."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Even a well-known life has a place where the kettle needs filling."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Imagine your home situation becoming a magazine paragraph."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would rather hear a family story they chose to share than keep inspecting the address."
+        }
+      ]
+    },
+    {
+      "id": 3975,
+      "key": "kanto_journal_daisyoak",
+      "subject": "An old Journal names Daisy Oak as the Spring Contest Grand Champion.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureDaisyOak": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "This is a POK\u00e9MON JOURNAL from\\nyears ago\u2026\\pPOK\u00e9MON JOURNAL\\nCONTEST Special!\\pThe Spring POK\u00e9MON CONTEST's\\nGrand Champion is DAISY OAK of\\lPALLET TOWN!$",
+          "sha256": "6deff669da97c2ced8527da853474f7b5959a1a23ed1170972e8d111cbdd3b82"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Daisy won the whole spring Contest? I hope someone cheered themselves hoarse."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "That is a documented achievement, not simply a flattering description."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good for her. That would have taken real preparation."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I wish we could have heard the room when her name was called."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I hope the celebration afterward was as warm as the victory."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A champion's chapter, quietly waiting on an old shelf."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A familiar name carrying a bright season behind it."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "An award like that represents a lot of work people did not see."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A spring preserved between pages, with her name at its center."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I would absolutely ask about the outfit and then the entire performance."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I wonder which moment from that day she most likes remembering."
+        }
+      ]
+    },
+    {
+      "id": 3976,
+      "key": "kanto_journal_mrfuji",
+      "subject": "A Journal notes Fuji declined an interview and describes the community respect for him.",
+      "sources": {
+        "PokemonJournal_Text_SpecialFeatureMrFuji": {
+          "path": "data/kanto/text/fame_checker_frlg.inc",
+          "text": "POK\u00e9MON JOURNAL\\pSpecial Feature:\\nMR. FUJI of POK\u00e9MON HOUSE!\\pEditor: The shy MR. FUJI turned\\ndown our interview requests.\\pHe is a kindly man who is adored\\nand respected in LAVENDER TOWN.$",
+          "sha256": "067e44a1af64204373baa61c5ce6affb808c7eb06f5971a5196dfca507446b72"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "He said no, and they still found something kind to print. Good."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Declining an interview does not diminish the care people observe in his work."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He does not owe a magazine his story."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I like that his kindness reached people without him having to explain it."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Some people show you who they are by what they do each day."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A man who declined the spotlight and remained visible through his kindness."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A quiet refusal, surrounded by a town's affection."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Observable care is a stronger account than a forced interview."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "He can leave a page blank and still be known gently."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I am glad they printed the refusal without treating it like a scandal."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would rather notice how the Pokemon settle near him than make him pose."
+        }
+      ]
+    },
+    {
+      "id": 3977,
+      "key": "hsb_decline0",
+      "subject": "The base owner accepts that the player cannot battle now.",
+      "sources": {
+        "SecretBase_Text_Trainer0DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Hunh?\\nOh, you can't now\u2026$",
+          "sha256": "cf7effa9e47a72e76bbc56416b802c76b9db46799542d120e0be6e1d734421e2"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "No battle today, and the ceiling has stayed up. A very successful refusal."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The owner accepts the present limitation without requiring an explanation."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Not now is enough. Good that they leave it there."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like not having to turn a small no into a whole account of my day."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "We can still enjoy visiting without making it another task for the team."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A proposed battle has quietly returned to being a perfectly ordinary visit."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The challenge has withdrawn without attempting to haunt the rest of the afternoon."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can decide on a challenge later when the team is ready."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A welcoming room can keep its warmth after an invitation is declined."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "They seem disappointed, but they haven't made us responsible for fixing that."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd be happy to ask about the base itself instead, if the owner feels like talking."
+        }
+      ]
+    },
+    {
+      "id": 3978,
+      "key": "hsb_post0",
+      "subject": "The owner asks for an opinion of the base and invites a visit tomorrow.",
+      "sources": {
+        "SecretBase_Text_Trainer0PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "What do you think of my SECRET BASE?\\nCome visit me again tomorrow.$",
+          "sha256": "407acbc52ba4314149aabe646f082d93d65d5bdf24e6f95a62f8a7219889e866"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "They've moved from battling to the very serious question of whether we like the room."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The invitation is for another visit. This message doesn't establish a particular battle result."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "A friendly return invitation. We can look around properly now."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I'd find one small detail I genuinely liked rather than give a vague compliment."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "It feels nice to be wanted back for more than a single match."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The combat report has been replaced by a request for an interior review. A pleasant change."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "Tomorrow has received an invitation. It remains entitled to arrive at its own pace."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I'd ask which part of the arrangement took the most effort."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A little hidden room can become familiar through the promise of another hello."
+        },
+        {
+          "voice": "mochi",
+          "expression": "surprised",
+          "text": "I'd like to know which piece the owner most wanted visitors to notice."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask how the base has changed since the first day they moved in."
+        }
+      ]
+    },
+    {
+      "id": 3979,
+      "key": "hsb_decline1",
+      "subject": "The owner interprets refusing a battle as not wanting the desirable base location.",
+      "sources": {
+        "SecretBase_Text_Trainer1DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Hunh? Is that right?\\nYou're not interested in this spot?$",
+          "sha256": "2f813fce8c9918b3af28b590e7d73abca68902e2a3373c61d4ef0c1075d802b7"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "We declined a battle, not an entire opinion about the floor plan. Two separate little forms."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Interest in the location doesn't necessarily imply willingness to battle for it now."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "A no to battling isn't a claim about wanting the spot."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I'd rather say what I meant than let the conversation quietly choose it for me."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "We can admire a place without turning somebody's home into a prize."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A practical refusal has accidentally been entered into the property-interest questionnaire."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The room and the battle have become tangled. No need to let them stay that way."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We should distinguish appreciating the location from agreeing to the proposed contest."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A place can be worth seeing without needing to become ours."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "They seem proud of the spot. We don't have to covet it to recognize that."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd ask what made them wait for this location, rather than argue about taking it."
+        }
+      ]
+    },
+    {
+      "id": 3980,
+      "key": "hsb_post1",
+      "subject": "The owner promises the spot only if they move out one day.",
+      "sources": {
+        "SecretBase_Text_Trainer1PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Okay, when I move one day,\\nthis place will be yours!$",
+          "sha256": "0844e4b47a4a7eae3ba96bd8a762f18909430ae39b0e612943754b33578b8844"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A future home with a very flexible moving date. I wouldn't start carrying boxes yet."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The statement is conditional on the owner's eventual move. No transfer has occurred."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "They still live here. Don't treat the promise as a vacant room."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I'd rather they enjoy their place than feel we are waiting outside for it to empty."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A friendly promise doesn't mean either of us needs to plan a move today."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A generous offer whose timetable has been carefully delegated to some unspecified future day."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The lease is imaginary and the vacancy date has declined to introduce itself."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We should leave the arrangement conditional rather than assume any current ownership change."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A possible doorway in the future isn't a room we occupy now."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I'd appreciate the gesture without making their home feel like borrowed space."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd ask where they'd like to go if they ever did decide to move."
+        }
+      ]
+    },
+    {
+      "id": 3981,
+      "key": "hsb_decline2",
+      "subject": "The sociable base owner invites the player to ask for a battle when ready.",
+      "sources": {
+        "SecretBase_Text_Trainer2DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "When you're ready, give me a shout!$",
+          "sha256": "409ce76bcaeb0e87dd272c94cd0b11d29bba0eb205edc4509b19c0a356889baa"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The battle can wait for our shout. I may send a polite indoor voice instead."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The owner leaves initiation with us. A future attempt remains optional."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Good. We can ask when we're ready."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like having time to look around without feeling the invitation is counting down."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "No need to hurry the team just because someone else is eager."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A refreshingly clear arrangement: the host is available, and our readiness gets a vote."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The challenge has settled into a chair instead of following us around the room."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can inspect the team's condition before taking up the offer."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A door left open doesn't need to pull anyone through it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "The invitation stays friendly because it isn't trying to become an obligation."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask about a favorite decoration while we decide what we want to do."
+        }
+      ]
+    },
+    {
+      "id": 3982,
+      "key": "hsb_post2",
+      "subject": "The owner wants furniture and decorations that make the base enjoyable for visitors.",
+      "sources": {
+        "SecretBase_Text_Trainer2PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Well, anyway, I should go buy some\\ndecorations and furniture.\\pI want my SECRET BASE to be a place\\nother people can enjoy.$",
+          "sha256": "fc2094446661b4e0194fc384887fe62191fc1ccb990160847b9ae83d4a48fa88"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A secret base with guest comfort in the budget. That's a very nice kind of secret."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The owner connects personal choices with other people's experience of the room. Considerate design."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Make it somewhere people can settle. Doesn't have to be expensive."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I'd like a small quiet place where a shy visitor doesn't feel stuck in the middle."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A comfortable seat and room for the partners could do more than an impressive display."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A battle host has remembered the excellent possibility of entertaining people without battling them."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "An interior scheme containing the radical idea that guests have feet and need places to put them."
+        },
+        {
+          "voice": "vera",
+          "expression": "surprised",
+          "text": "I'd ask what visitors actually do in the space before choosing the next pieces."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A little room changes when someone makes space for another person's ease."
+        },
+        {
+          "voice": "mochi",
+          "expression": "surprised",
+          "text": "I'd help choose one welcoming focal point instead of filling every spare tile."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask a returning visitor which detail made them feel most at home."
+        }
+      ]
+    },
+    {
+      "id": 3983,
+      "key": "hsb_decline3",
+      "subject": "The owner wonders whether finding the hidden base has left the player tired.",
+      "sources": {
+        "SecretBase_Text_Trainer3DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Oh\u2026 Are you maybe tired from searching\\nfor this place?$",
+          "sha256": "d64a2485685d84d08d76721c01d776af77561d3ab003f38ade120b1a6a51cd48"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "They've considered that the journey might have used up our spare battling legs. Thoughtful host."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Fatigue is proposed as a possibility, not established by this question."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Could be tired. Either way, we don't need a battle now."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like that the first guess is considerate instead of accusing us of being afraid."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A host who notices the trip can be part of the effort has the right idea."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The invitation has been replaced by the sensible suspicion that visitors also possess limited stamina."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "At last, someone acknowledging that a hidden address creates an errand."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can check the team's condition rather than simply accept or reject the guess."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Being found can be a welcome without becoming another demand."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "They've made room for the visitor's day instead of only thinking about their own plans."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask how most people find the place. There may be several rather different arrival stories."
+        }
+      ]
+    },
+    {
+      "id": 3984,
+      "key": "hsb_post3",
+      "subject": "The owner asks about the player base and expresses interest in visiting.",
+      "sources": {
+        "SecretBase_Text_Trainer3PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Where's your SECRET BASE?\\nI should go visit you there.$",
+          "sha256": "4f4474a4155062015beeb5c8298523b04b9f0e748c5524874154135ffd89b2bd"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A hidden-house visit has become a possible exchange of hidden-house directions. Very neighborly."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The owner proposes reciprocity without claiming a visit has already been arranged."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Nice offer. We can share directions if we want company."
+        },
+        {
+          "voice": "ashe",
+          "expression": "flustered",
+          "text": "I'd want a little time to make the place feel ready for someone else to see."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A visit can be nicer when both people get a turn being the host."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The secret-base community has discovered the complicated diplomatic business of returning a visit."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "Two hidden addresses attempting to establish ordinary neighborly relations."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We should agree on the invitation and actual location before treating it as a plan."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "One small doorway can make another one feel less far away."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd enjoy seeing what the owner notices in our choices after showing us their own."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask what kind of detail they most enjoy discovering in someone else's base."
+        }
+      ]
+    },
+    {
+      "id": 3985,
+      "key": "hsb_decline4",
+      "subject": "The owner accepts that people are not always in the mood to battle.",
+      "sources": {
+        "SecretBase_Text_Trainer4DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "I guess there are times when you're not\\ninto it.$",
+          "sha256": "83c2934879f97dc78bd6b3ac13b61f339feb816b7a0caf2cbc465efd3bfec8e9"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "An excellent discovery: even an enthusiastic trainer can have a not-today pocket."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The owner recognizes that interest varies with circumstances. A reasonable response."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Exactly. No need to turn a quiet day into a test."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like hearing someone say that as though it is ordinary. Because it is."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Being fond of battling doesn't mean every visit has to become one."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A host has successfully distinguished an enduring interest from an endless obligation to demonstrate it."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The mood has been allowed to exist without submitting a written defense."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can choose a better time rather than force a less prepared attempt."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "An open hand can remain open while the person beside it rests."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "That response makes me more comfortable accepting an invitation on another day."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd be happy simply talking about what they've been enjoying lately."
+        }
+      ]
+    },
+    {
+      "id": 3986,
+      "key": "hsb_post4",
+      "subject": "The owner encourages mutual improvement after the battle.",
+      "sources": {
+        "SecretBase_Text_Trainer4PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "We can both become stronger.\\nLet's keep at it!$",
+          "sha256": "1d8eb528ef69927dee6eeb7c211db84b1a2512be212ccf9f5ae3d9090f6c08d9"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Both of us can get stronger. I like a conclusion with room for everybody's next try."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The response frames the encounter as shared development rather than a final ranking."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Good attitude. Take one useful lesson each and keep going."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It's nice when a battle ends without somebody needing the other person to feel small."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I'd rather leave with an idea to practice than only a number to defend."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A competitive meeting has produced a cooperative conclusion. An excellent use of opponents."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "Two trainers have survived a comparison without becoming permanent categories."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can identify a specific improvement instead of treating stronger as an undefined demand."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Two paths can sharpen each other without needing to become the same path."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I like the shared direction in that encouragement. It feels generous."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd ask what they noticed changing during the match. That could give both sides something to work on."
+        }
+      ]
+    },
+    {
+      "id": 3987,
+      "key": "hsb_decline5",
+      "subject": "The base owner quietly accepts that a battle cannot happen now.",
+      "sources": {
+        "SecretBase_Text_Trainer5DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Oh\u2026\\nYou can't now, okay.$",
+          "sha256": "211320749b7e026767071bbf14f7fee7fd2abc7c87d85792a1944fe3cfbeba29"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The battle has been put away without making the whole visit feel canceled."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The present refusal is accepted. The message doesn't establish any loss of future access."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "No fight now. We can still be courteous guests."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The small pause sounds disappointed, but not angry. I appreciate that."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A kind no can leave the rest of the afternoon perfectly usable."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "An invitation has been declined with no attempt to turn the answer into a grand insult."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The challenge has receded peacefully into the furniture."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can decide later whether this is a suitable time for a match."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A quiet answer can leave the room just as warm as before it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd rather acknowledge the disappointment than pretend the offer never mattered."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask what the owner most likes about this particular place."
+        }
+      ]
+    },
+    {
+      "id": 3988,
+      "key": "hsb_post5",
+      "subject": "The owner invites the player to visit again when passing through the area.",
+      "sources": {
+        "SecretBase_Text_Trainer5PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "If you're in this area again,\\nI hope you'll visit me.$",
+          "sha256": "a6b79c0c9aea39015b04c4cc97f2c228228757cb4d1af3a370dc7e1148cd34a1"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A little place has become somewhere we might stop instead of merely somewhere we found once."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The invitation is conditional on a future journey through the area. No appointment is implied."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Good reason to remember the turn next time we're nearby."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like the easy kind of invitation that doesn't make distance feel like neglect."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A friendly stop can give a long trip a different shape."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A home has quietly promoted itself to a welcome landmark on future journeys."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The hidden address has acquired a repeat visitor policy. Quite civilized."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We should remember the actual location if we want to take up the offer later."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A familiar greeting can wait along a road without asking the road to bend toward it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "The wording feels relaxed. It leaves us welcome without keeping count."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask whether the base changes much between visits. There may always be something new to notice."
+        }
+      ]
+    },
+    {
+      "id": 3989,
+      "key": "hsb_decline6",
+      "subject": "The private battle researcher accepts postponing the match.",
+      "sources": {
+        "SecretBase_Text_Trainer6DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Oh.\\nSome other time, then!$",
+          "sha256": "7b89f58cce0863c39f142456a9bbb5bad3e9918387ce3d09e2b78b5d1fc39e23"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The research has been postponed. I hope the notebook has a box for visitor-not-in-the-mood."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "No trial occurred, so there is no battle evidence to interpret from this visit."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Another time. Better than a reluctant test match."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I'm glad being curious about the lab doesn't make us responsible for supplying an experiment."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A good host leaves room for somebody to be a guest instead of a useful opponent."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The secret laboratory has accepted the regrettable temporary shortage of willing test subjects."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "Science will have to endure a moment without making us its immediate problem."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "The owner can use the time to refine the question they want a future battle to test."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A paused experiment needn't become an unwelcome room."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "They accepted the answer neatly. That makes me more curious about talking again."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd ask what they most want to learn from their next match."
+        }
+      ]
+    },
+    {
+      "id": 3990,
+      "key": "hsb_post6",
+      "subject": "The battle researcher thanks the player and invites another visit tomorrow.",
+      "sources": {
+        "SecretBase_Text_Trainer6PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Thanks for battling with me.\\nPlease come back again tomorrow.$",
+          "sha256": "7c75a5171575c3733986d80836b0ef5a74504350c4ab3ef45cfa6da1273c3a90"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A thank-you from the secret lab. I hope our contribution is filed under helpful visitor rather than unusual specimen."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The completed match offers observations. A repeat visit could test a revised idea."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Good. Learn something from the match before asking for another."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like that the thanks comes before the next invitation."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A useful practice partner should be appreciated as a person, too."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The experiment concludes with gratitude and a politely requested sequel. Sound academic manners."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "Our participation has earned a thank-you and possible future employment as a difficult question."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "The owner can review the match and choose one change to investigate next time."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A shared effort can leave something worth returning to, without making tomorrow a debt."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I'd hope the next visit includes a little of what they've discovered since this one."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd ask which result surprised them most before leaving."
+        }
+      ]
+    },
+    {
+      "id": 3991,
+      "key": "hsb_decline7",
+      "subject": "The decoration-loving owner openly expresses disappointment after a battle refusal.",
+      "sources": {
+        "SecretBase_Text_Trainer7DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "Oh.\\nHow disappointing\u2026$",
+          "sha256": "7c0af21dc183df3bbf807eb2cb6ae76c9c399101567d314edc373562e0dd3438"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A little disappointment is allowed. It doesn't mean we have to buy it a battle."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The feeling is stated without a further demand. We can acknowledge it and keep our choice."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "They're disappointed. Our answer can still stay no."
+        },
+        {
+          "voice": "ashe",
+          "expression": "sad",
+          "text": "I feel the little sting in that pause, but I don't think a guilty yes would help."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd be kind without treating their mood as something we're obliged to repair."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The invitation has met an ordinary disappointment, mercifully without becoming a contract dispute."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A feeling has been announced. It has not thereby become an instruction."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A later match can be considered on its own merits, not as compensation."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A small cloud can cross a friendly room without becoming its whole sky."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I'd let the honest feeling exist instead of hurrying to make it look happier."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd ask about the room only if the owner still felt like sharing it."
+        }
+      ]
+    },
+    {
+      "id": 3992,
+      "key": "hsb_post7",
+      "subject": "The owner treats the match as fun and turns toward shopping afterward.",
+      "sources": {
+        "SecretBase_Text_Trainer7PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "That was all in good fun!\\nI should go enjoy shopping now.$",
+          "sha256": "7554f014639a0f4e0ebf946f51e6a0a8bbfb48359684e8bf585456a890640e3a"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Battle finished, next adventure: a very dangerous encounter with a cushion display."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The owner can move between interests without making the battle define the entire day."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Enjoyed the match and ready to move on. Sensible."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like that the afternoon can contain a serious effort and something light afterward."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A little ordinary pleasure can be a good way to leave a hard match behind."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The competitive appointment has concluded. Decorative acquisition is now accepting visitors."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The Pokemon can rest while the furniture experiences the pressure."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I'd suggest a clear idea of what the room needs before browsing everything at once."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A day can keep more than one kind of enjoyment without making them compete."
+        },
+        {
+          "voice": "mochi",
+          "expression": "surprised",
+          "text": "I'd ask what they feel is missing from the room before choosing another piece."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd love to hear which object they come home pleased to have found."
+        }
+      ]
+    },
+    {
+      "id": 3993,
+      "key": "hsb_decline8",
+      "subject": "The owner leaves the battle offer open for another time.",
+      "sources": {
+        "SecretBase_Text_Trainer8DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "I'll battle with you anytime.$",
+          "sha256": "2645be63ca2629fe82162a9dcfe6e555d8880a38e63129aeebc3be3940cf9b97"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A standing battle invitation. I hope it has comfortable shoes."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The statement leaves a later challenge possible, rather than establishing a current obligation."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Good. We'll ask if the time is right."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like being welcome without having to decide immediately."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "We can enjoy the visit and keep the team's readiness separate from the host's enthusiasm."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The challenge has adopted a flexible schedule, an excellent improvement in hospitality."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "A battle offer willing to sit quietly until needed. Unusually considerate offer."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can review our plans before deciding whether another match fits."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "An invitation can remain present without standing in the doorway."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "That kind of patience makes a return visit feel easier."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask what other parts of the base the owner enjoys showing visitors."
+        }
+      ]
+    },
+    {
+      "id": 3994,
+      "key": "hsb_post8",
+      "subject": "The owner promises to remain competitive at collecting decorations and invites another visit.",
+      "sources": {
+        "SecretBase_Text_Trainer8PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "I won't lose at collecting decorations.\\nCome visit again!$",
+          "sha256": "0e01758f12c8eda44440eb7c10c24b0101b9fe4a0cea83575c326458254a7ce0"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The battle has ended, but the cushions have apparently entered a much longer tournament."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Decoration collecting is the owner's next competitive focus. No collection result is established here."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "A room should still be useful, not just a score against someone else."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I hope they keep choosing things they like, even when nobody is comparing collections."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A favorite object can be worth more than the one bought only to beat a rival."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "One contest has ended and another has immediately recruited the household furnishings."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The shelves have been informed that victory remains compulsory. Poor shelves."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We could ask which piece serves the room best instead of ranking sheer quantity."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A collected thing deserves a place beyond proving somebody else has less."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I'd want the base to show the owner's taste rather than the opponent they imagined while shopping."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask which decoration they'd keep if the competition vanished tomorrow."
+        }
+      ]
+    },
+    {
+      "id": 3995,
+      "key": "hsb_decline9",
+      "subject": "The style-conscious owner offers to demonstrate battle style another time.",
+      "sources": {
+        "SecretBase_Text_Trainer9DeclineBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "I'll be happy to demonstrate my style\\nanytime.$",
+          "sha256": "fb0fec2f2aa439b2dd307d4756288660da9380623eb50bbc247a0cb45de052b8"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The demonstration has a flexible curtain time. I appreciate that in a person's living room."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The owner offers a future demonstration. We haven't seen a new battle from this refusal."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Another time can work. No need to perform for us now."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like being allowed to look at the room without immediately joining the next event."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A style is easier to appreciate when the person leaves room for the visitor's mood."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A postponed display, with the owner's enthusiasm apparently sufficient to preserve it indefinitely."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The style remains available by appointment. Merciful arrangement."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can decide whether a future match suits the team rather than answer under pressure."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Something worth showing can wait until another person is ready to look."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd enjoy asking about the choices themselves before judging the whole impression."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd ask what the owner most wants an opponent to notice about their approach."
+        }
+      ]
+    },
+    {
+      "id": 3996,
+      "key": "hsb_post9",
+      "subject": "The owner asks about their battle style and intends to keep refining it.",
+      "sources": {
+        "SecretBase_Text_Trainer9PostBattle": {
+          "path": "data/text/secret_base_trainers.inc",
+          "text": "What did you think of my style?\\nI'll keep on polishing it!$",
+          "sha256": "2db43ff9266a4ad04e016a8d0b29ab47e73976828553546e4d17b5157b2af0fd"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "They've asked for a review and already booked more polishing time. A productive little mirror."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Continued refinement suggests the owner treats style as something developed through feedback."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Give a useful observation. Flattery won't improve the next match."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I'd find one thing that felt distinctly theirs and say why it stayed with me."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A specific kind comment can help more than calling the whole thing perfect."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A performance has concluded with an unusually practical request for an opinion that might improve it."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "The style has survived being tested and is reporting for further maintenance."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can distinguish what worked from what simply looked impressive."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A chosen way of moving can become clearer each time it meets another person's answer."
+        },
+        {
+          "voice": "mochi",
+          "expression": "surprised",
+          "text": "I'd ask which part they most want to develop, then respond to that rather than redesign everything."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd describe one turning point clearly. It gives the owner something concrete to think about."
+        }
+      ]
+    },
+    {
+      "id": 3997,
+      "key": "hoenn_callback_fan_letter_done",
+      "subject": "A reporter praises the players bond with their Pokemon and promises an entertaining television story.",
+      "sources": {
+        "SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2": {
+          "path": "data/text/tv.inc",
+          "text": "Wow\u2026\\nThat's an interesting account.\\pYou really are tight with {STR_VAR_1},\\naren't you?\\pI get the feeling that your account\\nwill make a great TV story.\\pI promise that I'll turn this into\\nan entertaining show.\\lKeep your eyes out for it.\\pOkay, that's all.\\nBye-bye!$",
+          "sha256": "aee85cd7d725c75d65d2fde584669067ce13ddcbe7fc9090a0e40284e7605493"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "They heard about our friend and found a whole show in it. That is lovely."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Our firsthand account has given the reporter something specific to work with."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Hope the show treats our partner fairly. Good conversation."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "It is a little strange thinking our small story might be on TV."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A story about a cared-for partner sounds worth sharing."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Our ordinary affection has been offered an unexpectedly public audience."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Our Pokemon may become famous before it has formed an opinion on fame."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A clear account should help make the final story accurate."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Something personal has been met with warm curiosity."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "I hope the finished story keeps the kindness they heard in it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would love to see which detail they choose to open with."
+        }
+      ]
+    },
+    {
+      "id": 3998,
+      "key": "hoenn_callback_museum_story_done",
+      "subject": "A museum reporter finds the players story uplifting and plans a television version.",
+      "sources": {
+        "SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview": {
+          "path": "data/text/tv.inc",
+          "text": "Oh, what an uplifting story!\\pI'll be sure to get your story told\\non television.\\pIt should be aired sometime, I think,\\nso please look forward to it.$",
+          "sha256": "9ee18659a697194c1542f2dedd8e134684f6eca139afd91dee332de05b3763f9"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "An uplifting story is a good thing to send out into people's afternoons."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A positive account could be pleasant to share with a wider audience."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Glad they found something good in it. Hope they tell it straight."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I would be shy about watching the first time."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A good story can leave someone a little happier than it found them."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The conversation is complete, and the reporter has acquired a hopeful ending."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A small bright thing has apparently qualified for broadcast."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I would be interested in how they turn the account into a clear story."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A little hope can travel farther than the people who first felt it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "It is lovely hearing that the account meant something to its listener."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would keep an eye out to see how the story comes across."
+        }
+      ]
+    },
+    {
+      "id": 3999,
+      "key": "hoenn_callback_fan_opinions_done",
+      "subject": "A reporter thanks the player for an enlightening Pokemon conversation and mentions possible TV coverage.",
+      "sources": {
+        "SlateportCity_PokemonFanClub_Text_ThatsAllForInterview": {
+          "path": "data/text/tv.inc",
+          "text": "I see!\\pHmhm\u2026\\pOkay!\\nThanks for helping me out.\\pIt was fun and enlightening\\nchatting with you.\\pIt's possible that our interview will\\nend up on TV. Tune in and check!\\pOkay, that's all.\\nBye-bye!$",
+          "sha256": "e58ba554a53acb4d0b381e4e2ad58abf647ed53a9a73b7e3ec008ee1c84e6608"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "We had a nice talk and may accidentally become part of the television. Busy day."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "An enjoyable interview can still produce useful observations."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good talk. They got the answers they needed."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I appreciate being told the conversation was enjoyable."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Sharing what we notice about our partners can be a good afternoon."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Our conversation has ended with gratitude and the possibility of a second audience."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The interview was pleasant. The prospect of television can panic quietly later."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "It is good when both sides leave a conversation with something useful."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Being listened to can make a familiar thought feel newly worth sharing."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A friendly exchange deserves a friendly ending like that."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would enjoy comparing what we meant with what they put in the program."
+        }
+      ]
+    },
+    {
+      "id": 4000,
+      "key": "hoenn_callback_contest_concept_done",
+      "subject": "A reporter thanks the player for their interpretation of a contest concept and possible TV story ideas.",
+      "sources": {
+        "LilycoveCity_ContestLobby_Text_ThatsAllForInterview": {
+          "path": "data/text/tv.inc",
+          "text": "I see!\\pSo that's how you imagine the concept\\nof \u201c{STR_VAR_2}\u201d to be.\\pThank you!\\nYou've given me some good ideas.\\pI think I can write a good story on\\nPOK\u00e9MON CONTESTS now.\\pMaybe, just maybe, this story will even\\nmake it to television.\\lI hope you'll look forward to it!$",
+          "sha256": "3383fdbb07d49d18e68fb8565b832388e0878eb0c2164992d34b9285ad596980"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Our idea gave them another idea. Thoughts are very good at making little cousins."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Different interpretations can give a familiar subject a useful new angle."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Glad the answer helped. They can build from it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "It feels nice when an awkward explanation actually makes sense to someone."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A shared idea can become something neither person had alone."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Our brief interpretation has volunteered for a possible career in television."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The thought has left our head and acquired professional ambitions."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A fresh perspective can be more useful than repeating the usual description."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "One person's impression can open a little space in another's thinking."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "An interesting interpretation can change the whole look of a story."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would be curious which part of our answer stays with them."
+        }
+      ]
+    },
+    {
+      "id": 4001,
+      "key": "hoenn_callback_briney_rescue",
+      "subject": "Mr Briney thanks the player for rescuing Peeko, offers help and takes the bird home; field control returns after departure.",
+      "sources": {
+        "RusturfTunnel_Text_ThankYouLetsGoHomePeeko": {
+          "path": "data/maps/RusturfTunnel/scripts.inc",
+          "text": "PEEKO owes her life to you!\\pThey call me MR. BRINEY.\\nAnd, you are?\\p\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\n\u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026 \u2026\\pAh, so you are {PLAYER}{KUN}!\\nI sincerely thank you!\\pNow, if there's anything that troubles\\nyou, don't hesitate to tell me!\\pYou can usually find me in my cottage\\nby the sea near PETALBURG WOODS.\\pCome, PEEKO, we should make our way\\nhome.\\pPEEKO: Pihyoh!$",
+          "sha256": "da4cf85adc1a576664510ba8f1c1447ecc435d02228497d8259de857e04eaa65"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Peeko is going home. That little chirp is the best part of the whole cave."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The rescue is complete, and the gratitude seems deeply sincere."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Glad Peeko is safe. They can get home now."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "The way he calls her home is so gentle."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Someone getting their beloved friend back is worth the trouble."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A frightened little story has found a warm cottage to end in."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The cave has finally produced a thoroughly welcome goodbye."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Good to know the rescue ended with both of them able to leave safely."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "One small life has made the whole tunnel feel lighter."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "That is a lovely reunion to have helped bring about."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would remember how his voice changed once Peeko was safe."
+        }
+      ]
+    },
+    {
+      "id": 4002,
+      "key": "hoenn_callback_nurse_farewell",
+      "subject": "Normal and Gold Card nurse farewells have byte-identical text and return to the map caller, which only waits and releases.",
+      "sources": {
+        "gText_WeHopeToSeeYouAgain": {
+          "path": "data/text/pkmn_center_nurse.inc",
+          "text": "We hope to see you again!$",
+          "sha256": "dfd0aeb0e4497b6ca08d1b5c2c972dffb0724253c9c80311ff7b48dcb0792adf"
+        },
+        "gText_WeHopeToSeeYouAgain2": {
+          "path": "data/text/pkmn_center_nurse.inc",
+          "text": "We hope to see you again!$",
+          "sha256": "dfd0aeb0e4497b6ca08d1b5c2c972dffb0724253c9c80311ff7b48dcb0792adf"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A friendly goodbye from somewhere our partners are welcome. Good place to remember."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "It is reassuring to know this help remains available when needed."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good people to have nearby. We can head on."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I like leaving a place that made us feel welcome."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Kind service can make a busy day feel a little gentler."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A familiar farewell from one of the most dependable stops on the road."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "An invitation worth keeping for a day that goes less smoothly."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Reliable help is an excellent thing to know how to find."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A warm doorway can matter long after we walk through it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Courtesy makes even a quick visit feel more comfortable."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would remember the welcome as much as the building."
+        }
+      ]
+    },
+    {
+      "id": 4003,
+      "key": "hoenn_callback_pokerus_explanation",
+      "subject": "A nurse explains a possible Pokerus infection and the limited knowledge of its microscopic life-forms and reported growth effect.",
+      "sources": {
+        "gText_PokerusExplanation": {
+          "path": "data/event_scripts.s",
+          "text": "Your POK\u00e9MON may be infected with\\nPOK\u00e9RUS.\\pLittle is known about the POK\u00e9RUS\\nexcept that they are microscopic life-\\lforms that attach to POK\u00e9MON.\\pWhile infected, POK\u00e9MON are said to\\ngrow exceptionally well.$",
+          "sha256": "de59f804d2399960e32dac415667053edf831102edd98c724d87ea4ddc00ac34"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "surprised",
+          "text": "Tiny life-forms with a big effect. Our partner has become even more surprising."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A fascinating observation. I appreciate that the nurse stated what remains uncertain."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good that she told us. Keep an eye on our partner."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "That is unexpected. I would want to know how our friend is feeling."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I am glad someone knowledgeable explained what they noticed."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A very small discovery has made our familiar companion newly mysterious."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The microscopic world has made a rather conspicuous entrance."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Something we cannot see can still change a great deal. Remarkable."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "There are lives within the little lives we already know."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A surprising detail does not change how carefully we should treat our partner."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would ask what the nurse has observed in other Pokemon."
+        }
+      ]
+    },
+    {
+      "id": 4004,
+      "key": "hoenn_callback_shop_farewell",
+      "subject": "A shopkeeper or service clerk politely ends the visit with an invitation to return.",
+      "sources": {
+        "gText_PleaseComeAgain": {
+          "path": "data/scripts/mart_clerk.inc",
+          "text": "Please come again!$",
+          "sha256": "7407ab471e1127703588561bfdc114327191c0069b2e2dcfcfbd41b4b31e9cce"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A cheerful goodbye. We can come back when the next little errand finds us."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A pleasant conclusion to the visit. The service remains available."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "All done here. Thank them and move on."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "It is nice leaving with a welcome for another day."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Friendly service makes an ordinary errand a little better."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Our business concludes with a courteous invitation for the sequel."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A tidy farewell, free of any obligation to keep browsing."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Useful place to remember if we need something later."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A small kindness can sit comfortably inside an ordinary goodbye."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Good manners are always a lovely final touch."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would remember a place that made the visit feel easy."
+        }
+      ]
+    },
+    {
+      "id": 4005,
+      "key": "hoenn_callback_gift_storage_full",
+      "subject": "A shared gift refusal reports that Pokemon boxes are full and cannot receive another partner.",
+      "sources": {
+        "gText_NoMoreRoomForPokemon": {
+          "path": "data/text/pc_transfer.inc",
+          "text": "There's no more room for POK\u00e9MON!\\pThe POK\u00e9MON BOXES are full and\\ncan't accept any more!$",
+          "sha256": "1f9233dd253e2a994b352c4797b868fb58df1052cabcd45f278118500f1f909b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "sad",
+          "text": "There is no proper space for a new friend yet. We should sort that first."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Available care space needs checking before another Pokemon can be accepted."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Make room before taking on another partner."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I would want a place ready before welcoming anyone new."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A new partner deserves more than being squeezed into the last gap."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Our hoped-for new arrival must wait for suitable accommodation."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The practical arrangements have caught up with our enthusiasm."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A capacity problem should be solved before repeating the handoff."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Make a little room with care for those already with us."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A proper welcome begins with an actual place to belong."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would make the necessary space before asking to try again."
+        }
+      ]
+    },
+    {
+      "id": 4006,
+      "key": "hoenn_callback_secret_power_room",
+      "subject": "A traveler explains using Secret Power at suitable trees or indented rock walls to make a personal base, then leaves.",
+      "sources": {
+        "Route111_Text_ExplainSecretPower": {
+          "path": "data/scripts/secret_power_tm.inc",
+          "text": "Find a big tree that looks like it might\\ndrop some vines.\\pUse SECRET POWER in front of the tree.\\nSome vines should get free and drop\\ldown, so you can climb the tree.\\pYou'll find a lot of space for putting\\nyour favorite things.\\pIt'll be your own secret room\u2026\\nA SECRET BASE!\\pYou should make one, too.\\pAnother thing, you don't always have\\nto make your SECRET BASE in a tree.\\pTry using SECRET POWER on rock walls\\nthat have small indents in them.\\pI'm going to look for other places, too.\\nOkay, bye!$",
+          "sha256": "9bdd000682520f98f66867039d80b77c15a5dfefdf7c4888b79faa95ae6e54ba"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A secret room with room for favorite things. I would start with a very good chair."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The surroundings offer clues to suitable sites. An interesting use of the move."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Check the place before settling in. A safe spot comes first."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A little quiet room of our own sounds rather lovely."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A comfortable corner to share with a partner could be wonderful."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An ordinary tree has just acquired the possibility of a private address."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A hidden room is an excellent way to keep the outside at a polite distance."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I would like to compare what different sites let us arrange inside."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A chosen place can become familiar through the small things we bring."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A whole space for personal taste? That is a very convincing invitation."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would enjoy seeing what makes each traveler choose their spot."
+        }
+      ]
+    },
+    {
+      "id": 4007,
+      "key": "hoenn_callback_records_thanks",
+      "subject": "The Record Corner attendant thanks a visitor after records have already been mixed and ends the conversation.",
+      "sources": {
+        "RecordCorner_Text_ThanksForComing": {
+          "path": "data/text/cable_club.inc",
+          "text": "Thanks for coming.$",
+          "sha256": "6da3b30f7d354f941b93895b2f4d94f1b036fc3506c378f5e29932ab1e3a8bd5"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A friendly thank-you after sharing. Nice to have a calm ending."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The exchange is complete. A courteous conclusion is welcome."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "All finished. Thank them before heading out."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I like a simple goodbye after meeting people."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A visit can be worthwhile without needing to last longer."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Our shared session concludes with a refreshingly modest farewell."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The records have mixed; we may now stop being socially coordinated."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Everything for this visit seems to be settled."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A small thanks can let the whole encounter rest kindly."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A graceful ending makes the visit feel well received."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would leave with a friendly word for the people who helped."
+        }
+      ]
+    },
+    {
+      "id": 4008,
+      "key": "hoenn_callback_wireless_adjustments",
+      "subject": "A link attendant apologizes because the Wireless Club is undergoing adjustments.",
+      "sources": {
+        "gText_SorryWirelessClubAdjustments": {
+          "path": "data/event_scripts.s",
+          "text": "I'm terribly sorry.\\nThe POK\u00e9MON WIRELESS CLUB is\\lundergoing adjustments now.$",
+          "sha256": "ccaf3b440283bbf99fa474d11752201697409076009765bbb67d0048d6e43030"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "sad",
+          "text": "The club is still getting its bits in order. We can try another day."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Work is still underway, so the service is not available yet."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Not ready. We can come back later."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "At least they explained why we cannot go in."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A little patience now may make a better visit later."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Our anticipated gathering has been postponed by necessary preparations."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The club has requested a little more time to become a club."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Better to finish the adjustments than invite people into a faulty setup."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "The invitation can wait until the place is ready to welcome us."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "An unfinished arrangement is best left to the people fixing it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would check back after they have had time to finish."
+        }
+      ]
+    },
+    {
+      "id": 4009,
+      "key": "hoenn_callback_battle_room_seats",
+      "subject": "A Colosseum attendant gives seating instructions and returns player control; battle is initiated separately at the seats.",
+      "sources": {
+        "BattleColosseum_2P_Text_TakePlaceStartBattle": {
+          "path": "data/text/cable_club.inc",
+          "text": "Please take your place and start\\nyour battle.$",
+          "sha256": "63e869efa46d0a3ddd3450f6a5725a1a999b8d92cb8d1eafd96a69f4ac3ad5eb"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "We have our instructions. The seats are waiting more patiently than I am."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Taking the designated positions should let both participants begin together."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Get into position. Make sure the other trainer is ready."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "A clear place to stand makes the start less awkward."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A fair start is easier when everyone knows where to go."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The competitors have been directed to their respective opening positions."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Our dramatic opening now requires the rather ordinary act of sitting down."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Clear positions help keep the start coordinated."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A little order gives both sides the same first moment."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "We should take our places without crowding the other participant."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would check that the other trainer heard the same instructions."
+        }
+      ]
+    },
+    {
+      "id": 4010,
+      "key": "hoenn_callback_trade_room_seats",
+      "subject": "A Trade Center attendant gives seating instructions and returns player control before a separate trade interaction.",
+      "sources": {
+        "TradeCenter_Text_TakeSeatStartTrade": {
+          "path": "data/text/cable_club.inc",
+          "text": "Please take your seat and start\\nyour trade.$",
+          "sha256": "591ee88151b387a0f6b66842f9b1ef30d14d4a6c6375e5d0cb16b4770054cc38"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A proper place to arrange the trade. Much better than juggling Pokeballs in a doorway."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Both participants should confirm the arrangement before starting."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Take the seats. Make sure the trade is understood."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I would want everyone comfortable with the choice first."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A careful exchange is worth taking a moment over."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The proposed exchange has acquired its own designated meeting place."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The paperwork of friendship apparently begins with a chair."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A clear setup should make the handoff easier to follow."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A new beginning deserves care from both sides."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A tidy arrangement helps everyone feel certain about the exchange."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would make sure both trainers know what they are agreeing to."
+        }
+      ]
+    },
+    {
+      "id": 4011,
+      "key": "hoenn_callback_record_room_wait",
+      "subject": "A Record Corner attendant asks visitors to take a seat and wait; field conversation ends before separate record-mixing input.",
+      "sources": {
+        "RecordCorner_Text_TakeSeatAndWait": {
+          "path": "data/text/cable_club.inc",
+          "text": "Please take your seat and wait.$",
+          "sha256": "88d2ae303834f7e563403cb23a8428b081055a3cdc42f4f472ba4b9380294647"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A seat and a little patience. Finally, instructions my feet can follow."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Waiting in the designated place should help the group coordinate."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Take a seat. Give everyone time to get ready."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I can manage a quiet wait much better with a clear place to be."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A small rest while everyone gathers sounds welcome."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Our gathering has entered the dignified sitting portion of proceedings."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A rare official instruction to sit quietly. I intend to excel."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A common waiting point makes the next step simpler for everyone."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A little pause can give a shared visit a gentler beginning."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "Patience is easier to wear when there is somewhere comfortable to sit."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would take the moment to see whether anyone else needs help."
+        }
+      ]
+    },
+    {
+      "id": 4012,
+      "key": "kanto_personal_object_mom_letter",
+      "subject": "Mom's attached letter cheers the player on and sends Running Shoes for the journey.",
+      "sources": {
+        "PewterCity_Text_RunningShoesLetterFromMom": {
+          "path": "data/kanto/maps/PewterCity_Frlg/scripts.inc",
+          "text": "There's a letter attached\u2026\\pDear {PLAYER},\\pHere is a pair of RUNNING SHOES\\nfor my beloved challenger.\\pRemember, I'll always cheer for\\nyou! Don't ever give up!\\pFrom Mom$",
+          "sha256": "4e9075fc8b3ed303039914a14ff24391434a4957d5989d11dfe593caaaf03cf7"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Shoes and a cheering section small enough to fold up beside them. She packed both kinds of support."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The practical gift and the written encouragement address rather different needs. Both were thoughtfully chosen."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "She wants us ready for the road, and to know somebody is on our side."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I would keep the letter somewhere dry, even after the shoes feel familiar."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A useful gift keeps helping all day. The note might help on the days the walking feels harder."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The expedition has received equipment and a beautifully unambiguous endorsement from home."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "A small piece of paper can make the distance back home feel less absolute."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "Good equipment matters. So does having someone who wants to see what you manage with it."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Her words can travel farther than her voice, tucked quietly into the journey."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "She has put love into something we can actually wear out through living. That is a lovely gift."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I wonder what ordinary moment will make us unfold the letter and read it again."
+        }
+      ]
+    },
+    {
+      "id": 4013,
+      "key": "kanto_personal_object_copycat_doll",
+      "subject": "A convincing Pokemon doll is briefly mistaken for a rare Pokemon.",
+      "sources": {
+        "SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll": {
+          "path": "data/kanto/maps/SaffronCity_CopycatsHouse_2F_Frlg/scripts.inc",
+          "text": "This is a rare POK\u00e9MON!\\nHuh? It's only a doll!$",
+          "sha256": "62ebfc177c061576b83d284680af84c622123b16d52f5d0a1dcb4a0bfbc4edbe"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "laughing",
+          "text": "An exceptionally successful doll. It has completed a whole encounter without moving a stitch."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "The resemblance was convincing enough to produce a mistaken first identification. Closer inspection helped."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "A good imitation. Leave it where its owner put it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "The little surprise makes me appreciate how carefully somebody made it."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Only a doll seems a little unfair after it worked that hard to fool us."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A remarkably accomplished understudy has secured the audience's attention while remaining entirely stuffed."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "A brief disappointment, followed by respect for a very persuasive piece of fabric."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "The proportions and details must be doing their job. That is effective design."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A small made thing has borrowed the shape of wonder for a moment."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "Only a doll? That is a rather good compliment to the person who designed it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I would like to know which detail fooled us before we looked closely."
+        }
+      ]
+    },
+    {
+      "id": 4014,
+      "key": "kanto_personal_object_lorelei_dolls",
+      "subject": "Lorelei's house contains a large collection of stuffed Pokemon dolls.",
+      "sources": {
+        "FourIsland_LoreleisHouse_Text_StuffedMonDollsGalore": {
+          "path": "data/kanto/maps/FourIsland_LoreleisHouse_Frlg/scripts.inc",
+          "text": "Stuffed POK\u00e9MON dolls galore!$",
+          "sha256": "095e08f06a845086f976865cc19534e6363caad1acda362448567acf8db083ed"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "That is a magnificent amount of soft company. A difficult day would have trouble finding an empty chair."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "A personal collection can reveal interests that a public role leaves little opportunity to show."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Her home. She is allowed somewhere comfortable to return to."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like seeing a room that holds something its owner simply enjoys."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A home should have room for delights that do not have to earn their place."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The formidable public figure has a private supporting cast made almost entirely of stuffing."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "An admirable refusal to make the living room uphold a severe reputation."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "There must be interesting little differences between all the designs collected here."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A strong person's quiet room can still be full of soft things."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "A collection this fondly kept says more than a carefully managed public image."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I wonder which doll started the collection, before it became a whole roomful of favourites."
+        }
+      ]
+    },
+    {
+      "id": 4015,
+      "key": "kanto_personal_object_museum_amber",
+      "subject": "The museum displays a clear gold-coloured piece of amber.",
+      "sources": {
+        "PewterCity_Museum_1F_Text_BeautifulPieceOfAmber": {
+          "path": "data/kanto/maps/PewterCity_Museum_1F_Frlg/scripts.inc",
+          "text": "There is a beautiful piece of\\nAMBER in a clear gold color.$",
+          "sha256": "9a6b544e4fc417eb71edf5cfdd38754afacc9b5dc9dd4098b8a277bdcba9cb7b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "It looks as though somebody persuaded a little sunlight to sit still for the museum."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Its clarity lets us appreciate the material itself, quite apart from anything it might contain."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Worth a quiet look. The display does not need us tapping on it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like the warmth of that colour against the stillness of the case."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A beautiful small thing can make a slow walk through a museum worthwhile."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A modest exhibit with an exceptionally accomplished lighting effect supplied by the object itself."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "A little gold-coloured stillness. It need not contain a grand secret to be worth keeping."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "The transparency is lovely. It would be interesting to see how the surface scatters light."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "An old piece of the world has kept a warm-looking corner of itself."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "A single clear colour can hold attention better than an overcrowded display."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I wonder how different it looks as the light shifts across the room."
+        }
+      ]
+    },
+    {
+      "id": 4016,
+      "key": "hoenn_lastgift_lanette_doll",
+      "subject": "Lanette is embarrassed by research clutter and gives a doll while asking for discretion; success ends after ignored decoration receipt.",
+      "sources": {
+        "Route114_LanettesHouse_Text_EverythingClutteredKeepThis": {
+          "path": "data/maps/Route114_LanettesHouse/scripts.inc",
+          "text": "LANETTE: Oh! {PLAYER}{KUN}!\\pI'm sorry everything is so cluttered\u2026\\nWhen I get engrossed in research,\\lthings end up this way\u2026\\pThis is embarrassing\u2026 Please keep\\nthis a secret in exchange for this.$",
+          "sha256": "0328ac21a427facc1c4232cf0c6e036e45786fa29dd4a63f8e9774e1fc095ce7"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Her research made a nest. The doll is lovely, but the secret was safe already."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A busy work area is hardly a scandal. No payment for discretion was necessary."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Her house, her business. We do not need a gift to keep quiet."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I would be embarrassed about my own clutter too. We can be kind."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A little mess happens when someone gets absorbed in work."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An earnest researcher has attempted to purchase our silence with a small doll."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The room contains evidence of thinking. A grave and entirely forgivable offense."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I recognize that particular arrangement of an unfinished project."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "We need not carry an awkward moment farther than this room."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A cluttered workspace is no reason to make someone feel exposed."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would thank her and put away any thought of making this a story."
+        }
+      ]
+    },
+    {
+      "id": 4017,
+      "key": "hoenn_lastgift_contest_prize",
+      "subject": "A receptionist congratulates the winning Pokemon and gives the pending prize; terminal on successful prize pickup.",
+      "sources": {
+        "LilycoveCity_ContestLobby_Text_PokemonWonWeHavePrize": {
+          "path": "data/scripts/contest_hall.inc",
+          "text": "Congratulations! Your POK\u00e9MON is the\\nCONTEST winner!\\pWe have your prize right here.\\nPlease, right this way!$",
+          "sha256": "434b3db5c7360b763838a043e24923b6034ce9079b8305a8d3a197b38c7281d4"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Our partner won! I hope they know the congratulations are for them too."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A result worth enjoying, and a well organized way to collect the reward."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good work from our partner. Give them some credit."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "Hearing the official congratulations makes it feel real again."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A little celebration for the partner who worked so hard."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The victory has acquired both formal recognition and something to carry home."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Our partner's triumph has successfully completed its administrative phase."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "The preparation paid off. It is nice to see that acknowledged."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A pleased little moment deserves time before the next challenge."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A prize is lovely, but that proud partner is the best part."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would remember our Pokemon's reaction when the congratulations arrive."
+        }
+      ]
+    },
+    {
+      "id": 4018,
+      "key": "hoenn_lastgift_shard_trade_done",
+      "subject": "The treasure hunter confirms a completed shard trade; terminal when the player has no further shards.",
+      "sources": {
+        "Route124_DivingTreasureHuntersHouse_Text_ItsADeal": {
+          "path": "data/maps/Route124_DivingTreasureHuntersHouse/scripts.inc",
+          "text": "It's a done deal!\\nUse that wisely!$",
+          "sha256": "e7703d504e30ec02a877717a99737d5be07a20055afaa577c4f5f20e2a9f13c1"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Our little shard has become something useful. A tidy treasure exchange."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The exchange is complete. We can consider how best to use the result."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Fair trade. Keep the new item safe."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I like leaving with the arrangement clearly settled."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A useful find feels even better when it leads to something we need."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The treasure's story has moved neatly into another pair of hands."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "One little fragment has negotiated an impressively complete future."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Good to know exactly what we gained from the exchange."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Something found can become the beginning of another useful thing."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "A well chosen exchange makes the search feel worthwhile."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would ask what the hunter plans to do with the shard."
+        }
+      ]
+    },
+    {
+      "id": 4019,
+      "key": "hoenn_lastgift_effort_ribbon",
+      "subject": "A woman recognizes the Pokemons extraordinary effort with an Effort Ribbon; root whitelists both named success receipts afterward.",
+      "sources": {
+        "SlateportCity_Text_PleaseGiveItThisEffortRibbon": {
+          "path": "data/maps/SlateportCity/scripts.inc",
+          "text": "Went for it stupendously!\\pAs its reward, please give it this\\nEFFORT RIBBON.$",
+          "sha256": "33fd138ada90aff3e923b1adb0ef26de2eb7988889971c03d4590aff8d78a890"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A ribbon for working so hard. Our friend deserves a very proud little moment."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Recognition for sustained effort is a meaningful kind of reward."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "They earned it. Make sure our partner gets the thanks."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "I like a ribbon that notices the work behind the result."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "All those little days of effort have become something they can wear."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The quiet accumulation of hard work has finally received a visible tribute."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A ribbon for persistence. I rather like that kind of ornament."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Consistent practice can be hard to see until someone recognizes it."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "Effort leaves its marks. This one happens to be lovely."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "That ribbon belongs with a proud partner and a proper compliment."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would love to remember how our Pokemon looks wearing it."
+        }
+      ]
+    },
+    {
+      "id": 4020,
+      "key": "hoenn_lastgift_shared_bag_full",
+      "subject": "A shared NPC gift or purchase failure says the bag is full; reply applies only where no later conversation replaces it.",
+      "sources": {
+        "gText_TooBadBagIsFull": {
+          "path": "data/text/obtain_item.inc",
+          "text": "Too bad!\\nThe BAG is full\u2026$",
+          "sha256": "4d89d91c821fe31cd319a0a725801f198ca9dc919132fddf954f1368a9954ce3"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The bag has reached its maximum amount of yes. Time to find one little space."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The immediate problem is capacity. A little sorting should resolve it."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Bag is full. Make room before trying again."
+        },
+        {
+          "voice": "ashe",
+          "expression": "neutral",
+          "text": "At least the reason is clear. We can sort it out quietly."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "We can clear a little room before asking for anything else."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "Our eager collecting has met the entirely reasonable limits of the bag."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The bag has declined further responsibility until we become more organized."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Check what we are carrying before repeating the same attempt."
+        },
+        {
+          "voice": "lume",
+          "expression": "neutral",
+          "text": "A little empty space can make the next small kindness easier to receive."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "An edit to the bag would improve the whole arrangement."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I would make room first, then return to finish what we started."
         }
       ]
     }

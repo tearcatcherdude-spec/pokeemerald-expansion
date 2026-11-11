@@ -18,3 +18,5 @@
     .global FourIsland_House2_Text_HoFStickerApplied
     .global FourIsland_House2_Text_EggStickerApplied
     .global FourIsland_House2_Text_VictoryStickerApplied
+    .global SlateportCity_Text_ReceivedEffortRibbon
+    .global SlateportCity_Text_PutEffortRibbonOnMon

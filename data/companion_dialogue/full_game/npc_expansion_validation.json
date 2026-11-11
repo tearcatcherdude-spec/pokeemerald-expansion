@@ -263,5 +263,28 @@
     "ci_conclusion": "success",
     "starter_run": 42950688983,
     "starter_conclusion": "success"
+  },
+  "apprentice_native_validation": {
+    "source_commit": "ee7eb78b70e1cf1fec891ba8b2182da117b6844d",
+    "report": {
+      "checks": [
+        "Actual apprentice first meeting, teaching agreement and level-selection menus retain the exact final thanks template through native printing and departure, with matching Silas reply and once-only EXP"
+      ],
+      "rom_sha256": "ccf013736cb116fef36c32b7a1a6fc8b5d06aeb2e7c24d905a0c16646691d0b9",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    }
+  },
+  "expanded_receipt_validation": {
+    "source_commit": "ee7eb78b70e1cf1fec891ba8b2182da117b6844d",
+    "report": {
+      "checks": [
+        "Actual Old Amber scientist handoff adds the item and retains his examination request through the custom receipt, with exact Silas reply and once-only EXP",
+        "All nineteen reviewed custom gift and gym-contact notices classify as exact system receipts",
+        "None of the nineteen receipts replaces an earlier unknown native message with a false known topic",
+        "Prepared Brawly TM explanation followed by contact receipt retains the exact Bulk Up topic, not a registration comment"
+      ],
+      "rom_sha256": "ccf013736cb116fef36c32b7a1a6fc8b5d06aeb2e7c24d905a0c16646691d0b9",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    }
   }
 }

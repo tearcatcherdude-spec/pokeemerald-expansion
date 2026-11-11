@@ -3119,7 +3119,6 @@
 	.global SixIsland_PokemonCenter_1F_Text_SomeMonsEvolveByTradingWithHeldItem
 	.global SixIsland_PokemonCenter_1F_Text_RivalImpossibleToGetAllMonsAroundHere
 	.global SixIsland_DottedHole_SapphireRoom_Text_SellToTeamRocketTellPassword
-	.global SixIsland_RuinValley_Text_CantFigureOutHowToGetInside
 	.global SixIsland_WaterPath_House1_Text_LoveItNeedItHeracross
 	.global SixIsland_WaterPath_House1_Text_WantToSeeBiggerOne
 	.global SixIsland_WaterPath_House1_Text_ItsXSizeSameAsBefore
@@ -4056,3 +4055,62 @@
 	.global gText_ApprenticeWinSpeechThanks13
 	.global gText_ApprenticeWinSpeechThanks14
 	.global gText_ApprenticeWinSpeechThanks15
+	.global PokemonJournal_Text_SpecialFeatureBrock
+	.global PokemonJournal_Text_SpecialFeatureMisty
+	.global PokemonJournal_Text_SpecialFeatureLtSurge
+	.global PokemonJournal_Text_SpecialFeatureErika
+	.global PokemonJournal_Text_SpecialFeatureKoga
+	.global PokemonJournal_Text_SpecialFeatureSabrina
+	.global PokemonJournal_Text_SpecialFeatureBlaine
+	.global PokemonJournal_Text_SpecialFeatureLorelei
+	.global PokemonJournal_Text_SpecialFeatureBruno
+	.global PokemonJournal_Text_SpecialFeatureAgatha
+	.global PokemonJournal_Text_SpecialFeatureLance
+	.global PokemonJournal_Text_SpecialFeatureProfOak
+	.global PokemonJournal_Text_SpecialFeatureDaisyOak
+	.global PokemonJournal_Text_SpecialFeatureMrFuji
+	.global SecretBase_Text_Trainer0DeclineBattle
+	.global SecretBase_Text_Trainer0PostBattle
+	.global SecretBase_Text_Trainer1DeclineBattle
+	.global SecretBase_Text_Trainer1PostBattle
+	.global SecretBase_Text_Trainer2DeclineBattle
+	.global SecretBase_Text_Trainer2PostBattle
+	.global SecretBase_Text_Trainer3DeclineBattle
+	.global SecretBase_Text_Trainer3PostBattle
+	.global SecretBase_Text_Trainer4DeclineBattle
+	.global SecretBase_Text_Trainer4PostBattle
+	.global SecretBase_Text_Trainer5DeclineBattle
+	.global SecretBase_Text_Trainer5PostBattle
+	.global SecretBase_Text_Trainer6DeclineBattle
+	.global SecretBase_Text_Trainer6PostBattle
+	.global SecretBase_Text_Trainer7DeclineBattle
+	.global SecretBase_Text_Trainer7PostBattle
+	.global SecretBase_Text_Trainer8DeclineBattle
+	.global SecretBase_Text_Trainer8PostBattle
+	.global SecretBase_Text_Trainer9DeclineBattle
+	.global SecretBase_Text_Trainer9PostBattle
+	.global SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2
+	.global SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview
+	.global SlateportCity_PokemonFanClub_Text_ThatsAllForInterview
+	.global LilycoveCity_ContestLobby_Text_ThatsAllForInterview
+	.global RusturfTunnel_Text_ThankYouLetsGoHomePeeko
+	.global gText_WeHopeToSeeYouAgain
+	.global gText_WeHopeToSeeYouAgain2
+	.global gText_PokerusExplanation
+	.global gText_PleaseComeAgain
+	.global gText_NoMoreRoomForPokemon
+	.global Route111_Text_ExplainSecretPower
+	.global RecordCorner_Text_ThanksForComing
+	.global gText_SorryWirelessClubAdjustments
+	.global BattleColosseum_2P_Text_TakePlaceStartBattle
+	.global TradeCenter_Text_TakeSeatStartTrade
+	.global RecordCorner_Text_TakeSeatAndWait
+	.global PewterCity_Text_RunningShoesLetterFromMom
+	.global SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll
+	.global FourIsland_LoreleisHouse_Text_StuffedMonDollsGalore
+	.global PewterCity_Museum_1F_Text_BeautifulPieceOfAmber
+	.global Route114_LanettesHouse_Text_EverythingClutteredKeepThis
+	.global LilycoveCity_ContestLobby_Text_PokemonWonWeHavePrize
+	.global Route124_DivingTreasureHuntersHouse_Text_ItsADeal
+	.global SlateportCity_Text_PleaseGiveItThisEffortRibbon
+	.global gText_TooBadBagIsFull

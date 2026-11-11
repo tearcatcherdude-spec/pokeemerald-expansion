@@ -1,5 +1,5 @@
-Current writing checkpoint (2026-11-11): 3,963 authored situations, bound to
-4,057 exact message labels, with eleven independently authored voices (43,593
+Current writing checkpoint (2026-11-11): 4,020 active authored situations (4,021 reserved IDs), bound to
+4,115 exact message labels, with eleven independently authored voices (44,220
 replies). Full-game coverage remains unfinished. Remaining work includes final
 service branches, objects and native/dynamic interactions. These counts describe
 authored bindings, not a percentage of NPCs or a completed playthrough.
@@ -187,3 +187,17 @@ intended game, source/artwork checks, successful builds/tests, native branch and
 service/object checks, old normal-save migration, persistence and repetition/EXP
 checks. Report remaining gaps honestly. Do not deliver another small batch as if
 it completed the full-game expansion.
+
+Retired bindings keep their original IDs and archived source/reply records.
+The runtime table uses NULL tombstones and exports no retired binding. Existing
+spent bits are never cleared or moved. The Ruin Valley scientist's first remark
+was retired after source review proved his following speech always supersedes it.
+The active count excludes that reserved tombstone.
+
+The 3,963-situation ROM passed an actual apprentice first meeting, teaching and
+level-selection sequence through native printing and departure, matching the final
+Silas reply and once-only EXP. Nineteen custom receipt identities and their
+unknown-source precedence passed, alongside the actual Old Amber handoff. The
+Warden's newer checked-add implementation and Effort Ribbon receipts await the
+next exact-ROM validation; a generic space check alone does not guarantee that a
+TM/HM stack can accept an additional item.

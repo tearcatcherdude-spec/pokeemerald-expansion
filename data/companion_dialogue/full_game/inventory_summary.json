@@ -11,7 +11,7 @@
   "source_texts_found": 9398,
   "distinct_raw_source_texts": 9024,
   "pilot_bound_labels": 45,
-  "authored_bound_labels": 3985,
+  "authored_bound_labels": 4043,
   "native_functions_requiring_review": 540,
   "missing_script_roots": 0
 }

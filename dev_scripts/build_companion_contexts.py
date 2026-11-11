@@ -72,11 +72,13 @@ def build():
             records.append(dict(voice=voice, expression=emotion, text=text))
         review.append(dict(id=context, key=row['key'], subject=row['subject'],
                            sources={n:blocks[n] for n in row['labels']}, replies=records))
+        if row.get('retired'):
+            review[-1].update(retired=row['retired'], retired_sources={n:blocks[n] for n in row['retired_sources']})
     output += ['static const struct ContextReply sContextReplies[][COMPANION_VOICE_COUNT] = {']
     for row in review:
         output.append(' { // '+str(row['id'])+' '+row['key'])
         for reply in row['replies']:
-            output.append('  {'+ctext(reply['text'], reply['voice'])+', '+str(EXPRESSIONS.index(reply['expression']))+'},')
+            output.append('  {NULL, 0},' if row.get('retired') else '  {'+ctext(reply['text'], reply['voice'])+', '+str(EXPRESSIONS.index(reply['expression']))+'},')
         output.append(' },')
     output += ['};', 'static const struct ContextMessage sContextMessages[] = {']
     output += [f' {{{label}, {context}}},' for label,context in bindings]
@@ -87,6 +89,7 @@ def build():
         '\n'.join(f'\t.global {label}' for label,_ in bindings)+'\n', encoding='utf-8')
     folder=ROOT/'data/companion_dialogue';folder.mkdir(exist_ok=True)
     (folder/'contexts.json').write_text(json.dumps(dict(voices=VOICES, capacity=12288, legacy_capacity=736, contexts=review), indent=2)+'\n', encoding='utf-8')
-    print(f'Built {len(review)} contexts, {len(bindings)} exact message labels, {11*len(review)} authored replies.')
+    active=sum(not r.get('retired') for r in review)
+    print(f'Built {active} active contexts ({len(review)} reserved IDs), {len(bindings)} exact message labels, {11*active} authored replies.')
 
 if __name__ == '__main__': build()
