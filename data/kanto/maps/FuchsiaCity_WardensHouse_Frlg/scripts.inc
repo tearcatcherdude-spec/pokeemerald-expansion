@@ -14,6 +14,8 @@ FuchsiaCity_WardensHouse_EventScript_Warden::
 	end
 
 FuchsiaCity_WardensHouse_EventScript_GiveGoldTeeth::
+	checkitemspace ITEM_HM04
+	goto_if_eq KANTO_VAR_RESULT, FALSE, FuchsiaCity_WardensHouse_EventScript_HM04NoRoom
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playfanfare MUS_OBTAIN_TMHM
 	message FuchsiaCity_WardensHouse_Text_GaveGoldTeethToWarden
@@ -30,6 +32,17 @@ FuchsiaCity_WardensHouse_EventScript_GiveGoldTeeth::
 	release
 	call Pip_EventScript_NPCReaction
 	end
+
+FuchsiaCity_WardensHouse_EventScript_HM04NoRoom::
+	msgbox FuchsiaCity_WardensHouse_Text_HM04NoRoom
+	release
+	call Pip_EventScript_NPCReaction
+	end
+
+FuchsiaCity_WardensHouse_Text_HM04NoRoom::
+	.string "There is no room for the WARDEN's\n"
+	.string "gift. You keep the GOLD TEETH\l"
+	.string "for now.$"
 
 FuchsiaCity_WardensHouse_EventScript_WardenThanksMale::
 	msgbox FuchsiaCity_WardensHouse_Text_ThanksSonGiveYouSomething

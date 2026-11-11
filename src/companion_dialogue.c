@@ -42,6 +42,14 @@ extern const u8 FortreeCity_Gym_Text_RegisteredWinona[];
 extern const u8 MossdeepCity_Gym_Text_RegisteredTateAndLiza[];
 extern const u8 SootopolisCity_Gym_1F_Text_RegisteredJuan[];
 
+extern const u8 PlayersHouse_1F_Text_RegisteredMom[];
+extern const u8 MatchCall_Text_RegisteredBirch[];
+extern const u8 FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden[];
+
+extern const u8 FourIsland_House2_Text_HoFStickerApplied[];
+extern const u8 FourIsland_House2_Text_EggStickerApplied[];
+extern const u8 FourIsland_House2_Text_VictoryStickerApplied[];
+
 static EWRAM_DATA bool8 sActive = FALSE;
 static EWRAM_DATA bool8 sOffering = FALSE;
 static EWRAM_DATA bool8 sFinishPending = FALSE;
@@ -182,6 +190,12 @@ bool32 CompanionDialogue_IsSystemReceipt(const u8 *message)
         FortreeCity_Gym_Text_RegisteredWinona,
         MossdeepCity_Gym_Text_RegisteredTateAndLiza,
         SootopolisCity_Gym_1F_Text_RegisteredJuan,
+        PlayersHouse_1F_Text_RegisteredMom,
+        MatchCall_Text_RegisteredBirch,
+        FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden,
+        FourIsland_House2_Text_HoFStickerApplied,
+        FourIsland_House2_Text_EggStickerApplied,
+        FourIsland_House2_Text_VictoryStickerApplied,
     };
     for (u32 i = 0; i < ARRAY_COUNT(receipts); i++)
         if (message == receipts[i])

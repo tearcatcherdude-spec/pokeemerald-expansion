@@ -35,6 +35,8 @@ def read_sources():
     for block in blocks.values():
         if re.search(r'\btower_dopartnermsg\s+PARTNER_MSGID_REJECT\b',block['body']):
             block['native_calls'].append('DoPartnerTrainerMessage')
+        for message in re.findall(r'\bapprentice_msg\s+TRUE,\s*(APPRENTICE_MSG_THANKS_\w+)',block['body']):
+            block['native_calls'].append('PrintApprenticeMessage:'+message)
     return blocks
 
 def collect_roots(blocks):
@@ -88,12 +90,33 @@ def native_text_edges():
     labels=re.findall(r'\bgBirchDexRatingText_\w+\b',array[1])
     assert len(labels)==len(set(labels))==21
     edges={'ShowPokedexRatingMessage': labels}
+    oak=re.search(r'static const u8 \*GetProfOaksRatingMessageByCount\([^)]*\)\s*\{(.*?)^\}',source,re.M|re.S)
+    assert oak is not None, 'Review changed Oak rating selector'
+    labels=re.findall(r'\breturn\s+(PokedexRating_Text_\w+)\s*;',oak[1])
+    assert labels==['PokedexRating_Text_LessThan'+str(i) for i in range(10,151,10)]+['PokedexRating_Text_Complete']
+    edges['GetProfOaksRatingMessage']=labels
     daycare=(ROOT/'src/daycare.c').read_text(encoding='utf-8')
     array=re.search(r'sCompatibilityMessages\[\]\s*=\s*\{(.*?)\};',daycare,re.S)
     assert array is not None, 'Review changed Day Care compatibility table'
     labels=re.findall(r'\bgDaycareText_\w+\b',array[1])
     assert len(labels)==len(set(labels))==4
     edges['ShowDaycareCompatibilityMessage']=labels
+    apprentice=(ROOT/'src/data/battle_frontier/apprentice.h').read_text(encoding='utf-8')
+    for message,table,column,prefix in [
+        ('THANKS_LVL_MODE','sApprenticeFirstMeetingTexts',3,'gText_ApprenticeLevelModeThanks'),
+        ('THANKS_MON','sApprenticeWhichMonTexts',1,'gText_ApprenticeMonThanks'),
+        ('THANKS_HELD_ITEM','sApprenticeHeldItemTexts',3,'gText_ApprenticeThanksHeldItem'),
+        ('THANKS_NO_HELD_ITEM','sApprenticeHeldItemTexts',2,'gText_ApprenticeThanksNoHeldItem'),
+        ('THANKS_MOVE','sApprenticeWhichMoveTexts',1,'gText_ApprenticeMoveThanks'),
+        ('THANKS_MON_FIRST','sApprenticeWhichMonFirstTexts',1,'gText_ApprenticeMonFirstThanks'),
+        ('THANKS_WIN_SPEECH','sApprenticePickWinSpeechTexts',1,'gText_ApprenticeWinSpeechThanks'),
+    ]:
+        array=re.search(re.escape(table)+r'(?:\[[^\]]*\])+\s*=\s*\{(.*?)^[ \t]*\};',apprentice,re.M|re.S)
+        assert array is not None, 'Review changed apprentice table '+table
+        entries=re.findall(r'\{([^{}]+)\}',array[1])
+        labels=[re.findall(r'\bgText_\w+\b',row)[column] for row in entries]
+        assert labels==[prefix+str(i) for i in range(16)], 'Review changed apprentice text selection '+table
+        edges['PrintApprenticeMessage:APPRENTICE_MSG_'+message]=labels
     frontier=(ROOT/'src/field_specials.c').read_text(encoding='utf-8')
     for function,table,count in [
         ('ShowFrontierGamblerGoMessage','sFrontierGamblerGoMessages',12),

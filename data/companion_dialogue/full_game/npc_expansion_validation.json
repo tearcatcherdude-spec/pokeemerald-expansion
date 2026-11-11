@@ -201,5 +201,67 @@
         "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
       }
     ]
+  },
+  "daycare_native_validation": {
+    "source_commit": "4966f44bb754e45f4b72c265bd2eba405d4abdbe",
+    "reports": [
+      {
+        "checks": [
+          "Actual Route117 Day Care conversation uses the exact GetAlongVeryWell template and matching Silas reply, with once-only EXP on a prepared parent pair"
+        ],
+        "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "Actual KantoFourIsland Day Care conversation uses the exact GetAlong template and matching Silas reply, with once-only EXP on a prepared parent pair"
+        ],
+        "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "Actual Route117 Day Care conversation uses the exact DontLikeOther template and matching Silas reply, with once-only EXP on a prepared parent pair"
+        ],
+        "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "Actual KantoFourIsland Day Care conversation uses the exact PlayOther template and matching Silas reply, with once-only EXP on a prepared parent pair"
+        ],
+        "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
+  },
+  "service_catalogue_validation": {
+    "source_commit": "4966f44bb754e45f4b72c265bd2eba405d4abdbe",
+    "context_range": [
+      3323,
+      3415
+    ],
+    "reply_count": 1012,
+    "report": {
+      "checks": [
+        "All 92 Pip authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Silas authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Kade authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Ashe authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Nico authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Riven authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Emi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Vera authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Lume authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Mochi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Zuri authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once"
+      ],
+      "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "ci_run": 42950689067,
+    "ci_conclusion": "success",
+    "starter_run": 42950688983,
+    "starter_conclusion": "success"
   }
 }

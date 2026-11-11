@@ -1,5 +1,5 @@
-Current writing checkpoint (2026-11-10): 3,415 authored situations, bound to
-3,496 exact message labels, with eleven independently authored voices (37,565
+Current writing checkpoint (2026-11-11): 3,963 authored situations, bound to
+4,057 exact message labels, with eleven independently authored voices (43,593
 replies). Full-game coverage remains unfinished. Remaining work includes final
 service branches, objects and native/dynamic interactions. These counts describe
 authored bindings, not a percentage of NPCs or a completed playthrough.
@@ -31,8 +31,11 @@ unknown one, prevents a receipt from replacing it. The 2,246-situation ROM passe
 unknown/dynamic invalidation, bag-full failure and interaction-reset checks.
 Actual Birch regional and National rating conversations also passed. The 3,323-situation ROM additionally passed actual Old Amber handoff and
 scheduled Roxanne call checks, thirteen exact receipt/unknown-precedence checks,
-and a prepared native Brawly TM/contact sequence. New Day Care and apprentice
-source hooks await their own compiled/native checks.
+and a prepared native Brawly TM/contact sequence. The 3,415-situation ROM passed all four actual Day Care compatibility outcomes
+across Hoenn and Four Island, plus all 1,012 replies in contexts 3,323-3,414
+through native text/portrait/EXP fixtures. Its full CI and starter regression
+passed. New writing and the additional three named receipts await another build.
+Apprentice terminal templates are still being authored and need native checks.
 
 The full-game companion expansion continues from tested PR #11 commit
 79ec91c79bd03c426c64f824415befdfe99d351d. It is one project with one intended

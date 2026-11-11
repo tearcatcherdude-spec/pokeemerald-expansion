@@ -717,3 +717,31 @@ ROWS.extend(KANTO_OBJECT_ROWS)
 
 from companion_kanto_final_audit import ROWS as KANTO_FINAL_AUDIT_ROWS
 ROWS.extend(KANTO_FINAL_AUDIT_ROWS)
+
+from companion_kanto_objects_extra import ROWS as KANTO_OBJECT_EXTRA_ROWS
+ROWS.extend(KANTO_OBJECT_EXTRA_ROWS)
+
+from companion_kanto_final_audit_extra import ROWS as KANTO_FINAL_AUDIT_EXTRA_ROWS
+ROWS.extend(KANTO_FINAL_AUDIT_EXTRA_ROWS)
+
+from companion_hoenn_objects import ROWS as HOENN_OBJECT_ROWS
+ROWS.extend(HOENN_OBJECT_ROWS)
+
+from companion_hoenn_final_services import ROWS as HOENN_FINAL_SERVICE_ROWS
+ROWS.extend(HOENN_FINAL_SERVICE_ROWS)
+
+from companion_kanto_lore_objects import ROWS as KANTO_LORE_OBJECT_ROWS
+ROWS.extend(KANTO_LORE_OBJECT_ROWS)
+from companion_kanto_service_endings import ROWS as KANTO_SERVICE_ENDING_ROWS
+ROWS.extend(KANTO_SERVICE_ENDING_ROWS)
+
+from companion_kanto_actor_followups import ROWS as KANTO_ACTOR_FOLLOWUP_ROWS
+ROWS.extend(KANTO_ACTOR_FOLLOWUP_ROWS)
+
+from companion_hoenn_link_endings import ROWS as HOENN_LINK_ENDING_ROWS
+ROWS.extend(HOENN_LINK_ENDING_ROWS)
+from companion_kanto_sticker_followups import ROWS as KANTO_STICKER_FOLLOWUP_ROWS
+ROWS.extend(KANTO_STICKER_FOLLOWUP_ROWS)
+
+from companion_hoenn_apprentice import ROWS as HOENN_APPRENTICE_ROWS
+ROWS.extend(HOENN_APPRENTICE_ROWS)

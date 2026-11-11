@@ -12,3 +12,9 @@
     .global FortreeCity_Gym_Text_RegisteredWinona
     .global MossdeepCity_Gym_Text_RegisteredTateAndLiza
     .global SootopolisCity_Gym_1F_Text_RegisteredJuan
+    .global PlayersHouse_1F_Text_RegisteredMom
+    .global MatchCall_Text_RegisteredBirch
+    .global FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden
+    .global FourIsland_House2_Text_HoFStickerApplied
+    .global FourIsland_House2_Text_EggStickerApplied
+    .global FourIsland_House2_Text_VictoryStickerApplied

@@ -501,6 +501,14 @@
   },
   {
     "labels": [
+      "gText_ApprenticeMonThanks6",
+      "gText_ApprenticeMoveThanks6"
+    ],
+    "text": "Ahhh!\\n{STR_VAR_1}, you say!\\lThanks for a most cool answer!\\pI guess that's about all I wanted\\nto ask you today.\\pLet's meet here again, okay?\\nThanks!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
       "OneIsland_KindleRoad_Text_MariaDefeat",
       "Route134_Text_JackDefeat"
     ],
@@ -1105,6 +1113,14 @@
       "Route117_PokemonDayCare_Text_WouldYouLikeUsToRaiseAMon"
     ],
     "text": "I'm the DAY-CARE LADY.\\pWe can raise POKéMON for you.\\pWould you like us to raise one?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "gText_ApprenticeMonThanks12",
+      "gText_ApprenticeMoveThanks12"
+    ],
+    "text": "If that {STR_VAR_1} is the best,\\nI'll do as you suggest!\\pWell, {PLAYER}, I have to roam free,\\nbut don't you forget about me.\\pSee you again, my smart friend!$",
     "approved_alias": false
   },
   {
@@ -2521,6 +2537,14 @@
       "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2"
     ],
     "text": "{STR_VAR_1}.\\n{STR_VAR_1}.\\pHmmm… She's not smiling at all.\\nMaybe WALDA is one serious child…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "gText_ApprenticeMonThanks4",
+      "gText_ApprenticeMoveThanks4"
+    ],
+    "text": "{STR_VAR_1}? That's great!\\pKnowing that you made the decision,\\n{PLAYER}{KUN}, I won't be so upset if\\lI lose.\\pOkay, I'll look to you for advice again.\\nBye!$",
     "approved_alias": false
   },
   {
