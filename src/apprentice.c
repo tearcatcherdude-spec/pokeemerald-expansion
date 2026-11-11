@@ -1,4 +1,5 @@
 #include "global.h"
+#include "companion_dialogue.h"
 #include "apprentice.h"
 #include "battle.h"
 #include "battle_tower.h"
@@ -880,6 +881,7 @@ static void PrintApprenticeMessage(void)
         return;
     }
 
+    CompanionDialogue_RecordNativeMessage(string);
     StringExpandPlaceholders(gStringVar4, string);
     AddTextPrinterForMessage(TRUE);
     CreateTask(Task_WaitForPrintingMessage, 1);

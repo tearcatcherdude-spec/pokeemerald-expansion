@@ -30,6 +30,7 @@ void GetDaycareMonNicknames(void);
 u8 GetDaycareState(void);
 u8 GetDaycareCompatibilityScore(struct DayCare *daycare);
 void SetDaycareCompatibilityString(void);
+void ShowDaycareCompatibilityMessage(void);
 bool8 NameHasGenderSymbol(const u8 *name, u8 genderRatio);
 void ShowDaycareLevelMenu(void);
 void ChooseSendDaycareMon(void);

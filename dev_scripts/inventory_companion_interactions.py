@@ -88,6 +88,12 @@ def native_text_edges():
     labels=re.findall(r'\bgBirchDexRatingText_\w+\b',array[1])
     assert len(labels)==len(set(labels))==21
     edges={'ShowPokedexRatingMessage': labels}
+    daycare=(ROOT/'src/daycare.c').read_text(encoding='utf-8')
+    array=re.search(r'sCompatibilityMessages\[\]\s*=\s*\{(.*?)\};',daycare,re.S)
+    assert array is not None, 'Review changed Day Care compatibility table'
+    labels=re.findall(r'\bgDaycareText_\w+\b',array[1])
+    assert len(labels)==len(set(labels))==4
+    edges['ShowDaycareCompatibilityMessage']=labels
     frontier=(ROOT/'src/field_specials.c').read_text(encoding='utf-8')
     for function,table,count in [
         ('ShowFrontierGamblerGoMessage','sFrontierGamblerGoMessages',12),

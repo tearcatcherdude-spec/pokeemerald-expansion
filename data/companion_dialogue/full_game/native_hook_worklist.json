@@ -5603,8 +5603,6 @@
   {
     "function": "SetDaycareCompatibilityString",
     "roots": [
-      "FourIsland_EventScript_DaycareMan",
-      "Route117_EventScript_DaycareMan",
       "Route117_MapScripts"
     ],
     "review_status": "unreviewed",
@@ -6343,6 +6341,20 @@
     "static_text_labels": []
   },
   {
+    "function": "ShowDaycareCompatibilityMessage",
+    "roots": [
+      "FourIsland_EventScript_DaycareMan",
+      "Route117_EventScript_DaycareMan"
+    ],
+    "review_status": "unreviewed",
+    "static_text_labels": [
+      "gDaycareText_GetAlongVeryWell",
+      "gDaycareText_GetAlong",
+      "gDaycareText_DontLikeOther",
+      "gDaycareText_PlayOther"
+    ]
+  },
+  {
     "function": "ShowDaycareLevelMenu",
     "roots": [
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman",
@@ -6412,10 +6424,8 @@
   {
     "function": "ShowFieldMessageStringVar4",
     "roots": [
-      "FourIsland_EventScript_DaycareMan",
       "KantoSevenIsland_House_Room2_MapScripts",
       "MauvilleCity_PokemonCenter_1F_EventScript_MauvilleOldMan",
-      "Route117_EventScript_DaycareMan",
       "SootopolisCity_MysteryEventsHouse_B1F_MapScripts"
     ],
     "review_status": "unreviewed",

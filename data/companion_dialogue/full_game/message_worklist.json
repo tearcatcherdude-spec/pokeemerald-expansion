@@ -16922,8 +16922,8 @@
     "roots": [
       "CeladonCity_Condominiums_3F_EventScript_Computer3"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3325,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -16936,8 +16936,8 @@
     "roots": [
       "CeladonCity_Condominiums_3F_EventScript_Computer1"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3323,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -16950,8 +16950,8 @@
     "roots": [
       "CeladonCity_Condominiums_3F_EventScript_Computer2"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3324,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -17174,8 +17174,8 @@
     "roots": [
       "CeladonCity_DepartmentStore_3F_EventScript_TV1"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3327,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -17244,8 +17244,8 @@
     "roots": [
       "CeladonCity_DepartmentStore_3F_EventScript_SuperNES"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3326,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -17272,8 +17272,8 @@
     "roots": [
       "CeladonCity_DepartmentStore_3F_EventScript_TV3"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3328,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -17426,8 +17426,8 @@
     "roots": [
       "CeladonCity_DepartmentStore_Roof_EventScript_VendingMachine"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3329,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -17566,8 +17566,8 @@
     "roots": [
       "CeladonCity_DepartmentStore_Roof_EventScript_VendingMachine"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3330,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -17580,8 +17580,8 @@
     "roots": [
       "CeladonCity_DepartmentStore_Roof_EventScript_VendingMachine"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3331,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -21088,8 +21088,8 @@
     "roots": [
       "CinnabarIsland_Gym_EventScript_BlaineFujiPhoto"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3332,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22544,8 +22544,8 @@
     "roots": [
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3409,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22572,8 +22572,8 @@
     "roots": [
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3409,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22614,8 +22614,8 @@
     "roots": [
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3410,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22642,8 +22642,8 @@
     "roots": [
       "FourIsland_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3405,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22656,8 +22656,8 @@
     "roots": [
       "FourIsland_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3406,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22684,8 +22684,8 @@
     "roots": [
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3408,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22712,8 +22712,8 @@
     "roots": [
       "FourIsland_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3407,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22796,8 +22796,8 @@
     "roots": [
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3412,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22838,8 +22838,8 @@
     "roots": [
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3413,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22852,8 +22852,8 @@
     "roots": [
       "FourIsland_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3404,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22880,8 +22880,8 @@
     "roots": [
       "FourIsland_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3403,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -22908,8 +22908,8 @@
     "roots": [
       "FourIsland_PokemonDayCare_EventScript_DaycareWoman"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3411,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -57898,8 +57898,8 @@
     "roots": [
       "PalletTown_ProfessorOaksLab_EventScript_ProfOak"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3367,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -57954,8 +57954,8 @@
     "roots": [
       "PalletTown_ProfessorOaksLab_EventScript_ProfOak"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3368,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -95957,8 +95957,8 @@
     "roots": [
       "Route3_EventScript_Youngster"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3340,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -95971,8 +95971,8 @@
     "roots": [
       "Route4_PokemonCenter_1F_EventScript_Boy"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3343,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96069,8 +96069,8 @@
     "roots": [
       "Route4_PokemonCenter_1F_EventScript_Youngster"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3344,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96195,8 +96195,8 @@
     "roots": [
       "Route4_EventScript_Boy"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3341,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96223,8 +96223,8 @@
     "roots": [
       "Route4_EventScript_Woman"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3342,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96237,8 +96237,8 @@
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3409,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96251,8 +96251,8 @@
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3409,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96265,8 +96265,8 @@
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3414,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96279,8 +96279,8 @@
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3408,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96335,8 +96335,8 @@
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3413,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96405,8 +96405,8 @@
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3412,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -96433,8 +96433,8 @@
     "roots": [
       "Route5_PokemonDayCare_EventScript_DaycareMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3411,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119178,8 +119178,8 @@
     "roots": [
       "FourIsland_House1_EventScript_BodySlamTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3381,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119192,8 +119192,8 @@
     "roots": [
       "FourIsland_House1_EventScript_BodySlamTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3382,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119422,8 +119422,8 @@
     "roots": [
       "CeladonCity_DepartmentStore_3F_EventScript_CounterTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3379,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119436,8 +119436,8 @@
     "roots": [
       "CeladonCity_DepartmentStore_3F_EventScript_CounterTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3380,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119562,8 +119562,8 @@
     "roots": [
       "VictoryRoad_2F_EventScript_DoubleEdgeTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3369,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119576,8 +119576,8 @@
     "roots": [
       "VictoryRoad_2F_EventScript_DoubleEdgeTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3370,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119730,8 +119730,8 @@
     "roots": [
       "MtEmber_Exterior_EventScript_ExplosionTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3393,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119744,8 +119744,8 @@
     "roots": [
       "MtEmber_Exterior_EventScript_ExplosionTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3394,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119786,8 +119786,8 @@
     "roots": [
       "TwoIsland_CapeBrink_House_EventScript_StarterTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3401,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -119947,8 +119947,8 @@
     "roots": [
       "TwoIsland_CapeBrink_House_EventScript_StarterTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3400,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120019,8 +120019,8 @@
     "roots": [
       "TwoIsland_CapeBrink_House_EventScript_StarterTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3399,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120033,8 +120033,8 @@
     "roots": [
       "Route4_EventScript_MegaKickTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3377,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120047,8 +120047,8 @@
     "roots": [
       "Route4_EventScript_MegaKickTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3378,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120089,8 +120089,8 @@
     "roots": [
       "Route4_EventScript_MegaPunchTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3375,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120103,8 +120103,8 @@
     "roots": [
       "Route4_EventScript_MegaPunchTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3376,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120145,8 +120145,8 @@
     "roots": [
       "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_MetronomeTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3383,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120159,8 +120159,8 @@
     "roots": [
       "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_MetronomeTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3384,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120201,8 +120201,8 @@
     "roots": [
       "SaffronCity_CopycatsHouse_2F_EventScript_Copycat"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3395,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120215,8 +120215,8 @@
     "roots": [
       "SaffronCity_CopycatsHouse_2F_EventScript_Copycat"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3396,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120229,8 +120229,8 @@
     "roots": [
       "SaffronCity_CopycatsHouse_2F_EventScript_Copycat"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3396,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120521,8 +120521,8 @@
     "roots": [
       "TwoIsland_CapeBrink_House_EventScript_StarterTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3398,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120762,8 +120762,8 @@
     "roots": [
       "RockTunnel_B1F_EventScript_RockSlideTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3373,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120776,8 +120776,8 @@
     "roots": [
       "RockTunnel_B1F_EventScript_RockSlideTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3374,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120818,8 +120818,8 @@
     "roots": [
       "PewterCity_Museum_1F_EventScript_SeismicTossTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3385,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120832,8 +120832,8 @@
     "roots": [
       "PewterCity_Museum_1F_EventScript_SeismicTossTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3386,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120946,8 +120946,8 @@
     "roots": [
       "CeladonCity_EventScript_SoftboiledTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3387,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -120960,8 +120960,8 @@
     "roots": [
       "CeladonCity_EventScript_SoftboiledTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3388,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -121031,8 +121031,8 @@
     "roots": [
       "FuchsiaCity_EventScript_SubstituteTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3389,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -121045,8 +121045,8 @@
     "roots": [
       "FuchsiaCity_EventScript_SubstituteTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3390,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -121087,8 +121087,8 @@
     "roots": [
       "SevenIsland_EventScript_SwordsDanceTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3391,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -121101,8 +121101,8 @@
     "roots": [
       "SevenIsland_EventScript_SwordsDanceTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3392,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -121232,8 +121232,8 @@
     "roots": [
       "TwoIsland_CapeBrink_House_EventScript_StarterTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3402,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -121321,8 +121321,8 @@
     "roots": [
       "SilphCo_2F_EventScript_ThunderWaveTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3371,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -121335,8 +121335,8 @@
     "roots": [
       "SilphCo_2F_EventScript_ThunderWaveTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3372,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -121636,8 +121636,8 @@
     "roots": [
       "TwoIsland_CapeBrink_House_EventScript_StarterTutor"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3397,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -123751,8 +123751,8 @@
     "roots": [
       "TrainerTower_Lobby_EventScript_BaldingMan"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3345,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -123849,8 +123849,8 @@
     "roots": [
       "TrainerTower_Lobby_EventScript_CooltrainerF"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3346,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -129255,8 +129255,8 @@
     "roots": [
       "ViridianForest_EventScript_Anthony"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3333,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -129325,8 +129325,8 @@
     "roots": [
       "ViridianForest_EventScript_Charlie"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3335,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -129381,8 +129381,8 @@
     "roots": [
       "ViridianForest_EventScript_Doug"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3336,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -129395,8 +129395,8 @@
     "roots": [
       "ViridianForest_EventScript_Youngster"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3339,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -129423,8 +129423,8 @@
     "roots": [
       "ViridianForest_EventScript_Boy"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3334,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -129465,8 +129465,8 @@
     "roots": [
       "ViridianForest_EventScript_Rick"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3337,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -129507,8 +129507,8 @@
     "roots": [
       "ViridianForest_EventScript_Sammy"
     ],
-    "status": "needs_semantic_review",
-    "authored_context": null,
+    "status": "authored_binding",
+    "authored_context": 3338,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"
@@ -132150,6 +132150,74 @@
     ],
     "status": "needs_semantic_review",
     "authored_context": null,
+    "proposed_context": null,
+    "final_message_eligibility": "unreviewed",
+    "native_printer_eligibility": "unreviewed"
+  },
+  {
+    "label": "gDaycareText_DontLikeOther",
+    "path": "src/strings.c",
+    "text": "The two don't seem to like\\neach other much.",
+    "sha256": "eda5f0bfce84130c96e0c2a9893ab222ad2475c64752b61a93be0105e5d524c7",
+    "source_kind": "c_global",
+    "compilation_eligibility": "requires_review",
+    "roots": [
+      "FourIsland_EventScript_DaycareMan",
+      "Route117_EventScript_DaycareMan"
+    ],
+    "status": "authored_binding",
+    "authored_context": 3349,
+    "proposed_context": null,
+    "final_message_eligibility": "unreviewed",
+    "native_printer_eligibility": "unreviewed"
+  },
+  {
+    "label": "gDaycareText_GetAlong",
+    "path": "src/strings.c",
+    "text": "The two seem to get along.",
+    "sha256": "6e184893e96371b23eca73775d88b95df333255a84d05d1ab4929e21dcc19732",
+    "source_kind": "c_global",
+    "compilation_eligibility": "requires_review",
+    "roots": [
+      "FourIsland_EventScript_DaycareMan",
+      "Route117_EventScript_DaycareMan"
+    ],
+    "status": "authored_binding",
+    "authored_context": 3348,
+    "proposed_context": null,
+    "final_message_eligibility": "unreviewed",
+    "native_printer_eligibility": "unreviewed"
+  },
+  {
+    "label": "gDaycareText_GetAlongVeryWell",
+    "path": "src/strings.c",
+    "text": "The two seem to get along\\nvery well.",
+    "sha256": "831f9e92b909a4e762a902a7ef8be604cffc0b3b232f6518d832884ff4bf59d8",
+    "source_kind": "c_global",
+    "compilation_eligibility": "requires_review",
+    "roots": [
+      "FourIsland_EventScript_DaycareMan",
+      "Route117_EventScript_DaycareMan"
+    ],
+    "status": "authored_binding",
+    "authored_context": 3347,
+    "proposed_context": null,
+    "final_message_eligibility": "unreviewed",
+    "native_printer_eligibility": "unreviewed"
+  },
+  {
+    "label": "gDaycareText_PlayOther",
+    "path": "src/strings.c",
+    "text": "The two prefer to play with other\\nPOKéMON than each other.",
+    "sha256": "6dd1baea5d0b6892677cfce35dc478f064e7013db5613cae1940fa55a5a4eec3",
+    "source_kind": "c_global",
+    "compilation_eligibility": "requires_review",
+    "roots": [
+      "FourIsland_EventScript_DaycareMan",
+      "Route117_EventScript_DaycareMan"
+    ],
+    "status": "authored_binding",
+    "authored_context": 3350,
     "proposed_context": null,
     "final_message_eligibility": "unreviewed",
     "native_printer_eligibility": "unreviewed"

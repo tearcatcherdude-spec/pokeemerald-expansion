@@ -176,5 +176,30 @@
         "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
       }
     ]
+  },
+  "custom_receipt_validation": {
+    "source_commit": "05ea3322c8c55db007efb5c39f7ff7e6abddfef0",
+    "reports": [
+      {
+        "checks": [
+          "Actual Old Amber scientist handoff adds the item and retains his examination request through the custom receipt, with exact Silas reply and once-only EXP",
+          "All thirteen reviewed custom gift and gym-contact notices classify as exact system receipts",
+          "None of the thirteen receipts replaces an earlier unknown native message with a false known topic",
+          "Prepared Brawly TM explanation followed by contact receipt retains the exact Bulk Up topic, not a registration comment"
+        ],
+        "rom_sha256": "d6543d117dd86c098c625a4e24ca92759561bb8fc295028e8374ab86ad619d97",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "The actual museum map-frame introduction finishes its messages and actor turns before offering the exact reply, with portrait/controls cleanup and once-only EXP",
+          "An actual scheduled Roxanne call triggered by a physical step retains its final registration source and offers the matching reply only after the call ends",
+          "Only when asked suppresses the automatic map-frame prompt while actual companion-menu Talk retains the exact scene and prints Emi perspective",
+          "Silent suppresses map-frame replies without spending a fresh voice history, awarding EXP, removing the follower or leaving field controls locked"
+        ],
+        "rom_sha256": "d6543d117dd86c098c625a4e24ca92759561bb8fc295028e8374ab86ad619d97",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
   }
 }

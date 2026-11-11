@@ -1,5 +1,5 @@
-Current writing checkpoint (2026-11-10): 3,323 authored situations, bound to
-3,396 exact message labels, with eleven independently authored voices (36,553
+Current writing checkpoint (2026-11-10): 3,415 authored situations, bound to
+3,496 exact message labels, with eleven independently authored voices (37,565
 replies). Full-game coverage remains unfinished. Remaining work includes final
 service branches, objects and native/dynamic interactions. These counts describe
 authored bindings, not a percentage of NPCs or a completed playthrough.
@@ -29,8 +29,10 @@ Standalone successful item notices can now provide their own authored topic when
 they are the first field message. Any earlier NPC/dynamic message, including an
 unknown one, prevents a receipt from replacing it. The 2,246-situation ROM passed actual Potion pickup, receipt precedence,
 unknown/dynamic invalidation, bag-full failure and interaction-reset checks.
-Actual Birch regional and National rating conversations also passed. Newly
-added custom gift/contact receipts await the next compiled ROM checks.
+Actual Birch regional and National rating conversations also passed. The 3,323-situation ROM additionally passed actual Old Amber handoff and
+scheduled Roxanne call checks, thirteen exact receipt/unknown-precedence checks,
+and a prepared native Brawly TM/contact sequence. New Day Care and apprentice
+source hooks await their own compiled/native checks.
 
 The full-game companion expansion continues from tested PR #11 commit
 79ec91c79bd03c426c64f824415befdfe99d351d. It is one project with one intended

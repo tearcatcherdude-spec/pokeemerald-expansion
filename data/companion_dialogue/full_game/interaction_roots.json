@@ -36275,7 +36275,11 @@
       "DayCare_Text_TakeGoodCareOfIt",
       "DayCare_Text_YouHaveNoRoomForIt",
       "DayCare_Text_YourMonIsDoingFine",
-      "DayCare_Text_YourMonsAreDoingFine"
+      "DayCare_Text_YourMonsAreDoingFine",
+      "gDaycareText_DontLikeOther",
+      "gDaycareText_GetAlong",
+      "gDaycareText_GetAlongVeryWell",
+      "gDaycareText_PlayOther"
     ],
     "native_calls": [
       "CalculatePlayerPartyCount",
@@ -36285,8 +36289,7 @@
       "RejectEggFromDayCare",
       "Script_PipBeginNPCReaction",
       "Script_PipEndNPCReaction",
-      "SetDaycareCompatibilityString",
-      "ShowFieldMessageStringVar4"
+      "ShowDaycareCompatibilityMessage"
     ],
     "script_found": true,
     "review_status": "unreviewed",
@@ -87151,7 +87154,11 @@
       "Route117_Text_TakeGoodCareOfIt",
       "Route117_Text_YouHaveNoRoomForIt",
       "Route117_Text_YourMonIsDoingFine",
-      "Route117_Text_YourMonsAreDoingFine"
+      "Route117_Text_YourMonsAreDoingFine",
+      "gDaycareText_DontLikeOther",
+      "gDaycareText_GetAlong",
+      "gDaycareText_GetAlongVeryWell",
+      "gDaycareText_PlayOther"
     ],
     "native_calls": [
       "CalculatePlayerPartyCount",
@@ -87160,8 +87167,7 @@
       "GetDaycareState",
       "GiveEggFromDaycare",
       "RejectEggFromDayCare",
-      "SetDaycareCompatibilityString",
-      "ShowFieldMessageStringVar4"
+      "ShowDaycareCompatibilityMessage"
     ],
     "script_found": true,
     "review_status": "unreviewed",

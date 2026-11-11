@@ -711,3 +711,9 @@ ROWS.extend(HOENN_POSTGAME_AUDIT_ROWS)
 
 from companion_hoenn_final_audit import ROWS as HOENN_FINAL_AUDIT_ROWS
 ROWS.extend(HOENN_FINAL_AUDIT_ROWS)
+
+from companion_kanto_objects import ROWS as KANTO_OBJECT_ROWS
+ROWS.extend(KANTO_OBJECT_ROWS)
+
+from companion_kanto_final_audit import ROWS as KANTO_FINAL_AUDIT_ROWS
+ROWS.extend(KANTO_FINAL_AUDIT_ROWS)
