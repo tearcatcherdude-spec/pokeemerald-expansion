@@ -67,8 +67,8 @@ TEST("All 64 variety trainers have valid independent parties and append-only def
         const struct Trainer *t = GetTrainerStructFromId(KANTO_TRAINER_BASE + i);
         EXPECT_EQ(SanitizeTrainerId(KANTO_TRAINER_BASE + i), KANTO_TRAINER_BASE + i);
         EXPECT_EQ(t->trainerPic, TRAINER_PIC_VARIETY_BARNABY + (i - 674) / 2);
-        EXPECT_GE(t->partySize, 2);
-        EXPECT_LE(t->partySize, 4);
+        EXPECT_GE((u32)t->partySize, 2);
+        EXPECT_LE((u32)t->partySize, 4);
         for (u32 j = 0; j < t->partySize; j++)
         {
             EXPECT_NE(t->party[j].species, SPECIES_NONE);
