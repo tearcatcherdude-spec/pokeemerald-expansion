@@ -23,22 +23,41 @@ Downloading and verifying the emulator does not establish compatibility:
 normal saving/reloading, battles, maps, dialogue, the history helper and reads
 beyond 32 MiB must be exercised in the packaged emulator before release.
 
-## Verified build
+## Verified graphics correction (2026-11-12)
 
-Commit `24a71a34ae2761c344b062e7f461385a258bfc10`, CI run `43241954371`,
-artifact `13955042688`: Emerald/release and alternate builds passed. Compiled
-Pip, cast, Kanto, trainer/music and history bridge checks passed.
-The ROM SHA-256 is `2e3a1b0580f3aab88a550dd1b19125d06ec375a49dde6e7989192921522a89a9`.
-It contains 33,550,856 linked bytes and 33,558,008 free bytes in the 64 MiB target.
-Linked content currently fits just below 32 MiB; padding is not counted as content.
-A separate small ARM program executed a real emulated CPU load from 0x0A000100
-and stored the expected word in EWRAM using this exact Celio release.
+Source commit `7decb9ac833d3afa5fa5e1ca50a9523e92366314`, CI run
+`43257783402`, artifact `13962981136`. Emerald, release and alternate builds
+passed, including compiled artwork/bridge and expanded-pointer checks. The full
+unit job was still running at delivery time.
+ROM SHA-256: `eb5509fc01cd4fb9cf560d7555ff04c6d5577017cef446c07be37ecb81b8f5b6`.
+There are 33,554,536 linked bytes and 33,554,328 free bytes. The game now contains
+104 real linked bytes beyond the ordinary 32 MiB cartridge limit.
 
-The exact game binary loaded a copied synthetic legacy normal-save fixture in
-Celio, wrote through native TrySavingData, reset, and continued. All 600 party
-bytes and the current region/map matched after reload. Screenshots were captured
-from native emulation. The history helper was supplied through --script.
-This is a prepared-fixture compatibility smoke test, not a continuous campaign,
-complete venue/tutor/battle regression, or proof of every history interaction.
-The full unit suite was still running when this package was prepared.
-No player-owned save or original emulator was modified.
+Celio maps the former first cartridge mirror at 0x0A000000 to expanded data.
+Effect-tagged script function pointers therefore use its remaining first-bank
+code mirror at 0x0C000000. The standard target retains 0x0A000000. A linker
+assertion keeps code in the first bank; the compiled verifier checked 232 tagged
+functions. Using the data bank as code previously misdirected map scripts into
+unrelated window routines, producing unsolicited empty windows during walking.
+
+Venue allocation now reserves resources used by every connected neighboring map
+and native tileset animations. The source validator preserves all 29 connected-map
+views around twelve venues, including the Rustboro lamp tiles.
+
+Native muted Celio checks used a copied player normal save and matching history:
+Pokémon Center entry/exit, Route 104 to Rustboro, walking past the lamps, and
+Rustboro to Route 116. Seven sampled views had no unexpected active windows;
+screenshots showed correct lamps and interiors and no unsolicited white/red boxes.
+Some starting positions were arranged for testing; this was not a continuous
+campaign playthrough.
+
+Native normal saving, cold reset and Continue preserved all 600 party bytes,
+region/map, released 1608-byte Pip/regional/cast record, 35580-byte PC/bonds/context
+record, and 56-byte companion history anchor. All 25 sampled linked data words
+beyond 32 MiB matched the compiled ROM. Tests were muted and normal CPU timing
+(overclock=1) is packaged; complete audio/stuttering regression remains pending,
+as do full venue, tutor-menu and companion-battle regressions.
+
+Desktop delivery archived the previous build and transferred its valid normal
+save and complete companion-history folder byte-for-byte. Private save paths,
+identities, hashes and snapshots are excluded from the repository.
