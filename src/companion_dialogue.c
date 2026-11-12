@@ -1,6 +1,5 @@
 #include "global.h"
 #include "companion_dialogue.h"
-#include "companion_packed_text.h"
 #include "pokemon_storage_system.h"
 #include "pip.h"
 #include "cast.h"
@@ -14,13 +13,9 @@
 #define DIALOGUE_MAGIC 0x474C4443
 #define NO_CONTEXT COMPANION_NO_CONTEXT
 
-struct ContextReply { u32 packed; u8 expression; };
+struct ContextReply { const u8 *text; u8 expression; };
 struct ContextMessage { const u8 *message; u16 context; };
 #include "data/companion_contexts.h"
-
-// Read-only catalogue metadata for compiled-data validation and future loaders.
-const struct { u32 magic, version; const void *replies; u32 contexts, voices, entrySize; }
-gCompanionPackedCatalogue = {0x50435458, 1, sContextReplies, ARRAY_COUNT(sContextReplies), COMPANION_VOICE_COUNT, sizeof(struct ContextReply)};
 
 extern const u8 Cozy_EventScript_Companion[], Cast_EventScript_Companion[];
 extern const u8 CompanionDialogue_EventScript_React[];
@@ -281,29 +276,20 @@ static bool32 Offer(void)
     }
     return sLegacy != NULL && Pip_TryOfferExact(sLegacy);
 }
-bool32 CompanionDialogue_CopyCatalogReply(u32 context, u32 voice, u8 *destination, u32 capacity, u8 *expression)
-{
-    const struct ContextReply *reply;
-    if (context >= ARRAY_COUNT(sContextReplies) || voice >= COMPANION_VOICE_COUNT) return FALSE;
-    reply = &sContextReplies[context][voice];
-    if (!CompanionPackedText_Copy(reply->packed, destination, capacity)) return FALSE;
-    if (expression) *expression = reply->expression;
-    return TRUE;
-}
-
 static bool32 Say(void)
 {
     if (!SameSituation())
         return FALSE;
     if (sContext < ARRAY_COUNT(sContextReplies))
     {
-        u8 expression;
-        if (!CompanionDialogue_CopyCatalogReply(sContext, sVoice, gStringVar4, sizeof(gStringVar4), &expression))
+        const struct ContextReply *reply = &sContextReplies[sContext][sVoice];
+        if (reply->text == NULL)
             return FALSE;
         Cast_ClearPending(); // The new text supersedes any legacy offer payload.
         // ShowPortrait cancels old pending EXP; queue this observation after it.
         if (sVoice != 0)
-            Cast_ShowPortrait(sVoice - 1, expression);
+            Cast_ShowPortrait(sVoice - 1, reply->expression);
+        StringCopy(gStringVar4, reply->text);
         if (sVoice != 0)
         {
             if (gSaveBlock3Ptr->cast.spoken[sVoice - 1] < 255)
@@ -389,7 +375,6 @@ void Script_CompanionDialogueBufferMode(struct ScriptContext *ctx)
 }
 
 #else
-bool32 CompanionDialogue_CopyCatalogReply(u32 context, u32 voice, u8 *destination, u32 capacity, u8 *expression) { return FALSE; }
 // This project feature belongs to Emerald. Keep the upstream alternate targets
 // buildable without linking Emerald-only cast, map or text symbols.
 void CompanionDialogue_Reset(void) {}

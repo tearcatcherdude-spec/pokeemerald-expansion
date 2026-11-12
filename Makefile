@@ -30,6 +30,7 @@ FILE_NAME := poke$(BUILD_NAME)
 BUILD_DIR := build
 
 # Compares the ROM to a checksum of the original - only makes sense using when non-modern
+CELIO_ROM   ?= 0
 COMPARE     ?= 0
 # Executes the Test Runner System that checks that all mechanics work as expected
 TEST         ?= 0
@@ -156,7 +157,7 @@ O_LEVEL ?= g
 else
 O_LEVEL ?= 2
 endif
-CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -std=gnu17
+CPPFLAGS := -DCELIO_ROM=$(CELIO_ROM) $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -D$(GAME_VERSION) -std=gnu17
 ifeq ($(RELEASE),1)
 	override CPPFLAGS += -DRELEASE
 	ifeq ($(USE_LTO_ON_RELEASE),1)
@@ -567,17 +568,22 @@ LD_SCRIPT := ld_script_modern.ld
 libagbsyscall:
 	@$(MAKE) -C libagbsyscall TOOLCHAIN=$(TOOLCHAIN) MODERN=1
 
+# Celio maps exactly 64 MiB contiguously; real hardware remains a separate target.
+ifeq ($(CELIO_ROM),1)
+CELIO_LDFLAGS := --defsym=__celio_rom_bytes=0x4000000
+endif
+
 # Enable LTO LDFLAGS if set
 ifneq ($(LTO),0)
 LDFLAGS := -march=armv4t -mabi=apcs-gnu -mcpu=arm7tdmi -Xlinker -Map=../../$(MAP) -Xlinker --print-memory-usage -Xassembler -meabi=5 -Xassembler -march=armv4t -Xassembler -mcpu=arm7tdmi -Xlinker --gc-sections
-LDFLAGS += -Xlinker -flto=auto
+LDFLAGS += -Xlinker -flto=auto $(if $(CELIO_LDFLAGS),-Xlinker $(CELIO_LDFLAGS))
 $(ELF): $(LD_SCRIPT) $(OBJS) libagbsyscall
 	@echo "cd $(OBJ_DIR) && $(ARMCC) $(LDFLAGS) -T ../../$< -o ../../$@ <objs> <libs>"
 	+@cd $(OBJ_DIR) && $(ARMCC) $(LDFLAGS) -T ../../$< -o ../../$@ $(OBJS_REL) $(LIB)
 	$(FIX) $@ -t"$(TITLE)" -c$(GAME_CODE) -m$(MAKER_CODE) -r$(REVISION) --silent
 else
 # Output .map file, memory usage readout and gc sections to clean-up unused data
-LDFLAGS = -Map ../../$(MAP) --print-memory-usage --gc-sections
+LDFLAGS = -Map ../../$(MAP) --print-memory-usage --gc-sections $(CELIO_LDFLAGS)
 $(ELF): $(LD_SCRIPT) $(OBJS) libagbsyscall
 	@cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ../../$<  -o ../../$@ $(OBJS_REL) $(LIB) | cat
 	@echo "cd $(OBJ_DIR) && $(LD) $(LDFLAGS) -T ../../$< -o ../../$@ <objs> <libs> | cat"
@@ -588,6 +594,9 @@ endif
 $(ROM): $(ELF)
 	$(OBJCOPY) -O binary $< $@
 	$(FIX) $@ -p --silent
+ifeq ($(CELIO_ROM),1)
+	python3 dev_scripts/finalize_celio_rom.py $@
+endif
 
 emerald: all
 firered: all

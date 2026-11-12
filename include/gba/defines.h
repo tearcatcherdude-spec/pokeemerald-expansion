@@ -35,7 +35,11 @@
 #define INTR_VECTOR    (*(void **)0x3007FFC)
 
 #define ROM_START 0x8000000
+#if CELIO_ROM
+#define ROM_END 0xC000000
+#else
 #define ROM_END 0xA000000
+#endif
 
 #define EWRAM_START 0x02000000
 #define EWRAM_END   (EWRAM_START + 0x40000)
