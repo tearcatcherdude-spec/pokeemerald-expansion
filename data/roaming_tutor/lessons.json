@@ -209,20 +209,20 @@
     {
       "move": "ASTONISH",
       "level": 5,
-      "trait": "SPIRIT",
-      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+      "trait": "AMBUSH",
+      "reason": "Use a sudden movement and a startling\ncry. Timing makes the surprise work.$"
     },
     {
       "move": "PURSUIT",
       "level": 5,
-      "trait": "SPIRIT",
-      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+      "trait": "AMBUSH",
+      "reason": "Read a target and approach its blind\nspot. Timing and movement do the work.$"
     },
     {
       "move": "FEINT_ATTACK",
       "level": 25,
-      "trait": "SPIRIT",
-      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+      "trait": "AMBUSH",
+      "reason": "Read a target and approach its blind\nspot. Timing and movement do the work.$"
     },
     {
       "move": "SHADOW_SNEAK",
@@ -739,6 +739,18 @@
       "level": 50,
       "trait": "WINGS",
       "reason": "Practice a carefully controlled\nspinning strike with your beak.$"
+    },
+    {
+      "move": "QUICK_ATTACK",
+      "level": 15,
+      "trait": "AGILE",
+      "reason": "Use your naturally quick body for\na brief, controlled burst of movement.$"
+    },
+    {
+      "move": "FAKE_OUT",
+      "level": 15,
+      "trait": "AMBUSH",
+      "reason": "A quick opening feint can startle.\nThe trick only works at the start.$"
     }
   ],
   "beldum_family": [

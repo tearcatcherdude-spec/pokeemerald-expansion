@@ -41,7 +41,8 @@ lessons are included. The species' normal level-up, TM/tutor and egg moves are
 excluded, as are already known moves.
 
 Ranking rewards type fit, appropriate physical/special strength, missing attack
-coverage and four different attack types where possible. Egg groups/types and
+coverage and four different attack types where possible. Physical ambush/fast-body techniques are separate from psychic shadow energy.
+A Fairy breeding group alone does not grant psychic techniques. Egg groups/types and
 explicit anatomy exceptions determine which techniques are plausible; this is
 a curated game policy, not a claim of mathematically optimal battle strategy.
 Beldum's pool covers Steel, Psychic, Dark, Ghost, Ground and Rock through magnetic

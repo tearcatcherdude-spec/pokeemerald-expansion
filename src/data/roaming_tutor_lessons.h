@@ -29,9 +29,9 @@ static const struct TutorLesson sGeneralLessons[] = {
     LESSON(PSYCHIC, 60, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),
     LESSON(SWIFT, 25, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),
     LESSON(SIGNAL_BEAM, 45, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),
-    LESSON(ASTONISH, 5, TUTOR_SPIRIT, "Channel a small burst of shadow\nor surprise. Control its shape first.$"),
-    LESSON(PURSUIT, 5, TUTOR_SPIRIT, "Channel a small burst of shadow\nor surprise. Control its shape first.$"),
-    LESSON(FEINT_ATTACK, 25, TUTOR_SPIRIT, "Channel a small burst of shadow\nor surprise. Control its shape first.$"),
+    LESSON(ASTONISH, 5, TUTOR_AMBUSH, "Use a sudden movement and a startling\ncry. Timing makes the surprise work.$"),
+    LESSON(PURSUIT, 5, TUTOR_AMBUSH, "Read a target and approach its blind\nspot. Timing and movement do the work.$"),
+    LESSON(FEINT_ATTACK, 25, TUTOR_AMBUSH, "Read a target and approach its blind\nspot. Timing and movement do the work.$"),
     LESSON(SHADOW_SNEAK, 15, TUTOR_SPIRIT, "Channel a small burst of shadow\nor surprise. Control its shape first.$"),
     LESSON(SPITE, 15, TUTOR_SPIRIT, "Channel a small burst of shadow\nor surprise. Control its shape first.$"),
     LESSON(OMINOUS_WIND, 35, TUTOR_SPIRIT, "Channel a small burst of shadow\nor surprise. Control its shape first.$"),
@@ -118,6 +118,8 @@ static const struct TutorLesson sGeneralLessons[] = {
     LESSON(SWEET_KISS, 35, TUTOR_CHARM, "Use expression and timing.\nConfidence is a perfectly sound tool.$"),
     LESSON(PECK, 5, TUTOR_WINGS, "Use your beak or flying head-first\nmotion in a small, controlled peck.$"),
     LESSON(DRILL_PECK, 50, TUTOR_WINGS, "Practice a carefully controlled\nspinning strike with your beak.$"),
+    LESSON(QUICK_ATTACK, 15, TUTOR_AGILE, "Use your naturally quick body for\na brief, controlled burst of movement.$"),
+    LESSON(FAKE_OUT, 15, TUTOR_AMBUSH, "A quick opening feint can startle.\nThe trick only works at the start.$"),
 };
 static const struct TutorLesson sMetalLessons[] = {
     LESSON(HARDEN, 5, 0, "Brace your existing metal shell.\nNo new limbs, just better structure.$"),

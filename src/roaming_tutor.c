@@ -17,6 +17,7 @@ enum TutorTechnique
     TUTOR_ELECTRIC = 1 << 9, TUTOR_PLANT = 1 << 10, TUTOR_WINGS = 1 << 11,
     TUTOR_BUG = 1 << 12, TUTOR_VENOM = 1 << 13, TUTOR_DRAGON = 1 << 14,
     TUTOR_CHARM = 1 << 15, TUTOR_THROW = 1 << 16,
+    TUTOR_AMBUSH = 1 << 17, TUTOR_AGILE = 1 << 18,
 };
 struct TutorLesson { u16 move; u8 level; u32 technique; const u8 *reason; };
 struct TutorProfile { u32 types; u32 techniques; };
@@ -56,7 +57,7 @@ static struct TutorProfile Profile(u32 species)
     if (HasType(species, TYPE_DARK) || HasEggGroup(species, EGG_GROUP_AMORPHOUS))
     { p.techniques |= TUTOR_SPIRIT; p.types |= TYPE_BIT(TYPE_DARK) | TYPE_BIT(TYPE_GHOST); }
     if (HasEggGroup(species, EGG_GROUP_FIELD) || HasEggGroup(species, EGG_GROUP_MONSTER) || HasEggGroup(species, EGG_GROUP_DRAGON))
-    { p.types |= TYPE_BIT(TYPE_DARK) | TYPE_BIT(TYPE_GHOST); p.techniques |= TUTOR_SPIRIT; }
+    { p.types |= TYPE_BIT(TYPE_DARK) | TYPE_BIT(TYPE_GHOST); p.techniques |= TUTOR_AMBUSH; }
     if (HasType(species, TYPE_STEEL) || HasType(species, TYPE_ROCK) || HasType(species, TYPE_GROUND) || HasEggGroup(species, EGG_GROUP_MINERAL))
     { p.techniques |= TUTOR_MINERAL; p.types |= TYPE_BIT(TYPE_STEEL) | TYPE_BIT(TYPE_ROCK) | TYPE_BIT(TYPE_GROUND); }
     if (HasEggGroup(species, EGG_GROUP_MONSTER) || HasType(species, TYPE_FIGHTING))
@@ -79,9 +80,13 @@ static struct TutorProfile Profile(u32 species)
     if (HasType(species, TYPE_POISON)) p.techniques |= TUTOR_VENOM;
     if (HasType(species, TYPE_DRAGON) || HasEggGroup(species, EGG_GROUP_DRAGON))
     { p.techniques |= TUTOR_DRAGON; p.types |= TYPE_BIT(TYPE_DRAGON); }
-    if (HasType(species, TYPE_FAIRY) || HasEggGroup(species, EGG_GROUP_FAIRY))
-    { p.techniques |= TUTOR_CHARM | TUTOR_MIND; p.types |= TYPE_BIT(TYPE_FAIRY) | TYPE_BIT(TYPE_PSYCHIC); }
+    if (HasEggGroup(species, EGG_GROUP_FAIRY))
+    { p.techniques |= TUTOR_CHARM; p.types |= TYPE_BIT(TYPE_FAIRY); }
+    if (HasType(species, TYPE_FAIRY))
+    { p.techniques |= TUTOR_CHARM | TUTOR_MIND; p.types |= TYPE_BIT(TYPE_PSYCHIC); }
     if (HasType(species, TYPE_FIGHTING) || HasEggGroup(species, EGG_GROUP_HUMAN_LIKE)) p.types |= TYPE_BIT(TYPE_FIGHTING) | TYPE_BIT(TYPE_DARK);
+    if (p.techniques & (TUTOR_BODY | TUTOR_SPIRIT)) p.techniques |= TUTOR_AMBUSH;
+    if ((p.techniques & TUTOR_BODY) && gSpeciesInfo[species].baseSpeed >= 55) p.techniques |= TUTOR_AGILE;
     if (p.techniques & TUTOR_MINERAL) p.techniques |= TUTOR_THROW;
     if (p.techniques & TUTOR_WINGS) { p.techniques |= TUTOR_THROW; p.types |= TYPE_BIT(TYPE_ROCK); }
     if (p.techniques & TUTOR_JAWS) p.types |= TYPE_BIT(TYPE_DARK);
