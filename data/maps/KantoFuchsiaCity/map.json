@@ -286,7 +286,7 @@
     },
     {
       "type": "object",
-      "local_id": "202",
+      "local_id": "LOCALID_VARIETY_TARO_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_TARO",
       "x": 3,
       "y": 8,

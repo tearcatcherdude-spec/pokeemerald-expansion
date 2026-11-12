@@ -138,7 +138,7 @@
     },
     {
       "type": "object",
-      "local_id": "183",
+      "local_id": "LOCALID_VARIETY_OPALINE_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_OPALINE",
       "x": 2,
       "y": 16,
@@ -153,7 +153,7 @@
     },
     {
       "type": "object",
-      "local_id": "202",
+      "local_id": "LOCALID_VARIETY_TARO_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_TARO",
       "x": 15,
       "y": 16,

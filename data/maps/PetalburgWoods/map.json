@@ -188,7 +188,7 @@
     },
     {
       "type": "object",
-      "local_id": "180",
+      "local_id": "LOCALID_VARIETY_MOSSWICK_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_MOSSWICK",
       "x": 34,
       "y": 35,

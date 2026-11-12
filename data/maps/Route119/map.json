@@ -632,7 +632,7 @@
     },
     {
       "type": "object",
-      "local_id": "188",
+      "local_id": "LOCALID_VARIETY_FABLE_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_FABLE",
       "x": 28,
       "y": 107,
@@ -647,7 +647,7 @@
     },
     {
       "type": "object",
-      "local_id": "206",
+      "local_id": "LOCALID_VARIETY_ZEPHYR_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_ZEPHYR",
       "x": 37,
       "y": 126,

@@ -212,7 +212,7 @@
     },
     {
       "type": "object",
-      "local_id": "184",
+      "local_id": "LOCALID_VARIETY_CINDER_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_CINDER",
       "x": 35,
       "y": 7,
@@ -227,7 +227,7 @@
     },
     {
       "type": "object",
-      "local_id": "194",
+      "local_id": "LOCALID_VARIETY_MONTY_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_MONTY",
       "x": 31,
       "y": 6,

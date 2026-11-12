@@ -533,7 +533,7 @@
     },
     {
       "type": "object",
-      "local_id": "179",
+      "local_id": "LOCALID_VARIETY_CLATTER_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_CLATTER",
       "x": 15,
       "y": 2,
@@ -548,7 +548,7 @@
     },
     {
       "type": "object",
-      "local_id": "189",
+      "local_id": "LOCALID_VARIETY_TAFFY_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_TAFFY",
       "x": 16,
       "y": 94,

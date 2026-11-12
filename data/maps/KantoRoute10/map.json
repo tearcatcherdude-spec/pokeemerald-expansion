@@ -183,7 +183,7 @@
     },
     {
       "type": "object",
-      "local_id": "200",
+      "local_id": "LOCALID_VARIETY_IDRIS_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_IDRIS",
       "x": 9,
       "y": 45,

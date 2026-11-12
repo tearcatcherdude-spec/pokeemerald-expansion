@@ -158,7 +158,7 @@
     },
     {
       "type": "object",
-      "local_id": "201",
+      "local_id": "LOCALID_VARIETY_FEN_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_FEN",
       "x": 21,
       "y": 37,

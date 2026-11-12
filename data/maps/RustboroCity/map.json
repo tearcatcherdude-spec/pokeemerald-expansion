@@ -289,7 +289,7 @@
     },
     {
       "type": "object",
-      "local_id": "186",
+      "local_id": "LOCALID_VARIETY_ECHO_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_ECHO",
       "x": 34,
       "y": 9,
@@ -304,7 +304,7 @@
     },
     {
       "type": "object",
-      "local_id": "201",
+      "local_id": "LOCALID_VARIETY_FEN_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_FEN",
       "x": 30,
       "y": 22,

@@ -172,7 +172,7 @@
     },
     {
       "type": "object",
-      "local_id": "180",
+      "local_id": "LOCALID_VARIETY_MOSSWICK_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_MOSSWICK",
       "x": 5,
       "y": 32,

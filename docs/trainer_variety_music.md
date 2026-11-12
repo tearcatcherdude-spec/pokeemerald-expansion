@@ -53,7 +53,7 @@ Coordinates below are map tiles, counting from zero. Levels are the team maximum
 | Roux | LilycoveCity (9, 9), Lv. 36 | KantoRoute16 (44, 13), Lv. 31 |
 | Hugo Boulder | Route112 (34, 49), Lv. 23 | KantoCeladonCity_Restaurant (4, 3), Lv. 29 |
 | Otis Crumb | SlateportCity (7, 22), Lv. 18 | KantoCeladonCity_Restaurant (6, 3), Lv. 30 |
-| Bastian Tide | Route109 (19, 55), Lv. 17 | KantoCeladonCity_Restaurant (8, 3), Lv. 29 |
+| Bastian Tide | Route109 (10, 8), Lv. 17 | KantoCeladonCity_Restaurant (8, 3), Lv. 29 |
 | Monty Mallow | MauvilleCity (31, 6), Lv. 23 | KantoCeladonCity_Restaurant (4, 5), Lv. 31 |
 | Florian Bloom | Route117 (54, 13), Lv. 22 | KantoCeladonCity_Restaurant (6, 5), Lv. 30 |
 | Orson Velvet | FallarborTown (2, 12), Lv. 25 | KantoCeladonCity_Restaurant (8, 5), Lv. 32 |
@@ -79,4 +79,4 @@ Integrated ROM compilation, compiled artwork/song-table verification, focused te
 
 Run `python dev_scripts/build_variety_music.py`, `python dev_scripts/build_variety_encounters.py`, then `python dev_scripts/build_companion_contexts.py`. The original sprite importer accepts the supplied ZIP and never executes archive code. Run `validate_trainer_variety.py` and all existing project validators before building. After compilation run `verify_trainer_variety_rom.py pokeemerald.gba pokeemerald.map`.
 
-The 674 preexisting trainer entries are retained; new entries append at 674–737. New actor local IDs B0–CF avoid the rare encounter D0–DF range and temporary cast/follower IDs. Art/picture IDs append after the existing Zuri entries. Palettes preserve ordered RGB555 colors; text palette fingerprints normalize line endings.
+The 674 preexisting trainer entries are retained; new entries append at 674–737. New actor IDs append after the existing templates on each map; named LOCALID_VARIETY constants resolve to those indices and remain below temporary cast/follower IDs. Art/picture IDs append after the existing Zuri entries. Palettes preserve ordered RGB555 colors; text palette fingerprints normalize line endings.

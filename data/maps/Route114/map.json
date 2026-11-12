@@ -393,7 +393,7 @@
     },
     {
       "type": "object",
-      "local_id": "187",
+      "local_id": "LOCALID_VARIETY_BRIAR_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_BRIAR",
       "x": 36,
       "y": 6,
@@ -408,7 +408,7 @@
     },
     {
       "type": "object",
-      "local_id": "207",
+      "local_id": "LOCALID_VARIETY_ELDEN_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_ELDEN",
       "x": 31,
       "y": 34,

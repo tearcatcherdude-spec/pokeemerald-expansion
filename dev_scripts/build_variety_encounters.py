@@ -37,6 +37,7 @@ def choose_position(name, ident, current, cafe_index):
         if p in forbidden or x<2 or y<2 or x>=l['width']-2 or y>=l['height']-2:continue
         if name=='Route104' and ((ident=='barnaby' and y<50) or (ident=='dahlia' and y>35)):continue
         if name=='Route115' and y<70:continue
+        if name=='Route109' and y>24:continue
         if name=='Route111' and y<105:continue
         if any(n not in f or n in blocked for n in neighbors(p)):continue
         if any(abs(x-o['x'])+abs(y-o['y'])<3 for o in current):continue
@@ -81,7 +82,7 @@ def main():
             m=maps[name];p,elevation=choose_position(name,ident,m['object_events'],cafe_index)
             if name=='KantoCeladonCity_Restaurant':cafe_index+=1
             x,y=p
-            actor={'type':'object','local_id':str(0xB0+i),'graphics_id':'OBJ_EVENT_GFX_VARIETY_'+u,
+            actor={'type':'object','local_id':'LOCALID_VARIETY_'+key,'graphics_id':'OBJ_EVENT_GFX_VARIETY_'+u,
                    'x':x,'y':y,'elevation':elevation,'movement_type':'MOVEMENT_TYPE_FACE_DOWN',
                    'movement_range_x':0,'movement_range_y':0,'trainer_type':'TRAINER_TYPE_NONE',
                    'trainer_sight_or_berry_tree_id':'0','script':'Variety_EventScript_'+key,'flag':'0'}
@@ -100,7 +101,7 @@ def main():
                 party.append(f'{species}\nLevel: {mon_level}\nIVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe\n')
             other=f'{u}_{"KANTO" if region=="hoenn" else "HOENN"}'
             scripts.append(f'Variety_EventScript_{key}::\n\tlock\n\tfaceplayer\n\tgoto_if_set (TRAINER_FLAGS_START + VARIETY_TRAINER_{key}), Variety_EventScript_{key}_Post\n\tgoto_if_unset (TRAINER_FLAGS_START + VARIETY_TRAINER_{other}), Variety_EventScript_{key}_Battle\n\tmsgbox Variety_Text_{u}_Reunion, MSGBOX_DEFAULT\nVariety_EventScript_{key}_Battle::\n\ttrainerbattle_single VARIETY_TRAINER_{key}, Variety_Text_{u}_Intro, Variety_Text_{u}_Defeat\nVariety_EventScript_{key}_Post::\n\tmsgbox Variety_Text_{u}_Post, MSGBOX_AUTOCLOSE\n\trelease\n\tend\n\n')
-            encounters.append({'id':key,'character':ident,'region':region,'map':name,'x':x,'y':y,'elevation':elevation,'level':level,'team':members,'trainer_data_id':trainer_id,'local_id':0xB0+i})
+            encounters.append({'id':key,'character':ident,'region':region,'map':name,'x':x,'y':y,'elevation':elevation,'level':level,'team':members,'trainer_data_id':trainer_id,'local_id':'LOCALID_VARIETY_'+key,'object_id':len(m['object_events'])})
         scripts += [text('Variety_Text_'+u+'_'+kind.title(),r[kind]) for kind in ('intro','defeat','post')]
         scripts.append(text('Variety_Text_'+u+'_Reunion',reunions[ident]))
     for name,m in maps.items():(ROOT/f'data/maps/{name}/map.json').write_text(json.dumps(m,indent=2)+'\n')

@@ -28,12 +28,16 @@ def main():
         for actor in added:
             p=actor['x'],actor['y']
             assert p in floor and actor['elevation']==floor[p]
+            assert re.fullmatch(r'LOCALID_VARIETY_[A-Z_]+',actor['local_id'])
             assert actor['trainer_type']=='TRAINER_TYPE_NONE' and actor['trainer_sight_or_berry_tree_id']=='0'
+            assert len(original['object_events'])+len(added)<0xF0
             assert sum(o['x']==p[0] and o['y']==p[1] for o in original['object_events']+added)==1
             adjacent=[n for n in neighbors(p) if n in floor and n not in blocked]
             assert adjacent,('Cannot talk to actor',path,p)
             reachable=component(floor,adjacent[0],blocked)
             assert len(reachable)>=30 and all(n in reachable for n in adjacent),('Actor cuts route',path,p)
+            if actor['script']=='Variety_EventScript_BASTIAN_HOENN':
+                assert p[1]<=24, 'Early beach encounter must not require Surf'
             assert not any((e['x'],e['y'])==p for kind in ('warp_events','coord_events','bg_events') for e in original[kind])
     ids=[r['trainer_data_id'] for r in encounters]
     assert ids==list(range(674,738)) and len(set(ids))==64

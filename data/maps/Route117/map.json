@@ -381,7 +381,7 @@
     },
     {
       "type": "object",
-      "local_id": "182",
+      "local_id": "LOCALID_VARIETY_SABLE_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_SABLE",
       "x": 2,
       "y": 10,
@@ -396,7 +396,7 @@
     },
     {
       "type": "object",
-      "local_id": "195",
+      "local_id": "LOCALID_VARIETY_FLORIAN_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_FLORIAN",
       "x": 54,
       "y": 13,

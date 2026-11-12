@@ -521,7 +521,7 @@
     },
     {
       "type": "object",
-      "local_id": "176",
+      "local_id": "LOCALID_VARIETY_BARNABY_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_BARNABY",
       "x": 32,
       "y": 63,
@@ -536,7 +536,7 @@
     },
     {
       "type": "object",
-      "local_id": "185",
+      "local_id": "LOCALID_VARIETY_DAHLIA_HOENN",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_DAHLIA",
       "x": 8,
       "y": 7,

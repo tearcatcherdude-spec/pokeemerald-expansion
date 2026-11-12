@@ -88,7 +88,7 @@
     },
     {
       "type": "object",
-      "local_id": "191",
+      "local_id": "LOCALID_VARIETY_HUGO_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_HUGO",
       "x": 4,
       "y": 3,
@@ -103,7 +103,7 @@
     },
     {
       "type": "object",
-      "local_id": "192",
+      "local_id": "LOCALID_VARIETY_OTIS_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_OTIS",
       "x": 6,
       "y": 3,
@@ -118,7 +118,7 @@
     },
     {
       "type": "object",
-      "local_id": "193",
+      "local_id": "LOCALID_VARIETY_BASTIAN_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_BASTIAN",
       "x": 8,
       "y": 3,
@@ -133,7 +133,7 @@
     },
     {
       "type": "object",
-      "local_id": "194",
+      "local_id": "LOCALID_VARIETY_MONTY_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_MONTY",
       "x": 4,
       "y": 5,
@@ -148,7 +148,7 @@
     },
     {
       "type": "object",
-      "local_id": "195",
+      "local_id": "LOCALID_VARIETY_FLORIAN_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_FLORIAN",
       "x": 6,
       "y": 5,
@@ -163,7 +163,7 @@
     },
     {
       "type": "object",
-      "local_id": "196",
+      "local_id": "LOCALID_VARIETY_ORSON_KANTO",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_ORSON",
       "x": 8,
       "y": 5,
