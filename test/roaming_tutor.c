@@ -107,3 +107,78 @@ TEST("Roaming tutor actual configured move power respects conservative level ban
         }
     }
 }
+
+TEST("Roaming tutor builds different extra-move menus for different species")
+{
+    const u16 species[] = {SPECIES_BELDUM, SPECIES_MAGIKARP, SPECIES_TOTODILE, SPECIES_CHARMANDER};
+    struct Pokemon mon;
+    u16 menus[4][4];
+    u32 a, b, i;
+    for (a = 0; a < ARRAY_COUNT(species); a++)
+    {
+        CreateMon(&mon, species[a], 25, 0x12345678, OTID_STRUCT_PRESET(123));
+        EXPECT_EQ(RoamingTutor_Offers(&mon, menus[a]), 4);
+    }
+    for (a = 0; a < 4; a++) for (b = a + 1; b < 4; b++)
+    {
+        bool32 different = FALSE;
+        for (i = 0; i < 4; i++) if (menus[a][i] != menus[b][i]) different = TRUE;
+        EXPECT(different);
+    }
+}
+
+TEST("Roaming tutor offers genuine extras rather than normal level TM tutor or egg moves")
+{
+    const u16 species[] = {SPECIES_BELDUM, SPECIES_MAGIKARP, SPECIES_TOTODILE, SPECIES_CHARMANDER,
+        SPECIES_PIKACHU, SPECIES_RALTS, SPECIES_GASTLY, SPECIES_GEODUDE, SPECIES_PIDGEY, SPECIES_EEVEE};
+    struct Pokemon mon;
+    u16 offers[4];
+    u32 s, level, i, j;
+    for (s = 0; s < ARRAY_COUNT(species); s++) for (level = 15; level <= 65; level += 10)
+    {
+        const struct LevelUpMove *normal = GetSpeciesLevelUpLearnset(species[s]);
+        const u16 *eggs = GetSpeciesEggMoves(species[s]);
+        CreateMon(&mon, species[s], level, 0x12345678, OTID_STRUCT_PRESET(123));
+        if (RoamingTutor_Offers(&mon, offers) != 4) continue;
+        for (i = 0; i < 4; i++)
+        {
+            EXPECT(!CanLearnTeachableMove(species[s], offers[i]));
+            for (j = 0; normal[j].move != LEVEL_UP_MOVE_END; j++) EXPECT(normal[j].move != offers[i]);
+            for (j = 0; eggs[j] != MOVE_UNAVAILABLE; j++) EXPECT(eggs[j] != offers[i]);
+            for (j = 0; j < 4; j++) EXPECT(GetMonData(&mon, MON_DATA_MOVE1 + j) != offers[i]);
+        }
+    }
+}
+
+TEST("Roaming tutor Beldum has steel psychic dark ghost ground and rock techniques across level bands")
+{
+    struct Pokemon mon;
+    u16 offers[4];
+    u32 level, i, types = 0;
+    for (level = 5; level <= 65; level++)
+    {
+        CreateMon(&mon, SPECIES_BELDUM, level, 0x12345678, OTID_STRUCT_PRESET(123));
+        EXPECT_EQ(RoamingTutor_Offers(&mon, offers), 4);
+        for (i = 0; i < 4; i++) types |= 1u << GetMoveType(offers[i]);
+    }
+    EXPECT(types & (1u << TYPE_STEEL)); EXPECT(types & (1u << TYPE_PSYCHIC));
+    EXPECT(types & (1u << TYPE_DARK)); EXPECT(types & (1u << TYPE_GHOST));
+    EXPECT(types & (1u << TYPE_GROUND)); EXPECT(types & (1u << TYPE_ROCK));
+}
+
+TEST("Roaming tutor never gives Magikarp imaginary fists wings or fire techniques")
+{
+    struct Pokemon mon;
+    u16 offers[4];
+    u32 level, i;
+    for (level = 5; level <= 100; level += 5)
+    {
+        CreateMon(&mon, SPECIES_MAGIKARP, level, 0x12345678, OTID_STRUCT_PRESET(123));
+        EXPECT_EQ(RoamingTutor_Offers(&mon, offers), 4);
+        for (i = 0; i < 4; i++)
+        {
+            EXPECT(offers[i] != MOVE_FIRE_PUNCH); EXPECT(offers[i] != MOVE_MACH_PUNCH);
+            EXPECT(GetMoveType(offers[i]) != TYPE_FIRE); EXPECT(GetMoveType(offers[i]) != TYPE_FLYING);
+        }
+    }
+}

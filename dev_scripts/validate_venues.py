@@ -1,3 +1,4 @@
+from asset_revision import verify_expected
 """Check installation boundaries, retained residents, routes and lesson safety."""
 import json,re,struct,hashlib
 from pathlib import Path
@@ -16,12 +17,12 @@ def main():
         oldattrs=[tileset(ol[k],split==640) for k in ['primary_tileset','secondary_tileset']]
         for i,(av,bv) in enumerate(zip(a,b)):
             if not (x<=i%l['width']<x+w and y<=i//l['width']<y+h):assert av==bv
-            if s.get('open_lot') and x<=i%l['width']<x+w and y<=i//l['width']<y+h:continue
+            if s.get('open_lot') and s.get('replacement_warp') is None and x<=i%l['width']<x+w and y<=i//l['width']<y+h:continue
             assert av&0xFC00==bv&0xFC00,('Collision/elevation changed',s['city'],i)
             am=av&1023;bm=bv&1023
             assert newattrs[am>=split][am%split if am<split else am-split]==oldattrs[bm>=split][bm%split if bm<split else bm-split],('Native behavior changed',s['city'],i)
         dx,dy=s['entrance']
-        if not s.get('open_lot'):assert a[dy*l['width']+dx]==b[dy*l['width']+dx]
+        if not s.get('open_lot') or s.get('replacement_warp') is not None:assert a[dy*l['width']+dx]==b[dy*l['width']+dx]
         else:
             assert a[dy*l['width']+dx]==(0x43D if split==640 else 0x421)
             # A complete, level, empty ring guarantees that the lot is bypassable.
@@ -40,7 +41,11 @@ def main():
         room=load(f'data/maps/{s["house"]}/map.json');oldroom=load(f'data/venues/originals/{s["original_house"]}.json')
         if s.get('open_lot'):
             assert load(f'data/maps/{s["original_house"]}/map.json')==oldroom
-            oldroom=dict(room) # New room has no displaced residents or original events.
+            if s.get('replacement_warp') is not None:
+                assert len(room['object_events'])==len(oldroom['object_events'])+2
+                assert [o['script'] for o in room['object_events'][:len(oldroom['object_events'])]]==[o['script'] for o in oldroom['object_events']]
+                oldroom=dict(oldroom,warp_events=room['warp_events'])
+            else:oldroom=dict(room) # New room has no displaced residents or original events.
         assert len(room['warp_events'])==len(oldroom['warp_events'])
         for wa,wb in zip(room['warp_events'],oldroom['warp_events']):
             assert wa['dest_map']==wb['dest_map'] and wa['dest_warp_id']==wb['dest_warp_id']
@@ -72,8 +77,8 @@ def main():
         reach=component(floor,ns[0],blocked);assert len(reach)>=30 and all(p in reach for p in ns)
     for p,record in load('data/venues/battle_revision.json').items():
         raw=(ROOT/p).read_bytes();raw=raw.replace(b'\r\n',b'\n') if p.endswith('.pal') else raw
-        assert hashlib.sha256(raw).hexdigest()==record['supplied_sha256']
-    source=(ROOT/'src/roaming_tutor.c').read_text();moves=(ROOT/'include/constants/moves.h').read_text()
+        verify_expected(p,record['supplied_sha256'])
+    source=(ROOT/'src/roaming_tutor.c').read_text()+'\n'+(ROOT/'src/data/roaming_tutor_lessons.h').read_text();moves=(ROOT/'include/constants/moves.h').read_text()
     gen4=moves[:moves.index('MOVES_COUNT_GEN4')];forbidden={'FISSURE','GUILLOTINE','HORN_DRILL','SHEER_COLD','SONIC_BOOM','DRAGON_RAGE','SPORE','DOUBLE_TEAM','MINIMIZE','SWORDS_DANCE','DRAGON_DANCE','NASTY_PLOT'}
     for move,level in re.findall(r'LESSON\((\w+), (\d+),',source):
         assert 'MOVE_'+move in gen4 and move not in forbidden and 5<=int(level)<=100

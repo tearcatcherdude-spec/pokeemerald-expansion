@@ -40,11 +40,11 @@ RoamingTutor_Text_Intro:
 	.string "Odd methods. Sensible moves.\p"
 	.string "One free lesson per POKEMON, then\n"
 	.string "it must gain at least 20 levels.\p"
-	.string "Four choices, suited to its level.\n"
+	.string "Types, body, level. Four extra moves.\n"
 	.string "Want me to inspect your team?$"
 RoamingTutor_Text_Choose:
-	.string "Four lessons. B cancels. Choose one\n"
-	.string "and I will explain the technique.$"
+	.string "Four for {STR_VAR_2}. B cancels.\n"
+	.string "Choose one, and I will explain it.$"
 RoamingTutor_Text_Slot:
 	.string "Choose an empty slot or the move\n"
 	.string "you want to replace. B cancels.$"
@@ -61,7 +61,7 @@ RoamingTutor_Text_Done:
 RoamingTutor_Text_Unavailable:
 	.string "No lesson today. A previous pupil\n"
 	.string "needs 20 levels since its last one.\p"
-	.string "I also need four suitable unknown\n"
+	.string "I also need four safe extra\n"
 	.string "moves. Eggs cannot take lessons.\p"
 	.string "I will not erase an HM, either.\n"
-	.string "I have not safely worked out yet.$"
+	.string "Some techniques need more practice.$"

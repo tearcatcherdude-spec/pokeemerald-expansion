@@ -1,7 +1,7 @@
 {
   "id": "MAP_RUSTBORO_CITY",
   "name": "RustboroCity",
-  "layout": "LAYOUT_RUSTBORO_CITY",
+  "layout": "LAYOUT_VENUE_HOENNBAKERY",
   "music": "MUS_RUSTBORO",
   "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_RUSTBORO_CITY",
@@ -400,7 +400,7 @@
       "x": 26,
       "y": 46,
       "elevation": 0,
-      "dest_map": "MAP_RUSTBORO_CITY_HOUSE3",
+      "dest_map": "MAP_VENUE_HOENN_BAKERY",
       "dest_warp_id": "0"
     }
   ],

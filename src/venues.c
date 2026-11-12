@@ -20,7 +20,7 @@ const struct Tileset *Venue_BaseTileset(const struct Tileset *tileset)
     if (tileset == &gTileset_VenueKantoGlitch) return &gTileset_Kanto_PewterCity;
     if (tileset == &gTileset_VenueKantoTea) return &gTileset_Kanto_VermilionCity;
     if (tileset == &gTileset_VenueKantoTutor) return &gTileset_Kanto_CeruleanCity;
-    if (tileset == &gTileset_VenueKantoRave) return &gTileset_Kanto_VermilionCity;
+    if (tileset == &gTileset_VenueKantoRave) return &gTileset_Kanto_FuchsiaCity;
     if (tileset == &gTileset_VenueKantoBloom) return &gTileset_Kanto_CeladonCity;
     if (tileset == &gTileset_VenueKantoSaffronPrimary) return &gTileset_Kanto_General_Frlg;
     if (tileset == &gTileset_VenueKantoSaffronSecondary) return &gTileset_Kanto_SaffronCity;
@@ -46,6 +46,11 @@ static void ReloadSavedVenue(void)
 void Venues_MigrateSavedLayout(void)
 {
 #if !IS_FRLG
+    // The bakery moved off Route 104; discard only its retired map overlay.
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ROUTE104) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ROUTE104) && gSaveBlock1Ptr->mapLayoutId == LAYOUT_VENUE_HOENNBAKERY)
+    { gSaveBlock1Ptr->mapLayoutId = LAYOUT_ROUTE104; ReloadSavedVenue(); return; }
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_KANTO_ROUTE11) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_KANTO_ROUTE11) && gSaveBlock1Ptr->mapLayoutId == LAYOUT_VENUE_KANTORAVE)
+    { gSaveBlock1Ptr->mapLayoutId = LAYOUT_KANTO_ROUTE11; ReloadSavedVenue(); return; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNTUTOR && gSaveBlock1Ptr->mapLayoutId == LAYOUT_PETALBURG_CITY)
     {
         gSaveBlock1Ptr->mapLayoutId = LAYOUT_VENUE_HOENNTUTOR;
@@ -59,11 +64,11 @@ void Venues_MigrateSavedLayout(void)
         ReloadSavedVenue();
         return;
     }
-    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNBAKERY && gSaveBlock1Ptr->mapLayoutId == LAYOUT_ROUTE104)
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNBAKERY && gSaveBlock1Ptr->mapLayoutId == LAYOUT_RUSTBORO_CITY)
     {
         gSaveBlock1Ptr->mapLayoutId = LAYOUT_VENUE_HOENNBAKERY;
-        if (gSaveBlock1Ptr->pos.x >= 7 && gSaveBlock1Ptr->pos.x < 11 && gSaveBlock1Ptr->pos.y >= 22 && gSaveBlock1Ptr->pos.y < 26)
-        { gSaveBlock1Ptr->pos.x = 8; gSaveBlock1Ptr->pos.y = 26; }
+        if (gSaveBlock1Ptr->pos.x >= 24 && gSaveBlock1Ptr->pos.x < 30 && gSaveBlock1Ptr->pos.y >= 42 && gSaveBlock1Ptr->pos.y < 47)
+        { gSaveBlock1Ptr->pos.x = 26; gSaveBlock1Ptr->pos.y = 47; }
         ReloadSavedVenue();
         return;
     }
@@ -151,11 +156,11 @@ void Venues_MigrateSavedLayout(void)
         ReloadSavedVenue();
         return;
     }
-    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTORAVE && gSaveBlock1Ptr->mapLayoutId == LAYOUT_KANTO_ROUTE11)
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTORAVE && gSaveBlock1Ptr->mapLayoutId == LAYOUT_KANTO_FUCHSIA_CITY)
     {
         gSaveBlock1Ptr->mapLayoutId = LAYOUT_VENUE_KANTORAVE;
-        if (gSaveBlock1Ptr->pos.x >= 48 && gSaveBlock1Ptr->pos.x < 53 && gSaveBlock1Ptr->pos.y >= 6 && gSaveBlock1Ptr->pos.y < 11)
-        { gSaveBlock1Ptr->pos.x = 50; gSaveBlock1Ptr->pos.y = 11; }
+        if (gSaveBlock1Ptr->pos.x >= 12 && gSaveBlock1Ptr->pos.x < 17 && gSaveBlock1Ptr->pos.y >= 27 && gSaveBlock1Ptr->pos.y < 32)
+        { gSaveBlock1Ptr->pos.x = 14; gSaveBlock1Ptr->pos.y = 32; }
         ReloadSavedVenue();
         return;
     }
@@ -199,5 +204,18 @@ void Venues_MigrateSavedLayout(void)
         u32 at = gMapHeader.events->objectEventCount - 1;
         if (gMapHeader.events->objectEvents[at].localId == LOCALID_ROAMING_TUTOR_KANTOROUTE15 && gSaveBlock1Ptr->objectEventTemplates[at].localId != LOCALID_ROAMING_TUTOR_KANTOROUTE15) ReloadSavedVenue();
     }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNTUTOR || gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNTUTOR_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNBAKERY || gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNBAKERY_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNTEA || gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNTEA_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNGLITCH || gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNGLITCH_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNBLOOM || gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNBLOOM_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNRAVE || gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNRAVE_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBAKERY || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBAKERY_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOGLITCH || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOGLITCH_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTEA || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTEA_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTUTOR || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTUTOR_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTORAVE || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTORAVE_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBLOOM || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBLOOM_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_SAFFRON_FACADES) ReloadSavedVenue();
 #endif
 }

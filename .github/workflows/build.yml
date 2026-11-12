@@ -42,6 +42,8 @@ jobs:
         run: |
           python3 -m pip install --disable-pip-version-check numpy pillow
           python3 dev_scripts/validate_venue_connections.py
+          python3 dev_scripts/validate_readability.py
+          python3 dev_scripts/build_roaming_tutor_catalog.py --check
 
       - name: Validate recruitable cast
         run: python3 dev_scripts/validate_cast.py
@@ -287,11 +289,19 @@ jobs:
             tools/mgba-rom-test-hydra/mgba-rom-test-hydra
           key: tools-check-${{ runner.os }}-${{ hashFiles('tools/*/Makefile', 'tools/**/*.c', 'tools/**/*.cpp', 'tools/**/*.h') }}
 
+      - name: Tutor species mechanics
+        env:
+          GAME_VERSION: EMERALD
+          TEST: 1
+        run: make -j$(nproc) check TESTS="Roaming tutor"
+
       - name: Test
         env:
           GAME_VERSION: EMERALD
           TEST: 1
-        run: make -j$(nproc) check
+        run: |
+          rm -f pokeemerald-test.elf
+          make -j$(nproc) check
 
   # Gate job: satisfies the "build" branch protection rule.
   # Passes only when all parallel build/test jobs succeed.

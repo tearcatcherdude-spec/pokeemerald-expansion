@@ -1,0 +1,958 @@
+{
+  "version": 2,
+  "ordinary_learnsets_excluded": [
+    "level_up_at_any_level",
+    "teachable_TM_HM_tutor",
+    "egg"
+  ],
+  "power_bands": [
+    [
+      5,
+      40
+    ],
+    [
+      15,
+      50
+    ],
+    [
+      25,
+      60
+    ],
+    [
+      35,
+      70
+    ],
+    [
+      45,
+      80
+    ],
+    [
+      55,
+      90
+    ]
+  ],
+  "general": [
+    {
+      "move": "DEFENSE_CURL",
+      "level": 5,
+      "trait": "BODY",
+      "reason": "Use controlled body movement.\nTechnique first, spectacle later.$"
+    },
+    {
+      "move": "FOCUS_ENERGY",
+      "level": 10,
+      "trait": "BODY",
+      "reason": "Use controlled body movement.\nTechnique first, spectacle later.$"
+    },
+    {
+      "move": "ENDURE",
+      "level": 25,
+      "trait": "BODY",
+      "reason": "Use controlled body movement.\nTechnique first, spectacle later.$"
+    },
+    {
+      "move": "FEINT",
+      "level": 15,
+      "trait": "BODY",
+      "reason": "Use controlled body movement.\nTechnique first, spectacle later.$"
+    },
+    {
+      "move": "HEADBUTT",
+      "level": 35,
+      "trait": "BODY",
+      "reason": "Use controlled body movement.\nTechnique first, spectacle later.$"
+    },
+    {
+      "move": "SECRET_POWER",
+      "level": 35,
+      "trait": "BODY",
+      "reason": "Use controlled body movement.\nTechnique first, spectacle later.$"
+    },
+    {
+      "move": "SLAM",
+      "level": 45,
+      "trait": "BODY",
+      "reason": "Use controlled body movement.\nTechnique first, spectacle later.$"
+    },
+    {
+      "move": "LICK",
+      "level": 5,
+      "trait": "JAWS",
+      "reason": "Your mouth can carry the technique.\nSmall, controlled contact; no new parts.$"
+    },
+    {
+      "move": "BITE",
+      "level": 25,
+      "trait": "JAWS",
+      "reason": "Your mouth can carry the technique.\nSmall, controlled contact; no new parts.$"
+    },
+    {
+      "move": "POISON_FANG",
+      "level": 25,
+      "trait": "JAWS",
+      "reason": "Your mouth can carry the technique.\nSmall, controlled contact; no new parts.$"
+    },
+    {
+      "move": "FIRE_FANG",
+      "level": 35,
+      "trait": "JAWS",
+      "reason": "Your mouth can carry the technique.\nSmall, controlled contact; no new parts.$"
+    },
+    {
+      "move": "ICE_FANG",
+      "level": 35,
+      "trait": "JAWS",
+      "reason": "Your mouth can carry the technique.\nSmall, controlled contact; no new parts.$"
+    },
+    {
+      "move": "THUNDER_FANG",
+      "level": 35,
+      "trait": "JAWS",
+      "reason": "Your mouth can carry the technique.\nSmall, controlled contact; no new parts.$"
+    },
+    {
+      "move": "MACH_PUNCH",
+      "level": 15,
+      "trait": "LIMBS",
+      "reason": "Your existing limbs do the work.\nWe practice a controlled strike.$"
+    },
+    {
+      "move": "BULLET_PUNCH",
+      "level": 25,
+      "trait": "LIMBS",
+      "reason": "Your existing limbs do the work.\nWe practice a controlled strike.$"
+    },
+    {
+      "move": "SHADOW_PUNCH",
+      "level": 30,
+      "trait": "LIMBS",
+      "reason": "Your existing limbs do the work.\nWe practice a controlled strike.$"
+    },
+    {
+      "move": "FORCE_PALM",
+      "level": 30,
+      "trait": "LIMBS",
+      "reason": "Your existing limbs do the work.\nWe practice a controlled strike.$"
+    },
+    {
+      "move": "FIRE_PUNCH",
+      "level": 45,
+      "trait": "LIMBS",
+      "reason": "Your existing limbs do the work.\nWe practice a controlled strike.$"
+    },
+    {
+      "move": "ICE_PUNCH",
+      "level": 45,
+      "trait": "LIMBS",
+      "reason": "Your existing limbs do the work.\nWe practice a controlled strike.$"
+    },
+    {
+      "move": "THUNDER_PUNCH",
+      "level": 45,
+      "trait": "LIMBS",
+      "reason": "Your existing limbs do the work.\nWe practice a controlled strike.$"
+    },
+    {
+      "move": "DIZZY_PUNCH",
+      "level": 40,
+      "trait": "LIMBS",
+      "reason": "Your existing limbs do the work.\nWe practice a controlled strike.$"
+    },
+    {
+      "move": "CONFUSION",
+      "level": 15,
+      "trait": "MIND",
+      "reason": "Shape your natural mental energy.\nFocus and control, not brute force.$"
+    },
+    {
+      "move": "PSYBEAM",
+      "level": 35,
+      "trait": "MIND",
+      "reason": "Shape your natural mental energy.\nFocus and control, not brute force.$"
+    },
+    {
+      "move": "KINESIS",
+      "level": 15,
+      "trait": "MIND",
+      "reason": "Shape your natural mental energy.\nFocus and control, not brute force.$"
+    },
+    {
+      "move": "MIRACLE_EYE",
+      "level": 15,
+      "trait": "MIND",
+      "reason": "Shape your natural mental energy.\nFocus and control, not brute force.$"
+    },
+    {
+      "move": "EXTRASENSORY",
+      "level": 50,
+      "trait": "MIND",
+      "reason": "Shape your natural mental energy.\nFocus and control, not brute force.$"
+    },
+    {
+      "move": "PSYCHIC",
+      "level": 60,
+      "trait": "MIND",
+      "reason": "Shape your natural mental energy.\nFocus and control, not brute force.$"
+    },
+    {
+      "move": "SWIFT",
+      "level": 25,
+      "trait": "MIND",
+      "reason": "Shape your natural mental energy.\nFocus and control, not brute force.$"
+    },
+    {
+      "move": "SIGNAL_BEAM",
+      "level": 45,
+      "trait": "MIND",
+      "reason": "Shape your natural mental energy.\nFocus and control, not brute force.$"
+    },
+    {
+      "move": "ASTONISH",
+      "level": 5,
+      "trait": "SPIRIT",
+      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+    },
+    {
+      "move": "PURSUIT",
+      "level": 5,
+      "trait": "SPIRIT",
+      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+    },
+    {
+      "move": "FEINT_ATTACK",
+      "level": 25,
+      "trait": "SPIRIT",
+      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+    },
+    {
+      "move": "SHADOW_SNEAK",
+      "level": 15,
+      "trait": "SPIRIT",
+      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+    },
+    {
+      "move": "SPITE",
+      "level": 15,
+      "trait": "SPIRIT",
+      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+    },
+    {
+      "move": "OMINOUS_WIND",
+      "level": 35,
+      "trait": "SPIRIT",
+      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+    },
+    {
+      "move": "CONFUSE_RAY",
+      "level": 30,
+      "trait": "SPIRIT",
+      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+    },
+    {
+      "move": "SHADOW_BALL",
+      "level": 50,
+      "trait": "SPIRIT",
+      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+    },
+    {
+      "move": "DARK_PULSE",
+      "level": 50,
+      "trait": "SPIRIT",
+      "reason": "Channel a small burst of shadow\nor surprise. Control its shape first.$"
+    },
+    {
+      "move": "SAND_ATTACK",
+      "level": 5,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "MUD_SLAP",
+      "level": 5,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "ROCK_THROW",
+      "level": 15,
+      "trait": "THROW",
+      "reason": "Carry and direct a few small stones.\nCareful aim, not a landslide.$"
+    },
+    {
+      "move": "MUD_SHOT",
+      "level": 25,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "ROCK_TOMB",
+      "level": 25,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "SAND_TOMB",
+      "level": 25,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "ANCIENT_POWER",
+      "level": 35,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "HARDEN",
+      "level": 5,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "METAL_SOUND",
+      "level": 10,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "METAL_CLAW",
+      "level": 15,
+      "trait": "LIMBS",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "MIRROR_SHOT",
+      "level": 35,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "IRON_DEFENSE",
+      "level": 35,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "IRON_HEAD",
+      "level": 50,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "ROCK_SLIDE",
+      "level": 50,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "DIG",
+      "level": 50,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "FLASH_CANNON",
+      "level": 50,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "EARTH_POWER",
+      "level": 60,
+      "trait": "MINERAL",
+      "reason": "Your sturdy body can control grit\nand mineral energy. Start with pebbles.$"
+    },
+    {
+      "move": "WATER_GUN",
+      "level": 5,
+      "trait": "WATER",
+      "reason": "Control water with your aquatic body.\nSmall currents before big waves.$"
+    },
+    {
+      "move": "BUBBLE",
+      "level": 5,
+      "trait": "WATER",
+      "reason": "Control water with your aquatic body.\nSmall currents before big waves.$"
+    },
+    {
+      "move": "WATER_SPORT",
+      "level": 5,
+      "trait": "WATER",
+      "reason": "Control water with your aquatic body.\nSmall currents before big waves.$"
+    },
+    {
+      "move": "AQUA_JET",
+      "level": 15,
+      "trait": "WATER",
+      "reason": "Control water with your aquatic body.\nSmall currents before big waves.$"
+    },
+    {
+      "move": "BUBBLE_BEAM",
+      "level": 35,
+      "trait": "WATER",
+      "reason": "Control water with your aquatic body.\nSmall currents before big waves.$"
+    },
+    {
+      "move": "WATER_PULSE",
+      "level": 25,
+      "trait": "WATER",
+      "reason": "Control water with your aquatic body.\nSmall currents before big waves.$"
+    },
+    {
+      "move": "BRINE",
+      "level": 50,
+      "trait": "WATER",
+      "reason": "Control water with your aquatic body.\nSmall currents before big waves.$"
+    },
+    {
+      "move": "AQUA_RING",
+      "level": 35,
+      "trait": "WATER",
+      "reason": "Control water with your aquatic body.\nSmall currents before big waves.$"
+    },
+    {
+      "move": "WATERFALL",
+      "level": 50,
+      "trait": "WATER",
+      "reason": "Control water with your aquatic body.\nSmall currents before big waves.$"
+    },
+    {
+      "move": "POWDER_SNOW",
+      "level": 5,
+      "trait": "COLD",
+      "reason": "Chill a small amount of moisture.\nControlled cold, not a blizzard.$"
+    },
+    {
+      "move": "ICE_SHARD",
+      "level": 15,
+      "trait": "COLD",
+      "reason": "Chill a small amount of moisture.\nControlled cold, not a blizzard.$"
+    },
+    {
+      "move": "ICY_WIND",
+      "level": 25,
+      "trait": "COLD",
+      "reason": "Chill a small amount of moisture.\nControlled cold, not a blizzard.$"
+    },
+    {
+      "move": "AURORA_BEAM",
+      "level": 35,
+      "trait": "COLD",
+      "reason": "Chill a small amount of moisture.\nControlled cold, not a blizzard.$"
+    },
+    {
+      "move": "ICE_BEAM",
+      "level": 60,
+      "trait": "COLD",
+      "reason": "Chill a small amount of moisture.\nControlled cold, not a blizzard.$"
+    },
+    {
+      "move": "EMBER",
+      "level": 5,
+      "trait": "FIRE",
+      "reason": "Shape your natural heat carefully.\nSmall flames, a very large safety rule.$"
+    },
+    {
+      "move": "FIRE_SPIN",
+      "level": 15,
+      "trait": "FIRE",
+      "reason": "Shape your natural heat carefully.\nSmall flames, a very large safety rule.$"
+    },
+    {
+      "move": "FLAME_WHEEL",
+      "level": 25,
+      "trait": "FIRE",
+      "reason": "Shape your natural heat carefully.\nSmall flames, a very large safety rule.$"
+    },
+    {
+      "move": "WILL_O_WISP",
+      "level": 35,
+      "trait": "FIRE",
+      "reason": "Shape your natural heat carefully.\nSmall flames, a very large safety rule.$"
+    },
+    {
+      "move": "LAVA_PLUME",
+      "level": 50,
+      "trait": "FIRE",
+      "reason": "Shape your natural heat carefully.\nSmall flames, a very large safety rule.$"
+    },
+    {
+      "move": "FLAMETHROWER",
+      "level": 60,
+      "trait": "FIRE",
+      "reason": "Shape your natural heat carefully.\nSmall flames, a very large safety rule.$"
+    },
+    {
+      "move": "THUNDER_SHOCK",
+      "level": 5,
+      "trait": "ELECTRIC",
+      "reason": "Control a little electrical energy.\nPrecision before a bigger discharge.$"
+    },
+    {
+      "move": "CHARGE",
+      "level": 15,
+      "trait": "ELECTRIC",
+      "reason": "Control a little electrical energy.\nPrecision before a bigger discharge.$"
+    },
+    {
+      "move": "SPARK",
+      "level": 35,
+      "trait": "ELECTRIC",
+      "reason": "Control a little electrical energy.\nPrecision before a bigger discharge.$"
+    },
+    {
+      "move": "CHARGE_BEAM",
+      "level": 25,
+      "trait": "ELECTRIC",
+      "reason": "Control a little electrical energy.\nPrecision before a bigger discharge.$"
+    },
+    {
+      "move": "SHOCK_WAVE",
+      "level": 25,
+      "trait": "ELECTRIC",
+      "reason": "Control a little electrical energy.\nPrecision before a bigger discharge.$"
+    },
+    {
+      "move": "THUNDER_WAVE",
+      "level": 25,
+      "trait": "ELECTRIC",
+      "reason": "Control a little electrical energy.\nPrecision before a bigger discharge.$"
+    },
+    {
+      "move": "DISCHARGE",
+      "level": 50,
+      "trait": "ELECTRIC",
+      "reason": "Control a little electrical energy.\nPrecision before a bigger discharge.$"
+    },
+    {
+      "move": "THUNDERBOLT",
+      "level": 60,
+      "trait": "ELECTRIC",
+      "reason": "Control a little electrical energy.\nPrecision before a bigger discharge.$"
+    },
+    {
+      "move": "ABSORB",
+      "level": 5,
+      "trait": "PLANT",
+      "reason": "Your plant tissue can direct this.\nHealthy growth, carefully controlled.$"
+    },
+    {
+      "move": "VINE_WHIP",
+      "level": 15,
+      "trait": "PLANT",
+      "reason": "Your plant tissue can direct this.\nHealthy growth, carefully controlled.$"
+    },
+    {
+      "move": "MEGA_DRAIN",
+      "level": 15,
+      "trait": "PLANT",
+      "reason": "Your plant tissue can direct this.\nHealthy growth, carefully controlled.$"
+    },
+    {
+      "move": "RAZOR_LEAF",
+      "level": 25,
+      "trait": "PLANT",
+      "reason": "Your plant tissue can direct this.\nHealthy growth, carefully controlled.$"
+    },
+    {
+      "move": "MAGICAL_LEAF",
+      "level": 25,
+      "trait": "PLANT",
+      "reason": "Your plant tissue can direct this.\nHealthy growth, carefully controlled.$"
+    },
+    {
+      "move": "GIGA_DRAIN",
+      "level": 45,
+      "trait": "PLANT",
+      "reason": "Your plant tissue can direct this.\nHealthy growth, carefully controlled.$"
+    },
+    {
+      "move": "ENERGY_BALL",
+      "level": 60,
+      "trait": "PLANT",
+      "reason": "Your plant tissue can direct this.\nHealthy growth, carefully controlled.$"
+    },
+    {
+      "move": "GUST",
+      "level": 5,
+      "trait": "WINGS",
+      "reason": "Use the air your wings already move.\nA controlled gust, not a hurricane.$"
+    },
+    {
+      "move": "WING_ATTACK",
+      "level": 25,
+      "trait": "WINGS",
+      "reason": "Use the air your wings already move.\nA controlled gust, not a hurricane.$"
+    },
+    {
+      "move": "AIR_CUTTER",
+      "level": 25,
+      "trait": "WINGS",
+      "reason": "Use the air your wings already move.\nA controlled gust, not a hurricane.$"
+    },
+    {
+      "move": "AERIAL_ACE",
+      "level": 25,
+      "trait": "WINGS",
+      "reason": "Use the air your wings already move.\nA controlled gust, not a hurricane.$"
+    },
+    {
+      "move": "PLUCK",
+      "level": 25,
+      "trait": "WINGS",
+      "reason": "Use the air your wings already move.\nA controlled gust, not a hurricane.$"
+    },
+    {
+      "move": "AIR_SLASH",
+      "level": 50,
+      "trait": "WINGS",
+      "reason": "Use the air your wings already move.\nA controlled gust, not a hurricane.$"
+    },
+    {
+      "move": "STRING_SHOT",
+      "level": 5,
+      "trait": "BUG",
+      "reason": "Use your insect body and instincts.\nPractice a small, precise technique.$"
+    },
+    {
+      "move": "BUG_BITE",
+      "level": 25,
+      "trait": "BUG",
+      "reason": "Use your insect body and instincts.\nPractice a small, precise technique.$"
+    },
+    {
+      "move": "SILVER_WIND",
+      "level": 35,
+      "trait": "BUG",
+      "reason": "Use your insect body and instincts.\nPractice a small, precise technique.$"
+    },
+    {
+      "move": "U_TURN",
+      "level": 40,
+      "trait": "BUG",
+      "reason": "Use your insect body and instincts.\nPractice a small, precise technique.$"
+    },
+    {
+      "move": "X_SCISSOR",
+      "level": 50,
+      "trait": "LIMBS",
+      "reason": "Use your insect body and instincts.\nPractice a small, precise technique.$"
+    },
+    {
+      "move": "BUG_BUZZ",
+      "level": 60,
+      "trait": "BUG",
+      "reason": "Use your insect body and instincts.\nPractice a small, precise technique.$"
+    },
+    {
+      "move": "POISON_STING",
+      "level": 5,
+      "trait": "VENOM",
+      "reason": "Use a little of your natural venom.\nDose and aim before anything dramatic.$"
+    },
+    {
+      "move": "ACID",
+      "level": 5,
+      "trait": "VENOM",
+      "reason": "Use a little of your natural venom.\nDose and aim before anything dramatic.$"
+    },
+    {
+      "move": "SMOG",
+      "level": 5,
+      "trait": "VENOM",
+      "reason": "Use a little of your natural venom.\nDose and aim before anything dramatic.$"
+    },
+    {
+      "move": "POISON_GAS",
+      "level": 25,
+      "trait": "VENOM",
+      "reason": "Release a small amount of natural gas.\nAim and dose must stay controlled.$"
+    },
+    {
+      "move": "POISON_JAB",
+      "level": 50,
+      "trait": "VENOM",
+      "reason": "Use a little of your natural venom.\nDose and aim before anything dramatic.$"
+    },
+    {
+      "move": "SLUDGE",
+      "level": 35,
+      "trait": "VENOM",
+      "reason": "Use a little of your natural venom.\nDose and aim before anything dramatic.$"
+    },
+    {
+      "move": "SLUDGE_BOMB",
+      "level": 60,
+      "trait": "VENOM",
+      "reason": "Use a little of your natural venom.\nDose and aim before anything dramatic.$"
+    },
+    {
+      "move": "TWISTER",
+      "level": 5,
+      "trait": "DRAGON",
+      "reason": "Train your existing draconic energy.\nA small burst before a powerful breath.$"
+    },
+    {
+      "move": "DRAGON_BREATH",
+      "level": 25,
+      "trait": "DRAGON",
+      "reason": "Train your existing draconic energy.\nA small burst before a powerful breath.$"
+    },
+    {
+      "move": "DRAGON_CLAW",
+      "level": 50,
+      "trait": "LIMBS",
+      "reason": "Train your existing draconic energy.\nA small burst before a powerful breath.$"
+    },
+    {
+      "move": "DRAGON_PULSE",
+      "level": 60,
+      "trait": "DRAGON",
+      "reason": "Train your existing draconic energy.\nA small burst before a powerful breath.$"
+    },
+    {
+      "move": "CHARM",
+      "level": 15,
+      "trait": "CHARM",
+      "reason": "Use expression and timing.\nConfidence is a perfectly sound tool.$"
+    },
+    {
+      "move": "FAKE_TEARS",
+      "level": 15,
+      "trait": "CHARM",
+      "reason": "Use expression and timing.\nConfidence is a perfectly sound tool.$"
+    },
+    {
+      "move": "SWEET_KISS",
+      "level": 35,
+      "trait": "CHARM",
+      "reason": "Use expression and timing.\nConfidence is a perfectly sound tool.$"
+    },
+    {
+      "move": "PECK",
+      "level": 5,
+      "trait": "WINGS",
+      "reason": "Use your beak or flying head-first\nmotion in a small, controlled peck.$"
+    },
+    {
+      "move": "DRILL_PECK",
+      "level": 50,
+      "trait": "WINGS",
+      "reason": "Practice a carefully controlled\nspinning strike with your beak.$"
+    }
+  ],
+  "beldum_family": [
+    {
+      "move": "HARDEN",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Brace your existing metal shell.\nNo new limbs, just better structure.$"
+    },
+    {
+      "move": "METAL_SOUND",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Vibrate your metal shell to make\na harsh resonance. Mind the ears.$"
+    },
+    {
+      "move": "MUD_SLAP",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Magnetic motion can flick loose grit.\nKeep the amount small and controlled.$"
+    },
+    {
+      "move": "SAND_ATTACK",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Your magnetic field can scatter grit.\nWe practice directing it, not blasting.$"
+    },
+    {
+      "move": "ASTONISH",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Project a startling psychic shadow\nfrom that excellent eye.$"
+    },
+    {
+      "move": "PURSUIT",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Track a moving target with your eye\nand magnetically follow its movement.$"
+    },
+    {
+      "move": "CONFUSION",
+      "level": 15,
+      "trait": "ANY",
+      "reason": "You are a psychic species.\nPractice a small mental nudge.$"
+    },
+    {
+      "move": "METAL_CLAW",
+      "level": 15,
+      "trait": "ANY",
+      "reason": "Your existing metal prongs can rake.\nNo imaginary hands required.$"
+    },
+    {
+      "move": "ROCK_THROW",
+      "level": 15,
+      "trait": "ANY",
+      "reason": "Your magnetic body can move pebbles.\nSmall, controlled stones only.$"
+    },
+    {
+      "move": "MUD_SHOT",
+      "level": 25,
+      "trait": "ANY",
+      "reason": "Direct loose wet grit magnetically.\nAim first; no miniature landslides.$"
+    },
+    {
+      "move": "ROCK_TOMB",
+      "level": 25,
+      "trait": "ANY",
+      "reason": "Position a few stones around a target\nusing your magnetic and psychic control.$"
+    },
+    {
+      "move": "FEINT_ATTACK",
+      "level": 25,
+      "trait": "ANY",
+      "reason": "Use your eye to track a blind spot.\nA precise movement of your metal body.$"
+    },
+    {
+      "move": "SAND_TOMB",
+      "level": 25,
+      "trait": "ANY",
+      "reason": "Guide loose grit into a small swirl.\nYour psychic field does the steering.$"
+    },
+    {
+      "move": "SHADOW_SNEAK",
+      "level": 15,
+      "trait": "ANY",
+      "reason": "Send a short psychic shadow ahead\nof your hovering body.$"
+    },
+    {
+      "move": "SHADOW_PUNCH",
+      "level": 30,
+      "trait": "ANY",
+      "reason": "Project a brief shadow of your prongs.\nThe technique does not need hands.$"
+    },
+    {
+      "move": "ANCIENT_POWER",
+      "level": 35,
+      "trait": "ANY",
+      "reason": "Lift a few old stones with your mind.\nAge is optional. Careful control is not.$"
+    },
+    {
+      "move": "PSYBEAM",
+      "level": 35,
+      "trait": "ANY",
+      "reason": "Focus the mental energy you already\nuse to communicate into a small beam.$"
+    },
+    {
+      "move": "MIRROR_SHOT",
+      "level": 35,
+      "trait": "ANY",
+      "reason": "Reflect focused energy through your\nmetal shell. Aim with your existing eye.$"
+    },
+    {
+      "move": "PSYCHO_CUT",
+      "level": 45,
+      "trait": "ANY",
+      "reason": "Shape mental energy along your prongs.\nThe cutting edge is psychic.$"
+    },
+    {
+      "move": "ROCK_SLIDE",
+      "level": 50,
+      "trait": "ANY",
+      "reason": "Only now can your magnetic field\ncontrol several heavier stones safely.$"
+    },
+    {
+      "move": "SHADOW_BALL",
+      "level": 50,
+      "trait": "ANY",
+      "reason": "Shape your psychic shadow into a sphere.\nControl comes before size.$"
+    },
+    {
+      "move": "FLASH_CANNON",
+      "level": 50,
+      "trait": "ANY",
+      "reason": "Focus energy through your metal frame.\nNo extra cannon is involved.$"
+    },
+    {
+      "move": "DIG",
+      "level": 50,
+      "trait": "ANY",
+      "reason": "Your metal prongs can bore soft soil.\nWe plan the way back out first.$"
+    },
+    {
+      "move": "EARTH_POWER",
+      "level": 60,
+      "trait": "ANY",
+      "reason": "Use your field to disturb the ground\nbelow a target. Precision, not quakes.$"
+    }
+  ],
+  "magikarp": [
+    {
+      "move": "TAIL_WHIP",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "You have a tail. Direct its movement\nto distract a target.$"
+    },
+    {
+      "move": "WATER_SPORT",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "A fish already knows the material.\nSplash water around the field.$"
+    },
+    {
+      "move": "MUD_SLAP",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Flick river mud with your tail.\nNo hands or suspicious machinery.$"
+    },
+    {
+      "move": "WATER_GUN",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Aim a small mouthful of water.\nYou do not need to be a cannon.$"
+    },
+    {
+      "move": "BUBBLE",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Blow a controlled stream of bubbles.\nBreath and aim, not brute strength.$"
+    },
+    {
+      "move": "FOCUS_ENERGY",
+      "level": 10,
+      "trait": "ANY",
+      "reason": "Steady your swimming rhythm.\nA calm fish is still a fish.$"
+    },
+    {
+      "move": "AQUA_JET",
+      "level": 15,
+      "trait": "ANY",
+      "reason": "Your swimming muscles can manage\na short, directed burst of speed.$"
+    },
+    {
+      "move": "ICY_WIND",
+      "level": 25,
+      "trait": "ANY",
+      "reason": "Use a little chilled water spray.\nA cool current, not a blizzard.$"
+    },
+    {
+      "move": "MUD_SHOT",
+      "level": 25,
+      "trait": "ANY",
+      "reason": "Spit a little river mud with water.\nAim beats volume.$"
+    },
+    {
+      "move": "WATER_PULSE",
+      "level": 25,
+      "trait": "ANY",
+      "reason": "Pulse the water your mouth can move.\nSmall, controlled waves first.$"
+    },
+    {
+      "move": "BRINE",
+      "level": 50,
+      "trait": "ANY",
+      "reason": "Concentrate a modest stream of water.\nWe control the salt and the aim.$"
+    }
+  ]
+}

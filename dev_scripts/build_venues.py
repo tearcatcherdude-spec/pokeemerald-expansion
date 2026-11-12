@@ -27,7 +27,10 @@ SITES=[
  ('kanto','rave','KantoFuchsiaCity','KantoFuchsiaCity_House1',14,31),
  ('kanto','bloom','KantoSaffronCity','KantoSaffronCity_House',27,21),
 ]
-OPEN_LOTS={('hoenn','bakery'):('Route104',7,22),('kanto','bakery'):('WatchViridian',35,21),('kanto','glitch'):('KantoPewterCity',7,22),('kanto','tea'):('KantoVermilionCity',24,9),('kanto','tutor'):('KantoRoute4',78,12),('kanto','rave'):('KantoRoute11',48,6),('kanto','bloom'):('KantoRoute18',10,2)}
+OPEN_LOTS={('hoenn','bakery'):('RustboroCity',25,43),('kanto','bakery'):('WatchViridian',35,21),('kanto','glitch'):('KantoPewterCity',7,22),('kanto','tea'):('KantoVermilionCity',24,9),('kanto','tutor'):('KantoRoute4',78,12),('kanto','rave'):('KantoFuchsiaCity',12,27),('kanto','bloom'):('KantoRoute18',10,2)}
+# Reuse the nickname family's existing house, retaining its residents and scripts.
+# Keep the released private bakery map ID so normal saves inside it still load.
+REPLACED_FOOTPRINTS={('hoenn','bakery'):11,('kanto','rave'):5}
 def read(path):return json.loads((ROOT/path).read_text(encoding='utf-8'))
 def save(path,obj):
  p=ROOT/path;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(obj,indent=2)+'\n',encoding='utf-8')
@@ -63,13 +66,15 @@ def write_tileset(label,path,ts,mts,attrs,palpaths,callback='NULL'):
  DEFS.append(f'const u32 {label}Tiles[] = INCBIN_U32("{path.as_posix()}/tiles.bin.smol");\n'+f'const u16 {label}Metatiles[] = INCBIN_U16("{path.as_posix()}/metatiles.bin");\nconst u16 {label}Attributes[] = INCBIN_U16("{path.as_posix()}/attributes.bin");\nconst struct Tileset {label} = {{.isCompressed=TRUE, .isSecondary=TRUE, .tiles={label}Tiles, .palettes={basepal}, .metatiles={label}Metatiles, .metatileAttributes={label}Attributes, .callback={callback}}};\n')
  DECL.append(f'extern const struct Tileset {label};')
 def install(region,theme,city,house,dx,dy):
- openlot=OPEN_LOTS.get((region,theme));oldhouse=house
+ openlot=OPEN_LOTS.get((region,theme));oldhouse=house;replacement=REPLACED_FOOTPRINTS.get((region,theme))
  room=original(house)
  if openlot:
   city,x,y=openlot;size=5 if region=='kanto' else 4;dx=x+(2 if region=='kanto' else 1);dy=y+size-1
  citymap=original(city);oldlay=LAYS[citymap['layout']];oldroomlay=LAYS[room['layout']]
  frlg=region=='kanto';split=640 if frlg else 512;firstpal=7 if frlg else 6
  tag=('Kanto' if frlg else 'Hoenn')+theme.title();size=5 if frlg else 4;x=dx-(2 if frlg else 1);y=dy-size+1
+ sw=sh=size
+ if (region,theme)==('hoenn','bakery'):x,y,sw,sh=24,42,6,5
  cityfolder=folder(oldlay['secondary_tileset']);primaryfolder=folder(oldlay['primary_tileset']);ts=tiles(cityfolder)
  mts0=words(cityfolder/'metatiles.bin');mts=[mts0[i:i+8] for i in range(0,len(mts0),8)]
  attrs=words(cityfolder/'metatile_attributes.bin',4 if frlg else 2);original_mt_count=len(mts)
@@ -98,14 +103,32 @@ def install(region,theme,city,house,dx,dy):
  free=[i for i in range(1008-split) if i not in usedtiles]
  freepal=[i for i in range(firstpal,13) if i not in usedpals]
  module=PACK/f'modules/{region}/{theme}/exterior';m=json.loads((module/'module.json').read_text());s=json.loads((module/'editable_source.json').read_text())
+ authored_art=Image.open(module/'art.png').convert('RGBA');replacement_tiles=None
+ if replacement is not None:
+  # Fit the existing 96x80 house while keeping its collision and animated door.
+  authored_art=authored_art.resize((sw*16,sh*16),Image.Resampling.NEAREST)
+  pal=np.array(s['palette_banks'][0]);pixels=np.array(authored_art);inds=np.zeros(pixels.shape[:2],dtype='uint8')
+  for ci,color in enumerate(pal):inds[np.all(pixels[:,:,:3]==color,axis=2)&(pixels[:,:,3]>0)]=ci
+  replacement_tiles=[np.zeros((8,8),dtype='uint8')];patterns={replacement_tiles[0].tobytes():0};rows=[]
+  for mi in range(sw*sh):
+   row=[0]*4
+   for q in range(4):
+    ax=mi%sw*16+q%2*8;ay=mi//sw*16+q//2*8;t=inds[ay:ay+8,ax:ax+8];key=t.tobytes()
+    if key not in patterns:patterns[key]=len(replacement_tiles);replacement_tiles.append(t.copy())
+    row.append(patterns[key])
+   rows.append(row)
+  s=dict(s,metatiles=rows,map_words=list(range(sw*sh)),custom_reference_masks=[255]*(sw*sh),custom_palette_masks=[255]*(sw*sh))
+  m=dict(m,tile_count=len(replacement_tiles),native_cells=[(dy-y)*sw+dx-x])
  assert freepal,(city,'no unused palette');assert len(free)>=m['tile_count'],(city,'tile capacity',len(free),m['tile_count'])
  while len(ts)<1024-split:ts.append(np.zeros((8,8),dtype='uint8'))
  raw=(module/'tiles.4bpp').read_bytes();pix=np.empty(len(raw)*2,dtype='uint8');pix[::2]=np.frombuffer(raw,dtype='uint8')&15;pix[1::2]=np.frombuffer(raw,dtype='uint8')>>4
+ if replacement_tiles is not None:pix=np.array(replacement_tiles).flatten()
  tileids=free[:m['tile_count']]
  for i,idx in enumerate(tileids):ts[idx]=pix[i*64:i*64+64].reshape(8,8)
  free_mt=[i for i in range(1024-split) if i+split not in used];assert len(free_mt)>=len(s['metatiles'])
  while len(mts)<1024-split:mts.append([0]*8);attrs.append(0)
  customattrs=words(module.relative_to(ROOT)/'metatile_attributes.bin',4 if frlg else 2)
+ if replacement is not None:customattrs=[0]*len(s['metatiles'])
  for i,row in enumerate(s['metatiles']):
   row=row.copy()
   for j,v in enumerate(row):
@@ -116,15 +139,15 @@ def install(region,theme,city,house,dx,dy):
  customrows=[mts[free_mt[i]].copy() for i in range(len(s['metatiles']))]
  # On new lots, transparent roof corners show THIS map's ground. The source
  # fragments retained Saffron pavement, which must never be pasted onto grass.
- art=np.array(Image.open(module/'art.png').convert('RGBA'))
+ art=np.array(authored_art)
  custompal=[tuple(map(int,v.split())) for v in (module/'palette-00.pal').read_text().splitlines()[3:19]]
  artindices=np.zeros(art.shape[:2],dtype='uint8')
  for yy in range(art.shape[0]):
   for xx in range(art.shape[1]):
-   if openlot and (yy//16)*size+xx//16 not in m['native_cells'] and art[yy,xx,3]:artindices[yy,xx]=custompal.index(tuple(art[yy,xx,:3]))
+   if openlot and (yy//16)*sw+xx//16 not in m['native_cells'] and art[yy,xx,3]:artindices[yy,xx]=custompal.index(tuple(art[yy,xx,:3]))
  patterns={};nexttile=0
  for i,v in enumerate(s['map_words']):
-  at=(y+i//size)*w+x+i%size
+  at=(y+i//sw)*w+x+i%sw
   if i not in m['native_cells']:
    # Preserve every target collision/elevation bit, not just the template's.
    # A per-cell metatile also preserves the target's native behavior/layer type.
@@ -132,18 +155,19 @@ def install(region,theme,city,house,dx,dy):
    targetattr=(words(cityfolder/'metatile_attributes.bin',4 if frlg else 2)[oldmid-split]
                if oldmid>=split else words(primaryfolder/'metatile_attributes.bin',4 if frlg else 2)[oldmid])
    row=customrows[v&1023].copy()
+   oldrow=(mts0[8*(oldmid-split):8*(oldmid-split)+8] if oldmid>=split else primarymts[oldmid])
+   row[:4]=oldrow[:4]
    if openlot:
-    oldrow=(mts0[8*(oldmid-split):8*(oldmid-split)+8] if oldmid>=split else primarymts[oldmid])
     row=oldrow[:4]
     for q in range(4):
-     ax=(i%size)*16+(q%2)*8;ay=(i//size)*16+(q//2)*8;tile=artindices[ay:ay+8,ax:ax+8];key=tile.tobytes()
+     ax=(i%sw)*16+(q%2)*8;ay=(i//sw)*16+(q//2)*8;tile=artindices[ay:ay+8,ax:ax+8];key=tile.tobytes()
      if key not in patterns:
       assert nexttile<len(free);idx=free[nexttile];nexttile+=1;ts[idx]=tile.copy();patterns[key]=idx
      row.append((freepal[0]<<12)|(split+patterns[key]))
-   mts[free_mt[i]]=row;attrs[free_mt[i]]=customattrs[v&1023] if openlot else targetattr
-   blocks[at]=((v if openlot else oldblocks[at])&0xFC00)|(split+free_mt[i])
+   mts[free_mt[i]]=row;attrs[free_mt[i]]=customattrs[v&1023] if openlot and replacement is None else targetattr
+   blocks[at]=((v if openlot and replacement is None else oldblocks[at])&0xFC00)|(split+free_mt[i])
   elif openlot:
-   blocks[at]=0x43D if frlg else 0x421 # Existing primary generic door and animation.
+   blocks[at]=oldblocks[at] if replacement is not None else 0x43D if frlg else 0x421
  palpaths=[cityfolder/'palettes'/f'{i:02}.pal' for i in range(16)]
  palpaths[freepal[0]]=module.relative_to(ROOT)/'palette-00.pal'
  out=Path('data/venues')/tag/'exterior';label='gTileset_Venue'+tag
@@ -181,16 +205,20 @@ def install(region,theme,city,house,dx,dy):
  newroom['object_events']+=added
  if openlot:
   house='Venue'+tag
-  newroom.update(id='MAP_VENUE_'+re.sub(r'([a-z])([A-Z])',r'\1_\2',tag).upper(),name=house,object_events=added,coord_events=[],bg_events=[],connections=None,music=citymap['music'],region_map_section=citymap['region_map_section'])
-  cityid=citymap['id'];warpid=len(citymap['warp_events'])
-  citynew['warp_events'].append(dict(x=dx,y=dy,elevation=0,dest_map=newroom['id'],dest_warp_id='0'))
+  newroom.update(id='MAP_VENUE_'+re.sub(r'([a-z])([A-Z])',r'\1_\2',tag).upper(),name=house,object_events=newroom['object_events'] if replacement is not None else added,coord_events=[],bg_events=[],connections=None,music=citymap['music'],region_map_section=citymap['region_map_section'])
+  cityid=citymap['id'];warpid=replacement if replacement is not None else len(citymap['warp_events'])
+  entrance=dict(x=dx,y=dy,elevation=0,dest_map=newroom['id'],dest_warp_id='0')
+  if replacement is not None:
+   assert citynew['warp_events'][warpid]['x']==dx and citynew['warp_events'][warpid]['y']==dy
+   citynew['warp_events'][warpid]=entrance
+  else:citynew['warp_events'].append(entrance)
   for warp in newroom['warp_events']:warp.update(dest_map=cityid,dest_warp_id=str(warpid))
   save(f'data/maps/{city}/map.json',citynew)
   save(f'data/maps/{oldhouse}/map.json',original(oldhouse))
   d=ROOT/f'data/maps/{house}';d.mkdir(exist_ok=True)
   (d/'scripts.inc').write_text(house+'_MapScripts::\n\t.byte 0\n')
  save(f'data/maps/{house}/map.json',newroom)
- REPORT.append(dict(region=region,theme=theme,city=city,house=house,open_lot=bool(openlot),original_house=oldhouse,entrance=[dx,dy],rect=[x,y,size,size],original_layout=oldlay['id'],layout=newlay['id'],original_room_layout=oldroomlay['id'],room_layout=il['id'],base_tileset=oldlay['secondary_tileset'],palette=freepal[0],tile_slots=tileids,metatile_slots=free_mt[:size*size],native_map_sha256=hashlib.sha256(struct.pack('<'+'H'*len(oldblocks),*oldblocks)).hexdigest()))
+ REPORT.append(dict(region=region,theme=theme,city=city,house=house,open_lot=bool(openlot),replacement_warp=replacement,original_house=oldhouse,entrance=[dx,dy],rect=[x,y,sw,sh],original_layout=oldlay['id'],layout=newlay['id'],original_room_layout=oldroomlay['id'],room_layout=il['id'],base_tileset=oldlay['secondary_tileset'],palette=freepal[0],tile_slots=tileids,metatile_slots=free_mt[:sw*sh],native_map_sha256=hashlib.sha256(struct.pack('<'+'H'*len(oldblocks),*oldblocks)).hexdigest()))
 
 GUESTS={'bakery':['otis','taffy'],'bloom':['florian','dahlia'],'glitch':['echo','fen'],'rave':['roux','zephyr'],'tea':['nettle','orson'],'tutor':['cosmo','mosswick']}
 def guests(tag,theme):
@@ -292,6 +320,8 @@ def main():
  aliases+='\n#if !IS_FRLG\nstatic void ReloadSavedVenue(void)\n{\n    CpuFill16(0, gSaveBlock1Ptr->mapView, sizeof(gSaveBlock1Ptr->mapView));\n    if (!UseContinueGameWarp())\n    {\n        gSaveBlock1Ptr->continueGameWarp = gSaveBlock1Ptr->location;\n        gSaveBlock1Ptr->continueGameWarp.warpId = WARP_ID_NONE;\n        gSaveBlock1Ptr->continueGameWarp.x = gSaveBlock1Ptr->pos.x;\n        gSaveBlock1Ptr->continueGameWarp.y = gSaveBlock1Ptr->pos.y;\n        SetContinueGameWarpStatus();\n    }\n}\n'
  aliases+='#endif\n'
  aliases+='\nvoid Venues_MigrateSavedLayout(void)\n{\n#if !IS_FRLG\n'
+ aliases+='    // The bakery moved off Route 104; discard only its retired map overlay.\n    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_ROUTE104) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_ROUTE104) && gSaveBlock1Ptr->mapLayoutId == LAYOUT_VENUE_HOENNBAKERY)\n    { gSaveBlock1Ptr->mapLayoutId = LAYOUT_ROUTE104; ReloadSavedVenue(); return; }\n'
+ aliases+='    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_KANTO_ROUTE11) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_KANTO_ROUTE11) && gSaveBlock1Ptr->mapLayoutId == LAYOUT_VENUE_KANTORAVE)\n    { gSaveBlock1Ptr->mapLayoutId = LAYOUT_KANTO_ROUTE11; ReloadSavedVenue(); return; }\n'
  for site in REPORT:
   aliases+=f'    if (gMapHeader.mapLayoutId == {site["layout"]} && gSaveBlock1Ptr->mapLayoutId == {site["original_layout"]})\n    {{\n        gSaveBlock1Ptr->mapLayoutId = {site["layout"]};\n'
   if site['open_lot']:
@@ -305,6 +335,9 @@ def main():
  for stop in read('data/venues/tutor_stops.json'):
   mid=read(f'data/maps/{stop["map"]}/map.json')['id'];local=stop['actor']['local_id']
   aliases+=f'    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP({mid}) && gSaveBlock1Ptr->location.mapNum == MAP_NUM({mid}))\n    {{\n        u32 at = gMapHeader.events->objectEventCount - 1;\n        if (gMapHeader.events->objectEvents[at].localId == {local} && gSaveBlock1Ptr->objectEventTemplates[at].localId != {local}) ReloadSavedVenue();\n    }}\n'
+ for site in REPORT:
+  aliases+=f'    if (gMapHeader.mapLayoutId == {site["layout"]} || gMapHeader.mapLayoutId == {site["room_layout"]}) {{ ReloadSavedVenue(); return; }}\n'
+ aliases+=f'    if (gMapHeader.mapLayoutId == {facade["layout"]}) ReloadSavedVenue();\n'
  aliases+='#endif\n}\n'
  aliases=aliases.replace('#include "venues.h"','#include "venues.h"\n#include "overworld.h"\n#include "load_save.h"\n#include "constants/layouts.h"\n#include "constants/maps.h"\n#include "constants/map_event_ids.h"')
  (ROOT/'src/venues.c').write_text(aliases)

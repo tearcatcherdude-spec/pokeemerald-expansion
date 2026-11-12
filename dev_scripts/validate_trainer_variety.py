@@ -1,3 +1,4 @@
+from asset_revision import verify_expected
 from venue_contract import before_venue_layout
 """Enforce appended content, exact artwork, geometry and encounter contracts."""
 import hashlib,json,re,struct
@@ -14,7 +15,7 @@ def main():
     for path,sha in load('data/trainer_variety/asset_manifest.json').items():
         raw=(ROOT/path).read_bytes()
         if path.endswith('.pal'):raw=raw.replace(b'\r\n',b'\n')
-        assert hashlib.sha256(raw).hexdigest()==sha,('Artwork changed',path)
+        verify_expected(path,sha)
         if path.endswith('.png'):
             expected=(64,64,4,3) if '/front_pics/' in path else (144,32,4,3)
             assert struct.unpack('>IIBB',raw[16:26])==expected,path

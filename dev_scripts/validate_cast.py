@@ -1,3 +1,4 @@
+from asset_revision import verify_expected
 from venue_contract import before_venue_layout
 """Check exact supplied assets, cumulative source contracts and recruitability data."""
 from pathlib import Path
@@ -12,7 +13,7 @@ def main():
  for path,sha in manifest['assets'].items():
   raw=(ROOT/path).read_bytes()
   if path.endswith('.pal'):raw=raw.replace(b'\r\n',b'\n')
-  assert hashlib.sha256(raw).hexdigest()==sha,('Supplied asset changed',path)
+  verify_expected(path,sha)
  groups=load('data/maps/map_groups.json');layouts={l['id']:l for l in load('data/layouts/layouts.json')['layouts']}
  wild={e['map']:e for g in load('src/data/wild_encounters.json')['wild_encounter_groups'] for e in g.get('encounters',[]) if 'map' in e}
  species=(ROOT/'include/constants/species.h').read_text();items=(ROOT/'include/constants/items.h').read_text()

@@ -82,7 +82,7 @@ const struct Tileset gTileset_VenueKantoTutorRoom = {.isCompressed=TRUE, .isSeco
 const u32 gTileset_VenueKantoRaveTiles[] = INCBIN_U32("data/venues/KantoRave/exterior/tiles.bin.smol");
 const u16 gTileset_VenueKantoRaveMetatiles[] = INCBIN_U16("data/venues/KantoRave/exterior/metatiles.bin");
 const u16 gTileset_VenueKantoRaveAttributes[] = INCBIN_U16("data/venues/KantoRave/exterior/attributes.bin");
-const struct Tileset gTileset_VenueKantoRave = {.isCompressed=TRUE, .isSecondary=TRUE, .tiles=gTileset_VenueKantoRaveTiles, .palettes=gTilesetPalettes_Kanto_VermilionCity, .metatiles=gTileset_VenueKantoRaveMetatiles, .metatileAttributes=gTileset_VenueKantoRaveAttributes, .callback=NULL};
+const struct Tileset gTileset_VenueKantoRave = {.isCompressed=TRUE, .isSecondary=TRUE, .tiles=gTileset_VenueKantoRaveTiles, .palettes=gTilesetPalettes_Kanto_FuchsiaCity, .metatiles=gTileset_VenueKantoRaveMetatiles, .metatileAttributes=gTileset_VenueKantoRaveAttributes, .callback=NULL};
 const u32 gTileset_VenueKantoRaveRoomTiles[] = INCBIN_U32("data/venues/KantoRave/interior/tiles.bin.smol");
 const u16 gTileset_VenueKantoRaveRoomMetatiles[] = INCBIN_U16("data/venues/KantoRave/interior/metatiles.bin");
 const u16 gTileset_VenueKantoRaveRoomAttributes[] = INCBIN_U16("data/venues/KantoRave/interior/attributes.bin");

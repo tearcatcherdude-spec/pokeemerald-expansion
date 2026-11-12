@@ -17,9 +17,12 @@ def before_venue_layout(m):
             assert m['layout']==site['layout'],('Unexpected venue layout',m['name'])
             if site.get('open_lot'):
                 old=json.loads((ROOT/f'data/venues/originals/{m["name"]}.json').read_text())
-                assert len(m['warp_events'])==len(old['warp_events'])+1
-                assert m['warp_events'][-1]==dict(x=site['entrance'][0],y=site['entrance'][1],elevation=0,dest_map=json.loads((ROOT/f'data/maps/{site["house"]}/map.json').read_text())['id'],dest_warp_id='0')
-                m['warp_events'].pop()
+                replacement=site.get('replacement_warp')
+                at=replacement if replacement is not None else len(m['warp_events'])-1
+                assert len(m['warp_events'])==len(old['warp_events'])+(replacement is None)
+                assert m['warp_events'][at]==dict(x=site['entrance'][0],y=site['entrance'][1],elevation=0,dest_map=json.loads((ROOT/f'data/maps/{site["house"]}/map.json').read_text())['id'],dest_warp_id='0')
+                if replacement is not None:m['warp_events'][at]=old['warp_events'][at]
+                else:m['warp_events'].pop()
             m['layout']=site['original_layout'];return m
     facades=ROOT/'data/venues/facades.json'
     if facades.exists():
