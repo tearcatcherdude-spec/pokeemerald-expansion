@@ -1,3 +1,11 @@
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VoidWispit;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VoidButtonmoth;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VoidTeacup;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VoidSootling;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VoidBellhop;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VoidPuddle;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VoidWick;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VoidUmbrel;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastSilas;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastKade;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastAshe;
@@ -887,4 +895,12 @@ const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[
     [MAUVILLE_MAN_GIDDY]       = &gObjectEventGraphicsInfo_Giddy,
     [MAUVILLE_MAN_UNUSED1]     = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan1,
     [MAUVILLE_MAN_UNUSED2]     = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan2,
+    [OBJ_EVENT_GFX_VOID_WISPIT] = &gObjectEventGraphicsInfo_VoidWispit,
+    [OBJ_EVENT_GFX_VOID_BUTTONMOTH] = &gObjectEventGraphicsInfo_VoidButtonmoth,
+    [OBJ_EVENT_GFX_VOID_TEACUP] = &gObjectEventGraphicsInfo_VoidTeacup,
+    [OBJ_EVENT_GFX_VOID_SOOTLING] = &gObjectEventGraphicsInfo_VoidSootling,
+    [OBJ_EVENT_GFX_VOID_BELLHOP] = &gObjectEventGraphicsInfo_VoidBellhop,
+    [OBJ_EVENT_GFX_VOID_PUDDLE] = &gObjectEventGraphicsInfo_VoidPuddle,
+    [OBJ_EVENT_GFX_VOID_WICK] = &gObjectEventGraphicsInfo_VoidWick,
+    [OBJ_EVENT_GFX_VOID_UMBREL] = &gObjectEventGraphicsInfo_VoidUmbrel,
 };

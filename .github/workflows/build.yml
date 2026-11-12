@@ -44,6 +44,7 @@ jobs:
           python3 dev_scripts/validate_venue_connections.py
           python3 dev_scripts/validate_readability.py
           python3 dev_scripts/build_roaming_tutor_catalog.py --check
+          python3 dev_scripts/validate_void_oldale.py
 
       - name: Validate recruitable cast
         run: python3 dev_scripts/validate_cast.py

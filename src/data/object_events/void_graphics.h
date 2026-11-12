@@ -1,0 +1,16 @@
+const u32 gObjectEventPic_VoidWispit[] = INCGFX_U32("graphics/void_oldale/wispit/walker.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_VoidWispit[] = INCGFX_U16("graphics/void_oldale/wispit/palette.pal", ".gbapal");
+const u32 gObjectEventPic_VoidButtonmoth[] = INCGFX_U32("graphics/void_oldale/buttonmoth/walker.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_VoidButtonmoth[] = INCGFX_U16("graphics/void_oldale/buttonmoth/palette.pal", ".gbapal");
+const u32 gObjectEventPic_VoidTeacup[] = INCGFX_U32("graphics/void_oldale/teacup/walker.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_VoidTeacup[] = INCGFX_U16("graphics/void_oldale/teacup/palette.pal", ".gbapal");
+const u32 gObjectEventPic_VoidSootling[] = INCGFX_U32("graphics/void_oldale/sootling/walker.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_VoidSootling[] = INCGFX_U16("graphics/void_oldale/sootling/palette.pal", ".gbapal");
+const u32 gObjectEventPic_VoidBellhop[] = INCGFX_U32("graphics/void_oldale/bellhop/walker.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_VoidBellhop[] = INCGFX_U16("graphics/void_oldale/bellhop/palette.pal", ".gbapal");
+const u32 gObjectEventPic_VoidPuddle[] = INCGFX_U32("graphics/void_oldale/puddle/walker.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_VoidPuddle[] = INCGFX_U16("graphics/void_oldale/puddle/palette.pal", ".gbapal");
+const u32 gObjectEventPic_VoidWick[] = INCGFX_U32("graphics/void_oldale/wick/walker.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_VoidWick[] = INCGFX_U16("graphics/void_oldale/wick/palette.pal", ".gbapal");
+const u32 gObjectEventPic_VoidUmbrel[] = INCGFX_U32("graphics/void_oldale/umbrel/walker.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_VoidUmbrel[] = INCGFX_U16("graphics/void_oldale/umbrel/palette.pal", ".gbapal");

@@ -7415,3 +7415,5 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastZuri = {
 };
 
 #include "variety_graphics_info.h"
+
+#include "void_info.h"

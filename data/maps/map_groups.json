@@ -117,7 +117,8 @@
     "gMapGroup_KantoCampaignIndoorSixIslandRoute_Frlg",
     "gMapGroup_KantoCampaignIndoorSevenIslandRoute_Frlg",
     "gMapGroup_VenuesHoenn",
-    "gMapGroup_VenuesKanto"
+    "gMapGroup_VenuesKanto",
+    "gMapGroup_VoidOldale"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1713,5 +1714,12 @@
     "VenueKantoTutor",
     "VenueKantoRave",
     "VenueKantoBloom"
+  ],
+  "gMapGroup_VoidOldale": [
+    "VoidOldaleTown",
+    "VoidOldaleCottage",
+    "VoidOldaleWorkshop",
+    "VoidOldaleRestHouse",
+    "VoidOldaleShop"
   ]
 }
