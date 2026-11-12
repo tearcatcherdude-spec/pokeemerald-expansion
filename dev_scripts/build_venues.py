@@ -49,6 +49,8 @@ def packed(ts):
  a=np.array(ts,dtype='uint8').reshape(-1);return bytes(a[::2]|(a[1::2]<<4))
 def write_tileset(label,path,ts,mts,attrs,palpaths,callback='NULL'):
  path=Path(path);(ROOT/path).mkdir(parents=True,exist_ok=True)
+ ts=list(ts)
+ while len(ts)<(384 if 'Kanto' in label else 512):ts.append(np.zeros((8,8),dtype='uint8'))
  (ROOT/path/'tiles.bin').write_bytes(packed(ts));binary(path/'metatiles.bin',sum(mts,[]));binary(path/'attributes.bin',attrs,4 if 'Kanto' in label else 2)
  DEFS.append(f'const u32 {label}Tiles[] = INCBIN_U32("{path.as_posix()}/tiles.bin");\nconst u16 {label}Palettes[][16] = {{\n'+''.join(f' INCGFX_U16("{p.as_posix()}", ".gbapal"),\n' for p in palpaths)+'};\n'+f'const u16 {label}Metatiles[] = INCBIN_U16("{path.as_posix()}/metatiles.bin");\nconst u16 {label}Attributes[] = INCBIN_U16("{path.as_posix()}/attributes.bin");\nconst struct Tileset {label} = {{.isCompressed=FALSE, .isSecondary=TRUE, .tiles={label}Tiles, .palettes={label}Palettes, .metatiles={label}Metatiles, .metatileAttributes={label}Attributes, .callback={callback}}};\n')
  DECL.append(f'extern const struct Tileset {label};')
