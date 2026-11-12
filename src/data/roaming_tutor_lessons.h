@@ -23,7 +23,7 @@ static const struct TutorLesson sGeneralLessons[] = {
     LESSON(DIZZY_PUNCH, 40, TUTOR_LIMBS, "Your existing limbs do the work.\nWe practice a controlled strike.$"),
     LESSON(CONFUSION, 15, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),
     LESSON(PSYBEAM, 35, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),
-    LESSON(KINESIS, 15, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),
+    LESSON(KINESIS, 5, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),
     LESSON(MIRACLE_EYE, 15, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),
     LESSON(EXTRASENSORY, 50, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),
     LESSON(PSYCHIC, 60, TUTOR_MIND, "Shape your natural mental energy.\nFocus and control, not brute force.$"),

@@ -198,3 +198,18 @@ TEST("Roaming tutor low level Beldum has a safe steel option instead of only gen
     }
     EXPECT(hasSteel);
 }
+
+TEST("Roaming tutor provides four safe extras for the early companion team")
+{
+    const u16 species[] = {SPECIES_RALTS, SPECIES_TOTODILE, SPECIES_BELDUM, SPECIES_EEVEE};
+    const u8 levels[] = {13, 17, 9, 10};
+    struct Pokemon mon;
+    u16 offers[4];
+    u32 s, i;
+    for (s = 0; s < ARRAY_COUNT(species); s++)
+    {
+        CreateMon(&mon, species[s], levels[s], 0x12345678, OTID_STRUCT_PRESET(123));
+        EXPECT_EQ(RoamingTutor_Offers(&mon, offers), 4);
+        for (i = 0; i < 4; i++) EXPECT(GetMovePower(offers[i]) <= (levels[s] < 15 ? 40 : 50));
+    }
+}
