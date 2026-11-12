@@ -10,7 +10,7 @@ def verify(rom_path,map_path):
     symbols={n:int(a,16) for a,n in re.findall(r'0x([0-9a-fA-F]{8,16})\s+(\w+)\s*$',text,re.M)}
     def word(address):return struct.unpack_from('<I',rom,address-0x08000000)[0]
     source=(ROOT/'include/constants/trainers.h').read_text()
-    body=re.search(r'enum TrainerPicID\s*\{(.*?)\};',source,re.S)[1]
+    body=re.search(r'TrainerPicID\s*\{(.*?)\};',source,re.S)[1]
     body=re.sub(r'/\*.*?\*/|//[^\n]*','',body,flags=re.S)
     pics={};value=-1
     for token in body.split(','):
