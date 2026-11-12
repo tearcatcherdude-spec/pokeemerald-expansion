@@ -258,6 +258,21 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "KantoRare_ABSOL_Interact",
       "flag": "0xa8fb"
+    },
+    {
+      "type": "object",
+      "local_id": "LOCALID_VARIETY_BRIAR_KANTO",
+      "graphics_id": "OBJ_EVENT_GFX_VARIETY_BRIAR",
+      "x": 68,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Variety_EventScript_BRIAR_KANTO",
+      "flag": "0"
     }
   ],
   "warp_events": [

@@ -28,7 +28,7 @@ def main():
         actor=actors[0];assert actor['graphics_id']=='OBJ_EVENT_GFX_SPECIES('+r['species']+')'
         assert actor['flag']==hex(r['flag_id']) and actor['script']==r['script']
         assert (actor['x'],actor['y'],actor['elevation'])==(r['x'],r['y'],r['elevation'])
-        m['object_events']=[o for o in m['object_events'] if o not in actors]
+        m['object_events']=[o for o in m['object_events'] if o not in actors and not o.get('script','').startswith('Variety_EventScript_')]
         assert digest(m)==base[r['map']],('Native event/map changed',r['map'])
         layout,grid,behavior=grid_for(m);x,y=r['x'],r['y'];w=layout['width']
         assert not grid[y*w+x]&0xc00 and behavior(x,y)==r['behavior']

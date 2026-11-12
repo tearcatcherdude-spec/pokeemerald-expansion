@@ -1,4 +1,5 @@
 #include "global.h"
+#include "pokemon.h"
 #include "companion_dialogue.h"
 #include "bonds.h"
 #include "bond_journal.h"
@@ -1457,6 +1458,7 @@ void ClearTrainerFlag(u16 trainerId)
 
 void BattleSetup_StartTrainerBattle(void)
 {
+    TrainerVariety_ResetBattleMusic();
     if (gNoOfApproachingTrainers == 2)
     {
         if (FollowerNPCIsBattlePartner())

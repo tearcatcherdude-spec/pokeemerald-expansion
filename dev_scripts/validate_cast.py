@@ -30,7 +30,11 @@ def main():
    symbol='SPECIES_'+re.sub(r'[^A-Z0-9]+','_',mon.upper()).strip('_')
    assert symbol in species,(n,mon)
   max_level=max(p['max_level'] for p in wild[c['area']]['land_mons']['mons']);assert c['level']==max_level+(3 if n in ['emi','silas'] else 5)
-  p=f'data/maps/{c["map"]}/map.json';m=load(p);old=baseline['maps'][p];added=m['object_events'][-1]
+  p=f'data/maps/{c["map"]}/map.json';m=load(p);old=baseline['maps'][p]
+  # Appended variety actors are separately pinned by their full map contract.
+  # Preserve the original cast-era actor check verbatim on its own prefix.
+  m['object_events']=[o for o in m['object_events'] if not o.get('script','').startswith('Variety_EventScript_')]
+  added=m['object_events'][-1]
   assert len(m['object_events'])==old['objects_count']+1 and canonical(m['object_events'][:-1])==old['objects_sha'],('Original actors changed',c['map'])
   assert canonical({k:v for k,v in m.items() if k!='object_events'})==old['metadata_sha']
   assert added['flag']==hex(0xB000+i) and added['graphics_id']=='OBJ_EVENT_GFX_CAST_'+n.upper()

@@ -135,6 +135,36 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Cast_EventScript_Meet_Lume",
       "flag": "0xb007"
+    },
+    {
+      "type": "object",
+      "local_id": "LOCALID_VARIETY_OPALINE_HOENN",
+      "graphics_id": "OBJ_EVENT_GFX_VARIETY_OPALINE",
+      "x": 2,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Variety_EventScript_OPALINE_HOENN",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "local_id": "LOCALID_VARIETY_TARO_HOENN",
+      "graphics_id": "OBJ_EVENT_GFX_VARIETY_TARO",
+      "x": 15,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Variety_EventScript_TARO_HOENN",
+      "flag": "0"
     }
   ],
   "warp_events": [

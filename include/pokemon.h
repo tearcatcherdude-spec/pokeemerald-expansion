@@ -910,6 +910,8 @@ u16 SpeciesToPokedexNum(enum Species species);
 bool32 IsSpeciesInRegionalDex(enum Species species);
 bool32 IsSpeciesInKantoDex(enum Species species);
 bool32 IsSpeciesInHoennDex(enum Species species);
+void TrainerVariety_ResetBattleMusic(void);
+u16 TrainerVariety_GetBattleMusic(bool32 kanto);
 u16 GetBattleBGM(void);
 void PlayBattleBGM(void);
 void PlayMapChosenOrBattleBGM(u16 songId);

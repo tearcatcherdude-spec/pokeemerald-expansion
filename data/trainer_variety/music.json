@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "steady",
+    "title": "Friendly Rivalry",
+    "bpm": 136,
+    "ppq": 24,
+    "loop_start": 192,
+    "loop_end": 3264,
+    "notes": 1192,
+    "voicegroup": "rg_vs_trainer"
+  },
+  {
+    "slug": "brisk",
+    "title": "Running on Sparks",
+    "bpm": 154,
+    "ppq": 24,
+    "loop_start": 192,
+    "loop_end": 3264,
+    "notes": 1416,
+    "voicegroup": "rg_vs_trainer"
+  },
+  {
+    "slug": "wistful",
+    "title": "One More Try",
+    "bpm": 104,
+    "ppq": 24,
+    "loop_start": 192,
+    "loop_end": 3264,
+    "notes": 1064,
+    "voicegroup": "rg_vs_trainer"
+  },
+  {
+    "slug": "cheerful",
+    "title": "Pocketful of Sunshine",
+    "bpm": 124,
+    "ppq": 24,
+    "loop_start": 192,
+    "loop_end": 3264,
+    "notes": 1160,
+    "voicegroup": "rg_vs_trainer"
+  },
+  {
+    "slug": "silly",
+    "title": "Absolutely According to Plan",
+    "bpm": 112,
+    "ppq": 24,
+    "loop_start": 192,
+    "loop_end": 3264,
+    "notes": 1032,
+    "voicegroup": "rg_vs_trainer"
+  },
+  {
+    "slug": "tense",
+    "title": "A Narrow Escape",
+    "bpm": 120,
+    "ppq": 24,
+    "loop_start": 192,
+    "loop_end": 3264,
+    "notes": 1192,
+    "voicegroup": "rg_vs_trainer"
+  },
+  {
+    "slug": "laidback",
+    "title": "No Need to Rush",
+    "bpm": 108,
+    "ppq": 24,
+    "loop_start": 192,
+    "loop_end": 3264,
+    "notes": 1064,
+    "voicegroup": "rg_vs_trainer"
+  }
+]

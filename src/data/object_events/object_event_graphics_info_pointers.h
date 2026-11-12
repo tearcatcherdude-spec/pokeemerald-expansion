@@ -8,6 +8,38 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastVera;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastLume;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastMochi;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastZuri;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyBarnaby;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyVesper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyMarlo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyClatter;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyMosswick;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyNyxie;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietySable;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyOpaline;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyCinder;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyDahlia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyEcho;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyBriar;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyFable;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyTaffy;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyRoux;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyHugo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyOtis;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyBastian;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyMonty;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyFlorian;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyOrson;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyKestrel;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyJuniper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietySolace;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyIdris;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyFen;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyTaro;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyCosmo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyNettle;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyMiri;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyZephyr;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VarietyElden;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanMachBike;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BrendanSurfing;
@@ -431,6 +463,38 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CAST_LUME] = &gObjectEventGraphicsInfo_CastLume,
     [OBJ_EVENT_GFX_CAST_MOCHI] = &gObjectEventGraphicsInfo_CastMochi,
     [OBJ_EVENT_GFX_CAST_ZURI] = &gObjectEventGraphicsInfo_CastZuri,
+    [OBJ_EVENT_GFX_VARIETY_BARNABY] = &gObjectEventGraphicsInfo_VarietyBarnaby,
+    [OBJ_EVENT_GFX_VARIETY_VESPER] = &gObjectEventGraphicsInfo_VarietyVesper,
+    [OBJ_EVENT_GFX_VARIETY_MARLO] = &gObjectEventGraphicsInfo_VarietyMarlo,
+    [OBJ_EVENT_GFX_VARIETY_CLATTER] = &gObjectEventGraphicsInfo_VarietyClatter,
+    [OBJ_EVENT_GFX_VARIETY_MOSSWICK] = &gObjectEventGraphicsInfo_VarietyMosswick,
+    [OBJ_EVENT_GFX_VARIETY_NYXIE] = &gObjectEventGraphicsInfo_VarietyNyxie,
+    [OBJ_EVENT_GFX_VARIETY_SABLE] = &gObjectEventGraphicsInfo_VarietySable,
+    [OBJ_EVENT_GFX_VARIETY_OPALINE] = &gObjectEventGraphicsInfo_VarietyOpaline,
+    [OBJ_EVENT_GFX_VARIETY_CINDER] = &gObjectEventGraphicsInfo_VarietyCinder,
+    [OBJ_EVENT_GFX_VARIETY_DAHLIA] = &gObjectEventGraphicsInfo_VarietyDahlia,
+    [OBJ_EVENT_GFX_VARIETY_ECHO] = &gObjectEventGraphicsInfo_VarietyEcho,
+    [OBJ_EVENT_GFX_VARIETY_BRIAR] = &gObjectEventGraphicsInfo_VarietyBriar,
+    [OBJ_EVENT_GFX_VARIETY_FABLE] = &gObjectEventGraphicsInfo_VarietyFable,
+    [OBJ_EVENT_GFX_VARIETY_TAFFY] = &gObjectEventGraphicsInfo_VarietyTaffy,
+    [OBJ_EVENT_GFX_VARIETY_ROUX] = &gObjectEventGraphicsInfo_VarietyRoux,
+    [OBJ_EVENT_GFX_VARIETY_HUGO] = &gObjectEventGraphicsInfo_VarietyHugo,
+    [OBJ_EVENT_GFX_VARIETY_OTIS] = &gObjectEventGraphicsInfo_VarietyOtis,
+    [OBJ_EVENT_GFX_VARIETY_BASTIAN] = &gObjectEventGraphicsInfo_VarietyBastian,
+    [OBJ_EVENT_GFX_VARIETY_MONTY] = &gObjectEventGraphicsInfo_VarietyMonty,
+    [OBJ_EVENT_GFX_VARIETY_FLORIAN] = &gObjectEventGraphicsInfo_VarietyFlorian,
+    [OBJ_EVENT_GFX_VARIETY_ORSON] = &gObjectEventGraphicsInfo_VarietyOrson,
+    [OBJ_EVENT_GFX_VARIETY_KESTREL] = &gObjectEventGraphicsInfo_VarietyKestrel,
+    [OBJ_EVENT_GFX_VARIETY_JUNIPER] = &gObjectEventGraphicsInfo_VarietyJuniper,
+    [OBJ_EVENT_GFX_VARIETY_SOLACE] = &gObjectEventGraphicsInfo_VarietySolace,
+    [OBJ_EVENT_GFX_VARIETY_IDRIS] = &gObjectEventGraphicsInfo_VarietyIdris,
+    [OBJ_EVENT_GFX_VARIETY_FEN] = &gObjectEventGraphicsInfo_VarietyFen,
+    [OBJ_EVENT_GFX_VARIETY_TARO] = &gObjectEventGraphicsInfo_VarietyTaro,
+    [OBJ_EVENT_GFX_VARIETY_COSMO] = &gObjectEventGraphicsInfo_VarietyCosmo,
+    [OBJ_EVENT_GFX_VARIETY_NETTLE] = &gObjectEventGraphicsInfo_VarietyNettle,
+    [OBJ_EVENT_GFX_VARIETY_MIRI] = &gObjectEventGraphicsInfo_VarietyMiri,
+    [OBJ_EVENT_GFX_VARIETY_ZEPHYR] = &gObjectEventGraphicsInfo_VarietyZephyr,
+    [OBJ_EVENT_GFX_VARIETY_ELDEN] = &gObjectEventGraphicsInfo_VarietyElden,
     [OBJ_EVENT_GFX_PIP] =                    &gObjectEventGraphicsInfo_Pip,
     [OBJ_EVENT_GFX_BOY_1] =                    &gObjectEventGraphicsInfo_Boy1,
     [OBJ_EVENT_GFX_GIRL_1] =                   &gObjectEventGraphicsInfo_Girl1,

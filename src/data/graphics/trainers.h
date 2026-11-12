@@ -604,8 +604,42 @@ const u16 gTrainerPalette_CastMochi[] = INCGFX_U16("graphics/trainers/palettes/c
 const u32 gTrainerFrontPic_CastZuri[] = INCGFX_U32("graphics/trainers/front_pics/cast_zuri.png", ".4bpp.smol");
 const u16 gTrainerPalette_CastZuri[] = INCGFX_U16("graphics/trainers/palettes/cast_zuri.pal", ".gbapal");
 
+#include "variety_trainers.h"
+
 const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
 {
+    [TRAINER_PIC_VARIETY_BARNABY] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyBarnaby, gTrainerPalette_VarietyBarnaby), },
+    [TRAINER_PIC_VARIETY_VESPER] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyVesper, gTrainerPalette_VarietyVesper), },
+    [TRAINER_PIC_VARIETY_MARLO] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyMarlo, gTrainerPalette_VarietyMarlo), },
+    [TRAINER_PIC_VARIETY_CLATTER] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyClatter, gTrainerPalette_VarietyClatter), },
+    [TRAINER_PIC_VARIETY_MOSSWICK] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyMosswick, gTrainerPalette_VarietyMosswick), },
+    [TRAINER_PIC_VARIETY_NYXIE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyNyxie, gTrainerPalette_VarietyNyxie), },
+    [TRAINER_PIC_VARIETY_SABLE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietySable, gTrainerPalette_VarietySable), },
+    [TRAINER_PIC_VARIETY_OPALINE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyOpaline, gTrainerPalette_VarietyOpaline), },
+    [TRAINER_PIC_VARIETY_CINDER] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyCinder, gTrainerPalette_VarietyCinder), },
+    [TRAINER_PIC_VARIETY_DAHLIA] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyDahlia, gTrainerPalette_VarietyDahlia), },
+    [TRAINER_PIC_VARIETY_ECHO] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyEcho, gTrainerPalette_VarietyEcho), },
+    [TRAINER_PIC_VARIETY_BRIAR] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyBriar, gTrainerPalette_VarietyBriar), },
+    [TRAINER_PIC_VARIETY_FABLE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyFable, gTrainerPalette_VarietyFable), },
+    [TRAINER_PIC_VARIETY_TAFFY] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyTaffy, gTrainerPalette_VarietyTaffy), },
+    [TRAINER_PIC_VARIETY_ROUX] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyRoux, gTrainerPalette_VarietyRoux), },
+    [TRAINER_PIC_VARIETY_HUGO] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyHugo, gTrainerPalette_VarietyHugo), },
+    [TRAINER_PIC_VARIETY_OTIS] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyOtis, gTrainerPalette_VarietyOtis), },
+    [TRAINER_PIC_VARIETY_BASTIAN] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyBastian, gTrainerPalette_VarietyBastian), },
+    [TRAINER_PIC_VARIETY_MONTY] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyMonty, gTrainerPalette_VarietyMonty), },
+    [TRAINER_PIC_VARIETY_FLORIAN] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyFlorian, gTrainerPalette_VarietyFlorian), },
+    [TRAINER_PIC_VARIETY_ORSON] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyOrson, gTrainerPalette_VarietyOrson), },
+    [TRAINER_PIC_VARIETY_KESTREL] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyKestrel, gTrainerPalette_VarietyKestrel), },
+    [TRAINER_PIC_VARIETY_JUNIPER] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyJuniper, gTrainerPalette_VarietyJuniper), },
+    [TRAINER_PIC_VARIETY_SOLACE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietySolace, gTrainerPalette_VarietySolace), },
+    [TRAINER_PIC_VARIETY_IDRIS] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyIdris, gTrainerPalette_VarietyIdris), },
+    [TRAINER_PIC_VARIETY_FEN] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyFen, gTrainerPalette_VarietyFen), },
+    [TRAINER_PIC_VARIETY_TARO] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyTaro, gTrainerPalette_VarietyTaro), },
+    [TRAINER_PIC_VARIETY_COSMO] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyCosmo, gTrainerPalette_VarietyCosmo), },
+    [TRAINER_PIC_VARIETY_NETTLE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyNettle, gTrainerPalette_VarietyNettle), },
+    [TRAINER_PIC_VARIETY_MIRI] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyMiri, gTrainerPalette_VarietyMiri), },
+    [TRAINER_PIC_VARIETY_ZEPHYR] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyZephyr, gTrainerPalette_VarietyZephyr), },
+    [TRAINER_PIC_VARIETY_ELDEN] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_VarietyElden, gTrainerPalette_VarietyElden), },
     [TRAINER_PIC_CAST_SILAS] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastSilas, gTrainerPalette_CastSilas), },
     [TRAINER_PIC_CAST_KADE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastKade, gTrainerPalette_CastKade), },
     [TRAINER_PIC_CAST_ASHE] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastAshe, gTrainerPalette_CastAshe), },
