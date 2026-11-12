@@ -57,6 +57,15 @@ def main():
             pos=o['x'],o['y'];assert pos in floor,(s['house'],'actor in furniture',pos)
             assert any(n in reach for n in neighbors(pos)),(s['house'],'unreachable actor',pos)
         assert set(floor)-blocked<=reach,(s['house'],'disconnected walkable floor')
+    facades=load('data/venues/facades.json')
+    city=load(f'data/maps/{facades["city"]}/map.json');old=load(f'data/venues/originals/{facades["city"]}.json')
+    assert before_venue_layout(city)==old
+    a=words(LAYOUTS[city['layout']]['blockdata_filepath']);b=words(LAYOUTS[old['layout']]['blockdata_filepath']);w=LAYOUTS[city['layout']]['width']
+    changed={(x+xx,y+yy) for p in facades['placements'] for x,y,sw,sh in [p['rect']] for yy in range(sh) for xx in range(sw)}
+    for i,(av,bv) in enumerate(zip(a,b)):
+        assert av&0xFC00==bv&0xFC00
+        if (i%w,i//w) not in changed:assert av==bv
+    assert all(t<1008 and t not in range(416,512) for t in facades['allocated_tiles'])
     for s in load('data/venues/tutor_stops.json'):
         m,l,floor=grid(s['map']);o=s['actor'];assert m['object_events'].count(o)==1
         blocked={(a['x'],a['y']) for a in m['object_events']};pos=o['x'],o['y'];ns=[p for p in neighbors(pos) if p in floor and p not in blocked]
@@ -70,5 +79,5 @@ def main():
         assert 'MOVE_'+move in gen4 and move not in forbidden and 5<=int(level)<=100
     assert 'level >= last - 1 + 20' in source
     assert 'roamingTutorLevelLo:5' in (ROOT/'include/pokemon.h').read_text()
-    print('PASS: 12 private venues, exact city collision/elevation/behavior and doors, retained scripts/residents, connected rooms and six tutor stops; supplied battle artwork and Gen-IV lesson whitelist')
+    print('PASS: 12 private venues and two Saffron facades; protected native events and doors, bypassable new lots, connected rooms and six tutor stops; supplied battle artwork and Gen-IV lesson whitelist')
 if __name__=='__main__':main()

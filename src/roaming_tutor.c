@@ -105,6 +105,8 @@ bool32 RoamingTutor_Teach(struct Pokemon *mon, u16 move, u32 slot)
     if (slot >= MAX_MON_MOVES || RoamingTutor_Offers(mon, offers) != 4) return FALSE;
     for (i = 0; i < 4; i++) if (offers[i] == move) break;
     if (i == 4) return FALSE;
+    if (!P_CAN_FORGET_HIDDEN_MOVE && IsMoveHM(GetMonData(mon, MON_DATA_MOVE1 + slot))) return FALSE;
+    RemoveMonPPBonus(mon, slot);
     SetMonMoveSlot(mon, move, slot);
     level = GetMonData(mon, MON_DATA_LEVEL) + 1;
     SetMonData(mon, MON_DATA_ROAMING_TUTOR_LEVEL, &level);
@@ -156,6 +158,7 @@ void Script_RoamingTutorExplain(void)
     sChosenMove = MOVE_NONE;
     if (gSpecialVar_Result >= 4) return;
     sChosenMove = sOffers[gSpecialVar_Result];
+    StringCopy(gStringVar1, GetMoveName(sChosenMove));
     lessons = Lessons(&gParties[B_TRAINER_PLAYER][sMonSlot], &count);
     for (i = 0; i < count; i++) if (lessons[i].move == sChosenMove)
     {

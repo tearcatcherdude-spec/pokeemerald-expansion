@@ -1,4 +1,5 @@
 #include "global.h"
+#include "venues.h"
 #include "bond_journal.h"
 #include "pip.h"
 #include "overworld.h"
@@ -678,6 +679,7 @@ static void LoadCurrentMapData(void)
 static void LoadSaveblockMapHeader(void)
 {
     gMapHeader = *Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
+    Venues_MigrateSavedLayout();
     gMapHeader.mapLayout = GetMapLayout(gSaveBlock1Ptr->mapLayoutId);
 }
 

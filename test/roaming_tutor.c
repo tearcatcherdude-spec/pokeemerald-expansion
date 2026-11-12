@@ -1,6 +1,7 @@
 #include "global.h"
 #include "pokemon.h"
 #include "roaming_tutor.h"
+#include "move.h"
 #include "test/test.h"
 
 TEST("Roaming tutor gives Beldum and Magikarp four distinct Gen IV or earlier choices")
@@ -67,4 +68,42 @@ TEST("Roaming tutor level 100 cooldown cannot wrap and Pokémon substruct size s
     EXPECT(RoamingTutor_Teach(&mon, offers[0], 3));
     EXPECT(!RoamingTutor_CanTeach(&mon));
     EXPECT_EQ(GetMonData(&mon, MON_DATA_ROAMING_TUTOR_LEVEL), 101);
+}
+
+TEST("Roaming tutor preserves HM access and resets only the replaced slot PP bonuses")
+{
+    struct Pokemon mon;
+    u16 offers[4];
+    u8 bonuses = 255;
+    CreateMon(&mon, SPECIES_MAGIKARP, 6, 0x12345678, OTID_STRUCT_PRESET(123));
+    SetMonMoveSlot(&mon, MOVE_SURF, 2);
+    EXPECT_EQ(RoamingTutor_Offers(&mon, offers), 4);
+    EXPECT(!RoamingTutor_Teach(&mon, offers[0], 2));
+    EXPECT_EQ(GetMonData(&mon, MON_DATA_ROAMING_TUTOR_LEVEL), 0);
+    EXPECT_EQ(GetMonData(&mon, MON_DATA_MOVE3), MOVE_SURF);
+    SetMonData(&mon, MON_DATA_PP_BONUSES, &bonuses);
+    EXPECT(RoamingTutor_Teach(&mon, offers[0], 3));
+    EXPECT_EQ(GetMonData(&mon, MON_DATA_PP_BONUSES), 63);
+}
+
+TEST("Roaming tutor actual configured move power respects conservative level bands")
+{
+    const u16 species[] = {SPECIES_BELDUM, SPECIES_METANG, SPECIES_METAGROSS, SPECIES_MAGIKARP, SPECIES_EEVEE};
+    struct Pokemon mon;
+    u16 offers[4];
+    u32 i, j, level, cap;
+    for (i = 0; i < ARRAY_COUNT(species); i++)
+    {
+        for (level = 5; level <= 100; level++)
+        {
+            cap = level < 15 ? 40 : level < 25 ? 50 : level < 35 ? 60 : level < 45 ? 70 : level < 50 ? 80 : 90;
+            CreateMon(&mon, species[i], level, 0x12345678, OTID_STRUCT_PRESET(123));
+            if (RoamingTutor_Offers(&mon, offers) == 4)
+                for (j = 0; j < 4; j++)
+                {
+                    EXPECT(offers[j] < MOVES_COUNT_GEN4);
+                    EXPECT(GetMovePower(offers[j]) <= cap);
+                }
+        }
+    }
 }

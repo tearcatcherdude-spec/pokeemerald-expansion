@@ -16,7 +16,7 @@ def bank(symbol):
  m=np.frombuffer((ROOT/array(fields['metatiles'],'INCBIN_U16')).read_bytes(),dtype='<u2').reshape(-1,8)
  raw=re.search(r'\b'+fields['tiles']+r'\[\]\s*=\s*INCBIN_U32\("([^"]+)"',HEAD)
  if raw:
-  packed=np.frombuffer((ROOT/raw[1]).read_bytes(),dtype='uint8');a=np.empty(len(packed)*2,dtype='uint8');a[::2]=packed&15;a[1::2]=packed>>4;ts=a.reshape(-1,8,8)
+  packed=np.frombuffer((ROOT/raw[1].removesuffix('.smol')).read_bytes(),dtype='uint8');a=np.empty(len(packed)*2,dtype='uint8');a[::2]=packed&15;a[1::2]=packed>>4;ts=a.reshape(-1,8,8)
  else:
   p=array(fields['tiles'],'INCGFX_U32');im=Image.open(ROOT/p);a=np.array(im)&15;ts=np.array([a[y:y+8,x:x+8] for y in range(0,im.height,8) for x in range(0,im.width,8)])
  pbody=re.search(r'\b'+fields['palettes']+r'\[\]\[16\]\s*=\s*\{(.*?)\};',HEAD,re.S)[1]
@@ -50,5 +50,11 @@ def main(out):
   crop=new.crop((max(0,x-2)*16,max(0,y-1)*16,min(new.width,(x+w+2)*16),min(new.height,(y+h+2)*16)))
   crop=crop.resize((crop.width*2,crop.height*2),Image.Resampling.NEAREST);room=room.resize((room.width*2,room.height*2),Image.Resampling.NEAREST)
   d.text((8,i*190+5),f'{s["city"]}: {s["theme"]} | source render',fill='#223333');contact.paste(crop,(8,i*190+24));contact.paste(room,(390,i*190+24))
- contact.save(out/'venue-lineup.png');print('PASS: all 12 exterior source renders preserve every pixel outside their building rectangle')
+ contact.save(out/'venue-lineup.png')
+ f=json.loads((ROOT/'data/venues/facades.json').read_text());old=np.array(render(LAYOUTS[f['original_layout']]));new=render(LAYOUTS[f['layout']]);mask=np.ones(old.shape[:2],dtype=bool)
+ for p in f['placements']:
+  x,y,w,h=p['rect'];mask[y*16:(y+h)*16,x*16:(x+w)*16]=False
+ assert np.array_equal(old[mask],np.array(new)[mask])
+ new.save(out/'Saffron-facades.png')
+ print('PASS: all 14 installed exterior source renders preserve every pixel outside their building rectangles')
 if __name__=='__main__':main(sys.argv[1])

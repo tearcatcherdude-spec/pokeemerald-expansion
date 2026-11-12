@@ -14358,6 +14358,21 @@
       "blockdata_filepath": "data/venues/KantoBloom/interior/map-fragment.bin",
       "layout_version": "frlg",
       "parallel_watch": true
+    },
+    {
+      "id": "LAYOUT_VENUE_SAFFRON_FACADES",
+      "name": "VenueSaffronFacades_Layout",
+      "width": 66,
+      "height": 55,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_VenueKantoSaffronPrimary",
+      "secondary_tileset": "gTileset_VenueKantoSaffronSecondary",
+      "border_filepath": "data/layouts/SaffronCity_Frlg/border.bin",
+      "blockdata_filepath": "data/venues/SaffronFacades/map.bin",
+      "layout_version": "frlg",
+      "parallel_watch": true,
+      "kanto_campaign": true
     }
   ]
 }

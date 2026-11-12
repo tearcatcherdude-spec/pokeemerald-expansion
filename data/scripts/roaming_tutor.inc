@@ -49,7 +49,7 @@ RoamingTutor_Text_Slot:
 	.string "Choose an empty slot or the move\n"
 	.string "you want to replace. B cancels.$"
 RoamingTutor_Text_Confirm:
-	.string "Use this slot for that lesson?\n"
+	.string "Teach {STR_VAR_1} in this slot?\n"
 	.string "Its current move will be replaced.\p"
 	.string "Afterwards, this POKEMON needs\n"
 	.string "20 more levels before my next lesson.$"
@@ -63,5 +63,5 @@ RoamingTutor_Text_Unavailable:
 	.string "needs 20 levels since its last one.\p"
 	.string "I also need four suitable unknown\n"
 	.string "moves. Eggs cannot take lessons.\p"
-	.string "Some unusual bodies need a method\n"
+	.string "I will not erase an HM, either.\n"
 	.string "I have not safely worked out yet.$"

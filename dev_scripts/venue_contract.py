@@ -21,4 +21,10 @@ def before_venue_layout(m):
                 assert m['warp_events'][-1]==dict(x=site['entrance'][0],y=site['entrance'][1],elevation=0,dest_map=json.loads((ROOT/f'data/maps/{site["house"]}/map.json').read_text())['id'],dest_warp_id='0')
                 m['warp_events'].pop()
             m['layout']=site['original_layout'];return m
+    facades=ROOT/'data/venues/facades.json'
+    if facades.exists():
+        f=json.loads(facades.read_text())
+        if m['name']==f['city']:
+            assert m['layout']==f['layout']
+            m['layout']=f['original_layout']
     return m

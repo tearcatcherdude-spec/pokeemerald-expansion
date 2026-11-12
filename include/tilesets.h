@@ -154,4 +154,6 @@ extern const struct Tileset gTileset_VenueKantoRave;
 extern const struct Tileset gTileset_VenueKantoRaveRoom;
 extern const struct Tileset gTileset_VenueKantoBloom;
 extern const struct Tileset gTileset_VenueKantoBloomRoom;
+extern const struct Tileset gTileset_VenueKantoSaffronPrimary;
+extern const struct Tileset gTileset_VenueKantoSaffronSecondary;
 #endif // GUARD_tilesets_H
