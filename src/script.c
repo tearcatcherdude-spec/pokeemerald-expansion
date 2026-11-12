@@ -622,8 +622,8 @@ struct ScriptEffectContext *gScriptEffectContext = NULL;
 
 static bool32 Script_IsEffectInstrumentedCommand(ScrCmdFunc func)
 {
-    // In ROM mirror 1.
-    return (((uintptr_t)func) & 0xE000000) == 0xA000000;
+    // The configured bank-zero script-code mirror.
+    return (((uintptr_t)func) & 0xE000000) == SCRIPT_EFFECT_CODE_MIRROR;
 }
 
 /* 'setjmp' and 'longjmp' cause link errors, so we use
@@ -728,7 +728,7 @@ bool32 Script_MatchesCallNative(const u8 *script, void *funcPtr, bool32 requestE
     u32 callnativeFunc = (((((script[4] << 8) + script[3]) << 8) + script[2]) << 8) + script[1];
     u32 targetFunc = (u32)funcPtr;
     if (requestEffects)
-        targetFunc |= 0xA000000;
+        targetFunc |= SCRIPT_EFFECT_CODE_MIRROR;
     if (callnativeFunc == targetFunc)
         return TRUE;
     return FALSE;

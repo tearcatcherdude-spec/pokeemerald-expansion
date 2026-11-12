@@ -65,6 +65,8 @@ SECTIONS {
         KEEP(*.o(.text.consts));
         *.o(.text*);
         *.o(.eh_frame);
+        __script_code_end = .;
+        ASSERT(__script_code_end <= 0x0A000000, "Effect-tagged script code must remain in bank zero");
     } > ROM =0
 
     script_data :

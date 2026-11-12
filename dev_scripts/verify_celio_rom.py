@@ -17,7 +17,19 @@ def verify(rom_path, map_path):
     assert rom[0xBD] == (-sum(rom[0xA0:0xBD]) - 0x19) & 255
     if used > 32 * 1024 * 1024:
         assert len(set(rom[32 * 1024 * 1024:used])) > 1, 'Expanded area contains only padding'
-    report = dict(rom_bytes=len(rom), linked_bytes=used,
+    syms = {name:int(address,16) for address,name in re.findall(r'0x([0-9a-fA-F]{8,16})\s+(\w+)\s*$',symbols,re.M)}
+    tagged = 0
+    for start,stop in [('gScriptCmdTable','gScriptCmdTableEnd'),('gSpecials','gStdScripts')]:
+        for at in range(syms[start]-0x08000000,syms[stop]-0x08000000,4):
+            pointer = int.from_bytes(rom[at:at+4],'little')
+            if pointer == 0:continue
+            region = pointer & 0x0E000000
+            assert region in (0x08000000,0x0C000000), ('Script pointer aliases expanded data',hex(pointer))
+            if region == 0x0C000000:
+                tagged += 1
+                assert 0x08000000 <= pointer-0x04000000 < 0x0A000000
+    assert tagged > 100, 'Missing effect-tagged script code'
+    report = dict(script_effect_mirror='0x0C000000',validated_tagged_functions=tagged,rom_bytes=len(rom), linked_bytes=used,
                   free_bytes=len(rom)-used,
                   linked_beyond_standard_limit=used > 32 * 1024 * 1024,
                   sha256=hashlib.sha256(rom).hexdigest())

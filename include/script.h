@@ -195,22 +195,22 @@ static inline void Script_CheckEffectInstrumentedSpecial(u32 specialId)
 {
     typedef u16 (*SpecialFunc)(void);
     extern const SpecialFunc gSpecials[];
-    // In ROM mirror 1.
-    if (Script_IsAnalyzingEffects() && (((uintptr_t)gSpecials[specialId]) & 0xE000000) != 0xA000000)
+    // The configured bank-zero script-code mirror.
+    if (Script_IsAnalyzingEffects() && (((uintptr_t)gSpecials[specialId]) & 0xE000000) != SCRIPT_EFFECT_CODE_MIRROR)
         Script_GotoBreak_Internal();
 }
 
 static inline void Script_CheckEffectInstrumentedGotoNative(bool8 (*func)(void))
 {
-    // In ROM mirror 1.
-    if (Script_IsAnalyzingEffects() && (((uintptr_t)func) & 0xE000000) != 0xA000000)
+    // The configured bank-zero script-code mirror.
+    if (Script_IsAnalyzingEffects() && (((uintptr_t)func) & 0xE000000) != SCRIPT_EFFECT_CODE_MIRROR)
         Script_GotoBreak_Internal();
 }
 
 static inline void Script_CheckEffectInstrumentedCallNative(void (*func)(struct ScriptContext *))
 {
-    // In ROM mirror 1.
-    if (Script_IsAnalyzingEffects() && (((uintptr_t)func) & 0xE000000) != 0xA000000)
+    // The configured bank-zero script-code mirror.
+    if (Script_IsAnalyzingEffects() && (((uintptr_t)func) & 0xE000000) != SCRIPT_EFFECT_CODE_MIRROR)
         Script_GotoBreak_Internal();
 }
 

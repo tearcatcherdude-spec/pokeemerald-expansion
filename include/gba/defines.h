@@ -35,6 +35,13 @@
 #define INTR_VECTOR    (*(void **)0x3007FFC)
 
 #define ROM_START 0x8000000
+// The first cartridge mirror is real data in Celio 64 MiB mode.
+// Keep effect-tagged script code in the remaining bank-zero mirror.
+#if CELIO_ROM
+#define SCRIPT_EFFECT_CODE_MIRROR 0xC000000
+#else
+#define SCRIPT_EFFECT_CODE_MIRROR 0xA000000
+#endif
 #if CELIO_ROM
 #define ROM_END 0xC000000
 #else

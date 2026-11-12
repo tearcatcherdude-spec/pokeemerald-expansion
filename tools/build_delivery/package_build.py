@@ -22,6 +22,8 @@ history unless you ask to start fresh. Old build folders remain intact under
 Keep companion-history and emulator with the game. Normal saves are preserved
 byte-for-byte, including RTC data. Do not load older builds' emulator save states.
 See verification.json for the tested build and remaining gameplay checks.
+If a graphics fault recurs, leave it visible and load capture-graphics-glitch.lua
+in Tools > Scripting. It captures a local diagnostic without replacing .sav.
 The target is 64 MiB; 128 MiB resource banking is not implemented.
 Upstream emulator licenses and source patch are retained under emulator/.
 '''
@@ -57,6 +59,10 @@ def package_build(artifact, emulator, verification, output):
         dest.writestr('Readme.txt',README)
         dest.writestr('verification.json',json.dumps(record,indent=2)+'\n')
         dest.writestr('companion-history/Keep-this-folder.txt','Companion history snapshots are stored here.\n')
+        dest.writestr('graphics-diagnostics/Keep-this-folder.txt','Local graphics-fault captures are stored here.\n')
+        dest.writestr('capture-graphics-glitch.lua',Path(__file__).with_name('capture-graphics-glitch.lua').read_bytes())
+        # Match the timing assumptions of the GBA game. Celio defaults to 2x CPU.
+        dest.writestr('emulator/config.ini','[ports.qt]\noverclock=1\n')
     with zipfile.ZipFile(output) as check:
         assert 'emulator/mgba-celio.exe' in check.namelist()
         assert not any(n.lower().endswith(('.sav','.history')) for n in check.namelist())
