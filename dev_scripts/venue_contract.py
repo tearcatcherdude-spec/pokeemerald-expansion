@@ -20,7 +20,7 @@ def before_venue_layout(m):
                 replacement=site.get('replacement_warp')
                 at=replacement if replacement is not None else len(m['warp_events'])-1
                 assert len(m['warp_events'])==len(old['warp_events'])+(replacement is None)
-                assert m['warp_events'][at]==dict(x=site['entrance'][0],y=site['entrance'][1],elevation=0,dest_map=json.loads((ROOT/f'data/maps/{site["house"]}/map.json').read_text())['id'],dest_warp_id='0')
+                assert m['warp_events'][at]==dict(x=site['entrance'][0],y=site['entrance'][1],elevation=0,dest_map=json.loads((ROOT/f'data/maps/{site["house"]}/map.json').read_text())['id'],dest_warp_id=str(site.get('entry_warp_id',0)))
                 if replacement is not None:m['warp_events'][at]=old['warp_events'][at]
                 else:m['warp_events'].pop()
             m['layout']=site['original_layout'];return m

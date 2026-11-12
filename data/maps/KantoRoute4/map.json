@@ -161,7 +161,7 @@
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_VENUE_KANTO_TUTOR",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

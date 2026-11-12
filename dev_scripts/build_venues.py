@@ -194,6 +194,23 @@ def install(region,theme,city,house,dx,dy):
  for i,warp in enumerate(newroom['warp_events']):
   e=exits[min(i,len(exits)-1)];warp.update(x=e['x'],y=e['y'],elevation=e['elevation'])
  roomwords=words(out/'map-fragment.bin');rw=il['width'];rh=il['height']
+ roomprimaryattrs=words(folder(il['primary_tileset'])/'metatile_attributes.bin',4 if frlg else 2)
+ # FRLG rooms have three exit event positions, but only their centre tile has
+ # south-arrow-warp behaviour. Entering at index zero strands the player beside it.
+ entrywarp=None
+ for wi,warp in enumerate(newroom['warp_events']):
+  mid=roomwords[warp['y']*rw+warp['x']]&1023
+  attr=ia[mid-split] if mid>=split else roomprimaryattrs[mid]
+  if attr&(511 if frlg else 255)==0x65:entrywarp=wi;break
+ if entrywarp is None:
+  # A one-exit source room must use the template's working centre, not its
+  # first (decorative flank) event position.
+  for e in exits:
+   mid=roomwords[e['y']*rw+e['x']]&1023
+   attr=ia[mid-split] if mid>=split else roomprimaryattrs[mid]
+   if attr&(511 if frlg else 255)==0x65:
+    newroom['warp_events'][0].update(x=e['x'],y=e['y'],elevation=e['elevation']);entrywarp=0;break
+ assert entrywarp is not None,(tag,'no working exit tile')
  floor={(x,y) for y in range(1,rh-1) for x in range(1,rw-1) if not roomwords[y*rw+x]&0xC00}
  preferred=[(7,4),(4,4),(6,2),(2,2),(8,5),(2,6),(8,3),(5,2),(1,5)]
  positions=[p for p in preferred if p in floor]
@@ -207,7 +224,7 @@ def install(region,theme,city,house,dx,dy):
   house='Venue'+tag
   newroom.update(id='MAP_VENUE_'+re.sub(r'([a-z])([A-Z])',r'\1_\2',tag).upper(),name=house,object_events=newroom['object_events'] if replacement is not None else added,coord_events=[],bg_events=[],connections=None,music=citymap['music'],region_map_section=citymap['region_map_section'])
   cityid=citymap['id'];warpid=replacement if replacement is not None else len(citymap['warp_events'])
-  entrance=dict(x=dx,y=dy,elevation=0,dest_map=newroom['id'],dest_warp_id='0')
+  entrance=dict(x=dx,y=dy,elevation=0,dest_map=newroom['id'],dest_warp_id=str(entrywarp))
   if replacement is not None:
    assert citynew['warp_events'][warpid]['x']==dx and citynew['warp_events'][warpid]['y']==dy
    citynew['warp_events'][warpid]=entrance
@@ -218,7 +235,7 @@ def install(region,theme,city,house,dx,dy):
   d=ROOT/f'data/maps/{house}';d.mkdir(exist_ok=True)
   (d/'scripts.inc').write_text(house+'_MapScripts::\n\t.byte 0\n')
  save(f'data/maps/{house}/map.json',newroom)
- REPORT.append(dict(region=region,theme=theme,city=city,house=house,open_lot=bool(openlot),replacement_warp=replacement,original_house=oldhouse,entrance=[dx,dy],rect=[x,y,sw,sh],original_layout=oldlay['id'],layout=newlay['id'],original_room_layout=oldroomlay['id'],room_layout=il['id'],base_tileset=oldlay['secondary_tileset'],palette=freepal[0],tile_slots=tileids,metatile_slots=free_mt[:sw*sh],native_map_sha256=hashlib.sha256(struct.pack('<'+'H'*len(oldblocks),*oldblocks)).hexdigest()))
+ REPORT.append(dict(region=region,theme=theme,city=city,house=house,open_lot=bool(openlot),entry_warp_id=entrywarp,replacement_warp=replacement,original_house=oldhouse,entrance=[dx,dy],rect=[x,y,sw,sh],original_layout=oldlay['id'],layout=newlay['id'],original_room_layout=oldroomlay['id'],room_layout=il['id'],base_tileset=oldlay['secondary_tileset'],palette=freepal[0],tile_slots=tileids,metatile_slots=free_mt[:sw*sh],native_map_sha256=hashlib.sha256(struct.pack('<'+'H'*len(oldblocks),*oldblocks)).hexdigest()))
 
 GUESTS={'bakery':['otis','taffy'],'bloom':['florian','dahlia'],'glitch':['echo','fen'],'rave':['roux','zephyr'],'tea':['nettle','orson'],'tutor':['cosmo','mosswick']}
 def guests(tag,theme):
@@ -336,6 +353,13 @@ def main():
   mid=read(f'data/maps/{stop["map"]}/map.json')['id'];local=stop['actor']['local_id']
   aliases+=f'    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP({mid}) && gSaveBlock1Ptr->location.mapNum == MAP_NUM({mid}))\n    {{\n        u32 at = gMapHeader.events->objectEventCount - 1;\n        if (gMapHeader.events->objectEvents[at].localId == {local} && gSaveBlock1Ptr->objectEventTemplates[at].localId != {local}) ReloadSavedVenue();\n    }}\n'
  for site in REPORT:
+  if site['region']=='kanto':
+   room=read(f'data/maps/{site["house"]}/map.json');exit=room['warp_events'][site['entry_warp_id']]
+   nativewarps=read(f'graphics/custom_buildings/pastel_pack/modules/{site["region"]}/{site["theme"]}/interior/module.json')['native_events']['warp_events']
+   flanks=sorted({w['x'] for w in nativewarps if w['y']==exit['y'] and w['x']!=exit['x']})
+   if flanks:
+    condition=' || '.join(f'gSaveBlock1Ptr->pos.x == {x}' for x in flanks)
+    aliases+=f'    if (gMapHeader.mapLayoutId == {site["room_layout"]} && gSaveBlock1Ptr->pos.y == {exit["y"]} && ({condition})) {{ gSaveBlock1Ptr->pos.x = {exit["x"]}; gSaveBlock1Ptr->pos.y = {exit["y"]-1}; }}\n'
   aliases+=f'    if (gMapHeader.mapLayoutId == {site["layout"]} || gMapHeader.mapLayoutId == {site["room_layout"]}) {{ ReloadSavedVenue(); return; }}\n'
  aliases+=f'    if (gMapHeader.mapLayoutId == {facade["layout"]}) ReloadSavedVenue();\n'
  aliases+='#endif\n}\n'

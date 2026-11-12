@@ -5,6 +5,7 @@
     "city": "PetalburgCity",
     "house": "PetalburgCity_House1",
     "open_lot": false,
+    "entry_warp_id": 0,
     "replacement_warp": null,
     "original_house": "PetalburgCity_House1",
     "entrance": [
@@ -112,6 +113,7 @@
     "city": "RustboroCity",
     "house": "VenueHoennBakery",
     "open_lot": true,
+    "entry_warp_id": 0,
     "replacement_warp": 11,
     "original_house": "RustboroCity_House3",
     "entrance": [
@@ -292,6 +294,7 @@
     "city": "SlateportCity",
     "house": "SlateportCity_House",
     "open_lot": false,
+    "entry_warp_id": 0,
     "replacement_warp": null,
     "original_house": "SlateportCity_House",
     "entrance": [
@@ -399,6 +402,7 @@
     "city": "MauvilleCity",
     "house": "MauvilleCity_House2",
     "open_lot": false,
+    "entry_warp_id": 0,
     "replacement_warp": null,
     "original_house": "MauvilleCity_House2",
     "entrance": [
@@ -506,6 +510,7 @@
     "city": "VerdanturfTown",
     "house": "VerdanturfTown_House",
     "open_lot": false,
+    "entry_warp_id": 0,
     "replacement_warp": null,
     "original_house": "VerdanturfTown_House",
     "entrance": [
@@ -613,6 +618,7 @@
     "city": "LilycoveCity",
     "house": "LilycoveCity_House1",
     "open_lot": false,
+    "entry_warp_id": 0,
     "replacement_warp": null,
     "original_house": "LilycoveCity_House1",
     "entrance": [
@@ -720,6 +726,7 @@
     "city": "WatchViridian",
     "house": "VenueKantoBakery",
     "open_lot": true,
+    "entry_warp_id": 1,
     "replacement_warp": null,
     "original_house": "KantoPewterCity_House2",
     "entrance": [
@@ -862,6 +869,7 @@
     "city": "KantoPewterCity",
     "house": "VenueKantoGlitch",
     "open_lot": true,
+    "entry_warp_id": 0,
     "replacement_warp": null,
     "original_house": "KantoCeruleanCity_House4",
     "entrance": [
@@ -1004,6 +1012,7 @@
     "city": "KantoVermilionCity",
     "house": "VenueKantoTea",
     "open_lot": true,
+    "entry_warp_id": 1,
     "replacement_warp": null,
     "original_house": "KantoVermilionCity_House1",
     "entrance": [
@@ -1145,6 +1154,7 @@
     "city": "KantoRoute4",
     "house": "VenueKantoTutor",
     "open_lot": true,
+    "entry_warp_id": 1,
     "replacement_warp": null,
     "original_house": "KantoLavenderTown_House2",
     "entrance": [
@@ -1287,6 +1297,7 @@
     "city": "KantoFuchsiaCity",
     "house": "VenueKantoRave",
     "open_lot": true,
+    "entry_warp_id": 1,
     "replacement_warp": 5,
     "original_house": "KantoFuchsiaCity_House1",
     "entrance": [
@@ -1429,6 +1440,7 @@
     "city": "KantoRoute18",
     "house": "VenueKantoBloom",
     "open_lot": true,
+    "entry_warp_id": 1,
     "replacement_warp": null,
     "original_house": "KantoSaffronCity_House",
     "entrance": [

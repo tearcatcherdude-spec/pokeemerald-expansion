@@ -53,7 +53,11 @@ def main():
         for a,b in zip(room['object_events'],oldroom['object_events']):
             for key in b:
                 if key not in ['x','y','elevation','movement_type','movement_range_x','movement_range_y']:assert a[key]==b[key],(s['house'],key)
-        _,rl,floor=grid(s['house']);blocked={(o['x'],o['y']) for o in room['object_events']}
+        _,rl,floor=grid(s['house'])
+        entrance=room['warp_events'][s.get('entry_warp_id',0)];roomraw=words(rl['blockdata_filepath']);mid=roomraw[entrance['y']*rl['width']+entrance['x']]&1023
+        rat=[tileset(rl[k],split==640) for k in ['primary_tileset','secondary_tileset']]
+        assert rat[mid>=split][mid-split if mid>=split else mid]&(511 if split==640 else 255)==0x65,('Entrance misses working exit tile',s['house'])
+        blocked={(o['x'],o['y']) for o in room['object_events']}
         assert len(blocked)==len(room['object_events'])
         start=(room['warp_events'][0]['x'],room['warp_events'][0]['y']-1)
         reach=component(floor,start,blocked)

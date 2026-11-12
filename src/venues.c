@@ -210,11 +210,17 @@ void Venues_MigrateSavedLayout(void)
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNGLITCH || gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNGLITCH_ROOM) { ReloadSavedVenue(); return; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNBLOOM || gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNBLOOM_ROOM) { ReloadSavedVenue(); return; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNRAVE || gMapHeader.mapLayoutId == LAYOUT_VENUE_HOENNRAVE_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBAKERY_ROOM && gSaveBlock1Ptr->pos.y == 7 && (gSaveBlock1Ptr->pos.x == 3 || gSaveBlock1Ptr->pos.x == 5)) { gSaveBlock1Ptr->pos.x = 4; gSaveBlock1Ptr->pos.y = 6; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBAKERY || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBAKERY_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOGLITCH_ROOM && gSaveBlock1Ptr->pos.y == 7 && (gSaveBlock1Ptr->pos.x == 3 || gSaveBlock1Ptr->pos.x == 5)) { gSaveBlock1Ptr->pos.x = 4; gSaveBlock1Ptr->pos.y = 6; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOGLITCH || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOGLITCH_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTEA_ROOM && gSaveBlock1Ptr->pos.y == 7 && (gSaveBlock1Ptr->pos.x == 3 || gSaveBlock1Ptr->pos.x == 5)) { gSaveBlock1Ptr->pos.x = 4; gSaveBlock1Ptr->pos.y = 6; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTEA || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTEA_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTUTOR_ROOM && gSaveBlock1Ptr->pos.y == 7 && (gSaveBlock1Ptr->pos.x == 3 || gSaveBlock1Ptr->pos.x == 5)) { gSaveBlock1Ptr->pos.x = 4; gSaveBlock1Ptr->pos.y = 6; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTUTOR || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOTUTOR_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTORAVE_ROOM && gSaveBlock1Ptr->pos.y == 7 && (gSaveBlock1Ptr->pos.x == 3 || gSaveBlock1Ptr->pos.x == 5)) { gSaveBlock1Ptr->pos.x = 4; gSaveBlock1Ptr->pos.y = 6; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTORAVE || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTORAVE_ROOM) { ReloadSavedVenue(); return; }
+    if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBLOOM_ROOM && gSaveBlock1Ptr->pos.y == 7 && (gSaveBlock1Ptr->pos.x == 3 || gSaveBlock1Ptr->pos.x == 5)) { gSaveBlock1Ptr->pos.x = 4; gSaveBlock1Ptr->pos.y = 6; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBLOOM || gMapHeader.mapLayoutId == LAYOUT_VENUE_KANTOBLOOM_ROOM) { ReloadSavedVenue(); return; }
     if (gMapHeader.mapLayoutId == LAYOUT_VENUE_SAFFRON_FACADES) ReloadSavedVenue();
 #endif
