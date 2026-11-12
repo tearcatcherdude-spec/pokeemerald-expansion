@@ -5089,6 +5089,8 @@ bool32 IsSpeciesInHoennDex(enum Species species)
         return TRUE;
 }
 
+#include "trainer_variety_music.inc"
+
 u16 GetBattleBGM(void)
 {
     if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
@@ -5162,10 +5164,9 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_PYRAMID_KING:
             return MUS_VS_FRONTIER_BRAIN;
         default:
-            if (GetCurrentRegion() == REGION_KANTO)
-                return MUS_RG_VS_TRAINER;
-            else
-                return MUS_VS_TRAINER;
+            if (gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_TRAINER_HILL | BATTLE_TYPE_RECORDED))
+                return GetCurrentRegion() == REGION_KANTO ? MUS_RG_VS_TRAINER : MUS_VS_TRAINER;
+            return TrainerVariety_GetBattleMusic(GetCurrentRegion() == REGION_KANTO);
         }
     }
     else

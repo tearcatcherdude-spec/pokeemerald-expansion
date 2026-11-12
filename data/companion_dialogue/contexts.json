@@ -290455,6 +290455,2214 @@
           "text": "I'd like to remember this stage of the dream, before the sky becomes familiar."
         }
       ]
+    },
+    {
+      "id": 4201,
+      "key": "variety_barnaby_post",
+      "subject": "My potion is water with confidence.\nThe confidence is locally sourced.\n\nI am revising the label.\nApparently confidence needs testing.",
+      "sources": {
+        "Variety_Text_BARNABY_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "My potion is water with\\nconfidence.\\lThe confidence is locally sourced.\\pI am revising the label.\\nApparently confidence needs\\ltesting.$",
+          "sha256": "52470d5a1cad7bd4c69a77cff747b62413338adb716f4870752304ba3279b27e"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Confidence water! I've been drinking the unbranded kind."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "His revised label is the first evidence of a working quality-control process."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He could sell ordinary water honestly. People do get thirsty."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "At least he admitted what was in the bottle before someone depended on it."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Locally sourced confidence sounds difficult to keep fresh."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "His empire has pivoted from medicine to enthusiastic hydration."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Water with confidence. Finally, a beverage qualified to give bad advice."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "If he stops claiming it's medicine, the product becomes much easier to approve."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A little honesty has made that tiny bottle feel less heavy."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd buy water from him after a long walk. The lecture would need to be free."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I hope his next label looks more like an introduction than a promise he can't keep."
+        }
+      ]
+    },
+    {
+      "id": 4202,
+      "key": "variety_vesper_post",
+      "subject": "I only steal discarded trinkets.\nMostly bottle caps.\n\nThe calling cards cost more than\nthe entire criminal enterprise.",
+      "sources": {
+        "Variety_Text_VESPER_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I only steal discarded trinkets.\\nMostly bottle caps.\\pThe calling cards cost more than\\nthe entire criminal enterprise.$",
+          "sha256": "4d628d502a200bbf0576d22beb839cdd577b7e0cae7173709e031e6541f30f44"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Her greatest heist was stealing the budget from her own calling cards."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The cost of presentation has exceeded the value of the recovered material."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "If nobody owns the caps, she's a cleaner with a dramatic uniform."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Maybe the cards are her way of asking someone to notice she was here."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Bottle caps do keep turning up everywhere. She has a reliable supply chain."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A phantom thief defeated by stationery expenses. A tragedy in premium paper."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Imagine finding a calling card that says: your litter has been dramatically removed."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "She could fund the cards by repairing and selling the trinkets."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Discarded things sometimes wait a long time for somebody to find them interesting."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd keep one of her calling cards. She clearly worked hard on them."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I like that she sees a tiny treasure where everyone else sees rubbish."
+        }
+      ]
+    },
+    {
+      "id": 4203,
+      "key": "variety_marlo_post",
+      "subject": "I awarded myself second place.\nYou may have first.\n\nThere were only two contestants,\nbut I still made the podium.",
+      "sources": {
+        "Variety_Text_MARLO_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I awarded myself second place.\\nYou may have first.\\pThere were only two contestants,\\nbut I still made the podium.$",
+          "sha256": "e328b9eb53925657305625e088b7a8007f72915c64cfb1c8c0e3f95373866a9f"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Second out of two! That's practically the top half if you fold the podium."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "An impartial result, eventually. I would still inspect the judge's hat."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "He gave us first. I'm willing to call that progress."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It sounds as though he needed a place on the podium more than a victory."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Two contestants, three podium spaces. Room for the person who packs it away."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "At last, a judge whose conflict of interest comes with costume changes."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "He has discovered losing without losing the spotlight. Efficient."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "He adjusted the result to match the evidence. Better late than never."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "He found a small place for his pride to sit without pushing us off."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'm glad he let us have first. We can both enjoy the picture."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd photograph the empty third step. It did excellent supporting work."
+        }
+      ]
+    },
+    {
+      "id": 4204,
+      "key": "variety_clatter_post",
+      "subject": "I wrote these rules to help people.\nThen I ran out of useful rules.\n\nTomorrow: fewer rules.\nThat one is compulsory.",
+      "sources": {
+        "Variety_Text_CLATTER_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I wrote these rules to help\\npeople.\\lThen I ran out of useful rules.\\pTomorrow: fewer rules.\\nThat one is compulsory.$",
+          "sha256": "b74d5ca8d5dc98567c3405a6a65265b44340a672315a100a14cce278460c7a70"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Tomorrow's first rule: fewer rules. Today's last rule: remember tomorrow."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Removing rules that no longer serve their purpose is sound revision."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "One useful rule would do more than a whole scroll of useless ones."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "He started because he wanted to help. I hope he keeps that part."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Maybe he should ask people which rules actually make their day easier."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The kingdom of helmets has entered a daring age of shorter paperwork."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Compulsory fewer rules. The scroll is fighting for its life."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I'd test each rule against a real problem before adding another."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "The helpful idea is still there, underneath all that paper."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "He could make a little guide instead. With pictures and room to breathe."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd draw the first rule as an open path. That might explain it best."
+        }
+      ]
+    },
+    {
+      "id": 4205,
+      "key": "variety_mosswick_post",
+      "subject": "My mushrooms refuse to prank anyone.\nThey have formed an ethics panel.\n\nI am the only member under review.",
+      "sources": {
+        "Variety_Text_MOSSWICK_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "My mushrooms refuse to prank\\nanyone.\\lThey have formed an ethics panel.\\pI am the only member under review.$",
+          "sha256": "a7a733820c1c133b386ad998189850fd1eb44cb75ff4cc77dae2cb64bc69b603"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "His mushrooms formed a panel! I hope the minutes come with tiny chairs."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A prank that cannot pass its own team's review deserves revision."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good. He should listen when his own partners say no."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "His team trusts him enough to object. That's worth keeping."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "The mushrooms appear to have higher standards than the hat."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A forest tribunal, and the defendant has arrived wearing the evidence."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "The mushrooms unionized before he managed a successful smoke bomb."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "If the team refuses the prank, test a different activity."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "It's a gentle kind of loyalty, staying beside someone while asking them to improve."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "They could do harmless surprises together. The mushrooms should get a vote."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I want a picture of that committee. Every expression would matter."
+        }
+      ]
+    },
+    {
+      "id": 4206,
+      "key": "variety_nyxie_post",
+      "subject": "I like quiet places. Not because\nI'm tragic. They're simply quiet.\n\nPeople keep offering me tissues\nwhen I just want a bench.",
+      "sources": {
+        "Variety_Text_NYXIE_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I like quiet places. Not because\\nI'm tragic. They're simply quiet.\\pPeople keep offering me tissues\\nwhen I just want a bench.$",
+          "sha256": "b0e4aa2468a34dcdb85a1fe09c8c8288824e491a6bf76d35dc12a5de3e3d181b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "We can defend her bench from unsolicited tissues. A noble quiet quest."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Dark clothing is insufficient evidence for a diagnosis of sadness."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "She asked for quiet. Seems clear enough to me."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It's tiring when people decide how you feel before asking."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A bench and a bit of peace are reasonable requests."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "She has mistaken a public bench for a private sanctuary. An understandable ambition."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Apparently wearing black means your hobbies are tragedy and explaining that they aren't."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A parasol solves the ash problem. The bench solves the standing problem. Good design."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Quiet can be a place you choose, rather than a place sadness leaves you."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'll save her a seat without making her explain why."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "Her silhouette can be dramatic while her afternoon stays ordinary."
+        }
+      ]
+    },
+    {
+      "id": 4207,
+      "key": "variety_sable_post",
+      "subject": "Being loud is easy. Listening\nwithout planning your next shout?\n\nThat's the part I'm practicing.\nDon't tell the band.",
+      "sources": {
+        "Variety_Text_SABLE_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "Being loud is easy. Listening\\nwithout planning your next shout?\\pThat's the part I'm practicing.\\nDon't tell the band.$",
+          "sha256": "23145b5904b7d9e39972508c0c9e596326a59efce8c1d6dce0d1392fe01ecd3b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The band will keep the secret if we don't announce it through their speakers."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Listening changes a protest from a repeated signal into a useful exchange."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "She's right. You can't hear an answer over your own shout."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It takes courage to leave enough quiet for someone else's opinion."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Every band needs people who can hear when someone else is struggling."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A revolutionary discovery: the other person may also have dialogue."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Secret listening practice. Very rebellious. The ears will never see it coming."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A sound check includes listening. So should the rest of the meeting."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Silence offered to another person can be a kind thing."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I hope the band notices the difference without making her feel embarrassed."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd like to see the moment they realize she's been paying attention."
+        }
+      ]
+    },
+    {
+      "id": 4208,
+      "key": "variety_opaline_post",
+      "subject": "I design outfits for shy trainers.\nOne pocket is for emergency courage.\n\nIt's usually full of biscuits.\nCourage travels surprisingly well.",
+      "sources": {
+        "Variety_Text_OPALINE_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I design outfits for shy trainers.\\nOne pocket is for emergency\\lcourage.\\pIt's usually full of biscuits.\\nCourage travels surprisingly well.$",
+          "sha256": "faeb9f32cb0120dfcd1d4e58567deba40a555ef73b55ac3491e55fb70274d9ff"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Emergency biscuit courage! Finally, a pocket with a measurable purpose."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A familiar comfort can make an intimidating situation easier to approach."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Nothing wrong with carrying something that helps you get through the door."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Making clothes for shy people means thinking about how it feels to be seen."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd check the biscuits survived the fitting. That's important pocket research."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A wardrobe armed with courage and crumbs. Society is unprepared."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "One pocket for courage, one for the wrappers of courage. Sensible."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I'd reinforce that pocket. Emotional support biscuits experience heavy use."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A small familiar taste can help a new place feel less enormous."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I love that her clothes make room for somebody being nervous."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd draw the pocket first. It's the part that tells you who the outfit is for."
+        }
+      ]
+    },
+    {
+      "id": 4209,
+      "key": "variety_cinder_post",
+      "subject": "I repair old machines because\nsomeone once cared enough to build them.\n\nAlso, new machines have far fewer\ninteresting things wrong with them.",
+      "sources": {
+        "Variety_Text_CINDER_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I repair old machines because\\nsomeone once cared enough to build\\lthem.\\pAlso, new machines have far fewer\\ninteresting things wrong with\\lthem.$",
+          "sha256": "e253469625f9c1c3b8cf335c317d1c5db8dca2816039b6ca94a5bce7ce3fb830"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Old machines have better stories and considerably more suspicious noises."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Repair preserves both useful material and the knowledge of its maker."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "If it can work again, it deserves a proper look before the bin."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Someone cared when they built it. Someone caring now matters too."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd bring snacks for the long repairs. Interesting faults rarely respect dinner."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "She seeks machines with character. Specifically, the character who keeps breaking things."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "New machines are boring until you drop them. I am not offering a demonstration."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "That's exactly why you inspect before replacing. Sometimes the old part is better."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "An old machine making its sound again can feel like a small return."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I like that she thinks about the person who first put it together."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd photograph the worn tools beside the repaired machine. Both did the work."
+        }
+      ]
+    },
+    {
+      "id": 4210,
+      "key": "variety_dahlia_post",
+      "subject": "People buy cheerful flowers for\nsad friends. Sometimes a dark bloom\nis the first honest thing in the room.\n\nI still include care instructions.\nHonesty also needs watering.",
+      "sources": {
+        "Variety_Text_DAHLIA_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "People buy cheerful flowers for\\nsad friends. Sometimes a dark\\lbloom\\lis the first honest thing in the\\lroom.\\pI still include care instructions.\\nHonesty also needs watering.$",
+          "sha256": "2eb4b5657067a6a49afb72530327255f9402fa6cf7c2f315b32d8e09ac037e6d"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Honest flowers need watering. Dishonest ones probably send someone else."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Matching a gift to its recipient is more useful than imposing cheerfulness."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "A sad friend doesn't owe anyone a cheerful performance."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "A flower that doesn't demand a smile could be a good gift on a difficult day."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd ask which bloom they like, then remember to bring the water."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A bouquet permitted to be melancholy. At last, some range in the cast."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Even the gloomy flowers come with instructions. Relatable."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Good care instructions matter more than calling a plant low-maintenance."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Dark petals don't make a flower less alive. Sometimes they make it easier to look at."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "It's kind to bring something beautiful without asking a person to feel better immediately."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd keep the shadows in that bouquet. They're part of its color."
+        }
+      ]
+    },
+    {
+      "id": 4211,
+      "key": "variety_echo_post",
+      "subject": "I used to reset every losing game.\nThen I never learned the last level.\n\nI'm keeping this loss.\nIt has useful information in it.",
+      "sources": {
+        "Variety_Text_ECHO_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I used to reset every losing game.\\nThen I never learned the last\\llevel.\\pI'm keeping this loss.\\nIt has useful information in it.$",
+          "sha256": "fdf22a3484b392b6c0f3faaf9039f34a286e37f578e52570ce40d619389575fe"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Keeping a loss! Risky. Soon the mistakes will start teaching things."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "An unsuccessful attempt is valuable data if the conditions are remembered."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Can't learn the last level if you keep erasing the way there."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Letting a mistake stay can be harder than making it."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "We should stop for food before the next attempt. Hungry brains misread patterns."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The champion has discovered the rarest unlockable: accepting the score."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "No reset? Bold. The game might have to develop a relationship with consequences."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Write down what failed, change one thing, try again. That's how testing works."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A saved loss is a little proof that you kept going after it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd cheer for that choice. Winning isn't the only thing worth keeping."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I like unfinished scoreboards. They leave room for the next picture."
+        }
+      ]
+    },
+    {
+      "id": 4212,
+      "key": "variety_briar_post",
+      "subject": "I plant flowers in forgotten places.\nThe council calls it unauthorized.\n\nThe COMBEE call it lunch.\nI value both forms of feedback.",
+      "sources": {
+        "Variety_Text_BRIAR_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I plant flowers in forgotten\\nplaces.\\lThe council calls it unauthorized.\\pThe COMBEE call it lunch.\\nI value both forms of feedback.$",
+          "sha256": "b26f410216844980be37edc8fa98f8a005c1eb759cdf0ebd08b470c1c9247ef0"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The COMBEE voted lunch. A remarkably clear planning decision."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Pollinator activity provides evidence that the new flowers meet a local need."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "She should keep the paths clear. Then the flowers can make their own argument."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It's nice to think someone might find a flower where they expected nothing."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Maybe the council would approve a little garden if she brought a proper plan."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "An unauthorized lunch venue, enthusiastically reviewed by its winged clientele."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Two reviews: one stern letter, several extremely satisfied bees."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A small marked planting bed could satisfy the council and the COMBEE."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A forgotten corner feels different when something there is being cared for."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd help her ask permission. More flowers are easier to keep when everyone helps."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd sketch that corner before and after. The small changes count."
+        }
+      ]
+    },
+    {
+      "id": 4213,
+      "key": "variety_fable_post",
+      "subject": "I leave the endings of my stories\nblank until I meet the people again.\n\nPeople deserve a chance to surprise\nthe person writing about them.",
+      "sources": {
+        "Variety_Text_FABLE_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I leave the endings of my stories\\nblank until I meet the people\\lagain.\\pPeople deserve a chance to\\nsurprise\\lthe person writing about them.$",
+          "sha256": "3c2728e6383fe52fb31a9d6361f4e0f38443a8bd0dc14dc3ee1a9c5c9187cf5a"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Blank endings! Saves ink and gives us time to do something ridiculous."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Revising a conclusion when new evidence arrives is responsible authorship."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "People aren't finished just because somebody reached the end of a page."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I'm glad she leaves room for people to change."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "She should keep a little note of what they like to eat. That changes less often."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A writer who permits the cast to outgrow the outline. I approve professionally."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "An unfinished ending. Finally, a deadline with some compassion."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Keeping the notes separate from the conclusion would make revisions easier."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Leaving a page open can be a way of believing someone has more life ahead."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd like to read about meeting somebody again after they've surprised themselves."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd leave a little space around their picture too. People keep moving."
+        }
+      ]
+    },
+    {
+      "id": 4214,
+      "key": "variety_taffy_post",
+      "subject": "Cute isn't the opposite of strong.\nMy JIGGLYPUFF can lift my suitcase.\n\nGetting it to pack sensibly remains\na much more difficult operation.",
+      "sources": {
+        "Variety_Text_TAFFY_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "Cute isn't the opposite of strong.\\nMy JIGGLYPUFF can lift my\\lsuitcase.\\pGetting it to pack sensibly\\nremains\\la much more difficult operation.$",
+          "sha256": "802cc5e353a941f6d66ec0859f44be85292662b827638e4af7132a4deee0f453"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A suitcase-lifting JIGGLYPUFF! Our luggage has chosen a new champion."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Strength and appearance describe different properties. Packing requires a third skill."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Cute doesn't tell you whether something can knock you over."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "She wants her team to be taken seriously without giving up what they enjoy."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Packing is hard. You need food, spare socks, and an honest limit on ribbons."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "An adorable porter defeated only by the terrible weight of wardrobe decisions."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "It can lift the suitcase. It cannot explain why there are twelve hats inside."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Distribute the weight and put the useful things on top. Ribbons last."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Soft things can carry more than people expect."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "Her JIGGLYPUFF can have ribbons and muscles. I'd help with the suitcase list."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd photograph the tiny proud face beside the enormous case."
+        }
+      ]
+    },
+    {
+      "id": 4215,
+      "key": "variety_roux_post",
+      "subject": "I used to play louder when I felt\nleft out. Now I ask for a solo.\n\nIt works better.\nThe neighbors wrote to thank me.",
+      "sources": {
+        "Variety_Text_ROUX_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I used to play louder when I felt\\nleft out. Now I ask for a solo.\\pIt works better.\\nThe neighbors wrote to thank me.$",
+          "sha256": "75afeba557aec8578c896ba3601b3c7c3905f43782281f6d8db9e55c868116d9"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Asking for a solo! Much cheaper than buying the neighbors earplugs."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A direct request communicates the need more clearly than increased volume."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Say what you need. Saves everyone a lot of guessing."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It's good she found a way to ask for a place in the song."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "The band probably plays better when everyone knows who needs a turn."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A supporting player has negotiated a spotlight without demolishing the theater."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "The neighbors wrote a thank-you. That's the quietest standing ovation in music."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Turn-taking is easier to arrange than repairing damaged speakers."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Being heard can mean somebody listening, rather than everybody hearing you."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'm glad she asked. Wanting a moment of your own isn't selfish."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd draw her during the solo, and the band making room around her."
+        }
+      ]
+    },
+    {
+      "id": 4216,
+      "key": "variety_hugo_post",
+      "subject": "OTIS says soup needs a spoon.\nBASTIAN says the ocean disagrees.\n\nI study stars. None of them\nhave volunteered to chair this meeting.",
+      "sources": {
+        "Variety_Text_HUGO_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "OTIS says soup needs a spoon.\\nBASTIAN says the ocean disagrees.\\pI study stars. None of them\\nhave volunteered to chair this\\lmeeting.$",
+          "sha256": "8adb11dbf1d82122cb35ced172aa90fb44a159d7096af8d898a64153130c12c9"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The stars refused to chair the soup meeting. Too many heated bodies already."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The ocean does not become soup merely because someone brings a spoon."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "I vote we eat before the argument gets cold."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I think the argument is an excuse to spend a little longer together."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Soup can be supper without us settling its entire identity."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "Six brilliant minds have assembled to discover lunch is getting cold."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "The ocean disagrees. Strong statement from something that refuses a bowl."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Define the question first. Then maybe let the chef answer it."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Even a very large sky can make room for a very small lunch argument."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd volunteer to take notes, but the soup would win my attention."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd paint the committee looking up at stars that are wisely staying out of it."
+        }
+      ]
+    },
+    {
+      "id": 4217,
+      "key": "variety_otis_post",
+      "subject": "The six of us split the bill evenly.\nORSON writes a poem on the receipt.\n\nThe waiter has asked us to stop\nclaiming poetry as legal tender.",
+      "sources": {
+        "Variety_Text_OTIS_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "The six of us split the bill\\nevenly.\\lORSON writes a poem on the\\lreceipt.\\pThe waiter has asked us to stop\\nclaiming poetry as legal tender.$",
+          "sha256": "f1ea637ed724cd23dbe39f3e2c712a6c0458cda0a34de5791539c1e59493f00b"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Poetry isn't legal tender? There goes my emergency limerick fund."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A fair division of the bill still requires a valid method of payment."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Pay the waiter first. Poetry after."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It sounds like the waiter knows their little ritual quite well."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "The poem could be a thank-you note after the actual money."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "I admire ORSON's ambition. I also admire the waiter's refusal to accept rhyming debt."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Imagine working a shift and being paid in fourteen lines about a sandwich."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Keep the receipts and the poems separate. Much easier bookkeeping."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A receipt can hold a small memory, once it has stopped being somebody's wages."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "They could leave the poem with a proper tip. Then everyone gets something nice."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd save those receipts in an album. A little record of ordinary good afternoons."
+        }
+      ]
+    },
+    {
+      "id": 4218,
+      "key": "variety_bastian_post",
+      "subject": "I brought seaweed for the committee.\nFLORIAN arranged it in a vase.\n\nIt does look lovely.\nIt also tastes considerably less lovely.",
+      "sources": {
+        "Variety_Text_BASTIAN_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I brought seaweed for the\\ncommittee.\\lFLORIAN arranged it in a vase.\\pIt does look lovely.\\nIt also tastes considerably less\\llovely.$",
+          "sha256": "65e0155e74c32fa39f1c6fd5c71ce619bc54845b6dd83ec579ad65923b6e4d81"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The seaweed has been promoted from lunch to living-room responsibility."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Decorative merit and nutritional suitability require separate assessments."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Tell FLORIAN before somebody eats the centerpiece."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "They each saw something useful in the same little bundle."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Edible seaweed needs checking and proper preparation. A vase isn't a recipe."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A salad has entered the floral arts. The critics are divided but well hydrated."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "It's an arrangement you can regret on two different levels."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Label the edible samples before anyone arranges the rest."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Something gathered from the sea has found a brief second life on the table."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "It's sweet that FLORIAN tried to make something pretty from his friend's gift."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd draw the vase, then add a very small note saying not to taste the picture."
+        }
+      ]
+    },
+    {
+      "id": 4219,
+      "key": "variety_monty_post",
+      "subject": "I proposed wheels on the table.\nHUGO proposed thinking first.\n\nFor the sake of the soup,\nwe have reached a compromise: chairs.",
+      "sources": {
+        "Variety_Text_MONTY_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I proposed wheels on the table.\\nHUGO proposed thinking first.\\pFor the sake of the soup,\\nwe have reached a compromise:\\lchairs.$",
+          "sha256": "27bf00f8db5c2802b61aa2b6520c8f2c4a5eac8237a79e0e52ed29034c0d96e5"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Wheels under the table! Lunch with a getaway plan."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Chairs resolve the mobility proposal without introducing unstable liquid transport."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Keep the soup still. Let the people move."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like that HUGO took the idea seriously enough to offer a better one."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A table on wheels needs brakes. And a very forgiving waiter."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A grand invention has been defeated by the existence of chairs."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "The soup narrowly escaped a career in competitive skating."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "If he builds it later, brakes first. Test with an empty bowl."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A compromise can be a small place where an idea gets to rest."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "They listened and found something everyone could use. That's a good meeting."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd sketch the table's imaginary motion lines. Safest way to let it travel."
+        }
+      ]
+    },
+    {
+      "id": 4220,
+      "key": "variety_florian_post",
+      "subject": "We meet because six people can\nmake a bad week feel much smaller.\n\nAlso, OTIS brings bread.\nWe are allowed two reasons.",
+      "sources": {
+        "Variety_Text_FLORIAN_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "We meet because six people can\\nmake a bad week feel much smaller.\\pAlso, OTIS brings bread.\\nWe are allowed two reasons.$",
+          "sha256": "d9eb35816e7239a9796ba7946282ab07426bdad6f2ae9b34337cf8884ab9926c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Two reasons: good friends and bread. A sturdy foundation for almost anything."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Regular social support can help with a difficult week. Bread is a useful supplementary variable."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good company and a meal. Doesn't need to be more complicated."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I'm glad they make time for each other before anyone has to ask for help."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Bread counts as a very good second reason. I'd bring something to put on it."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A fellowship with emotional range and a reliable bakery. Exceptionally well cast."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Six friends can make a bad week smaller. Bread can make the meeting longer."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A regular meeting is easier to keep than waiting for the perfect occasion."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A familiar table can become a little shelter that six people build together."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I hope they keep meeting even when everyone's week has been good."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd paint that table with all six places filled. The centerpiece can share the attention."
+        }
+      ]
+    },
+    {
+      "id": 4221,
+      "key": "variety_orson_post",
+      "subject": "The others let me read my poems.\nI let them finish lunch first.\n\nArt needs an audience.\nAn audience needs a sandwich.",
+      "sources": {
+        "Variety_Text_ORSON_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "The others let me read my poems.\\nI let them finish lunch first.\\pArt needs an audience.\\nAn audience needs a sandwich.$",
+          "sha256": "a446a7e00e15d7a2b0dad2fd37449ea22fa53198e8094b26a5805cf918baa9e0"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Fourteen lines and a sandwich! At last, a poetry reading with a proper interval."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Allowing the audience to finish eating improves both attention and audibility."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good arrangement. Nobody has to choose between the poem and lunch."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "He sounds happy that his friends keep listening."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "A fed audience is much less likely to mistake a growling stomach for criticism."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "He has mastered the first law of theater: never compete with the refreshments."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "He lets them finish lunch first. That's fourteen lines of character development."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Sandwich first, paper away from mustard, reading afterward. Reliable workflow."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "There is something lovely about friends making room for the thing you love."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd listen. Especially if he let me bring my own sandwich."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd draw the listeners too. A poem happens between people, not just on a page."
+        }
+      ]
+    },
+    {
+      "id": 4222,
+      "key": "variety_kestrel_post",
+      "subject": "I deliver weather reports by hand.\nIf I arrive soaked, I am also\nthe supporting evidence.\n\nNobody tips for that part.",
+      "sources": {
+        "Variety_Text_KESTREL_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I deliver weather reports by hand.\\nIf I arrive soaked, I am also\\lthe supporting evidence.\\pNobody tips for that part.$",
+          "sha256": "e2d21b6dfc4a9dde7ea43a7869bd501cc0872dbd4b62af9eb34ada5b7820b4ca"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Walking weather evidence! I hope the report includes a towel allowance."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Direct observation is valuable, but waterproof notes would preserve the findings better."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "They should give the courier a dry coat, not just a thank-you."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Getting soaked so someone else can plan their day is a lot of quiet work."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd offer hot food before asking about tomorrow's weather."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The forecast has arrived in person and is dripping on the carpet."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "No tip for supporting evidence? Next time deliver the rain in an envelope."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "A waterproof bag would protect the report. The courier needs protection too."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A wet letter has traveled through the same weather it describes."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd keep a spare towel by the door if I knew they were coming."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd photograph the rain on the satchel, then let the courier get dry."
+        }
+      ]
+    },
+    {
+      "id": 4223,
+      "key": "variety_juniper_post",
+      "subject": "I used to climb to prove I wasn't\nafraid. I was afraid the whole time.\n\nNow I check the ropes and climb\nbecause I like the view.",
+      "sources": {
+        "Variety_Text_JUNIPER_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I used to climb to prove I wasn't\\nafraid. I was afraid the whole\\ltime.\\pNow I check the ropes and climb\\nbecause I like the view.$",
+          "sha256": "60576563ff536c72307424cea74bb1791e6a97fdc3c667a27b29c9b9e7b07d26"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Ropes first, impressive feelings afterward. I can remember that order."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Fear can identify a risk without deciding whether a properly prepared climb is worthwhile."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Check the ropes. Take the climb at your own pace."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Not being fearless doesn't make the view any less yours."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd pack water and a meal for the way down. Courage doesn't replace lunch."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A summit is a much better reward than winning an argument with your own nerves."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Turns out you can be scared and competent. That explains several bridges I've crossed."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Inspect the rope, the anchors, and the weather. Then choose the route."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "The view must feel different when you no longer need it to prove something."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'm glad she gets to enjoy climbing instead of having to win against fear."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd sketch the view from where she stops to rest. That belongs to the climb too."
+        }
+      ]
+    },
+    {
+      "id": 4224,
+      "key": "variety_solace_post",
+      "subject": "My first chime was made from\nbroken cups after we moved house.\n\nI wanted something familiar to make\na sound in a place that wasn't yet.",
+      "sources": {
+        "Variety_Text_SOLACE_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "My first chime was made from\\nbroken cups after we moved house.\\pI wanted something familiar to\\nmake\\la sound in a place that wasn't\\lyet.$",
+          "sha256": "408f537ea0def87989ec70b74850abb65fa6cc5e1b0cd344316115ae980d1437"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "A broken cup found a new job singing. Better than my last cup's job: leaking."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Reusing a familiar material preserved a connection while changing its function."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good use for something that still mattered, even after it broke."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Wanting one familiar sound in a new house makes sense to me."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I wonder if the cups came from a kitchen where people used to gather."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A housewarming performance by the surviving crockery. Quietly moving."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The cups got a second career before I got a second pair of dry socks."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Smooth the broken edges, then tune the pieces. Safe and useful."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A familiar sound can help a strange room learn your name."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd like to hear that first chime. Even if it never sounded quite even."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd paint it near the window, with the old cup colors still showing."
+        }
+      ]
+    },
+    {
+      "id": 4225,
+      "key": "variety_idris_post",
+      "subject": "I chart the sky for travelers who\ncan't see the stars from their rooms.\n\nSome nights all I can send is:\ncloudy, but still up there.",
+      "sources": {
+        "Variety_Text_IDRIS_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I chart the sky for travelers who\\ncan't see the stars from their\\lrooms.\\pSome nights all I can send is:\\ncloudy, but still up there.$",
+          "sha256": "0a2e8b822d797b14af8d57742c8b3618acc8bb33534c635444cb64afc337af3c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Cloudy, but still up there. A very small weather report with excellent manners."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Cloud cover changes visibility, not the presence of the stars being observed."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Fair report. No need to invent a clear sky."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "That might be exactly the message somebody needs on a long night."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd send a warm meal with the chart if the person couldn't come outside."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A sky watcher who understands the power of an offstage presence."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The stars are unavailable for comment. IDRIS has responsibly confirmed they still exist."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Mark the weather and the time. An honest incomplete chart is useful."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Sometimes knowing a light is hidden, rather than gone, is enough."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd keep one of those cloudy-night notes where I could read it again."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd leave the stars unpainted behind the cloud. Let the reader know where to look."
+        }
+      ]
+    },
+    {
+      "id": 4226,
+      "key": "variety_fen_post",
+      "subject": "A good map tells you more than\nwhere the stairs are. It tells you\nwhich way you can actually go.\n\nMine includes benches, ramps,\nand the best places to watch birds.",
+      "sources": {
+        "Variety_Text_FEN_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "A good map tells you more than\\nwhere the stairs are. It tells you\\lwhich way you can actually go.\\pMine includes benches, ramps,\\nand the best places to watch\\lbirds.$",
+          "sha256": "47f6d397c7be8f20d4fe08514a9305836382bb886b4fb573fdea3fa6b3cfded2"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Benches, ramps, birds! That's a map of how to have an actual good day."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A useful route model includes the traveler's requirements, not just connected coordinates."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "A path isn't accessible just because someone drew a line through it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Being told the way is easy when it isn't must get exhausting."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "The bench notes matter too. Everyone should have a place to stop for a meal."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "An atlas brave enough to admit that reaching the destination is part of the journey."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A map that tells you where you can actually go. A radical improvement over arrows and optimism."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Measure the slope and the surface. A ramp drawn on paper doesn't smooth the real one."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A map that leaves room for different travelers can make a town feel more welcoming."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd help check the benches. And remember which ones have room beside them."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "The birdwatching spots make it a map of things worth stopping for, too."
+        }
+      ]
+    },
+    {
+      "id": 4227,
+      "key": "variety_taro_post",
+      "subject": "Every patch on my coat came from\nsomeone who taught me something.\n\nThis elbow was a lesson in\nnot sewing while wearing the coat.",
+      "sources": {
+        "Variety_Text_TARO_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "Every patch on my coat came from\\nsomeone who taught me something.\\pThis elbow was a lesson in\\nnot sewing while wearing the coat.$",
+          "sha256": "4650cab9f298565aac9a06af335de83ab03fa7fff1cdc55dcace32b2688c05f3"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The coat taught a sewing lesson by becoming the classroom. Painfully practical."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "The elbow patch records a preventable error in a remarkably durable medium."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Take the coat off first. Solid lesson."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like carrying little reminders of the people who helped you learn."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd add a strong pocket for snacks. Some lessons take all afternoon."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A wearable memoir, with one particularly pointed chapter."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "That elbow has a backstory and probably several very specific complaints."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Remove the garment, check the needle, then repair. The order matters."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A coat can carry a little company after the people who taught you have gone home."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd ask before touching any patch. They sound like important memories."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd draw the different stitches close up. A whole group of teachers in one coat."
+        }
+      ]
+    },
+    {
+      "id": 4228,
+      "key": "variety_cosmo_post",
+      "subject": "I learned the constellations wrong\nand spent years calling one 'the sock.'\n\nChildren remember it better that way.\nThe sock is staying.",
+      "sources": {
+        "Variety_Text_COSMO_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I learned the constellations wrong\\nand spent years calling one 'the\\lsock.'\\pChildren remember it better that\\nway.\\lThe sock is staying.$",
+          "sha256": "c535524a72575f7c2a84fae91d1ea35f64a1ef283c741af74c9f463d86006c65"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "The great celestial sock! At last, a constellation I can lose the matching half of."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "An inaccurate name can still be a useful mnemonic if the underlying stars are correctly identified."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "If it helps the children find it, the sock can stay."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "He found a way to make an enormous sky feel familiar."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I hope he teaches them how to find home by the stars as well as the sock."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "Astronomy has acquired laundry. The heavens will never recover."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Somewhere, a very serious astronomer is arguing with a sock and losing."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Keep the proper name in the notes. The sock can do the introductions."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A familiar shape can make the dark sky feel less far away."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd look for the sock. It sounds like a friendly place to start."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd draw both names beside it. The mistake is part of the picture now."
+        }
+      ]
+    },
+    {
+      "id": 4229,
+      "key": "variety_nettle_post",
+      "subject": "People ask for the secret to a long\nlife. I tell them: let the tea cool.\n\nIt's not the whole secret,\nbut it prevents a very silly ending.",
+      "sources": {
+        "Variety_Text_NETTLE_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "People ask for the secret to a\\nlong\\llife. I tell them: let the tea\\lcool.\\pIt's not the whole secret,\\nbut it prevents a very silly\\lending.$",
+          "sha256": "411e7a519ada3408c9f6ced736fdd9d9005f401f96f1c81c6767b4fc1ff43604"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Let the tea cool. Advice with an immediate and testable benefit."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Avoiding a scald is a sensible recommendation even without evidence about longevity."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good advice. A burnt tongue doesn't make anyone wiser."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "She found a kind way to give people something useful without pretending to know everything."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Also, don't forget you've left it cooling. There is a second, colder danger."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The secret of a long life has declined to be a grand speech. Admirable."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "One weird trick: stop trying to drink the sun out of a cup."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Check temperature before use. Works for tea and most of my tools."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Waiting a little can be care, rather than wasted time."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd sit for another cup and let her decide whether to share the rest."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd paint the steam first. Then I'd wait before drinking the subject."
+        }
+      ]
+    },
+    {
+      "id": 4230,
+      "key": "variety_miri_post",
+      "subject": "I play requests for sailors.\nMostly songs that remind them of home.\n\nI pretend not to notice when they\nsing the wrong words very carefully.",
+      "sources": {
+        "Variety_Text_MIRI_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I play requests for sailors.\\nMostly songs that remind them of\\lhome.\\pI pretend not to notice when they\\nsing the wrong words very\\lcarefully.$",
+          "sha256": "724ae60fda0a192cc4de8bccbc89a469f451e0abb588510c7b3805c4eb8426c6"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Wrong words, sung carefully. That's how you know the song matters."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A remembered personal version can carry meaning that the published lyrics do not."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Let them sing their version. They know who it's for."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Some songs are harder to sing correctly because they bring you close to home."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd make sure the sailors had eaten before the music got them too homesick."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "A good accompanist knows when accuracy must politely leave the stage."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Thirty apologies, and she doesn't make anyone use one for singing the wrong words."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Follow the singer's timing. The performance works better when you're listening."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A song can hold the shape of a place even when some of the words have changed."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'm glad she pretends not to notice. It lets them keep singing."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd draw the hands holding their cups while they remember the chorus."
+        }
+      ]
+    },
+    {
+      "id": 4231,
+      "key": "variety_zephyr_post",
+      "subject": "I teach dance to people who say\nthey have two left feet.\n\nMy SPINDA has four directions\nand none of them are right. We manage.",
+      "sources": {
+        "Variety_Text_ZEPHYR_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I teach dance to people who say\\nthey have two left feet.\\pMy SPINDA has four directions\\nand none of them are right. We\\lmanage.$",
+          "sha256": "83fc0aac4e73b53efb244212a055d00ecd02f4d0027ea8380d625ae5ab870231"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Four directions and no right one! SPINDA has invented cartographic dancing."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Coordinating movement does not require every participant to use an identical pattern."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "If everyone's enjoying it and nobody gets hurt, they're dancing."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "A teacher who makes room for a stumble can help someone stay for another lesson."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd clear some floor space before SPINDA demonstrates all four directions."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "An ensemble has learned to choreograph its individual disasters. Splendid."
+        },
+        {
+          "voice": "emi",
+          "expression": "smug",
+          "text": "Two left feet sounds downright navigable beside that SPINDA."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Start slowly, leave space, repeat the safe steps. Improvisation can come later."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A little room to move differently can make the whole group less afraid."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd try a lesson if mistakes were allowed to be part of it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd sketch the paths their feet make. The uneven ones might be the most interesting."
+        }
+      ]
+    },
+    {
+      "id": 4232,
+      "key": "variety_elden_post",
+      "subject": "I used to chase rare photographs.\nNow I return to the same small pond.\n\nSomething changes every evening.\nYou have to stay long enough to notice.",
+      "sources": {
+        "Variety_Text_ELDEN_Post": {
+          "path": "data/trainer_variety/encounters.inc",
+          "text": "I used to chase rare photographs.\\nNow I return to the same small\\lpond.\\pSomething changes every evening.\\nYou have to stay long enough to\\lnotice.$",
+          "sha256": "d8b2ad7895156e924c40435b806671a57030e9b8332f0e55c71a281adc92ff4c"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "neutral",
+          "text": "Same pond, new evening. A much cheaper expedition with surprisingly good sequels."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Repeated observation reveals changes a single spectacular sighting can miss."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Knowing a place well doesn't mean you've seen everything in it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "Returning might be how he learned what the pond was doing when nobody hurried past."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I'd bring a packed supper. Waiting long enough is easier when you're not hungry."
+        },
+        {
+          "voice": "riven",
+          "expression": "neutral",
+          "text": "The photographer has replaced the grand entrance with a quietly changing second act."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The pond keeps adding content and has never once announced an update."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Keep the camera position consistent. Then the small changes become easier to compare."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A familiar place still has things to say if you stop arriving in a hurry."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I'd like to go back with him and see what he notices first."
+        },
+        {
+          "voice": "zuri",
+          "expression": "neutral",
+          "text": "I'd keep a page for each evening. Familiar water, different light, another small story."
+        }
+      ]
     }
   ]
 }

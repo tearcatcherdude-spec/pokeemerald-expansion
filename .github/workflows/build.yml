@@ -32,6 +32,9 @@ jobs:
       - name: Validate Kanto rare encounters
         run: python3 dev_scripts/validate_kanto_rares.py
 
+      - name: Validate trainer variety and original scores
+        run: python3 dev_scripts/validate_trainer_variety.py
+
       - name: Validate recruitable cast
         run: python3 dev_scripts/validate_cast.py
 
@@ -92,6 +95,9 @@ jobs:
 
       - name: Verify compiled Kanto NPC registrations
         run: python3 dev_scripts/verify_kanto_rom.py pokeemerald.gba pokeemerald.map
+
+      - name: Verify compiled trainer artwork and music
+        run: python3 dev_scripts/verify_trainer_variety_rom.py pokeemerald.gba pokeemerald.map
 
       - name: Verify compiled cast artwork and expressions
         run: python3 dev_scripts/verify_cast_rom.py pokeemerald.gba pokeemerald.map

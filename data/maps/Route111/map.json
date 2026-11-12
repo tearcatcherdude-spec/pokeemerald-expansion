@@ -668,6 +668,21 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "World_EventScript_Scene18_1",
       "flag": "0"
+    },
+    {
+      "type": "object",
+      "local_id": "203",
+      "graphics_id": "OBJ_EVENT_GFX_VARIETY_COSMO",
+      "x": 15,
+      "y": 133,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Variety_EventScript_COSMO_HOENN",
+      "flag": "0"
     }
   ],
   "warp_events": [

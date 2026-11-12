@@ -1792,3 +1792,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/companion_context_exports.inc"
 	.include "data/scripts/companion_receipt_exports.inc"
 #endif
+
+#if !IS_FRLG
+	.include "data/trainer_variety/encounters.inc"
+#endif

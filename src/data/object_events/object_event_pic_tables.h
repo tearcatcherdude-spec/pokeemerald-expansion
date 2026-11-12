@@ -2508,3 +2508,5 @@ static const struct SpriteFrameImage sPicTable_CastVera[] = { overworld_ascendin
 static const struct SpriteFrameImage sPicTable_CastLume[] = { overworld_ascending_frames(gObjectEventPic_CastLume, 2, 4), };
 static const struct SpriteFrameImage sPicTable_CastMochi[] = { overworld_ascending_frames(gObjectEventPic_CastMochi, 2, 4), };
 static const struct SpriteFrameImage sPicTable_CastZuri[] = { overworld_ascending_frames(gObjectEventPic_CastZuri, 2, 4), };
+
+#include "variety_pic_tables.h"

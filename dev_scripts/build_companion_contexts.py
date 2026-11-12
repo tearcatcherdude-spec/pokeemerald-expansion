@@ -32,6 +32,7 @@ def text_blocks():
     paths += sorted((ROOT/'data/kanto').rglob('*.inc'))
     paths += sorted((ROOT/'data/cast').rglob('*.inc'))
     paths += sorted((ROOT/'data/bonds').rglob('*.inc'))
+    paths += sorted((ROOT/'data/trainer_variety').rglob('*.inc'))
     paths += [ROOT/'data/event_scripts.s']
     for path in paths:
         text = path.read_text(encoding='utf-8')

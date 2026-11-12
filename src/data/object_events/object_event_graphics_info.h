@@ -7413,3 +7413,5 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CastZuri = {
     .anims = sAnimTable_Standard,
     .images = sPicTable_CastZuri,
 };
+
+#include "variety_graphics_info.h"

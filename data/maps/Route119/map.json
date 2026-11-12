@@ -629,6 +629,36 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "World_EventScript_Scene20_1",
       "flag": "0"
+    },
+    {
+      "type": "object",
+      "local_id": "188",
+      "graphics_id": "OBJ_EVENT_GFX_VARIETY_FABLE",
+      "x": 28,
+      "y": 107,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Variety_EventScript_FABLE_HOENN",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "local_id": "206",
+      "graphics_id": "OBJ_EVENT_GFX_VARIETY_ZEPHYR",
+      "x": 37,
+      "y": 126,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Variety_EventScript_ZEPHYR_HOENN",
+      "flag": "0"
     }
   ],
   "warp_events": [

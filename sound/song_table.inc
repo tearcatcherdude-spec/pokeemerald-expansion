@@ -617,6 +617,14 @@ gSongTable::
 	song ph_nurse_held, MUSIC_PLAYER_SE2, 2
 	song ph_nurse_solo, MUSIC_PLAYER_SE2, 2
 
+	song mus_variety_steady, MUSIC_PLAYER_BGM, 0
+	song mus_variety_brisk, MUSIC_PLAYER_BGM, 0
+	song mus_variety_wistful, MUSIC_PLAYER_BGM, 0
+	song mus_variety_cheerful, MUSIC_PLAYER_BGM, 0
+	song mus_variety_silly, MUSIC_PLAYER_BGM, 0
+	song mus_variety_tense, MUSIC_PLAYER_BGM, 0
+	song mus_variety_laidback, MUSIC_PLAYER_BGM, 0
+
 	.align 2
 dummy_song_header:
 	.byte 0, 0, 0, 0

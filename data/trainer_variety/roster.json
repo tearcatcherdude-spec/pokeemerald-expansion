@@ -1,0 +1,290 @@
+[
+  {
+    "id": "barnaby",
+    "name": "Barnaby Bargain",
+    "role": "Comic villain: potion salesman",
+    "group": "comic_villains",
+    "design": "Adult slim man, flamboyant plum pointed tailcoat, mustard waistcoat, turquoise bow tie, curled auburn mustache, violet swooped hair, shiny pointed boots. ONE pushy cartoon potion salesman, big theatrical grin, presenting a tiny sparkling purple potion bottle and an absurdly overstuffed sample case. Signature battle pose: open showman's stance, bottle offered dramatically. Entirely whimsical, never threatening or realistic coercion.",
+    "symbol": "VarietyBarnaby",
+    "index": 0
+  },
+  {
+    "id": "vesper",
+    "name": "Vesper Vale",
+    "role": "Comic villain: phantom thief",
+    "group": "comic_villains",
+    "design": "Adult woman phantom thief with pale lavender swept bob, violet half-mask over the eyes, midnight-blue short cape with tiny silver moon clasp, fitted lavender tunic over dark trousers, white gloves, soft silver boots. Posing tiptoe with one gloved finger to her smiling lips and holding one shiny glass trinket. Mischievous storybook thief leaving terrible riddles, no weapons.",
+    "symbol": "VarietyVesper",
+    "index": 1
+  },
+  {
+    "id": "marlo",
+    "name": "Marlo Mirth",
+    "role": "Comic villain: cheating stage rival",
+    "group": "comic_villains",
+    "design": "Adult theatrical male rival performer, emerald slicked-back hair, coral-pink asymmetrical ringmaster jacket with gold star lapels, white shirt, navy trousers and gold-tipped shoes. Holds an obviously silly tiny fake trophy and strikes an exaggerated smug stage bow. A harmless theatrical cheat, not a salesman, no weapons.",
+    "symbol": "VarietyMarlo",
+    "index": 2
+  },
+  {
+    "id": "clatter",
+    "name": "Sir Clatter",
+    "role": "Comic villain: ridiculous rule-keeper",
+    "group": "comic_villains",
+    "design": "A whimsical humanoid animated suit of round enchanted armor, periwinkle steel plates, oversized plumed helmet with a star-shaped visor opening, gold trim, mitten-like gauntlets and tiny broad boots. No visible human face. One hand on hip, other hand unrolling a long curling parchment of ridiculous rules with NO visible lettering. Comically officious fantasy knight, no sword or weapon.",
+    "symbol": "VarietyClatter",
+    "index": 3
+  },
+  {
+    "id": "mosswick",
+    "name": "Mosswick",
+    "role": "Comic villain: mushroom prankster",
+    "group": "comic_villains",
+    "design": "Adult mischievous man with an enormous red-and-cream mushroom beret, moss-green shaggy hair, patchwork forest-green vest over cream puff sleeves, plum knickerbockers, striped socks and curved brown shoes. Holding a small puffball mushroom, crouching in a playful ta-da pose with a cheeky grin. His silly pranks backfire. Not a salesman, no weapons or scary imagery.",
+    "symbol": "VarietyMosswick",
+    "index": 4
+  },
+  {
+    "id": "nyxie",
+    "name": "Nyxie",
+    "role": "Moonlit alt-fashion trainer",
+    "group": "alt_fashion",
+    "design": "Beautiful adult alt woman, long midnight-blue hair with tiny silver crescent clips, black and lavender layered gothic street-fashion dress, striped tights and chunky lavender boots. Closed lace parasol held at shoulder, other hand holding a small red-and-white battle ball at hip, confident elegant full-body pose. Fully clothed, tasteful cute edgy fashion.",
+    "symbol": "VarietyNyxie",
+    "index": 5
+  },
+  {
+    "id": "sable",
+    "name": "Sable",
+    "role": "Plaid punk trainer",
+    "group": "alt_fashion",
+    "design": "Beautiful adult woman with warm brown skin, teal side-shaved undercut, red plaid shirt tied over a black band T-shirt with abstract unreadable symbol, black cargo shorts over dark tights, studded ankle boots and tiny silver ear hoops. Energetic wide stance with a battle ball raised in one hand and other fist at hip, friendly rebellious grin.",
+    "symbol": "VarietySable",
+    "index": 6
+  },
+  {
+    "id": "opaline",
+    "name": "Opaline",
+    "role": "Pastel-goth collector",
+    "group": "alt_fashion",
+    "design": "Beautiful adult pastel-goth woman, white hair fading into pink in two rounded buns, mint-and-pink layered dress with a huge black bow, black tights and mint platform shoes. Holds a small transparent trinket orb in one palm with other hand gracefully out, cute composed full-body battle stance. No magic glow, fully clothed.",
+    "symbol": "VarietyOpaline",
+    "index": 7
+  },
+  {
+    "id": "cinder",
+    "name": "Cinder",
+    "role": "Gear-punk mechanic",
+    "group": "alt_fashion",
+    "design": "Adult female mechanic with copper-orange twin braids, tan freckled skin, silver gear hair clips, a fully fastened charcoal work coverall with orange collar and trim, proper long trouser legs and sturdy orange-laced boots. Cheerful professional workwear, fully clothed. Planted full-body stance holding a small red-white trainer ball in one hand with other hand on hip. No tools.",
+    "symbol": "VarietyCinder",
+    "index": 8
+  },
+  {
+    "id": "dahlia",
+    "name": "Dahlia Noct",
+    "role": "Gothic flower grower",
+    "group": "alt_fashion",
+    "design": "Beautiful curvy adult woman with very long dark plum curls, a broad black hat decorated with purple roses, long black-and-violet ruffled garden dress, lace cuffs and dark sturdy boots peeking below hem. Holding a small violet watering can in one hand and extending a battle ball in the other, warm mysterious smile. Entire full figure and both shoes visible.",
+    "symbol": "VarietyDahlia",
+    "index": 9
+  },
+  {
+    "id": "echo",
+    "name": "Echo",
+    "role": "Neon arcade trainer",
+    "group": "alt_fashion",
+    "design": "Adult female arcade enthusiast with dark brown skin, lime-green blunt bob, oversized cyan headphones around her neck, a hip-length black jacket over a fully covering violet T-shirt, full-length cyan trousers and bright green sneakers. Fully clothed casual streetwear. Full-body cheerful wide stance holding a small retro game controller near waist and small red-white trainer ball in other hand.",
+    "symbol": "VarietyEcho",
+    "index": 10
+  },
+  {
+    "id": "briar",
+    "name": "Briar",
+    "role": "Floral punk explorer",
+    "group": "alt_fashion",
+    "design": "Adult woman with auburn fluffy mohawk, light warm skin and many freckles, magenta floral bomber jacket over a cream shirt, dark green wide-leg trousers, chunky cream sneakers and little leaf-shaped earrings. Lively one-foot-forward pose, one hand on a trinket pouch and other hand presenting a battle ball, charismatic grin.",
+    "symbol": "VarietyBriar",
+    "index": 11
+  },
+  {
+    "id": "fable",
+    "name": "Fable",
+    "role": "Storybook style trainer",
+    "group": "alt_fashion",
+    "design": "Beautiful adult woman with long lavender waves, navy star beret, short navy capelet over a cream blouse, layered deep-blue skirt, star-patterned dark tights and navy boots. Holds a small closed storybook to her chest with one hand and extends a battle ball with the other, dreamy confident stance. No floating text, no glowing magic.",
+    "symbol": "VarietyFable",
+    "index": 12
+  },
+  {
+    "id": "taffy",
+    "name": "Taffy",
+    "role": "Kawaii street-fashion trainer",
+    "group": "alt_fashion",
+    "design": "Adult woman with warm deep brown skin, fluffy orange hair with heart-shaped pink clips, pink-and-cream dungarees over a cream puff-sleeved shirt, huge mint bow at waist and chunky pink shoes. Cheerful planted stance with one knee bent, battle ball held beside her cheek, other hand waving. Cute adult fashion, fully clothed.",
+    "symbol": "VarietyTaffy",
+    "index": 13
+  },
+  {
+    "id": "roux",
+    "name": "Roux",
+    "role": "Alternative bass musician",
+    "group": "alt_fashion",
+    "design": "Beautiful adult woman with deep brown skin, silver dreadlocks piled partly into a high loop, burgundy leather jacket over a black top, charcoal flared trousers and burgundy boots, small gold earrings. Compact teal bass guitar strapped diagonally across torso, one hand resting on it and one hand raising a battle ball. Instrument and both feet entirely inside 64x64 battle frame.",
+    "symbol": "VarietyRoux",
+    "index": 14
+  },
+  {
+    "id": "hugo",
+    "name": "Hugo Boulder",
+    "role": "Mountain stargazer",
+    "group": "big_personalities",
+    "design": "Very fat adult man with an extremely broad round belly and thick limbs, cheerful face, short black curly hair, navy anorak with gold star patches over a mint shirt, broad tan hiking trousers and large navy hiking boots. Tiny folded telescope tucked under one arm, other hand proudly holds a battle ball high. Warm confident mountain stargazer, body size portrayed respectfully.",
+    "symbol": "VarietyHugo",
+    "index": 15
+  },
+  {
+    "id": "otis",
+    "name": "Otis Crumb",
+    "role": "Pastry champion",
+    "group": "big_personalities",
+    "design": "Very fat adult man with a large round belly, broad shoulders and thick arms, warm dark brown skin, cocoa curls under a soft pale-blue baker cap, pastel blue apron over a coral shirt, navy trousers and cream work shoes. Holds a tiny star-shaped pastry proudly at chest and battle ball in other hand, beaming sturdy full-body pose. Stylish talented baker; no food mess or body-shaming humor.",
+    "symbol": "VarietyOtis",
+    "index": 16
+  },
+  {
+    "id": "bastian",
+    "name": "Bastian Tide",
+    "role": "Marine botanist",
+    "group": "big_personalities",
+    "design": "Very fat adult man with an enormous round torso, full face and thick legs, tan skin and short brown beard, shell-pinned straw hat, bright orange short rain poncho over a turquoise vest, blue trousers and rubber sea-green boots. Small closed seaweed field-guide under arm and battle ball presented in the other hand, genial confident stance. Respectful broad silhouette.",
+    "symbol": "VarietyBastian",
+    "index": 17
+  },
+  {
+    "id": "monty",
+    "name": "Monty Mallow",
+    "role": "Pastel skater",
+    "group": "big_personalities",
+    "design": "Very fat adult man with a very broad round body and thick limbs, light skin, peach hair under a candy-colored teal helmet, oversized lavender-and-pink hoodie, dark shorts over black leggings, bright pink sneakers. Compact mint skateboard tucked under arm, battle ball balanced in open opposite palm, cool relaxed skater pose. Respectful fashionable character, no ridicule.",
+    "symbol": "VarietyMonty",
+    "index": 18
+  },
+  {
+    "id": "florian",
+    "name": "Florian Bloom",
+    "role": "Cottagecore florist",
+    "group": "big_personalities",
+    "design": "Very fat adult man with a huge round belly, broad hips and thick arms, coral beard, warm tan skin, little wildflowers decorating a soft green hat, sunny yellow coat over cream shirt, moss-green trousers and broad brown garden boots. Small bouquet in one hand and battle ball in the other, proud welcoming full-body stance. Body size is normal and dignified.",
+    "symbol": "VarietyFlorian",
+    "index": 19
+  },
+  {
+    "id": "orson",
+    "name": "Orson Velvet",
+    "role": "Dramatic poet",
+    "group": "big_personalities",
+    "design": "Very fat adult man with an extremely wide round torso and thick legs, dark brown skin, elaborate black curls, round gold spectacles, purple brocade waistcoat over white billowy sleeves, huge coral bow tie, black trousers and polished violet shoes. Closed poetry book under one arm and battle ball held in a theatrical open palm, charming grand stage pose. Respectful elegant character.",
+    "symbol": "VarietyOrson",
+    "index": 20
+  },
+  {
+    "id": "kestrel",
+    "name": "Kestrel",
+    "role": "Weather courier",
+    "group": "eclectic",
+    "design": "Lean androgynous adult person, long silver ponytail, medium brown skin, saffron flight jacket over navy shirt, enormous teal scarf flowing gently, tapered navy trousers, silver-laced ankle boots and a compact messenger bag. One foot forward, pointing a battle ball toward the opponent with a confident smile. No weapons or large props.",
+    "symbol": "VarietyKestrel",
+    "index": 21
+  },
+  {
+    "id": "juniper",
+    "name": "Juniper",
+    "role": "Rock-climbing collector",
+    "group": "eclectic",
+    "design": "Adult female hiking enthusiast with warm tan skin, leaf-green high ponytail, teal outdoor vest over a long-sleeved cream shirt, full-length magenta cargo trousers and sturdy gray hiking boots, small goggles resting at neck. Fully clothed practical hiking wear. Confident full-body pose holding a red-white trainer ball and other hand on hip. No harness, rope or equipment.",
+    "symbol": "VarietyJuniper",
+    "index": 22
+  },
+  {
+    "id": "solace",
+    "name": "Solace",
+    "role": "Wind-chime artisan",
+    "group": "eclectic",
+    "design": "Androgynous adult person with pale coral chin-length hair, light warm skin, long mint coat with small silver wind-chime charms over a navy high-neck shirt, cream trousers and slate boots. Thoughtful hand-at-chin pose with a battle ball cradled in opposite hand, gentle quietly cool demeanor. No magical effects.",
+    "symbol": "VarietySolace",
+    "index": 23
+  },
+  {
+    "id": "idris",
+    "name": "Idris",
+    "role": "Wandering sky watcher",
+    "group": "eclectic",
+    "design": "Adult man with deep dark brown skin, a long white fishtail braid, teal-and-indigo patterned long coat, bright red-orange woven sash, navy trousers and sturdy cream boots. Holds a tiny brass weather vane charm at chest and presents a battle ball with the other hand, dignified adventurous full-body stance. No staff or weapon.",
+    "symbol": "VarietyIdris",
+    "index": 24
+  },
+  {
+    "id": "fen",
+    "name": "Fen",
+    "role": "Cheerful cartographer",
+    "group": "eclectic",
+    "design": "Adult woman who uses a sporty black manual wheelchair, turquoise braided bob, warm light skin and freckles, cream short coat over teal shirt, sunny yellow trousers and black shoes. Her entire seated body, both legs/shoes and both chair wheels must fit fully inside the 64x64 battle frame. Holds a folded map at lap and raises a battle ball with a cheerful confident smile. Overworld movement slots depict her rolling rather than walking. Do not draw her standing.",
+    "symbol": "VarietyFen",
+    "index": 25
+  },
+  {
+    "id": "taro",
+    "name": "Taro",
+    "role": "Patchwork tailor",
+    "group": "eclectic",
+    "design": "Nonbinary adult person with short silver hair under a cobalt flat cap, warm medium brown skin, oversized orange patchwork coat over cream shirt, navy pleated trousers, blue ankle boots and a little measuring tape draped around neck. Graceful poised full-body stance, battle ball held in one hand and other hand adjusting coat lapel. No scissors or sharp tools.",
+    "symbol": "VarietyTaro",
+    "index": 26
+  },
+  {
+    "id": "cosmo",
+    "name": "Cosmo",
+    "role": "Constellation showman",
+    "group": "eclectic",
+    "design": "Tall thin adult man with a spectacular orange handlebar mustache, warm light skin, small sky-blue top hat with gold star ornament, sky-blue velvet tailcoat over white shirt, huge navy bow tie, plum trousers and pointed brown shoes. Exuberant showman pose, one arm presenting a battle ball and other hand tipping hat. Whimsical but friendly, not a villain or salesman.",
+    "symbol": "VarietyCosmo",
+    "index": 27
+  },
+  {
+    "id": "nettle",
+    "name": "Nettle",
+    "role": "Snarky tea connoisseur",
+    "group": "eclectic",
+    "design": "Tall elderly adult woman with pale green-gray bob, light wrinkled skin, huge plum knitted cardigan over cream blouse, long moss-green skirt and sensible lavender ankle shoes. One hand on hip, other holding a small teacup with saucer together, battle ball clipped visibly to belt; dry unimpressed but friendly expression. Full figure fits in frame, no scary imagery.",
+    "symbol": "VarietyNettle",
+    "index": 28
+  },
+  {
+    "id": "miri",
+    "name": "Miri",
+    "role": "Coastal accordionist",
+    "group": "eclectic",
+    "design": "Adult woman with warm tan freckled skin, long multicolored blue-and-coral braids, rounded cream glasses, lemon-yellow long vest over navy blouse, coral trousers and navy boots. Compact mint accordion held against torso, one hand on its keys and opposite hand holding a battle ball, lively proud full-body stance. Instrument stays completely inside sprite frame.",
+    "symbol": "VarietyMiri",
+    "index": 29
+  },
+  {
+    "id": "zephyr",
+    "name": "Zephyr",
+    "role": "Street-dance trainer",
+    "group": "eclectic",
+    "design": "Androgynous adult person with medium brown skin, a spectacular round violet afro, turquoise tracksuit with cream side stripes, neon orange waist pouch and purple-and-white sneakers. Dynamic wide dance pose with one arm extended presenting a battle ball, joyful charismatic expression. Both feet visible and all limbs inside sprite frame.",
+    "symbol": "VarietyZephyr",
+    "index": 30
+  },
+  {
+    "id": "elden",
+    "name": "Elden Glimmer",
+    "role": "Firefly photographer",
+    "group": "eclectic",
+    "design": "Elderly adult man with warm tan skin, soft silver beard with a tiny leaf ornament, teal raincoat over mustard shirt, plum trousers, yellow rubber boots and a floppy cream hat. Small compact camera hanging at chest, one hand shielding his eyes as if spotting a tiny firefly and other holding a battle ball, kindly curious full-body stance. No glowing effects or fire.",
+    "symbol": "VarietyElden",
+    "index": 31
+  }
+]

@@ -4298,3 +4298,35 @@
 	.global KantoRare_ROTOM_CaughtText
 	.global KantoRare_GIBLE_CaughtText
 	.global KantoRare_BAGON_CaughtText
+	.global Variety_Text_BARNABY_Post
+	.global Variety_Text_VESPER_Post
+	.global Variety_Text_MARLO_Post
+	.global Variety_Text_CLATTER_Post
+	.global Variety_Text_MOSSWICK_Post
+	.global Variety_Text_NYXIE_Post
+	.global Variety_Text_SABLE_Post
+	.global Variety_Text_OPALINE_Post
+	.global Variety_Text_CINDER_Post
+	.global Variety_Text_DAHLIA_Post
+	.global Variety_Text_ECHO_Post
+	.global Variety_Text_BRIAR_Post
+	.global Variety_Text_FABLE_Post
+	.global Variety_Text_TAFFY_Post
+	.global Variety_Text_ROUX_Post
+	.global Variety_Text_HUGO_Post
+	.global Variety_Text_OTIS_Post
+	.global Variety_Text_BASTIAN_Post
+	.global Variety_Text_MONTY_Post
+	.global Variety_Text_FLORIAN_Post
+	.global Variety_Text_ORSON_Post
+	.global Variety_Text_KESTREL_Post
+	.global Variety_Text_JUNIPER_Post
+	.global Variety_Text_SOLACE_Post
+	.global Variety_Text_IDRIS_Post
+	.global Variety_Text_FEN_Post
+	.global Variety_Text_TARO_Post
+	.global Variety_Text_COSMO_Post
+	.global Variety_Text_NETTLE_Post
+	.global Variety_Text_MIRI_Post
+	.global Variety_Text_ZEPHYR_Post
+	.global Variety_Text_ELDEN_Post

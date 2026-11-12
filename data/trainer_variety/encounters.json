@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "BARNABY_HOENN",
+    "character": "barnaby",
+    "region": "hoenn",
+    "map": "Route104",
+    "x": 32,
+    "y": 63,
+    "elevation": 3,
+    "level": 9,
+    "team": [
+      "Gulpin",
+      "Murkrow"
+    ],
+    "trainer_data_id": 674,
+    "local_id": 176
+  },
+  {
+    "id": "BARNABY_KANTO",
+    "character": "barnaby",
+    "region": "kanto",
+    "map": "KantoRoute3",
+    "x": 70,
+    "y": 4,
+    "elevation": 3,
+    "level": 12,
+    "team": [
+      "Gulpin",
+      "Murkrow"
+    ],
+    "trainer_data_id": 675,
+    "local_id": 176
+  },
+  {
+    "id": "VESPER_HOENN",
+    "character": "vesper",
+    "region": "hoenn",
+    "map": "Route116",
+    "x": 7,
+    "y": 7,
+    "elevation": 3,
+    "level": 13,
+    "team": [
+      "Meowth",
+      "Murkrow"
+    ],
+    "trainer_data_id": 676,
+    "local_id": 177
+  },
+  {
+    "id": "VESPER_KANTO",
+    "character": "vesper",
+    "region": "kanto",
+    "map": "KantoRoute24",
+    "x": 7,
+    "y": 5,
+    "elevation": 3,
+    "level": 18,
+    "team": [
+      "Meowth",
+      "Murkrow",
+      "Sneasel"
+    ],
+    "trainer_data_id": 677,
+    "local_id": 177
+  },
+  {
+    "id": "MARLO_HOENN",
+    "character": "marlo",
+    "region": "hoenn",
+    "map": "SlateportCity",
+    "x": 19,
+    "y": 2,
+    "elevation": 3,
+    "level": 18,
+    "team": [
+      "Mime Jr.",
+      "Chatot",
+      "Aipom"
+    ],
+    "trainer_data_id": 678,
+    "local_id": 178
+  },
+  {
+    "id": "MARLO_KANTO",
+    "character": "marlo",
+    "region": "kanto",
+    "map": "KantoCeruleanCity",
+    "x": 15,
+    "y": 34,
+    "elevation": 3,
+    "level": 19,
+    "team": [
+      "Mime Jr.",
+      "Chatot",
+      "Aipom"
+    ],
+    "trainer_data_id": 679,
+    "local_id": 178
+  },
+  {
+    "id": "CLATTER_HOENN",
+    "character": "clatter",
+    "region": "hoenn",
+    "map": "Route110",
+    "x": 15,
+    "y": 2,
+    "elevation": 3,
+    "level": 19,
+    "team": [
+      "Bronzor",
+      "Pineco",
+      "Magnemite"
+    ],
+    "trainer_data_id": 680,
+    "local_id": 179
+  },
+  {
+    "id": "CLATTER_KANTO",
+    "character": "clatter",
+    "region": "kanto",
+    "map": "KantoRoute6",
+    "x": 3,
+    "y": 9,
+    "elevation": 3,
+    "level": 20,
+    "team": [
+      "Bronzor",
+      "Pineco",
+      "Magnemite"
+    ],
+    "trainer_data_id": 681,
+    "local_id": 179
+  },
+  {
+    "id": "MOSSWICK_HOENN",
+    "character": "mosswick",
+    "region": "hoenn",
+    "map": "PetalburgWoods",
+    "x": 34,
+    "y": 35,
+    "elevation": 3,
+    "level": 8,
+    "team": [
+      "Shroomish",
+      "Paras"
+    ],
+    "trainer_data_id": 682,
+    "local_id": 180
+  },
+  {
+    "id": "MOSSWICK_KANTO",
+    "character": "mosswick",
+    "region": "kanto",
+    "map": "KantoViridianForest",
+    "x": 5,
+    "y": 32,
+    "elevation": 3,
+    "level": 9,
+    "team": [
+      "Shroomish",
+      "Paras"
+    ],
+    "trainer_data_id": 683,
+    "local_id": 180
+  },
+  {
+    "id": "NYXIE_HOENN",
+    "character": "nyxie",
+    "region": "hoenn",
+    "map": "Route113",
+    "x": 90,
+    "y": 8,
+    "elevation": 3,
+    "level": 24,
+    "team": [
+      "Murkrow",
+      "Misdreavus",
+      "Duskull"
+    ],
+    "trainer_data_id": 684,
+    "local_id": 181
+  },
+  {
+    "id": "NYXIE_KANTO",
+    "character": "nyxie",
+    "region": "kanto",
+    "map": "KantoLavenderTown",
+    "x": 20,
+    "y": 17,
+    "elevation": 3,
+    "level": 27,
+    "team": [
+      "Murkrow",
+      "Misdreavus",
+      "Duskull",
+      "Chimecho"
+    ],
+    "trainer_data_id": 685,
+    "local_id": 181
+  },
+  {
+    "id": "SABLE_HOENN",
+    "character": "sable",
+    "region": "hoenn",
+    "map": "Route117",
+    "x": 2,
+    "y": 10,
+    "elevation": 3,
+    "level": 22,
+    "team": [
+      "Houndour",
+      "Stunky",
+      "Croagunk"
+    ],
+    "trainer_data_id": 686,
+    "local_id": 182
+  },
+  {
+    "id": "SABLE_KANTO",
+    "character": "sable",
+    "region": "kanto",
+    "map": "KantoRoute9",
+    "x": 37,
+    "y": 2,
+    "elevation": 3,
+    "level": 24,
+    "team": [
+      "Houndour",
+      "Stunky",
+      "Croagunk"
+    ],
+    "trainer_data_id": 687,
+    "local_id": 182
+  },
+  {
+    "id": "OPALINE_HOENN",
+    "character": "opaline",
+    "region": "hoenn",
+    "map": "VerdanturfTown",
+    "x": 2,
+    "y": 16,
+    "elevation": 3,
+    "level": 21,
+    "team": [
+      "Snorunt",
+      "Misdreavus",
+      "Ralts"
+    ],
+    "trainer_data_id": 688,
+    "local_id": 183
+  },
+  {
+    "id": "OPALINE_KANTO",
+    "character": "opaline",
+    "region": "kanto",
+    "map": "KantoRoute25",
+    "x": 6,
+    "y": 4,
+    "elevation": 3,
+    "level": 20,
+    "team": [
+      "Snorunt",
+      "Misdreavus",
+      "Ralts"
+    ],
+    "trainer_data_id": 689,
+    "local_id": 183
+  },
+  {
+    "id": "CINDER_HOENN",
+    "character": "cinder",
+    "region": "hoenn",
+    "map": "MauvilleCity",
+    "x": 35,
+    "y": 7,
+    "elevation": 3,
+    "level": 22,
+    "team": [
+      "Magnemite",
+      "Voltorb",
+      "Numel"
+    ],
+    "trainer_data_id": 690,
+    "local_id": 184
+  },
+  {
+    "id": "CINDER_KANTO",
+    "character": "cinder",
+    "region": "kanto",
+    "map": "KantoVermilionCity",
+    "x": 36,
+    "y": 20,
+    "elevation": 3,
+    "level": 22,
+    "team": [
+      "Magnemite",
+      "Voltorb",
+      "Numel"
+    ],
+    "trainer_data_id": 691,
+    "local_id": 184
+  },
+  {
+    "id": "DAHLIA_HOENN",
+    "character": "dahlia",
+    "region": "hoenn",
+    "map": "Route104",
+    "x": 8,
+    "y": 7,
+    "elevation": 3,
+    "level": 11,
+    "team": [
+      "Budew",
+      "Tangela"
+    ],
+    "trainer_data_id": 692,
+    "local_id": 185
+  },
+  {
+    "id": "DAHLIA_KANTO",
+    "character": "dahlia",
+    "region": "kanto",
+    "map": "KantoRoute8",
+    "x": 66,
+    "y": 13,
+    "elevation": 3,
+    "level": 26,
+    "team": [
+      "Budew",
+      "Tangela",
+      "Gloom"
+    ],
+    "trainer_data_id": 693,
+    "local_id": 185
+  },
+  {
+    "id": "ECHO_HOENN",
+    "character": "echo",
+    "region": "hoenn",
+    "map": "RustboroCity",
+    "x": 34,
+    "y": 9,
+    "elevation": 3,
+    "level": 13,
+    "team": [
+      "Porygon",
+      "Voltorb"
+    ],
+    "trainer_data_id": 694,
+    "local_id": 186
+  },
+  {
+    "id": "ECHO_KANTO",
+    "character": "echo",
+    "region": "kanto",
+    "map": "KantoCeladonCity",
+    "x": 5,
+    "y": 31,
+    "elevation": 3,
+    "level": 29,
+    "team": [
+      "Porygon",
+      "Voltorb",
+      "Aipom",
+      "Rotom"
+    ],
+    "trainer_data_id": 695,
+    "local_id": 186
+  },
+  {
+    "id": "BRIAR_HOENN",
+    "character": "briar",
+    "region": "hoenn",
+    "map": "Route114",
+    "x": 36,
+    "y": 6,
+    "elevation": 3,
+    "level": 25,
+    "team": [
+      "Budew",
+      "Cacnea",
+      "Combee"
+    ],
+    "trainer_data_id": 696,
+    "local_id": 187
+  },
+  {
+    "id": "BRIAR_KANTO",
+    "character": "briar",
+    "region": "kanto",
+    "map": "KantoRoute15",
+    "x": 68,
+    "y": 7,
+    "elevation": 3,
+    "level": 32,
+    "team": [
+      "Roselia",
+      "Cacnea",
+      "Combee",
+      "Gligar"
+    ],
+    "trainer_data_id": 697,
+    "local_id": 187
+  },
+  {
+    "id": "FABLE_HOENN",
+    "character": "fable",
+    "region": "hoenn",
+    "map": "Route119",
+    "x": 28,
+    "y": 107,
+    "elevation": 3,
+    "level": 30,
+    "team": [
+      "Kirlia",
+      "Togetic",
+      "Noctowl",
+      "Chimecho"
+    ],
+    "trainer_data_id": 698,
+    "local_id": 188
+  },
+  {
+    "id": "FABLE_KANTO",
+    "character": "fable",
+    "region": "kanto",
+    "map": "KantoRoute12",
+    "x": 15,
+    "y": 79,
+    "elevation": 3,
+    "level": 28,
+    "team": [
+      "Kirlia",
+      "Togetic",
+      "Hoothoot",
+      "Chimecho"
+    ],
+    "trainer_data_id": 699,
+    "local_id": 188
+  },
+  {
+    "id": "TAFFY_HOENN",
+    "character": "taffy",
+    "region": "hoenn",
+    "map": "Route110",
+    "x": 16,
+    "y": 94,
+    "elevation": 3,
+    "level": 20,
+    "team": [
+      "Clefairy",
+      "Skitty",
+      "Buneary"
+    ],
+    "trainer_data_id": 700,
+    "local_id": 189
+  },
+  {
+    "id": "TAFFY_KANTO",
+    "character": "taffy",
+    "region": "kanto",
+    "map": "KantoRoute5",
+    "x": 19,
+    "y": 30,
+    "elevation": 3,
+    "level": 20,
+    "team": [
+      "Clefairy",
+      "Skitty",
+      "Buneary"
+    ],
+    "trainer_data_id": 701,
+    "local_id": 189
+  },
+  {
+    "id": "ROUX_HOENN",
+    "character": "roux",
+    "region": "hoenn",
+    "map": "LilycoveCity",
+    "x": 9,
+    "y": 9,
+    "elevation": 5,
+    "level": 36,
+    "team": [
+      "Kricketune",
+      "Chatot",
+      "Misdreavus",
+      "Loudred"
+    ],
+    "trainer_data_id": 702,
+    "local_id": 190
+  },
+  {
+    "id": "ROUX_KANTO",
+    "character": "roux",
+    "region": "kanto",
+    "map": "KantoRoute16",
+    "x": 44,
+    "y": 13,
+    "elevation": 3,
+    "level": 31,
+    "team": [
+      "Kricketune",
+      "Chatot",
+      "Misdreavus",
+      "Loudred"
+    ],
+    "trainer_data_id": 703,
+    "local_id": 190
+  },
+  {
+    "id": "HUGO_HOENN",
+    "character": "hugo",
+    "region": "hoenn",
+    "map": "Route112",
+    "x": 34,
+    "y": 49,
+    "elevation": 3,
+    "level": 23,
+    "team": [
+      "Lunatone",
+      "Nosepass",
+      "Clefairy"
+    ],
+    "trainer_data_id": 704,
+    "local_id": 191
+  },
+  {
+    "id": "HUGO_KANTO",
+    "character": "hugo",
+    "region": "kanto",
+    "map": "KantoCeladonCity_Restaurant",
+    "x": 4,
+    "y": 3,
+    "elevation": 3,
+    "level": 29,
+    "team": [
+      "Lunatone",
+      "Nosepass",
+      "Clefairy",
+      "Solrock"
+    ],
+    "trainer_data_id": 705,
+    "local_id": 191
+  },
+  {
+    "id": "OTIS_HOENN",
+    "character": "otis",
+    "region": "hoenn",
+    "map": "SlateportCity",
+    "x": 7,
+    "y": 22,
+    "elevation": 3,
+    "level": 18,
+    "team": [
+      "Munchlax",
+      "Combee",
+      "Shuckle"
+    ],
+    "trainer_data_id": 706,
+    "local_id": 192
+  },
+  {
+    "id": "OTIS_KANTO",
+    "character": "otis",
+    "region": "kanto",
+    "map": "KantoCeladonCity_Restaurant",
+    "x": 6,
+    "y": 3,
+    "elevation": 3,
+    "level": 30,
+    "team": [
+      "Munchlax",
+      "Combee",
+      "Shuckle",
+      "Miltank"
+    ],
+    "trainer_data_id": 707,
+    "local_id": 192
+  },
+  {
+    "id": "BASTIAN_HOENN",
+    "character": "bastian",
+    "region": "hoenn",
+    "map": "Route109",
+    "x": 19,
+    "y": 55,
+    "elevation": 3,
+    "level": 17,
+    "team": [
+      "Lombre",
+      "Chinchou",
+      "Tangela"
+    ],
+    "trainer_data_id": 708,
+    "local_id": 193
+  },
+  {
+    "id": "BASTIAN_KANTO",
+    "character": "bastian",
+    "region": "kanto",
+    "map": "KantoCeladonCity_Restaurant",
+    "x": 8,
+    "y": 3,
+    "elevation": 3,
+    "level": 29,
+    "team": [
+      "Lombre",
+      "Chinchou",
+      "Tangela",
+      "Corsola"
+    ],
+    "trainer_data_id": 709,
+    "local_id": 193
+  },
+  {
+    "id": "MONTY_HOENN",
+    "character": "monty",
+    "region": "hoenn",
+    "map": "MauvilleCity",
+    "x": 31,
+    "y": 6,
+    "elevation": 3,
+    "level": 23,
+    "team": [
+      "Buizel",
+      "Snover",
+      "Delibird"
+    ],
+    "trainer_data_id": 710,
+    "local_id": 194
+  },
+  {
+    "id": "MONTY_KANTO",
+    "character": "monty",
+    "region": "kanto",
+    "map": "KantoCeladonCity_Restaurant",
+    "x": 4,
+    "y": 5,
+    "elevation": 3,
+    "level": 31,
+    "team": [
+      "Floatzel",
+      "Snover",
+      "Delibird",
+      "Swellow"
+    ],
+    "trainer_data_id": 711,
+    "local_id": 194
+  },
+  {
+    "id": "FLORIAN_HOENN",
+    "character": "florian",
+    "region": "hoenn",
+    "map": "Route117",
+    "x": 54,
+    "y": 13,
+    "elevation": 3,
+    "level": 22,
+    "team": [
+      "Roselia",
+      "Sunflora",
+      "Skiploom"
+    ],
+    "trainer_data_id": 712,
+    "local_id": 195
+  },
+  {
+    "id": "FLORIAN_KANTO",
+    "character": "florian",
+    "region": "kanto",
+    "map": "KantoCeladonCity_Restaurant",
+    "x": 6,
+    "y": 5,
+    "elevation": 3,
+    "level": 30,
+    "team": [
+      "Roselia",
+      "Sunflora",
+      "Skiploom",
+      "Combee"
+    ],
+    "trainer_data_id": 713,
+    "local_id": 195
+  },
+  {
+    "id": "ORSON_HOENN",
+    "character": "orson",
+    "region": "hoenn",
+    "map": "FallarborTown",
+    "x": 2,
+    "y": 12,
+    "elevation": 3,
+    "level": 25,
+    "team": [
+      "Noctowl",
+      "Misdreavus",
+      "Kricketune"
+    ],
+    "trainer_data_id": 714,
+    "local_id": 196
+  },
+  {
+    "id": "ORSON_KANTO",
+    "character": "orson",
+    "region": "kanto",
+    "map": "KantoCeladonCity_Restaurant",
+    "x": 8,
+    "y": 5,
+    "elevation": 3,
+    "level": 32,
+    "team": [
+      "Noctowl",
+      "Misdreavus",
+      "Kricketune",
+      "Chatot"
+    ],
+    "trainer_data_id": 715,
+    "local_id": 196
+  },
+  {
+    "id": "KESTREL_HOENN",
+    "character": "kestrel",
+    "region": "hoenn",
+    "map": "Route118",
+    "x": 75,
+    "y": 10,
+    "elevation": 3,
+    "level": 28,
+    "team": [
+      "Wingull",
+      "Drifloon",
+      "Electrike",
+      "Murkrow"
+    ],
+    "trainer_data_id": 716,
+    "local_id": 197
+  },
+  {
+    "id": "KESTREL_KANTO",
+    "character": "kestrel",
+    "region": "kanto",
+    "map": "KantoRoute7",
+    "x": 5,
+    "y": 10,
+    "elevation": 3,
+    "level": 28,
+    "team": [
+      "Wingull",
+      "Drifloon",
+      "Electrike",
+      "Murkrow"
+    ],
+    "trainer_data_id": 717,
+    "local_id": 197
+  },
+  {
+    "id": "JUNIPER_HOENN",
+    "character": "juniper",
+    "region": "hoenn",
+    "map": "Route115",
+    "x": 18,
+    "y": 77,
+    "elevation": 3,
+    "level": 14,
+    "team": [
+      "Geodude",
+      "Gligar"
+    ],
+    "trainer_data_id": 718,
+    "local_id": 198
+  },
+  {
+    "id": "JUNIPER_KANTO",
+    "character": "juniper",
+    "region": "kanto",
+    "map": "KantoMtMoon_1F",
+    "x": 30,
+    "y": 6,
+    "elevation": 3,
+    "level": 13,
+    "team": [
+      "Geodude",
+      "Gligar"
+    ],
+    "trainer_data_id": 719,
+    "local_id": 198
+  },
+  {
+    "id": "SOLACE_HOENN",
+    "character": "solace",
+    "region": "hoenn",
+    "map": "Route120",
+    "x": 3,
+    "y": 25,
+    "elevation": 3,
+    "level": 33,
+    "team": [
+      "Chimecho",
+      "Bronzor",
+      "Skiploom",
+      "Chingling"
+    ],
+    "trainer_data_id": 720,
+    "local_id": 199
+  },
+  {
+    "id": "SOLACE_KANTO",
+    "character": "solace",
+    "region": "kanto",
+    "map": "KantoRoute13",
+    "x": 27,
+    "y": 12,
+    "elevation": 3,
+    "level": 29,
+    "team": [
+      "Chimecho",
+      "Bronzor",
+      "Skiploom",
+      "Chingling"
+    ],
+    "trainer_data_id": 721,
+    "local_id": 199
+  },
+  {
+    "id": "IDRIS_HOENN",
+    "character": "idris",
+    "region": "hoenn",
+    "map": "FortreeCity",
+    "x": 36,
+    "y": 9,
+    "elevation": 3,
+    "level": 32,
+    "team": [
+      "Drifloon",
+      "Altaria",
+      "Chimecho",
+      "Lunatone"
+    ],
+    "trainer_data_id": 722,
+    "local_id": 200
+  },
+  {
+    "id": "IDRIS_KANTO",
+    "character": "idris",
+    "region": "kanto",
+    "map": "KantoRoute10",
+    "x": 9,
+    "y": 45,
+    "elevation": 3,
+    "level": 25,
+    "team": [
+      "Drifloon",
+      "Swablu",
+      "Chimecho"
+    ],
+    "trainer_data_id": 723,
+    "local_id": 200
+  },
+  {
+    "id": "FEN_HOENN",
+    "character": "fen",
+    "region": "hoenn",
+    "map": "RustboroCity",
+    "x": 30,
+    "y": 22,
+    "elevation": 3,
+    "level": 12,
+    "team": [
+      "Wooper",
+      "Shellos"
+    ],
+    "trainer_data_id": 724,
+    "local_id": 201
+  },
+  {
+    "id": "FEN_KANTO",
+    "character": "fen",
+    "region": "kanto",
+    "map": "KantoPewterCity",
+    "x": 21,
+    "y": 37,
+    "elevation": 3,
+    "level": 11,
+    "team": [
+      "Wooper",
+      "Shellos"
+    ],
+    "trainer_data_id": 725,
+    "local_id": 201
+  },
+  {
+    "id": "TARO_HOENN",
+    "character": "taro",
+    "region": "hoenn",
+    "map": "VerdanturfTown",
+    "x": 15,
+    "y": 16,
+    "elevation": 3,
+    "level": 21,
+    "team": [
+      "Burmy",
+      "Spinarak",
+      "Mareep"
+    ],
+    "trainer_data_id": 726,
+    "local_id": 202
+  },
+  {
+    "id": "TARO_KANTO",
+    "character": "taro",
+    "region": "kanto",
+    "map": "KantoFuchsiaCity",
+    "x": 3,
+    "y": 8,
+    "elevation": 3,
+    "level": 34,
+    "team": [
+      "Wormadam",
+      "Ariados",
+      "Flaaffy",
+      "Ambipom"
+    ],
+    "trainer_data_id": 727,
+    "local_id": 202
+  },
+  {
+    "id": "COSMO_HOENN",
+    "character": "cosmo",
+    "region": "hoenn",
+    "map": "Route111",
+    "x": 15,
+    "y": 133,
+    "elevation": 3,
+    "level": 22,
+    "team": [
+      "Staryu",
+      "Clefairy",
+      "Baltoy"
+    ],
+    "trainer_data_id": 728,
+    "local_id": 203
+  },
+  {
+    "id": "COSMO_KANTO",
+    "character": "cosmo",
+    "region": "kanto",
+    "map": "KantoRoute11",
+    "x": 55,
+    "y": 4,
+    "elevation": 3,
+    "level": 23,
+    "team": [
+      "Staryu",
+      "Clefairy",
+      "Baltoy"
+    ],
+    "trainer_data_id": 729,
+    "local_id": 203
+  },
+  {
+    "id": "NETTLE_HOENN",
+    "character": "nettle",
+    "region": "hoenn",
+    "map": "LavaridgeTown",
+    "x": 15,
+    "y": 17,
+    "elevation": 3,
+    "level": 27,
+    "team": [
+      "Roselia",
+      "Cherrim",
+      "Shuckle",
+      "Slowpoke"
+    ],
+    "trainer_data_id": 730,
+    "local_id": 204
+  },
+  {
+    "id": "NETTLE_KANTO",
+    "character": "nettle",
+    "region": "kanto",
+    "map": "KantoSaffronCity",
+    "x": 48,
+    "y": 33,
+    "elevation": 3,
+    "level": 34,
+    "team": [
+      "Roselia",
+      "Cherrim",
+      "Shuckle",
+      "Slowpoke"
+    ],
+    "trainer_data_id": 731,
+    "local_id": 204
+  },
+  {
+    "id": "MIRI_HOENN",
+    "character": "miri",
+    "region": "hoenn",
+    "map": "DewfordTown",
+    "x": 9,
+    "y": 2,
+    "elevation": 3,
+    "level": 14,
+    "team": [
+      "Chatot",
+      "Lombre"
+    ],
+    "trainer_data_id": 732,
+    "local_id": 205
+  },
+  {
+    "id": "MIRI_KANTO",
+    "character": "miri",
+    "region": "kanto",
+    "map": "KantoRoute6",
+    "x": 14,
+    "y": 9,
+    "elevation": 3,
+    "level": 20,
+    "team": [
+      "Chatot",
+      "Lombre",
+      "Chingling"
+    ],
+    "trainer_data_id": 733,
+    "local_id": 205
+  },
+  {
+    "id": "ZEPHYR_HOENN",
+    "character": "zephyr",
+    "region": "hoenn",
+    "map": "Route119",
+    "x": 37,
+    "y": 126,
+    "elevation": 3,
+    "level": 30,
+    "team": [
+      "Hitmontop",
+      "Ludicolo",
+      "Ambipom",
+      "Spinda"
+    ],
+    "trainer_data_id": 734,
+    "local_id": 206
+  },
+  {
+    "id": "ZEPHYR_KANTO",
+    "character": "zephyr",
+    "region": "kanto",
+    "map": "KantoRoute18",
+    "x": 19,
+    "y": 8,
+    "elevation": 3,
+    "level": 32,
+    "team": [
+      "Hitmontop",
+      "Ludicolo",
+      "Ambipom",
+      "Spinda"
+    ],
+    "trainer_data_id": 735,
+    "local_id": 206
+  },
+  {
+    "id": "ELDEN_HOENN",
+    "character": "elden",
+    "region": "hoenn",
+    "map": "Route114",
+    "x": 31,
+    "y": 34,
+    "elevation": 3,
+    "level": 26,
+    "team": [
+      "Volbeat",
+      "Illumise",
+      "Shinx"
+    ],
+    "trainer_data_id": 736,
+    "local_id": 207
+  },
+  {
+    "id": "ELDEN_KANTO",
+    "character": "elden",
+    "region": "kanto",
+    "map": "KantoRoute14",
+    "x": 2,
+    "y": 51,
+    "elevation": 3,
+    "level": 31,
+    "team": [
+      "Volbeat",
+      "Illumise",
+      "Luxio",
+      "Yanma"
+    ],
+    "trainer_data_id": 737,
+    "local_id": 207
+  }
+]

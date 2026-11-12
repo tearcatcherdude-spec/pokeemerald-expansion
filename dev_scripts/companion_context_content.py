@@ -790,3 +790,6 @@ ROWS.extend(HOENN_OBJECT_REMAINING_ROWS)
 
 from companion_kanto_rares import ROWS as KANTO_RARE_ROWS
 ROWS.extend(KANTO_RARE_ROWS)
+
+from companion_variety_trainers import ROWS as VARIETY_TRAINER_ROWS
+ROWS.extend(VARIETY_TRAINER_ROWS)

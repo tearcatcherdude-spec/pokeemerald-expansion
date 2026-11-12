@@ -547,6 +547,14 @@
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
 
+#define MUS_VARIETY_STEADY 610
+#define MUS_VARIETY_BRISK 611
+#define MUS_VARIETY_WISTFUL 612
+#define MUS_VARIETY_CHEERFUL 613
+#define MUS_VARIETY_SILLY 614
+#define MUS_VARIETY_TENSE 615
+#define MUS_VARIETY_LAIDBACK 616
+
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
 #define MUS_NONE                    0xFFFF
