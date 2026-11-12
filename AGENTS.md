@@ -128,3 +128,15 @@ two former reserved bytes count completed one-time legacy-context imports.
 Import read-only, per voice, once for each appended context. Do not keep checking
 legacy broad categories on every offer: that would silence fresh independent
 descriptions. All exact legacy aliases must be bound below context 736.
+
+# Standing desktop delivery preference (2026-11-12)
+
+After each new playable build, automatically download/package and deliver it to
+the Windows desktop using tools/build_delivery/deploy.py. Put the new build in
+`Emerald Current Build` and move prior recognized build folders intact into
+`past emerald builds`. Copy the most recently modified checksum-valid normal
+save and its matching entire companion-history folder unless the user explicitly
+opts out for that delivery. Never migrate an old emulator state or merge separate
+playthroughs. Do not ask again for routine transfers/archiving already authorized
+here. Stop if the emulator is running or required history is missing; preserve all
+originals. See docs/build_delivery.md for verification, staging and rollback.

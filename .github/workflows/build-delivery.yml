@@ -1,0 +1,14 @@
+name: Desktop delivery checks
+on:
+  pull_request:
+    paths:
+      - 'tools/build_delivery/**'
+      - '.github/workflows/build-delivery.yml'
+  workflow_dispatch:
+jobs:
+  transfer-and-rollback:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check safe save/history delivery
+        run: python3 -m unittest discover -s tools/build_delivery -p test_deploy.py -v
