@@ -5,7 +5,11 @@ Kanto, companions, dialogue histories and save record sizes remain unchanged.
 Five private maps append to a new map group and layout tail.
 
 The four Oldale building sites become a crescent cottage, candle workshop,
-moth-wing rest house and lost-and-found shop. All four interiors have new furniture.
+lantern rest house and lost-and-found shop. The butterfly/moth facade was rejected
+and removed. All four interiors have new furniture and slightly darker colors.
+Original Emerald tree/grass/path tiles and their native map placements are exact;
+only their ordered palettes change to black and dark desaturated ramps. The
+generated outdoor landscape is not used. terrain_contract.json guards this.
 The native background compiler reuses terrain metatiles and supplies private
 512+512 tile banks. Backgrounds and actors are indexed 4bpp with RGB5 palettes.
 Source renders are not emulator screenshots; deliver only actual emulator captures
@@ -13,8 +17,11 @@ as in-game previews. Full source prompts are in graphics/void_oldale/prompts.jso
 Built-in ImageGen supplied the source art; the compiler produces real game assets.
 The mood reference was https://neverwaygame.com/; no Neverway assets are imported.
 
-Eight original hollow creatures: Wispit, Buttonmoth, Teacup, Sootling, Bellhop,
-Puddle, Wick and Umbrel. Walk sheets contain front/back/left views plus simple
+The user retained Teacup, Sootling (fluffy purple), Puddle (squid-blob girl) and
+Wick (candle). The other four were replaced with a shadow bunny, hollow seedling,
+shadow fawn and sleepy snail. Working source IDs Wispit/Buttonmoth/Bellhop/Umbrel
+remain stable but now refer to those revised designs. All eight use sharper,
+Pokémon-like pixel shading. Walk sheets contain front/back/left views plus simple
 two-pose hovering/bobbing cycles. East is mirrored by Emerald's standard animation.
 Their dialogue is deliberately odd and light; nobody explains the watch.
 

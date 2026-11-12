@@ -2,12 +2,12 @@ VoidOldale_Talk_Wispit::
 	msgbox VoidOldale_Text_Wispit, MSGBOX_NPC
 	end
 VoidOldale_Text_Wispit:
-	.string "I am not haunting you.\nI am supervising your posture.$"
+	.string "I am not haunting you.\nI am checking if you have snacks.$"
 VoidOldale_Talk_Buttonmoth::
 	msgbox VoidOldale_Text_Buttonmoth, MSGBOX_NPC
 	end
 VoidOldale_Text_Buttonmoth:
-	.string "I ate a cardigan in my sleep.\nNow I dream in cable knit.$"
+	.string "My roots are very mysterious.\nMostly because I lost the receipt.$"
 VoidOldale_Talk_Teacup::
 	msgbox VoidOldale_Text_Teacup, MSGBOX_NPC
 	end
@@ -22,7 +22,7 @@ VoidOldale_Talk_Bellhop::
 	msgbox VoidOldale_Text_Bellhop, MSGBOX_NPC
 	end
 VoidOldale_Text_Bellhop:
-	.string "I am the doorbell.\nPlease knock. I get stage fright.$"
+	.string "Please do not count my antlers.\nThey get embarrassed and hide.$"
 VoidOldale_Talk_Puddle::
 	msgbox VoidOldale_Text_Puddle, MSGBOX_NPC
 	end
@@ -37,4 +37,4 @@ VoidOldale_Talk_Umbrel::
 	msgbox VoidOldale_Text_Umbrel, MSGBOX_NPC
 	end
 VoidOldale_Text_Umbrel:
-	.string "Forecast: a small chance of ghosts.\nWe prefer to be called neighbors.$"
+	.string "I keep my secrets in this shell.\nAlso one very small sandwich.$"

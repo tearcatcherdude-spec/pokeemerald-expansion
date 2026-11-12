@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1]
 ART=ROOT/'graphics/void_oldale';DATA=ROOT/'data/void_oldale'
 NAMES=['Wispit','Buttonmoth','Teacup','Sootling','Bellhop','Puddle','Wick','Umbrel']
 ROOMS=[('Cottage','cottage','OldaleTown_House1',(160,144),(5,7),0),('Workshop','workshop','OldaleTown_House2',(176,128),(15,16),1),('RestHouse','rest','OldaleTown_PokemonCenter_1F',(224,144),(6,16),2),('Shop','shop','OldaleTown_Mart',(176,128),(14,6),3)]
-RECTS=[(4,4,4,4),(14,13,4,4),(4,13,5,4),(13,3,4,4)]
+RECTS=[(4,4,4,4),(14,13,4,4),(5,13,4,4),(13,3,4,4)]
 def read(p):return json.loads((ROOT/p).read_text())
 def save(p,d):
  p=ROOT/p;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(d,indent=2)+'\n')
@@ -25,9 +25,71 @@ def pimage(raw,colors,path):
  im=Image.fromarray(raw.astype('uint8'));im=im.convert('P');im.putpalette(list(colors.flatten())+[0]*(768-48));im.save(path,bits=4,transparency=0)
 def packed(tiles):
  a=np.array(tiles,dtype='uint8').flatten();return (a[::2]|(a[1::2]<<4)).tobytes()
+
+def compile_native_town(blocked):
+ # Keep the original Emerald terrain pixel indices and metatile references.
+ # Only their ordered palette colors change; houses receive separate new art.
+ from render_venues import bank,LAYOUTS
+ l=LAYOUTS['LAYOUT_OLDALE_TOWN'];banks=[bank(l[k]) for k in ['primary_tileset','secondary_tileset']]
+ tiles=np.zeros((1024,8,8),dtype='uint8');tiles[:len(banks[0][0])]=banks[0][0];tiles[512:512+len(banks[1][0])]=banks[1][0]
+ mts=np.zeros((1024,8),dtype='<u2');mts[:len(banks[0][1])]=banks[0][1];mts[512:512+len(banks[1][1])]=banks[1][1]
+ # The native attribute banks are read directly to preserve their layer types.
+ from build_venues import folder
+ attrs=np.zeros(1024,dtype='<u2')
+ for j,k in enumerate(['primary_tileset','secondary_tileset']):
+  a=words(folder(l[k])/'metatile_attributes.bin');attrs[j*512:j*512+len(a)]=a
+ raw=words(l['blockdata_filepath']).reshape(20,20);outwords=raw.copy();mask=np.zeros((20,20),dtype=bool)
+ for x,y,w,h in RECTS:mask[y:y+h,x:x+w]=True
+ usedm={int(v)&1023 for v in raw[~mask]};usedt={int(v)&1023 for mid in usedm for v in mts[mid]};usedp={int(v)>>12 for mid in usedm for v in mts[mid]}
+ free_t=[i for i in range(1,1024) if i not in usedt];free_m=[i for i in range(512,1024) if i not in usedm];free_p=[i for i in range(6,13) if i not in usedp]
+ assert len(free_p)>=4
+ pals=np.array([banks[0 if i<6 else 1][2][i] for i in range(16)],dtype='uint8')
+ # Desaturated night ramps; original grass/path patterns remain pixel-exact.
+ for i in range(16):
+  for j in range(16):
+   rgb=pals[i,j].astype(float);light=float(rgb@[.2126,.7152,.0722]);v=round(4+(light/255)**2.4*58)
+   pals[i,j]=[int(v*.85),int(v*.88),min(255,v+5)]
+ pals[2]=np.array([(0,0,0),(90,98,115),(41,41,57),(16,16,24),(0,0,0),(32,24,32),(24,16,24),(49,32,49),(8,8,16),(115,90,106),(65,41,57),(90,57,82),(8,8,16),(0,0,0),(8,16,16),(8,8,16)],dtype='uint8')
+ # Quantize each building separately, preserving small window and edge lights.
+ building=Image.open(ART/'source/buildings-v3.png').convert('RGB').resize((320,320),Image.Resampling.NEAREST)
+ for bi,(x,y,w,h) in enumerate(RECTS):
+  pixels,colors=indexed(building.crop((x*16,y*16,(x+w)*16,(y+h)*16)));slot=free_p[bi]
+  for ci,color in enumerate(colors):
+   r,g,b=map(int,color)
+   if g>r*1.1 and g>b*1.05:
+    colors[ci]=[66,82,82] if (r*.2126+g*.7152+b*.0722)>200 else [4,8,8]
+  pals[slot]=colors
+  for yy in range(h):
+   for xx in range(w):
+    row=[0]*4
+    for q in range(4):
+     t=free_t.pop(0);tiles[t]=pixels[yy*16+q//2*8:yy*16+q//2*8+8,xx*16+q%2*8:xx*16+q%2*8+8];row.append((slot<<12)|t)
+    mid=free_m.pop(0);mts[mid]=row;attrs[mid]=0x1000 if yy==h-1 else 0
+    outwords[y+yy,x+xx]=(int(raw[y+yy,x+xx])&0xFC00)|mid
+ for _,_,_,_,(x,y),_ in ROOMS:attrs[int(outwords[y,x])&1023]=0x1060;outwords[y,x]&=0xF3FF
+ outwords[[0,-1],:]|=0xC00;outwords[:,[0,-1]]|=0xC00
+ blank=free_m.pop(0);mts[blank]=0;attrs[blank]=0x1000
+ out=DATA/'Town';out.mkdir(parents=True,exist_ok=True);defs=[]
+ for i in range(16):palette(out/f'palette-{i:02}.pal',pals[i])
+ for bankname,start in [('Primary',0),('Secondary',512)]:
+  (out/(bankname+'.4bpp')).write_bytes(packed(tiles[start:start+512]));(out/(bankname+'Metatiles.bin')).write_bytes(mts[start:start+512].tobytes());(out/(bankname+'Attributes.bin')).write_bytes(attrs[start:start+512].tobytes())
+  label='VoidTown'+bankname;pre='data/void_oldale/Town/'
+  defs += [f'const u32 g{label}Tiles[] = INCBIN_U32("{pre}{bankname}.4bpp.smol");',f'const u16 g{label}Metatiles[] = INCBIN_U16("{pre}{bankname}Metatiles.bin");',f'const u16 g{label}Attributes[] = INCBIN_U16("{pre}{bankname}Attributes.bin");',f'const struct Tileset gTileset_{label} = {{.isCompressed=TRUE,.isSecondary={"FALSE" if start==0 else "TRUE"},.tiles=g{label}Tiles,.palettes=gVoidTownPalettes,.metatiles=g{label}Metatiles,.metatileAttributes=g{label}Attributes,.callback=NULL}};']
+ (out/'map.bin').write_bytes(outwords.astype('<u2').tobytes());(out/'border.bin').write_bytes(struct.pack('<4H',*([0x3C00|blank]*4)))
+ preview=np.zeros((320,320,3),dtype='uint8')
+ for y in range(20):
+  for x in range(20):
+   row=mts[int(outwords[y,x])&1023]
+   for q,v in enumerate(row):
+    v=int(v);t=tiles[v&1023];t=t[:,::-1] if v&1024 else t;t=t[::-1] if v&2048 else t;px=x*16+q%2*8;py=y*16+(q%4)//2*8;dst=preview[py:py+8,px:px+8];sel=t!=0 if q>=4 else np.ones((8,8),bool);dst[sel]=pals[v>>12][t][sel]
+ Image.fromarray(preview).save(out/'native-preview.png')
+ save('data/void_oldale/terrain_contract.json',dict(original_layout='LAYOUT_OLDALE_TOWN',building_rects=RECTS,palette_only_outside_buildings=True,grass_color_index13=[0,0,0],path_color_index12=[8,8,16],native_pixel_tiles=sorted(usedt),native_metatiles=sorted(usedm),blank_metatile=blank))
+ paldef='const u16 gVoidTownPalettes[][16] = {\n'+''.join(f'INCGFX_U16("data/void_oldale/Town/palette-{i:02}.pal", ".gbapal"),\n' for i in range(16))+'};\n'
+ return paldef+'\n'.join(defs)+'\n',dict(id='LAYOUT_VOID_OLDALE_TOWN',name='VoidOldaleTown_Layout',width=20,height=20,primary_tileset='gTileset_VoidTownPrimary',secondary_tileset='gTileset_VoidTownSecondary',border_filepath='data/void_oldale/Town/border.bin',blockdata_filepath='data/void_oldale/Town/map.bin',layout_version='emerald')
 def compile_map(name,art,size,blocks):
  out=DATA/name;out.mkdir(parents=True,exist_ok=True)
- pixels,colors=indexed(Image.open(ART/'source'/f'{art}.png').resize(size,Image.Resampling.NEAREST))
+ source=ART/'source'/f'{art}-v2.png'
+ pixels,colors=indexed(Image.open(source if source.exists() else ART/'source'/f'{art}.png').resize(size,Image.Resampling.NEAREST))
  w,h=size[0]//16,size[1]//16
  if name=='Town':
   # True tile reuse: repeated terrain uses the same native Oldale metatile.
@@ -84,7 +146,7 @@ def compile_map(name,art,size,blocks):
  return paldef+'\n'.join(definitions)+'\n',dict(id='LAYOUT_VOID_OLDALE_'+name.upper(),name='VoidOldale'+name+'_Layout',width=w,height=h,primary_tileset='gTileset_Void'+name+'Primary',secondary_tileset='gTileset_Void'+name+'Secondary',border_filepath=f'data/void_oldale/{name}/border.bin',blockdata_filepath=f'data/void_oldale/{name}/map.bin',layout_version='emerald')
 
 def creatures():
- atlas=Image.open(ART/'source/creatures.png').convert('RGBA');a=np.array(atlas);allcolors=a[:,:,:3][a[:,:,3]>128]
+ atlas=Image.open(ART/'source/creatures-v2.png').convert('RGBA');a=np.array(atlas);allcolors=a[:,:,:3][a[:,:,3]>128]
  _,colors=indexed(Image.fromarray(allcolors.reshape(-1,1,3)))
  palimg=Image.new('P',(1,1));palimg.putpalette(list(colors.flatten())+[0]*(768-48))
  graphics=[];pics=[];infos=[]
@@ -95,7 +157,7 @@ def creatures():
    alpha=np.array(cell)[:,:,3]>128;ys,xs=np.where(alpha);assert len(xs)
    cell=cell.crop((int(xs.min()),int(ys.min()),int(xs.max()+1),int(ys.max()+1)))
    scale=min(14/cell.width,26/cell.height);cell=cell.resize((max(1,round(cell.width*scale)),max(1,round(cell.height*scale))),Image.Resampling.NEAREST)
-   rgb=cell.convert('RGB').quantize(palette=palimg,dither=Image.Dither.NONE);raw=np.array(rgb);raw[np.array(cell)[:,:,3]<128]=0
+   rgb=cell.convert('RGB').quantize(palette=palimg,dither=Image.Dither.NONE);raw=np.array(rgb);opaque=np.array(cell)[:,:,3]>=128;raw[(raw==0)&opaque]=15;raw[~opaque]=0
    frame=np.zeros((32,16),dtype='uint8');x=(16-cell.width)//2;y=30-cell.height;frame[y:y+cell.height,x:x+cell.width]=raw;views.append(frame)
   frames=views.copy()
   for frame in views:
@@ -125,7 +187,7 @@ def main():
  town=read('data/maps/OldaleTown/map.json');layouts=read('data/layouts/layouts.json');oldlay=next(l for l in layouts['layouts'] if l['id']==town['layout'])
  blocked=(words(oldlay['blockdata_filepath']).reshape(20,20)&0xC00)!=0;blocked[[0,-1],:]=True;blocked[:,[0,-1]]=True
  for x,y,w,h in RECTS:blocked[y:y+h,x:x+w]=True
- d,l=compile_map('Town','town',(320,320),blocked);definitions.append(d);newlayouts.append(l)
+ d,l=compile_native_town(blocked);definitions.append(d);newlayouts.append(l)
  newtown=copy.deepcopy(town);newtown.update(id='MAP_VOID_OLDALE_TOWN',name='VoidOldaleTown',layout=l['id'],music='MUS_MT_PYRE',connections=None,coord_events=[],bg_events=[],show_map_name=False,object_events=[actor('Wispit',9,10),actor('Sootling',12,8),actor('Bellhop',10,15),actor('Umbrel',17,11)])
  mapnames=['VoidOldaleTown'];newtown['warp_events']=[]
  roomactors={'Cottage':[actor('Buttonmoth',7,6),actor('Teacup',1,6)],'Workshop':[actor('Wick',8,5)],'Shop':[actor('Bellhop',4,3)],'RestHouse':[actor('Puddle',10,5),actor('Wispit',4,5)]}
@@ -153,14 +215,14 @@ def main():
  append('include/tilesets.h','\n'.join(f'extern const struct Tileset gTileset_Void{n}{b};' for n in ['Town','Cottage','Workshop','RestHouse','Shop'] for b in ['Primary','Secondary']))
  creatures()
  texts={
- 'Wispit':'I am not haunting you.\\nI am supervising your posture.',
- 'Buttonmoth':'I ate a cardigan in my sleep.\\nNow I dream in cable knit.',
+ 'Wispit':'I am not haunting you.\\nI am checking if you have snacks.',
+ 'Buttonmoth':'My roots are very mysterious.\\nMostly because I lost the receipt.',
  'Teacup':'Please do not put tea in my head.\\nI already have a lot on my mind.',
  'Sootling':'I swallowed my own echo.\\nIt keeps asking for snacks.',
- 'Bellhop':'I am the doorbell.\\nPlease knock. I get stage fright.',
+ 'Bellhop':'Please do not count my antlers.\\nThey get embarrassed and hide.',
  'Puddle':'I tried being ominous.\\nSomeone offered me a towel.',
  'Wick':'I am burning with ambition.\\nMostly at the top.',
- 'Umbrel':'Forecast: a small chance of ghosts.\\nWe prefer to be called neighbors.'}
+ 'Umbrel':'I keep my secrets in this shell.\\nAlso one very small sandwich.'}
  lines=[]
  for n,t in texts.items():lines += [f'VoidOldale_Talk_{n}::',f'\tmsgbox VoidOldale_Text_{n}, MSGBOX_NPC','\tend',f'VoidOldale_Text_{n}:',f'\t.string "{t}$"']
  (DATA/'dialogue.inc').write_text('\n'.join(lines)+'\n');append('data/event_scripts.s','\t.include "data/void_oldale/dialogue.inc"')
