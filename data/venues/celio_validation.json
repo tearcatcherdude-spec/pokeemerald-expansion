@@ -1,0 +1,40 @@
+{
+  "emulator_release": "rom128-4",
+  "download_sha256": "12e5a1c5c803e4750f454fd20d1d715de755510c070f906eb665fc7ca127b7dd",
+  "cpu_read_beyond_32MiB": {
+    "far_read": 3272672832,
+    "cpu_loaded": 3272672832,
+    "pass": true
+  },
+  "dialogue_original_uncompressed_restored": true,
+  "game_64MiB_build": "compiled, artwork/bridge checks passed",
+  "normal_save_compatibility": "PASS: copied synthetic legacy normal save, native save write, cold emulator reset, Continue, exact 600-byte party and region/map match",
+  "banked_128MiB_game": "not implemented",
+  "baseline_64MiB_startup": {
+    "rom_bytes": 67108864,
+    "saveblock": 33641044,
+    "group": 75,
+    "map": 0,
+    "x": 6,
+    "y": 8
+  },
+  "baseline_note": "Accepted prior build padded to 64 MiB, copied synthetic normal-save fixture; not yet the newly linked expanded game.",
+  "compiled_game": {
+    "rom_bytes": 67108864,
+    "linked_bytes": 33550856,
+    "free_bytes": 33558008,
+    "linked_beyond_standard_limit": false,
+    "sha256": "2e3a1b0580f3aab88a550dd1b19125d06ec375a49dde6e7989192921522a89a9"
+  },
+  "source_commit": "24a71a34ae2761c344b062e7f461385a258bfc10",
+  "ci_run": 43241954371,
+  "artifact_id": 13955042688,
+  "runtime_log": "PASS: exact 64 MiB ROM loaded; 0 linked-data samples in extended area\nPASS: native TrySavingData returned success\nPASS: cold reset and normal Continue preserved party, region and map\nDONE: exact packaged 64 MiB build; copied synthetic legacy normal-save fixture\n",
+  "limitations": [
+    "Prepared fixture, not a continuous campaign playthrough",
+    "Current linked content fits just under 32 MiB; the 64 MiB target provides about 32 MiB unused capacity",
+    "Separate CPU probe verified actual data access beyond 32 MiB",
+    "128 MiB resource bank loader is not implemented",
+    "Full CI unit suite still running at packaging time"
+  ]
+}
