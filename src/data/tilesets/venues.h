@@ -139,7 +139,7 @@ const u16 sVenuePalette34[] = INCGFX_U16("data/venues/KantoBloom/interior/07.pal
 const u16 sVenuePalette35[] = INCGFX_U16("data/venues/KantoBloom/interior/08.pal", ".gbapal");
 const u16 sVenuePalette36[] = INCGFX_U16("graphics/custom_buildings/pastel_pack/modules/saffron/glitch/exterior/palette-00.pal", ".gbapal");
 static const struct { const struct Tileset *tileset; const u16 *palette; u16 slot; } sVenuePalettes[] = {
- {&gTileset_VenueHoennTutor, sVenuePalette0, 6},
+ {&gTileset_VenueHoennTutor, sVenuePalette0, 7},
  {&gTileset_VenueHoennTutorRoom, sVenuePalette1, 7},
  {&gTileset_VenueHoennTutorRoom, sVenuePalette2, 11},
  {&gTileset_VenueHoennBakery, sVenuePalette3, 6},
@@ -148,7 +148,7 @@ static const struct { const struct Tileset *tileset; const u16 *palette; u16 slo
  {&gTileset_VenueHoennTea, sVenuePalette6, 12},
  {&gTileset_VenueHoennTeaRoom, sVenuePalette7, 7},
  {&gTileset_VenueHoennTeaRoom, sVenuePalette8, 11},
- {&gTileset_VenueHoennGlitch, sVenuePalette9, 6},
+ {&gTileset_VenueHoennGlitch, sVenuePalette9, 12},
  {&gTileset_VenueHoennGlitchRoom, sVenuePalette10, 7},
  {&gTileset_VenueHoennGlitchRoom, sVenuePalette11, 11},
  {&gTileset_VenueHoennBloom, sVenuePalette12, 7},

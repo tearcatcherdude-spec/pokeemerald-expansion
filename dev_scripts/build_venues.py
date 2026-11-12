@@ -75,15 +75,24 @@ def install(region,theme,city,house,dx,dy):
  attrs=words(cityfolder/'metatile_attributes.bin',4 if frlg else 2);original_mt_count=len(mts)
  blocks=words(oldlay['blockdata_filepath']);oldblocks=blocks.copy();border=words(oldlay['border_filepath']);w=oldlay['width']
  used={v&1023 for v in blocks+border};usedtiles=set();usedpals=set()
+ # Connected maps are drawn with the current map's graphics bank before the
+ # camera crosses the boundary. Their native resources are not free slots.
+ byid={m['id']:m for p in (ROOT/'data/maps').glob('*/map.json') for m in [json.loads(p.read_text())]}
+ for connection in citymap.get('connections') or []:
+  neighbor=byid[connection['map']]
+  snapshot=DATA/'originals'/(neighbor['name']+'.json')
+  if snapshot.exists():neighbor=json.loads(snapshot.read_text())
+  neighborlay=LAYS[neighbor['layout']]
+  used.update(v&1023 for v in words(neighborlay['blockdata_filepath'])+words(neighborlay['border_filepath']))
  primarymts=words(primaryfolder/'metatiles.bin');primarymts=[primarymts[i:i+8] for i in range(0,len(primarymts),8)]
  for mid in used:
-  for v in (mts[mid-split] if mid>=split else primarymts[mid]):
+  for v in (mts[mid-split] if split <= mid < split+len(mts) else primarymts[mid] if mid < split else []):
    usedpals.add(v>>12)
    if v&1023>=split:usedtiles.add((v&1023)-split)
  # Callback DMA destinations remain at native addresses, including off-map frames.
- if city=='RustboroCity':usedtiles.update(range(128,164));usedtiles.update(range(448,452))
- if city=='SlateportCity':usedtiles.update(range(224,228))
- if city in ['MauvilleCity','VerdanturfTown']:usedtiles.update(range(96,160))
+ if oldlay['secondary_tileset']=='gTileset_Rustboro':usedtiles.update(range(128,164));usedtiles.update(range(448,452))
+ if oldlay['secondary_tileset']=='gTileset_Slateport':usedtiles.update(range(224,228))
+ if oldlay['secondary_tileset']=='gTileset_Mauville':usedtiles.update(range(96,160))
  if oldlay['secondary_tileset']=='gTileset_Kanto_CeladonCity':usedtiles.update(range(104,112))
  # Door DMA owns the last sixteen tiles, even when they look unused at rest.
  free=[i for i in range(1008-split) if i not in usedtiles]

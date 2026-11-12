@@ -38,6 +38,11 @@ jobs:
       - name: Validate venues and tutor policy
         run: python3 dev_scripts/validate_venues.py
 
+      - name: Validate connected-map graphics
+        run: |
+          python3 -m pip install --disable-pip-version-check numpy pillow
+          python3 dev_scripts/validate_venue_connections.py
+
       - name: Validate recruitable cast
         run: python3 dev_scripts/validate_cast.py
 

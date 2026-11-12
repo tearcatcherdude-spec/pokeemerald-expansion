@@ -1,7 +1,7 @@
 [
   {
     "tileset": "gTileset_VenueHoennTutor",
-    "slot": 6,
+    "slot": 7,
     "path": "graphics/custom_buildings/pastel_pack/modules/hoenn/tutor/exterior/palette-00.pal"
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "tileset": "gTileset_VenueHoennGlitch",
-    "slot": 6,
+    "slot": 12,
     "path": "graphics/custom_buildings/pastel_pack/modules/hoenn/glitch/exterior/palette-00.pal"
   },
   {
