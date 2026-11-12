@@ -182,3 +182,19 @@ TEST("Roaming tutor never gives Magikarp imaginary fists wings or fire technique
         }
     }
 }
+
+TEST("Roaming tutor low level Beldum has a safe steel option instead of only generic support")
+{
+    struct Pokemon mon;
+    u16 offers[4];
+    u32 i;
+    bool32 hasSteel = FALSE;
+    CreateMon(&mon, SPECIES_BELDUM, 9, 0x12345678, OTID_STRUCT_PRESET(123));
+    EXPECT_EQ(RoamingTutor_Offers(&mon, offers), 4);
+    for (i = 0; i < 4; i++)
+    {
+        if (GetMoveType(offers[i]) == TYPE_STEEL) hasSteel = TRUE;
+        EXPECT(GetMovePower(offers[i]) <= 40);
+    }
+    EXPECT(hasSteel);
+}

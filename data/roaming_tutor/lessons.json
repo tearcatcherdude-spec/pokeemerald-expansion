@@ -755,6 +755,12 @@
   ],
   "beldum_family": [
     {
+      "move": "BULLET_PUNCH",
+      "level": 5,
+      "trait": "ANY",
+      "reason": "Drive your existing metal prongs\nforward in one small magnetic burst.$"
+    },
+    {
       "move": "HARDEN",
       "level": 5,
       "trait": "ANY",

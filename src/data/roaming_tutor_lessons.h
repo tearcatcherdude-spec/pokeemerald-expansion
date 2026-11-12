@@ -122,6 +122,7 @@ static const struct TutorLesson sGeneralLessons[] = {
     LESSON(FAKE_OUT, 15, TUTOR_AMBUSH, "A quick opening feint can startle.\nThe trick only works at the start.$"),
 };
 static const struct TutorLesson sMetalLessons[] = {
+    LESSON(BULLET_PUNCH, 5, 0, "Drive your existing metal prongs\nforward in one small magnetic burst.$"),
     LESSON(HARDEN, 5, 0, "Brace your existing metal shell.\nNo new limbs, just better structure.$"),
     LESSON(METAL_SOUND, 5, 0, "Vibrate your metal shell to make\na harsh resonance. Mind the ears.$"),
     LESSON(MUD_SLAP, 5, 0, "Magnetic motion can flick loose grit.\nKeep the amount small and controlled.$"),
