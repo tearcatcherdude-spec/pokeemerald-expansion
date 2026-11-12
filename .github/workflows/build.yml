@@ -114,7 +114,9 @@ jobs:
         run: python3 dev_scripts/verify_cast_rom.py pokeemerald.gba pokeemerald.map
 
       - name: Verify expanded cartridge size and capacity
-        run: python3 dev_scripts/verify_celio_rom.py pokeemerald.gba pokeemerald.map
+        run: |
+          python3 dev_scripts/verify_celio_rom.py pokeemerald.gba pokeemerald.map
+          python3 dev_scripts/verify_void_oldale_rom.py pokeemerald.gba pokeemerald.map
 
       - name: Upload Emerald ROM
         uses: actions/upload-artifact@v4

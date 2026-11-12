@@ -61,6 +61,9 @@ def compile_map(name,art,size,blocks):
  else:
   ex=7 if name=='RestHouse' else 4
   attrs[(h-1)*w+ex]=0x1065;mapwords[(h-1)*w+ex]&=~0xC00
+ # A dedicated blank metatile prevents small rooms repeating their top-left art
+ # in the camera border outside the actual map.
+ blank=len(mts);mts.append([0]*8);attrs.append(0x1000)
  # Both private banks are padded; tile indices retain the 512-tile split.
  while len(tiles)<1024:tiles.append(np.zeros((8,8),dtype='uint8'))
  for bank,start in [('Primary',0),('Secondary',512)]:
@@ -70,7 +73,7 @@ def compile_map(name,art,size,blocks):
   (out/(bank+'Metatiles.bin')).write_bytes(np.array(m,dtype='<u2').tobytes())
   (out/(bank+'Attributes.bin')).write_bytes(np.array(a,dtype='<u2').tobytes())
  (out/'map.bin').write_bytes(np.array(mapwords,dtype='<u2').tobytes())
- (out/'border.bin').write_bytes(struct.pack('<4H',0x3C00,0x3C00,0x3C00,0x3C00))
+ (out/'border.bin').write_bytes(struct.pack('<4H',*([0x3C00|blank]*4)))
  palette(out/'palette.pal',colors);pimage(pixels,colors,out/'native-preview.png')
  definitions=[]
  for bank in ['Primary','Secondary']:
@@ -109,9 +112,10 @@ def creatures():
   s=s.replace('    NUM_OBJ_EVENT_GFX,',''.join(f'    OBJ_EVENT_GFX_VOID_{n.upper()},\n' for n in NAMES)+'    NUM_OBJ_EVENT_GFX,')
   s+='\n'+''.join(f'#define OBJ_EVENT_PAL_TAG_VOID_{n.upper()} 0x{0x7D00+i:04X}\n' for i,n in enumerate(NAMES));p.write_text(s)
  p=ROOT/'src/data/object_events/object_event_graphics_info_pointers.h';s=p.read_text()
- if 'OBJ_EVENT_GFX_VOID_WISPIT' not in s:
-  s=''.join(f'extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Void{n};\n' for n in NAMES)+s
-  at=s.rfind('};');s=s[:at]+''.join(f'    [OBJ_EVENT_GFX_VOID_{n.upper()}] = &gObjectEventGraphicsInfo_Void{n},\n' for n in NAMES)+s[at:];p.write_text(s)
+ if 'extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VoidWispit;' not in s:s=''.join(f'extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Void{n};\n' for n in NAMES)+s
+ s=re.sub(r'^\s*\[OBJ_EVENT_GFX_VOID_\w+\].*\n','',s,flags=re.M)
+ start=s.index('gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX]');at=s.index('};',start)
+ s=s[:at]+''.join(f'    [OBJ_EVENT_GFX_VOID_{n.upper()}] = &gObjectEventGraphicsInfo_Void{n},\n' for n in NAMES)+s[at:];p.write_text(s)
  p=ROOT/'src/event_object_movement.c';s=p.read_text();needle='static const struct SpritePalette sObjectEventSpritePalettes[] = {'
  if '{gObjectEventPal_VoidWispit' not in s:s=s.replace(needle,needle+'\n'+''.join(f'    {{gObjectEventPal_Void{n}, OBJ_EVENT_PAL_TAG_VOID_{n.upper()}}},\n' for n in NAMES));p.write_text(s)
 

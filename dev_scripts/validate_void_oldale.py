@@ -11,7 +11,8 @@ def main():
  for name,m in maps.items():
   l=layouts[m['layout']];w,h=l['width'],l['height'];a=np.frombuffer((ROOT/l['blockdata_filepath']).read_bytes(),dtype='<u2').reshape(h,w)
   attrs=np.frombuffer((ROOT/f'data/void_oldale/{name.removeprefix("VoidOldale")}/PrimaryAttributes.bin').read_bytes(),dtype='<u2')
-  mids=a&1023;assert mids.max()<512 and len(attrs)==w*h
+  mids=a&1023;assert mids.max()<512 and len(attrs)==w*h+1
+  assert (ROOT/f'data/void_oldale/{name.removeprefix("VoidOldale")}/border.bin').read_bytes()==struct.pack('<4H',*([0x3C00|w*h]*4))
   floor={(x,y) for y in range(h) for x in range(w) if not int(a[y,x])&0xC00}
   origin=(10,10) if name=='VoidOldaleTown' else (m['warp_events'][0]['x'],h-2)
   assert origin in floor,(name,'Spawn blocked')
@@ -33,6 +34,8 @@ def main():
  for n in manifest['creatures']:
   p=ROOT/f'graphics/void_oldale/{n.lower()}/walker.png';im=Image.open(p);assert im.mode=='P' and im.size==(144,32) and im.info['transparency']==0 and p.read_bytes()[24]==4
   assert len(np.unique(np.array(im)))<=16
+  pointers=(ROOT/'src/data/object_events/object_event_graphics_info_pointers.h').read_text().split('gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX]')[1].split('};')[0]
+  assert f'[OBJ_EVENT_GFX_VOID_{n.upper()}] = &gObjectEventGraphicsInfo_Void{n}' in pointers,('Creature missing from actual actor table',n)
  # Existing maps/scripts are separate; no old save banks or context IDs changed.
  assert read('data/maps/OldaleTown/map.json')['layout']=='LAYOUT_OLDALE_TOWN'
  print('PASS: five private maps, all four bidirectional doors, floor access and eight indexed nine-frame creatures')

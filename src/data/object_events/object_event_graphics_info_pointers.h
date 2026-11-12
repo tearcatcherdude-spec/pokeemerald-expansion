@@ -885,6 +885,14 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DEOXYS_A]                 = &gObjectEventGraphicsInfo_DeoxysA,
     [OBJ_EVENT_GFX_DEOXYS_N]                 = &gObjectEventGraphicsInfo_DeoxysN,
     [OBJ_EVENT_GFX_SS_ANNE]                  = &gObjectEventGraphicsInfo_SSAnne,
+    [OBJ_EVENT_GFX_VOID_WISPIT] = &gObjectEventGraphicsInfo_VoidWispit,
+    [OBJ_EVENT_GFX_VOID_BUTTONMOTH] = &gObjectEventGraphicsInfo_VoidButtonmoth,
+    [OBJ_EVENT_GFX_VOID_TEACUP] = &gObjectEventGraphicsInfo_VoidTeacup,
+    [OBJ_EVENT_GFX_VOID_SOOTLING] = &gObjectEventGraphicsInfo_VoidSootling,
+    [OBJ_EVENT_GFX_VOID_BELLHOP] = &gObjectEventGraphicsInfo_VoidBellhop,
+    [OBJ_EVENT_GFX_VOID_PUDDLE] = &gObjectEventGraphicsInfo_VoidPuddle,
+    [OBJ_EVENT_GFX_VOID_WICK] = &gObjectEventGraphicsInfo_VoidWick,
+    [OBJ_EVENT_GFX_VOID_UMBREL] = &gObjectEventGraphicsInfo_VoidUmbrel,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
@@ -895,12 +903,4 @@ const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[
     [MAUVILLE_MAN_GIDDY]       = &gObjectEventGraphicsInfo_Giddy,
     [MAUVILLE_MAN_UNUSED1]     = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan1,
     [MAUVILLE_MAN_UNUSED2]     = &gObjectEventGraphicsInfo_UnusedMauvilleOldMan2,
-    [OBJ_EVENT_GFX_VOID_WISPIT] = &gObjectEventGraphicsInfo_VoidWispit,
-    [OBJ_EVENT_GFX_VOID_BUTTONMOTH] = &gObjectEventGraphicsInfo_VoidButtonmoth,
-    [OBJ_EVENT_GFX_VOID_TEACUP] = &gObjectEventGraphicsInfo_VoidTeacup,
-    [OBJ_EVENT_GFX_VOID_SOOTLING] = &gObjectEventGraphicsInfo_VoidSootling,
-    [OBJ_EVENT_GFX_VOID_BELLHOP] = &gObjectEventGraphicsInfo_VoidBellhop,
-    [OBJ_EVENT_GFX_VOID_PUDDLE] = &gObjectEventGraphicsInfo_VoidPuddle,
-    [OBJ_EVENT_GFX_VOID_WICK] = &gObjectEventGraphicsInfo_VoidWick,
-    [OBJ_EVENT_GFX_VOID_UMBREL] = &gObjectEventGraphicsInfo_VoidUmbrel,
 };
