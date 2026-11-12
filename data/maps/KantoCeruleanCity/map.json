@@ -1,7 +1,7 @@
 {
   "id": "MAP_KANTO_CERULEAN_CITY",
   "name": "KantoCeruleanCity",
-  "layout": "LAYOUT_VENUE_KANTOGLITCH",
+  "layout": "LAYOUT_KANTO_CERULEAN_CITY",
   "music": "MUS_RG_FUCHSIA",
   "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_CERULEAN_CITY",

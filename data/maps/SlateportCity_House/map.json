@@ -42,7 +42,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_NETTLE",
+      "local_id": "LOCALID_VENUE_HOENNTEA_NETTLE",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_NETTLE",
       "x": 6,
@@ -57,7 +57,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_ORSON",
+      "local_id": "LOCALID_VENUE_HOENNTEA_ORSON",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_ORSON",
       "x": 2,

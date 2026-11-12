@@ -129,8 +129,6 @@ extern const struct Tileset gTileset_Kanto_TrainerTower;
 extern const struct Tileset gTileset_Kanto_IslandHarbor_Frlg;
 extern const struct Tileset gTileset_Kanto_PokemonLeague;
 extern const struct Tileset gTileset_Kanto_HallOfFame;
-
-#endif //GUARD_tilesets_H
 // Private venue tilesets
 extern const struct Tileset gTileset_VenueHoennTutor;
 extern const struct Tileset gTileset_VenueHoennTutorRoom;

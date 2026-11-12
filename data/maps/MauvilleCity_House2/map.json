@@ -29,7 +29,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_ECHO",
+      "local_id": "LOCALID_VENUE_HOENNGLITCH_ECHO",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_ECHO",
       "x": 4,
@@ -44,7 +44,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_FEN",
+      "local_id": "LOCALID_VENUE_HOENNGLITCH_FEN",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_FEN",
       "x": 6,

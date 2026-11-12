@@ -1,7 +1,7 @@
 {
   "id": "MAP_ROUTE104",
   "name": "Route104",
-  "layout": "LAYOUT_ROUTE104",
+  "layout": "LAYOUT_VENUE_HOENNBAKERY",
   "music": "MUS_ROUTE104",
   "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_104",
@@ -606,6 +606,13 @@
       "elevation": 3,
       "dest_map": "MAP_PETALBURG_WOODS",
       "dest_warp_id": "5"
+    },
+    {
+      "x": 8,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_VENUE_HOENN_BAKERY",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

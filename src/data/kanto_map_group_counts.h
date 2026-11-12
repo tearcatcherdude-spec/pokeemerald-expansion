@@ -115,3 +115,5 @@
     1, // 113: gMapGroup_KantoCampaignIndoorTwoIslandRoute_Frlg
     2, // 114: gMapGroup_KantoCampaignIndoorSixIslandRoute_Frlg
     1, // 115: gMapGroup_KantoCampaignIndoorSevenIslandRoute_Frlg
+    0, // 116: gMapGroup_VenuesHoenn
+    6, // 117: gMapGroup_VenuesKanto

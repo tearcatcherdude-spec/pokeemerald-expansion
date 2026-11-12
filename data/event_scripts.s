@@ -1799,3 +1799,12 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/roaming_tutor.inc"
 
 	.include "data/scripts/venues.inc"
+
+@ Generated venue map roots
+	.include "data/maps/VenueHoennBakery/scripts.inc"
+	.include "data/maps/VenueKantoBakery/scripts.inc"
+	.include "data/maps/VenueKantoGlitch/scripts.inc"
+	.include "data/maps/VenueKantoTea/scripts.inc"
+	.include "data/maps/VenueKantoTutor/scripts.inc"
+	.include "data/maps/VenueKantoRave/scripts.inc"
+	.include "data/maps/VenueKantoBloom/scripts.inc"

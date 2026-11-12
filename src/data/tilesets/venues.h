@@ -265,22 +265,22 @@ const u16 gTileset_VenueHoennRaveRoomAttributes[] = INCBIN_U16("data/venues/Hoen
 const struct Tileset gTileset_VenueHoennRaveRoom = {.isCompressed=FALSE, .isSecondary=TRUE, .tiles=gTileset_VenueHoennRaveRoomTiles, .palettes=gTileset_VenueHoennRaveRoomPalettes, .metatiles=gTileset_VenueHoennRaveRoomMetatiles, .metatileAttributes=gTileset_VenueHoennRaveRoomAttributes, .callback=NULL};
 const u32 gTileset_VenueKantoBakeryTiles[] = INCBIN_U32("data/venues/KantoBakery/exterior/tiles.bin");
 const u16 gTileset_VenueKantoBakeryPalettes[][16] = {
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/01.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/02.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/03.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/04.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/05.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/06.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/00.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/01.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/02.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/03.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/04.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/05.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/06.pal", ".gbapal"),
  INCGFX_U16("graphics/custom_buildings/pastel_pack/modules/kanto/bakery/exterior/palette-00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/08.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/09.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/10.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/11.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/12.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/13.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/14.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/15.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/08.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/09.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/10.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/11.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/12.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/13.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/14.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/viridian_city_frlg/palettes/15.pal", ".gbapal"),
 };
 const u16 gTileset_VenueKantoBakeryMetatiles[] = INCBIN_U16("data/venues/KantoBakery/exterior/metatiles.bin");
 const u16 gTileset_VenueKantoBakeryAttributes[] = INCBIN_U16("data/venues/KantoBakery/exterior/attributes.bin");
@@ -309,22 +309,22 @@ const u16 gTileset_VenueKantoBakeryRoomAttributes[] = INCBIN_U16("data/venues/Ka
 const struct Tileset gTileset_VenueKantoBakeryRoom = {.isCompressed=FALSE, .isSecondary=TRUE, .tiles=gTileset_VenueKantoBakeryRoomTiles, .palettes=gTileset_VenueKantoBakeryRoomPalettes, .metatiles=gTileset_VenueKantoBakeryRoomMetatiles, .metatileAttributes=gTileset_VenueKantoBakeryRoomAttributes, .callback=NULL};
 const u32 gTileset_VenueKantoGlitchTiles[] = INCBIN_U32("data/venues/KantoGlitch/exterior/tiles.bin");
 const u16 gTileset_VenueKantoGlitchPalettes[][16] = {
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/01.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/02.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/03.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/04.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/05.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/06.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/00.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/01.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/02.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/03.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/04.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/05.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/06.pal", ".gbapal"),
  INCGFX_U16("graphics/custom_buildings/pastel_pack/modules/kanto/glitch/exterior/palette-00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/08.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/09.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/10.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/11.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/12.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/13.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/14.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/15.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/08.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/09.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/10.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/11.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/12.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/13.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/14.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/pewter_city_frlg/palettes/15.pal", ".gbapal"),
 };
 const u16 gTileset_VenueKantoGlitchMetatiles[] = INCBIN_U16("data/venues/KantoGlitch/exterior/metatiles.bin");
 const u16 gTileset_VenueKantoGlitchAttributes[] = INCBIN_U16("data/venues/KantoGlitch/exterior/attributes.bin");
@@ -397,22 +397,22 @@ const u16 gTileset_VenueKantoTeaRoomAttributes[] = INCBIN_U16("data/venues/Kanto
 const struct Tileset gTileset_VenueKantoTeaRoom = {.isCompressed=FALSE, .isSecondary=TRUE, .tiles=gTileset_VenueKantoTeaRoomTiles, .palettes=gTileset_VenueKantoTeaRoomPalettes, .metatiles=gTileset_VenueKantoTeaRoomMetatiles, .metatileAttributes=gTileset_VenueKantoTeaRoomAttributes, .callback=NULL};
 const u32 gTileset_VenueKantoTutorTiles[] = INCBIN_U32("data/venues/KantoTutor/exterior/tiles.bin");
 const u16 gTileset_VenueKantoTutorPalettes[][16] = {
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/01.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/02.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/03.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/04.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/05.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/06.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/00.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/01.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/02.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/03.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/04.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/05.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/06.pal", ".gbapal"),
  INCGFX_U16("graphics/custom_buildings/pastel_pack/modules/kanto/tutor/exterior/palette-00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/08.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/09.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/10.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/11.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/12.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/13.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/14.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/lavender_town_frlg/palettes/15.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/08.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/09.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/10.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/11.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/12.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/13.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/14.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/cerulean_city_frlg/palettes/15.pal", ".gbapal"),
 };
 const u16 gTileset_VenueKantoTutorMetatiles[] = INCBIN_U16("data/venues/KantoTutor/exterior/metatiles.bin");
 const u16 gTileset_VenueKantoTutorAttributes[] = INCBIN_U16("data/venues/KantoTutor/exterior/attributes.bin");
@@ -441,22 +441,22 @@ const u16 gTileset_VenueKantoTutorRoomAttributes[] = INCBIN_U16("data/venues/Kan
 const struct Tileset gTileset_VenueKantoTutorRoom = {.isCompressed=FALSE, .isSecondary=TRUE, .tiles=gTileset_VenueKantoTutorRoomTiles, .palettes=gTileset_VenueKantoTutorRoomPalettes, .metatiles=gTileset_VenueKantoTutorRoomMetatiles, .metatileAttributes=gTileset_VenueKantoTutorRoomAttributes, .callback=NULL};
 const u32 gTileset_VenueKantoRaveTiles[] = INCBIN_U32("data/venues/KantoRave/exterior/tiles.bin");
 const u16 gTileset_VenueKantoRavePalettes[][16] = {
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/01.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/02.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/03.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/04.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/05.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/06.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/00.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/01.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/02.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/03.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/04.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/05.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/06.pal", ".gbapal"),
  INCGFX_U16("graphics/custom_buildings/pastel_pack/modules/kanto/rave/exterior/palette-00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/08.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/09.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/10.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/11.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/12.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/13.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/14.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/fuchsia_city_frlg/palettes/15.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/08.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/09.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/10.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/11.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/12.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/13.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/14.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/vermilion_city_frlg/palettes/15.pal", ".gbapal"),
 };
 const u16 gTileset_VenueKantoRaveMetatiles[] = INCBIN_U16("data/venues/KantoRave/exterior/metatiles.bin");
 const u16 gTileset_VenueKantoRaveAttributes[] = INCBIN_U16("data/venues/KantoRave/exterior/attributes.bin");
@@ -485,26 +485,26 @@ const u16 gTileset_VenueKantoRaveRoomAttributes[] = INCBIN_U16("data/venues/Kant
 const struct Tileset gTileset_VenueKantoRaveRoom = {.isCompressed=FALSE, .isSecondary=TRUE, .tiles=gTileset_VenueKantoRaveRoomTiles, .palettes=gTileset_VenueKantoRaveRoomPalettes, .metatiles=gTileset_VenueKantoRaveRoomMetatiles, .metatileAttributes=gTileset_VenueKantoRaveRoomAttributes, .callback=NULL};
 const u32 gTileset_VenueKantoBloomTiles[] = INCBIN_U32("data/venues/KantoBloom/exterior/tiles.bin");
 const u16 gTileset_VenueKantoBloomPalettes[][16] = {
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/01.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/02.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/03.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/04.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/05.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/06.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/00.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/01.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/02.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/03.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/04.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/05.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/06.pal", ".gbapal"),
  INCGFX_U16("graphics/custom_buildings/pastel_pack/modules/kanto/bloom/exterior/palette-00.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/08.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/09.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/10.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/11.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/12.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/13.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/14.pal", ".gbapal"),
- INCGFX_U16("data/tilesets/secondary/saffron_city_frlg/palettes/15.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/08.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/09.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/10.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/11.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/12.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/13.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/14.pal", ".gbapal"),
+ INCGFX_U16("data/tilesets/secondary/celadon_city_frlg/palettes/15.pal", ".gbapal"),
 };
 const u16 gTileset_VenueKantoBloomMetatiles[] = INCBIN_U16("data/venues/KantoBloom/exterior/metatiles.bin");
 const u16 gTileset_VenueKantoBloomAttributes[] = INCBIN_U16("data/venues/KantoBloom/exterior/attributes.bin");
-const struct Tileset gTileset_VenueKantoBloom = {.isCompressed=FALSE, .isSecondary=TRUE, .tiles=gTileset_VenueKantoBloomTiles, .palettes=gTileset_VenueKantoBloomPalettes, .metatiles=gTileset_VenueKantoBloomMetatiles, .metatileAttributes=gTileset_VenueKantoBloomAttributes, .callback=NULL};
+const struct Tileset gTileset_VenueKantoBloom = {.isCompressed=FALSE, .isSecondary=TRUE, .tiles=gTileset_VenueKantoBloomTiles, .palettes=gTileset_VenueKantoBloomPalettes, .metatiles=gTileset_VenueKantoBloomMetatiles, .metatileAttributes=gTileset_VenueKantoBloomAttributes, .callback=InitTilesetAnim_CeladonCity};
 const u32 gTileset_VenueKantoBloomRoomTiles[] = INCBIN_U32("data/venues/KantoBloom/interior/tiles.bin");
 const u16 gTileset_VenueKantoBloomRoomPalettes[][16] = {
  INCGFX_U16("data/tilesets/secondary/generic_building_1_frlg/palettes/00.pal", ".gbapal"),

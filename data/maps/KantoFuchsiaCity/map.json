@@ -1,7 +1,7 @@
 {
   "id": "MAP_KANTO_FUCHSIA_CITY",
   "name": "KantoFuchsiaCity",
-  "layout": "LAYOUT_VENUE_KANTORAVE",
+  "layout": "LAYOUT_KANTO_FUCHSIA_CITY",
   "music": "MUS_RG_FUCHSIA",
   "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_FUCHSIA_CITY",

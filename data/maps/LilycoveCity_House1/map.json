@@ -42,7 +42,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_ROUX",
+      "local_id": "LOCALID_VENUE_HOENNRAVE_ROUX",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_ROUX",
       "x": 6,
@@ -57,7 +57,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_ZEPHYR",
+      "local_id": "LOCALID_VENUE_HOENNRAVE_ZEPHYR",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_ZEPHYR",
       "x": 2,

@@ -2,7 +2,7 @@
   {
     "map": "OldaleTown",
     "actor": {
-      "local_id": "LOCALID_ROAMING_TUTOR",
+      "local_id": "LOCALID_ROAMING_TUTOR_OLDALETOWN",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_COSMO",
       "x": 9,
@@ -20,7 +20,7 @@
   {
     "map": "Route110",
     "actor": {
-      "local_id": "LOCALID_ROAMING_TUTOR",
+      "local_id": "LOCALID_ROAMING_TUTOR_ROUTE110",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_COSMO",
       "x": 16,
@@ -38,7 +38,7 @@
   {
     "map": "Route120",
     "actor": {
-      "local_id": "LOCALID_ROAMING_TUTOR",
+      "local_id": "LOCALID_ROAMING_TUTOR_ROUTE120",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_COSMO",
       "x": 10,
@@ -56,7 +56,7 @@
   {
     "map": "KantoRoute2",
     "actor": {
-      "local_id": "LOCALID_ROAMING_TUTOR",
+      "local_id": "LOCALID_ROAMING_TUTOR_KANTOROUTE2",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_COSMO",
       "x": 9,
@@ -74,7 +74,7 @@
   {
     "map": "KantoRoute8",
     "actor": {
-      "local_id": "LOCALID_ROAMING_TUTOR",
+      "local_id": "LOCALID_ROAMING_TUTOR_KANTOROUTE8",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_COSMO",
       "x": 12,
@@ -92,7 +92,7 @@
   {
     "map": "KantoRoute15",
     "actor": {
-      "local_id": "LOCALID_ROAMING_TUTOR",
+      "local_id": "LOCALID_ROAMING_TUTOR_KANTOROUTE15",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_COSMO",
       "x": 18,

@@ -1,7 +1,7 @@
 {
   "id": "MAP_KANTO_PEWTER_CITY_HOUSE2",
   "name": "KantoPewterCity_House2",
-  "layout": "LAYOUT_VENUE_KANTOBAKERY_ROOM",
+  "layout": "LAYOUT_KANTO_HOUSE2_FRLG",
   "music": "MUS_RG_PEWTER",
   "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_PEWTER_CITY",
@@ -19,12 +19,12 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
-      "x": 7,
-      "y": 4,
+      "x": 3,
+      "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PewterCity_House2_EventScript_OldMan",
@@ -33,45 +33,15 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_FRLG",
-      "x": 4,
-      "y": 4,
+      "x": 5,
+      "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PewterCity_House2_EventScript_LittleBoy",
-      "flag": "0"
-    },
-    {
-      "local_id": "LOCALID_VENUE_OTIS",
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_VARIETY_OTIS",
-      "x": 6,
-      "y": 2,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Venue_EventScript_Otis",
-      "flag": "0"
-    },
-    {
-      "local_id": "LOCALID_VENUE_TAFFY",
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_VARIETY_TAFFY",
-      "x": 2,
-      "y": 2,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Venue_EventScript_Taffy",
       "flag": "0"
     }
   ],
@@ -79,21 +49,21 @@
     {
       "x": 3,
       "y": 7,
-      "elevation": 3,
+      "elevation": 0,
       "dest_map": "MAP_KANTO_PEWTER_CITY",
       "dest_warp_id": "6"
     },
     {
       "x": 4,
       "y": 7,
-      "elevation": 3,
+      "elevation": 0,
       "dest_map": "MAP_KANTO_PEWTER_CITY",
       "dest_warp_id": "6"
     },
     {
       "x": 5,
       "y": 7,
-      "elevation": 3,
+      "elevation": 0,
       "dest_map": "MAP_KANTO_PEWTER_CITY",
       "dest_warp_id": "6"
     }

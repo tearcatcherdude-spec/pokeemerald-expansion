@@ -1,7 +1,7 @@
 {
   "id": "MAP_KANTO_ROUTE11",
   "name": "KantoRoute11",
-  "layout": "LAYOUT_KANTO_ROUTE11",
+  "layout": "LAYOUT_VENUE_KANTORAVE",
   "music": "MUS_RG_ROUTE11",
   "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_ROUTE_11",
@@ -260,6 +260,13 @@
       "elevation": 3,
       "dest_map": "MAP_KANTO_ROUTE11_EAST_ENTRANCE_1F",
       "dest_warp_id": "2"
+    },
+    {
+      "x": 50,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_VENUE_KANTO_RAVE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

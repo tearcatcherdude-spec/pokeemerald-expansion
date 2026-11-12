@@ -42,7 +42,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_FLORIAN",
+      "local_id": "LOCALID_VENUE_HOENNBLOOM_FLORIAN",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_FLORIAN",
       "x": 6,
@@ -57,7 +57,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_DAHLIA",
+      "local_id": "LOCALID_VENUE_HOENNBLOOM_DAHLIA",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_DAHLIA",
       "x": 2,

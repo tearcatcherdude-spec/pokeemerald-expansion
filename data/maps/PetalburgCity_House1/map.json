@@ -42,7 +42,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_COSMO",
+      "local_id": "LOCALID_VENUE_HOENNTUTOR_COSMO",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_COSMO",
       "x": 6,
@@ -57,7 +57,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VENUE_MOSSWICK",
+      "local_id": "LOCALID_VENUE_HOENNTUTOR_MOSSWICK",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_VARIETY_MOSSWICK",
       "x": 2,

@@ -269,6 +269,13 @@
       "elevation": 0,
       "dest_map": "MAP_KANTO_VERMILION_CITY_GYM",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 26,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_VENUE_KANTO_TEA",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

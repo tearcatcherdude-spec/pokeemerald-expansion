@@ -1,7 +1,7 @@
 {
   "id": "MAP_KANTO_PEWTER_CITY",
   "name": "KantoPewterCity",
-  "layout": "LAYOUT_VENUE_KANTOBAKERY",
+  "layout": "LAYOUT_VENUE_KANTOGLITCH",
   "music": "MUS_RG_PEWTER",
   "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_PEWTER_CITY",
@@ -221,6 +221,13 @@
       "elevation": 0,
       "dest_map": "MAP_KANTO_PEWTER_CITY_HOUSE2",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 26,
+      "elevation": 0,
+      "dest_map": "MAP_VENUE_KANTO_GLITCH",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
