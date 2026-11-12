@@ -21,6 +21,10 @@ def bank(symbol):
   p=array(fields['tiles'],'INCGFX_U32');im=Image.open(ROOT/p);a=np.array(im)&15;ts=np.array([a[y:y+8,x:x+8] for y in range(0,im.height,8) for x in range(0,im.width,8)])
  pbody=re.search(r'\b'+fields['palettes']+r'\[\]\[16\]\s*=\s*\{(.*?)\};',HEAD,re.S)[1]
  paths=re.findall(r'INCGFX_U16\("([^"]+)"',pbody)
+ overrides=ROOT/'data/venues/palette_overrides.json'
+ if overrides.exists():
+  for row in json.loads(overrides.read_text()):
+   if row['tileset']==symbol:paths[row['slot']]=row['path']
  pals=np.array([[list(map(int,line.split())) for line in (ROOT/p).read_text().splitlines()[3:19]] for p in paths],dtype='uint8')
  return ts,m,pals
 def render(l):

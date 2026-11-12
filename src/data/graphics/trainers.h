@@ -604,6 +604,9 @@ const u16 gTrainerPalette_CastMochi[] = INCGFX_U16("graphics/trainers/palettes/c
 const u32 gTrainerFrontPic_CastZuri[] = INCGFX_U32("graphics/trainers/front_pics/cast_zuri.png", ".4bpp.smol");
 const u16 gTrainerPalette_CastZuri[] = INCGFX_U16("graphics/trainers/palettes/cast_zuri.pal", ".gbapal");
 
+const u32 gTrainerFrontPic_CastPip[] = INCGFX_U32("graphics/trainers/front_pics/cast_pip.png", ".4bpp.smol");
+const u16 gTrainerPalette_CastPip[] = INCGFX_U16("graphics/trainers/palettes/cast_pip.pal", ".gbapal");
+
 #include "variety_trainers.h"
 
 const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
@@ -650,6 +653,7 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     [TRAINER_PIC_CAST_LUME] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastLume, gTrainerPalette_CastLume), },
     [TRAINER_PIC_CAST_MOCHI] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastMochi, gTrainerPalette_CastMochi), },
     [TRAINER_PIC_CAST_ZURI] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastZuri, gTrainerPalette_CastZuri), },
+    [TRAINER_PIC_CAST_PIP] = { .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_CastPip, gTrainerPalette_CastPip), },
     [TRAINER_PIC_NONE] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_None, gTrainerPalette_None),

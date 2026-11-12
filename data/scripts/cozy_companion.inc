@@ -37,7 +37,9 @@ Cozy_EventScript_Decline::
 Cozy_EventScript_Companion::
 	lockall
 	facefollowernpc
-	multichoice 0, 0, MULTI_PIP_COMPANION, FALSE
+	callnative Script_PipPracticeRootMenu
+	waitstate
+	goto_if_eq VAR_RESULT, 6, PipPractice_EventScript
 	goto_if_eq VAR_RESULT, 5, CompanionDialogue_EventScript_Settings
 	goto_if_eq VAR_RESULT, 4, Bonds_EventScript_Journal
 	goto_if_eq VAR_RESULT, 2, Cast_EventScript_Roster

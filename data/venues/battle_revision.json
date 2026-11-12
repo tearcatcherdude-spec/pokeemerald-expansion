@@ -78,5 +78,13 @@
   "graphics/trainers/palettes/cast_zuri.pal": {
     "prior_sha256": "8f83a39947bb8c86f6304e8c7d9f95a01903fc7c22a402242095128f79f0c239",
     "supplied_sha256": "052684343d54967ea002a10e671b06b3e86625e38e5a580c2caa5222a68b326a"
+  },
+  "graphics/trainers/front_pics/cast_pip.png": {
+    "prior_sha256": null,
+    "supplied_sha256": "fa14780701636a382f1ca854396d55726be9521bda7ef0f17e2ca043df26ffa5"
+  },
+  "graphics/trainers/palettes/cast_pip.pal": {
+    "prior_sha256": null,
+    "supplied_sha256": "18b17d7ea348291201a1c0a9214074f6d05ba0b4f56dbd8fb57a76947fa0a866"
   }
 }

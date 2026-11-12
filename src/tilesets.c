@@ -1,4 +1,6 @@
 #include "global.h"
+#include "palette.h"
+#include "venues.h"
 #include "tilesets.h"
 #include "tileset_anims.h"
 

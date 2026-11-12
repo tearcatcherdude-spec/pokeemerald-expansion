@@ -12,7 +12,7 @@ DATA=ROOT/'data/venues';DATA.mkdir(exist_ok=True)
 HEAD='\n'.join(p.read_text(encoding='utf-8') for p in (ROOT/'src/data/tilesets').glob('*.h') if p.name!='venues.h')
 LAY=json.loads((ROOT/'data/layouts/layouts.json').read_text())
 LAYS={l['id']:l for l in LAY['layouts']}
-DEFS=[];DECL=[];REPORT=[];EXTRA_ALIASES=[]
+DEFS=[];DECL=[];REPORT=[];EXTRA_ALIASES=[];PAL_OVERRIDES=[]
 SITES=[
  ('hoenn','tutor','PetalburgCity','PetalburgCity_House1',10,19),
  ('hoenn','bakery','RustboroCity','RustboroCity_House3',26,46),
@@ -54,7 +54,13 @@ def write_tileset(label,path,ts,mts,attrs,palpaths,callback='NULL'):
  ts=list(ts)
  while len(ts)<(384 if 'Kanto' in label else 512):ts.append(np.zeros((8,8),dtype='uint8'))
  (ROOT/path/'tiles.bin').write_bytes(packed(ts));binary(path/'metatiles.bin',sum(mts,[]));binary(path/'attributes.bin',attrs,4 if 'Kanto' in label else 2)
- DEFS.append(f'const u32 {label}Tiles[] = INCBIN_U32("{path.as_posix()}/tiles.bin.smol");\nconst u16 {label}Palettes[][16] = {{\n'+''.join(f' INCGFX_U16("{p.as_posix()}", ".gbapal"),\n' for p in palpaths)+'};\n'+f'const u16 {label}Metatiles[] = INCBIN_U16("{path.as_posix()}/metatiles.bin");\nconst u16 {label}Attributes[] = INCBIN_U16("{path.as_posix()}/attributes.bin");\nconst struct Tileset {label} = {{.isCompressed=TRUE, .isSecondary=TRUE, .tiles={label}Tiles, .palettes={label}Palettes, .metatiles={label}Metatiles, .metatileAttributes={label}Attributes, .callback={callback}}};\n')
+ nativefolder=palpaths[0].parent
+ pattern=r'const u16 (?:ALIGNED\(4\) )?(\w+)\[\]\[16\]\s*=\s*\{\s*INCGFX_U16\("'+re.escape(palpaths[0].as_posix())+r'"'
+ choices=re.findall(pattern,HEAD)
+ basepal=next((n for n in choices if n.startswith('gTilesetPalettes_Kanto_')),choices[0]) if 'Kanto' in label else choices[0]
+ for i,p in enumerate(palpaths):
+  if p!=nativefolder/f'{i:02}.pal':PAL_OVERRIDES.append(dict(tileset=label,slot=i,path=p.as_posix()))
+ DEFS.append(f'const u32 {label}Tiles[] = INCBIN_U32("{path.as_posix()}/tiles.bin.smol");\n'+f'const u16 {label}Metatiles[] = INCBIN_U16("{path.as_posix()}/metatiles.bin");\nconst u16 {label}Attributes[] = INCBIN_U16("{path.as_posix()}/attributes.bin");\nconst struct Tileset {label} = {{.isCompressed=TRUE, .isSecondary=TRUE, .tiles={label}Tiles, .palettes={basepal}, .metatiles={label}Metatiles, .metatileAttributes={label}Attributes, .callback={callback}}};\n')
  DECL.append(f'extern const struct Tileset {label};')
 def install(region,theme,city,house,dx,dy):
  openlot=OPEN_LOTS.get((region,theme));oldhouse=house
@@ -261,7 +267,14 @@ def main():
  save('data/maps/map_groups.json',groups)
  p=ROOT/'data/event_scripts.s';s=p.read_text();s=s.split('\n@ Generated venue map roots')[0]
  p.write_text(s+'\n@ Generated venue map roots\n'+''.join('\t.include "data/maps/'+r['house']+'/scripts.inc"\n' for r in REPORT if r['open_lot']))
- (ROOT/'src/data/tilesets/venues.h').write_text('#if !IS_FRLG\n'+''.join(DEFS)+'#endif\n')
+ pals=''
+ for i,row in enumerate(PAL_OVERRIDES):pals+=f'const u16 sVenuePalette{i}[] = INCGFX_U16("{row["path"]}", ".gbapal");\n'
+ pals+='static const struct { const struct Tileset *tileset; const u16 *palette; u16 slot; } sVenuePalettes[] = {\n'
+ for i,row in enumerate(PAL_OVERRIDES):pals+=f' {{&{row["tileset"]}, sVenuePalette{i}, {row["slot"]}}},\n'
+ pals+='};\n'
+ loader='void Venues_LoadPaletteOverrides(const struct Tileset *tileset, bool32 skipFaded)\n{\n#if !IS_FRLG\n    u32 i;\n    for (i=0; i<ARRAY_COUNT(sVenuePalettes); i++)\n        if (sVenuePalettes[i].tileset == tileset)\n        {\n            if (skipFaded) CpuCopy16(sVenuePalettes[i].palette, &gPlttBufferUnfaded[sVenuePalettes[i].slot * 16], 32);\n            else LoadPalette(sVenuePalettes[i].palette, sVenuePalettes[i].slot * 16, 32);\n        }\n#endif\n}\n'
+ (ROOT/'src/data/tilesets/venues.h').write_text('#if !IS_FRLG\n'+''.join(DEFS)+pals+'#endif\n'+loader)
+ save('data/venues/palette_overrides.json',PAL_OVERRIDES)
  aliases='#include "global.h"\n#include "fieldmap.h"\n#include "tilesets.h"\n#include "venues.h"\nconst struct Tileset *Venue_BaseTileset(const struct Tileset *tileset)\n{\n#if !IS_FRLG\n'
  for site in REPORT:
   tag=site['region'].title()+site['theme'].title();aliases+=f'    if (tileset == &gTileset_Venue{tag}) return &{site["base_tileset"]};\n'

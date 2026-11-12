@@ -17121,3 +17121,125 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Yanma
 Level: 31
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_KANTO_DATA_PIP_PRACTICE_0 ===
+Name: PIP
+Class: Pkmn Trainer 1
+Pic: Cast Pip
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Porygon
+Level: 8
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Chingling
+Level: 8
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Voltorb
+Level: 8
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Smeargle
+Level: 8
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Growl
+- Sand Attack
+- Helping Hand
+
+
+
+=== TRAINER_KANTO_DATA_PIP_PRACTICE_1 ===
+Name: PIP
+Class: Pkmn Trainer 1
+Pic: Cast Pip
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Porygon
+Level: 18
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Mime Jr.
+Level: 18
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Rotom
+Level: 18
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Smeargle
+Level: 18
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Growl
+- Sand Attack
+- Helping Hand
+
+
+
+=== TRAINER_KANTO_DATA_PIP_PRACTICE_2 ===
+Name: PIP
+Class: Pkmn Trainer 1
+Pic: Cast Pip
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Porygon2
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Mr. Mime
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Rotom
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Smeargle
+Level: 32
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Growl
+- Sand Attack
+- Helping Hand
+
+
+
+=== TRAINER_KANTO_DATA_PIP_PRACTICE_3 ===
+Name: PIP
+Class: Pkmn Trainer 1
+Pic: Cast Pip
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint
+
+Porygon-Z
+Level: 48
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Mr. Mime
+Level: 48
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Rotom
+Level: 48
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Smeargle
+Level: 48
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Tackle
+- Growl
+- Sand Attack
+- Helping Hand
