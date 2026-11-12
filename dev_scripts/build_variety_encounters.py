@@ -66,7 +66,7 @@ def main():
     baseline_path=DATA/'map_contract.json'
     baseline=json.loads(baseline_path.read_text()) if baseline_path.exists() else {}
     maps={};encounters=[];party=[];defs=[];scripts=[];cafe_index=0
-    existing=(ROOT/'src/data/trainers_kanto.party').read_text().split('\n// BEGIN TRAINER VARIETY')[0].rstrip()
+    existing=(ROOT/'src/data/trainers_kanto.party').read_text().split('\n=== TRAINER_KANTO_DATA_VARIETY_')[0].replace('\n// BEGIN TRAINER VARIETY','').rstrip()
     for i,r in enumerate(design):
         ident=r['id'];u=ident.upper();symbol=roster[ident]['symbol']
         for ri,region in enumerate(('hoenn','kanto')):
@@ -109,7 +109,7 @@ def main():
     (DATA/'encounters.json').write_text(json.dumps(encounters,indent=2)+'\n')
     (ROOT/'include/constants/trainer_variety.h').write_text('#ifndef GUARD_TRAINER_VARIETY_H\n#define GUARD_TRAINER_VARIETY_H\n'+'\n'.join(defs)+'\n#endif\n')
     (DATA/'encounters.inc').write_text(''.join(scripts))
-    (ROOT/'src/data/trainers_kanto.party').write_text(existing+'\n\n// BEGIN TRAINER VARIETY\n\n'+'\n'.join(party))
+    (ROOT/'src/data/trainers_kanto.party').write_text(existing+'\n\n'+'\n'.join(party))
     p=ROOT/'include/constants/kanto_progress.h';s=p.read_text().replace('#define KANTO_TRAINER_COUNT 674','#define KANTO_TRAINER_COUNT 738')
     if '#include "constants/trainer_variety.h"' not in s:s=s.replace('#include "constants/kanto_rare.h"','#include "constants/trainer_variety.h"\n#include "constants/kanto_rare.h"')
     p.write_text(s)

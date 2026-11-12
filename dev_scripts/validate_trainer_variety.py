@@ -53,6 +53,8 @@ def main():
     assert len({(e['x'],e['y']) for e in cafe})==6
     text=(DATA/'encounters.inc').read_text(encoding='utf-8')
     assert text.count('\ttrainerbattle_single VARIETY_TRAINER_')==64
+    assert '// BEGIN TRAINER VARIETY' not in (ROOT/'src/data/trainers_kanto.party').read_text()
+    assert all(not line.startswith('#') for line in (ROOT/'sound/songs/midi/midi.cfg').read_text().splitlines())
     assert 'MSGBOX_YESNO' not in text
     assert not re.search(r'\b(?:the watch|universe|world switching|shared PC)\b',text,re.I)
     context=load('data/companion_dialogue/contexts.json')['contexts']
