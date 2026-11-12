@@ -1,0 +1,17 @@
+{
+  "status": "proposal; not registered in live maps",
+  "hoenn": {
+    "local_x": 2,
+    "local_y": 3
+  },
+  "kanto": {
+    "local_x": 3,
+    "local_y": 4
+  },
+  "bg_event": {
+    "type": "sign",
+    "elevation": 0,
+    "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+    "script": "PastelTutorHouse_EventScript_Sign"
+  }
+}

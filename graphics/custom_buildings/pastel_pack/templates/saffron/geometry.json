@@ -1,0 +1,22 @@
+{
+  "exterior_map": "SaffronCity_Frlg",
+  "rect": [
+    19,
+    25,
+    5,
+    6
+  ],
+  "door": null,
+  "banks": [
+    11,
+    12
+  ],
+  "exterior_pixels": [
+    80,
+    96
+  ],
+  "layout_version": "frlg",
+  "source_commit": "6fdfec3469776fd5a509ed5eb432673db510be56",
+  "silhouette_sha256": "a1d049834f60bcf625b605784f9284e9cf540fe13709f40bf7cd208ebe34e744",
+  "enterable": false
+}

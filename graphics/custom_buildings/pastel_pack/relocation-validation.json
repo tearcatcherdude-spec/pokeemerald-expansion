@@ -1,0 +1,252 @@
+{
+  "checked": 26,
+  "actual_game_installation": false,
+  "modules": [
+    {
+      "module": "modules\\hoenn\\bakery\\exterior",
+      "tile_base": 672,
+      "metatile_base": 656,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\bakery\\interior",
+      "tile_base": 512,
+      "metatile_base": 512,
+      "palette_slots": [
+        7,
+        11
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\bloom\\exterior",
+      "tile_base": 672,
+      "metatile_base": 656,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\bloom\\interior",
+      "tile_base": 512,
+      "metatile_base": 512,
+      "palette_slots": [
+        7,
+        11
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\glitch\\exterior",
+      "tile_base": 672,
+      "metatile_base": 656,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\glitch\\interior",
+      "tile_base": 512,
+      "metatile_base": 512,
+      "palette_slots": [
+        7,
+        11
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\rave\\exterior",
+      "tile_base": 672,
+      "metatile_base": 656,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\rave\\interior",
+      "tile_base": 512,
+      "metatile_base": 512,
+      "palette_slots": [
+        7,
+        11
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\tea\\exterior",
+      "tile_base": 672,
+      "metatile_base": 656,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\tea\\interior",
+      "tile_base": 512,
+      "metatile_base": 512,
+      "palette_slots": [
+        7,
+        11
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\tutor\\exterior",
+      "tile_base": 672,
+      "metatile_base": 656,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\hoenn\\tutor\\interior",
+      "tile_base": 512,
+      "metatile_base": 512,
+      "palette_slots": [
+        7,
+        11
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\bakery\\exterior",
+      "tile_base": 912,
+      "metatile_base": 840,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\bakery\\interior",
+      "tile_base": 640,
+      "metatile_base": 640,
+      "palette_slots": [
+        7,
+        8
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\bloom\\exterior",
+      "tile_base": 912,
+      "metatile_base": 840,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\bloom\\interior",
+      "tile_base": 640,
+      "metatile_base": 640,
+      "palette_slots": [
+        7,
+        8
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\glitch\\exterior",
+      "tile_base": 912,
+      "metatile_base": 840,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\glitch\\interior",
+      "tile_base": 640,
+      "metatile_base": 640,
+      "palette_slots": [
+        7,
+        8
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\rave\\exterior",
+      "tile_base": 912,
+      "metatile_base": 840,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\rave\\interior",
+      "tile_base": 640,
+      "metatile_base": 640,
+      "palette_slots": [
+        7,
+        8
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\tea\\exterior",
+      "tile_base": 912,
+      "metatile_base": 840,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\tea\\interior",
+      "tile_base": 640,
+      "metatile_base": 640,
+      "palette_slots": [
+        7,
+        8
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\tutor\\exterior",
+      "tile_base": 912,
+      "metatile_base": 840,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\kanto\\tutor\\interior",
+      "tile_base": 640,
+      "metatile_base": 640,
+      "palette_slots": [
+        7,
+        8
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\saffron\\bloom\\exterior",
+      "tile_base": 640,
+      "metatile_base": 640,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    },
+    {
+      "module": "modules\\saffron\\glitch\\exterior",
+      "tile_base": 640,
+      "metatile_base": 640,
+      "palette_slots": [
+        7
+      ],
+      "render_matches": true
+    }
+  ]
+}

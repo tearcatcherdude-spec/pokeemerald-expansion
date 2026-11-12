@@ -1,0 +1,19 @@
+{
+  "source_commit": "6fdfec3469776fd5a509ed5eb432673db510be56",
+  "source_validators": {
+    "validate_project_baseline.py": "passed",
+    "validate_cast.py": "passed"
+  },
+  "unchanged_baseline_rom": {
+    "sha256": "3f8722bfe26d190d543671d3cd6a6011fa2465ab529806390ef9ddd9d2bef10a",
+    "verify_pip_rom.py": "passed",
+    "verify_cast_rom.py": "passed",
+    "contains_new_buildings": false
+  },
+  "new_building_rom_built": false,
+  "new_building_emulator_tested": false,
+  "live_maps_modified": false,
+  "door_animations_tested": false,
+  "sign_scripts_registered": false,
+  "saffron_city_tile_allocation_complete": false
+}

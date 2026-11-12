@@ -1,0 +1,173 @@
+{
+  "module_count": 26,
+  "checks": [
+    "4bpp and indexed-PNG round trip",
+    "tile/palette reference bounds",
+    "Emerald/FRLG secondary capacity",
+    "attribute widths",
+    "unchanged exterior silhouette/background and native door",
+    "native exit pixels and warp positions",
+    "native furniture silhouettes and blocked footprints",
+    "all clear floor and original actor positions reachable from exits"
+  ],
+  "rom_build_tested": false,
+  "emulator_tested": false,
+  "modules": [
+    {
+      "module": "hoenn/bakery/exterior",
+      "tiles": 70,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "hoenn/bakery/interior",
+      "tiles": 105,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "hoenn/tutor/exterior",
+      "tiles": 70,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "hoenn/tutor/interior",
+      "tiles": 108,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "hoenn/glitch/exterior",
+      "tiles": 70,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "hoenn/glitch/interior",
+      "tiles": 96,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "hoenn/rave/exterior",
+      "tiles": 67,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "hoenn/rave/interior",
+      "tiles": 114,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "hoenn/bloom/exterior",
+      "tiles": 70,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "hoenn/bloom/interior",
+      "tiles": 111,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "hoenn/tea/exterior",
+      "tiles": 68,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "hoenn/tea/interior",
+      "tiles": 111,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "kanto/bakery/exterior",
+      "tiles": 92,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "kanto/bakery/interior",
+      "tiles": 108,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "kanto/tutor/exterior",
+      "tiles": 93,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "kanto/tutor/interior",
+      "tiles": 116,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "kanto/glitch/exterior",
+      "tiles": 93,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "kanto/glitch/interior",
+      "tiles": 105,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "kanto/rave/exterior",
+      "tiles": 88,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "kanto/rave/interior",
+      "tiles": 116,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "kanto/bloom/exterior",
+      "tiles": 91,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "kanto/bloom/interior",
+      "tiles": 91,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "kanto/tea/exterior",
+      "tiles": 92,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "kanto/tea/interior",
+      "tiles": 91,
+      "palette_banks": 2,
+      "passed": true
+    },
+    {
+      "module": "saffron/bloom/exterior",
+      "tiles": 123,
+      "palette_banks": 1,
+      "passed": true
+    },
+    {
+      "module": "saffron/glitch/exterior",
+      "tiles": 114,
+      "palette_banks": 1,
+      "passed": true
+    }
+  ]
+}

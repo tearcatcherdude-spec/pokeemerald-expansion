@@ -1,0 +1,31 @@
+{
+  "exterior_map": "SaffronCity_Frlg",
+  "rect": [
+    41,
+    34,
+    5,
+    5
+  ],
+  "door": [
+    2,
+    4
+  ],
+  "banks": [
+    11,
+    12
+  ],
+  "interior_map": "SaffronCity_House_Frlg",
+  "exterior_pixels": [
+    80,
+    80
+  ],
+  "interior_metatiles": [
+    11,
+    9
+  ],
+  "layout_version": "frlg",
+  "source_commit": "6fdfec3469776fd5a509ed5eb432673db510be56",
+  "silhouette_sha256": "8c7c172f3a45c2e97eca2da5635422c1abfee7756bcb71cbcde98f446357b4ea",
+  "exterior_blocks_sha256": "20b01ad7d364f40fd0beabd76858ffb8057e202afca3c1e313cb1ecb5755cc29",
+  "interior_blocks_sha256": "9ce61da47afb457929dca2c6d403367c45607eb55a8fefa48e54388d4a4585d1"
+}
