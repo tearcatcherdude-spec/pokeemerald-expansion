@@ -1,0 +1,592 @@
+{
+  "commit": "79ec91c79bd03c426c64f824415befdfe99d351d",
+  "voices": [
+    "pip",
+    "silas",
+    "kade",
+    "ashe",
+    "nico",
+    "riven",
+    "emi",
+    "vera",
+    "lume",
+    "mochi",
+    "zuri"
+  ],
+  "contexts": [
+    {
+      "id": 0,
+      "key": "oldale_save",
+      "sources": {
+        "OldaleTown_Text_SavingMyProgress": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "I want to take a rest, so I'm saving my\\nprogress.$",
+          "sha256": "8f71a798ad993b7dbafcd5405fc3dd904b302e6fb1d639dd5798d17dbe2bae9e"
+        }
+      },
+      "replies_sha256": "7c1dfe13b9377c2b66eb012b9f54f8aa21899e16051cdc12aff987f074662015"
+    },
+    {
+      "id": 1,
+      "key": "oldale_footprints_search",
+      "sources": {
+        "OldaleTown_Text_DiscoveredFootprints": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "I just discovered the footprints of\\na rare POKéMON!\\pWait until I finish sketching\\nthem, okay?$",
+          "sha256": "13ba3c7c2eb103c0def3903e8d935702407be14f4a0cbf57b4b7bcce17d15d6b"
+        },
+        "OldaleTown_Text_WaitDontComeInHere": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "Aaaaah! Wait!\\nPlease don't come in here.\\pI just discovered the footprints of\\na rare POKéMON!\\pWait until I finish sketching\\nthem, okay?$",
+          "sha256": "cd06b51c1538feb06234f83402eada70f4c6064308b15c2af0e3cff113556029"
+        }
+      },
+      "replies_sha256": "618d95b97fd65fd0478811e5e5eb829117a27a946b39225bfac984263bed1dd4"
+    },
+    {
+      "id": 2,
+      "key": "oldale_footprints_reveal",
+      "sources": {
+        "OldaleTown_Text_FinishedSketchingFootprints": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "I finished sketching the footprints of\\na rare POKéMON.\\pBut it turns out they were only my\\nown footprints…$",
+          "sha256": "6c3444ca4cf5333c9d5217268a331b2d6d5c8ec3b19124df621f7b54c6e5d413"
+        }
+      },
+      "replies_sha256": "58a7753f988da0a04fdc85774fb39de25ade6f03603f8f9c5adaee7d6e10150e"
+    },
+    {
+      "id": 3,
+      "key": "potion_use",
+      "sources": {
+        "OldaleTown_Text_PotionExplanation": {
+          "path": "data/maps/OldaleTown/scripts.inc",
+          "text": "A POTION can be used anytime, so it's\\neven more useful than a POKéMON CENTER\\lin certain situations.$",
+          "sha256": "bee5ebcd3c8e440093c6fa3ba006650df006853e02cef9f424e07b996692dd37"
+        }
+      },
+      "replies_sha256": "5ed3eec2f85208dcbca16daac122b527aaa31f258d1e5f035989003aaa01c8e9"
+    },
+    {
+      "id": 4,
+      "key": "party_order",
+      "sources": {
+        "OldaleTown_House1_Text_LeftPokemonGoesOutFirst": {
+          "path": "data/maps/OldaleTown_House1/scripts.inc",
+          "text": "When a POKéMON battle starts, the one\\nat the left of the list goes out first.\\pSo, when you get more POKéMON in your\\nparty, try switching around the order\\lof your POKéMON.\\pIt could give you an advantage.$",
+          "sha256": "43f887056748811c50b17e62c79ae4f54b74678c8190d40693adb67690beb135"
+        }
+      },
+      "replies_sha256": "772b5002cc79474f724c8f6cfff449749ac697cb332ba00d1da1d2bab93d1057"
+    },
+    {
+      "id": 5,
+      "key": "battle_growth",
+      "sources": {
+        "OldaleTown_House2_Text_PokemonLevelUp": {
+          "path": "data/maps/OldaleTown_House2/scripts.inc",
+          "text": "When POKéMON battle, they eventually\\nlevel up and become stronger.$",
+          "sha256": "332730560468136c95942056bfcd26eefec8bfaf22f39db2848deaf450aa75bb"
+        }
+      },
+      "replies_sha256": "f761c59ce35a7a056b8c411dccb6f232ce07992d500b131b3b26de82363009fa"
+    },
+    {
+      "id": 6,
+      "key": "strength_travel",
+      "sources": {
+        "OldaleTown_House2_Text_YoullGoFurtherWithStrongPokemon": {
+          "path": "data/maps/OldaleTown_House2/scripts.inc",
+          "text": "If the POKéMON with you become\\nstronger, you'll be able to go farther\\laway from here.$",
+          "sha256": "6856553b6993c05fa703b9389d15748800782c08f247536ca9bc9d3a677eb730"
+        }
+      },
+      "replies_sha256": "b4f4819a5fd157d8dc2904973c4245eff191cedd1fdb1435298b2cd8dd1c7fe9"
+    },
+    {
+      "id": 7,
+      "key": "center_oldale",
+      "sources": {
+        "Route101_Text_TakeTiredPokemonToPokeCenter": {
+          "path": "data/maps/Route101/scripts.inc",
+          "text": "If POKéMON get tired, take them to\\na POKéMON CENTER.\\pThere's a POKéMON CENTER in OLDALE\\nTOWN right close by.$",
+          "sha256": "53d2e76d87ebf4ebf6a55bbcb5a7c04a100ad40b1233af9f00a030f12064a930"
+        }
+      },
+      "replies_sha256": "6dd349ad3350a58e51ba8494294bca4cdf92d4b19e5c50528a6bdbb75f952be0"
+    },
+    {
+      "id": 8,
+      "key": "wild_grass",
+      "sources": {
+        "Route101_Text_WildPokemonInTallGrass": {
+          "path": "data/maps/Route101/scripts.inc",
+          "text": "Wild POKéMON will jump out at you in\\ntall grass.\\pIf you want to catch POKéMON, you have\\nto go into the tall grass and search.$",
+          "sha256": "c27245d14f1593243dfa508e2e9d7c8bb5b6045418ddb1a51d0b5cec4ba11864"
+        }
+      },
+      "replies_sha256": "f53f65f5fa61f6bd00231c2af3dca69355b9b86b04fdab77c47e48f9a54364a0"
+    },
+    {
+      "id": 9,
+      "key": "grass_sneeze",
+      "sources": {
+        "Route102_Text_ImNotVeryTall": {
+          "path": "data/maps/Route102/scripts.inc",
+          "text": "I'm…not very tall, so I sink right\\ninto tall grass.\\pThe grass goes up my nose and…\\nFwafwafwafwafwa…\\pFwatchoo!$",
+          "sha256": "99b17b109a99b23f521e05df51db1b726da39441138ac07ca6625da8cd16fab0"
+        }
+      },
+      "replies_sha256": "db0638d6a5c2ccc68f758ac40d4aec74edd5371fbc480cf73207ab40164ad736"
+    },
+    {
+      "id": 10,
+      "key": "catch_many",
+      "sources": {
+        "Route102_Text_CatchWholeBunchOfPokemon": {
+          "path": "data/maps/Route102/scripts.inc",
+          "text": "I'm going to catch a whole bunch of\\nPOKéMON!$",
+          "sha256": "f801756da4fca038b26f186f61440c1e5feb8499e01b7abe812de4eb09027fc7"
+        }
+      },
+      "replies_sha256": "41790eb3efb7e0aa15d1fb200db91f9e7ae12e6f3a1ca3591fa72a8337501cd5"
+    },
+    {
+      "id": 11,
+      "key": "reflection",
+      "sources": {
+        "PetalburgCity_Text_WaterReflection": {
+          "path": "data/maps/PetalburgCity/scripts.inc",
+          "text": "My face is reflected in the water.\\pIt's a shining grin full of hope…\\pOr it could be a look of somber silence\\nstruggling with fear…\\pWhat do you see reflected in your face?$",
+          "sha256": "49e085ce1ff7aef6f0cced491a87a75b4e9c61eae2d6a67f6c398f12a4b5760c"
+        }
+      },
+      "replies_sha256": "5906f8ee4e78978356131c2cbbfb0b0d04f04337e59be780e88d441c56fe5ea3"
+    },
+    {
+      "id": 12,
+      "key": "storage_seventh",
+      "sources": {
+        "PetalburgCity_Text_FullPartyExplanation": {
+          "path": "data/maps/PetalburgCity/scripts.inc",
+          "text": "Let's say you have six POKéMON.\\nIf you catch another one…\\pIt is automatically sent to a STORAGE\\nBOX over a PC connection.$",
+          "sha256": "9b851081863b0bb9853c4fde471f12f7ffd0628385dc76f6d299e58d1cc26fba"
+        }
+      },
+      "replies_sha256": "ba14fe989040be16c9a09916424aec7677d80045a76995f7209ba5485eb05173"
+    },
+    {
+      "id": 13,
+      "key": "gym_first",
+      "sources": {
+        "PetalburgCity_Text_AreYouRookieTrainer": {
+          "path": "data/maps/PetalburgCity/scripts.inc",
+          "text": "Hiya! Are you maybe…\\nA rookie TRAINER?\\pDo you know what POKéMON TRAINERS\\ndo when they reach a new town?\\pThey first check what kind of GYM\\nis in the town.$",
+          "sha256": "e1777136d4104e81ed96f79b2a2af34dc79e8783b0d18870dc09d034a6c7463c"
+        }
+      },
+      "replies_sha256": "efbfe19424f0e0f44f3edf9a236948d78c705d9f6c0c91fbe09b40fdb362143e"
+    },
+    {
+      "id": 14,
+      "key": "kanto_coffee",
+      "sources": {
+        "ViridianCity_Text_GrandpaHasntHadCoffeeYet": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "Oh, Grandpa!\\nDon't be so mean!\\pI'm so sorry.\\nHe hasn't had his coffee yet.$",
+          "sha256": "913b497bfb32943d9357dd52a0e0237680a983479a536ffa813d6ddd5e436250"
+        }
+      },
+      "replies_sha256": "fae04666b41469b43e0192a4e4226a4a035033b95fa44d7dcda354b046affd64"
+    },
+    {
+      "id": 15,
+      "key": "kanto_gym_closed",
+      "sources": {
+        "ViridianCity_Text_GymClosedWonderWhoLeaderIs": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "This POKéMON GYM is always closed.\\pI wonder who the LEADER is?$",
+          "sha256": "55dc144f15f73d9da44ad746739f802252846eb62a8a91c8dab8741f3d553bdd"
+        }
+      },
+      "replies_sha256": "34c69354c5b786091a7d43d9b520652e73902fce43777b82bb6f48e972ef2c0b"
+    },
+    {
+      "id": 16,
+      "key": "kanto_gym_returned",
+      "sources": {
+        "ViridianCity_Text_ViridiansGymLeaderReturned": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "VIRIDIAN GYM's LEADER returned!$",
+          "sha256": "d470ae23234c0a5e03212a8d553d86bf67acda74854120f29491a03bf632f414"
+        }
+      },
+      "replies_sha256": "7d7425be7f42f6bc84ba2339be5f07ff396f99c55a571e3673d8709374ab7ef6"
+    },
+    {
+      "id": 17,
+      "key": "caterpie_weedle",
+      "sources": {
+        "ViridianCity_Text_ExplainCaterpieWeedle": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "CATERPIE has no poison,\\nbut WEEDLE does.\\pWatch that your POKéMON aren't\\nstabbed by WEEDLE's POISON STING.$",
+          "sha256": "d4320ce15aa32a83104853a9bda4279466d75be342dd64685c467680b0c5469e"
+        }
+      },
+      "replies_sha256": "a85f9c86ee9e7791fde06de14d70729669c6c10b0bd92cc7a1a003ad35a84ef2"
+    },
+    {
+      "id": 18,
+      "key": "forest_shopping",
+      "sources": {
+        "ViridianCity_Text_GoShoppingInPewterOccasionally": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "I go shopping in PEWTER CITY\\noccasionally.\\pI have to take the winding trail in\\nVIRIDIAN FOREST when I go.$",
+          "sha256": "a8600b01a84cec796be2832cd27dc6c42826d27a82ca56b88775e318151db035"
+        }
+      },
+      "replies_sha256": "ac653f99a9a2d9f0711a222f2b0a9117b2c349449a0f50a6e7088abb51da277b"
+    },
+    {
+      "id": 19,
+      "key": "catch_weaken",
+      "sources": {
+        "ViridianCity_Text_WeakenMonsFirstToCatch": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "Well, now, I've had my coffee, and\\nthat's what I need to get going!\\pBut I made it too strong.\\nIt gave me a headache…\\pIncidentally, are you filling your\\nPOKéDEX?\\pAt first, focus on weakening the\\nPOKéMON before trying to catch it.$",
+          "sha256": "b1b304098a8fdaa6a816a35f6564ad6d25780e50aa7b0aecccbc836e232bf171"
+        }
+      },
+      "replies_sha256": "b7b809a5f4984cfe09a446bb42dc80bf4b20f649e661190bd387a0cf1c042e9a"
+    },
+    {
+      "id": 20,
+      "key": "ledge_jump",
+      "sources": {
+        "Route1_Text_CanJumpFromLedges": {
+          "path": "data/kanto/maps/Route1_Frlg/scripts.inc",
+          "text": "See those ledges along the road?\\pIt's a bit scary, but you can jump\\nfrom them.\\pYou can get back to PALLET TOWN\\nquicker that way.$",
+          "sha256": "1944d16127682a19510967e3253f0cb24d2d10946a215597a20e4f3cb9e2d267"
+        }
+      },
+      "replies_sha256": "decfa56bbbe818515a94daa7df62335422ffc34fc47caaa337fcdcd20c0e723c"
+    },
+    {
+      "id": 21,
+      "key": "pallet_sign_copy",
+      "sources": {
+        "PalletTown_Text_PressStartToOpenMenuCopy": {
+          "path": "data/kanto/maps/PalletTown_Frlg/scripts.inc",
+          "text": "TRAINER TIPS!\\pPress START to open the MENU!$",
+          "sha256": "85e8f024f16a5d2995765489bbc01a967535df87574415cb8e06753b58471213"
+        }
+      },
+      "replies_sha256": "6eb26fd3d2cee2c1c9db04dcf0a74ba2ad9d4d032128621b7755004ad821da20"
+    },
+    {
+      "id": 22,
+      "key": "pallet_sign_read",
+      "sources": {
+        "PalletTown_Text_PressStartToOpenMenu": {
+          "path": "data/kanto/maps/PalletTown_Frlg/scripts.inc",
+          "text": "TRAINER TIPS\\pPress START to open the MENU!$",
+          "sha256": "2be24e72f76e3e30eece984b862608710afaea59aa50f942c965396dda4aada8"
+        }
+      },
+      "replies_sha256": "8165d1f72af54002d34c2e9567b31563ffe48fcca2cb3f98782e64f0c4a21ef7"
+    },
+    {
+      "id": 23,
+      "key": "pokemon_portable",
+      "sources": {
+        "ViridianCity_Text_CanCarryMonsAnywhere": {
+          "path": "data/kanto/maps/ViridianCity_Frlg/scripts.inc",
+          "text": "Those POKé BALLS at your waist!\\nYou have POKéMON, don't you?\\pIt's great that you can carry and\\nuse POKéMON anytime, anywhere.$",
+          "sha256": "ef117b1d28375f407ceffb96bf9f7db2c69fbbb3f9170693e2b25949ca5c1a7b"
+        }
+      },
+      "replies_sha256": "0758609142b528f40f67af8f1a78e33c926c0f5e02473123d771f6e5b5e42c65"
+    },
+    {
+      "id": 24,
+      "key": "hidden_items",
+      "sources": {
+        "PetalburgWoods_Text_HiddenItemsExplanation": {
+          "path": "data/maps/PetalburgWoods/scripts.inc",
+          "text": "Sometimes, there are things on the\\nground even if you can't see them.\\pThat's why I always check where I'm\\nwalking.$",
+          "sha256": "3f71da1cd6f56ef99b7ab0fadd8c9c384e00b474fdf04c308864a7b02bea21fb"
+        }
+      },
+      "replies_sha256": "a738b4d5ebee61e8a06c274cb110577a35c406917b66d79456d62ad8bbb7f905"
+    },
+    {
+      "id": 25,
+      "key": "miracle_seed",
+      "sources": {
+        "PetalburgWoods_Text_MiracleSeedExplanation": {
+          "path": "data/maps/PetalburgWoods/scripts.inc",
+          "text": "It's a MIRACLE SEED.\\nIf a POKéMON holds that item, its\\lGRASS-type moves become stronger.\\pBesides MIRACLE SEED, I think there are\\nother convenient items for POKéMON\\lto hold.$",
+          "sha256": "a20ccebab531700a2f37e04136e001eaebd310ac21cd7e0d82845ba95d809660"
+        }
+      },
+      "replies_sha256": "d34c1beb391e758d5f4d28166e3eab7f58b9762e2b8df0690f619be2d5ba16da"
+    },
+    {
+      "id": 26,
+      "key": "bug_out_of_balls",
+      "sources": {
+        "PetalburgWoods_Text_ImOutOfPokeBalls": {
+          "path": "data/maps/PetalburgWoods/scripts.inc",
+          "text": "I caught a bunch of POKéMON.\\nNow I'm out of POKé BALLS.$",
+          "sha256": "7a1988f7264b6feca2baf9e3fa51266dd8348b6a779791fcce5b3e8575b4bd15"
+        }
+      },
+      "replies_sha256": "b777e5d40aa69245fb08d9a18c44570ea3dcc3ed29347b1f2ea5e36ace5ab2ef"
+    },
+    {
+      "id": 27,
+      "key": "picture_books",
+      "sources": {
+        "Text_PictureBookShelf": {
+          "path": "data/text/check_furniture.inc",
+          "text": "There's a set of POKéMON picture books.$",
+          "sha256": "f6e71f35dcc1902554b3acebbf9b6d58b939db543f8df7b1feddc2a6009713c8"
+        }
+      },
+      "replies_sha256": "46bbc162fa325465b23b25e0a7f7e8d34c8338dea5c0b4f29258372c2ec48ceb"
+    },
+    {
+      "id": 28,
+      "key": "pokemon_magazines",
+      "sources": {
+        "Text_PokemonCenterBookShelf": {
+          "path": "data/text/check_furniture.inc",
+          "text": "POKéMON magazines!\\nPOKéMON PAL…\\pPOKéMON HANDBOOK…\\nADORABLE POKéMON…$",
+          "sha256": "4d0f9831ccb198ce65320c8e5c9335a490feadbc32280f6c5314f76bd1f35ece"
+        }
+      },
+      "replies_sha256": "f55c18f0398f21ab13ea6d2288410cb24e859dc3e53f75100cc22e2205ee5773"
+    },
+    {
+      "id": 29,
+      "key": "empty_vase",
+      "sources": {
+        "Text_Vase": {
+          "path": "data/text/check_furniture.inc",
+          "text": "This vase looks expensive…\\nPeered inside…\\pBut, it was empty.$",
+          "sha256": "5fb1f998f5b136cc6271bc78b3607a8d7a211e8b755062cb6940dba22f559607"
+        }
+      },
+      "replies_sha256": "9923ca0e9843b4875389061f3ba2add12143adc925b1a0637d466a96d85db005"
+    },
+    {
+      "id": 30,
+      "key": "empty_bin",
+      "sources": {
+        "Text_EmptyTrashCan": {
+          "path": "data/text/check_furniture.inc",
+          "text": "It's empty.$",
+          "sha256": "a74050572c5008b6d25d53abcf58911f7ddf69e2b6a790eb58675d3144e4ab44"
+        },
+        "Text_TrashBin": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "Inside this…\\n……\\pThere's nothing here!$",
+          "sha256": "5660a70af1e81811a51bebe5221382a295f35015c9171929efb0003b92b223a9"
+        }
+      },
+      "replies_sha256": "e89775202454124403dc797a9511dfe8ffdbed3e982822f3be375a8dd2abf515"
+    },
+    {
+      "id": 31,
+      "key": "town_map",
+      "sources": {
+        "Text_ATownMap": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "A TOWN MAP.$",
+          "sha256": "f74b511669176c63b15c39143f725cf846e1f85b1db312c6e276fe8a2665ef04"
+        }
+      },
+      "replies_sha256": "36f31876647f7f8d4dd66895a39957f00254bbc9e2128ae705b6913913e2b40d"
+    },
+    {
+      "id": 32,
+      "key": "polished_window",
+      "sources": {
+        "Text_PolishedWindow": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "The window is very well polished.$",
+          "sha256": "c80a28db1fb537d47aa48eda02e93a3568b34f94c52cfe80f1d250ebdc9654a1"
+        }
+      },
+      "replies_sha256": "efb1263c9ecc873c6e48a8ea8fc62d4da51d6f719d8f4d278b7f1ee4e7f96d09"
+    },
+    {
+      "id": 33,
+      "key": "sky_window",
+      "sources": {
+        "Text_BeautifulSkyWindow": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "Outside the window…\\pThe sky looks fantastically\\nbeautiful.$",
+          "sha256": "f0700ee3fd4fa8bdfc4e859e2c57c32b1c0ab94b69a0fe63ec9d26461589c58e"
+        }
+      },
+      "replies_sha256": "2b68b2072e8e308ba43bf992adcb97065066d116ca6d8f51c7f395d025683384"
+    },
+    {
+      "id": 34,
+      "key": "tool_display",
+      "sources": {
+        "Text_NeatlyLinedUpTools": {
+          "path": "data/kanto/scripts/flavor_text.inc",
+          "text": "All sorts of tools are lined up\\nneatly.$",
+          "sha256": "4404ddbe8e77f8cc0979046799536c6a14be510f36ad7b905a67f994d6eaf83a"
+        }
+      },
+      "replies_sha256": "efaa567159c42cdbd1989b6649412ec6132a1683e8302cf1c56bffb58b3edd58"
+    },
+    {
+      "id": 35,
+      "key": "dewford_trends",
+      "sources": {
+        "DewfordTown_Text_TinyIslandCommunity": {
+          "path": "data/maps/DewfordTown/scripts.inc",
+          "text": "DEWFORD is a tiny island community.\\nIf something gets trendy here,\\leveryone picks up on it right away.$",
+          "sha256": "4b35b1d1cbbe130555406609b1d3d492b57abed298bb77cb4512a79d8b204d2f"
+        }
+      },
+      "replies_sha256": "a85347c00161a71f912ac59cdee1861572a25542a2c89925fd8f40eb0ca2dade"
+    },
+    {
+      "id": 36,
+      "key": "devon_products",
+      "sources": {
+        "RustboroCity_Text_WeShortenItToDevon": {
+          "path": "data/maps/RustboroCity/scripts.inc",
+          "text": "The DEVON CORPORATION…\\nWe all just shorten it to DEVON.\\pThat company makes all sorts of\\nconvenient products.$",
+          "sha256": "9eb699303885ffd303dce875fb66623ff51f3edd6b451e7175ad6148f88962b1"
+        }
+      },
+      "replies_sha256": "5c87a5d82e7b5b7ef104f7d3dade041d0fd7b27cb150ebd42491bec0b1a9d2f3"
+    },
+    {
+      "id": 37,
+      "key": "fortree_blocked",
+      "sources": {
+        "FortreeCity_Text_SomethingBlockingGym": {
+          "path": "data/maps/FortreeCity/scripts.inc",
+          "text": "I want to go to the POKéMON GYM,\\nbut something's blocking the way.\\pAfter all the bother I went through\\ntraining on ROUTE 120…$",
+          "sha256": "179a51d47f8cbbf1a74dccaaf6e7555205ec4b775a9d08d84a9de779be53e790"
+        }
+      },
+      "replies_sha256": "4e6768d6f1dc41e5b4e256abf7e5f8959fba3ef711216f88cac06b84288eeb0e"
+    },
+    {
+      "id": 38,
+      "key": "aqua_loot",
+      "sources": {
+        "LilycoveCity_Text_MovedLootIntoHideoutToday": {
+          "path": "data/maps/LilycoveCity/scripts.inc",
+          "text": "Fufufu…\\pWe moved more loot into our secret\\nHIDEOUT today…\\pWh-who are you?!\\nI was just talking to myself!$",
+          "sha256": "3719bcb41fd07e07071a538fd71f7f7507720c37792f8ca1854eb2657efd984d"
+        }
+      },
+      "replies_sha256": "b0c6fbf174efe7ccde48ea4e788d407548bcb09f1edaa07f14bc0befae49490c"
+    },
+    {
+      "id": 39,
+      "key": "sootopolis_steps",
+      "sources": {
+        "SootopolisCity_Text_PhysicallyFitLivingHere": {
+          "path": "data/maps/SootopolisCity/scripts.inc",
+          "text": "Diving in the sea. Climbing up and\\ndown stairs all the time…\\pIf you live in this town, you end up\\ngetting physically fit.$",
+          "sha256": "2e0ca83219fca8e1fd0ab68b1380dbddc1abe2529b22b8274b5756eaf0f05cac"
+        }
+      },
+      "replies_sha256": "8d780333a02550660963e2bd0684405e669cfb0403b03ff18b385edf046ba947"
+    },
+    {
+      "id": 40,
+      "key": "moon_rumour",
+      "sources": {
+        "PewterCity_Text_ClefairyCameFromMoon": {
+          "path": "data/kanto/maps/PewterCity_Frlg/scripts.inc",
+          "text": "CLEFAIRY came from the moon.\\nThat's what the rumor is.\\pThey appeared after MOON STONES\\nfell on MT. MOON.$",
+          "sha256": "a805c52fc9eca6738128e810aef9a1ff53951d3366329531955e375d6ff9e0f1"
+        }
+      },
+      "replies_sha256": "2688b99a12d4dcabe9042ca629776eb880812e4e6e72ec0ed91a41d0d2e0d37e"
+    },
+    {
+      "id": 41,
+      "key": "garden_repel",
+      "sources": {
+        "PewterCity_Text_SprayingRepelToKeepWildMonsOut": {
+          "path": "data/kanto/maps/PewterCity_Frlg/scripts.inc",
+          "text": "I'm spraying REPEL to keep wild\\nPOKéMON out of my garden!$",
+          "sha256": "3402f7f61378e0feafb50eb03abd88c23779f592a894f3a6a409342e5cc0b997"
+        }
+      },
+      "replies_sha256": "a442b9bd38c1d8637bb1627a775750bbcc6ee0e5010185ca371150782de088b8"
+    },
+    {
+      "id": 42,
+      "key": "lavender_white_hand",
+      "sources": {
+        "LavenderTown_Text_JustImaginingWhiteHand": {
+          "path": "data/kanto/maps/LavenderTown_Frlg/scripts.inc",
+          "text": "Hahaha, I guess not.\\pThat white hand on your shoulder…\\nI'm just imagining it.$",
+          "sha256": "b041c282c06daee321ad36ab6d639d15b32f34a6231792c911079c5ffc0e4d34"
+        }
+      },
+      "replies_sha256": "8c4324851bc559c07d4cd9534f33aae22e667e197f0b116917ad9a8e6f2d388a"
+    },
+    {
+      "id": 43,
+      "key": "harbour_pollution",
+      "sources": {
+        "VermilionCity_Text_GrimerMultipliesInSludge": {
+          "path": "data/kanto/maps/VermilionCity_Frlg/scripts.inc",
+          "text": "We're careful about pollution here.\\pWe've heard GRIMER multiplies in\\ntoxic sludge.$",
+          "sha256": "4f195e02f935ba06c11ddd9373cfcdbd6b3c69a8bacb361236dcd4ec8233979a"
+        }
+      },
+      "replies_sha256": "40380707be14c5520d17d12182a147c65b8e7870cd6e6efb588fb4821fc2a06e"
+    },
+    {
+      "id": 44,
+      "key": "ss_anne_departed",
+      "sources": {
+        "VermilionCity_Text_SSAnneHasDepartedForYear": {
+          "path": "data/kanto/maps/VermilionCity_Frlg/scripts.inc",
+          "text": "So, the S.S. ANNE has departed?\\pShe'll be back in VERMILION about\\nthis time next year.$",
+          "sha256": "2d5f15adc44d47c7337af3d920bc80dac01977c624f976563a2c4ef1aad65a47"
+        }
+      },
+      "replies_sha256": "31c779e0c4a562b822ca24f4ab72a9b7307109436ea128b9e6bd3943848a9ec6"
+    },
+    {
+      "id": 45,
+      "key": "koffing_temper",
+      "sources": {
+        "CeladonCity_Text_GotMyKoffingInCinnabar": {
+          "path": "data/kanto/maps/CeladonCity_Frlg/scripts.inc",
+          "text": "I got my KOFFING in CINNABAR.\\pIt's usually nice, but it breathes\\npoison when it's angry.$",
+          "sha256": "2a90ad70edf9eee56324015b4e7f81e17653f7e341aed97ba83a1e8ec63b980c"
+        }
+      },
+      "replies_sha256": "2c9e8e5c689e866bf7a7d53db45631b81e7f3fc5880d090b73ba34893c2a6a75"
+    },
+    {
+      "id": 46,
+      "key": "saffron_threat",
+      "sources": {
+        "SaffronCity_Text_DontGetDefiantOrIllHurtYou": {
+          "path": "data/kanto/maps/SaffronCity_Frlg/scripts.inc",
+          "text": "Don't get defiant!\\nOr I'll have to hurt you!$",
+          "sha256": "b044db4cadf1455aaabe3765c1051fae9a6d427e30ee295fddcd51dd7cdddad9"
+        }
+      },
+      "replies_sha256": "369b2911f4482aa8ce6694188c2878078643b1c22c7edeb60d799f684e253f64"
+    }
+  ]
+}

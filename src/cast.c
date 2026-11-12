@@ -190,17 +190,23 @@ void Cast_OnStep(void)
         gSaveBlock3Ptr->cast.steps++;
 #endif
 }
-bool32 Cast_HasUsed(u32 id)
+bool32 Cast_HasUsedBy(u32 who, u32 id)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
-    u32 active = Cast_Active();
-    if (active && id < CAST_SOURCE_COUNT)
+    if (who < CAST_COUNT && id < CAST_SOURCE_COUNT)
     {
-        id = sCastContextMemoryId[active - 1][id];
-        return (gSaveBlock3Ptr->cast.used[active - 1][id / 8] & (1 << (id % 8))) != 0;
+        if (gSaveBlock3Ptr->cast.version != CAST_VERSION)
+            return gSaveBlock3Ptr->cast.version != 0;
+        id = sCastContextMemoryId[who][id];
+        return (gSaveBlock3Ptr->cast.used[who][id / 8] & (1 << (id % 8))) != 0;
     }
 #endif
     return TRUE;
+}
+bool32 Cast_HasUsed(u32 id)
+{
+    u32 active = Cast_Active();
+    return active == 0 || Cast_HasUsedBy(active - 1, id);
 }
 bool32 Cast_Offer(u32 id)
 {

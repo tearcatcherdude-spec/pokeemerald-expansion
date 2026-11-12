@@ -490,7 +490,7 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
 
     if (MetatileBehavior_IsPlayerFacingTVScreen(metatileBehavior, direction) == TRUE)
     {
-        if (IS_FRLG)
+        if (IS_FRLG || gMapHeader.mapLayout->isFrlg)
             return EventScript_PlayerFacingTVScreen;
         else
             return EventScript_TV;
@@ -533,7 +533,7 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
         return EventScript_Questionnaire;
     if (MetatileBehavior_IsTrainerHillTimer(metatileBehavior) == TRUE)
         return EventScript_TrainerHillTimer;
-    if (IS_FRLG)
+    if (IS_FRLG || gMapHeader.mapLayout->isFrlg)
     {
         if (MetatileBehavior_IsFood(metatileBehavior) == TRUE)
             return EventScript_Food;
@@ -721,6 +721,7 @@ static bool8 TryStartCoordEventScript(struct MapPosition *position)
     if (!RunScriptImmediatelyUntilEffect(SCREFF_V1 | SCREFF_HARDWARE, script, &ctx))
         return FALSE;
 
+    CompanionDialogue_BeginInteraction(script);
     ScriptContext_ContinueScript(&ctx);
     return TRUE;
 }
@@ -794,26 +795,31 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
         }
         if (ShouldDoWallyCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(MauvilleCity_EventScript_RegisterWallyCall);
             ScriptContext_SetupScript(MauvilleCity_EventScript_RegisterWallyCall);
             return TRUE;
         }
         if (ShouldDoScottFortreeCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(Route119_EventScript_ScottWonAtFortreeGymCall);
             ScriptContext_SetupScript(Route119_EventScript_ScottWonAtFortreeGymCall);
             return TRUE;
         }
         if (ShouldDoScottBattleFrontierCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall);
             ScriptContext_SetupScript(LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall);
             return TRUE;
         }
         if (ShouldDoRoxanneCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(RustboroCity_Gym_EventScript_RegisterRoxanne);
             ScriptContext_SetupScript(RustboroCity_Gym_EventScript_RegisterRoxanne);
             return TRUE;
         }
         if (ShouldDoRivalRayquazaCall() == TRUE)
         {
+            CompanionDialogue_BeginInteraction(MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall);
             ScriptContext_SetupScript(MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall);
             return TRUE;
         }

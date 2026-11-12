@@ -2,6 +2,7 @@
 #include "pokemon.h"
 #include "battle.h"
 #include "daycare.h"
+#include "field_message_box.h"
 #include "string_util.h"
 #include "caps.h"
 #include "mail.h"
@@ -1317,7 +1318,7 @@ static u8 GetDaycareCompatibilityScoreFromSave(void)
     return gSpecialVar_Result;
 }
 
-void SetDaycareCompatibilityString(void)
+static const u8 *GetDaycareCompatibilityMessage(void)
 {
     u8 whichString;
     u8 relationshipScore;
@@ -1333,7 +1334,19 @@ void SetDaycareCompatibilityString(void)
     if (relationshipScore == PARENTS_MAX_COMPATIBILITY)
         whichString = 0;
 
-    StringCopy(gStringVar4, sCompatibilityMessages[whichString]);
+    return sCompatibilityMessages[whichString];
+}
+
+void SetDaycareCompatibilityString(void)
+{
+    StringCopy(gStringVar4, GetDaycareCompatibilityMessage());
+}
+
+// Print the selected static template directly so conversation tracking retains
+// its exact identity. The ordinary buffer printer remains unqualified.
+void ShowDaycareCompatibilityMessage(void)
+{
+    ShowFieldMessage(GetDaycareCompatibilityMessage());
 }
 
 bool8 NameHasGenderSymbol(const u8 *name, u8 genderRatio)

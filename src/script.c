@@ -469,6 +469,7 @@ bool8 TryRunOnFrameMapScript(void)
     if (!ptr)
         return FALSE;
 
+    CompanionDialogue_BeginInteraction(ptr);
     ScriptContext_SetupScript(ptr);
     return TRUE;
 }

@@ -1,0 +1,2574 @@
+[
+  {
+    "labels": [
+      "BattleFrontier_BattleArenaLobby_Text_ReadWhichHeading",
+      "BattleFrontier_BattleDomeLobby_Text_ReadWhichHeading",
+      "BattleFrontier_BattleFactoryLobby_Text_ReadWhichHeading",
+      "BattleFrontier_BattlePalaceLobby_Text_ReadWhichHeading",
+      "BattleFrontier_BattlePikeLobby_Text_ReadWhichHeading",
+      "BattleFrontier_BattlePyramidLobby_Text_ReadWhichHeading",
+      "BattleFrontier_BattleTowerLobby_Text_ReadWhichHeading",
+      "CeladonCity_Condominiums_RoofRoom_Text_ReadWhichHeading"
+    ],
+    "text": "Which heading do you want to read?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route10_PokemonCenter_1F_Text_GreatHereYouGo",
+      "Route11_EastEntrance_2F_Text_GreatHereYouGo",
+      "Route15_WestEntrance_2F_Text_GreatHereYouGo",
+      "Route16_NorthEntrance_2F_Text_GreatHereYouGo",
+      "Route2_EastBuilding_Text_GreatHereYouGo"
+    ],
+    "text": "Great! You have caught or owned\\n{STR_VAR_3} kinds of POKéMON!\\pCongratulations!\\nHere you go!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "PokemonTower_7F_Text_Grunt1Defeat",
+      "Route106_Text_DouglasDefeated",
+      "Route119_Text_KentDefeat",
+      "SaffronCity_Dojo_Text_MikeDefeat",
+      "SilphCo_3F_Text_GruntDefeat"
+    ],
+    "text": "I give up!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MauvilleCity_PokemonCenter_1F_Text_BardFeelingTheBlues1",
+      "MauvilleCity_PokemonCenter_1F_Text_BardFeelingTheBlues2",
+      "MauvilleCity_PokemonCenter_1F_Text_GiddyFeelingTheBlues",
+      "MauvilleCity_PokemonCenter_1F_Text_StorytellerFeelingTheBlues",
+      "MauvilleCity_PokemonCenter_1F_Text_TraderFeelingTheBlues"
+    ],
+    "text": "Oh…\\nYou've left me feeling the blues…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route5_SouthEntrance_Text_HiHowsItGoing",
+      "Route6_NorthEntrance_Text_HiHowsItGoing",
+      "Route7_EastEntrance_Text_HiHowsItGoing",
+      "Route8_WestEntrance_Text_HiHowsItGoing"
+    ],
+    "text": "Hi, how's it going?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route5_SouthEntrance_Text_ThanksIllShareTeaWithGuards",
+      "Route6_NorthEntrance_Text_ThanksIllShareTeaWithGuards",
+      "Route7_EastEntrance_Text_ThanksIllShareTeaWithGuards",
+      "Route8_WestEntrance_Text_ThanksIllShareTeaWithGuards"
+    ],
+    "text": "Huh? I can have this drink?\\nGee, thanks!\\l… …\\lGlug, glug…\\l… …\\lGulp…\\lIf you want to go to SAFFRON\\lCITY…\\l… …\\lYou can go on through.\\pI'll share this TEA with the other\\nguards!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SilphCo_6F_Text_Grunt1Intro",
+      "SilphCo_7F_Text_Grunt1Intro",
+      "SilphCo_8F_Text_Grunt2Intro",
+      "SilphCo_9F_Text_Grunt2Intro"
+    ],
+    "text": "I am one of the four ROCKET\\nBROTHERS!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route24_Text_AliPostBattle",
+      "Route24_Text_CalePostBattle",
+      "Route24_Text_EthanPostBattle",
+      "Route24_Text_TimmyPostBattle"
+    ],
+    "text": "I did my best. I have no regrets!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CinnabarIsland_Gym_Text_QuinnDefeat",
+      "MossdeepCity_Gym_Text_SamanthaDefeat",
+      "RocketHideout_B2F_Text_GruntDefeat",
+      "Route125_Text_NolenDefeat"
+    ],
+    "text": "I surrender!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route5_SouthEntrance_Text_ThirstyOnGuardDuty",
+      "Route6_NorthEntrance_Text_ThirstyOnGuardDuty",
+      "Route7_EastEntrance_Text_ThirstyOnGuardDuty",
+      "Route8_WestEntrance_Text_ThirstyOnGuardDuty"
+    ],
+    "text": "I'm on guard duty.\\nGee, I'm thirsty, though!\\pOh, wait there, the road's closed.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route5_SouthEntrance_Text_ThatTeaLooksTasty",
+      "Route6_NorthEntrance_Text_ThatTeaLooksTasty",
+      "Route7_EastEntrance_Text_ThatTeaLooksTasty",
+      "Route8_WestEntrance_Text_ThatTeaLooksTasty"
+    ],
+    "text": "Oh, that TEA…\\nIt looks awfully tasty…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_PleaseVisitAgain",
+      "CableClub_Text_PleaseVisitAgain_Frlg",
+      "LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain",
+      "LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain2"
+    ],
+    "text": "Please do visit again.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleFactoryLobby_Text_StepThisWay",
+      "MtChimney_CableCarStation_Text_StepThisWay",
+      "Route112_CableCarStation_Text_StepThisWay",
+      "SlateportCity_BattleTentLobby_Text_StepThisWay"
+    ],
+    "text": "Please step this way.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SafariZone_Center_Text_RestHouse",
+      "SafariZone_East_Text_RestHouse",
+      "SafariZone_North_Text_RestHouse",
+      "SafariZone_West_Text_RestHouse"
+    ],
+    "text": "REST HOUSE$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "PokemonMansion_1F_Text_SimonDefeat",
+      "Route21_North_Text_SpencerDefeat",
+      "ViridianCity_Gym_Text_TakashiDefeat"
+    ],
+    "text": "Ayah!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FuchsiaCity_House2_Text_LikeYourStyleTakeThis",
+      "Route12_FishingHouse_Text_TakeThisAndFish",
+      "VermilionCity_House1_Text_TakeThisAndFish"
+    ],
+    "text": "Grand! I like your style.\\nI think we can be friends.\\pTake this and fish, young friend!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route103_Text_IsabelleDefeated",
+      "Route109_Text_RickyDefeated",
+      "Route111_Text_HaydenDefeat"
+    ],
+    "text": "Groan…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_OutsideWest_Text_MayISeeYourTicket",
+      "LilycoveCity_Harbor_Text_MayISeeYourTicket",
+      "SlateportCity_Harbor_Text_MayISeeYourTicket"
+    ],
+    "text": "Hello, are you here for the ferry?\\nMay I see your TICKET?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MauvilleCity_GameCorner_Text_HereYouGo",
+      "MauvilleCity_GameCorner_Text_HereYouGo2",
+      "Route109_SeashoreHouse_Text_HereYouGo"
+    ],
+    "text": "Here you go!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_BrendanDefeat",
+      "Route110_Text_BrendanDefeated",
+      "RustboroCity_Text_BrendanDefeat"
+    ],
+    "text": "Hmm…\\nYou're pretty good.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FourIsland_House2_Text_ComeBackWithBetterStoryEggs",
+      "FourIsland_House2_Text_ComeBackWithBetterStoryHoF",
+      "FourIsland_House2_Text_ComeBackWithBetterStoryLinkWins"
+    ],
+    "text": "Hmm…\\pCome back with a better story next\\ntime, okay?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route120_Text_JeffreyDefeat",
+      "Route125_Text_SharonDefeat",
+      "SeafloorCavern_Room4_Text_Grunt3Defeat"
+    ],
+    "text": "Lost it…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DewfordTown_Text_WhereAreWeBound",
+      "Route104_MrBrineysHouse_Text_WhereAreWeBound",
+      "Route109_Text_BrineyWhereAreWeBound"
+    ],
+    "text": "MR. BRINEY: Ahoy!\\nFor you, I'll go out to sea anytime!\\pNow, my friend, where are we bound?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FourIsland_House2_Text_LivingLegendEggs",
+      "FourIsland_House2_Text_LivingLegendHoF",
+      "FourIsland_House2_Text_LivingLegendLinkWins"
+    ],
+    "text": "Oh, no, no can do.\\pYou're practically a living legend.\\nI have no SITCKERS left to give.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FuchsiaCity_House2_Text_OhThatsDisappointing",
+      "Route12_FishingHouse_Text_OhThatsDisappointing",
+      "VermilionCity_House1_Text_OhThatsSoDisappointing"
+    ],
+    "text": "Oh…\\nThat's so disappointing…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_OutsideWest_Text_PleaseBoardFerry",
+      "LilycoveCity_Harbor_Text_PleaseBoard",
+      "SlateportCity_Harbor_Text_PleaseBoardFerry"
+    ],
+    "text": "Please board the ferry and wait for\\ndeparture.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_ChooseGroupLeader",
+      "CableClub_Text_ChooseGroupLeader_Frlg",
+      "LilycoveCity_ContestLobby_Text_PleaseDecideLinkLeader"
+    ],
+    "text": "Please decide which of you will\\nbecome the GROUP LEADER.\\pThe other players must then choose\\n“JOIN GROUP.”$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_OutsideWest_Text_SailWithUsAnotherTime",
+      "LilycoveCity_Harbor_Text_SailAnotherTime",
+      "SlateportCity_Harbor_Text_SailAnotherTime"
+    ],
+    "text": "Please sail with us another time!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_PleaseWaitBCancel_Frlg",
+      "LilycoveCity_ContestLobby_Text_PleaseWaitBButtonCancel",
+      "gText_PleaseWaitForLink"
+    ],
+    "text": "Please wait.\\n… … B Button: Cancel$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_OutsideWest_Text_ThenWhereWouldYouLikeToGo",
+      "LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo",
+      "SlateportCity_Harbor_Text_WhereWouldYouLikeToGo"
+    ],
+    "text": "Then, where would you like to go?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FortreeCity_House4_Text_Wingull",
+      "MossdeepCity_House2_Text_Wingull",
+      "Route119_House_Text_Wingull"
+    ],
+    "text": "WINGULL: Pihyoh!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Text_WeHopeToSeeYouAgain_Frlg",
+      "gText_WeHopeToSeeYouAgain",
+      "gText_WeHopeToSeeYouAgain2"
+    ],
+    "text": "We hope to see you again!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_MayDefeat",
+      "Route110_Text_MayDefeated",
+      "RustboroCity_Text_MayDefeat"
+    ],
+    "text": "Yikes!\\nYou're better than I expected!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CeladonCity_GameCorner_Text_DontHaveEnoughMoney",
+      "PewterCity_Museum_1F_Text_DontHaveEnoughMoney",
+      "Route5_PokemonDayCare_Text_DontHaveEnoughMoney"
+    ],
+    "text": "You don't have enough money.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MtMoon_1F_Text_KentDefeat",
+      "Route119_WeatherInstitute_2F_Text_Grunt3Defeat",
+      "VictoryRoad_2F_Text_NelsonDefeat"
+    ],
+    "text": "You got me!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SecretBase_Text_BootUpPC",
+      "Text_BootUpPC",
+      "gText_PlayerHouseBootPC"
+    ],
+    "text": "{PLAYER} booted up the PC.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo",
+      "LilycoveCity_Harbor_Text_FlashTicketWhereTo",
+      "SlateportCity_Harbor_Text_FlashedTicketWhereTo"
+    ],
+    "text": "{PLAYER} flashed the TICKET.\\pPerfect! That's all you need!\\pAnd where would you like to go?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleDomeLobby_Text_ReceivedPrize",
+      "BattleFrontier_BattleTowerLobby_Text_ReceivedPrize",
+      "FallarborTown_BattleTentLobby_Text_ReceivedPrize"
+    ],
+    "text": "{PLAYER} received the prize\\n{STR_VAR_1}.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattlePikeRoomNormal_Text_Silence",
+      "LilycoveCity_PokemonCenter_1F_Text_WaitForAnswer",
+      "Route134_Text_HitoshiDefeat"
+    ],
+    "text": "… … … … … …\\n… … … … … …$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CeladonCity_GameCorner_PrizeRoom_Text_CoinCaseRequired",
+      "CeladonCity_GameCorner_Text_CoinCaseIsRequired"
+    ],
+    "text": "A COIN CASE is required…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_CantTradeEnigmaBerry",
+      "CableClub_Text_CantTradeEnigmaBerry_Frlg"
+    ],
+    "text": "A POKéMON holding the {STR_VAR_1}\\nBERRY can't be traded.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route12_Text_MonSprawledOutInSlumber",
+      "Route16_Text_MonSprawledOutInSlumber"
+    ],
+    "text": "A POKéMON is sprawled out in\\na deep and comfortable slumber.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route120_Text_RobertPostBattle",
+      "Route120_Text_RobertRematchIntro"
+    ],
+    "text": "A POKéMON that grows steadily is one\\nyou can count on.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SevenIsland_TanobyRuins_Text_BenjaminIntro",
+      "SevenIsland_TanobyRuins_Text_BenjaminRematchIntro"
+    ],
+    "text": "A mystic POKéMON is said to sleep\\ninside here.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route103_Text_AmyIntro",
+      "Route103_Text_AmyRematchIntro"
+    ],
+    "text": "AMY: I'm AMY.\\nAnd this is my little sister LIV.\\lWe battle together!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route103_Text_AmyNotEnoughPokemon",
+      "Route103_Text_AmyRematchNotEnoughPokemon"
+    ],
+    "text": "AMY: Uh-oh, you have only one\\nPOKéMON with you.\\lYou can't battle us like that.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route103_Text_AmyPostBattle",
+      "Route103_Text_AmyRematchPostBattle"
+    ],
+    "text": "AMY: You have to think about all\\nkinds of things when you're battling\\lagainst two TRAINERS.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route117_Text_AnnaNotEnoughMons",
+      "Route117_Text_AnnaRematchNotEnoughMons"
+    ],
+    "text": "ANNA: If you want to battle us,\\nbring two POKéMON with you.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route117_Text_AnnaPostBattle",
+      "Route117_Text_AnnaPostRematch"
+    ],
+    "text": "ANNA: Your POKéMON have some good\\ncombinations.\\pI'd say you're second only to us!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "RustboroCity_Flat1_2F_Text_LetsGiveItATry",
+      "RustboroCity_Flat1_2F_Text_LetsGiveItATry2"
+    ],
+    "text": "Ah, I see.\\nWell, let's give it a try, shall we?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LavenderTown_House2_Text_WhatShallNewNicknameBe",
+      "SlateportCity_NameRatersHouse_Text_WhatShallNewNameBe"
+    ],
+    "text": "Ah, good. Then, what shall the new\\nnickname be?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_YourMonIsDoingFine",
+      "Route117_Text_YourMonIsDoingFine"
+    ],
+    "text": "Ah, it's you! Good to see you.\\nYour {STR_VAR_1}'s doing fine.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_YourMonsAreDoingFine",
+      "Route117_Text_YourMonsAreDoingFine"
+    ],
+    "text": "Ah, it's you! Your {STR_VAR_1} and\\n{STR_VAR_2} are doing fine.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route121_Text_WalterDefeat",
+      "Route121_Text_WalterRematchDefeat"
+    ],
+    "text": "Ah, well played.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route21_South_Text_RolandIntro",
+      "Route21_South_Text_RolandRematchIntro"
+    ],
+    "text": "Ahh!\\nFeel the sun and the wind!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "gText_ApprenticeMonThanks6",
+      "gText_ApprenticeMoveThanks6"
+    ],
+    "text": "Ahhh!\\n{STR_VAR_1}, you say!\\lThanks for a most cool answer!\\pI guess that's about all I wanted\\nto ask you today.\\pLet's meet here again, okay?\\nThanks!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "OneIsland_KindleRoad_Text_MariaDefeat",
+      "Route134_Text_JackDefeat"
+    ],
+    "text": "Aiyeeeeh!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_ComeAgain_Frlg",
+      "MossdeepCity_GameCorner_1F_Text_ComeAgain"
+    ],
+    "text": "All right, come again!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MossdeepCity_GameCorner_1F_Text_PlayWhichGame",
+      "Text_PlayWhichGame_Frlg"
+    ],
+    "text": "All right, which game did you want\\nto play?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LilycoveCity_Harbor_Text_BattleFrontierItIs",
+      "SlateportCity_Harbor_Text_BattleFrontierItIs"
+    ],
+    "text": "BATTLE FRONTIER it is, then!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_BrendanIntro",
+      "RustboroCity_Text_BrendanIWontGoEasy"
+    ],
+    "text": "BRENDAN: I know you just became\\na TRAINER, but I won't go easy!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_BrendanNoConfidence",
+      "RustboroCity_Text_BrendanNoConfidenceInPokemon"
+    ],
+    "text": "BRENDAN: What's the matter? Don't have\\nany confidence in your POKéMON?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_BrendanLetsBattle",
+      "RustboroCity_Text_BrendanWantToBattle"
+    ],
+    "text": "BRENDAN: What's up?\\nWant to have a battle with me?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route17_Text_CoreyIntro",
+      "Route17_Text_CoreyRematchIntro"
+    ],
+    "text": "Be a rebel!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "RocketHideout_B1F_Text_Grunt2Defeat",
+      "SilphCo_5F_Text_Grunt1Defeat"
+    ],
+    "text": "Boom!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_YourMonHasGrownXLevels",
+      "Route117_PokemonDayCare_Text_YourMonHasGrownXLevels"
+    ],
+    "text": "By level, your {STR_VAR_1} has\\ngrown by {STR_VAR_2}.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route20_Text_MelissaIntro",
+      "Route20_Text_MelissaRematchIntro"
+    ],
+    "text": "CINNABAR, in the west, has a LAB\\nfor POKéMON.\\pMy daddy works there.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGold",
+      "BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilver"
+    ],
+    "text": "Congratulations for advancing\\nto the final match.\\pFor the final match, you will challenge\\nthe DOME ACE TUCKER.\\pAre you ready?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route110_Text_AnthonyDefeated",
+      "Route17_Text_VirgilDefeat"
+    ],
+    "text": "Crash and burn!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "AbandonedShip_Rooms2_1F_Text_DanNotEnoughMons",
+      "AbandonedShip_Rooms2_1F_Text_DanRematchNotEnoughMons"
+    ],
+    "text": "DAN: You don't even have two POKéMON.\\nYou can't expect to beat us like that.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route11_Text_DiglettsCave",
+      "Route2_Text_DiglettsCave"
+    ],
+    "text": "DIGLETT'S CAVE$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route25_Text_DanIntro",
+      "Route25_Text_DanRematchIntro"
+    ],
+    "text": "Dad took me to a great party on\\nthe S.S. ANNE at VERMILION CITY.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CeladonCity_GameCorner_Text_GruntDefeat",
+      "Route21_North_Text_RonaldDefeat"
+    ],
+    "text": "Dang!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LavenderTown_House2_Text_FromNowOnShallBeKnownAsName",
+      "SlateportCity_NameRatersHouse_Text_MonShallBeKnownAsName"
+    ],
+    "text": "Done! From now on, this POKéMON\\nshall be known as {STR_VAR_1}!\\pIt is a better name than before!\\nHow fortunate for you!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LavenderTown_House2_Text_FromNowOnShallBeKnownAsSameName",
+      "SlateportCity_NameRatersHouse_Text_NameNoDifferentYetSuperior"
+    ],
+    "text": "Done! From now on, this POKéMON\\nshall be known as {STR_VAR_1}!\\pIt looks no different from before,\\nand yet, this is vastly superior!\\pHow fortunate for you!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleDomeLobby_Text_DidntSaveBeforeQuitting",
+      "BattleFrontier_BattleTowerLobby_Text_DidntSaveBeforeQuitting"
+    ],
+    "text": "Excuse me!\\pYou didn't save before you quit your\\nchallenge last time.\\pBecause of that, your challenge so far\\nhas been disqualified. Sorry!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SaffronCity_Dojo_Text_FightingDojo",
+      "SaffronCity_Text_FightingDojo"
+    ],
+    "text": "FIGHTING DOJO$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_WellRaiseYourMon",
+      "Route117_PokemonDayCare_Text_WellRaiseYourMon"
+    ],
+    "text": "Fine, we'll raise your {STR_VAR_1}\\nfor a while.\\pCome back for it later.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_ComeAgain",
+      "Route117_PokemonDayCare_Text_ComeAgain"
+    ],
+    "text": "Fine.\\nCome again.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_NeedTwoMonsForDoubleBattle",
+      "CableClub_Text_NeedTwoMonsForDoubleBattle_Frlg"
+    ],
+    "text": "For a DOUBLE BATTLE, you must\\nhave at least two POKéMON.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_NeedTwoMonsToTrade",
+      "CableClub_Text_NeedTwoMonsToTrade_Frlg"
+    ],
+    "text": "For trading, you must have at\\nleast two POKéMON with you.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route15_Text_AlexIntro",
+      "Route15_Text_AlexRematchIntro"
+    ],
+    "text": "Fork over all your cash when you\\nlose to me, kid!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route113_Text_LaoIntro",
+      "Route113_Text_LaoRematchIntro"
+    ],
+    "text": "From out of the ashes I leap! Hiyah!\\nI challenge thee!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "OneIsland_KindleRoad_Text_SheaDefeat",
+      "SixIsland_OutcastIsland_Text_MymoDefeat"
+    ],
+    "text": "Gasp…\\nGasp…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route17_Text_WilliamIntro",
+      "Route17_Text_WilliamRematchIntro"
+    ],
+    "text": "Get lost, kid!\\nI'm bushed!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattlePalaceLobby_Text_FollowMe",
+      "VerdanturfTown_BattleTentLobby_Text_NowFollowMe"
+    ],
+    "text": "Good.\\nNow, follow me.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer",
+      "LilycoveCity_PokemonTrainerFanClub_Text_HaveYouForgottenTrainer2"
+    ],
+    "text": "Have you completely forgotten\\nabout {STR_VAR_1}?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FuchsiaCity_House2_Text_HowAreTheFishBiting",
+      "VermilionCity_House1_Text_HowAreTheFishBiting"
+    ],
+    "text": "Hello there, {PLAYER}!\\pHow are the fish biting?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_FirstTimeRightThisWay",
+      "CableClub_Text_FirstTimeRightThisWay_Frlg"
+    ],
+    "text": "Hello!\\nMy name is TEALA.\\pThis must be your first time\\nup here.\\pI'll show you how the Wireless\\nCommunication System works.\\pFirst, I need to show you this\\nfloor of our POKéMON CENTER.\\pRight this way, please.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_AskAboutLinking",
+      "CableClub_Text_AskAboutLinking_Frlg"
+    ],
+    "text": "Hello, {PLAYER}!\\pIt's me, TEALA, the POKéMON\\nCENTER 2F attendant.\\pIs there something you needed to\\nask me about linking?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route3_Text_ColtonIntro",
+      "Route3_Text_ColtonRematchIntro"
+    ],
+    "text": "Hey!\\nI saw you in VIRIDIAN FOREST!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "RivalsHouse_1F_Text_BrendanWhoAreYou",
+      "RivalsHouse_2F_Text_BrendanWhoAreYou"
+    ],
+    "text": "Hey!\\nYou…\\pWho are you?\\pOh, you're {PLAYER}, aren't you?\\nMoved in next door, right?\\pI didn't know that you're a girl.\\pDad, PROF. BIRCH, said that our new\\nnext-door neighbor is a GYM LEADER's\\lkid, so I assumed you'd be a guy.\\pMy name's BRENDAN.\\nSo, hi, neighbor!\\pHuh? Hey, {PLAYER}, don't you have\\na POKéMON?\\pDo you want me to go catch you one?\\pAw, darn, I forgot…\\pI'm supposed to go help my dad catch\\nsome wild POKéMON.\\pSome other time, okay?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30",
+      "Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough"
+    ],
+    "text": "Hi! Remember me?\\nI'm one of PROF. OAK's AIDES.\\pIf your POKéDEX has complete data\\non {STR_VAR_1} species, I'm supposed to\\lgive you a reward.\\pPROF. OAK entrusted me with the\\n{STR_VAR_2} for you.\\pSo, {PLAYER}, let me ask you.\\pHave you gathered data on at least\\n{STR_VAR_1} kinds of POKéMON?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Trade_Text_DoYouHaveMonWantToTradeForMon",
+      "VermilionCity_House2_Text_DoYouHaveMonWantToTradeForMyMon"
+    ],
+    "text": "Hi!\\nDo you have a {STR_VAR_1}?\\pWant to trade it for my\\n{STR_VAR_2}?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FuchsiaCity_House3_Text_MonsMoveShouldBeForgotten",
+      "LilycoveCity_MoveDeletersHouse_Text_MonsMoveShouldBeForgotten"
+    ],
+    "text": "Hm! {STR_VAR_1}'s {STR_VAR_2}?\\nThat move should be forgotten?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_WinstonRegister1",
+      "Route104_Text_WinstonRegister2"
+    ],
+    "text": "Hm?\\nAh, you've obtained a POKéNAV.\\pI will gladly register you.\\nAfter all, I have plenty of money.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "RivalsHouse_1F_Text_MayWhoAreYou",
+      "RivalsHouse_2F_Text_MayWhoAreYou"
+    ],
+    "text": "Huh?\\nWho… Who are you?\\p… … … … … … … …\\n… … … … … … … …\\pOh, you're {PLAYER}{KUN}.\\nSo your move was today.\\pUm… I'm MAY.\\nGlad to meet you!\\pI…\\nI have this dream of becoming friends\\lwith POKéMON all over the world.\\pI… I heard about you, {PLAYER}{KUN}, from\\nmy dad, PROF. BIRCH.\\pI was hoping that you would be nice,\\n{PLAYER}{KUN}, and that we could be friends.\\pOh, this is silly, isn't it?\\nI… I've just met you, {PLAYER}{KUN}.\\pEheheh…\\pOh, no! I forgot!\\pI was supposed to go help Dad catch\\nsome wild POKéMON!\\p{PLAYER}{KUN}, I'll catch you later!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull1",
+      "SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull2"
+    ],
+    "text": "Hunh?\\nYour BAG is crammed full.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route13_Text_RobertIntro",
+      "Route13_Text_RobertRematchIntro"
+    ],
+    "text": "I always go with bird POKéMON.\\nI've dedicated myself to them.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "PokemonLeague_BrunosRoom_Text_Intro",
+      "PokemonLeague_BrunosRoom_Text_RematchIntro"
+    ],
+    "text": "I am BRUNO of the ELITE FOUR!\\pThrough rigorous training, people\\nand POKéMON can become stronger\\lwithout limit.\\pI've lived and trained with my\\nfighting POKéMON!\\lAnd that will never change!\\p{PLAYER}!\\pWe will grind you down with our\\nsuperior power!\\pHoo hah!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleDomePreBattleRoom_Text_SavingDataPleaseWait",
+      "BattleFrontier_BattleFactoryPreBattleRoom_Text_SavingDataPleaseWait"
+    ],
+    "text": "I am saving your data.\\nPlease wait.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LilycoveCity_Harbor_Text_FerryUnavailable",
+      "SlateportCity_Harbor_Text_FerryServiceUnavailable"
+    ],
+    "text": "I beg your pardon?\\nYou're looking for a ship?\\pI'm sorry, the ferry service isn't\\navailable at present…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MossdeepCity_GameCorner_1F_Text_DescribeWhichGame",
+      "Text_DescribeWhichGame_Frlg"
+    ],
+    "text": "I can explain game rules to you,\\nif you'd like.\\pWhich game should I describe?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "PetalburgWoods_Text_CantBePopularIfILose",
+      "PetalburgWoods_Text_CantBePopularIfLose"
+    ],
+    "text": "I can't be popular if I lose.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route3_Text_BenDefeat",
+      "VictoryRoad_3F_Text_ColbyDefeat"
+    ],
+    "text": "I don't believe it!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattlePalaceLobby_Text_ResultsWillBeRecorded",
+      "VerdanturfTown_BattleTentLobby_Text_ResultsWillBeRecorded"
+    ],
+    "text": "I feel privileged for having seen\\nyour POKéMON's exploits.\\pThe results will be recorded.\\nI must ask you to briefly wait.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route123_Text_CameronDefeat",
+      "Route123_Text_CameronRematchDefeat"
+    ],
+    "text": "I feel sad…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_HopeToSeeYouAgain",
+      "CableClub_Text_HopeToSeeYouAgain_Frlg"
+    ],
+    "text": "I hope to see you again!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_HopeYouEnjoyWirelessSystem",
+      "CableClub_Text_HopeYouEnjoyWirelessSystem_Frlg"
+    ],
+    "text": "I hope you enjoy the Wireless\\nCommunication System.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_EnjoyUnionRoom",
+      "CableClub_Text_EnjoyUnionRoom_Frlg"
+    ],
+    "text": "I hope you enjoy your time in\\nthe UNION ROOM.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "TrainerHill_Entrance_Text_HopeYouGiveItYourBest",
+      "TrainerTower_Lobby_Text_GiveItYourBest"
+    ],
+    "text": "I hope you give it your best.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route14_Text_BennyDefeat",
+      "SaffronCity_Gym_Text_StacyDefeat"
+    ],
+    "text": "I knew it!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route116_Text_JerryRegister1",
+      "Route116_Text_JerryRegister2"
+    ],
+    "text": "I learned at the TRAINER'S SCHOOL\\nthat a POKéNAV can register TRAINERS.\\pI don't really get what that means,\\nso can I just try it?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route20_Text_TiffanyIntro",
+      "Route20_Text_TiffanyRematchIntro"
+    ],
+    "text": "I love floating with the fishes\\nhere among the waves.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route117_Text_MariaDefeat",
+      "Route117_Text_MariaRematchDefeat"
+    ],
+    "text": "I need to get more practices in,\\nI guess.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_IWillKeepDoYouWantIt",
+      "Route117_Text_IWillKeepDoYouWantIt"
+    ],
+    "text": "I really will keep it.\\nYou do want this, yes?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route20_Text_RogerIntro",
+      "Route20_Text_RogerRematchIntro"
+    ],
+    "text": "I rode my bird POKéMON here.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route24_Text_ShaneIntro",
+      "Route24_Text_ShaneRematchIntro"
+    ],
+    "text": "I saw your feat from the grass!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LavenderTown_House2_Text_ISeeComeVisitAgain",
+      "SlateportCity_NameRatersHouse_Text_DoVisitAgain"
+    ],
+    "text": "I see.\\nDo come visit again.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SevenIsland_TrainerTower_Text_DarioIntro",
+      "SevenIsland_TrainerTower_Text_DarioRematchIntro"
+    ],
+    "text": "I sensed your approach.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge",
+      "BattleFrontier_BattlePikeRoomNormal_Text_EnjoyRestOfChallenge2"
+    ],
+    "text": "I urge you to enjoy the rest of your\\nBattle Choice challenge…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FortreeCity_Gym_Text_AshleyDefeat",
+      "SootopolisCity_Gym_B1F_Text_OliviaDefeat"
+    ],
+    "text": "I was beaten…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SevenIsland_SevaultCanyon_Text_JacksonIntro",
+      "SevenIsland_SevaultCanyon_Text_JacksonRematchIntro"
+    ],
+    "text": "I work to protect the environment.\\nIn turn, nature protects me!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_DirectYouToYourRoom",
+      "CableClub_Text_DirectYouToYourRoom_Frlg"
+    ],
+    "text": "I'll direct you to your room now.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route116_Text_JerryPostBattle",
+      "Route116_Text_JerryPostRematch"
+    ],
+    "text": "I'll have to redo some courses at\\nthe TRAINER'S SCHOOL.\\lIf I don't, ROXANNE will be steamed.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_NotSetUpForFarAwayRegion",
+      "CableClub_Text_NotSetUpForFarAwayRegion_Frlg"
+    ],
+    "text": "I'm awfully sorry.\\pWe're not set up to conduct trades\\nwith TRAINERS far away in another\\lregion yet…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route17_Text_IsaiahIntro",
+      "Route17_Text_IsaiahRematchIntro"
+    ],
+    "text": "I'm mighty proud of my bod, kiddo.\\nCome on!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SixIsland_RuinValley_Text_HectorIntro",
+      "SixIsland_RuinValley_Text_HectorRematchIntro"
+    ],
+    "text": "I'm pretty familiar with the land\\naround these parts.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleFactoryLobby_Text_DidntSaveBeforeQuitting",
+      "SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting"
+    ],
+    "text": "I'm sorry to say this, but you didn't\\nsave before you quit playing last time.\\pAs a result, you have been disqualified\\nfrom your challenge.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LilycoveCity_ContestLobby_Text_EggCannotTakePart",
+      "LilycoveCity_ContestLobby_Text_EggCannotTakePart2"
+    ],
+    "text": "I'm sorry, but an EGG cannot take part\\nin a POKéMON CONTEST.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Text_WirelessClubUndergoingAdjustments",
+      "gText_SorryWirelessClubAdjustments"
+    ],
+    "text": "I'm terribly sorry.\\nThe POKéMON WIRELESS CLUB is\\lundergoing adjustments now.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_WouldYouLikeUsToRaiseMon",
+      "Route117_PokemonDayCare_Text_WouldYouLikeUsToRaiseAMon"
+    ],
+    "text": "I'm the DAY-CARE LADY.\\pWe can raise POKéMON for you.\\pWould you like us to raise one?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "gText_ApprenticeMonThanks12",
+      "gText_ApprenticeMoveThanks12"
+    ],
+    "text": "If that {STR_VAR_1} is the best,\\nI'll do as you suggest!\\pWell, {PLAYER}, I have to roam free,\\nbut don't you forget about me.\\pSee you again, my smart friend!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_WhatWillYouBattleWith",
+      "Route117_PokemonDayCare_Text_WhatWillYouBattleWith"
+    ],
+    "text": "If you leave me that POKéMON,\\nwhat will you battle with?\\pCome back another time.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_ItWillCostX",
+      "Route117_PokemonDayCare_Text_ItWillCostX"
+    ],
+    "text": "If you want your {STR_VAR_1} back,\\nit will cost ¥{STR_VAR_2}.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleFactoryLobby_Text_ExplainBasicRules",
+      "SlateportCity_BattleTentLobby_Text_ExplainBasicRules"
+    ],
+    "text": "In a Battle Swap event, you may use\\nonly three POKéMON.\\pWhether you are renting or swapping,\\nyour team may not have two or more\\lof the same POKéMON.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_PlayerIsWaiting",
+      "Text_PlayerIsPlayingRightNowGoForIt_Frlg"
+    ],
+    "text": "It appears as if {STR_VAR_1} is playing\\nright now.\\lGo for it!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Text_AppearsToBeUndergoingAdjustments",
+      "gText_UndergoingAdjustments"
+    ],
+    "text": "It appears to be undergoing\\nadjustments…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "EventScript_ExplainPokemonJumpRequirements_Frlg",
+      "MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon"
+    ],
+    "text": "It doesn't look like you have any\\nPOKéMON that you can enter…\\pWould you like me to explain what\\nkinds of POKéMON can enter?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SevenIsland_SevaultCanyon_Text_EvanIntro",
+      "SevenIsland_SevaultCanyon_Text_EvanRematchIntro"
+    ],
+    "text": "It doesn't matter if you happen to\\nhave the strongest POKéMON…\\pIt doesn't mean a thing if you don't\\nknow how to use them properly!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FuchsiaCity_House3_Text_MonHasForgottenMoveCompletely",
+      "LilycoveCity_MoveDeletersHouse_Text_MonHasForgottenMove"
+    ],
+    "text": "It worked to perfection!\\p{STR_VAR_1} has forgotten\\n{STR_VAR_2} completely.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route12_FishingHouse_Text_BlankChartOfSomeSort",
+      "SixIsland_WaterPath_House1_Text_BlankChartOfSomeSort"
+    ],
+    "text": "It's a blank chart of some sort.\\pIt has spaces for writing in\\nrecords of some kind.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MeteorFalls_1F_2R_Text_JayDefeat",
+      "MeteorFalls_1F_2R_Text_JayRematchDefeat"
+    ],
+    "text": "JAY: Oh, dear.\\nWe've lost, my dear husband.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MeteorFalls_1F_2R_Text_JayNotEnoughMons",
+      "MeteorFalls_1F_2R_Text_JayRematchNotEnoughMons"
+    ],
+    "text": "JAY: Well, well, aren't you a young\\nTRAINER?\\pIf you'd care to battle with us, you'll\\nhave to come back with more POKéMON.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MeteorFalls_1F_2R_Text_JohnDefeat",
+      "MeteorFalls_1F_2R_Text_JohnRematchDefeat"
+    ],
+    "text": "JOHN: Oh, my.\\nWe've lost, dear wife.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MeteorFalls_1F_2R_Text_JohnIntro",
+      "MeteorFalls_1F_2R_Text_JohnRematchIntro"
+    ],
+    "text": "JOHN: We've always battled POKéMON\\ntogether as a twosome.\\lWe've confidence in ourselves.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MeteorFalls_1F_2R_Text_JohnNotEnoughMons",
+      "MeteorFalls_1F_2R_Text_JohnRematchNotEnoughMons"
+    ],
+    "text": "JOHN: Well, well, what a young TRAINER!\\pWill you battle with us? If so, you'll\\nhave to return with more POKéMON.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "AbandonedShip_Rooms2_1F_Text_KiraNotEnoughMons",
+      "AbandonedShip_Rooms2_1F_Text_KiraRematchNotEnoughMons"
+    ],
+    "text": "KIRA: Oh, you don't have two POKéMON?\\nWe'll have to battle some other time!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route21_South_Text_NolanIntro",
+      "Route21_South_Text_NolanRematchIntro"
+    ],
+    "text": "Keep me company till I get a hit.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route16_Text_LeaIntro",
+      "Route16_Text_LeaRematchIntro"
+    ],
+    "text": "LEA: Sometimes, the intensity of\\nour love scares me.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route124_Text_LilaNotEnoughMons",
+      "Route124_Text_LilaRematchNotEnoughMons"
+    ],
+    "text": "LILA: You're planning to battle us?\\nNot unless you have two POKéMON.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_OutsideWest_Text_LilycoveItIs",
+      "SlateportCity_Harbor_Text_LilycoveItIs"
+    ],
+    "text": "LILYCOVE CITY it is, then!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route103_Text_LivIntro",
+      "Route103_Text_LivRematchIntro"
+    ],
+    "text": "LIV: We battle together as one\\nteam.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route118_Text_DaltonDefeat",
+      "Route118_Text_DaltonRematchDefeat"
+    ],
+    "text": "La-lalala…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_ExplainWirelessClub",
+      "CableClub_Text_ExplainWirelessClub_Frlg"
+    ],
+    "text": "Let me explain how the POKéMON\\nWIRELESS CLUB works.\\pOn this, the top floor, there are\\ntwo rooms.\\pFirst, the room on the left.\\nIt's the UNION ROOM.\\pYou may link up with TRAINERS\\naround you who have also entered\\lthe UNION ROOM.\\pWith them, you may do things like\\nchat, battle, and trade.\\pSecond, the room on the right is\\nthe DIRECT CORNER.\\pYou may trade or battle POKéMON\\nwith your friends in this room.\\pSometimes, you may not be able to\\nfind your friends in the UNION ROOM\\lor the DIRECT CORNER.\\pIn that case, please move closer\\nto your friends.\\pIf the Wireless Adapter isn't\\nconnected, you may still link up\\lusing a GBA Game Link cable.\\pIf that is the case, you must go\\nto the DIRECT CORNER.\\pI hope you enjoy the Wireless \\nCommunication System.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BerryBlender_Text_LetsBerryBlender",
+      "BerryBlender_Text_LetsBerryBlender2"
+    ],
+    "text": "Let's get started, then!\\pLet's BERRY BLENDER!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_MayHaventRaisedPokemon",
+      "RustboroCity_Text_MayOhHaventRaisedPokemonEnough"
+    ],
+    "text": "MAY: Oh, what's the matter?\\pHaven't you caught or raised your\\nPOKéMON very much?\\pThat's not very good for a TRAINER!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_MayLetsBattle",
+      "RustboroCity_Text_MayWantToBattle"
+    ],
+    "text": "MAY: So, what do you think?\\nHow about a little battle here?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_MayIntro",
+      "RustboroCity_Text_MayImNotGoingToLose"
+    ],
+    "text": "MAY: You just became a TRAINER,\\n{PLAYER}{KUN}. I'm not going to lose!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route117_Text_MegNotEnoughMons",
+      "Route117_Text_MegRematchNotEnoughMons"
+    ],
+    "text": "MEG: Do you only have one POKéMON?\\nWe can't battle with you, then.\\pWe want to have a 2-on-2 battle.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "PalletTown_PlayersHouse_1F_Text_AllBoysLeaveOakLookingForYou",
+      "PalletTown_PlayersHouse_1F_Text_AllGirlsLeaveOakLookingForYou"
+    ],
+    "text": "MOM: …Right.\\nYou chose your own time to set out.\\lIt said so on TV.\\pOh, yes. PROF. OAK, next door, was\\nlooking for you.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_MrBrineysHouse_Text_SetSailForDewford",
+      "Route109_Text_BrineyDewfordItIs"
+    ],
+    "text": "MR. BRINEY: DEWFORD it is, then!\\pAnchors aweigh!\\nPEEKO, we're setting sail, my darling!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DewfordTown_Text_JustTellMeWhenYouNeedToSetSail",
+      "Route109_Text_BrineyTellMeWhenYouNeedToSail"
+    ],
+    "text": "MR. BRINEY: You just tell me whenever\\nyou need to set sail again!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CeladonCity_Restaurant_Text_MakeRoomForThis",
+      "VermilionCity_PokemonFanClub_Text_MakeRoomForThis"
+    ],
+    "text": "Make room for this!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CinnabarIsland_Gym_Text_MakeSpaceForThis",
+      "FuchsiaCity_Gym_Text_MakeSpaceForThis"
+    ],
+    "text": "Make space for this, child!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route121_Text_JessicaPostBattle",
+      "Route121_Text_JessicaPostRematch"
+    ],
+    "text": "Maybe I'll go catch more POKéMON at\\nthe SAFARI.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route109_Text_LolaDefeated",
+      "Route109_Text_LolaRematchDefeated"
+    ],
+    "text": "Mommy!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route12_NorthEntrance_2F_Text_TakeTMDontNeedAnymoreFemale",
+      "Route12_NorthEntrance_2F_Text_TakeTMDontNeedAnymoreMale"
+    ],
+    "text": "My POKéMON's ashes are stored in\\nPOKéMON TOWER.\\pYou can have this TM.\\nI don't need it anymore…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleArenaLobby_Text_DidntSaveBeforeShuttingDown",
+      "FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting"
+    ],
+    "text": "My dear challenger!\\pYou did not save the game before\\nshutting down, did you?\\pIt is unfortunate, but that has\\nresulted in your disqualification\\lfrom your challenge.\\pYou may, of course, start with a fresh\\nchallenge.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route25_Text_HaleyIntro",
+      "Route25_Text_HaleyRematchIntro"
+    ],
+    "text": "My friend has many cute POKéMON.\\nI'm so jealous!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_HusbandWasLookingForYou",
+      "Route117_PokemonDayCare_Text_HusbandWasLookingForYou"
+    ],
+    "text": "My husband was looking for you.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_NoEnigmaBerryInUnionRoom",
+      "CableClub_Text_NoEnigmaBerryInUnionRoom_Frlg"
+    ],
+    "text": "No POKéMON holding the {STR_VAR_1}\\nBERRY may enter the UNION ROOM.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CeladonCity_Gym_Text_TamiaDefeat",
+      "RocketHideout_B4F_Text_Grunt1Defeat"
+    ],
+    "text": "No!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route15_Text_KindraDefeat",
+      "SaffronCity_Gym_Text_AmandaDefeat"
+    ],
+    "text": "Not good enough!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LavenderTown_House2_Text_ThatIsMerelyAnEgg",
+      "SlateportCity_NameRatersHouse_Text_ThatIsMerelyAnEgg"
+    ],
+    "text": "Now, now.\\nThat is merely an EGG!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FortreeCity_House2_Text_CorrectTryAgainWhichHand",
+      "FortreeCity_House2_Text_CorrectTryAgainWhichHand2"
+    ],
+    "text": "Oh! Yes, correct!\\pWe shall try again.\\pIn which hand have I palmed the coin?\\nThe right or left?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "RockTunnel_B1F_Text_MarthaDefeat",
+      "ViridianForest_Text_CharlieDefeat"
+    ],
+    "text": "Oh!\\nI lost!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "EverGrandeCity_PhoebesRoom_Text_Defeat",
+      "Route124_Text_JennyDefeat"
+    ],
+    "text": "Oh, darn.\\nI've gone and lost.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route110_Text_IsabelDefeated",
+      "Route110_Text_IsabelRematchDefeated"
+    ],
+    "text": "Oh, dear, this won't do.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_FineThenComeAgain",
+      "Route117_PokemonDayCare_Text_FineThenComeAgain"
+    ],
+    "text": "Oh, fine, then.\\nCome again.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MtChimney_Text_ShelbyDefeat",
+      "MtChimney_Text_ShelbyRematchDefeat"
+    ],
+    "text": "Oh, my goodness.\\nNow, aren't you something!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route116_Text_KarenRegister1",
+      "Route116_Text_KarenRegister2"
+    ],
+    "text": "Oh, wow! Isn't that a POKéNAV?\\nI have one, too! Please register me!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_YouHaveJustOneMon",
+      "Route117_PokemonDayCare_Text_YouHaveJustOneMon"
+    ],
+    "text": "Oh? But you have just one\\nPOKéMON.\\pCome back another time.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LilycoveCity_DepartmentStore_1F_Text_NoRoomForThis",
+      "SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom"
+    ],
+    "text": "Oh?\\nYou seem to have no room for this.\\pPlease make room in your BAG and\\nlet me know.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "gText_IllTakeYourPkmn",
+      "gText_IllTakeYourPkmn2"
+    ],
+    "text": "Okay, I'll take your POKéMON\\nfor a few seconds.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MossdeepCity_GameCorner_1F_Text_AllGoodToGo",
+      "Text_AllGoodToGo_Frlg"
+    ],
+    "text": "Okay, you're all good to go.\\nDon't let the others beat you!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route110_SeasideCyclingRoadNorthEntrance_Text_GoAllOutOnCyclingRoad",
+      "Route110_SeasideCyclingRoadSouthEntrance_Text_GoAllOutOnCyclingRoad"
+    ],
+    "text": "On CYCLING ROAD, you can go all out\\nand cycle as fast as you'd like.\\pIt feels great to go that fast, but try\\nnot to crash into anyone!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_ExplainWirelessClubFirstTime",
+      "CableClub_Text_ExplainWirelessClubFirstTime_Frlg"
+    ],
+    "text": "On the top floor, there are two\\nrooms.\\pFirst, the room on the left.\\nIt's the UNION ROOM.\\pYou may link up with TRAINERS\\naround you who have also entered\\lthe UNION ROOM.\\pWith them, you may do things like\\nchat, battle, and trade.\\pSecond, the room on the right is\\nthe DIRECT CORNER.\\pYou may trade or battle POKéMON\\nwith your friends in this room.\\pIf the Wireless Adapter isn't\\nconnected, you may still link up\\lusing a GBA Game Link cable.\\pIf that is the case, you must go\\nto the DIRECT CORNER.\\pI hope you enjoy the Wireless \\nCommunication System.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route131_Text_KevinDefeat",
+      "SootopolisCity_Gym_B1F_Text_BethanyDefeat"
+    ],
+    "text": "Oops!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route109_Text_AliceDefeated",
+      "Route115_Text_KoichiDefeat"
+    ],
+    "text": "Ouch, ouch, ouch!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SaffronCity_House_Text_Pidgey",
+      "VermilionCity_House3_Text_Pidgey"
+    ],
+    "text": "PIDGEY: Kurukkoo!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_ParticipantsStepUpToCounter",
+      "CableClub_Text_ParticipantsStepUpToCounter_Frlg"
+    ],
+    "text": "Participants are asked to step up\\nto the reception counter.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_HeresYourMon",
+      "Route117_PokemonDayCare_Text_HeresYourMon"
+    ],
+    "text": "Perfect!\\nHere's your POKéMON.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_PleaseConfirmNumberAndRestart",
+      "CableClub_Text_PleaseConfirmNumberAndRestart_Frlg"
+    ],
+    "text": "Please confirm the number of\\nplayers and start again.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_ChooseGroupLeaderOfFour",
+      "CableClub_Text_ChooseGroupLeaderOfFour_Frlg"
+    ],
+    "text": "Please decide which of you four\\nwill become the GROUP LEADER.\\pThe other players must then choose\\n“JOIN GROUP.”$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_ChooseGroupLeaderOfTwo",
+      "CableClub_Text_ChooseGroupLeaderOfTwo_Frlg"
+    ],
+    "text": "Please decide which of you two\\nwill become the LEADER.\\pThe other player must then choose\\n“JOIN GROUP.”$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "TrainerHill_Entrance_Text_PleaseVisitUsAgain",
+      "TrainerTower_Lobby_Text_PleaseVisitUsAgain"
+    ],
+    "text": "Please do visit us again!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "PewterCity_Museum_1F_Text_PleaseEnjoyYourself",
+      "SlateportCity_OceanicMuseum_1F_Text_PleaseEnjoyYourself"
+    ],
+    "text": "Please enjoy yourself.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_PleaseEnter",
+      "CableClub_Text_PleaseEnter_Frlg"
+    ],
+    "text": "Please enter.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MtChimney_CableCarStation_Text_RideAnotherTime",
+      "Route112_CableCarStation_Text_RideAnotherTime"
+    ],
+    "text": "Please ride with us another time.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Text_TakeSeatStartTrade_Frlg",
+      "TradeCenter_Text_TakeSeatStartTrade"
+    ],
+    "text": "Please take your seat and start\\nyour trade.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route124_Text_RoyNotEnoughMons",
+      "Route124_Text_RoyRematchNotEnoughMons"
+    ],
+    "text": "ROY: Did you want to battle us?\\nBring two POKéMON, then.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route116_Text_RusturfTunnelSign",
+      "VerdanturfTown_Text_RusturfTunnelSign"
+    ],
+    "text": "RUSTURF TUNNEL\\n“Linking RUSTBORO and VERDANTURF\\p“The tunnel project has been\\ncanceled.”$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MatchCall_Text_RegisteredBirch",
+      "Route110_Text_RegisteredBirchInPokenav"
+    ],
+    "text": "Registered PROF. BIRCH\\nin the POKéNAV.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_OutsideWest_Text_SlateportItIs",
+      "LilycoveCity_Harbor_Text_SlateportItIs"
+    ],
+    "text": "SLATEPORT CITY it is, then!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route17_Text_JaxonDefeat",
+      "SilphCo_6F_Text_TaylorDefeat"
+    ],
+    "text": "Shoot!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_SomeoneIsNotReadyToLink_Frlg",
+      "Text_SomeoneIsNotReadyToLink"
+    ],
+    "text": "Someone is not ready to link.\\pPlease come back after everyone\\nhas made preparations.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FortreeCity_Text_SomethingUnseeable",
+      "Kecleon_Text_SomethingUnseeable"
+    ],
+    "text": "Something unseeable is in the way.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FortreeCity_Text_UnseeableUseDevonScope",
+      "Kecleon_Text_WantToUseDevonScope"
+    ],
+    "text": "Something unseeable is in the way.\\pWant to use the DEVON SCOPE?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SevenIsland_TrainerTower_Text_RodetteIntro",
+      "SevenIsland_TrainerTower_Text_RodetteRematchIntro"
+    ],
+    "text": "Somewhere on this island, peculiar\\nPOKéMON are sleeping.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_LinkErrorPleaseReset_Frlg",
+      "Text_LinkErrorPleaseReset"
+    ],
+    "text": "Sorry, we have a link error…\\nPlease reset and try again.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route110_SeasideCyclingRoadNorthEntrance_Text_TooDangerousToWalk",
+      "Route110_SeasideCyclingRoadSouthEntrance_Text_TooDangerousToWalk"
+    ],
+    "text": "Sorry, you can't walk on CYCLING\\nROAD. It's too dangerous.\\pPlease come back with a BIKE.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route121_Text_MylesDefeat",
+      "SixIsland_PatternBush_Text_NashDefeat"
+    ],
+    "text": "Super awesome!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route19_Text_AliceIntro",
+      "Route19_Text_AliceRematchIntro"
+    ],
+    "text": "Swimming's great!\\nSunburns aren't!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_TakeGoodCareOfIt",
+      "Route117_Text_TakeGoodCareOfIt"
+    ],
+    "text": "Take good care of it.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleDomeLobby_Text_ThankYouForPlaying",
+      "TrainerHill_Entrance_Text_ThankYouForPlaying"
+    ],
+    "text": "Thank you for playing!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleArenaLobby_Text_ThankYouWaitWhileSave",
+      "FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving"
+    ],
+    "text": "Thank you so much for participating!\\pPlease wait while I save the game.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC",
+      "MauvilleCity_GameCorner_Text_SendToYourHomePC"
+    ],
+    "text": "Thank you!\\nWe'll send it to your PC at home.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "TrainerHill_Entrance_Text_TooBadTremendousEffort",
+      "TrainerTower_Lobby_Text_TooBadComeBackTryAgain"
+    ],
+    "text": "That was too bad.\\pI think you put in a tremendous\\neffort in your battling.\\pPlease come back and try again!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SecretBase_Text_Trainer2AcceptBattle",
+      "VictoryRoad_B1F_Text_MichelleDefeat"
+    ],
+    "text": "That's the way!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Trade_Text_ThatsTooBad",
+      "VermilionCity_House2_Text_ThatsTooBad"
+    ],
+    "text": "That's too bad.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_CantDoubleBattleWithXPlayers",
+      "CableClub_Text_CantDoubleBattleWithXPlayers_Frlg"
+    ],
+    "text": "The DOUBLE BATTLE Mode can't be\\nplayed by {STR_VAR_1} players.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_CantSingleBattleWithXPlayers",
+      "CableClub_Text_CantSingleBattleWithXPlayers_Frlg"
+    ],
+    "text": "The SINGLE BATTLE Mode can't be\\nplayed by {STR_VAR_1} players.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_TrainerCardDataOverwritten",
+      "CableClub_Text_TrainerCardDataOverwritten_Frlg"
+    ],
+    "text": "The TRAINER CARD data will\\nbe overwritten.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_UnionRoomInfo",
+      "CableClub_Text_UnionRoomInfo_Frlg"
+    ],
+    "text": "The TRAINERS in the UNION ROOM\\nwill be those players around you\\lwho have also entered the ROOM.\\pYou may do all sorts of things\\nhere, such as exchanging greetings.\\pYou may enter two POKéMON up to\\nLv. 30 for a one-on-one battle.\\pYou may take part in a chat with\\ntwo to five people.\\pOr, you may register a POKéMON for\\ntrade.\\pWould you like to enter the ROOM?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_AdapterNotConnected",
+      "CableClub_Text_AdapterNotConnected_Frlg"
+    ],
+    "text": "The Wireless Adapter is not\\nconnected properly.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SkyPillar_Outside_Text_DoorIsClosed",
+      "SootopolisCity_Text_DoorIsClosed"
+    ],
+    "text": "The door is closed.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "AbandonedShip_Text_TheDoorIsOpen",
+      "SixIsland_RuinValley_Text_DoorIsOpen"
+    ],
+    "text": "The door is open.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_PlayersMadeDifferentSelections_Frlg",
+      "Text_PlayersMadeDifferentSelections"
+    ],
+    "text": "The link partners appear to have\\nmade different selections.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SevenIsland_House_Room2_Text_MatchEndedUpDraw",
+      "SootopolisCity_MysteryEventsHouse_B1F_Text_MatchEndedUpDraw"
+    ],
+    "text": "The match ended up a draw.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_IncorrectNumberOfParticipants",
+      "CableClub_Text_IncorrectNumberOfParticipants_Frlg"
+    ],
+    "text": "The number of participants is\\nincorrect.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_OtherTrainerNotReady",
+      "CableClub_Text_OtherTrainerNotReady_Frlg"
+    ],
+    "text": "The other TRAINER is not ready.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route21_North_Text_SpencerIntro",
+      "Route21_North_Text_SpencerRematchIntro"
+    ],
+    "text": "The sea cleanses my body and soul!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route20_Text_BarryIntro",
+      "Route20_Text_BarryRematchIntro"
+    ],
+    "text": "The water is shallow here.\\nThere are many people swimming.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Text_MonFlewAway",
+      "gText_LegendaryFlewAway"
+    ],
+    "text": "The {STR_VAR_1} flew away!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SixIsland_RuinValley_Text_StanlyIntro",
+      "SixIsland_RuinValley_Text_StanlyRematchIntro"
+    ],
+    "text": "There appear to be many secrets\\nstill unsolved in this world.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_ExplainBattleModes",
+      "CableClub_Text_ExplainBattleModes_Frlg"
+    ],
+    "text": "There are three Battle Modes.\\pSINGLE BATTLE is for two TRAINERS\\nwith one or more POKéMON each.\\pEach TRAINER can have one POKéMON\\nin battle at a time.\\pDOUBLE BATTLE is for two TRAINERS\\nwith two or more POKéMON each.\\pEach TRAINER will send out two\\nPOKéMON in battle at a time.\\pMULTI BATTLE is for four TRAINERS\\nwith one or more POKéMON each.\\pEach TRAINER can have one POKéMON\\nin battle at a time.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleFactoryLobby_Text_ExplainSwapNotesRules",
+      "SlateportCity_BattleTentLobby_Text_ExplainSwapNotes"
+    ],
+    "text": "There are two key points to be aware\\nof when swapping POKéMON.\\pFirst, when swapping, you can't check\\nthe stats of the POKéMON you are\\labout to receive.\\pSecond, the POKéMON on your team\\nare lined up in sequence, depending on\\lthe order in which you rented them.\\pThis sequence remains unchanged\\neven when swaps are made.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_NeedFourPlayers",
+      "CableClub_Text_NeedFourPlayers_Frlg"
+    ],
+    "text": "There must be four players to play\\nthis Battle Mode.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route119_WeatherInstitute_1F_Text_TakeRestInBed",
+      "SSTidalRooms_Text_TakeRestOnBed"
+    ],
+    "text": "There's a bed…\\nLet's take a rest.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route110_Text_BenjaminPostBattle",
+      "Route110_Text_BenjaminRematchPostBattle"
+    ],
+    "text": "There's no need to panic or stress.\\nTake it easy. There's plenty of time.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SafariZone_South_Text_AreaOffLimits1",
+      "SafariZone_South_Text_AreaOffLimits2"
+    ],
+    "text": "This area is still under construction.\\nIt's off-limits, sorry!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_UnionRoomAdapterNotConnected",
+      "CableClub_Text_UnionRoomAdapterNotConnected_Frlg"
+    ],
+    "text": "This is the POKéMON WIRELESS CLUB\\nUNION ROOM.\\pUnfortunately, your Wireless\\nAdapter is not connected properly.\\pPlease do come again.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_NeedTwoMonsForUnionRoom",
+      "CableClub_Text_NeedTwoMonsForUnionRoom_Frlg"
+    ],
+    "text": "To enter the UNION ROOM, you must\\nhave at least two POKéMON.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_NeedBerryForBerryCrush",
+      "CableClub_Text_NeedBerryForBerryCrush_Frlg"
+    ],
+    "text": "To use the BERRY CRUSH service,\\nyou must have at least one BERRY.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route7_Text_UndergroundPathSign",
+      "Route8_Text_UndergroundPathSign"
+    ],
+    "text": "UNDERGROUND PATH\\nCELADON CITY - LAVENDER TOWN$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route5_Text_UndergroundPathSign",
+      "Route6_Text_UndergroundPathSign"
+    ],
+    "text": "UNDERGROUND PATH\\nCERULEAN CITY - VERMILION CITY$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MeteorFalls_1F_2R_Text_NicolasDefeat",
+      "MeteorFalls_1F_2R_Text_NicolasRematchDefeat"
+    ],
+    "text": "Urgh!\\nI didn't expect you to be so strong!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge2",
+      "FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge2"
+    ],
+    "text": "We await your challenge on\\nanother occasion!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleFactoryLobby_Text_LookForwardToNextVisit",
+      "SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit"
+    ],
+    "text": "We look forward to your next visit.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route17_Text_BillyIntro",
+      "Route17_Text_BillyRematchIntro"
+    ],
+    "text": "We're BIKERS!\\nWe rule the roads, man!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "SSTidalLowerDeck_Text_LeonardPostBattle",
+      "SSTidalLowerDeck_Text_PhillipPostBattle"
+    ],
+    "text": "We're the CLEANUP BROTHERS!\\pThe old one dumps the detergent,\\nand the young one does the scrubbing!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleFactoryLobby_Text_WaitingForYouToResume",
+      "SlateportCity_BattleTentLobby_Text_BeenWaitingForYou"
+    ],
+    "text": "We've been waiting for you!\\pBefore we resume your challenge,\\nI must save the game.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_WelcomeWhichCableClubService",
+      "CableClub_Text_WelcomeWhichCableClubService_Frlg"
+    ],
+    "text": "Welcome to the POKéMON CABLE\\nCLUB.\\pWhich of our services do you wish\\nto use?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_WelcomeWhichDirectCornerRoom",
+      "CableClub_Text_WelcomeWhichDirectCornerRoom_Frlg"
+    ],
+    "text": "Welcome to the POKéMON WIRELESS\\nCLUB DIRECT CORNER.\\pYou may interact directly with\\nyour friends here.\\pWhich room would you like to\\nenter?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_WelcomeUnionRoomEnter",
+      "CableClub_Text_WelcomeUnionRoomEnter_Frlg"
+    ],
+    "text": "Welcome to the POKéMON WIRELESS\\nCLUB UNION ROOM.\\pYou may interact directly with\\nother TRAINERS here, some of\\lwhom you may not even know.\\pWould you like to enter the ROOM?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_IllKeepIt",
+      "Route117_Text_IllKeepIt"
+    ],
+    "text": "Well then, I'll keep it.\\nThanks!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route11_Text_BerniePostBattle",
+      "SilphCo_6F_Text_BetterGetBackToWork"
+    ],
+    "text": "Well, better get back to work.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route16_Text_LaoIntro",
+      "Route16_Text_LaoRematchIntro"
+    ],
+    "text": "What do you want?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FuchsiaCity_House3_Text_NoEggShouldKnowMoves",
+      "LilycoveCity_MoveDeletersHouse_Text_EggCantForgetMoves"
+    ],
+    "text": "What?\\nNo EGG should know any moves.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "TrainerHill_Entrance_Text_MovedReceptionHereForSwitch",
+      "TrainerTower_Lobby_Text_MoveCounterHereWhenTrainersSwitch"
+    ],
+    "text": "When the TRAINERS switch places,\\nthe movement can be hectic.\\pTo avoid the stampede, we moved\\nthe reception counter here.\\pI'm sorry for the inconvenience.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattlePalaceLobby_Text_ReturnWhenFortified",
+      "VerdanturfTown_BattleTentLobby_Text_ReturnFortified"
+    ],
+    "text": "When you have fortified your heart\\nand POKéMON, you must return.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_PlayWhichBattleMode",
+      "CableClub_Text_PlayWhichBattleMode_Frlg"
+    ],
+    "text": "Which Battle Mode would you like\\nto play?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LilycoveCity_ContestLobby_Text_EnterWhichContest1",
+      "LilycoveCity_ContestLobby_Text_EnterWhichContest3"
+    ],
+    "text": "Which CONTEST would you like to enter?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FallarborTown_MoveRelearnersHouse_Text_TutorWhichMon",
+      "TwoIsland_House_Text_TutorWhichMon"
+    ],
+    "text": "Which POKéMON needs tutoring?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_WhichMonShouldWeRaise",
+      "Route117_PokemonDayCare_Text_WhichMonShouldWeRaise"
+    ],
+    "text": "Which POKéMON should we raise for\\nyou?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LilycoveCity_ContestLobby_Text_EnterWhichPokemon1",
+      "LilycoveCity_ContestLobby_Text_EnterWhichPokemon3"
+    ],
+    "text": "Which POKéMON would you like to enter?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon",
+      "Text_EnterWhichPokemon_Frlg"
+    ],
+    "text": "Which POKéMON would you like to\\nenter?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LavenderTown_House2_Text_CritiqueWhichMonsNickname",
+      "SlateportCity_NameRatersHouse_Text_CritiqueWhichMonNickname"
+    ],
+    "text": "Which POKéMON's nickname should\\nI critique?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove",
+      "TwoIsland_House_Text_TeachWhichMove"
+    ],
+    "text": "Which move should I teach?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "FuchsiaCity_House3_Text_WhichMoveShouldBeForgotten",
+      "LilycoveCity_MoveDeletersHouse_Text_WhichMoveShouldBeForgotten"
+    ],
+    "text": "Which move should be forgotten?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CeladonCity_GameCorner_PrizeRoom_Text_WhichPrize",
+      "MauvilleCity_GameCorner_Text_WhichPrize"
+    ],
+    "text": "Which prize would you like?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "RustboroCity_PokemonSchool_Text_ReadWhichTopic",
+      "ViridianCity_School_Text_ReadWhichTopic"
+    ],
+    "text": "Which topic do you want to read?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LilycoveCity_ContestLobby_Text_WhichTopic1",
+      "LilycoveCity_ContestLobby_Text_WhichTopic2"
+    ],
+    "text": "Which topic would you like?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_ReceptionGate_Text_LearnAboutWhich1",
+      "BattleFrontier_ReceptionGate_Text_LearnAboutWhich2"
+    ],
+    "text": "Which would you like to learn about?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route6_Text_NancyPostBattle",
+      "Route6_Text_RickyPostBattle"
+    ],
+    "text": "Whisper…\\nWhisper…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "PokemonTower_5F_Text_JanaeDefeat",
+      "Route17_Text_IsaiahDefeat"
+    ],
+    "text": "Whoo!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_TakeOtherOneBackToo",
+      "Route117_PokemonDayCare_Text_TakeOtherOneBackToo"
+    ],
+    "text": "Will you take back the other one,\\ntoo?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_TakeYourMonBack",
+      "Route117_PokemonDayCare_Text_TakeYourMonBack"
+    ],
+    "text": "Will you take your POKéMON back?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route113_Text_LaoDefeat",
+      "Route113_Text_LaoRematchDefeat"
+    ],
+    "text": "With honor I admit defeat!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route121_Text_WalterIntro",
+      "Route121_Text_WalterRematchIntro"
+    ],
+    "text": "With my POKéMON, I have traveled\\nto the world's four corners.\\pYou might say I have some confidence\\nin my abilities.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "TrainerHill_Entrance_Text_LikeToChallengeTrainers",
+      "TrainerTower_Lobby_Text_LikeToChallengeTrainers"
+    ],
+    "text": "Would you like to challenge the\\nwaiting TRAINERS?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleFactoryPreBattleRoom_Text_SaveAndQuitGame",
+      "BattleFrontier_BattlePalaceBattleRoom_Text_SaveAndQuitGame"
+    ],
+    "text": "Would you like to save and quit\\nthe game?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleDomePreBattleRoom_Text_SaveAndQuitGame",
+      "BattleFrontier_BattleTowerBattleRoom_Text_SaveAndQuitGame"
+    ],
+    "text": "Would you like to save and\\nquit the game?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_TradePokemon",
+      "CableClub_Text_TradePokemon_Frlg"
+    ],
+    "text": "Would you like to trade POKéMON?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_UseBerryCrush",
+      "CableClub_Text_UseBerryCrush_Frlg"
+    ],
+    "text": "Would you like to use the\\nBERRY CRUSH System?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "VictoryRoad_1F_Text_WallyDefeat",
+      "VictoryRoad_1F_Text_WallyEntranceDefeat"
+    ],
+    "text": "Wow!\\n{PLAYER}, you are strong, after all!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "ThreeIsland_BondBridge_Text_AlexisIntro",
+      "ThreeIsland_BondBridge_Text_AlexisRematchIntro"
+    ],
+    "text": "Yay, yay!\\nPOKéMON!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_NotEnoughMoney",
+      "Route117_PokemonDayCare_Text_NotEnoughMoney"
+    ],
+    "text": "You don't have enough money…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "PewterCity_Gym_Text_DontHaveRoomForThis",
+      "Route12_NorthEntrance_2F_Text_DontHaveRoomForThis"
+    ],
+    "text": "You don't have room for this.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "CableClub_Text_YouHaveAMonThatCantBeTaken",
+      "CableClub_Text_YouHaveAMonThatCantBeTaken_Frlg"
+    ],
+    "text": "You have at least one POKéMON\\nthat can't be taken.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_YouHaveNoRoomForIt",
+      "Route117_Text_YouHaveNoRoomForIt"
+    ],
+    "text": "You have no room for it…\\nCome back when you've made room.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "OneIsland_KindleRoad_Text_BryceIntro",
+      "OneIsland_KindleRoad_Text_BryceRematchIntro"
+    ],
+    "text": "You know, everything tastes great\\nwhen you're out in the wild.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules",
+      "SlateportCity_BattleTentLobby_Text_ExplainSwapPartnerRules"
+    ],
+    "text": "You may swap POKéMON only with\\nthe TRAINER you have just defeated.\\pYou may swap for only those POKéMON\\nused by the beaten TRAINER.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route114_Text_BerniePostBattle",
+      "Route114_Text_BerniePostRematch"
+    ],
+    "text": "You really do have to be careful with\\nany sort of fire in a forest.\\pDon't ever underestimate the power\\nof fire.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route21_North_Text_RonaldIntro",
+      "Route21_North_Text_RonaldRematchIntro"
+    ],
+    "text": "You want to know if the fish are\\nbiting?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "PetalburgWoods_Text_YoureLoadedWithItems",
+      "RustboroCity_Text_YoureLoadedWithItems"
+    ],
+    "text": "You're loaded with items.\\nI can't give you this GREAT BALL.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_HaleyRegister1",
+      "Route104_Text_HaleyRegister2"
+    ],
+    "text": "You're strong, but should I register\\nyou in my POKéNAV?\\lMaybe I shouldn't…\\pOkay, sure, I will register you!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LilycoveCity_ContestLobby_Text_MonInNoCondition2",
+      "LilycoveCity_ContestLobby_Text_MonInNoConditionForContest"
+    ],
+    "text": "Your POKéMON appears to be in no\\ncondition to take part in a CONTEST…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattlePalaceLobby_Text_FeatWillBeRecorded",
+      "VerdanturfTown_BattleTentLobby_Text_FeatWillBeRecorded"
+    ],
+    "text": "Your feat will be recorded.\\nI must ask you to briefly wait.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerGoldShort",
+      "BattleFrontier_BattleDomePreBattleRoom_Text_ReadyForTuckerSilverShort"
+    ],
+    "text": "Your final battle against TUCKER is\\nnext. Are you ready?$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "BattleFrontier_BattleDomeLobby_Text_RecordWillBeSaved",
+      "BattleFrontier_BattleTowerLobby_Text_RecordWillBeSaved"
+    ],
+    "text": "Your record will be saved.\\nPlease wait.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "ContestHall_Text_PutRibbonOnMon",
+      "LilycoveCity_ContestLobby_Text_PutTheRibbonOnMon"
+    ],
+    "text": "{PLAYER} put the RIBBON on\\n{STR_VAR_1}.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "ContestHall_Text_ReceivedRibbon",
+      "LilycoveCity_ContestLobby_Text_ReceivedARibbon"
+    ],
+    "text": "{PLAYER} received a RIBBON.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_ReceivedEgg",
+      "Route117_Text_ReceivedEgg"
+    ],
+    "text": "{PLAYER} received the EGG from\\nthe DAY-CARE MAN.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide",
+      "Route15_WestEntrance_2F_Text_ReceivedItemFromAide"
+    ],
+    "text": "{PLAYER} received the {STR_VAR_2}\\nfrom the AIDE.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "LittlerootTown_Text_SwitchShoesWithRunningShoes",
+      "PewterCity_Text_SwitchedShoesWithRunningShoes"
+    ],
+    "text": "{PLAYER} switched shoes with the\\nRUNNING SHOES.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "DayCare_Text_TookBackMon",
+      "Route117_PokemonDayCare_Text_TookBackMon"
+    ],
+    "text": "{PLAYER} took back {STR_VAR_1} from\\nthe DAY-CARE LADY.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "TrainerHill_Entrance_Text_ChallengeTime",
+      "TrainerTower_Text_XMinYZSec"
+    ],
+    "text": "{STR_VAR_1} min. {STR_VAR_2}.{STR_VAR_3} sec.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll",
+      "RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2"
+    ],
+    "text": "{STR_VAR_1}.\\n{STR_VAR_1}.\\pHmmm… She's not smiling at all.\\nMaybe WALDA is one serious child…$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "gText_ApprenticeMonThanks4",
+      "gText_ApprenticeMoveThanks4"
+    ],
+    "text": "{STR_VAR_1}? That's great!\\pKnowing that you made the decision,\\n{PLAYER}{KUN}, I won't be so upset if\\lI lose.\\pOkay, I'll look to you for advice again.\\nBye!$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo",
+      "Text_DodrioBerryPickingInfo_Frlg"
+    ],
+    "text": "“DODRIO BERRY-PICKING”\\pCommand DODRIO's three heads to\\ncatch falling BERRIES.\\pPress right, up, or left on the\\n{PLUS} Control Pad to move the heads.\\pTo play this game, you must have\\na DODRIO.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "Route104_Text_CindyPostBattle",
+      "Route104_Text_CindyPostRematch"
+    ],
+    "text": "“Hello” is the beginning of “good-bye.”\\nI hope we meet again.$",
+    "approved_alias": false
+  },
+  {
+    "labels": [
+      "MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed",
+      "Text_ShortJumpingPokemonAllowed_Frlg"
+    ],
+    "text": "“POKéMON JUMP” is open to POKéMON\\naround 28 inches or less.\\pWhat you can't enter are those\\nPOKéMON that can't jump.\\pYou know, like POKéMON that only\\nswim, burrow, or fly.\\pThat's all you need to know.$",
+    "approved_alias": false
+  }
+]

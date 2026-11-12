@@ -29,6 +29,9 @@ jobs:
       - name: Validate Kanto campaign topology
         run: python3 dev_scripts/validate_kanto_campaign.py
 
+      - name: Validate Kanto rare encounters
+        run: python3 dev_scripts/validate_kanto_rares.py
+
       - name: Validate recruitable cast
         run: python3 dev_scripts/validate_cast.py
 
@@ -37,6 +40,12 @@ jobs:
 
       - name: Validate contextual companion dialogue
         run: python3 dev_scripts/validate_companion_dialogue.py
+
+      - name: Test independent history host protocol
+        run: |
+          python3 -m pip install --target /tmp/echo-history-deps lupa==2.8
+          PYTHONPATH=/tmp/echo-history-deps python3 dev_scripts/test_companion_history_host.py
+          python3 dev_scripts/companion_history_snapshots.py
 
       - name: Install binutils
         run: |
@@ -74,6 +83,9 @@ jobs:
           tools/preproc/preproc -s data/event_scripts.s charmap.txt > /tmp/kanto-scripts-first-pass.s
           wc -l /tmp/kanto-scripts-first-pass.s
           tail -n 30 /tmp/kanto-scripts-first-pass.s
+
+      - name: Verify compiled companion history bridge
+        run: python3 dev_scripts/verify_companion_history_rom.py pokeemerald.gba pokeemerald.map
 
       - name: Verify compiled Pip artwork
         run: python3 dev_scripts/verify_pip_rom.py pokeemerald.gba pokeemerald.map

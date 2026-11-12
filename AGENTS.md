@@ -101,3 +101,30 @@ not proof that every actor has dialogue or that every branch ran. Do not call
 the initial authored batch full-world completion. Validate the exact ROM with
 actual NPC branch changes, unknown messages, deferred prompts, each mode,
 independent spent memory, portraits, EXP-on-print and old normal-save migration.
+
+# Full-game dialogue expansion
+
+The user authorized one full-game expansion across both regions on top of PR #11
+79ec91c79bd03c426c64f824415befdfe99d351d. Do not restrict the deliverable to early
+game or ask for approval at every internal content batch. See
+`docs/full_game_companion_dialogue.md` and the complete worklist under
+`data/companion_dialogue/full_game`. The first 47 context IDs/wording/expressions
+are frozen by released_pilot_contract.json. Unwritten/unknown branches are gaps,
+not completed coverage. Source inventory alone does not establish native coverage.
+
+The user selected fully independent permanent memory for every companion and
+conversation. Shared memory is rejected. Existing pilot memory must survive.
+The user confirmed mGBA on Windows. Target its documented Lua API (0.10+).
+Do not resize/reset released banks, discard the backup save, or reuse
+PC/fusion/Hall of Fame/special storage. A host-side snapshot protocol is only a
+candidate until the actual adapter/ROM and migration tests pass. The current WIP
+appends a 56-byte anchor at SaveBlock2 offset 3884, preserving the whole prefix.
+Extended observations prepare an immutable host snapshot before being offered;
+normal/partial save paths then write the already valid anchor without new IO.
+No helper or missing history must suppress only extended observations, preserve
+their anchor and keep normal gameplay, original history and normal saving usable.
+Dialogue progress v2 keeps the same 1020-byte record and all bank offsets; its
+two former reserved bytes count completed one-time legacy-context imports.
+Import read-only, per voice, once for each appended context. Do not keep checking
+legacy broad categories on every offer: that would silence fresh independent
+descriptions. All exact legacy aliases must be bound below context 736.

@@ -1,0 +1,310 @@
+{
+  "source_commit": "7a3acaeebc8b6493930042ff4ba14b6d14dfcdeb",
+  "rom_sha256": "841b25a917eb231779588883699383843a46dd4e4393e16fd4f7bbe79d98f3c6",
+  "new_context_range": [
+    230,
+    330
+  ],
+  "new_reply_count": 1100,
+  "checks": [
+    {
+      "suite": "dialogue-expansion-checks",
+      "report": {
+        "checks": [
+          "All 100 Pip authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Silas authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Kade authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Ashe authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Nico authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Riven authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Emi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Vera authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Lume authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Mochi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 100 Zuri authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once"
+        ],
+        "rom_sha256": "841b25a917eb231779588883699383843a46dd4e4393e16fd4f7bbe79d98f3c6",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    },
+    {
+      "suite": "approached-trainer-checks",
+      "report": {
+        "checks": [
+          "A real trainer-sight approach and native victorious battle defer the exact post-battle Silas reply until return, award EXP once, and release portrait/controls"
+        ],
+        "rom_sha256": "841b25a917eb231779588883699383843a46dd4e4393e16fd4f7bbe79d98f3c6",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    },
+    {
+      "suite": "coordinate-dialogue-checks",
+      "report": {
+        "checks": [
+          "Stepping into the actual Oldale coordinate scene completes its NPC movements before the matching reply, without an A-button interaction or injected script; portrait, controls and one-time EXP behave correctly"
+        ],
+        "rom_sha256": "841b25a917eb231779588883699383843a46dd4e4393e16fd4f7bbe79d98f3c6",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    }
+  ],
+  "limitations": "Prepared native interpreter and physical-field fixtures, not a continuous playthrough or proof all physical NPCs reach every binding. Later modules require separate validation.",
+  "extended_history_validation": {
+    "source_commit": "bf2386d98cd7210d11f6437e8d155e724650574b",
+    "rom_sha256": "eef6f069ddd343b7d8876155712244f7acf2623b091e34440a149482759a1261",
+    "context_range": [
+      700,
+      790
+    ],
+    "reply_count": 990,
+    "adapter": "Actual Lua 5.4 helper and mGBA libretro core memory API; not the desktop Scripting UI.",
+    "checks": [
+      {
+        "suite": "dialogue-expansion-checks",
+        "report": {
+          "checks": [
+            "All 90 Pip authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Silas authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Kade authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Ashe authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Nico authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Riven authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Emi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Vera authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Lume authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Mochi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+            "All 90 Zuri authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once"
+          ],
+          "rom_sha256": "eef6f069ddd343b7d8876155712244f7acf2623b091e34440a149482759a1261",
+          "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+        }
+      },
+      {
+        "suite": "extended-npc-save-checks",
+        "report": {
+          "checks": [
+            "An actual Kanto NPC above context 736 gives the exact contextual reply, writes a verified snapshot, stays spent after normal save/reset/Continue, and remains independently fresh for another companion"
+          ],
+          "rom_sha256": "eef6f069ddd343b7d8876155712244f7acf2623b091e34440a149482759a1261",
+          "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+        }
+      }
+    ]
+  },
+  "automatic_story_validation": {
+    "source_commit": "cff113cec1c0b9bacf03a84e8c87801362a630f7",
+    "rom_sha256": "f817040f7dffb52e82f63a7744c7c20506591e5a827898f436af73942cf7278d",
+    "report": {
+      "checks": [
+        "The actual museum map-frame introduction finishes its messages and actor turns before offering the exact reply, with portrait/controls cleanup and once-only EXP",
+        "An actual scheduled Roxanne call triggered by a physical step retains its final registration source and offers the matching reply only after the call ends",
+        "Only when asked suppresses the automatic map-frame prompt while actual companion-menu Talk retains the exact scene and prints Emi perspective",
+        "Silent suppresses map-frame replies without spending a fresh voice history, awarding EXP, removing the follower or leaving field controls locked"
+      ],
+      "rom_sha256": "f817040f7dffb52e82f63a7744c7c20506591e5a827898f436af73942cf7278d",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "limitations": "Prepared story, party and position fixtures; actual map-frame introduction, physical-step scheduled call and companion menu; not a continuous playthrough."
+  },
+  "party_menu_validation": {
+    "source_commit": "cff113cec1c0b9bacf03a84e8c87801362a630f7",
+    "rom_sha256": "f817040f7dffb52e82f63a7744c7c20506591e5a827898f436af73942cf7278d",
+    "report": {
+      "checks": [
+        "Actual Name Rater conversation survives party-menu selection and returns the exact traded-Pokemon refusal reply, with once-only EXP and released controls"
+      ],
+      "rom_sha256": "f817040f7dffb52e82f63a7744c7c20506591e5a827898f436af73942cf7278d",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    }
+  },
+  "berry_validation": {
+    "source_commit": "4db7431c2f6ddd0fb3e9c550dd9469fc7651b53e",
+    "rom_sha256": "9e194b859592efcec31a8fd72acbefe4d8bc568a531335a7e11552ce884539d5",
+    "context_range": [
+      1470,
+      1482
+    ],
+    "reply_count": 132,
+    "reports": [
+      {
+        "checks": [
+          "All 12 Pip authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Silas authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Kade authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Ashe authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Nico authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Riven authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Emi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Vera authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Lume authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Mochi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+          "All 12 Zuri authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once"
+        ],
+        "rom_sha256": "9e194b859592efcec31a8fd72acbefe4d8bc568a531335a7e11552ce884539d5",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "An actual growing tree watering choice and native animation end with the exact successful-care reply, without retaining the earlier unwatered choice",
+          "Actual ripe-tree picking stores the berries before the distinct harvest reply, preserving real inventory effects and once-only EXP"
+        ],
+        "rom_sha256": "9e194b859592efcec31a8fd72acbefe4d8bc568a531335a7e11552ce884539d5",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
+  },
+  "pickup_and_rating_validation": {
+    "source_commit": "093b3ee4ff7099fdd43e4c1a5d714b6f376dab8c",
+    "reports": [
+      {
+        "checks": [
+          "An actual Route102 item ball gives a Potion, hides the collected object, and offers the exact standalone-pickup reply with one EXP award",
+          "A known NPC topic keeps precedence over a later successful receipt; the generic receipt topic remains fresh",
+          "Unknown NPC text and dynamic buffers cannot be masked by a later success receipt",
+          "A bag-full failure after an obtained-item notice invalidates that optimistic notice without offering or spending a success reply",
+          "Starting another interaction resets the prior unknown/failure state, allowing its own standalone discovery topic"
+        ],
+        "rom_sha256": "14c29ad13e9111e60c1ba80fdf8cd91700758457bbed3b527e52bae7390073c9",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "The actual lab NPC selects its regional assessment through native ShowPokedexRatingMessage and gives the exact assessment-specific Silas reply",
+          "With National Dex enabled, the later nationwide summary replaces the intermediate regional assessment; only Emi final-topic history and EXP are spent"
+        ],
+        "rom_sha256": "14c29ad13e9111e60c1ba80fdf8cd91700758457bbed3b527e52bae7390073c9",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
+  },
+  "custom_receipt_validation": {
+    "source_commit": "05ea3322c8c55db007efb5c39f7ff7e6abddfef0",
+    "reports": [
+      {
+        "checks": [
+          "Actual Old Amber scientist handoff adds the item and retains his examination request through the custom receipt, with exact Silas reply and once-only EXP",
+          "All thirteen reviewed custom gift and gym-contact notices classify as exact system receipts",
+          "None of the thirteen receipts replaces an earlier unknown native message with a false known topic",
+          "Prepared Brawly TM explanation followed by contact receipt retains the exact Bulk Up topic, not a registration comment"
+        ],
+        "rom_sha256": "d6543d117dd86c098c625a4e24ca92759561bb8fc295028e8374ab86ad619d97",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "The actual museum map-frame introduction finishes its messages and actor turns before offering the exact reply, with portrait/controls cleanup and once-only EXP",
+          "An actual scheduled Roxanne call triggered by a physical step retains its final registration source and offers the matching reply only after the call ends",
+          "Only when asked suppresses the automatic map-frame prompt while actual companion-menu Talk retains the exact scene and prints Emi perspective",
+          "Silent suppresses map-frame replies without spending a fresh voice history, awarding EXP, removing the follower or leaving field controls locked"
+        ],
+        "rom_sha256": "d6543d117dd86c098c625a4e24ca92759561bb8fc295028e8374ab86ad619d97",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
+  },
+  "daycare_native_validation": {
+    "source_commit": "4966f44bb754e45f4b72c265bd2eba405d4abdbe",
+    "reports": [
+      {
+        "checks": [
+          "Actual Route117 Day Care conversation uses the exact GetAlongVeryWell template and matching Silas reply, with once-only EXP on a prepared parent pair"
+        ],
+        "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "Actual KantoFourIsland Day Care conversation uses the exact GetAlong template and matching Silas reply, with once-only EXP on a prepared parent pair"
+        ],
+        "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "Actual Route117 Day Care conversation uses the exact DontLikeOther template and matching Silas reply, with once-only EXP on a prepared parent pair"
+        ],
+        "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "Actual KantoFourIsland Day Care conversation uses the exact PlayOther template and matching Silas reply, with once-only EXP on a prepared parent pair"
+        ],
+        "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
+  },
+  "service_catalogue_validation": {
+    "source_commit": "4966f44bb754e45f4b72c265bd2eba405d4abdbe",
+    "context_range": [
+      3323,
+      3415
+    ],
+    "reply_count": 1012,
+    "report": {
+      "checks": [
+        "All 92 Pip authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Silas authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Kade authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Ashe authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Nico authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Riven authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Emi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Vera authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Lume authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Mochi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 92 Zuri authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once"
+      ],
+      "rom_sha256": "55732604665989cf091bfdc0d94fb582bd34b33fff65570310e094b6b70ace8e",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "ci_run": 42950689067,
+    "ci_conclusion": "success",
+    "starter_run": 42950688983,
+    "starter_conclusion": "success"
+  },
+  "apprentice_native_validation": {
+    "source_commit": "ee7eb78b70e1cf1fec891ba8b2182da117b6844d",
+    "report": {
+      "checks": [
+        "Actual apprentice first meeting, teaching agreement and level-selection menus retain the exact final thanks template through native printing and departure, with matching Silas reply and once-only EXP"
+      ],
+      "rom_sha256": "ccf013736cb116fef36c32b7a1a6fc8b5d06aeb2e7c24d905a0c16646691d0b9",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    }
+  },
+  "expanded_receipt_validation": {
+    "source_commit": "ee7eb78b70e1cf1fec891ba8b2182da117b6844d",
+    "report": {
+      "checks": [
+        "Actual Old Amber scientist handoff adds the item and retains his examination request through the custom receipt, with exact Silas reply and once-only EXP",
+        "All nineteen reviewed custom gift and gym-contact notices classify as exact system receipts",
+        "None of the nineteen receipts replaces an earlier unknown native message with a false known topic",
+        "Prepared Brawly TM explanation followed by contact receipt retains the exact Bulk Up topic, not a registration comment"
+      ],
+      "rom_sha256": "ccf013736cb116fef36c32b7a1a6fc8b5d06aeb2e7c24d905a0c16646691d0b9",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    }
+  },
+  "safe_handoff_validation": {
+    "source_commit": "ddc6af8884c4a4469b9ebd0909a2f1f3cb91a10a",
+    "reports": [
+      {
+        "checks": [
+          "Actual Warden capacity failure retains the Gold Teeth and unclaimed HM04 flag, and offers only the exact failure reply",
+          "A real retry returns the Gold Teeth and grants HM04 once, retaining the Warden thanks through the custom receipt instead of repeating the failure topic"
+        ],
+        "rom_sha256": "db6f8c6860e3df585a5d57dc8bfd1f36d662765de548fded39fc0d7796ac8446",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "Actual Effort Ribbon award changes the Pokemon ribbon data and preserves the woman recognition through both named narrator notices, with exact Silas reply and once-only EXP"
+        ],
+        "rom_sha256": "db6f8c6860e3df585a5d57dc8bfd1f36d662765de548fded39fc0d7796ac8446",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
+  }
+}

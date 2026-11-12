@@ -57,8 +57,7 @@ Route117_EventScript_CheckOnOneMon::
 Route117_EventScript_CheckOnTwoMons::
 	special GetDaycareMonNicknames
 	msgbox Route117_Text_YourMonsAreDoingFine, MSGBOX_DEFAULT
-	special SetDaycareCompatibilityString
-	special ShowFieldMessageStringVar4
+	special ShowDaycareCompatibilityMessage
 	waitmessage
 	waitbuttonpress
 	setvar VAR_0x8004, 0

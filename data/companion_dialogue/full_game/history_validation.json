@@ -1,0 +1,124 @@
+{
+  "status": "Development storage milestone; full-game content unfinished",
+  "source_commit": "c38a6b059f4e9caadb27b775daf6065fb24815b5",
+  "rom_sha256": "1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5",
+  "ci_run": 42631520818,
+  "ci_passed": 5493,
+  "ci_total": 5940,
+  "known_failing": 19,
+  "expected_failing": 9,
+  "todo": 419,
+  "unexpected_failures": 0,
+  "native_groups": 53,
+  "catalogue_replies": 781,
+  "reports": {
+    "storage": {
+      "rom_sha256": "1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5",
+      "checks": [
+        "Accepted pilot normal save migrates with all PC/fusions/bonds, eleven pilot memory banks, mode, party and regional/cast progress intact",
+        "An extended observation is stored before its independent bit/anchor commits; only that voice is spent and all released storage stays intact",
+        "All eleven banks persist independently through normal save/load, including the top context; repeat offers stay spent and special sectors remain untouched",
+        "Partial link/Frontier save retains the independently prepared history reference without host IO in the save path",
+        "Both incremental link full-save and SaveBlock2/SaveBlock1 partial-save paths retain the correct history reference",
+        "Hall of Fame save path persists the prepared reference (fixture has no Hall of Fame record buffer)",
+        "A corrupted newest flash slot recovers the older normal save and its corresponding independent history",
+        "Emulator save-state rollback restores its RAM history without merging later snapshots",
+        "Earlier normal save restores its own immutable history rather than merging later progress",
+        "Missing host history neither resets memory nor blocks normal saving; restoring the file and reloading recovers it",
+        "Host file-write failure rolls back the native observation bit and anchor; the same observation succeeds after host recovery",
+        "A disappearing helper times out without committing an unremembered observation or blocking ordinary saving",
+        "An absent helper leaves the original game and normal saving usable without committing unremembered comments"
+      ],
+      "limitations": "Prepared save-function fixtures with background field callbacks held idle, actual mGBA libretro core and Lua 5.4 adapter; desktop Scripting UI and hard-power-loss durability are not verified; Hall of Fame path tested with no record buffer. Separate A-button NPC tests cover normal field operation."
+    },
+    "interactions": {
+      "checks": [
+        "The actual Oldale NPC speaks before a reaction is offered; opening NPC text spends no memory or bond EXP",
+        "Accepting prints the matching Silas reply with portrait, earns ten EXP once, and cleans the portrait and field controls",
+        "Repeating that NPC stays quiet and cannot farm EXP",
+        "A ready lore passage cannot replace the NPC response; explicit companion Talk still advances the ordered personal story",
+        "Switching to Emi gives her own relevant reply and independent memory without renewing Silas",
+        "Actual pre/post footprint branches produce different appropriate replies after movement cleanup, with no premature revelation",
+        "The same Kanto NPC reacts differently before and after the actual regional gym-return variable, without a generic leader or town remark",
+        "Declining a relevant offer suppresses its repeat and gives no bond EXP",
+        "Only when asked avoids automatic prompts, retains the actual subject, and supplies the reply through companion Talk",
+        "An unsupported subsequent conversation clears the prior subject instead of producing an unrelated reply",
+        "An unmapped last message within the same interpreter interaction invalidates an earlier mapped message instead of leaking its reaction",
+        "Silent mode mutes travel replies and Talk while retaining the follower and functioning bond journal",
+        "Actual six-entry menus expose the setting; choosing Normal saves it and B cancellation changes nothing",
+        "Normal flash save and Continue retain silencer mode, all independent spent bits, bond records and prior regional/cast history",
+        "Pip and all ten cast members produce their own exact authored response through actual NPC interaction; every cast expression matches supplied portrait pixels",
+        "All 78 compiled message labels bind to their reviewed context IDs, with no missing exports or remapped branch IDs"
+      ],
+      "rom_sha256": "1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "legacy": {
+      "checks": [
+        "The released completed Kanto paired-scene response still prints its actual authored voice, uses its original remembered ID, and cannot repeat for EXP",
+        "A real Emerald bookshelf tile offers its exact updated cast response, remembers this description independently and cannot repeat for EXP",
+        "Old exact-object memory imports once: the real bookshelf stays quiet for Silas without suppressing Emi"
+      ],
+      "rom_sha256": "1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "native_printers": {
+      "checks": [
+        "A field message printed directly by native code retains its exact reviewed source for manual companion Talk",
+        "A native message rejected because another message is open cannot replace the actually displayed subject",
+        "A dynamic buffer invalidates the prior source even when its visible words happen to be the same",
+        "The native auto-scroll printer records the real source through the same exact-message routing",
+        "A displayed native item-success receipt preserves the actual speaker rather than replacing it with system text",
+        "A displayed bag-full failure invalidates the earlier subject and cannot produce a success reaction"
+      ],
+      "rom_sha256": "1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "state_restore": {
+      "checks": [
+        "An actually accepted NPC reaction restores original result 42, speaker and message, retains unrelated script variables, and leaves normal field input with no stale NPC selection"
+      ],
+      "rom_sha256": "1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "pip_modes": {
+      "checks": [
+        "Pip uses his own contextual reply through Only when asked and his actual Talk menu, with independent remembered state and no cast portrait",
+        "Pip can select Silent through his settings entry, Talk closes quietly, and his journal menu remains usable without removing him"
+      ],
+      "rom_sha256": "1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "catalogue": {
+      "checks": [
+        "All 71 Pip authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Silas authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Kade authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Ashe authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Nico authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Riven authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Emi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Vera authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Lume authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Mochi authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once",
+        "All 71 Zuri authored replies match the authored wording through native interpreter fixtures; cast portraits match exact expressions and fully printed observations award EXP once"
+      ],
+      "rom_sha256": "1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    },
+    "kanto_furniture": {
+      "checks": [
+        "An accessible imported Kanto furniture tile uses its native-layout interaction and exact cast reply through A-button interaction"
+      ],
+      "rom_sha256": "1cb3c287d6f479b66111641699a783ea8d5b46add70295eb821c5bbc6943acd5",
+      "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+    }
+  },
+  "limitations": [
+    "Prepared native function/message/map fixtures, not a whole-game playthrough.",
+    "Lua helper exercised with documented mGBA API adapters and actual libretro core; desktop Scripting UI not directly operated.",
+    "Hall of Fame save path fixture had no Hall of Fame record buffer.",
+    "No guarantee against Windows hard power loss.",
+    "Only 71 authored situations; source inventory is not completed full-world coverage."
+  ]
+}

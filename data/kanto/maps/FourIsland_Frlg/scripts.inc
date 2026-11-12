@@ -122,8 +122,7 @@ FourIsland_EventScript_CheckOnOneMon::
 FourIsland_EventScript_CheckOnTwoMons::
 	special GetDaycareMonNicknames
 	msgbox DayCare_Text_YourMonsAreDoingFine
-	special SetDaycareCompatibilityString
-	special ShowFieldMessageStringVar4
+	special ShowDaycareCompatibilityMessage
 	waitmessage
 	waitbuttonpress
 	release

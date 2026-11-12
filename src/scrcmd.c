@@ -1691,7 +1691,6 @@ bool8 ScrCmd_message(struct ScriptContext *ctx)
 
     if (msg == NULL)
         msg = (const u8 *)ctx->data[0];
-    CompanionDialogue_RecordMessage(ctx, msg);
     ShowFieldMessage(msg);
     return FALSE;
 }

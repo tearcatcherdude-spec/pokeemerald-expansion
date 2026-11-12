@@ -1053,6 +1053,7 @@ gStdScripts_End::
 #if !IS_FRLG
 	.include "data/kanto/campaign.inc"
 	.include "data/kanto/living_scenes.inc"
+	.include "data/kanto/rare_encounters.inc"
 	.include "data/kanto/safari.inc"
 #endif
 
@@ -1789,4 +1790,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/bonds/journal.inc"
 	.include "data/scripts/companion_dialogue.inc"
 	.include "data/scripts/companion_context_exports.inc"
+	.include "data/scripts/companion_receipt_exports.inc"
 #endif

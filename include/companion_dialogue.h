@@ -5,6 +5,7 @@ struct ScriptContext;
 enum { COMPANION_DIALOGUE_NORMAL, COMPANION_DIALOGUE_ASK, COMPANION_DIALOGUE_SILENT };
 #define COMPANION_CONTEXT_CAPACITY 736
 #define COMPANION_VOICE_COUNT 11
+#define COMPANION_NO_CONTEXT 0xFFFF
 
 // Appended after Bond v1. Never resize/reorder the released PC or bond prefix.
 struct CompanionDialogueProgress
@@ -12,7 +13,7 @@ struct CompanionDialogueProgress
     u32 magic;
     u8 version;
     u8 mode;
-    u8 reserved[2];
+    u8 reserved[2]; // v2: LE count of contexts checked for legacy memory import.
     u8 spent[COMPANION_VOICE_COUNT][COMPANION_CONTEXT_CAPACITY / 8];
 };
 
@@ -21,6 +22,7 @@ u32 CompanionDialogue_GetMode(void);
 bool32 CompanionDialogue_SetMode(u32 mode);
 void CompanionDialogue_BeginInteraction(const u8 *script);
 void CompanionDialogue_RecordMessage(struct ScriptContext *ctx, const u8 *message);
+void CompanionDialogue_RecordNativeMessage(const u8 *message);
 bool32 CompanionDialogue_FinishInteraction(struct ScriptContext *ctx);
 void CompanionDialogue_AfterScript(void);
 bool32 CompanionDialogue_IsInteractionActive(void);
@@ -32,6 +34,7 @@ void Script_CompanionDialogueRestore(struct ScriptContext *ctx);
 void Script_CompanionDialogueSetMode(struct ScriptContext *ctx);
 void Script_CompanionDialogueBufferMode(struct ScriptContext *ctx);
 u32 CompanionDialogue_ContextForMessage(const u8 *message);
+bool32 CompanionDialogue_IsSystemReceipt(const u8 *message);
 bool32 CompanionDialogue_HasSpent(u32 voice, u32 context);
 
 #endif

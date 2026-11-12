@@ -321,6 +321,21 @@ bool32 Pip_HasHeard(const u8 *text)
     return TRUE;
 #endif
 }
+bool32 Pip_HasOfferedByVoice(const u8 *text, u32 voice)
+{
+#if FNPC_ENABLE_NPC_FOLLOWERS
+    u32 id = MemoryIndex(text);
+    if (voice > CAST_COUNT || id >= ARRAY_COUNT(sPipMemoryCatalogue))
+        return TRUE;
+    if (voice != 0)
+        return Cast_HasUsedBy(voice - 1, id);
+    if (gSaveBlock3Ptr->pipMemoryVersion != 1)
+        return gSaveBlock3Ptr->pipMemoryVersion != 0;
+    return ((gSaveBlock3Ptr->pipHeard[id / 8] | gSaveBlock3Ptr->pipOffered[id / 8]) & (1 << (id % 8))) != 0;
+#else
+    return TRUE;
+#endif
+}
 bool32 Pip_TrySay(const u8 *text)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS

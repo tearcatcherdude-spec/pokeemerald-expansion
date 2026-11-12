@@ -1,0 +1,482 @@
+[
+  {
+    "species": "BELDUM",
+    "map": "WatchViridian",
+    "level": 6,
+    "evs": [
+      252,
+      252,
+      0,
+      0,
+      0,
+      6
+    ],
+    "water": false,
+    "x": 18,
+    "y": 26,
+    "elevation": 3,
+    "approach": [
+      17,
+      26
+    ],
+    "behavior": 0,
+    "component_tiles": 800,
+    "index": 0,
+    "rare_index": 16,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_BELDUM",
+    "flag_id": 43248,
+    "local_id": "LOCALID_KANTO_RARE_BELDUM",
+    "object_id": 10,
+    "script": "KantoRare_BELDUM_Interact"
+  },
+  {
+    "species": "SHINX",
+    "map": "KantoRoute22",
+    "level": 5,
+    "evs": [
+      6,
+      252,
+      0,
+      252,
+      0,
+      0
+    ],
+    "water": false,
+    "x": 18,
+    "y": 16,
+    "elevation": 3,
+    "approach": [
+      17,
+      16
+    ],
+    "behavior": 0,
+    "component_tiles": 307,
+    "index": 1,
+    "rare_index": 17,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_SHINX",
+    "flag_id": 43249,
+    "local_id": "LOCALID_KANTO_RARE_SHINX",
+    "object_id": 2,
+    "script": "KantoRare_SHINX_Interact"
+  },
+  {
+    "species": "RIOLU",
+    "map": "KantoRoute4",
+    "level": 12,
+    "evs": [
+      6,
+      252,
+      0,
+      252,
+      0,
+      0
+    ],
+    "water": false,
+    "x": 40,
+    "y": 11,
+    "elevation": 3,
+    "approach": [
+      39,
+      11
+    ],
+    "behavior": 0,
+    "component_tiles": 473,
+    "index": 2,
+    "rare_index": 18,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_RIOLU",
+    "flag_id": 43250,
+    "local_id": "LOCALID_KANTO_RARE_RIOLU",
+    "object_id": 8,
+    "script": "KantoRare_RIOLU_Interact"
+  },
+  {
+    "species": "MAREEP",
+    "map": "KantoRoute24",
+    "level": 14,
+    "evs": [
+      252,
+      0,
+      0,
+      6,
+      252,
+      0
+    ],
+    "water": false,
+    "x": 4,
+    "y": 26,
+    "elevation": 3,
+    "approach": [
+      3,
+      26
+    ],
+    "behavior": 2,
+    "component_tiles": 209,
+    "index": 3,
+    "rare_index": 19,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_MAREEP",
+    "flag_id": 43251,
+    "local_id": "LOCALID_KANTO_RARE_MAREEP",
+    "object_id": 9,
+    "script": "KantoRare_MAREEP_Interact"
+  },
+  {
+    "species": "BUNEARY",
+    "map": "KantoRoute5",
+    "level": 15,
+    "evs": [
+      6,
+      252,
+      0,
+      252,
+      0,
+      0
+    ],
+    "water": false,
+    "x": 18,
+    "y": 26,
+    "elevation": 3,
+    "approach": [
+      17,
+      26
+    ],
+    "behavior": 0,
+    "component_tiles": 304,
+    "index": 4,
+    "rare_index": 20,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_BUNEARY",
+    "flag_id": 43252,
+    "local_id": "LOCALID_KANTO_RARE_BUNEARY",
+    "object_id": 1,
+    "script": "KantoRare_BUNEARY_Interact"
+  },
+  {
+    "species": "ESPEON",
+    "map": "KantoRoute8",
+    "level": 20,
+    "evs": [
+      6,
+      0,
+      0,
+      252,
+      252,
+      0
+    ],
+    "water": false,
+    "x": 27,
+    "y": 13,
+    "elevation": 3,
+    "approach": [
+      26,
+      13
+    ],
+    "behavior": 0,
+    "component_tiles": 660,
+    "index": 5,
+    "rare_index": 21,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_ESPEON",
+    "flag_id": 43253,
+    "local_id": "LOCALID_KANTO_RARE_ESPEON",
+    "object_id": 16,
+    "script": "KantoRare_ESPEON_Interact"
+  },
+  {
+    "species": "UMBREON",
+    "map": "KantoRoute9",
+    "level": 18,
+    "evs": [
+      252,
+      0,
+      128,
+      0,
+      0,
+      130
+    ],
+    "water": false,
+    "x": 27,
+    "y": 13,
+    "elevation": 3,
+    "approach": [
+      26,
+      13
+    ],
+    "behavior": 0,
+    "component_tiles": 508,
+    "index": 6,
+    "rare_index": 22,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_UMBREON",
+    "flag_id": 43254,
+    "local_id": "LOCALID_KANTO_RARE_UMBREON",
+    "object_id": 13,
+    "script": "KantoRare_UMBREON_Interact"
+  },
+  {
+    "species": "LARVITAR",
+    "map": "KantoRoute10",
+    "level": 17,
+    "evs": [
+      6,
+      252,
+      0,
+      252,
+      0,
+      0
+    ],
+    "water": false,
+    "x": 8,
+    "y": 29,
+    "elevation": 3,
+    "approach": [
+      7,
+      29
+    ],
+    "behavior": 0,
+    "component_tiles": 313,
+    "index": 7,
+    "rare_index": 23,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_LARVITAR",
+    "flag_id": 43255,
+    "local_id": "LOCALID_KANTO_RARE_LARVITAR",
+    "object_id": 11,
+    "script": "KantoRare_LARVITAR_Interact"
+  },
+  {
+    "species": "HERACROSS",
+    "map": "KantoRoute11",
+    "level": 17,
+    "evs": [
+      6,
+      252,
+      0,
+      252,
+      0,
+      0
+    ],
+    "water": false,
+    "x": 27,
+    "y": 13,
+    "elevation": 3,
+    "approach": [
+      26,
+      13
+    ],
+    "behavior": 2,
+    "component_tiles": 815,
+    "index": 8,
+    "rare_index": 24,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_HERACROSS",
+    "flag_id": 43256,
+    "local_id": "LOCALID_KANTO_RARE_HERACROSS",
+    "object_id": 14,
+    "script": "KantoRare_HERACROSS_Interact"
+  },
+  {
+    "species": "DRATINI",
+    "map": "KantoRoute12",
+    "level": 27,
+    "evs": [
+      6,
+      252,
+      0,
+      252,
+      0,
+      0
+    ],
+    "water": false,
+    "x": 9,
+    "y": 64,
+    "elevation": 3,
+    "approach": [
+      8,
+      64
+    ],
+    "behavior": 0,
+    "component_tiles": 245,
+    "index": 9,
+    "rare_index": 25,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_DRATINI",
+    "flag_id": 43257,
+    "local_id": "LOCALID_KANTO_RARE_DRATINI",
+    "object_id": 15,
+    "script": "KantoRare_DRATINI_Interact"
+  },
+  {
+    "species": "MISDREAVUS",
+    "map": "KantoLavenderTown",
+    "level": 22,
+    "evs": [
+      6,
+      0,
+      0,
+      252,
+      252,
+      0
+    ],
+    "water": false,
+    "x": 9,
+    "y": 13,
+    "elevation": 3,
+    "approach": [
+      8,
+      13
+    ],
+    "behavior": 0,
+    "component_tiles": 222,
+    "index": 10,
+    "rare_index": 26,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_MISDREAVUS",
+    "flag_id": 43258,
+    "local_id": "LOCALID_KANTO_RARE_MISDREAVUS",
+    "object_id": 6,
+    "script": "KantoRare_MISDREAVUS_Interact"
+  },
+  {
+    "species": "ABSOL",
+    "map": "KantoRoute15",
+    "level": 30,
+    "evs": [
+      6,
+      252,
+      0,
+      252,
+      0,
+      0
+    ],
+    "water": false,
+    "x": 27,
+    "y": 13,
+    "elevation": 3,
+    "approach": [
+      26,
+      13
+    ],
+    "behavior": 0,
+    "component_tiles": 262,
+    "index": 11,
+    "rare_index": 27,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_ABSOL",
+    "flag_id": 43259,
+    "local_id": "LOCALID_KANTO_RARE_ABSOL",
+    "object_id": 17,
+    "script": "KantoRare_ABSOL_Interact"
+  },
+  {
+    "species": "FEEBAS",
+    "map": "KantoRoute21_North",
+    "level": 32,
+    "evs": [
+      252,
+      0,
+      252,
+      0,
+      0,
+      6
+    ],
+    "water": true,
+    "x": 9,
+    "y": 33,
+    "elevation": 1,
+    "approach": [
+      8,
+      33
+    ],
+    "behavior": 21,
+    "component_tiles": 547,
+    "index": 12,
+    "rare_index": 28,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_FEEBAS",
+    "flag_id": 43260,
+    "local_id": "LOCALID_KANTO_RARE_FEEBAS",
+    "object_id": 7,
+    "script": "KantoRare_FEEBAS_Interact"
+  },
+  {
+    "species": "ROTOM",
+    "map": "KantoPowerPlant",
+    "level": 33,
+    "evs": [
+      6,
+      0,
+      0,
+      252,
+      252,
+      0
+    ],
+    "water": false,
+    "x": 18,
+    "y": 26,
+    "elevation": 3,
+    "approach": [
+      17,
+      26
+    ],
+    "behavior": 8,
+    "component_tiles": 950,
+    "index": 13,
+    "rare_index": 29,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_ROTOM",
+    "flag_id": 43261,
+    "local_id": "LOCALID_KANTO_RARE_ROTOM",
+    "object_id": 9,
+    "script": "KantoRare_ROTOM_Interact"
+  },
+  {
+    "species": "GIBLE",
+    "map": "KantoRoute18",
+    "level": 29,
+    "evs": [
+      6,
+      252,
+      0,
+      252,
+      0,
+      0
+    ],
+    "water": false,
+    "x": 22,
+    "y": 10,
+    "elevation": 3,
+    "approach": [
+      21,
+      10
+    ],
+    "behavior": 0,
+    "component_tiles": 180,
+    "index": 14,
+    "rare_index": 30,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_GIBLE",
+    "flag_id": 43262,
+    "local_id": "LOCALID_KANTO_RARE_GIBLE",
+    "object_id": 4,
+    "script": "KantoRare_GIBLE_Interact"
+  },
+  {
+    "species": "BAGON",
+    "map": "KantoCinnabarIsland",
+    "level": 34,
+    "evs": [
+      6,
+      252,
+      0,
+      252,
+      0,
+      0
+    ],
+    "water": false,
+    "x": 9,
+    "y": 13,
+    "elevation": 3,
+    "approach": [
+      8,
+      13
+    ],
+    "behavior": 0,
+    "component_tiles": 142,
+    "index": 15,
+    "rare_index": 31,
+    "flag": "KANTO_FLAG_CAUGHT_RARE_BAGON",
+    "flag_id": 43263,
+    "local_id": "LOCALID_KANTO_RARE_BAGON",
+    "object_id": 5,
+    "script": "KantoRare_BAGON_Interact"
+  }
+]

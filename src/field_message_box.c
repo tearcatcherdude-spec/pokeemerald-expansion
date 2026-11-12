@@ -1,4 +1,5 @@
 #include "global.h"
+#include "companion_dialogue.h"
 #include "cast.h"
 #include "bonds.h"
 #include "menu.h"
@@ -78,6 +79,7 @@ bool8 ShowFieldMessage(const u8 *str)
 {
     if (sFieldMessageBoxMode != FIELD_MESSAGE_BOX_HIDDEN)
         return FALSE;
+    CompanionDialogue_RecordNativeMessage(str);
     ExpandStringAndStartDrawFieldMessage(str, TRUE);
     sFieldMessageBoxMode = FIELD_MESSAGE_BOX_NORMAL;
     return TRUE;
@@ -96,6 +98,7 @@ bool8 ShowPokenavFieldMessage(const u8 *str)
 {
     if (sFieldMessageBoxMode != FIELD_MESSAGE_BOX_HIDDEN)
         return FALSE;
+    CompanionDialogue_RecordNativeMessage(str);
     StringExpandPlaceholders(gStringVar4, str);
     CreateTask(Task_HidePokenavMessageWhenDone, 0);
     StartMatchCallFromScript(str);
@@ -107,6 +110,7 @@ bool8 ShowFieldAutoScrollMessage(const u8 *str)
 {
     if (sFieldMessageBoxMode != FIELD_MESSAGE_BOX_HIDDEN)
         return FALSE;
+    CompanionDialogue_RecordNativeMessage(str);
     sFieldMessageBoxMode = FIELD_MESSAGE_BOX_AUTO_SCROLL;
     ExpandStringAndStartDrawFieldMessage(str, FALSE);
     return TRUE;
@@ -114,6 +118,7 @@ bool8 ShowFieldAutoScrollMessage(const u8 *str)
 
 static bool8 UNUSED ForceShowFieldAutoScrollMessage(const u8 *str)
 {
+    CompanionDialogue_RecordNativeMessage(str);
     sFieldMessageBoxMode = FIELD_MESSAGE_BOX_AUTO_SCROLL;
     ExpandStringAndStartDrawFieldMessage(str, TRUE);
     return TRUE;
@@ -125,6 +130,9 @@ bool8 ShowFieldMessageFromBuffer(void)
 {
     if (sFieldMessageBoxMode != FIELD_MESSAGE_BOX_HIDDEN)
         return FALSE;
+    // Dynamically composed text has no reviewed static source identity. It must
+    // invalidate an earlier candidate, never inherit that candidate's reply.
+    CompanionDialogue_RecordNativeMessage(NULL);
     sFieldMessageBoxMode = FIELD_MESSAGE_BOX_NORMAL;
     StartDrawFieldMessage();
     return TRUE;

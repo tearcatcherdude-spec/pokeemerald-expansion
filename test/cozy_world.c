@@ -6,14 +6,14 @@
 #include "test/test.h"
 
 #if !IS_FRLG
-TEST("Living Hoenn rare encounters have perfect IVs and legal tailored full EVs")
+TEST("Hoenn and Kanto rare encounters have perfect IVs and legal tailored full EVs")
 {
     struct Pokemon oldEnemy[PARTY_SIZE];
     u8 oldCount = gPartiesCount[B_TRAINER_OPPONENT_A];
     memcpy(oldEnemy, gParties[B_TRAINER_OPPONENT_A], sizeof(oldEnemy));
     static const u8 ivFields[] = {MON_DATA_HP_IV, MON_DATA_ATK_IV, MON_DATA_DEF_IV, MON_DATA_SPEED_IV, MON_DATA_SPATK_IV, MON_DATA_SPDEF_IV};
     static const u8 evFields[] = {MON_DATA_HP_EV, MON_DATA_ATK_EV, MON_DATA_DEF_EV, MON_DATA_SPEED_EV, MON_DATA_SPATK_EV, MON_DATA_SPDEF_EV};
-    EXPECT_EQ(CozyWorld_RareCount(), 16);
+    EXPECT_EQ(CozyWorld_RareCount(), 32);
     for (u32 i = 0; i < CozyWorld_RareCount(); i++)
     {
         const struct CozyRareDefinition *entry = CozyWorld_GetRare(i);

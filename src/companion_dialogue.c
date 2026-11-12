@@ -11,7 +11,7 @@
 #if FNPC_ENABLE_NPC_FOLLOWERS && !IS_FRLG
 
 #define DIALOGUE_MAGIC 0x474C4443
-#define NO_CONTEXT COMPANION_CONTEXT_CAPACITY
+#define NO_CONTEXT COMPANION_NO_CONTEXT
 
 struct ContextReply { const u8 *text; u8 expression; };
 struct ContextMessage { const u8 *message; u16 context; };
@@ -19,11 +19,47 @@ struct ContextMessage { const u8 *message; u16 context; };
 
 extern const u8 Cozy_EventScript_Companion[], Cast_EventScript_Companion[];
 extern const u8 CompanionDialogue_EventScript_React[];
+extern const u8 gText_ObtainedTheItem[];
+extern const u8 gText_ObtainedTheItems[];
+extern const u8 gText_PutItemInPocket[];
+extern const u8 gText_PlayerPutItemInBag[];
+extern const u8 gText_ObtainedTheDecor[];
+extern const u8 gText_TheDecorWasTransferredToThePC[];
+extern const u8 gText_PlayerFoundOneItem[];
+extern const u8 gText_PlayerFoundItems[];
+extern const u8 gText_RegisteredTrainerinPokeNav[];
+extern const u8 PewterCity_Museum_1F_Text_ReceivedOldAmberFromMan[];
+extern const u8 CeladonCity_Restaurant_Text_ReceivedCoinCaseFromMan[];
+extern const u8 CeladonCity_GameCorner_Text_Received10CoinsFromMan[];
+extern const u8 CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy[];
+extern const u8 CeladonCity_GameCorner_Text_Received20CoinsFromMan[];
+extern const u8 TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy[];
+extern const u8 RustboroCity_Gym_Text_RegisteredRoxanne[];
+extern const u8 DewfordTown_Gym_Text_RegisteredBrawly[];
+extern const u8 MauvilleCity_Gym_Text_RegisteredWattson[];
+extern const u8 LavaridgeTown_Gym_1F_Text_RegisteredFlannery[];
+extern const u8 FortreeCity_Gym_Text_RegisteredWinona[];
+extern const u8 MossdeepCity_Gym_Text_RegisteredTateAndLiza[];
+extern const u8 SootopolisCity_Gym_1F_Text_RegisteredJuan[];
+
+extern const u8 PlayersHouse_1F_Text_RegisteredMom[];
+extern const u8 MatchCall_Text_RegisteredBirch[];
+extern const u8 FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden[];
+
+extern const u8 FourIsland_House2_Text_HoFStickerApplied[];
+extern const u8 FourIsland_House2_Text_EggStickerApplied[];
+extern const u8 FourIsland_House2_Text_VictoryStickerApplied[];
+
+extern const u8 SlateportCity_Text_ReceivedEffortRibbon[];
+extern const u8 SlateportCity_Text_PutEffortRibbonOnMon[];
+
+extern const u8 LavaridgeTown_Text_ReceivedTheEgg[];
 
 static EWRAM_DATA bool8 sActive = FALSE;
 static EWRAM_DATA bool8 sOffering = FALSE;
 static EWRAM_DATA bool8 sFinishPending = FALSE;
 static EWRAM_DATA bool8 sHasRecent = FALSE;
+static EWRAM_DATA bool8 sSawMessage = FALSE;
 static EWRAM_DATA u8 sGroup = 0, sMap = 0, sVoice = 0;
 static EWRAM_DATA u16 sContext = 0; // ResetSession installs the sentinel.
 static EWRAM_DATA const u8 *sMessage = NULL;
@@ -41,6 +77,7 @@ static struct CompanionDialogueProgress *Progress(void)
 void CompanionDialogue_ResetSession(void)
 {
     sActive = sOffering = sHasRecent = sFinishPending = FALSE;
+    sSawMessage = FALSE;
     sContext = NO_CONTEXT;
     sMessage = sLegacy = NULL;
 }
@@ -51,7 +88,10 @@ void CompanionDialogue_Reset(void)
     {
         memset(p, 0, sizeof(*p));
         p->magic = DIALOGUE_MAGIC;
-        p->version = 1;
+        p->version = 2;
+        u32 count = min(ARRAY_COUNT(sContextReplies), COMPANION_CONTEXT_CAPACITY);
+        p->reserved[0] = count;
+        p->reserved[1] = count >> 8;
     }
     CompanionDialogue_ResetSession();
 }
@@ -63,7 +103,33 @@ static void EnsureInitialized(void)
         // Initialize only the appended suffix, never the released history.
         memset(p, 0, sizeof(*p));
         p->magic = DIALOGUE_MAGIC;
-        p->version = 1;
+        p->version = 2;
+    }
+    if (p != NULL && p->version <= 2)
+    {
+        // Import released object history once for each appended context. New
+        // observations thereafter spend their OWN context, not a broad legacy
+        // category shared by several different object descriptions.
+        u32 first = p->reserved[0] | (p->reserved[1] << 8);
+        u32 limit = min(ARRAY_COUNT(sContextReplies), COMPANION_CONTEXT_CAPACITY);
+        if (first < limit)
+        {
+            for (u32 i = 0; i < ARRAY_COUNT(sContextMessages); i++)
+            {
+                u32 id = sContextMessages[i].context;
+                if (id >= first && id < limit)
+                {
+                    const u8 *legacy = Pip_GetExactObjectReaction(sContextMessages[i].message);
+                    if (legacy != NULL)
+                        for (u32 voice = 0; voice < COMPANION_VOICE_COUNT; voice++)
+                            if (Pip_HasOfferedByVoice(legacy, voice))
+                                p->spent[voice][id / 8] |= 1 << (id % 8);
+                }
+            }
+            p->reserved[0] = limit;
+            p->reserved[1] = limit >> 8;
+        }
+        p->version = 2;
     }
 }
 u32 CompanionDialogue_GetMode(void)
@@ -103,13 +169,64 @@ void CompanionDialogue_BeginInteraction(const u8 *script)
     sMap = gSaveBlock1Ptr->location.mapNum;
     sVoice = Voice();
 }
+bool32 CompanionDialogue_IsSystemReceipt(const u8 *message)
+{
+    // These are success notifications, not a new person speaking. In
+    // particular, a bag-full error is NOT a receipt and must invalidate an
+    // earlier gift offer rather than let us react as though it succeeded.
+    static const u8 *const receipts[] = {
+        gText_ObtainedTheItem, gText_ObtainedTheItems, gText_PutItemInPocket,
+        gText_PlayerPutItemInBag, gText_ObtainedTheDecor,
+        gText_TheDecorWasTransferredToThePC, gText_PlayerFoundOneItem,
+        gText_PlayerFoundItems, gText_RegisteredTrainerinPokeNav,
+        // Imported custom success notices have the same role as the generic
+        // receipts. Their callers check space/coin capacity before displaying
+        // them; failure messages remain ordinary candidate-invalidating text.
+        PewterCity_Museum_1F_Text_ReceivedOldAmberFromMan,
+        CeladonCity_Restaurant_Text_ReceivedCoinCaseFromMan,
+        CeladonCity_GameCorner_Text_Received10CoinsFromMan,
+        CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy,
+        CeladonCity_GameCorner_Text_Received20CoinsFromMan,
+        TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy,
+        RustboroCity_Gym_Text_RegisteredRoxanne,
+        DewfordTown_Gym_Text_RegisteredBrawly,
+        MauvilleCity_Gym_Text_RegisteredWattson,
+        LavaridgeTown_Gym_1F_Text_RegisteredFlannery,
+        FortreeCity_Gym_Text_RegisteredWinona,
+        MossdeepCity_Gym_Text_RegisteredTateAndLiza,
+        SootopolisCity_Gym_1F_Text_RegisteredJuan,
+        PlayersHouse_1F_Text_RegisteredMom,
+        MatchCall_Text_RegisteredBirch,
+        FuchsiaCity_WardensHouse_Text_ReceivedHM04FromWarden,
+        FourIsland_House2_Text_HoFStickerApplied,
+        FourIsland_House2_Text_EggStickerApplied,
+        FourIsland_House2_Text_VictoryStickerApplied,
+        SlateportCity_Text_ReceivedEffortRibbon,
+        SlateportCity_Text_PutEffortRibbonOnMon,
+        LavaridgeTown_Text_ReceivedTheEgg,
+    };
+    for (u32 i = 0; i < ARRAY_COUNT(receipts); i++)
+        if (message == receipts[i])
+            return TRUE;
+    return FALSE;
+}
 void CompanionDialogue_RecordMessage(struct ScriptContext *ctx, const u8 *message)
 {
-    if (sActive && !sOffering && ScriptContext_IsGlobal(ctx))
+    if (ScriptContext_IsGlobal(ctx))
+        CompanionDialogue_RecordNativeMessage(message);
+}
+void CompanionDialogue_RecordNativeMessage(const u8 *message)
+{
+    if (sActive && !sOffering)
     {
-        // Always replace, including unknown/dynamic messages: do not react to
-        // an earlier branch after the NPC has gone on to say something else.
-        sMessage = message;
+        // A standalone pickup can speak for itself. Once any NPC/dynamic text
+        // has appeared, even unknown text, receipts must preserve that subject
+        // rather than turn an unreviewed conversation into a generic gift line.
+        if (!CompanionDialogue_IsSystemReceipt(message) || !sSawMessage)
+        {
+            sMessage = message;
+            sSawMessage = TRUE;
+        }
     }
 }
 u32 CompanionDialogue_ContextForMessage(const u8 *message)
@@ -123,9 +240,16 @@ u32 CompanionDialogue_ContextForMessage(const u8 *message)
 bool32 CompanionDialogue_HasSpent(u32 voice, u32 context)
 {
     EnsureInitialized();
-    return voice >= COMPANION_VOICE_COUNT || context >= COMPANION_CONTEXT_CAPACITY
-        || Progress() == NULL
-        || (Progress()->spent[voice][context / 8] & (1 << (context % 8))) != 0;
+    if (voice >= COMPANION_VOICE_COUNT || Progress() == NULL || Progress()->version > 2)
+        return TRUE;
+    if (context >= COMPANION_CONTEXT_CAPACITY)
+    {
+        if (CompanionHistory_HasSpent(voice, context))
+            return TRUE;
+    }
+    else if ((Progress()->spent[voice][context / 8] & (1 << (context % 8))) != 0)
+        return TRUE;
+    return FALSE;
 }
 static bool32 SameSituation(void)
 {
@@ -141,7 +265,13 @@ static bool32 Offer(void)
     {
         if (CompanionDialogue_HasSpent(sVoice, sContext))
             return FALSE;
-        Progress()->spent[sVoice][sContext / 8] |= 1 << (sContext % 8);
+        if (sContext >= COMPANION_CONTEXT_CAPACITY)
+        {
+            if (!CompanionHistory_Spend(sVoice, sContext))
+                return FALSE;
+        }
+        else
+            Progress()->spent[sVoice][sContext / 8] |= 1 << (sContext % 8);
         return TRUE;
     }
     return sLegacy != NULL && Pip_TryOfferExact(sLegacy);
@@ -155,6 +285,7 @@ static bool32 Say(void)
         const struct ContextReply *reply = &sContextReplies[sContext][sVoice];
         if (reply->text == NULL)
             return FALSE;
+        Cast_ClearPending(); // The new text supersedes any legacy offer payload.
         // ShowPortrait cancels old pending EXP; queue this observation after it.
         if (sVoice != 0)
             Cast_ShowPortrait(sVoice - 1, reply->expression);
@@ -251,6 +382,7 @@ u32 CompanionDialogue_GetMode(void) { return COMPANION_DIALOGUE_NORMAL; }
 bool32 CompanionDialogue_SetMode(u32 mode) { return FALSE; }
 void CompanionDialogue_BeginInteraction(const u8 *script) {}
 void CompanionDialogue_RecordMessage(struct ScriptContext *ctx, const u8 *message) {}
+void CompanionDialogue_RecordNativeMessage(const u8 *message) {}
 bool32 CompanionDialogue_FinishInteraction(struct ScriptContext *ctx) { return FALSE; }
 void CompanionDialogue_AfterScript(void) {}
 bool32 CompanionDialogue_IsInteractionActive(void) { return FALSE; }
@@ -260,6 +392,7 @@ void Script_CompanionDialogueChoose(struct ScriptContext *ctx) {}
 void Script_CompanionDialogueRestore(struct ScriptContext *ctx) {}
 void Script_CompanionDialogueSetMode(struct ScriptContext *ctx) {}
 void Script_CompanionDialogueBufferMode(struct ScriptContext *ctx) {}
-u32 CompanionDialogue_ContextForMessage(const u8 *message) { return COMPANION_CONTEXT_CAPACITY; }
+u32 CompanionDialogue_ContextForMessage(const u8 *message) { return COMPANION_NO_CONTEXT; }
+bool32 CompanionDialogue_IsSystemReceipt(const u8 *message) { return FALSE; }
 bool32 CompanionDialogue_HasSpent(u32 voice, u32 context) { return TRUE; }
 #endif

@@ -5,6 +5,7 @@ struct ScriptContext;
 
 bool32 Pip_IsFollowing(void);
 bool32 Pip_HasHeard(const u8 *text);
+bool32 Pip_HasOfferedByVoice(const u8 *text, u32 voice);
 bool32 Pip_TrySay(const u8 *text);
 const u8 *Pip_GetExactObjectReaction(const u8 *original);
 bool32 Pip_TryOfferExact(const u8 *text);

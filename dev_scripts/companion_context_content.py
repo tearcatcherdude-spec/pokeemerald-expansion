@@ -620,3 +620,173 @@ sad~A threat is meant to shrink your choices. We can take a moment and look for 
 annoyed~You do not deserve that. Let us keep each other safe before worrying about looking brave.|
 annoyed~They are trying to decide who belongs in this street. We should not have to face that alone.
 ''')
+
+# Whole-game expansion; preserve the released first 47 IDs above.
+from companion_world_objects import ROWS as WORLD_OBJECT_ROWS
+ROWS.extend(WORLD_OBJECT_ROWS)
+from companion_world_people import ROWS as WORLD_PEOPLE_ROWS
+ROWS.extend(WORLD_PEOPLE_ROWS)
+from companion_hoenn_people import ROWS as HOENN_PEOPLE_ROWS
+ROWS.extend(HOENN_PEOPLE_ROWS)
+from companion_kanto_people import ROWS as KANTO_PEOPLE_ROWS
+ROWS.extend(KANTO_PEOPLE_ROWS)
+from companion_route_people import ROWS as ROUTE_PEOPLE_ROWS
+ROWS.extend(ROUTE_PEOPLE_ROWS)
+from companion_kanto_interiors_routes import ROWS as KANTO_INTERIOR_ROUTE_ROWS
+ROWS.extend(KANTO_INTERIOR_ROUTE_ROWS)
+from companion_gym_people import ROWS as GYM_PEOPLE_ROWS
+ROWS.extend(GYM_PEOPLE_ROWS)
+from companion_hoenn_interiors import ROWS as HOENN_INTERIOR_ROWS
+ROWS.extend(HOENN_INTERIOR_ROWS)
+from companion_gym_people_extra import ROWS as GYM_EXTRA_ROWS
+ROWS.extend(GYM_EXTRA_ROWS)
+from companion_routes_105_119 import ROWS as HOENN_ROUTE_ROWS
+ROWS.extend(HOENN_ROUTE_ROWS)
+from companion_kanto_interiors_routes_extra import ROWS as KANTO_INTERIOR_ROUTE_EXTRA_ROWS
+ROWS.extend(KANTO_INTERIOR_ROUTE_EXTRA_ROWS)
+from companion_route_registrations import ROWS as ROUTE_REGISTRATION_ROWS
+ROWS.extend(ROUTE_REGISTRATION_ROWS)
+from companion_hoenn_interiors_extra import ROWS as HOENN_INTERIOR_EXTRA_ROWS
+ROWS.extend(HOENN_INTERIOR_EXTRA_ROWS)
+from companion_kanto_gym_people import ROWS as KANTO_GYM_ROWS
+ROWS.extend(KANTO_GYM_ROWS)
+from companion_kanto_interiors_final import ROWS as KANTO_INTERIOR_FINAL_ROWS
+ROWS.extend(KANTO_INTERIOR_FINAL_ROWS)
+from companion_shared_objects import ROWS as SHARED_OBJECT_ROWS
+ROWS.extend(SHARED_OBJECT_ROWS)
+from companion_routes_120_134 import ROWS as HOENN_LATE_ROUTE_ROWS
+ROWS.extend(HOENN_LATE_ROUTE_ROWS)
+from companion_berry_objects import ROWS as BERRY_OBJECT_ROWS
+ROWS.extend(BERRY_OBJECT_ROWS)
+from companion_hoenn_interiors_final import ROWS as HOENN_INTERIOR_FINAL_ROWS
+ROWS.extend(HOENN_INTERIOR_FINAL_ROWS)
+from companion_kanto_interiors_remaining import ROWS as KANTO_INTERIOR_REMAINING_ROWS
+ROWS.extend(KANTO_INTERIOR_REMAINING_ROWS)
+from companion_hoenn_dungeon_people import ROWS as HOENN_DUNGEON_ROWS
+ROWS.extend(HOENN_DUNGEON_ROWS)
+from companion_town_signs import ROWS as TOWN_SIGN_ROWS
+ROWS.extend(TOWN_SIGN_ROWS)
+from companion_kanto_dungeon_people import ROWS as KANTO_DUNGEON_ROWS
+ROWS.extend(KANTO_DUNGEON_ROWS)
+from companion_hoenn_interiors_remaining import ROWS as HOENN_INTERIOR_REMAINING_ROWS
+ROWS.extend(HOENN_INTERIOR_REMAINING_ROWS)
+from companion_hoenn_dungeon_civilians import ROWS as HOENN_DUNGEON_CIVILIAN_ROWS
+ROWS.extend(HOENN_DUNGEON_CIVILIAN_ROWS)
+from companion_route_team_refusals import ROWS as ROUTE_TEAM_REFUSAL_ROWS
+ROWS.extend(ROUTE_TEAM_REFUSAL_ROWS)
+from companion_item_objects import ROWS as ITEM_OBJECT_ROWS
+ROWS.extend(ITEM_OBJECT_ROWS)
+from companion_hoenn_field_people import ROWS as HOENN_FIELD_ROWS
+ROWS.extend(HOENN_FIELD_ROWS)
+from companion_kanto_ship_and_field import ROWS as KANTO_SHIP_FIELD_ROWS
+ROWS.extend(KANTO_SHIP_FIELD_ROWS)
+from companion_kanto_signs import ROWS as KANTO_SIGN_ROWS
+ROWS.extend(KANTO_SIGN_ROWS)
+from companion_sevii_one_three import ROWS as SEVII_ONE_THREE_ROWS
+ROWS.extend(SEVII_ONE_THREE_ROWS)
+from companion_hoenn_postgame_people import ROWS as HOENN_POSTGAME_ROWS
+ROWS.extend(HOENN_POSTGAME_ROWS)
+from companion_kanto_signs_extra import ROWS as KANTO_SIGN_EXTRA_ROWS
+ROWS.extend(KANTO_SIGN_EXTRA_ROWS)
+from companion_kanto_gift_followups import ROWS as KANTO_GIFT_FOLLOWUP_ROWS
+ROWS.extend(KANTO_GIFT_FOLLOWUP_ROWS)
+from companion_sevii_four_seven import ROWS as SEVII_FOUR_FIVE_ROWS
+ROWS.extend(SEVII_FOUR_FIVE_ROWS)
+from companion_hoenn_town_field_people import ROWS as HOENN_TOWN_FIELD_ROWS
+ROWS.extend(HOENN_TOWN_FIELD_ROWS)
+from companion_hoenn_postgame_remaining import ROWS as HOENN_POSTGAME_REMAINING_ROWS
+ROWS.extend(HOENN_POSTGAME_REMAINING_ROWS)
+from companion_hoenn_battle_endpoints import ROWS as HOENN_BATTLE_ENDPOINT_ROWS
+ROWS.extend(HOENN_BATTLE_ENDPOINT_ROWS)
+from companion_hoenn_partner_rejections import ROWS as HOENN_PARTNER_REJECTION_ROWS
+ROWS.extend(HOENN_PARTNER_REJECTION_ROWS)
+from companion_sevii_six_seven import ROWS as SEVII_SIX_SEVEN_ROWS
+ROWS.extend(SEVII_SIX_SEVEN_ROWS)
+from companion_kanto_pair_endings import ROWS as KANTO_PAIR_ENDING_ROWS
+ROWS.extend(KANTO_PAIR_ENDING_ROWS)
+from companion_sevii_meadow_followups import ROWS as SEVII_MEADOW_FOLLOWUP_ROWS
+ROWS.extend(SEVII_MEADOW_FOLLOWUP_ROWS)
+from companion_hoenn_postgame_audit import ROWS as HOENN_POSTGAME_AUDIT_ROWS
+ROWS.extend(HOENN_POSTGAME_AUDIT_ROWS)
+
+from companion_hoenn_final_audit import ROWS as HOENN_FINAL_AUDIT_ROWS
+ROWS.extend(HOENN_FINAL_AUDIT_ROWS)
+
+from companion_kanto_objects import ROWS as KANTO_OBJECT_ROWS
+ROWS.extend(KANTO_OBJECT_ROWS)
+
+from companion_kanto_final_audit import ROWS as KANTO_FINAL_AUDIT_ROWS
+ROWS.extend(KANTO_FINAL_AUDIT_ROWS)
+
+from companion_kanto_objects_extra import ROWS as KANTO_OBJECT_EXTRA_ROWS
+ROWS.extend(KANTO_OBJECT_EXTRA_ROWS)
+
+from companion_kanto_final_audit_extra import ROWS as KANTO_FINAL_AUDIT_EXTRA_ROWS
+ROWS.extend(KANTO_FINAL_AUDIT_EXTRA_ROWS)
+
+from companion_hoenn_objects import ROWS as HOENN_OBJECT_ROWS
+ROWS.extend(HOENN_OBJECT_ROWS)
+
+from companion_hoenn_final_services import ROWS as HOENN_FINAL_SERVICE_ROWS
+ROWS.extend(HOENN_FINAL_SERVICE_ROWS)
+
+from companion_kanto_lore_objects import ROWS as KANTO_LORE_OBJECT_ROWS
+ROWS.extend(KANTO_LORE_OBJECT_ROWS)
+from companion_kanto_service_endings import ROWS as KANTO_SERVICE_ENDING_ROWS
+ROWS.extend(KANTO_SERVICE_ENDING_ROWS)
+
+from companion_kanto_actor_followups import ROWS as KANTO_ACTOR_FOLLOWUP_ROWS
+ROWS.extend(KANTO_ACTOR_FOLLOWUP_ROWS)
+
+from companion_hoenn_link_endings import ROWS as HOENN_LINK_ENDING_ROWS
+ROWS.extend(HOENN_LINK_ENDING_ROWS)
+from companion_kanto_sticker_followups import ROWS as KANTO_STICKER_FOLLOWUP_ROWS
+ROWS.extend(KANTO_STICKER_FOLLOWUP_ROWS)
+
+from companion_hoenn_apprentice import ROWS as HOENN_APPRENTICE_ROWS
+ROWS.extend(HOENN_APPRENTICE_ROWS)
+
+from companion_kanto_journals import ROWS as KANTO_JOURNAL_ROWS
+ROWS.extend(KANTO_JOURNAL_ROWS)
+
+from companion_hoenn_secret_base_postgame import ROWS as HOENN_SECRET_BASE_POSTGAME_ROWS
+ROWS.extend(HOENN_SECRET_BASE_POSTGAME_ROWS)
+from companion_hoenn_callback_finals import ROWS as HOENN_CALLBACK_FINAL_ROWS
+ROWS.extend(HOENN_CALLBACK_FINAL_ROWS)
+
+from companion_kanto_personal_objects import ROWS as KANTO_PERSONAL_OBJECT_ROWS
+ROWS.extend(KANTO_PERSONAL_OBJECT_ROWS)
+
+# Retired IDs remain reserved; their source/wording is retained for audit only.
+# This scientist always follows the first remark with IFoundThisPlace.
+for row in ROWS:
+    if row['key'] == 'sevii67_ruin_blocked_scientist':
+        row['retired_sources'] = row['labels']
+        row['labels'] = []
+        row['retired'] = 'Intermediate speech, always superseded by SixIsland_RuinValley_Text_IFoundThisPlace.'
+
+from companion_hoenn_last_gifts import ROWS as HOENN_LAST_GIFT_ROWS
+ROWS.extend(HOENN_LAST_GIFT_ROWS)
+
+from companion_hoenn_wireless_guides import ROWS as HOENN_WIRELESS_GUIDE_ROWS
+ROWS.extend(HOENN_WIRELESS_GUIDE_ROWS)
+from companion_kanto_bg_inspections import ROWS as KANTO_BG_INSPECTION_ROWS
+ROWS.extend(KANTO_BG_INSPECTION_ROWS)
+
+# The grunt continues through two more remarks before returning control.
+for row in ROWS:
+    if row['key'] == 'hoenn_field_what_want':
+        row['retired_sources'] = row['labels']
+        row['labels'] = []
+        row['retired'] = 'Always followed by the museum sign-reading sequence; its final paraphrase is separately bound.'
+
+from companion_kanto_posted_tips import ROWS as KANTO_POSTED_TIP_ROWS
+ROWS.extend(KANTO_POSTED_TIP_ROWS)
+from companion_kanto_bg_views import ROWS as KANTO_BG_VIEW_ROWS
+ROWS.extend(KANTO_BG_VIEW_ROWS)
+
+from companion_hoenn_objects_remaining import ROWS as HOENN_OBJECT_REMAINING_ROWS
+ROWS.extend(HOENN_OBJECT_REMAINING_ROWS)
+
+from companion_kanto_rares import ROWS as KANTO_RARE_ROWS
+ROWS.extend(KANTO_RARE_ROWS)

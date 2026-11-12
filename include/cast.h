@@ -12,6 +12,7 @@ u32 Cast_Active(void);
 void Cast_RefreshIdentity(void);
 void Cast_OnStep(void);
 bool32 Cast_HasUsed(u32 id);
+bool32 Cast_HasUsedBy(u32 who, u32 id);
 bool32 Cast_Offer(u32 id);
 bool32 Cast_TrySay(u32 id);
 bool32 Cast_TryPersonalTalk(void);

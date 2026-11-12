@@ -203,6 +203,7 @@ void NewGameInitData(void)
     ResetPokemonStorageSystem();
     Bonds_Reset();
     CompanionDialogue_Reset();
+    CompanionHistory_Reset();
     DeactivateAllRoamers();
     gSaveBlock1Ptr->registeredItem = ITEM_NONE;
     ClearBag();
