@@ -1,0 +1,31 @@
+{
+  "exterior_map": "PetalburgCity",
+  "rect": [
+    9,
+    16,
+    4,
+    4
+  ],
+  "door": [
+    1,
+    3
+  ],
+  "banks": [
+    1,
+    5
+  ],
+  "interior_map": "PetalburgCity_House1",
+  "exterior_pixels": [
+    64,
+    64
+  ],
+  "interior_metatiles": [
+    10,
+    9
+  ],
+  "layout_version": "emerald",
+  "source_commit": "6fdfec3469776fd5a509ed5eb432673db510be56",
+  "silhouette_sha256": "af2405a469396ea957a924672436f4bc9f4287830252e6f73c71de8db1145248",
+  "exterior_blocks_sha256": "d77c2f62464e7c80c436a74c9f33a14a60b17bde25b50713109ccf5863ffa3a3",
+  "interior_blocks_sha256": "9d5aca59ce1da85b17a8cbf691dd0197c483e5773d8516248977989afbb37b63"
+}
