@@ -152,7 +152,7 @@ TEST("Refreshing a companion script does not replace a story escort script")
     Cast_EnsureInitialized();
     gSaveBlock3Ptr->cast.active = 6;
     SetFollowerNPCData(FNPC_DATA_IN_PROGRESS, TRUE);
-    SetFollowerNPCData(FNPC_DATA_EVENT_FLAG, 0x20);
+    SetFollowerNPCData(FNPC_DATA_EVENT_FLAG, CAST_FLAG_BASE - 1);
     SetFollowerNPCScriptPointer(escort);
     EXPECT_EQ(GetFollowerNPCScriptPointer(), escort);
     EXPECT_EQ(gSaveBlock3Ptr->cast.active, 6);

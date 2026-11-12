@@ -787,3 +787,6 @@ ROWS.extend(KANTO_BG_VIEW_ROWS)
 
 from companion_hoenn_objects_remaining import ROWS as HOENN_OBJECT_REMAINING_ROWS
 ROWS.extend(HOENN_OBJECT_REMAINING_ROWS)
+
+from companion_kanto_rares import ROWS as KANTO_RARE_ROWS
+ROWS.extend(KANTO_RARE_ROWS)

@@ -289351,6 +289351,1110 @@
           "text": "I'd pass that direction along if we saw anyone else waiting at the wrong entrance."
         }
       ]
+    },
+    {
+      "id": 4185,
+      "key": "kanto_rare_beldum_caught",
+      "subject": "BELDUM gives a small, satisfied hum. Its travel arrangements appear to be settled.",
+      "sources": {
+        "KantoRare_BELDUM_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "BELDUM gives a small, satisfied\\nhum. Its travel arrangements\\lappear to be settled.$",
+          "sha256": "b7f89c4669456a3f2ef47aa49818ac92905a7b3cd201437b613848f0a3910235"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "Our new friend has finally found an itinerary. I hope it allows snack stops."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "A willing new partner, with a remarkably decisive way of settling introductions."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We'll make sure it knows where we're going. Most of the time."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "That little hum sounded rather like relief."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "I wonder what counts as a good travel meal for a Beldum."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A floating metal traveler has selected us as its navigation department."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Its search for direction has ended with people who also read signs twice."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "A magnetic new colleague. I should check which pocket contains my tools."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A small hum can make a road feel less lonely."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "Travel arrangements settled. Now we can get acquainted properly."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd remember the first time it turns toward us instead of the crossroads."
+        }
+      ]
+    },
+    {
+      "id": 4186,
+      "key": "kanto_rare_shinx_caught",
+      "subject": "SHINX gives you one final stern look, then relaxes. You appear to have passed inspection.",
+      "sources": {
+        "KantoRare_SHINX_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "SHINX gives you one final stern\\nlook, then relaxes. You appear to\\lhave passed inspection.$",
+          "sha256": "7eb0a32b6c70b6df16b89e9a3c468997daf6c006cd376bb6d41975e40551c247"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "laughing",
+          "text": "We passed the tiny thunder inspector. I was trying very hard to look qualified."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Its ambition has found someone willing to help it practice."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "A good start. We can work on the rest together."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I'm glad it can stop looking fierce for a little while."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "That much determination deserves patient care between the big moments."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "We have been approved by a critic with excellent little paws."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The glare was formidable. The paws somewhat betrayed it."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Confidence is useful. Safe practice will make it sturdier."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "Even a small spark can choose a long road."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I hope it knows we liked it before it finished trying to look impressive."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd like to remember that stern little face before it grows into it."
+        }
+      ]
+    },
+    {
+      "id": 4187,
+      "key": "kanto_rare_riolu_caught",
+      "subject": "RIOLU bows again. The class now has a traveling instructor, or possibly a traveling student.",
+      "sources": {
+        "KantoRare_RIOLU_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "RIOLU bows again. The class now\\nhas a traveling instructor, or\\lpossibly a traveling student.$",
+          "sha256": "5c283e4f8be22c39ca06dbb8f4249a3ca200c62cac0eb046b4df26676a0ed563"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "I have always wanted to join a class with this little paperwork."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "It seems interested in practicing with us, rather than merely winning once."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We'll train properly. No pretending the hard part is already done."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "That bow felt like a rather kind beginning."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A good practice partner also notices when it is time to rest."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The pebble academy has approved our application for a field placement."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "We have joined a school whose previous students were exceptionally grounded."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "A thoughtful little training setup. We can build on that."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A quiet bow has opened another path."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I like that the invitation came with manners as well as determination."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd ask which pebble had been its most difficult opponent."
+        }
+      ]
+    },
+    {
+      "id": 4188,
+      "key": "kanto_rare_mareep_caught",
+      "subject": "MAREEP settles down with a contented bleat. The expedition has acquired a little more wool.",
+      "sources": {
+        "KantoRare_MAREEP_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "MAREEP settles down with a\\ncontented bleat. The expedition\\lhas acquired a little more wool.$",
+          "sha256": "0411255730bd00fdfee35a92d8f01f1048f246c07846d8182fabf2cd5298b5a3"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "laughing",
+          "text": "Excellent. Our journey is now significantly fluffier and slightly more conductive."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "We should learn what helps it relax when its wool builds up charge."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Give it space until that crackling settles."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "That sounded like a very comfortable little decision."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A rest, a meal, and somewhere dry would make a good welcome."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "The expedition has recruited both a companion and a caution about enthusiastic hugs."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A portable cloud with opinions about personal space."
+        },
+        {
+          "voice": "vera",
+          "expression": "surprised",
+          "text": "I have several interesting questions and absolutely no intention of testing them with my hair."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A warm little cloud has chosen to follow the road."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "We can admire the wool without immediately trying to pat it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I like the way its whole posture softened once the match ended."
+        }
+      ]
+    },
+    {
+      "id": 4189,
+      "key": "kanto_rare_buneary_caught",
+      "subject": "BUNEARY gives the twig one last triumphant hop. The next obstacle course will be wherever you go.",
+      "sources": {
+        "KantoRare_BUNEARY_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "BUNEARY gives the twig one last\\ntriumphant hop. The next obstacle\\lcourse will be wherever you go.$",
+          "sha256": "61bd8dbad79555adcda8e8a61276351fadd67da29c3a45df99fbc6f1539f570a"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "I award it full marks for making that twig look important."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "A small challenge can still build confidence when someone takes it seriously."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We'll find it a better course. And a proper rest between runs."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It looked so pleased that somebody stayed to watch."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "That much hopping must work up a very respectable appetite."
+        },
+        {
+          "voice": "riven",
+          "expression": "laughing",
+          "text": "The reigning champion has agreed to take its twig-based talents on tour."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A heroic final leap over an obstacle the wind could defeat."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "We could arrange a little course without making every practice a competition."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A small hurdle has become the beginning of a much longer path."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "That was a victory lap, and I will respect it as such."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd love to remember how proudly it landed that last hop."
+        }
+      ]
+    },
+    {
+      "id": 4190,
+      "key": "kanto_rare_espeon_caught",
+      "subject": "ESPEON takes a leisurely stretch. It appears satisfied with the direction this afternoon has taken.",
+      "sources": {
+        "KantoRare_ESPEON_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "ESPEON takes a leisurely stretch.\\nIt appears satisfied with the\\ldirection this afternoon has\\ltaken.$",
+          "sha256": "3573d95146ab25da215028d253cedf24dda53ec446762a1e470059417b6f0bec"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "I hope it likes our direction even when the direction is back to the shop."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "Its posture seems relaxed. We can let a new partnership develop at that pace."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "It chose us. We don't have to make a grand prediction out of it."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "That stretch made the whole introduction feel less hurried."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "I hope our rest stops offer a decent sunny patch."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "Our newest companion has reviewed the itinerary and declined to reveal the ending."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A reassuring endorsement from someone who looked disappointed in everybody else's route."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "I'd ask what it notices before assuming it can solve all our planning."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A little sunlight seems willing to travel with us."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "It has perfected looking entirely certain without explaining a single thing."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd notice which direction its ears turn before the rest of us hear anything."
+        }
+      ]
+    },
+    {
+      "id": 4191,
+      "key": "kanto_rare_umbreon_caught",
+      "subject": "UMBREON gives a quiet nod and lets its rings dim. It seems comfortable enough to stop making an announcement.",
+      "sources": {
+        "KantoRare_UMBREON_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "UMBREON gives a quiet nod and\\nlets its rings dim. It seems\\lcomfortable enough to stop making\\lan announcement.$",
+          "sha256": "e0d111d2bc8397d4953c763b8231b8877026a1ada557fe15df2d6c2ff2926cb6"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "I like an introduction that ends with everybody being allowed to relax."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "It seems more comfortable now. We should keep noticing what helps it feel secure."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "No rushing it. It has already made its choice."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It is nice being trusted enough for the bright signals to become unnecessary."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A shaded rest stop should remain part of our plans."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A remarkably effective entrance, followed by the confidence to become quiet."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "At last, somebody who understands the practical appeal of a dark corner."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Clear signals, carefully used. We can learn to read the subtler ones too."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A little night has found people it can be quiet beside."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "We can enjoy its company without demanding it glow on command."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd remember the moment its posture changed from watchful to comfortable."
+        }
+      ]
+    },
+    {
+      "id": 4192,
+      "key": "kanto_rare_larvitar_caught",
+      "subject": "LARVITAR gives its favorite pebble a farewell nibble. Its geological education is becoming a field trip.",
+      "sources": {
+        "KantoRare_LARVITAR_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "LARVITAR gives its favorite\\npebble a farewell nibble. Its\\lgeological education is becoming\\la field trip.$",
+          "sha256": "b4f7c8115a518a317af7f4a9b5039b56716c3958e918c055c2107e790671b9ef"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "laughing",
+          "text": "I hope it knows that saying we know a good place to eat was not a geological recommendation."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "We should learn what is suitable food before making assumptions about that appetite."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Ask before packing its stones away. Some of those might be lunch."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "That last little nibble looked almost sentimental."
+        },
+        {
+          "voice": "nico",
+          "expression": "surprised",
+          "text": "I have finally met a traveler whose packed lunch can weigh more than the luggage."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A very discerning restaurant critic has expanded its definition of restaurant."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The mountain has received a mixed review and a small bite."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We should label samples clearly if we carry any actual research equipment."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A favorite stone can make a surprisingly personal goodbye."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I refuse to judge a farewell snack. It clearly meant something."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd like to see what makes it choose one stone over another."
+        }
+      ]
+    },
+    {
+      "id": 4193,
+      "key": "kanto_rare_heracross_caught",
+      "subject": "HERACROSS nudges the branch neatly out of the way before turning back to you. The roadworks are complete.",
+      "sources": {
+        "KantoRare_HERACROSS_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "HERACROSS nudges the branch\\nneatly out of the way before\\lturning back to you. The\\lroadworks are complete.$",
+          "sha256": "0ad351259157d1459d1fa3a6b6cbfde6b9a1f706bfefab0131e4078da347caaf"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "It finished the job before leaving. That is a very good reference."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Strength and consideration are a useful combination in a traveling partner."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "Good worker. Knows when somebody smaller needs the path."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I liked how it kept making room for the others."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Somebody that considerate deserves a proper break afterward."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "The strongest member of the road crew has also supplied its best manners."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "Public service, performed without a clipboard. An alarming precedent."
+        },
+        {
+          "voice": "vera",
+          "expression": "soft_smile",
+          "text": "It considered how the finished work would affect other travelers. Excellent instinct."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A clear path left behind is a kind farewell."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "That last tidy nudge told us quite a lot about it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd remember the little pauses it took for the smaller Pokemon."
+        }
+      ]
+    },
+    {
+      "id": 4194,
+      "key": "kanto_rare_dratini_caught",
+      "subject": "DRATINI watches one last circle spread across the water. Then its attention turns toward the road.",
+      "sources": {
+        "KantoRare_DRATINI_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "DRATINI watches one last circle\\nspread across the water. Then its\\lattention turns toward the road.$",
+          "sha256": "84d891f85fac0b50c1c0d44813872061e3ca13d92bd1ec3b5636e5e0ffc52288"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "We can stop at the next interesting puddle. That is a perfectly good travel plan."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Curiosity can be a useful reason to begin a partnership."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We'll show it where the road goes. No need to rush the quiet stops."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It looked ready, but still wanted a little time to say goodbye."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A trip can make room for familiar comforts as well as new places."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A contemplative traveler has agreed to join a rather less organized expedition."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "It has left the water's circles for our occasionally circular navigation."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I would like to know which details of new places interest it first."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "One circle fades, and another kind of journey begins."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "A small goodbye deserves time even when there are no words for it."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd remember that final glance across the ripples."
+        }
+      ]
+    },
+    {
+      "id": 4195,
+      "key": "kanto_rare_misdreavus_caught",
+      "subject": "MISDREAVUS circles you once, then makes an entrance from exactly where you already knew it was. A promising rehearsal.",
+      "sources": {
+        "KantoRare_MISDREAVUS_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "MISDREAVUS circles you once, then\\nmakes an entrance from exactly\\lwhere you already knew it was. A\\lpromising rehearsal.$",
+          "sha256": "780283d001eba3d7e5495e71a9f2907f5e74cad5b424e21f2d57aac9a9620058"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "laughing",
+          "text": "I was extremely startled by the ghost I had been looking directly at. I hope that helped."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "It seems interested in play, and able to notice when somebody is not enjoying it."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "A joke needs the other person to be having a good time too."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I like that it stopped when somebody needed quiet."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "It can have a little audience without having to keep everybody on edge."
+        },
+        {
+          "voice": "riven",
+          "expression": "laughing",
+          "text": "An ambitious entrance with a critically compromised element of surprise."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "A considerate little haunting. I am almost professionally jealous."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "We can agree on suitable times for surprises. Preferably after I put down the tools."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A playful shadow can learn where another person's quiet begins."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "It seems to care whether the joke lands kindly. That matters."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd like to remember the exact face it makes while pretending we cannot see it."
+        }
+      ]
+    },
+    {
+      "id": 4196,
+      "key": "kanto_rare_absol_caught",
+      "subject": "ABSOL checks the path once more before turning to you. It seems ready to leave the next traveler a safer road.",
+      "sources": {
+        "KantoRare_ABSOL_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "ABSOL checks the path once more\\nbefore turning to you. It seems\\lready to leave the next traveler\\la safer road.$",
+          "sha256": "5f4964e44968d18651d1547aa8668fb023a58afd477bce97fdf532c852b93820"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "A serious face can belong to somebody doing a very kind thing."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Its actions gave us a better account than the first impression might have."
+        },
+        {
+          "voice": "kade",
+          "expression": "soft_smile",
+          "text": "It was helping. Glad we paid attention."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I hope being understood makes the next part feel a little easier."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A partner that notices little hazards deserves someone who notices its effort."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "A forbidding silhouette, undermined by a conspicuously considerate work ethic."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "Misunderstood, yet still tidying up everyone else's problems. Distressingly relatable."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Removing a hazard is more useful than merely announcing it."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A dark shape can leave a kinder road behind it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "It should not have to look cheerful for the kindness to count."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd remember the careful way it moved each loose stone."
+        }
+      ]
+    },
+    {
+      "id": 4197,
+      "key": "kanto_rare_feebas_caught",
+      "subject": "FEEBAS completes one final circuit, then swims back toward you. Its longer journey appears to be approved.",
+      "sources": {
+        "KantoRare_FEEBAS_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "FEEBAS completes one final\\ncircuit, then swims back toward\\lyou. Its longer journey appears\\lto be approved.$",
+          "sha256": "043165904cc28f04a99ae965f69d77255d8aaae2b874ef85d556fb9cb2d7ff07"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "It has approved the long route. I hope we can live up to the committee of one fish."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Its persistence is worth noticing without comparing it to any future form."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good partner as it is. We can work out the rest together."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It looked so quietly determined about coming back to us."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "A proper welcome does not depend on looking impressive."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "Our newest traveler has demonstrated a very persuasive commitment to finishing the lap."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "An ordinary-looking fish has considerably better follow-through than several grand adventurers."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Steady effort is a useful strength even when it does not look spectacular."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A small circuit has opened into a much wider journey."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "I like it now. That is not a compliment I am saving for later."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd remember the determined little turn that brought it back toward us."
+        }
+      ]
+    },
+    {
+      "id": 4198,
+      "key": "kanto_rare_rotom_caught",
+      "subject": "ROTOM gives the silent machine one last hopeful buzz. Apparently your team offers a more responsive audience.",
+      "sources": {
+        "KantoRare_ROTOM_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "ROTOM gives the silent machine\\none last hopeful buzz. Apparently\\lyour team offers a more\\lresponsive audience.$",
+          "sha256": "4f7d91ef827ad699cc8841fc4080d343a5da1f95932909201b7859b8be8f1149"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "laughing",
+          "text": "At last, an audience capable of answering something besides electrical silence."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "Its attempts at interaction have found a more responsive partner."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "No moving into somebody's equipment without asking. We'll establish that early."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "It sounded so pleased when the introduction finally got an answer."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "Let us agree that kitchen appliances are not an open invitation."
+        },
+        {
+          "voice": "riven",
+          "expression": "laughing",
+          "text": "The machine has lost its most determined interviewer to a better conversation."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "A cheerful haunting with an electrical engineering problem."
+        },
+        {
+          "voice": "vera",
+          "expression": "surprised",
+          "text": "I have questions. It probably has access to my entire toolkit. We need boundaries."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A little spark has found somebody willing to answer."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "Its enthusiasm is lovely. My belongings would also appreciate a brief discussion."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd remember the difference between its patient little buzz and that delighted crackle."
+        }
+      ]
+    },
+    {
+      "id": 4199,
+      "key": "kanto_rare_gible_caught",
+      "subject": "GIBLE abandons the pedal in favor of following you. The bicycle industry has been granted a temporary reprieve.",
+      "sources": {
+        "KantoRare_GIBLE_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "GIBLE abandons the pedal in favor\\nof following you. The bicycle\\lindustry has been granted a\\ltemporary reprieve.$",
+          "sha256": "ad0ff00e34dcad274d154515e147dc5bfbda982a94309a285c3aaf52a9e90def"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "laughing",
+          "text": "I hope its research does not require a representative sample of our shoes."
+        },
+        {
+          "voice": "silas",
+          "expression": "neutral",
+          "text": "We should establish which materials are safe to chew before it expands the experiment."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "Good choice. The pedal was not a sensible lunch."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I am glad the introduction ended with the bicycle remaining in one piece."
+        },
+        {
+          "voice": "nico",
+          "expression": "neutral",
+          "text": "We will find food that was made to be food."
+        },
+        {
+          "voice": "riven",
+          "expression": "smug",
+          "text": "A promising young critic has spared an entire industry by accepting a travel invitation."
+        },
+        {
+          "voice": "emi",
+          "expression": "neutral",
+          "text": "The first rule of our expedition will concern the difference between luggage and lunch."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "I would like my tools to remain tools. We should discuss that gently but clearly."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A little curiosity is good company when somebody helps it find safe questions."
+        },
+        {
+          "voice": "mochi",
+          "expression": "neutral",
+          "text": "We can admire the enthusiasm while rescuing the footwear."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd remember the thoughtful look it gave a completely unsuitable snack."
+        }
+      ]
+    },
+    {
+      "id": 4200,
+      "key": "kanto_rare_bagon_caught",
+      "subject": "BAGON watches one last bird cross the sky, then turns proudly toward you. The next part of its training will have company.",
+      "sources": {
+        "KantoRare_BAGON_CaughtText": {
+          "path": "data/kanto/rare_encounters.inc",
+          "text": "BAGON watches one last bird cross\\nthe sky, then turns proudly\\ltoward you. The next part of its\\ltraining will have company.$",
+          "sha256": "4315736c87413a8b7434fe48a045275dc79050b7c3019d4af2c255be47e9e4b2"
+        }
+      },
+      "replies": [
+        {
+          "voice": "pip",
+          "expression": "soft_smile",
+          "text": "We can believe in the dream and still suggest a safer place to practice hopping."
+        },
+        {
+          "voice": "silas",
+          "expression": "soft_smile",
+          "text": "A long-term ambition deserves patient, practical support."
+        },
+        {
+          "voice": "kade",
+          "expression": "neutral",
+          "text": "We'll help it train. Nobody needs to prove anything by getting hurt."
+        },
+        {
+          "voice": "ashe",
+          "expression": "soft_smile",
+          "text": "I hope having company makes the waiting part a little less lonely."
+        },
+        {
+          "voice": "nico",
+          "expression": "soft_smile",
+          "text": "Dreams go better with proper rest and somebody remembering dinner."
+        },
+        {
+          "voice": "riven",
+          "expression": "soft_smile",
+          "text": "An ambitious future has acquired a supporting cast and, ideally, sensible landing arrangements."
+        },
+        {
+          "voice": "emi",
+          "expression": "soft_smile",
+          "text": "We have joined a very small campaign against the concept of being grounded."
+        },
+        {
+          "voice": "vera",
+          "expression": "neutral",
+          "text": "Good training can turn enthusiasm into progress without skipping safety."
+        },
+        {
+          "voice": "lume",
+          "expression": "soft_smile",
+          "text": "A piece of sky can stay with somebody long before they can reach it."
+        },
+        {
+          "voice": "mochi",
+          "expression": "soft_smile",
+          "text": "That proud little turn was a very good way to begin."
+        },
+        {
+          "voice": "zuri",
+          "expression": "soft_smile",
+          "text": "I'd like to remember this stage of the dream, before the sky becomes familiar."
+        }
+      ]
     }
   ]
 }

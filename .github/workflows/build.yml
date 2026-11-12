@@ -29,6 +29,9 @@ jobs:
       - name: Validate Kanto campaign topology
         run: python3 dev_scripts/validate_kanto_campaign.py
 
+      - name: Validate Kanto rare encounters
+        run: python3 dev_scripts/validate_kanto_rares.py
+
       - name: Validate recruitable cast
         run: python3 dev_scripts/validate_cast.py
 

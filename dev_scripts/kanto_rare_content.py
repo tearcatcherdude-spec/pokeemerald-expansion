@@ -1,0 +1,122 @@
+"""Sixteen optional Kanto encounters, using native Generation I-IV Pokemon assets."""
+ROWS=[]
+EVS={'physical':[6,252,0,252,0,0],'special':[6,0,0,252,252,0],
+     'bulky_physical':[252,252,0,0,0,6],'bulky_special':[252,0,0,6,252,0],
+     'defensive':[252,0,128,0,0,130],'feebas':[252,0,252,0,0,6]}
+def add(species,mapname,level,profile,intro,accept,decline,rest,caught,comments,water=False):
+    replies=[s.strip() for s in comments.split('|')]
+    assert len(replies)==11,(species,len(replies))
+    ROWS.append(dict(species=species,map=mapname,level=level,evs=EVS[profile],intro=intro,accept=accept,
+                     decline=decline,rest=rest,caught=caught,replies=replies,water=water))
+add('BELDUM','WatchViridian',6,'bulky_physical',
+ 'This BELDUM is hovering beside the road. It keeps turning toward travelers, then back toward town, as though it has misplaced its itinerary.',
+ 'It taps the ground twice and floats into position. A friendly battle seems to be its preferred introduction. You can catch it in this battle.',
+ 'It resumes inspecting the road. The itinerary remains a work in progress.',
+ 'BELDUM is hovering very still after the match. Let it rest; another visit may suit it better.',
+ 'BELDUM gives a small, satisfied hum. Its travel arrangements appear to be settled.',
+ "soft_smile~Our new friend has finally found an itinerary. I hope it allows snack stops.|soft_smile~A willing new partner, with a remarkably decisive way of settling introductions.|neutral~We'll make sure it knows where we're going. Most of the time.|soft_smile~That little hum sounded rather like relief.|neutral~I wonder what counts as a good travel meal for a Beldum.|smug~A floating metal traveler has selected us as its navigation department.|neutral~Its search for direction has ended with people who also read signs twice.|soft_smile~A magnetic new colleague. I should check which pocket contains my tools.|soft_smile~A small hum can make a road feel less lonely.|soft_smile~Travel arrangements settled. Now we can get acquainted properly.|soft_smile~I'd remember the first time it turns toward us instead of the crossroads.")
+add('SHINX','KantoRoute22',5,'physical',
+ 'A SHINX is watching the road to the LEAGUE. Every time a trainer passes, it practices a determined little glare.',
+ 'It notices your team and squares its paws. Apparently the glare requires a practical exam. You can catch it in this battle.',
+ 'It returns to glaring at distant champions. Its ambition is considerably larger than its paws.',
+ 'SHINX is taking a break from looking intimidating. Come back on another visit.',
+ 'SHINX gives you one final stern look, then relaxes. You appear to have passed inspection.',
+ "laughing~We passed the tiny thunder inspector. I was trying very hard to look qualified.|soft_smile~Its ambition has found someone willing to help it practice.|neutral~A good start. We can work on the rest together.|soft_smile~I'm glad it can stop looking fierce for a little while.|soft_smile~That much determination deserves patient care between the big moments.|smug~We have been approved by a critic with excellent little paws.|neutral~The glare was formidable. The paws somewhat betrayed it.|neutral~Confidence is useful. Safe practice will make it sturdier.|soft_smile~Even a small spark can choose a long road.|soft_smile~I hope it knows we liked it before it finished trying to look impressive.|soft_smile~I'd like to remember that stern little face before it grows into it.")
+add('RIOLU','KantoRoute4',12,'physical',
+ 'This RIOLU is practicing its footwork beside MT. MOON. A neatly arranged row of pebbles appears to be its entire training class.',
+ 'It bows, then points toward your team. A sparring match is the next lesson. You can catch it in this battle.',
+ 'RIOLU returns to the pebbles. Attendance has been excellent, but their footwork needs work.',
+ 'RIOLU is stretching after the match. Let it recover before another try.',
+ 'RIOLU bows again. The class now has a traveling instructor, or possibly a traveling student.',
+ "soft_smile~I have always wanted to join a class with this little paperwork.|neutral~It seems interested in practicing with us, rather than merely winning once.|neutral~We'll train properly. No pretending the hard part is already done.|soft_smile~That bow felt like a rather kind beginning.|soft_smile~A good practice partner also notices when it is time to rest.|smug~The pebble academy has approved our application for a field placement.|neutral~We have joined a school whose previous students were exceptionally grounded.|soft_smile~A thoughtful little training setup. We can build on that.|soft_smile~A quiet bow has opened another path.|soft_smile~I like that the invitation came with manners as well as determination.|soft_smile~I'd ask which pebble had been its most difficult opponent.")
+add('MAREEP','KantoRoute24',14,'bulky_special',
+ 'A MAREEP is inspecting the grass beside the bridge. Its wool crackles whenever a passing trainer calls it fluffy.',
+ 'It steps forward, looking hopeful and mildly electrified. A battle will decide whether this expedition needs more wool. You can catch it.',
+ 'It resumes its inspection. The grass remains undecided about the static.',
+ 'MAREEP is letting its wool settle after the match. Visit again after some exploring.',
+ 'MAREEP settles down with a contented bleat. The expedition has acquired a little more wool.',
+ "laughing~Excellent. Our journey is now significantly fluffier and slightly more conductive.|neutral~We should learn what helps it relax when its wool builds up charge.|neutral~Give it space until that crackling settles.|soft_smile~That sounded like a very comfortable little decision.|soft_smile~A rest, a meal, and somewhere dry would make a good welcome.|smug~The expedition has recruited both a companion and a caution about enthusiastic hugs.|neutral~A portable cloud with opinions about personal space.|surprised~I have several interesting questions and absolutely no intention of testing them with my hair.|soft_smile~A warm little cloud has chosen to follow the road.|soft_smile~We can admire the wool without immediately trying to pat it.|soft_smile~I like the way its whole posture softened once the match ended.")
+add('BUNEARY','KantoRoute5',15,'physical',
+ 'This BUNEARY keeps hopping over a tiny twig. It pauses after each jump as though waiting for someone to announce the score.',
+ 'It looks at your team, then takes a much more serious stance. The next event is a friendly battle. You can catch it.',
+ 'It returns to the twig. The obstacle course has a very committed athlete.',
+ 'BUNEARY is resting its paws. Another visit will be better for another match.',
+ 'BUNEARY gives the twig one last triumphant hop. The next obstacle course will be wherever you go.',
+ "soft_smile~I award it full marks for making that twig look important.|neutral~A small challenge can still build confidence when someone takes it seriously.|neutral~We'll find it a better course. And a proper rest between runs.|soft_smile~It looked so pleased that somebody stayed to watch.|soft_smile~That much hopping must work up a very respectable appetite.|laughing~The reigning champion has agreed to take its twig-based talents on tour.|neutral~A heroic final leap over an obstacle the wind could defeat.|soft_smile~We could arrange a little course without making every practice a competition.|soft_smile~A small hurdle has become the beginning of a much longer path.|soft_smile~That was a victory lap, and I will respect it as such.|soft_smile~I'd love to remember how proudly it landed that last hop.")
+add('ESPEON','KantoRoute8',20,'special',
+ 'An ESPEON sits in a patch of sunlight. It watches travelers choose a direction, then looks faintly disappointed when they turn back.',
+ 'It rises before you finish approaching. Perhaps it already expected a challenge. You can catch it in this battle.',
+ 'It settles back into the sunlight. Your change of plans seems to have been anticipated.',
+ 'ESPEON is resting quietly in the light. Give it another visit before another challenge.',
+ 'ESPEON takes a leisurely stretch. It appears satisfied with the direction this afternoon has taken.',
+ "soft_smile~I hope it likes our direction even when the direction is back to the shop.|neutral~Its posture seems relaxed. We can let a new partnership develop at that pace.|neutral~It chose us. We don't have to make a grand prediction out of it.|soft_smile~That stretch made the whole introduction feel less hurried.|soft_smile~I hope our rest stops offer a decent sunny patch.|smug~Our newest companion has reviewed the itinerary and declined to reveal the ending.|neutral~A reassuring endorsement from someone who looked disappointed in everybody else's route.|soft_smile~I'd ask what it notices before assuming it can solve all our planning.|soft_smile~A little sunlight seems willing to travel with us.|soft_smile~It has perfected looking entirely certain without explaining a single thing.|soft_smile~I'd notice which direction its ears turn before the rest of us hear anything.")
+add('UMBREON','KantoRoute9',18,'defensive',
+ 'An UMBREON is resting in the shade of the rocks. Its rings glow softly whenever a trainer rushes past without noticing it.',
+ 'It steps out of the shade and waits. This introduction seems to require patience, then a battle. You can catch it.',
+ 'It returns to the shade. The road is allowed to be busy without its participation.',
+ 'UMBREON has settled down after the match. Let it rest before another visit.',
+ 'UMBREON gives a quiet nod and lets its rings dim. It seems comfortable enough to stop making an announcement.',
+ "soft_smile~I like an introduction that ends with everybody being allowed to relax.|neutral~It seems more comfortable now. We should keep noticing what helps it feel secure.|neutral~No rushing it. It has already made its choice.|soft_smile~It is nice being trusted enough for the bright signals to become unnecessary.|soft_smile~A shaded rest stop should remain part of our plans.|soft_smile~A remarkably effective entrance, followed by the confidence to become quiet.|soft_smile~At last, somebody who understands the practical appeal of a dark corner.|neutral~Clear signals, carefully used. We can learn to read the subtler ones too.|soft_smile~A little night has found people it can be quiet beside.|soft_smile~We can enjoy its company without demanding it glow on command.|soft_smile~I'd remember the moment its posture changed from watchful to comfortable.")
+add('LARVITAR','KantoRoute10',17,'physical',
+ 'A LARVITAR has sampled several stones near ROCK TUNNEL. It appears to be comparing the mountain to an extremely large menu.',
+ 'It notices your team and wipes a little grit from its mouth. Perhaps travel offers a wider menu. You can catch it in this battle.',
+ 'It returns to a particularly promising pebble. Your offer has been filed under after lunch.',
+ 'LARVITAR is resting beside its stone samples. Come back after another walk.',
+ 'LARVITAR gives its favorite pebble a farewell nibble. Its geological education is becoming a field trip.',
+ "laughing~I hope it knows that saying we know a good place to eat was not a geological recommendation.|neutral~We should learn what is suitable food before making assumptions about that appetite.|neutral~Ask before packing its stones away. Some of those might be lunch.|soft_smile~That last little nibble looked almost sentimental.|surprised~I have finally met a traveler whose packed lunch can weigh more than the luggage.|smug~A very discerning restaurant critic has expanded its definition of restaurant.|neutral~The mountain has received a mixed review and a small bite.|neutral~We should label samples clearly if we carry any actual research equipment.|soft_smile~A favorite stone can make a surprisingly personal goodbye.|soft_smile~I refuse to judge a farewell snack. It clearly meant something.|soft_smile~I'd like to see what makes it choose one stone over another.")
+add('HERACROSS','KantoRoute11',17,'physical',
+ 'A HERACROSS is trying to move a fallen branch. It keeps stopping to let smaller Pokemon cross before continuing its very serious roadworks.',
+ 'It sets the branch down and turns toward your team. A friendly contest of strength seems fair. You can catch it.',
+ 'It returns to the branch. Public works wait for no beetle.',
+ 'HERACROSS is resting its horn after the match. Give it another visit before another challenge.',
+ 'HERACROSS nudges the branch neatly out of the way before turning back to you. The roadworks are complete.',
+ "soft_smile~It finished the job before leaving. That is a very good reference.|soft_smile~Strength and consideration are a useful combination in a traveling partner.|soft_smile~Good worker. Knows when somebody smaller needs the path.|soft_smile~I liked how it kept making room for the others.|soft_smile~Somebody that considerate deserves a proper break afterward.|soft_smile~The strongest member of the road crew has also supplied its best manners.|neutral~Public service, performed without a clipboard. An alarming precedent.|soft_smile~It considered how the finished work would affect other travelers. Excellent instinct.|soft_smile~A clear path left behind is a kind farewell.|soft_smile~That last tidy nudge told us quite a lot about it.|soft_smile~I'd remember the little pauses it took for the smaller Pokemon.")
+add('DRATINI','KantoRoute12',27,'physical',
+ 'A DRATINI is watching the ripples beside the bridge. It keeps glancing toward travelers as though wondering where the road goes when the water ends.',
+ 'It lifts its head and approaches your team. A battle may be its way of asking to find out. You can catch it.',
+ 'It returns to the ripples. There is no hurry to leave a pleasant place.',
+ 'DRATINI is resting quietly after the match. Another visit will be welcome later.',
+ 'DRATINI watches one last circle spread across the water. Then its attention turns toward the road.',
+ "soft_smile~We can stop at the next interesting puddle. That is a perfectly good travel plan.|soft_smile~Curiosity can be a useful reason to begin a partnership.|neutral~We'll show it where the road goes. No need to rush the quiet stops.|soft_smile~It looked ready, but still wanted a little time to say goodbye.|soft_smile~A trip can make room for familiar comforts as well as new places.|soft_smile~A contemplative traveler has agreed to join a rather less organized expedition.|soft_smile~It has left the water's circles for our occasionally circular navigation.|neutral~I would like to know which details of new places interest it first.|soft_smile~One circle fades, and another kind of journey begins.|soft_smile~A small goodbye deserves time even when there are no words for it.|soft_smile~I'd remember that final glance across the ripples.")
+add('MISDREAVUS','KantoLavenderTown',22,'special',
+ 'A MISDREAVUS is practicing a startling entrance beside a quiet lane. It keeps stopping whenever somebody looks genuinely upset.',
+ 'It gives you a mischievous look and floats closer. A friendly battle seems preferable to another rehearsal. You can catch it.',
+ 'It drifts back to the lane. Its next rehearsal is considerably quieter.',
+ 'MISDREAVUS is taking a quiet interval after the match. Visit again later.',
+ 'MISDREAVUS circles you once, then makes an entrance from exactly where you already knew it was. A promising rehearsal.',
+ "laughing~I was extremely startled by the ghost I had been looking directly at. I hope that helped.|soft_smile~It seems interested in play, and able to notice when somebody is not enjoying it.|neutral~A joke needs the other person to be having a good time too.|soft_smile~I like that it stopped when somebody needed quiet.|soft_smile~It can have a little audience without having to keep everybody on edge.|laughing~An ambitious entrance with a critically compromised element of surprise.|soft_smile~A considerate little haunting. I am almost professionally jealous.|neutral~We can agree on suitable times for surprises. Preferably after I put down the tools.|soft_smile~A playful shadow can learn where another person's quiet begins.|soft_smile~It seems to care whether the joke lands kindly. That matters.|soft_smile~I'd like to remember the exact face it makes while pretending we cannot see it.")
+add('ABSOL','KantoRoute15',30,'physical',
+ 'An ABSOL is carefully moving loose stones away from the path. It looks up whenever somebody mistakes its serious expression for a threat.',
+ 'It studies your team, then steps into the open. A battle seems to be an invitation to understand each other. You can catch it.',
+ 'It returns to clearing the path. Being misunderstood has not stopped the work.',
+ 'ABSOL is resting beside the cleared stones. Let it recover before another visit.',
+ 'ABSOL checks the path once more before turning to you. It seems ready to leave the next traveler a safer road.',
+ "soft_smile~A serious face can belong to somebody doing a very kind thing.|soft_smile~Its actions gave us a better account than the first impression might have.|soft_smile~It was helping. Glad we paid attention.|soft_smile~I hope being understood makes the next part feel a little easier.|soft_smile~A partner that notices little hazards deserves someone who notices its effort.|soft_smile~A forbidding silhouette, undermined by a conspicuously considerate work ethic.|soft_smile~Misunderstood, yet still tidying up everyone else's problems. Distressingly relatable.|neutral~Removing a hazard is more useful than merely announcing it.|soft_smile~A dark shape can leave a kinder road behind it.|soft_smile~It should not have to look cheerful for the kindness to count.|soft_smile~I'd remember the careful way it moved each loose stone.")
+add('FEEBAS','KantoRoute21_North',32,'feebas',
+ 'A FEEBAS is making determined little circuits through the water. It pauses whenever a trainer passes, as though deciding whether to try a much longer route.',
+ 'It swims toward your team with unexpected confidence. A battle will be its introduction. You can catch it.',
+ 'It resumes its circuit. A familiar route can be worth another lap.',
+ 'FEEBAS is resting in the water after the match. Give it another visit before another challenge.',
+ 'FEEBAS completes one final circuit, then swims back toward you. Its longer journey appears to be approved.',
+ "soft_smile~It has approved the long route. I hope we can live up to the committee of one fish.|soft_smile~Its persistence is worth noticing without comparing it to any future form.|neutral~Good partner as it is. We can work out the rest together.|soft_smile~It looked so quietly determined about coming back to us.|soft_smile~A proper welcome does not depend on looking impressive.|soft_smile~Our newest traveler has demonstrated a very persuasive commitment to finishing the lap.|soft_smile~An ordinary-looking fish has considerably better follow-through than several grand adventurers.|neutral~Steady effort is a useful strength even when it does not look spectacular.|soft_smile~A small circuit has opened into a much wider journey.|soft_smile~I like it now. That is not a compliment I am saving for later.|soft_smile~I'd remember the determined little turn that brought it back toward us.",water=True)
+add('ROTOM','KantoPowerPlant',33,'special',
+ 'A ROTOM is hovering beside a silent machine. It keeps making a cheerful buzzing noise, then waiting as though expecting the machine to answer.',
+ 'It turns toward your team with a delighted crackle. A battle may be a better conversation. You can catch it.',
+ 'It returns to the machine. The other participant remains a very poor conversationalist.',
+ 'ROTOM is floating quietly after the match. Let it settle before another visit.',
+ 'ROTOM gives the silent machine one last hopeful buzz. Apparently your team offers a more responsive audience.',
+ "laughing~At last, an audience capable of answering something besides electrical silence.|soft_smile~Its attempts at interaction have found a more responsive partner.|neutral~No moving into somebody's equipment without asking. We'll establish that early.|soft_smile~It sounded so pleased when the introduction finally got an answer.|neutral~Let us agree that kitchen appliances are not an open invitation.|laughing~The machine has lost its most determined interviewer to a better conversation.|neutral~A cheerful haunting with an electrical engineering problem.|surprised~I have questions. It probably has access to my entire toolkit. We need boundaries.|soft_smile~A little spark has found somebody willing to answer.|soft_smile~Its enthusiasm is lovely. My belongings would also appreciate a brief discussion.|soft_smile~I'd remember the difference between its patient little buzz and that delighted crackle.")
+add('GIBLE','KantoRoute18',29,'physical',
+ 'A GIBLE is comparing a smooth stone with a battered bicycle pedal. It seems to be considering whether civilization has improved the quality of snacks.',
+ 'It sets the pedal down and faces your team. A traveling partner may offer better research opportunities. You can catch it in this battle.',
+ 'It returns to the comparison. The bicycle industry awaits the verdict.',
+ 'GIBLE is resting beside its samples. Come back after another journey.',
+ 'GIBLE abandons the pedal in favor of following you. The bicycle industry has been granted a temporary reprieve.',
+ "laughing~I hope its research does not require a representative sample of our shoes.|neutral~We should establish which materials are safe to chew before it expands the experiment.|neutral~Good choice. The pedal was not a sensible lunch.|soft_smile~I am glad the introduction ended with the bicycle remaining in one piece.|neutral~We will find food that was made to be food.|smug~A promising young critic has spared an entire industry by accepting a travel invitation.|neutral~The first rule of our expedition will concern the difference between luggage and lunch.|neutral~I would like my tools to remain tools. We should discuss that gently but clearly.|soft_smile~A little curiosity is good company when somebody helps it find safe questions.|neutral~We can admire the enthusiasm while rescuing the footwear.|soft_smile~I'd remember the thoughtful look it gave a completely unsuitable snack.")
+add('BAGON','KantoCinnabarIsland',34,'physical',
+ 'A BAGON is watching the birds above the island. It makes a determined little hop whenever one passes, then checks whether anybody noticed.',
+ 'It spots your team and straightens up. A battle seems like a more dignified introduction than another hop. You can catch it.',
+ 'It returns to watching the sky. The dream has not been withdrawn.',
+ 'BAGON is resting after the match. Even determined dreamers need another visit before another battle.',
+ 'BAGON watches one last bird cross the sky, then turns proudly toward you. The next part of its training will have company.',
+ "soft_smile~We can believe in the dream and still suggest a safer place to practice hopping.|soft_smile~A long-term ambition deserves patient, practical support.|neutral~We'll help it train. Nobody needs to prove anything by getting hurt.|soft_smile~I hope having company makes the waiting part a little less lonely.|soft_smile~Dreams go better with proper rest and somebody remembering dinner.|soft_smile~An ambitious future has acquired a supporting cast and, ideally, sensible landing arrangements.|soft_smile~We have joined a very small campaign against the concept of being grounded.|neutral~Good training can turn enthusiasm into progress without skipping safety.|soft_smile~A piece of sky can stay with somebody long before they can reach it.|soft_smile~That proud little turn was a very good way to begin.|soft_smile~I'd like to remember this stage of the dream, before the sky becomes familiar.")

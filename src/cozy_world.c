@@ -25,6 +25,7 @@ static const struct CozyRareDefinition sRareEncounters[] = {
     {SPECIES_ELEKID, 35, {6, 252, 0, 252, 0, 0}},
     {SPECIES_LARVITAR, 38, {6, 252, 0, 252, 0, 0}},
     {SPECIES_DEINO, 42, {6, 252, 0, 252, 0, 0}},
+#include "data/kanto_rare_definitions.h"
 };
 extern const u8 World_Pip_0[];
 extern const u8 World_Pip_1[];

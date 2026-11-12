@@ -4282,3 +4282,19 @@
 	.global SlateportCity_Text_HarborSign
 	.global SlateportCity_Text_SternsShipyardNearsCompletion
 	.global SlateportCity_Text_SternsShipyardFerryComplete
+	.global KantoRare_BELDUM_CaughtText
+	.global KantoRare_SHINX_CaughtText
+	.global KantoRare_RIOLU_CaughtText
+	.global KantoRare_MAREEP_CaughtText
+	.global KantoRare_BUNEARY_CaughtText
+	.global KantoRare_ESPEON_CaughtText
+	.global KantoRare_UMBREON_CaughtText
+	.global KantoRare_LARVITAR_CaughtText
+	.global KantoRare_HERACROSS_CaughtText
+	.global KantoRare_DRATINI_CaughtText
+	.global KantoRare_MISDREAVUS_CaughtText
+	.global KantoRare_ABSOL_CaughtText
+	.global KantoRare_FEEBAS_CaughtText
+	.global KantoRare_ROTOM_CaughtText
+	.global KantoRare_GIBLE_CaughtText
+	.global KantoRare_BAGON_CaughtText

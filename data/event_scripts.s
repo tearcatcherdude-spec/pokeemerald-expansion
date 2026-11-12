@@ -1053,6 +1053,7 @@ gStdScripts_End::
 #if !IS_FRLG
 	.include "data/kanto/campaign.inc"
 	.include "data/kanto/living_scenes.inc"
+	.include "data/kanto/rare_encounters.inc"
 	.include "data/kanto/safari.inc"
 #endif
 

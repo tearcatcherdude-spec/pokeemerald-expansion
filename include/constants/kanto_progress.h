@@ -75,4 +75,5 @@
 #define TRAINER_KANTO_DATA_BOND_ZURI_60 672
 #define TRAINER_KANTO_DATA_BOND_ZURI_70 673
 
+#include "constants/kanto_rare.h"
 #endif
