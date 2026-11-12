@@ -1,0 +1,82 @@
+{
+  "graphics/trainers/front_pics/cast_silas.png": {
+    "prior_sha256": "f5d6020f79edea82902c2f8bbff8a75528d60af48366b0ebc769a366641a383d",
+    "supplied_sha256": "6551d620740d238dd44f8b964dd2bfb88ad8bec3f8168017751fd3c1f4001edf"
+  },
+  "graphics/trainers/palettes/cast_silas.pal": {
+    "prior_sha256": "017e5dceb4c0f94efc51fce4ff5aad58632f529a48a3d40f047b82829bab6f8a",
+    "supplied_sha256": "6f15eec0b4aa07e574b8abe8ce141b96109de8f7e35f4cc06a3cc0e4d6096022"
+  },
+  "graphics/trainers/front_pics/cast_kade.png": {
+    "prior_sha256": "1f1f47877b581589c4554368f09966b3550cf6e49025a1f66d8e0c1a66232a65",
+    "supplied_sha256": "381f4c90476b2520eee06d92e00ff48c7960a0dae253242d5ebbcfc8861f8255"
+  },
+  "graphics/trainers/palettes/cast_kade.pal": {
+    "prior_sha256": "d867a1c73ebe785f3b3965f0deb64b5a7976ec62f641d61b1193e84a4c54a76f",
+    "supplied_sha256": "30bbd407fb74dcb1ed8f2d12ad109e0e63d7311ad54ce82473c707933886ca95"
+  },
+  "graphics/trainers/front_pics/cast_ashe.png": {
+    "prior_sha256": "a2779441bcab9c4337bc8350bac8096aa473c6abacb299bfb0f43c4a39e63667",
+    "supplied_sha256": "ad91b52c42ce79957e49c4d9313ca0408190a3af95425b0c5de3430c686a3d23"
+  },
+  "graphics/trainers/palettes/cast_ashe.pal": {
+    "prior_sha256": "ef49331e9766c314081abe92a863df1bcc066f1c6a712a15f97923ca886791a9",
+    "supplied_sha256": "eb42ebd255d094b405bba54b0e91f4ced3bd7fe7ef05988e18df6b01fddc3045"
+  },
+  "graphics/trainers/front_pics/cast_nico.png": {
+    "prior_sha256": "095c7f6bba056b5467d8259e8fa6a75a62ea902030b9f149d6a6ccb9796695e2",
+    "supplied_sha256": "b86f3c1ef21890acf604bc0b46bd85f0d0bdd77faa665fdf116fc0a2b6282ab6"
+  },
+  "graphics/trainers/palettes/cast_nico.pal": {
+    "prior_sha256": "44050f7d0c9644222daf7f2bd1c57f8dbea747939cf698c798131e9bca79cd5c",
+    "supplied_sha256": "3da214580d3de1d055f21b2c5d4d82f2c534e41f8d57ad697fd883cfa92cac52"
+  },
+  "graphics/trainers/front_pics/cast_riven.png": {
+    "prior_sha256": "0538f685d3e2d4e2266cb0566ae8b26acc8b3ad5a50c54699377d7ee1fc9b0ca",
+    "supplied_sha256": "45833f00dab3e78d059a9425436edf9cbe70d768f975cadb9c9448b964bf228b"
+  },
+  "graphics/trainers/palettes/cast_riven.pal": {
+    "prior_sha256": "6f368d86b53370c26f39d4d6d8f389aa5ea001f3677ef623c4799716f67a30af",
+    "supplied_sha256": "f33fbffd97a38c08db4e815e86c11e97b094a935bddfa6ed130c78c6002cc966"
+  },
+  "graphics/trainers/front_pics/cast_emi.png": {
+    "prior_sha256": "a6cfec90b8a88ecec2847e7ad9ab91ceb4833b225a41f825c4446af4edf14aeb",
+    "supplied_sha256": "eaeec872f26a666920178fb5418532038c2fdea63d28cb34b24d7a966f7e6dcf"
+  },
+  "graphics/trainers/palettes/cast_emi.pal": {
+    "prior_sha256": "5347dcc91fb3513b29271c9624e2885c25edc293987000be19be000260c15a86",
+    "supplied_sha256": "0c5419187bd9cd6c9ea3788aab7c3bf6bced7ee3ba7990407f02649abbe21fdd"
+  },
+  "graphics/trainers/front_pics/cast_vera.png": {
+    "prior_sha256": "5addddac558e5602d9237379481c74adb03936f122a13f888f0bcd49485b04f7",
+    "supplied_sha256": "dd198d3d11bcff07ede18df05b51c35480ef22bac24a6549f5595b1a17c16ae6"
+  },
+  "graphics/trainers/palettes/cast_vera.pal": {
+    "prior_sha256": "50a93463d9df4fbdf31e90ef633b7e5d061c6ed738cdf96e9544afb53f31b2d6",
+    "supplied_sha256": "dda82e8b57d21c6305fbbf545ee4ba058ee4d0ae1545314be247638b4ee9d6ad"
+  },
+  "graphics/trainers/front_pics/cast_lume.png": {
+    "prior_sha256": "6887633a86ee4f3cf0ce40630150d323b1d656e4eecce0b4ffda40575527da16",
+    "supplied_sha256": "afc97b00d9cdfa8aa569bc5d9e056f0d5046f7fc7ce8544c77a2e32e77985a85"
+  },
+  "graphics/trainers/palettes/cast_lume.pal": {
+    "prior_sha256": "f867048eab3126ec28442999310b0878cd359b1ec3589c9ae21d1430a5f8e921",
+    "supplied_sha256": "de8102ac77d79e4c62dffd7a1ba2d23709301b4990bcb7970699930da1caa3be"
+  },
+  "graphics/trainers/front_pics/cast_mochi.png": {
+    "prior_sha256": "7d6d9fa3719edc3b74b00798c626b35db9627629b0276512719c96f33d763a91",
+    "supplied_sha256": "96ff62fa4daec7aa5e4d9468dcec296c0981322a0c39d74e121779a8b617a8ee"
+  },
+  "graphics/trainers/palettes/cast_mochi.pal": {
+    "prior_sha256": "c585175a47ff1c2f4e95ede0763bafbc107eff3a9d04766aa519e952d8d9f786",
+    "supplied_sha256": "457a76906c789f30eac25298d3e7ebd2f4d7bcb1b49f8f3479117487f2b48796"
+  },
+  "graphics/trainers/front_pics/cast_zuri.png": {
+    "prior_sha256": "f9a690ae1df165c3cdc99ded9c8837f0d6aa89c8e584f4e933d45f77bc38c938",
+    "supplied_sha256": "010243567614a6fc81f7bb3a6db2b5d8aee4d9970e0f7c45b1a0522a2d56511a"
+  },
+  "graphics/trainers/palettes/cast_zuri.pal": {
+    "prior_sha256": "8f83a39947bb8c86f6304e8c7d9f95a01903fc7c22a402242095128f79f0c239",
+    "supplied_sha256": "052684343d54967ea002a10e671b06b3e86625e38e5a580c2caa5222a68b326a"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "MAP_KANTO_SAFFRON_CITY",
   "name": "KantoSaffronCity",
-  "layout": "LAYOUT_KANTO_SAFFRON_CITY",
+  "layout": "LAYOUT_VENUE_KANTOBLOOM",
   "music": "MUS_RG_PEWTER",
   "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_SAFFRON_CITY",

@@ -131,3 +131,29 @@ extern const struct Tileset gTileset_Kanto_PokemonLeague;
 extern const struct Tileset gTileset_Kanto_HallOfFame;
 
 #endif //GUARD_tilesets_H
+// Private venue tilesets
+extern const struct Tileset gTileset_VenueHoennTutor;
+extern const struct Tileset gTileset_VenueHoennTutorRoom;
+extern const struct Tileset gTileset_VenueHoennBakery;
+extern const struct Tileset gTileset_VenueHoennBakeryRoom;
+extern const struct Tileset gTileset_VenueHoennTea;
+extern const struct Tileset gTileset_VenueHoennTeaRoom;
+extern const struct Tileset gTileset_VenueHoennGlitch;
+extern const struct Tileset gTileset_VenueHoennGlitchRoom;
+extern const struct Tileset gTileset_VenueHoennBloom;
+extern const struct Tileset gTileset_VenueHoennBloomRoom;
+extern const struct Tileset gTileset_VenueHoennRave;
+extern const struct Tileset gTileset_VenueHoennRaveRoom;
+extern const struct Tileset gTileset_VenueKantoBakery;
+extern const struct Tileset gTileset_VenueKantoBakeryRoom;
+extern const struct Tileset gTileset_VenueKantoGlitch;
+extern const struct Tileset gTileset_VenueKantoGlitchRoom;
+extern const struct Tileset gTileset_VenueKantoTea;
+extern const struct Tileset gTileset_VenueKantoTeaRoom;
+extern const struct Tileset gTileset_VenueKantoTutor;
+extern const struct Tileset gTileset_VenueKantoTutorRoom;
+extern const struct Tileset gTileset_VenueKantoRave;
+extern const struct Tileset gTileset_VenueKantoRaveRoom;
+extern const struct Tileset gTileset_VenueKantoBloom;
+extern const struct Tileset gTileset_VenueKantoBloomRoom;
+#endif // GUARD_tilesets_H

@@ -9,3 +9,5 @@
 #include "data/tilesets/watch.h"
 
 #include "data/tilesets/kanto.h"
+
+#include "data/tilesets/venues.h"

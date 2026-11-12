@@ -35,6 +35,9 @@ jobs:
       - name: Validate trainer variety and original scores
         run: python3 dev_scripts/validate_trainer_variety.py
 
+      - name: Validate venues and tutor policy
+        run: python3 dev_scripts/validate_venues.py
+
       - name: Validate recruitable cast
         run: python3 dev_scripts/validate_cast.py
 

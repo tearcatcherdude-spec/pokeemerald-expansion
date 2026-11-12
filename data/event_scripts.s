@@ -1796,3 +1796,6 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 #if !IS_FRLG
 	.include "data/trainer_variety/encounters.inc"
 #endif
+	.include "data/scripts/roaming_tutor.inc"
+
+	.include "data/scripts/venues.inc"

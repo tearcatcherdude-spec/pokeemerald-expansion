@@ -2417,6 +2417,9 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
                 }
             }
             break;
+        case MON_DATA_ROAMING_TUTOR_LEVEL:
+            retVal = GetSubstruct1(boxMon)->roamingTutorLevelLo | (GetSubstruct1(boxMon)->roamingTutorLevelHi << 5);
+            break;
         case MON_DATA_EVOLUTION_TRACKER:
             {
                 struct PokemonSubstruct1 *substruct1 = GetSubstruct1(boxMon);
@@ -2849,6 +2852,14 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
         case MON_DATA_TERA_TYPE:
             SET8(GetSubstruct0(boxMon)->teraType);
             break;
+        case MON_DATA_ROAMING_TUTOR_LEVEL:
+        {
+            u8 level;
+            SET8(level);
+            GetSubstruct1(boxMon)->roamingTutorLevelLo = level & 31;
+            GetSubstruct1(boxMon)->roamingTutorLevelHi = (level >> 5) & 3;
+            break;
+        }
         case MON_DATA_EVOLUTION_TRACKER:
         {
             union EvolutionTracker evoTracker;

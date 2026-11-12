@@ -1,3 +1,4 @@
+from venue_contract import before_venue_layout
 """Check exact supplied assets, cumulative source contracts and recruitability data."""
 from pathlib import Path
 import hashlib,json,re,struct
@@ -30,7 +31,7 @@ def main():
    symbol='SPECIES_'+re.sub(r'[^A-Z0-9]+','_',mon.upper()).strip('_')
    assert symbol in species,(n,mon)
   max_level=max(p['max_level'] for p in wild[c['area']]['land_mons']['mons']);assert c['level']==max_level+(3 if n in ['emi','silas'] else 5)
-  p=f'data/maps/{c["map"]}/map.json';m=load(p);old=baseline['maps'][p]
+  p=f'data/maps/{c["map"]}/map.json';m=before_venue_layout(load(p));old=baseline['maps'][p]
   # Appended variety actors are separately pinned by their full map contract.
   # Preserve the original cast-era actor check verbatim on its own prefix.
   m['object_events']=[o for o in m['object_events'] if not o.get('script','').startswith('Variety_EventScript_')]
