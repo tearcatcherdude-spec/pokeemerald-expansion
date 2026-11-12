@@ -1,4 +1,5 @@
 #include "global.h"
+#include "companion_dialogue.h"
 #include "malloc.h"
 #include "battle.h"
 #include "battle_gfx_sfx_util.h"
@@ -81,23 +82,39 @@ static const struct WindowTemplate sWindowTemplate =
     .baseBlock = 1,
 };
 
+const u8 gMuseumPaintingCaption_Cool0[] = COMPOUND_STRING("Nonstop supercool--\nthe inestimable {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Cool1[] = COMPOUND_STRING("Hey, there!\nThe good-looking POKéMON {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Cool2[] = COMPOUND_STRING("The marvelous, wonderful, and\nvery great {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Beauty0[] = COMPOUND_STRING("This century's last Venus--\nthe beautiful {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Beauty1[] = COMPOUND_STRING("{STR_VAR_1}'s dazzling,\nglittering smile");
+const u8 gMuseumPaintingCaption_Beauty2[] = COMPOUND_STRING("POKéMON CENTER's super idol--\nthe incomparable {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Cute0[] = COMPOUND_STRING("The lovely and sweet {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Cute1[] = COMPOUND_STRING("The pretty {STR_VAR_1}'s\nwinning portrait");
+const u8 gMuseumPaintingCaption_Cute2[] = COMPOUND_STRING("Give us a wink!\nThe cutie POKéMON {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Smart0[] = COMPOUND_STRING("The smartness maestro--\nthe wise POKéMON {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Smart1[] = COMPOUND_STRING("{STR_VAR_1}--the one chosen\nabove all POKéMON");
+const u8 gMuseumPaintingCaption_Smart2[] = COMPOUND_STRING("The excellent {STR_VAR_1}'s\nmoment of elegance");
+const u8 gMuseumPaintingCaption_Tough0[] = COMPOUND_STRING("The powerfully muscular\nspeedster {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Tough1[] = COMPOUND_STRING("The strong, stronger, and\nstrongest {STR_VAR_1}");
+const u8 gMuseumPaintingCaption_Tough2[] = COMPOUND_STRING("The mighty tough\nhyper POKéMON {STR_VAR_1}");
+
 static const u8 *const sMuseumCaptions[NUM_PAINTING_CAPTIONS * CONTEST_CATEGORIES_COUNT] =
 {
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("Nonstop supercool--\nthe inestimable {STR_VAR_1}"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("Hey, there!\nThe good-looking POKéMON {STR_VAR_1}"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("The marvelous, wonderful, and\nvery great {STR_VAR_1}"),
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("This century's last Venus--\nthe beautiful {STR_VAR_1}"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("{STR_VAR_1}'s dazzling,\nglittering smile"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("POKéMON CENTER's super idol--\nthe incomparable {STR_VAR_1}"),
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("The lovely and sweet {STR_VAR_1}"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("The pretty {STR_VAR_1}'s\nwinning portrait"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("Give us a wink!\nThe cutie POKéMON {STR_VAR_1}"),
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("The smartness maestro--\nthe wise POKéMON {STR_VAR_1}"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("{STR_VAR_1}--the one chosen\nabove all POKéMON"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("The excellent {STR_VAR_1}'s\nmoment of elegance"),
-    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("The powerfully muscular\nspeedster {STR_VAR_1}"),
-    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("The strong, stronger, and\nstrongest {STR_VAR_1}"),
-    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("The mighty tough\nhyper POKéMON {STR_VAR_1}"),
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL] = gMuseumPaintingCaption_Cool0,
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL] = gMuseumPaintingCaption_Cool1,
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_COOL] = gMuseumPaintingCaption_Cool2,
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = gMuseumPaintingCaption_Beauty0,
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = gMuseumPaintingCaption_Beauty1,
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_BEAUTY] = gMuseumPaintingCaption_Beauty2,
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE] = gMuseumPaintingCaption_Cute0,
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE] = gMuseumPaintingCaption_Cute1,
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_CUTE] = gMuseumPaintingCaption_Cute2,
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART] = gMuseumPaintingCaption_Smart0,
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART] = gMuseumPaintingCaption_Smart1,
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_SMART] = gMuseumPaintingCaption_Smart2,
+    [0 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH] = gMuseumPaintingCaption_Tough0,
+    [1 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH] = gMuseumPaintingCaption_Tough1,
+    [2 + NUM_PAINTING_CAPTIONS * CONTEST_CATEGORY_TOUGH] = gMuseumPaintingCaption_Tough2,
 };
 
 static const struct OamData sContestPaintingMonOamData =
@@ -252,12 +269,14 @@ static void PrintContestPaintingCaption(u8 contestType, bool8 isForArtist)
         StringCopy(gStringVar2, gContestPaintingWinner->trainerName);
         ConvertInternationalContestantName(gStringVar2);
         StringCopy(gStringVar3, gContestPaintingWinner->monName);
+        CompanionDialogue_RecordNativeMessage(gContestHallPaintingCaption);
         StringExpandPlaceholders(gStringVar4, gContestHallPaintingCaption);
     }
     else
     {
         // Museum caption
         StringCopy(gStringVar1, gContestPaintingWinner->monName);
+        CompanionDialogue_RecordNativeMessage(sMuseumCaptions[category]);
         StringExpandPlaceholders(gStringVar4, sMuseumCaptions[category]);
     }
 

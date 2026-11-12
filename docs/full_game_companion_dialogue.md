@@ -1,5 +1,5 @@
-Current writing checkpoint (2026-11-11): 4,020 active authored situations (4,021 reserved IDs), bound to
-4,115 exact message labels, with eleven independently authored voices (44,220
+Current writing checkpoint (2026-11-11): 4,183 active authored situations (4,185 reserved IDs), bound to
+4,283 exact message labels, with eleven independently authored voices (46,013
 replies). Full-game coverage remains unfinished. Remaining work includes final
 service branches, objects and native/dynamic interactions. These counts describe
 authored bindings, not a percentage of NPCs or a completed playthrough.
@@ -201,3 +201,15 @@ unknown-source precedence passed, alongside the actual Old Amber handoff. The
 Warden's newer checked-add implementation and Effort Ribbon receipts await the
 next exact-ROM validation; a generic space check alone does not guarantee that a
 TM/HM stack can accept an additional item.
+
+The user requested closing this work into a downloadable build on 2026-11-11.
+No new writing scope is started for this delivery. Completed and validated modules
+are included; incomplete authoring files remain unimported for a future continuation.
+This is an expanded playable checkpoint, not a claim of exhaustive coverage of
+all generated/native dialogue, braille inscriptions, or every remaining sign.
+
+The 4,020-situation ROM passed actual Warden HM04 add-failure/retry checks and an
+actual Effort Ribbon award. Both preserved the correct topic and once-only EXP.
+The final checkpoint also includes source-qualified painting captions; its screen
+return must pass on the exact final ROM before packaging. Supplied artwork,
+starters, regional story/save banks, party/PC and old dialogue memory are preserved.

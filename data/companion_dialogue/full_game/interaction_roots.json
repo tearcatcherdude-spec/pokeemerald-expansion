@@ -4838,7 +4838,7 @@
       "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject"
     ],
     "native_calls": [
-      "DoPartnerTrainerMessage"
+      "ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT"
     ],
     "script_found": true,
     "review_status": "unreviewed",
@@ -4927,7 +4927,7 @@
       "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject"
     ],
     "native_calls": [
-      "DoPartnerTrainerMessage"
+      "ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT"
     ],
     "script_found": true,
     "review_status": "unreviewed",
@@ -5016,7 +5016,7 @@
       "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject"
     ],
     "native_calls": [
-      "DoPartnerTrainerMessage"
+      "ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT"
     ],
     "script_found": true,
     "review_status": "unreviewed",
@@ -5105,7 +5105,7 @@
       "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject"
     ],
     "native_calls": [
-      "DoPartnerTrainerMessage"
+      "ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT"
     ],
     "script_found": true,
     "review_status": "unreviewed",
@@ -5194,7 +5194,7 @@
       "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject"
     ],
     "native_calls": [
-      "DoPartnerTrainerMessage"
+      "ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT"
     ],
     "script_found": true,
     "review_status": "unreviewed",
@@ -5283,7 +5283,7 @@
       "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject"
     ],
     "native_calls": [
-      "DoPartnerTrainerMessage"
+      "ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT"
     ],
     "script_found": true,
     "review_status": "unreviewed",
@@ -5372,7 +5372,7 @@
       "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject"
     ],
     "native_calls": [
-      "DoPartnerTrainerMessage"
+      "ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT"
     ],
     "script_found": true,
     "review_status": "unreviewed",
@@ -5461,7 +5461,7 @@
       "BattleFrontier_BattleTowerMultiPartnerRoom_Text_YoungsterReject"
     ],
     "native_calls": [
-      "DoPartnerTrainerMessage"
+      "ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT"
     ],
     "script_found": true,
     "review_status": "unreviewed",
@@ -50060,8 +50060,12 @@
         "event_type": "sign"
       }
     ],
-    "text_labels": [],
-    "native_calls": [],
+    "text_labels": [
+      "gContestHallPaintingCaption"
+    ],
+    "native_calls": [
+      "PrintContestPaintingCaption:Hall"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -50081,8 +50085,12 @@
         "event_type": "sign"
       }
     ],
-    "text_labels": [],
-    "native_calls": [],
+    "text_labels": [
+      "gContestHallPaintingCaption"
+    ],
+    "native_calls": [
+      "PrintContestPaintingCaption:Hall"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -50102,8 +50110,12 @@
         "event_type": "sign"
       }
     ],
-    "text_labels": [],
-    "native_calls": [],
+    "text_labels": [
+      "gContestHallPaintingCaption"
+    ],
+    "native_calls": [
+      "PrintContestPaintingCaption:Hall"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -50123,8 +50135,12 @@
         "event_type": "sign"
       }
     ],
-    "text_labels": [],
-    "native_calls": [],
+    "text_labels": [
+      "gContestHallPaintingCaption"
+    ],
+    "native_calls": [
+      "PrintContestPaintingCaption:Hall"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -50144,8 +50160,12 @@
         "event_type": "sign"
       }
     ],
-    "text_labels": [],
-    "native_calls": [],
+    "text_labels": [
+      "gContestHallPaintingCaption"
+    ],
+    "native_calls": [
+      "PrintContestPaintingCaption:Hall"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -50165,8 +50185,12 @@
         "event_type": "sign"
       }
     ],
-    "text_labels": [],
-    "native_calls": [],
+    "text_labels": [
+      "gContestHallPaintingCaption"
+    ],
+    "native_calls": [
+      "PrintContestPaintingCaption:Hall"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -53241,9 +53265,26 @@
     ],
     "text_labels": [
       "LilycoveCity_LilycoveMuseum_2F_Text_ItsBluePictureFrame",
-      "LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon"
+      "LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon",
+      "gMuseumPaintingCaption_Beauty0",
+      "gMuseumPaintingCaption_Beauty1",
+      "gMuseumPaintingCaption_Beauty2",
+      "gMuseumPaintingCaption_Cool0",
+      "gMuseumPaintingCaption_Cool1",
+      "gMuseumPaintingCaption_Cool2",
+      "gMuseumPaintingCaption_Cute0",
+      "gMuseumPaintingCaption_Cute1",
+      "gMuseumPaintingCaption_Cute2",
+      "gMuseumPaintingCaption_Smart0",
+      "gMuseumPaintingCaption_Smart1",
+      "gMuseumPaintingCaption_Smart2",
+      "gMuseumPaintingCaption_Tough0",
+      "gMuseumPaintingCaption_Tough1",
+      "gMuseumPaintingCaption_Tough2"
     ],
-    "native_calls": [],
+    "native_calls": [
+      "PrintContestPaintingCaption:Museum"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -53276,9 +53317,26 @@
     ],
     "text_labels": [
       "LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon",
-      "LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame"
+      "LilycoveCity_LilycoveMuseum_2F_Text_ItsRedPictureFrame",
+      "gMuseumPaintingCaption_Beauty0",
+      "gMuseumPaintingCaption_Beauty1",
+      "gMuseumPaintingCaption_Beauty2",
+      "gMuseumPaintingCaption_Cool0",
+      "gMuseumPaintingCaption_Cool1",
+      "gMuseumPaintingCaption_Cool2",
+      "gMuseumPaintingCaption_Cute0",
+      "gMuseumPaintingCaption_Cute1",
+      "gMuseumPaintingCaption_Cute2",
+      "gMuseumPaintingCaption_Smart0",
+      "gMuseumPaintingCaption_Smart1",
+      "gMuseumPaintingCaption_Smart2",
+      "gMuseumPaintingCaption_Tough0",
+      "gMuseumPaintingCaption_Tough1",
+      "gMuseumPaintingCaption_Tough2"
     ],
-    "native_calls": [],
+    "native_calls": [
+      "PrintContestPaintingCaption:Museum"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -53342,9 +53400,26 @@
     ],
     "text_labels": [
       "LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon",
-      "LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame"
+      "LilycoveCity_LilycoveMuseum_2F_Text_ItsPinkPictureFrame",
+      "gMuseumPaintingCaption_Beauty0",
+      "gMuseumPaintingCaption_Beauty1",
+      "gMuseumPaintingCaption_Beauty2",
+      "gMuseumPaintingCaption_Cool0",
+      "gMuseumPaintingCaption_Cool1",
+      "gMuseumPaintingCaption_Cool2",
+      "gMuseumPaintingCaption_Cute0",
+      "gMuseumPaintingCaption_Cute1",
+      "gMuseumPaintingCaption_Cute2",
+      "gMuseumPaintingCaption_Smart0",
+      "gMuseumPaintingCaption_Smart1",
+      "gMuseumPaintingCaption_Smart2",
+      "gMuseumPaintingCaption_Tough0",
+      "gMuseumPaintingCaption_Tough1",
+      "gMuseumPaintingCaption_Tough2"
     ],
-    "native_calls": [],
+    "native_calls": [
+      "PrintContestPaintingCaption:Museum"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -53443,9 +53518,26 @@
     ],
     "text_labels": [
       "LilycoveCity_LilycoveMuseum_2F_Text_ItsGreenPictureFrame",
-      "LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon"
+      "LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon",
+      "gMuseumPaintingCaption_Beauty0",
+      "gMuseumPaintingCaption_Beauty1",
+      "gMuseumPaintingCaption_Beauty2",
+      "gMuseumPaintingCaption_Cool0",
+      "gMuseumPaintingCaption_Cool1",
+      "gMuseumPaintingCaption_Cool2",
+      "gMuseumPaintingCaption_Cute0",
+      "gMuseumPaintingCaption_Cute1",
+      "gMuseumPaintingCaption_Cute2",
+      "gMuseumPaintingCaption_Smart0",
+      "gMuseumPaintingCaption_Smart1",
+      "gMuseumPaintingCaption_Smart2",
+      "gMuseumPaintingCaption_Tough0",
+      "gMuseumPaintingCaption_Tough1",
+      "gMuseumPaintingCaption_Tough2"
     ],
-    "native_calls": [],
+    "native_calls": [
+      "PrintContestPaintingCaption:Museum"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false
@@ -53478,9 +53570,26 @@
     ],
     "text_labels": [
       "LilycoveCity_LilycoveMuseum_2F_Text_ItsPaintingOfPokemon",
-      "LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame"
+      "LilycoveCity_LilycoveMuseum_2F_Text_ItsYellowPictureFrame",
+      "gMuseumPaintingCaption_Beauty0",
+      "gMuseumPaintingCaption_Beauty1",
+      "gMuseumPaintingCaption_Beauty2",
+      "gMuseumPaintingCaption_Cool0",
+      "gMuseumPaintingCaption_Cool1",
+      "gMuseumPaintingCaption_Cool2",
+      "gMuseumPaintingCaption_Cute0",
+      "gMuseumPaintingCaption_Cute1",
+      "gMuseumPaintingCaption_Cute2",
+      "gMuseumPaintingCaption_Smart0",
+      "gMuseumPaintingCaption_Smart1",
+      "gMuseumPaintingCaption_Smart2",
+      "gMuseumPaintingCaption_Tough0",
+      "gMuseumPaintingCaption_Tough1",
+      "gMuseumPaintingCaption_Tough2"
     ],
-    "native_calls": [],
+    "native_calls": [
+      "PrintContestPaintingCaption:Museum"
+    ],
     "script_found": true,
     "review_status": "unreviewed",
     "terminal_messages_reviewed": false

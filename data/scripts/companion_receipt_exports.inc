@@ -20,3 +20,4 @@
     .global FourIsland_House2_Text_VictoryStickerApplied
     .global SlateportCity_Text_ReceivedEffortRibbon
     .global SlateportCity_Text_PutEffortRibbonOnMon
+    .global LavaridgeTown_Text_ReceivedTheEgg

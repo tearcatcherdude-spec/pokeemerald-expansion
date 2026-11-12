@@ -767,3 +767,23 @@ for row in ROWS:
 
 from companion_hoenn_last_gifts import ROWS as HOENN_LAST_GIFT_ROWS
 ROWS.extend(HOENN_LAST_GIFT_ROWS)
+
+from companion_hoenn_wireless_guides import ROWS as HOENN_WIRELESS_GUIDE_ROWS
+ROWS.extend(HOENN_WIRELESS_GUIDE_ROWS)
+from companion_kanto_bg_inspections import ROWS as KANTO_BG_INSPECTION_ROWS
+ROWS.extend(KANTO_BG_INSPECTION_ROWS)
+
+# The grunt continues through two more remarks before returning control.
+for row in ROWS:
+    if row['key'] == 'hoenn_field_what_want':
+        row['retired_sources'] = row['labels']
+        row['labels'] = []
+        row['retired'] = 'Always followed by the museum sign-reading sequence; its final paraphrase is separately bound.'
+
+from companion_kanto_posted_tips import ROWS as KANTO_POSTED_TIP_ROWS
+ROWS.extend(KANTO_POSTED_TIP_ROWS)
+from companion_kanto_bg_views import ROWS as KANTO_BG_VIEW_ROWS
+ROWS.extend(KANTO_BG_VIEW_ROWS)
+
+from companion_hoenn_objects_remaining import ROWS as HOENN_OBJECT_REMAINING_ROWS
+ROWS.extend(HOENN_OBJECT_REMAINING_ROWS)

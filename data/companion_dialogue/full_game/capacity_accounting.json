@@ -24,8 +24,8 @@
   },
   "unused_bytes_per_save_slot": 536,
   "released_pilot_memory_bytes": 1012,
-  "raw_independent_history_for_reachable_labels_bytes": 12925,
-  "additional_raw_bytes_needed": 11913,
+  "raw_independent_history_for_reachable_labels_bytes": 12947,
+  "additional_raw_bytes_needed": 11935,
   "caveat": "Reachable labels are an upper-bound worklist, not approved distinct response contexts. Exact semantic aliases and final-message review are still required. Compression cannot guarantee fitting arbitrary independent histories into a smaller fixed bit budget.",
   "safe_unchanged_layout_policy": "No PC/fusion shrinking, legacy progress clearing, Hall of Fame/special-sector reuse, or removal of the backup save slot.",
   "maximum_dense_contexts_per_voice_using_all_unused_space_and_8_byte_extension_header": 1120

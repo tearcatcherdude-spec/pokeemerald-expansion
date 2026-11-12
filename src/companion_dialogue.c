@@ -53,6 +53,8 @@ extern const u8 FourIsland_House2_Text_VictoryStickerApplied[];
 extern const u8 SlateportCity_Text_ReceivedEffortRibbon[];
 extern const u8 SlateportCity_Text_PutEffortRibbonOnMon[];
 
+extern const u8 LavaridgeTown_Text_ReceivedTheEgg[];
+
 static EWRAM_DATA bool8 sActive = FALSE;
 static EWRAM_DATA bool8 sOffering = FALSE;
 static EWRAM_DATA bool8 sFinishPending = FALSE;
@@ -201,6 +203,7 @@ bool32 CompanionDialogue_IsSystemReceipt(const u8 *message)
         FourIsland_House2_Text_VictoryStickerApplied,
         SlateportCity_Text_ReceivedEffortRibbon,
         SlateportCity_Text_PutEffortRibbonOnMon,
+        LavaridgeTown_Text_ReceivedTheEgg,
     };
     for (u32 i = 0; i < ARRAY_COUNT(receipts); i++)
         if (message == receipts[i])

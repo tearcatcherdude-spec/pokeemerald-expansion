@@ -34,9 +34,14 @@ def read_sources():
     # into final-message coverage.
     for block in blocks.values():
         if re.search(r'\btower_dopartnermsg\s+PARTNER_MSGID_REJECT\b',block['body']):
-            block['native_calls'].append('DoPartnerTrainerMessage')
+            block['native_calls'].append('ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT')
         for message in re.findall(r'\bapprentice_msg\s+TRUE,\s*(APPRENTICE_MSG_THANKS_\w+)',block['body']):
             block['native_calls'].append('PrintApprenticeMessage:'+message)
+        for winner in re.findall(r'\bshowcontestpainting\s+(CONTEST_WINNER_\w+)',block['body']):
+            if winner.startswith('CONTEST_WINNER_MUSEUM_'):
+                block['native_calls'].append('PrintContestPaintingCaption:Museum')
+            elif re.fullmatch(r'CONTEST_WINNER_HALL_[1-6]',winner):
+                block['native_calls'].append('PrintContestPaintingCaption:Hall')
     return blocks
 
 def collect_roots(blocks):
@@ -95,6 +100,13 @@ def native_text_edges():
     labels=re.findall(r'\breturn\s+(PokedexRating_Text_\w+)\s*;',oak[1])
     assert labels==['PokedexRating_Text_LessThan'+str(i) for i in range(10,151,10)]+['PokedexRating_Text_Complete']
     edges['GetProfOaksRatingMessage']=labels
+    painting=(ROOT/'src/contest_painting.c').read_text(encoding='utf-8')
+    array=re.search(r'sMuseumCaptions\[[^\]]+\]\s*=\s*\{(.*?)\};',painting,re.S)
+    assert array is not None, 'Review changed museum caption selection'
+    labels=re.findall(r'=\s*(gMuseumPaintingCaption_\w+)',array[1])
+    assert labels==['gMuseumPaintingCaption_'+kind+str(i) for kind in ['Cool','Beauty','Cute','Smart','Tough'] for i in range(3)]
+    edges['PrintContestPaintingCaption:Museum']=labels
+    edges['PrintContestPaintingCaption:Hall']=['gContestHallPaintingCaption']
     daycare=(ROOT/'src/daycare.c').read_text(encoding='utf-8')
     array=re.search(r'sCompatibilityMessages\[\]\s*=\s*\{(.*?)\};',daycare,re.S)
     assert array is not None, 'Review changed Day Care compatibility table'
@@ -139,7 +151,7 @@ def native_text_edges():
         assert array is not None, ('Review changed partner dispatch table',table)
         used.update(re.findall(r'\bsPartner(?:Apprentice)?Texts\w*\b',array[1]))
     assert len(used)==66 and used<=definitions.keys(), 'Review changed used partner text families'
-    edges['DoPartnerTrainerMessage']=sorted('BattleFrontier_BattleTowerMultiPartnerRoom_Text_'+definitions[name]+'Reject' for name in used)
+    edges['ShowPartnerCandidateMessage:PARTNER_MSGID_REJECT']=sorted('BattleFrontier_BattleTowerMultiPartnerRoom_Text_'+definitions[name]+'Reject' for name in used)
     return edges
 
 def main():

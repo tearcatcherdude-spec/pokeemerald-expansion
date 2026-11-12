@@ -1,6 +1,11 @@
 {
   "scope": "Static human-ending audit of BattleFrontier and EverGrande map scripts against published contexts and every authored companion module, including unpublished ROWS. Source evidence is not emulator coverage.",
-  "authored_checkpoint": {"module": "dev_scripts/companion_hoenn_postgame_audit.py", "contexts": 20, "labels": 20, "replies": 220},
+  "authored_checkpoint": {
+    "module": "dev_scripts/companion_hoenn_postgame_audit.py",
+    "contexts": 20,
+    "labels": 20,
+    "replies": 220
+  },
   "findings": [
     "LongDreamedAboutBattleFrontier is defined in BattleDomeLobby/scripts.inc but the actual Man3 actor root is referenced by OutsideWest/map.json. It is newly authored rather than discarded as unused.",
     "Six party-eligibility branches end with dedicated generic farewells, distinct from cancellation. Their earlier level/species/item details are intermediate. Factory rental entry has no equivalent ordinary-party rejection.",
@@ -12,81 +17,203 @@
     {
       "kind": "intermediate_menu",
       "source": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
-      "scripts": ["ChooseFacilityToLearnAbout", "ChooseRuleToLearnAbout", "ChooseFrontierPassInfoToLearnAbout"],
+      "scripts": [
+        "ChooseFacilityToLearnAbout",
+        "ChooseRuleToLearnAbout",
+        "ChooseFrontierPassInfoToLearnAbout"
+      ],
       "label_prefix": "BattleFrontier_ReceptionGate_Text_",
-      "labels": ["BattleTowerInfo", "BattleDomeInfo", "BattlePalaceInfo", "BattleArenaInfo", "BattleFactoryInfo", "BattlePikeInfo", "BattlePyramidInfo", "RankingHallInfo", "ExchangeCornerInfo", "LevelModeInfo", "Level50Info", "OpenLevelInfo", "MonEntryInfo", "HoldItemsInfo", "SymbolsInfo", "RecordedBattleInfo", "BattlePointsInfo"],
+      "labels": [
+        "BattleTowerInfo",
+        "BattleDomeInfo",
+        "BattlePalaceInfo",
+        "BattleArenaInfo",
+        "BattleFactoryInfo",
+        "BattlePikeInfo",
+        "BattlePyramidInfo",
+        "RankingHallInfo",
+        "ExchangeCornerInfo",
+        "LevelModeInfo",
+        "Level50Info",
+        "OpenLevelInfo",
+        "MonEntryInfo",
+        "HoldItemsInfo",
+        "SymbolsInfo",
+        "RecordedBattleInfo",
+        "BattlePointsInfo"
+      ],
       "reason": "Selected pages return to the chooser. All three guide exits finish with already-authored EnjoyBattleFrontier. Choice prompts and introductions are intermediate."
     },
     {
       "kind": "intermediate_scene",
       "source": "data/maps/BattleFrontier_ReceptionGate/scripts.inc",
       "label_prefix": "BattleFrontier_ReceptionGate_Text_",
-      "labels": ["FirstTimeHereThisWay", "WelcomeToBattleFrontier", "IssueFrontierPass", "ObtainedFrontierPass", "PlacedTrainerCardInFrontierPass", "IfItIsntPlayerYouCame", "OhMrScottGoodDay"],
+      "labels": [
+        "FirstTimeHereThisWay",
+        "WelcomeToBattleFrontier",
+        "IssueFrontierPass",
+        "ObtainedFrontierPass",
+        "PlacedTrainerCardInFrontierPass",
+        "IfItIsntPlayerYouCame",
+        "OhMrScottGoodDay"
+      ],
       "reason": "Initial scene continues through ScottGreatToSeeYouHere, then movement/removal/release. EnjoyBattleFrontier is separately terminal on repeat greeter and guide exits."
     },
     {
       "kind": "intermediate_exchange",
       "source": "data/maps/BattleFrontier_ExchangeServiceCorner/scripts.inc",
       "label_prefix": "BattleFrontier_ExchangeServiceCorner_Text_",
-      "labels": ["WelcomePleaseChoosePrize", "ConfirmPurchase", "DontHaveEnoughPoints", "HereIsYourPrize", "WellSendItToPC"],
+      "labels": [
+        "WelcomePleaseChoosePrize",
+        "ConfirmPurchase",
+        "DontHaveEnoughPoints",
+        "HereIsYourPrize",
+        "WellSendItToPC"
+      ],
       "reason": "Success and insufficient-points messages return to prize selection. Final goodbye, bag-full and decoration-storage-full are separately authored."
     },
     {
       "kind": "intermediate_rating",
       "source": "data/maps/BattleFrontier_Lounge1/scripts.inc",
       "label_prefix": "BattleFrontier_Lounge1_Text_",
-      "labels": ["PokemonBreederIntro", "LetsLookAtYourPokemon", "EvenICantTell", "AverageAbility", "BetterThanAverageAbility", "ImpressiveAbility", "OutstandingAbility", "BestAspectHP", "BestAspectAtk", "BestAspectDef", "BestAspectSpeed", "BestAspectSpAtk", "BestAspectSpDef"],
+      "labels": [
+        "PokemonBreederIntro",
+        "LetsLookAtYourPokemon",
+        "EvenICantTell",
+        "AverageAbility",
+        "BetterThanAverageAbility",
+        "ImpressiveAbility",
+        "OutstandingAbility",
+        "BestAspectHP",
+        "BestAspectAtk",
+        "BestAspectDef",
+        "BestAspectSpeed",
+        "BestAspectSpAtk",
+        "BestAspectSpDef"
+      ],
       "reason": "Egg rejection returns to selection. General rating and best-stat labels precede a final Stat quality assessment. Four final quality outcomes and cancellation are already authored."
     },
     {
       "kind": "intermediate_native_advice",
       "source": "data/maps/BattleFrontier_Lounge2/scripts.inc",
       "label_prefix": "BattleFrontier_Lounge2_Text_",
-      "labels": ["FrontierManiacIntro", "SwingByForTheLatestWord", "BattleTowerIsHottest", "FacilityIsHottest"],
+      "labels": [
+        "FrontierManiacIntro",
+        "SwingByForTheLatestWord",
+        "BattleTowerIsHottest",
+        "FacilityIsHottest"
+      ],
       "reason": "These precede ShowFrontierManiacMessage; its 26 proven static final pointers are authored."
     },
     {
       "kind": "intermediate_wager",
       "source": "data/maps/BattleFrontier_Lounge3/scripts.inc",
       "label_prefix": "BattleFrontier_Lounge3_Text_",
-      "labels": ["YouLookToughExplainGambling", "HowAboutEnteringEventForMe", "SpotMeSomeBattlePoints", "HowMuchCanYouSpot", "ThanksOffYouGo", "YouDontHaveEnoughPoints", "HelloChampHeresYourPoints", "ObtainedBattlePoints", "Oh"],
+      "labels": [
+        "YouLookToughExplainGambling",
+        "HowAboutEnteringEventForMe",
+        "SpotMeSomeBattlePoints",
+        "HowMuchCanYouSpot",
+        "ThanksOffYouGo",
+        "YouDontHaveEnoughPoints",
+        "HelloChampHeresYourPoints",
+        "ObtainedBattlePoints",
+        "Oh"
+      ],
       "reason": "Prompts continue, insufficient points loops, ThanksOffYouGo is overwritten by native Go text, and reward greeting/receipt is overwritten by ThinkOfMeForAnotherChallenge. Actual Go/decline/loss/payout finals are authored."
     },
     {
       "kind": "intermediate_tutor",
       "source": "data/maps/BattleFrontier_Lounge7/scripts.inc",
       "label_prefix": "BattleFrontier_Lounge7_Text_",
-      "labels": ["LeftTutorIntro", "RightTutorIntro", "LeftTutorWelcomeBack", "RightTutorWelcomeBack", "TeachWhichMove", "MoveWillBeXBattlePoints", "TeachMoveToWhichMon", "HaventGotEnoughPoints"],
+      "labels": [
+        "LeftTutorIntro",
+        "RightTutorIntro",
+        "LeftTutorWelcomeBack",
+        "RightTutorWelcomeBack",
+        "TeachWhichMove",
+        "MoveWillBeXBattlePoints",
+        "TeachMoveToWhichMon",
+        "HaventGotEnoughPoints"
+      ],
       "reason": "These feed selection and teaching loops. Final YouDontWantTo and successful IllTakeBattlePoints are authored."
     },
     {
       "kind": "intermediate_gifts",
       "source": "data/maps/BattleFrontier_ScottsHouse/scripts.inc",
       "label_prefix": "BattleFrontier_ScottsHouse_Text_",
-      "labels": ["WelcomeToBattleFrontier", "HowMuchEffortItTookToMakeReal", "HaveThisAsMementoOfOurPathsCrossing", "ObtainedXBattlePoints", "Beat50TrainersInARow", "Beat100TrainersInARow"],
+      "labels": [
+        "WelcomeToBattleFrontier",
+        "HowMuchEffortItTookToMakeReal",
+        "HaveThisAsMementoOfOurPathsCrossing",
+        "ObtainedXBattlePoints",
+        "Beat50TrainersInARow",
+        "Beat100TrainersInARow"
+      ],
       "reason": "Introductory gift concludes ExplainBattlePoints. Both shield offers finish ExpectingToHearEvenGreaterThings or ComeBackForThisLater. Berry-success offer is preserved only through whitelisted item receipts; failed delivery ends BerryPocketStuffed. Separate actual outcomes are authored."
     },
     {
       "kind": "intermediate_facility_service",
-      "map_names": ["BattleArenaLobby", "BattleDomeLobby", "BattleFactoryLobby", "BattlePalaceLobby", "BattlePikeLobby", "BattlePyramidLobby", "BattleTowerLobby"],
+      "map_names": [
+        "BattleArenaLobby",
+        "BattleDomeLobby",
+        "BattleFactoryLobby",
+        "BattlePalaceLobby",
+        "BattlePikeLobby",
+        "BattlePyramidLobby",
+        "BattleTowerLobby"
+      ],
       "source_prefix": "data/maps/BattleFrontier_",
       "reason": "Welcome, explanation, level selection, party selection, save and record questions, point/ribbon announcements and results are not separate endings. Branches continue to authored final farewells, eligibility-end labels, disqualification, cancellation or forced warp. Rules-board pages loop to ReadWhichHeading, itself a question rather than a descriptive ending."
     },
     {
       "kind": "warp_overwritten_brains",
-      "labels": ["BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime", "BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain", "BattleFrontier_BattleDomeBattleRoom_Text_WontUnderestimateYouNextTime", "BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter", "BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred", "BattleFrontier_BattleFactoryBattleRoom_Text_LastTimeILoseToYou", "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime", "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain", "BattleFrontier_BattleArenaBattleRoom_Text_GoingToBeFunNextTime", "BattleFrontier_BattleArenaBattleRoom_Text_IfWeBattleAgainWontLose", "BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear", "BattleFrontier_BattlePikeRoomNormal_Text_IWontForget", "BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting", "BattleFrontier_BattlePyramidTop_Text_FarewellForNow"],
+      "labels": [
+        "BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime",
+        "BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain",
+        "BattleFrontier_BattleDomeBattleRoom_Text_WontUnderestimateYouNextTime",
+        "BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter",
+        "BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred",
+        "BattleFrontier_BattleFactoryBattleRoom_Text_LastTimeILoseToYou",
+        "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime",
+        "BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain",
+        "BattleFrontier_BattleArenaBattleRoom_Text_GoingToBeFunNextTime",
+        "BattleFrontier_BattleArenaBattleRoom_Text_IfWeBattleAgainWontLose",
+        "BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear",
+        "BattleFrontier_BattlePikeRoomNormal_Text_IWontForget",
+        "BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting",
+        "BattleFrontier_BattlePyramidTop_Text_FarewellForNow"
+      ],
       "reason": "Each final-looking victory statement proceeds through forced warp to lobby speech, or via Pike final room before lobby. No pre-warp reaction opportunity established. Earlier introductions, challenges, pass requests, symbol receipts and announcements are intermediate."
     },
     {
       "kind": "warp_overwritten_corridor",
-      "sources": ["data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc", "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc", "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc"],
-      "labels": ["BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn", "BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame", "BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes", "BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered", "BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature", "BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons"],
+      "sources": [
+        "data/maps/BattleFrontier_BattleArenaCorridor/scripts.inc",
+        "data/maps/BattleFrontier_BattlePalaceCorridor/scripts.inc",
+        "data/maps/BattleFrontier_BattlePikeCorridor/scripts.inc"
+      ],
+      "labels": [
+        "BattleFrontier_BattleArenaCorridor_Text_PleaseStepIn",
+        "BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame",
+        "BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes",
+        "BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered",
+        "BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature",
+        "BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons"
+      ],
       "reason": "On-frame movement cutscenes continue directly through a forced door warp and battle setup. No retained reaction opportunity demonstrated."
     },
     {
       "kind": "warp_or_gameclear_league",
-      "sources": ["data/maps/EverGrandeCity_ChampionsRoom/scripts.inc", "data/maps/EverGrandeCity_HallOfFame/scripts.inc"],
-      "labels": ["EverGrandeCity_ChampionsRoom_Text_MayCongratulations", "EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations", "EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames"],
+      "sources": [
+        "data/maps/EverGrandeCity_ChampionsRoom/scripts.inc",
+        "data/maps/EverGrandeCity_HallOfFame/scripts.inc"
+      ],
+      "labels": [
+        "EverGrandeCity_ChampionsRoom_Text_MayCongratulations",
+        "EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations",
+        "EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames"
+      ],
       "reason": "Rival congratulations return to forced Hall of Fame warp. Hall of Fame final speech proceeds through recording effect, GameClear and credits. Earlier Wallace/rival/Birch speech is intermediate. Actual four Elite Four postbattle/repeat endpoints are authored."
     },
     {
@@ -104,40 +231,168 @@
       "reason": "Easy Chat composition is not a proven exact static text pointer. No sprite-class or generic-room fallback authored."
     },
     {
-      "kind": "dynamic_native_printer",
+      "kind": "apprentice_intermediate_cases_only",
       "source": "data/scripts/apprentice.inc",
       "root": "BattleFrontier_BattleTowerLobby_EventScript_Apprentice",
       "native_source": "src/apprentice.c",
       "native_evidence": "PrintApprenticeMessage expands into gStringVar4 then uses AddTextPrinterForMessage(TRUE). It does not present the selected original pointer through ShowFieldMessage. FirstMeeting rejection loops back to WhichLvlMode.",
-      "reason": "Counseling question/answer states and printer source identity require an explicit reviewed runtime hook. This is distinct from proven static Tower tag-partner rejection messages."
+      "reason": "Root added CompanionDialogue_RecordNativeMessage(string) immediately before expansion. Source review identifies seven terminal THANKS cases, all 112 exact templates now authored in companion_hoenn_apprentice.py. PLEASE_TEACH, REJECT, WHICH_LVL_MODE, WHICH_MON, WHICH_MOVE, WHICH_MON_FIRST, WHAT_HELD_ITEM, HOLD_NOTHING, ITEM_ALREADY_SUGGESTED and PICK_WIN_SPEECH are intermediate prompts/loops. Free Easy Chat speech contents are not inferred; WinSpeechThanks replies address only the fixed acceptance/farewell template."
     },
     {
       "kind": "dynamic_battle_speech",
-      "map_names": ["BattleTowerBattleRoom", "BattleTowerMultiBattleRoom", "BattleArenaBattleRoom", "BattleDomeBattleRoom", "BattleFactoryBattleRoom", "BattlePikeRoomNormal"],
+      "map_names": [
+        "BattleTowerBattleRoom",
+        "BattleTowerMultiBattleRoom",
+        "BattleArenaBattleRoom",
+        "BattleDomeBattleRoom",
+        "BattleFactoryBattleRoom",
+        "BattlePikeRoomNormal"
+      ],
       "message": "gStringVar4",
       "reason": "Native opponent introductions use trainer/Easy Chat buffers and are followed by battle. No inferred static binding or generic trainer reply authored."
     },
     {
       "kind": "unreferenced_or_unused",
-      "labels": ["BattleFrontier_OutsideWest_Text_ThisIsBattleTower", "BattleFrontier_OutsideWest_Text_CantFindBattleTower", "BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa", "BattleFrontier_OutsideWest_Text_BattleDomeSign2", "BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction", "BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction", "BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction", "BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom", "BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize", "BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend"],
+      "labels": [
+        "BattleFrontier_OutsideWest_Text_ThisIsBattleTower",
+        "BattleFrontier_OutsideWest_Text_CantFindBattleTower",
+        "BattleFrontier_OutsideWest_Text_DomeIsHereGrandpa",
+        "BattleFrontier_OutsideWest_Text_BattleDomeSign2",
+        "BattleFrontier_OutsideWest_Text_QuestionMarkUnderConstruction",
+        "BattleFrontier_BattleTowerLobby_Text_DoubleBattleRoomConstruction",
+        "BattleFrontier_BattleTowerLobby_Text_MultiBattleRoomConstruction",
+        "BattleFrontier_BattleTowerLobby_Text_BagFullMakeRoom",
+        "BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize",
+        "BattleFrontier_BattleTowerLobby_Text_ChoseSameMonAsFriend"
+      ],
       "reason": "Unused scripts/texts or no active references found. No accessible actor ending demonstrated. LongDreamedAboutBattleFrontier is specifically not excluded: OutsideWest map really references its cross-file Man3 root."
     },
     {
       "kind": "outside_human_scope",
-      "labels": ["BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant", "BattleFrontier_PokemonCenter_1F_Text_Skitty", "BattleFrontier_BattlePikeRoomNormal_Text_Silence"],
+      "labels": [
+        "BattleFrontier_OutsideEast_Text_ZigzagoonLooksVacant",
+        "BattleFrontier_PokemonCenter_1F_Text_Skitty",
+        "BattleFrontier_BattlePikeRoomNormal_Text_Silence"
+      ],
       "reason": "Pokemon observation, cry or silence rather than human speech. Background/creature descriptions belong to a separate module."
     },
     {
       "kind": "shared_service_scope",
-      "labels": ["gText_PleaseComeAgain", "CableClub_Text_IncorrectNumberOfParticipants", "Text_PlayersMadeDifferentSelections"],
+      "labels": [
+        "gText_PleaseComeAgain",
+        "CableClub_Text_IncorrectNumberOfParticipants",
+        "Text_PlayersMadeDifferentSelections"
+      ],
       "reason": "Genuine shared shop/link-service endpoints flagged to root. Do not bind globally shared labels with Frontier-specific assumptions."
     }
   ],
   "static_native_evidence": [
-    {"function": "ShowFrontierGamblerGoMessage", "source": "src/field_specials.c:2965", "table": "sFrontierGamblerGoMessages", "unique_final_labels": 12, "module": "companion_hoenn_postgame_people.py", "terminal_path": "Lounge3 FinishBet or ChallengeNotAttempted: special/waitmessage/waitbutton/release/end"},
-    {"function": "ShowFrontierManiacMessage", "source": "src/field_specials.c:2152", "table": "sFrontierManiacMessages", "unique_final_labels": 26, "module": "companion_hoenn_postgame_remaining.py", "terminal_path": "Lounge2 GiveAdvice: special/waitmessage/waitbutton/release/end"},
-    {"function": "ShowNatureGirlMessage", "source": "src/field_specials.c:2923", "table": "gNaturesInfo[nature].natureGirlMessage in src/pokemon.c", "unique_final_labels": 9, "module": "companion_hoenn_postgame_remaining.py", "terminal_path": "Lounge5 valid non-Egg selection: special/waitmessage/waitbutton/release/end"},
-    {"function": "DoPartnerTrainerMessage", "source": "src/battle_tower.c:1348", "tables": ["sPartnerTrainerTextTables", "sPartnerApprenticeTextTables"], "unique_reject_labels": 66, "module": "companion_hoenn_partner_rejections.py", "terminal_path": "TowerMultiPartnerRoom RejectPartner: PARTNER_MSGID_REJECT/waitmessage/waitbutton/release/end", "excluded_msgids": ["INTRO", "MON1", "MON2_ASK", "ACCEPT"]}
+    {
+      "function": "ShowFrontierGamblerGoMessage",
+      "source": "src/field_specials.c:2965",
+      "table": "sFrontierGamblerGoMessages",
+      "unique_final_labels": 12,
+      "module": "companion_hoenn_postgame_people.py",
+      "terminal_path": "Lounge3 FinishBet or ChallengeNotAttempted: special/waitmessage/waitbutton/release/end"
+    },
+    {
+      "function": "ShowFrontierManiacMessage",
+      "source": "src/field_specials.c:2152",
+      "table": "sFrontierManiacMessages",
+      "unique_final_labels": 26,
+      "module": "companion_hoenn_postgame_remaining.py",
+      "terminal_path": "Lounge2 GiveAdvice: special/waitmessage/waitbutton/release/end"
+    },
+    {
+      "function": "ShowNatureGirlMessage",
+      "source": "src/field_specials.c:2923",
+      "table": "gNaturesInfo[nature].natureGirlMessage in src/pokemon.c",
+      "unique_final_labels": 9,
+      "module": "companion_hoenn_postgame_remaining.py",
+      "terminal_path": "Lounge5 valid non-Egg selection: special/waitmessage/waitbutton/release/end"
+    },
+    {
+      "function": "DoPartnerTrainerMessage",
+      "source": "src/battle_tower.c:1348",
+      "tables": [
+        "sPartnerTrainerTextTables",
+        "sPartnerApprenticeTextTables"
+      ],
+      "unique_reject_labels": 66,
+      "module": "companion_hoenn_partner_rejections.py",
+      "terminal_path": "TowerMultiPartnerRoom RejectPartner: PARTNER_MSGID_REJECT/waitmessage/waitbutton/release/end",
+      "excluded_msgids": [
+        "INTRO",
+        "MON1",
+        "MON2_ASK",
+        "ACCEPT"
+      ]
+    },
+    {
+      "function": "PrintApprenticeMessage",
+      "source": "src/apprentice.c:805",
+      "table_source": "src/data/battle_frontier/apprentice.h:430",
+      "module": "companion_hoenn_apprentice.py",
+      "unique_final_labels": 112,
+      "terminal_msg_arrays": {
+        "APPRENTICE_MSG_THANKS_LVL_MODE": "sApprenticeFirstMeetingTexts[][3] -> gText_ApprenticeLevelModeThanks0..15",
+        "APPRENTICE_MSG_THANKS_MON": "sApprenticeWhichMonTexts[][1] -> gText_ApprenticeMonThanks0..15",
+        "APPRENTICE_MSG_THANKS_HELD_ITEM": "sApprenticeHeldItemTexts[][3] -> gText_ApprenticeThanksHeldItem0..15",
+        "APPRENTICE_MSG_THANKS_NO_HELD_ITEM": "sApprenticeHeldItemTexts[][2] -> gText_ApprenticeThanksNoHeldItem0..15",
+        "APPRENTICE_MSG_THANKS_MOVE": "sApprenticeWhichMoveTexts[][1] -> gText_ApprenticeMoveThanks0..15",
+        "APPRENTICE_MSG_THANKS_MON_FIRST": "sApprenticeWhichMonFirstTexts[][1] -> gText_ApprenticeMonFirstThanks0..15",
+        "APPRENTICE_MSG_THANKS_WIN_SPEECH": "sApprenticePickWinSpeechTexts[][1] -> gText_ApprenticeWinSpeechThanks0..15"
+      },
+      "terminal_path": "Each TRUE thanks call in data/scripts/apprentice.inc is followed only by state flags, release/releaseall, departure movement and end. No subsequent text. Gone emits no message. Rejected teaching loops rather than ending.",
+      "hook": "CompanionDialogue_RecordNativeMessage(string) before StringExpandPlaceholders(gStringVar4,string); root-owned runtime change."
+    }
   ],
-  "limits": ["No native prompt-visibility or memory-spending claim follows from static source review.", "Shared services, apprentice native printer and Easy Chat routes remain explicit separate coverage work.", "No engine changes, shared generation, build or commit performed by this author."]
+  "limits": [
+    "No native prompt-visibility or memory-spending claim follows from static source review.",
+    "Shared services, apprentice native prompt validation and Easy Chat routes remain explicit separate coverage work.",
+    "No engine changes, shared generation, build or commit performed by this author."
+  ],
+  "object_followup_checkpoint": {
+    "module": "dev_scripts/companion_hoenn_objects_remaining.py",
+    "contexts": 66,
+    "labels": 66,
+    "replies": 726,
+    "body_length_range": [
+      39,
+      105
+    ],
+    "frozen": true,
+    "validation": "Python compile/exec; exact physical labels including native C strings; 11 replies; 30..319 lengths; no global label or per-voice exact-body duplicates across published and all authored modules; no forbidden watch/shared-world wording."
+  },
+  "object_followup_evidence": {
+    "painting_native": {
+      "source": "src/contest_painting.c PrintContestPaintingCaption; src/contest_util.c ShowContestPainting/ExitContestPainting; src/scrcmd.c ScrCmd_showcontestpainting",
+      "identity": "15 named gMuseumPaintingCaption_{Cool,Beauty,Cute,Smart,Tough}{0,1,2} pointers in sMuseumCaptions; gContestHallPaintingCaption for contestType below MUSEUM_CONTEST_WINNERS_START. Original pointer recorded before StringExpandPlaceholders. Names/category/rank buffers not guessed.",
+      "eligibility": "isForArtist TRUE returns before caption and hook. Museum frame interaction shows generic intro then showcontestpainting. A/B in HoldContestPainting fades, CB2_QuitContestPainting calls savedCallback=ExitContestPainting, which returns via CB2_ReturnToFieldContinueScriptPlayMapMusic. Museum interaction resumes releaseall/end with no later message. Native visibility/EXP verification delegated to root."
+    },
+    "routes_125_134": "Every map.json bg_events reviewed: Route125 four secret-base entries, Route127 five secret-base entries, Route128 three hidden Heart Scales, others empty. No scripted sign/description BG roots on these ten routes.",
+    "shared_metatile": "GetInteractedMetatileScript in src/field_control_avatar.c reviewed. Seven fixed furniture descriptions already bound. Running Shoes manual newly authored. TV/PC/link results/feeders/questionnaire/timer/Secret Base furniture and field-move roots require separate callback/script review; no blanket static topic inferred.",
+    "excluded_inaccessible": "RS_MysteryEventsHouse_EventScript_Door exists in map BG but MossdeepCity_GameCorner_1F/scripts.inc explicitly documents inaccessible wall placement and unused RS leftovers. Not authored.",
+    "intermediate_exclusions": [
+      "Seven Frontier rule boards and Battle Tent rule boards loop to ReadWhichHeading; no question/page binding.",
+      "Mach/Acro handbooks loop through WantToReadDifferentPage and page selector.",
+      "Rustboro school blackboard is a status-menu loop.",
+      "Lilycove painting generic ItsPaintingOfPokemon is overwritten by exact native caption.",
+      "Lilycove vending successful drink and extra-can statements return to WhichDrinkWouldYouLike menu. Cancel and insufficient-funds endpoints remain eligible next tranche.",
+      "Lanette notebook Page1 question continues or closes; Page2 question can be final only on NO, so not bound as content. Page3 and close final authored separately.",
+      "SSTidal bed usually calls later arrival/halfway text; no universal rest binding. Weather Institute bed has no later text and is authored.",
+      "MtChimney remove offer excluded; successful removal authored only survives when giveitem succeeds, receipt whitelist preserves it. Bag-full unrecognized terminal invalidates it.",
+      "Petalburg Gym room prompts are yes/no then warp/cancel; gym content remains parent-owned.",
+      "Ruins door/braille texts need exact current native flow review; existing retired intermediate not revived."
+    ],
+    "remaining_candidates": [
+      "Lilycove vending cancel and insufficient money",
+      "SouthernIsland_Interior_Text_Sign actual Lati branch eligibility",
+      "AbandonedShip room-specific locked doors and TheDoorIsOpen",
+      "Dewford trend books conditional four variants",
+      "Shared TrainerHill timer, Safari feeder, link-result screens, closed-door and Trick House puzzle endpoints",
+      "Shoal salt/shell acquisition branches and all remaining BG callback terminal paths",
+      "Museum/contest hall native caption runtime checks by root"
+    ]
+  }
 }

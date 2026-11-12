@@ -37,8 +37,9 @@ def assess():
                 incomplete_voice_sets=incomplete_voices)
     return dict(content_ready=not any(gaps.values()),
                 scope='Whole Hoenn/Kanto conservative source worklist; decisions and exact final bindings required.',
-                authored_contexts=len(catalogue['contexts']),
-                authored_replies=sum(len(row['replies']) for row in catalogue['contexts']),
+                authored_contexts=sum(not row.get('retired') for row in catalogue['contexts']),
+                reserved_context_ids=len(catalogue['contexts']),
+                authored_replies=sum(len(row['replies']) for row in catalogue['contexts'] if not row.get('retired')),
                 inventory_labels=len(messages),
                 bound_labels_in_inventory=sum(row['label'] in bindings for row in messages),
                 gaps={key:dict(count=len(values),examples=values[:12]) for key,values in gaps.items()},

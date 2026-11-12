@@ -286,5 +286,25 @@
       "rom_sha256": "ccf013736cb116fef36c32b7a1a6fc8b5d06aeb2e7c24d905a0c16646691d0b9",
       "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
     }
+  },
+  "safe_handoff_validation": {
+    "source_commit": "ddc6af8884c4a4469b9ebd0909a2f1f3cb91a10a",
+    "reports": [
+      {
+        "checks": [
+          "Actual Warden capacity failure retains the Gold Teeth and unclaimed HM04 flag, and offers only the exact failure reply",
+          "A real retry returns the Gold Teeth and grants HM04 once, retaining the Warden thanks through the custom receipt instead of repeating the failure topic"
+        ],
+        "rom_sha256": "db6f8c6860e3df585a5d57dc8bfd1f36d662765de548fded39fc0d7796ac8446",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      },
+      {
+        "checks": [
+          "Actual Effort Ribbon award changes the Pokemon ribbon data and preserves the woman recognition through both named narrator notices, with exact Silas reply and once-only EXP"
+        ],
+        "rom_sha256": "db6f8c6860e3df585a5d57dc8bfd1f36d662765de548fded39fc0d7796ac8446",
+        "fixture": "Native mGBA ROM/video/controller API; arranged story flags, map positions and inventories. Fresh-game flash tests do not restore emulator states. Not a complete story playthrough."
+      }
+    ]
   }
 }

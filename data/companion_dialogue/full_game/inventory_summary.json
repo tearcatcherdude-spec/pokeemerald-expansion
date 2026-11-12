@@ -7,11 +7,11 @@
   "coordinate_story": 517,
   "shared_metatile_dispatch": 50,
   "unique_interaction_roots": 4866,
-  "reachable_text_labels": 9398,
-  "source_texts_found": 9398,
-  "distinct_raw_source_texts": 9024,
+  "reachable_text_labels": 9414,
+  "source_texts_found": 9414,
+  "distinct_raw_source_texts": 9040,
   "pilot_bound_labels": 45,
-  "authored_bound_labels": 4043,
-  "native_functions_requiring_review": 540,
+  "authored_bound_labels": 4211,
+  "native_functions_requiring_review": 542,
   "missing_script_roots": 0
 }
