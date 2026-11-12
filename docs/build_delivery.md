@@ -11,6 +11,12 @@ and a required `--package-sha256`. Private GitHub artifacts must be retrieved vi
 the authorized connector; do not extract credentials into a helper script.
 The desktop path is resolved through Windows, including redirected desktops.
 
+For a fresh CI artifact, use `tools/build_delivery/package_build.py` with
+`--artifact`, `--emulator`, `--verification` and `--output`. It creates the clean
+play package from the downloaded CI archive, publisher-checksummed Celio archive
+and the tested ROM's verification record. It generates the launcher/history
+helper and excludes saves and history snapshots. Never package a player's folder.
+
 Example from the repository root:
 
 ```
@@ -37,8 +43,8 @@ blocks replacement instead of silently losing memory. `--skip-save` explicitly
 omits both save and history for that delivery; it does not change future defaults.
 
 The updater refuses to replace folders while an emulator is open. Packages are
-staged and hash-checked before activation. Any interrupted folder activation
-attempt restores moved old folders. An already-current build is not re-archived.
+staged and hash-checked before activation. If folder activation raises an error,
+moved old folders are restored. An already-current build is not re-archived.
 Every delivery records its chosen save hash, copied history file hashes, ROM
 hash, source commit and archive destinations in local `delivery.json`. These
 private delivery records must not be committed to the repository.
