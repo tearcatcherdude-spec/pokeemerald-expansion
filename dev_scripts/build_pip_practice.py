@@ -15,6 +15,9 @@ def main():
             if species=='Smeargle':suffix+='- Tackle\n- Growl\n- Sand Attack\n- Helping Hand\n'
             suffix+='\n'
     p.write_text(prefix+suffix.rstrip()+'\n',encoding='utf-8')
-    p=ROOT/'include/constants/kanto_progress.h';s=p.read_text();s=re.sub(r'#define KANTO_TRAINER_COUNT \d+','#define KANTO_TRAINER_COUNT 742',s);p.write_text(s)
+    p=ROOT/'include/constants/kanto_progress.h';s=p.read_text();s=re.sub(r'#define KANTO_TRAINER_COUNT \d+','#define KANTO_TRAINER_COUNT 742',s);
+    for i in range(4):
+        if '#define TRAINER_KANTO_DATA_PIP_PRACTICE_'+str(i) not in s:s=s.replace('\n#endif',f'\n#define TRAINER_KANTO_DATA_PIP_PRACTICE_{i} {738+i}\n#endif')
+    p.write_text(s)
     (ROOT/'data/venues/pip_practice.json').write_text(json.dumps(dict(first_trainer_id=738,levels=levels,teams=teams),indent=2)+'\n')
 if __name__=='__main__':main()

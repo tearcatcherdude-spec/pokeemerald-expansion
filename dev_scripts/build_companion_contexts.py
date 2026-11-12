@@ -90,6 +90,8 @@ def build():
         '\n'.join(f'\t.global {label}' for label,_ in bindings)+'\n', encoding='utf-8')
     folder=ROOT/'data/companion_dialogue';folder.mkdir(exist_ok=True)
     (folder/'contexts.json').write_text(json.dumps(dict(voices=VOICES, capacity=12288, legacy_capacity=736, contexts=review), indent=2)+'\n', encoding='utf-8')
+    from packed_companion_text import write as pack_text
+    pack_text(ROOT/'data/companion_dialogue/packed',True)
     active=sum(not r.get('retired') for r in review)
     print(f'Built {active} active contexts ({len(review)} reserved IDs), {len(bindings)} exact message labels, {11*active} authored replies.')
 

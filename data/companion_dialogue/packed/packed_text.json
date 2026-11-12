@@ -1,0 +1,28 @@
+{
+  "format": "GBA BIOS LZ77, separately indexed blocks <=4096 bytes",
+  "contexts": 4233,
+  "voices": [
+    "pip",
+    "silas",
+    "kade",
+    "ashe",
+    "nico",
+    "riven",
+    "emi",
+    "vera",
+    "lume",
+    "mochi",
+    "zuri"
+  ],
+  "replies": 46541,
+  "unique_replies": 46541,
+  "block_count": 859,
+  "max_reply_bytes": 152,
+  "uncompressed_text_bytes": 3484877,
+  "packed_text_bytes": 2194432,
+  "bytes_reclaimed": 1290445,
+  "decoded_catalogue_sha256": "8a390faeb611a1d6b94c7c9d7ad69d931a5b01e2acbf3ff7fed38adea95348e6",
+  "native_golden_fnv": 3744704737,
+  "roundtrip_all_replies": true,
+  "rom_tested": false
+}

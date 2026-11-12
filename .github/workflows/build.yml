@@ -35,6 +35,9 @@ jobs:
       - name: Validate trainer variety and original scores
         run: python3 dev_scripts/validate_trainer_variety.py
 
+      - name: Validate lossless companion storage
+        run: python3 dev_scripts/validate_packed_companion_text.py
+
       - name: Validate venues and tutor policy
         run: python3 dev_scripts/validate_venues.py
 
@@ -104,6 +107,9 @@ jobs:
 
       - name: Verify compiled cast artwork and expressions
         run: python3 dev_scripts/verify_cast_rom.py pokeemerald.gba pokeemerald.map
+
+      - name: Verify every compiled packed companion reply
+        run: python3 dev_scripts/verify_packed_companion_rom.py pokeemerald.gba pokeemerald.map
 
       - name: Upload Emerald ROM
         uses: actions/upload-artifact@v4

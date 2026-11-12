@@ -77,4 +77,8 @@
 
 #include "constants/trainer_variety.h"
 #include "constants/kanto_rare.h"
+#define TRAINER_KANTO_DATA_PIP_PRACTICE_0 738
+#define TRAINER_KANTO_DATA_PIP_PRACTICE_1 739
+#define TRAINER_KANTO_DATA_PIP_PRACTICE_2 740
+#define TRAINER_KANTO_DATA_PIP_PRACTICE_3 741
 #endif

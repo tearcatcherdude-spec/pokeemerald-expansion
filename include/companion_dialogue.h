@@ -37,4 +37,5 @@ u32 CompanionDialogue_ContextForMessage(const u8 *message);
 bool32 CompanionDialogue_IsSystemReceipt(const u8 *message);
 bool32 CompanionDialogue_HasSpent(u32 voice, u32 context);
 
+bool32 CompanionDialogue_CopyCatalogReply(u32 context, u32 voice, u8 *destination, u32 capacity, u8 *expression);
 #endif
