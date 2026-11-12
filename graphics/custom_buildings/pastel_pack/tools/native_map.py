@@ -24,6 +24,9 @@ def tileset(symbol):
 class NativeMap:
     def __init__(self,name):
         self.name=name;self.events=json.loads((GAME/f'data/maps/{name}/map.json').read_text())
+        snapshot=GAME/f'data/venues/originals/{name}.json'
+        if self.events['layout'].startswith('LAYOUT_VENUE_') and snapshot.exists():
+            self.events=json.loads(snapshot.read_text())
         self.layout=LAYOUTS[self.events['layout']];l=self.layout
         self.w,self.h=l['width'],l['height'];self.frlg=l['layout_version']=='frlg'
         self.primary=640 if self.frlg else 512;self.pal_primary=7 if self.frlg else 6

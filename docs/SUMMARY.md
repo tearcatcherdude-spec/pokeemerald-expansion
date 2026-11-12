@@ -168,3 +168,6 @@
 - [Full-game companion dialogue expansion](full_game_companion_dialogue.md)
 - [Kanto rare Pokemon encounters](kanto_rare_encounters.md)
 - [Trainer variety and battle music](trainer_variety_music.md)
+- [Expanded Celio emulator build](celio_expanded_build.md)
+- [Desktop build delivery](build_delivery.md)
+- [Readability and species-aware tutor](readability_and_tutor.md)

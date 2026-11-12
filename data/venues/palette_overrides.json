@@ -1,0 +1,187 @@
+[
+  {
+    "tileset": "gTileset_VenueHoennTutor",
+    "slot": 7,
+    "path": "graphics/custom_buildings/pastel_pack/modules/hoenn/tutor/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennTutorRoom",
+    "slot": 7,
+    "path": "data/venues/HoennTutor/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennTutorRoom",
+    "slot": 11,
+    "path": "data/venues/HoennTutor/interior/11.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennBakery",
+    "slot": 6,
+    "path": "graphics/custom_buildings/pastel_pack/modules/hoenn/bakery/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennBakeryRoom",
+    "slot": 7,
+    "path": "data/venues/HoennBakery/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennBakeryRoom",
+    "slot": 11,
+    "path": "data/venues/HoennBakery/interior/11.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennTea",
+    "slot": 12,
+    "path": "graphics/custom_buildings/pastel_pack/modules/hoenn/tea/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennTeaRoom",
+    "slot": 7,
+    "path": "data/venues/HoennTea/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennTeaRoom",
+    "slot": 11,
+    "path": "data/venues/HoennTea/interior/11.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennGlitch",
+    "slot": 12,
+    "path": "graphics/custom_buildings/pastel_pack/modules/hoenn/glitch/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennGlitchRoom",
+    "slot": 7,
+    "path": "data/venues/HoennGlitch/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennGlitchRoom",
+    "slot": 11,
+    "path": "data/venues/HoennGlitch/interior/11.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennBloom",
+    "slot": 7,
+    "path": "graphics/custom_buildings/pastel_pack/modules/hoenn/bloom/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennBloomRoom",
+    "slot": 7,
+    "path": "data/venues/HoennBloom/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennBloomRoom",
+    "slot": 11,
+    "path": "data/venues/HoennBloom/interior/11.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennRave",
+    "slot": 6,
+    "path": "graphics/custom_buildings/pastel_pack/modules/hoenn/rave/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennRaveRoom",
+    "slot": 7,
+    "path": "data/venues/HoennRave/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueHoennRaveRoom",
+    "slot": 11,
+    "path": "data/venues/HoennRave/interior/11.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoBakery",
+    "slot": 7,
+    "path": "graphics/custom_buildings/pastel_pack/modules/kanto/bakery/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoBakeryRoom",
+    "slot": 7,
+    "path": "data/venues/KantoBakery/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoBakeryRoom",
+    "slot": 8,
+    "path": "data/venues/KantoBakery/interior/08.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoGlitch",
+    "slot": 7,
+    "path": "graphics/custom_buildings/pastel_pack/modules/kanto/glitch/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoGlitchRoom",
+    "slot": 7,
+    "path": "data/venues/KantoGlitch/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoGlitchRoom",
+    "slot": 8,
+    "path": "data/venues/KantoGlitch/interior/08.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoTea",
+    "slot": 7,
+    "path": "graphics/custom_buildings/pastel_pack/modules/kanto/tea/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoTeaRoom",
+    "slot": 7,
+    "path": "data/venues/KantoTea/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoTeaRoom",
+    "slot": 8,
+    "path": "data/venues/KantoTea/interior/08.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoTutor",
+    "slot": 7,
+    "path": "graphics/custom_buildings/pastel_pack/modules/kanto/tutor/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoTutorRoom",
+    "slot": 7,
+    "path": "data/venues/KantoTutor/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoTutorRoom",
+    "slot": 8,
+    "path": "data/venues/KantoTutor/interior/08.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoRave",
+    "slot": 7,
+    "path": "graphics/custom_buildings/pastel_pack/modules/kanto/rave/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoRaveRoom",
+    "slot": 7,
+    "path": "data/venues/KantoRave/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoRaveRoom",
+    "slot": 8,
+    "path": "data/venues/KantoRave/interior/08.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoBloom",
+    "slot": 7,
+    "path": "graphics/custom_buildings/pastel_pack/modules/kanto/bloom/exterior/palette-00.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoBloomRoom",
+    "slot": 7,
+    "path": "data/venues/KantoBloom/interior/07.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoBloomRoom",
+    "slot": 8,
+    "path": "data/venues/KantoBloom/interior/08.pal"
+  },
+  {
+    "tileset": "gTileset_VenueKantoSaffronSecondary",
+    "slot": 7,
+    "path": "graphics/custom_buildings/pastel_pack/modules/saffron/glitch/exterior/palette-00.pal"
+  }
+]

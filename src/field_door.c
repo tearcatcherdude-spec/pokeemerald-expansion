@@ -1,4 +1,5 @@
 #include "global.h"
+#include "venues.h"
 #include "event_data.h"
 #include "field_door.h"
 #include "field_camera.h"
@@ -1617,7 +1618,7 @@ static const struct DoorGraphics *GetDoorGraphics(const struct DoorGraphics *gfx
 {
     while (gfx->tiles != NULL)
     {
-        if (gfx->metatileNum == metatileNum && (gfx->tileset == gMapHeader.mapLayout->primaryTileset || gfx->tileset == gMapHeader.mapLayout->secondaryTileset))
+        if (gfx->metatileNum == metatileNum && (gfx->tileset == Venue_BaseTileset(gMapHeader.mapLayout->primaryTileset) || gfx->tileset == Venue_BaseTileset(gMapHeader.mapLayout->secondaryTileset)))
             return gfx;
         gfx++;
     }

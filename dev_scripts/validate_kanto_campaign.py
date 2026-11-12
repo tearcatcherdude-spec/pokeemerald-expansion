@@ -17,6 +17,9 @@ def main():
    for e in m[field]:
     if not 0<=e['x']<l['width'] or not 0<=e['y']<l['height']:
      assert any(o['x']==e['x'] and o['y']==e['y'] for o in source[field]),(name,field,e)
+ for site in json.loads((ROOT/'data/venues/sites.json').read_text()):
+  if site['region']=='kanto' and site.get('open_lot'):
+   m=load('data/maps/'+site['house']+'/map.json');maps[m['id']]=m
  for m in maps.values():
   for w in m['warp_events']:
    if w['dest_map'] in ['MAP_DYNAMIC','MAP_UNDEFINED']:continue
@@ -35,6 +38,12 @@ def main():
  for p in (ROOT/'data/kanto').rglob('*.inc'):
   for label in re.findall(r'^(\w+)::?',p.read_text(encoding='utf-8'),re.M):
    assert label not in labels,(label,p,labels.get(label));labels[label]=p
+ for site in json.loads((ROOT/'data/venues/sites.json').read_text()):
+  if site['region']=='kanto' and site.get('open_lot'):
+   m=load('data/maps/'+site['house']+'/map.json');maps[m['id']]=m
+ for site in json.loads((ROOT/'data/venues/sites.json').read_text()):
+  if site['region']=='kanto' and site.get('open_lot'):
+   path=ROOT/'data/maps'/site['house']/'scripts.inc';label=site['house']+'_MapScripts';assert label+'::' in path.read_text();labels[label]=path
  for m in maps.values():assert m.get('shared_scripts_map',m['name'])+'_MapScripts' in labels,m['name']
  for gym in ['PewterCity','CeruleanCity','VermilionCity','CeladonCity','FuchsiaCity','SaffronCity','CinnabarIsland','ViridianCity']:
   assert any(n.startswith('Kanto'+gym+'_Gym') for n in manifest['maps'].values()),gym
@@ -54,6 +63,7 @@ if __name__=='__main__':main()
 # Keep the constant-time region lookup exact, including groups with no Kanto maps.
 _groups=json.loads((ROOT/'data/maps/map_groups.json').read_text())
 _imported=set(json.loads((ROOT/'data/kanto/maps_manifest.json').read_text())['maps'].values())
+_imported.update(s['house'] for s in json.loads((ROOT/'data/venues/sites.json').read_text()) if s['region']=='kanto' and s.get('open_lot'))
 _counts=[]
 for _group in _groups['group_order']:
  _members=set(_groups[_group]);_present=_members&_imported

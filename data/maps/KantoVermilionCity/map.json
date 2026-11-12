@@ -1,7 +1,7 @@
 {
   "id": "MAP_KANTO_VERMILION_CITY",
   "name": "KantoVermilionCity",
-  "layout": "LAYOUT_KANTO_VERMILION_CITY",
+  "layout": "LAYOUT_VENUE_KANTOTEA",
   "music": "MUS_RG_VERMILLION",
   "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_VERMILION_CITY",
@@ -268,6 +268,13 @@
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_KANTO_VERMILION_CITY_GYM",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 26,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_VENUE_KANTO_TEA",
       "dest_warp_id": "1"
     }
   ],

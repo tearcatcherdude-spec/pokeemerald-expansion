@@ -1,7 +1,7 @@
 {
   "id": "MAP_KANTO_ROUTE18",
   "name": "KantoRoute18",
-  "layout": "LAYOUT_KANTO_ROUTE18",
+  "layout": "LAYOUT_VENUE_KANTOBLOOM",
   "music": "MUS_RG_ROUTE3",
   "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_ROUTE_18",
@@ -112,6 +112,13 @@
       "y": 9,
       "elevation": 3,
       "dest_map": "MAP_KANTO_ROUTE18_EAST_ENTRANCE_1F",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 12,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_VENUE_KANTO_BLOOM",
       "dest_warp_id": "1"
     }
   ],

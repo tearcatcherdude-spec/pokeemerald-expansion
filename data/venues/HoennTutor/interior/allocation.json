@@ -1,0 +1,9 @@
+{
+  "tile_base": 512,
+  "metatile_base": 512,
+  "palette_slots": [
+    7,
+    11
+  ],
+  "module": "C:\\Users\\Coryell\\Documents\\Codex\\2026-11-08\\referenced-chatgpt-conversation-this-is-an\\work\\companion-venues\\graphics\\custom_buildings\\pastel_pack\\modules\\hoenn\\tutor\\interior"
+}

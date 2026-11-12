@@ -15,7 +15,7 @@
   "modules": [
     {
       "module": "hoenn/bakery/exterior",
-      "tiles": 70,
+      "tiles": 61,
       "palette_banks": 1,
       "passed": true
     },
@@ -27,7 +27,7 @@
     },
     {
       "module": "hoenn/tutor/exterior",
-      "tiles": 70,
+      "tiles": 61,
       "palette_banks": 1,
       "passed": true
     },
@@ -39,7 +39,7 @@
     },
     {
       "module": "hoenn/glitch/exterior",
-      "tiles": 70,
+      "tiles": 61,
       "palette_banks": 1,
       "passed": true
     },
@@ -51,7 +51,7 @@
     },
     {
       "module": "hoenn/rave/exterior",
-      "tiles": 67,
+      "tiles": 61,
       "palette_banks": 1,
       "passed": true
     },
@@ -63,7 +63,7 @@
     },
     {
       "module": "hoenn/bloom/exterior",
-      "tiles": 70,
+      "tiles": 61,
       "palette_banks": 1,
       "passed": true
     },
@@ -75,7 +75,7 @@
     },
     {
       "module": "hoenn/tea/exterior",
-      "tiles": 68,
+      "tiles": 61,
       "palette_banks": 1,
       "passed": true
     },
@@ -87,7 +87,7 @@
     },
     {
       "module": "kanto/bakery/exterior",
-      "tiles": 92,
+      "tiles": 87,
       "palette_banks": 1,
       "passed": true
     },
@@ -99,7 +99,7 @@
     },
     {
       "module": "kanto/tutor/exterior",
-      "tiles": 93,
+      "tiles": 87,
       "palette_banks": 1,
       "passed": true
     },
@@ -111,7 +111,7 @@
     },
     {
       "module": "kanto/glitch/exterior",
-      "tiles": 93,
+      "tiles": 87,
       "palette_banks": 1,
       "passed": true
     },
@@ -123,7 +123,7 @@
     },
     {
       "module": "kanto/rave/exterior",
-      "tiles": 88,
+      "tiles": 87,
       "palette_banks": 1,
       "passed": true
     },
@@ -135,7 +135,7 @@
     },
     {
       "module": "kanto/bloom/exterior",
-      "tiles": 91,
+      "tiles": 87,
       "palette_banks": 1,
       "passed": true
     },
@@ -147,7 +147,7 @@
     },
     {
       "module": "kanto/tea/exterior",
-      "tiles": 92,
+      "tiles": 86,
       "palette_banks": 1,
       "passed": true
     },
@@ -159,13 +159,13 @@
     },
     {
       "module": "saffron/bloom/exterior",
-      "tiles": 123,
+      "tiles": 119,
       "palette_banks": 1,
       "passed": true
     },
     {
       "module": "saffron/glitch/exterior",
-      "tiles": 114,
+      "tiles": 109,
       "palette_banks": 1,
       "passed": true
     }

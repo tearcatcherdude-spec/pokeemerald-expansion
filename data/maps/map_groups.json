@@ -115,7 +115,9 @@
     "gMapGroup_KantoCampaignIndoorFiveIslandRoute_Frlg",
     "gMapGroup_KantoCampaignIndoorTwoIslandRoute_Frlg",
     "gMapGroup_KantoCampaignIndoorSixIslandRoute_Frlg",
-    "gMapGroup_KantoCampaignIndoorSevenIslandRoute_Frlg"
+    "gMapGroup_KantoCampaignIndoorSevenIslandRoute_Frlg",
+    "gMapGroup_VenuesHoenn",
+    "gMapGroup_VenuesKanto"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -1700,5 +1702,16 @@
   ],
   "gMapGroup_KantoCampaignIndoorSevenIslandRoute_Frlg": [
     "KantoSevenIsland_SevaultCanyon_House"
+  ],
+  "gMapGroup_VenuesHoenn": [
+    "VenueHoennBakery"
+  ],
+  "gMapGroup_VenuesKanto": [
+    "VenueKantoBakery",
+    "VenueKantoGlitch",
+    "VenueKantoTea",
+    "VenueKantoTutor",
+    "VenueKantoRave",
+    "VenueKantoBloom"
   ]
 }

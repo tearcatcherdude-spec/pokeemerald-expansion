@@ -35,6 +35,16 @@ jobs:
       - name: Validate trainer variety and original scores
         run: python3 dev_scripts/validate_trainer_variety.py
 
+      - name: Validate venues and tutor policy
+        run: python3 dev_scripts/validate_venues.py
+
+      - name: Validate connected-map graphics
+        run: |
+          python3 -m pip install --disable-pip-version-check numpy pillow
+          python3 dev_scripts/validate_venue_connections.py
+          python3 dev_scripts/validate_readability.py
+          python3 dev_scripts/build_roaming_tutor_catalog.py --check
+
       - name: Validate recruitable cast
         run: python3 dev_scripts/validate_cast.py
 
@@ -78,7 +88,7 @@ jobs:
       - name: ROM (Emerald)
         env:
           GAME_VERSION: EMERALD
-        run: make -j$(nproc) -O all
+        run: make -j$(nproc) -O all CELIO_ROM=1
 
       - name: Preserve failed script preprocessing
         if: failure()
@@ -101,6 +111,9 @@ jobs:
 
       - name: Verify compiled cast artwork and expressions
         run: python3 dev_scripts/verify_cast_rom.py pokeemerald.gba pokeemerald.map
+
+      - name: Verify expanded cartridge size and capacity
+        run: python3 dev_scripts/verify_celio_rom.py pokeemerald.gba pokeemerald.map
 
       - name: Upload Emerald ROM
         uses: actions/upload-artifact@v4
@@ -234,7 +247,7 @@ jobs:
       - name: Release
         env:
           GAME_VERSION: EMERALD
-        run: make -j$(nproc) release
+        run: make -j$(nproc) release CELIO_ROM=1
 
   test:
     if: github.actor != 'allcontributors[bot]'
@@ -276,11 +289,19 @@ jobs:
             tools/mgba-rom-test-hydra/mgba-rom-test-hydra
           key: tools-check-${{ runner.os }}-${{ hashFiles('tools/*/Makefile', 'tools/**/*.c', 'tools/**/*.cpp', 'tools/**/*.h') }}
 
+      - name: Tutor species mechanics
+        env:
+          GAME_VERSION: EMERALD
+          TEST: 1
+        run: make -j$(nproc) check TESTS="Roaming tutor"
+
       - name: Test
         env:
           GAME_VERSION: EMERALD
           TEST: 1
-        run: make -j$(nproc) check
+        run: |
+          rm -f pokeemerald-test.elf
+          make -j$(nproc) check
 
   # Gate job: satisfies the "build" branch protection rule.
   # Passes only when all parallel build/test jobs succeed.

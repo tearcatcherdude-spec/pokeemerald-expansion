@@ -1,7 +1,7 @@
 {
   "id": "MAP_LILYCOVE_CITY_HOUSE1",
   "name": "LilycoveCity_House1",
-  "layout": "LAYOUT_HOUSE1",
+  "layout": "LAYOUT_VENUE_HOENNRAVE_ROOM",
   "music": "MUS_LILYCOVE",
   "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_LILYCOVE_CITY",
@@ -17,12 +17,12 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 4,
-      "y": 5,
+      "x": 7,
+      "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_House1_EventScript_ExpertM",
@@ -39,6 +39,36 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "LilycoveCity_House1_EventScript_Kecleon",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_VENUE_HOENNRAVE_ROUX",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_VARIETY_ROUX",
+      "x": 6,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Venue_EventScript_Roux",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_VENUE_HOENNRAVE_ZEPHYR",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_VARIETY_ZEPHYR",
+      "x": 2,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Venue_EventScript_Zephyr",
       "flag": "0"
     }
   ],

@@ -128,3 +128,37 @@ two former reserved bytes count completed one-time legacy-context imports.
 Import read-only, per voice, once for each appended context. Do not keep checking
 legacy broad categories on every offer: that would silence fresh independent
 descriptions. All exact legacy aliases must be bound below context 736.
+
+# Standing desktop delivery preference (2026-11-12)
+
+After each new playable build, automatically download/package and deliver it to
+the Windows desktop using tools/build_delivery/deploy.py. Put the new build in
+`Emerald Current Build` and move prior recognized build folders intact into
+`past emerald builds`. Copy the most recently modified checksum-valid normal
+save and its matching entire companion-history folder unless the user explicitly
+opts out for that delivery. Never migrate an old emulator state or merge separate
+playthroughs. Do not ask again for routine transfers/archiving already authorized
+here. Stop if the emulator is running or required history is missing; preserve all
+originals. See docs/build_delivery.md for verification, staging and rollback.
+
+# Authorized readability and tutor revision (2026-11-12)
+
+The user explicitly requested clearer custom buildings and NPC sprites. Active
+revision v2 is pinned by graphics/readability_v2/revision.json. Every superseded
+art file is retained below graphics/readability_v2/originals; old cast/variety
+contracts remain frozen and validate the archived originals plus exact revised
+hashes. Pip's original Morph walker and all 80 dialogue expressions stay exact.
+Do not regenerate the AI sources or overwrite this revision without a new request.
+
+The bakery uses Rustboro House3's full existing footprint; the nightclub uses
+Fuchsia House1's existing footprint. Keep their native residents and scripts,
+existing outdoor collision and animated doorway cells. Route104 and KantoRoute11
+are restored completely. Released private venue map IDs/layout ordering remain
+stable; retired saved route overlays migrate without changing any save layout.
+
+Mr. Loophole must offer genuine extra moves, not one four-move fallback for all
+species. Catalogue: data/roaming_tutor/lessons.json; compile/check with
+dev_scripts/build_roaming_tutor_catalog.py. Rank safe unknown moves by species
+type/anatomical technique, level, attack category and missing/type-diverse coverage.
+Exclude the species' normal level-up, teachable and egg moves. Keep individual
+20-level cooldown, HM protection, Gen-IV move limit and conservative power bands.

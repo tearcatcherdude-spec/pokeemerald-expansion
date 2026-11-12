@@ -1,0 +1,35 @@
+{
+  "first_trainer_id": 738,
+  "levels": [
+    8,
+    18,
+    32,
+    48
+  ],
+  "teams": [
+    [
+      "Porygon",
+      "Chingling",
+      "Voltorb",
+      "Smeargle"
+    ],
+    [
+      "Porygon",
+      "Mime Jr.",
+      "Rotom",
+      "Smeargle"
+    ],
+    [
+      "Porygon2",
+      "Mr. Mime",
+      "Rotom",
+      "Smeargle"
+    ],
+    [
+      "Porygon-Z",
+      "Mr. Mime",
+      "Rotom",
+      "Smeargle"
+    ]
+  ]
+}

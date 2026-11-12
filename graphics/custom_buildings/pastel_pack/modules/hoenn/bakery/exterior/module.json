@@ -27,7 +27,7 @@
   },
   "native_primary_tileset": "data\\tilesets\\primary\\general",
   "native_secondary_tileset": "data\\tilesets\\secondary\\petalburg",
-  "tile_count": 70,
+  "tile_count": 61,
   "palette_count": 1,
   "native_cells": [
     13

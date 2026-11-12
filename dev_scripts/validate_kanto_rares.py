@@ -1,3 +1,4 @@
+from venue_contract import before_venue_layout
 """Verify the new actors, legal stats, preserved native maps and capture lifecycle."""
 from pathlib import Path
 import json,re
@@ -23,7 +24,7 @@ def main():
     for r,authored in zip(records,ROWS):
         assert r['species']==authored['species'] and r['level']==authored['level'] and r['evs']==authored['evs']
         assert 5<=r['level']<=42 and sum(r['evs'])==510 and all(0<=v<=252 for v in r['evs'])
-        m=json.loads((ROOT/'data/maps'/r['map']/'map.json').read_text());actors=[o for o in m['object_events'] if o.get('script','').startswith('KantoRare_')]
+        m=before_venue_layout(json.loads((ROOT/'data/maps'/r['map']/'map.json').read_text()));actors=[o for o in m['object_events'] if o.get('script','').startswith('KantoRare_')]
         assert len(actors)==1
         actor=actors[0];assert actor['graphics_id']=='OBJ_EVENT_GFX_SPECIES('+r['species']+')'
         assert actor['flag']==hex(r['flag_id']) and actor['script']==r['script']

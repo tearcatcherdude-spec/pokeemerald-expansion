@@ -29,7 +29,7 @@
   },
   "native_primary_tileset": "data\\tilesets\\primary\\general_frlg",
   "native_secondary_tileset": "data\\tilesets\\secondary\\saffron_city_frlg",
-  "tile_count": 92,
+  "tile_count": 87,
   "palette_count": 1,
   "native_cells": [
     22
