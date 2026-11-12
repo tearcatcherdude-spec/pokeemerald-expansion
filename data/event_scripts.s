@@ -1810,3 +1810,15 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/VenueKantoTutor/scripts.inc"
 	.include "data/maps/VenueKantoRave/scripts.inc"
 	.include "data/maps/VenueKantoBloom/scripts.inc"
+
+	.include "data/maps/VoidOldaleCottage/scripts.inc"
+
+	.include "data/maps/VoidOldaleWorkshop/scripts.inc"
+
+	.include "data/maps/VoidOldaleRestHouse/scripts.inc"
+
+	.include "data/maps/VoidOldaleShop/scripts.inc"
+
+	.include "data/maps/VoidOldaleTown/scripts.inc"
+
+	.include "data/void_oldale/dialogue.inc"

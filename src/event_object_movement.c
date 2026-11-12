@@ -496,6 +496,15 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #include "data/object_events/object_event_graphics_info_followers.h"
 
 static const struct SpritePalette sObjectEventSpritePalettes[] = {
+    {gObjectEventPal_VoidWispit, OBJ_EVENT_PAL_TAG_VOID_WISPIT},
+    {gObjectEventPal_VoidButtonmoth, OBJ_EVENT_PAL_TAG_VOID_BUTTONMOTH},
+    {gObjectEventPal_VoidTeacup, OBJ_EVENT_PAL_TAG_VOID_TEACUP},
+    {gObjectEventPal_VoidSootling, OBJ_EVENT_PAL_TAG_VOID_SOOTLING},
+    {gObjectEventPal_VoidBellhop, OBJ_EVENT_PAL_TAG_VOID_BELLHOP},
+    {gObjectEventPal_VoidPuddle, OBJ_EVENT_PAL_TAG_VOID_PUDDLE},
+    {gObjectEventPal_VoidWick, OBJ_EVENT_PAL_TAG_VOID_WICK},
+    {gObjectEventPal_VoidUmbrel, OBJ_EVENT_PAL_TAG_VOID_UMBREL},
+
     {gObjectEventPal_CastSilas, OBJ_EVENT_PAL_TAG_CAST_SILAS},
     {gObjectEventPal_CastKade, OBJ_EVENT_PAL_TAG_CAST_KADE},
     {gObjectEventPal_CastAshe, OBJ_EVENT_PAL_TAG_CAST_ASHE},

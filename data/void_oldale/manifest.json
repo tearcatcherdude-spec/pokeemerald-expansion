@@ -1,0 +1,24 @@
+{
+  "maps": [
+    "VoidOldaleTown",
+    "VoidOldaleCottage",
+    "VoidOldaleWorkshop",
+    "VoidOldaleRestHouse",
+    "VoidOldaleShop"
+  ],
+  "creatures": [
+    "Wispit",
+    "Buttonmoth",
+    "Teacup",
+    "Sootling",
+    "Bellhop",
+    "Puddle",
+    "Wick",
+    "Umbrel"
+  ],
+  "world": "Void World: Hollow Oldale",
+  "scope": "First playable visual preview; not a full world",
+  "source_resolution": "Town320x320; rooms native Emerald dimensions",
+  "npc_frames": "Front, back, left; three bob pairs. East mirrored by engine.",
+  "base": "dd581a405516688bd0d0eef305d03b26fa73f19a"
+}

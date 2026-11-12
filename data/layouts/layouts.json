@@ -14373,6 +14373,61 @@
       "layout_version": "frlg",
       "parallel_watch": true,
       "kanto_campaign": true
+    },
+    {
+      "id": "LAYOUT_VOID_OLDALE_TOWN",
+      "name": "VoidOldaleTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_VoidTownPrimary",
+      "secondary_tileset": "gTileset_VoidTownSecondary",
+      "border_filepath": "data/void_oldale/Town/border.bin",
+      "blockdata_filepath": "data/void_oldale/Town/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_VOID_OLDALE_COTTAGE",
+      "name": "VoidOldaleCottage_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_VoidCottagePrimary",
+      "secondary_tileset": "gTileset_VoidCottageSecondary",
+      "border_filepath": "data/void_oldale/Cottage/border.bin",
+      "blockdata_filepath": "data/void_oldale/Cottage/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_VOID_OLDALE_WORKSHOP",
+      "name": "VoidOldaleWorkshop_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_VoidWorkshopPrimary",
+      "secondary_tileset": "gTileset_VoidWorkshopSecondary",
+      "border_filepath": "data/void_oldale/Workshop/border.bin",
+      "blockdata_filepath": "data/void_oldale/Workshop/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_VOID_OLDALE_RESTHOUSE",
+      "name": "VoidOldaleRestHouse_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_VoidRestHousePrimary",
+      "secondary_tileset": "gTileset_VoidRestHouseSecondary",
+      "border_filepath": "data/void_oldale/RestHouse/border.bin",
+      "blockdata_filepath": "data/void_oldale/RestHouse/map.bin",
+      "layout_version": "emerald"
+    },
+    {
+      "id": "LAYOUT_VOID_OLDALE_SHOP",
+      "name": "VoidOldaleShop_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_VoidShopPrimary",
+      "secondary_tileset": "gTileset_VoidShopSecondary",
+      "border_filepath": "data/void_oldale/Shop/border.bin",
+      "blockdata_filepath": "data/void_oldale/Shop/map.bin",
+      "layout_version": "emerald"
     }
   ]
 }

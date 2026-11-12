@@ -1,12 +1,32 @@
 @ Parallel Watch trial: new events only, no original Kanto story flags.
 ParallelWatch_EventScript_Use::
 	lockall
+	callnative Script_VoidWatchIsHere
+	goto_if_eq VAR_RESULT, TRUE, VoidWatch_Return
 	callnative Script_ParallelWatchCheck
 	goto_if_eq VAR_RESULT, FALSE, ParallelWatch_Denied
 	msgbox ParallelWatch_Text_Use, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, ParallelWatch_End
 	closemessage
+	multichoice 0, 0, MULTI_VOID_WATCH, FALSE
+	goto_if_eq VAR_RESULT, 1, VoidWatch_Enter
+	goto_if_ne VAR_RESULT, 0, ParallelWatch_End
 	callnative Script_ParallelWatchSwitch
+	goto_if_eq VAR_RESULT, FALSE, ParallelWatch_Denied
+	waitstate
+	end
+VoidWatch_Enter:
+	callnative Script_VoidWatchEnter
+	goto_if_eq VAR_RESULT, FALSE, ParallelWatch_Denied
+	waitstate
+	end
+VoidWatch_Return:
+	callnative Script_ParallelWatchCheck
+	goto_if_eq VAR_RESULT, FALSE, ParallelWatch_Denied
+	msgbox ParallelWatch_Text_Use, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, ParallelWatch_End
+	closemessage
+	callnative Script_VoidWatchReturn
 	goto_if_eq VAR_RESULT, FALSE, ParallelWatch_Denied
 	waitstate
 	end

@@ -1164,6 +1164,12 @@ static const struct MenuAction sMultichoiceList_Cast[] = {
     {COMPOUND_STRING("Cancel")},
 };
 
+static const struct MenuAction sVoidWatchChoices[] =
+{
+    {COMPOUND_STRING("Other shore")},
+    {COMPOUND_STRING("Hollow Oldale")},
+    {gText_Exit},
+};
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
@@ -1261,6 +1267,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_UNUSED_SSTIDAL_4]           = MULTICHOICE(MultichoiceList_UnusedSSTidal4),
     [MULTI_FOSSIL]                     = MULTICHOICE(MultichoiceList_Fossil),
     [MULTI_YESNO]                      = MULTICHOICE(MultichoiceList_YesNo),
+    [MULTI_VOID_WATCH]                 = MULTICHOICE(sVoidWatchChoices),
     [MULTI_FRONTIER_RULES]             = MULTICHOICE(MultichoiceList_FrontierRules),
     [MULTI_BATTLE_ARENA_RULES]         = MULTICHOICE(MultichoiceList_BattleArenaRules),
     [MULTI_BATTLE_TOWER_RULES]         = MULTICHOICE(MultichoiceList_BattleTowerRules),

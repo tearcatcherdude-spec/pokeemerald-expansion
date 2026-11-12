@@ -109,6 +109,24 @@ static bool32 Deny(const u8 *text)
     StringCopy(gStringVar4, text);
     return FALSE;
 }
+static bool32 IsVoidMap(void)
+{
+    return gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_VOID_OLDALE_TOWN)
+        && gSaveBlock1Ptr->location.mapNum <= MAP_NUM(MAP_VOID_OLDALE_SHOP);
+}
+static bool32 IsSafeVoidSpot(void)
+{
+    const struct MapLayout *l = gMapHeader.mapLayout;
+    s32 x = gSaveBlock1Ptr->pos.x, y = gSaveBlock1Ptr->pos.y;
+    if (!IsVoidMap() || gSaveBlock1Ptr->location.mapNum != MAP_NUM(MAP_VOID_OLDALE_TOWN)
+     || x < 0 || y < 0 || x >= l->width || y >= l->height
+     || (l->map[y * l->width + x] & MAPGRID_COLLISION_MASK))
+        return FALSE;
+    for (u32 i = 0; i < gMapHeader.events->warpCount; i++)
+        if (gMapHeader.events->warps[i].x == x && gMapHeader.events->warps[i].y == y)
+            return FALSE;
+    return TRUE;
+}
 static bool32 CanSwitch(void)
 {
     struct ParallelWatchAnchor a = CurrentAnchor();
@@ -124,7 +142,7 @@ static bool32 CanSwitch(void)
         return Deny(COMPOUND_STRING("The hands are still.$"));
     if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT))
         return Deny(COMPOUND_STRING("The hands will not turn.$"));
-    if (!ParallelWatch_IsSafeAnchor(&a, ParallelWatch_IsKanto(a.mapGroup, a.mapNum)))
+    if (!ParallelWatch_IsSafeAnchor(&a, ParallelWatch_IsKanto(a.mapGroup, a.mapNum)) && !IsSafeVoidSpot())
         return Deny(COMPOUND_STRING("The hands will not turn here.$"));
     return TRUE;
 }
@@ -137,11 +155,51 @@ static void WatchArrival(void)
     FieldCB_DefaultWarpExit(); // Includes the normal companion warp-end hook.
     PlayerFaceDirection(sArrivalFacing);
 }
+void Script_VoidWatchIsHere(struct ScriptContext *ctx)
+{
+    gSpecialVar_Result = IsVoidMap();
+}
+void Script_VoidWatchEnter(struct ScriptContext *ctx)
+{
+    struct ParallelWatchAnchor from = CurrentAnchor();
+    gSpecialVar_Result = FALSE;
+    if (IsVoidMap() || !CanSwitch()) return;
+    if (gSaveBlock3Ptr->watchMemoryVersion != WATCH_VERSION)
+    {
+        memset(gSaveBlock3Ptr->watchAnchors, 0, sizeof(gSaveBlock3Ptr->watchAnchors));
+        gSaveBlock3Ptr->watchMemoryVersion = WATCH_VERSION;
+    }
+    // Existing two-world anchors keep their released offsets. The Void is an
+    // Oldale side-world with a fixed entry and a return to the safe Hoenn anchor.
+    gSaveBlock3Ptr->watchAnchors[ParallelWatch_IsKanto(from.mapGroup, from.mapNum)] = from;
+    SetWarpDestinationToCoords(MAP_GROUP(MAP_VOID_OLDALE_TOWN), MAP_NUM(MAP_VOID_OLDALE_TOWN), 10, 10);
+    sArrivalFacing = DIR_SOUTH;
+    gSpecialVar_Result = TRUE;
+    DoWarp();
+    gFieldCallback = WatchArrival;
+    ResetInitialPlayerAvatarState();
+}
+void Script_VoidWatchReturn(struct ScriptContext *ctx)
+{
+    struct ParallelWatchAnchor target = gSaveBlock3Ptr->watchAnchors[0];
+    gSpecialVar_Result = FALSE;
+    if (!IsVoidMap() || !CanSwitch()) return;
+    if (gSaveBlock3Ptr->watchMemoryVersion != WATCH_VERSION || !ParallelWatch_IsSafeAnchor(&target, 0))
+        target = (struct ParallelWatchAnchor){.mapGroup=MAP_GROUP(MAP_OLDALE_TOWN),.mapNum=MAP_NUM(MAP_OLDALE_TOWN),.x=10,.y=10,.facing=DIR_SOUTH,.valid=TRUE};
+    if (!ParallelWatch_IsSafeAnchor(&target, 0)) { Deny(COMPOUND_STRING("The hands spin, then stop.$")); return; }
+    SetWarpDestinationToCoords(target.mapGroup, target.mapNum, target.x, target.y);
+    sArrivalFacing = target.facing;
+    gSpecialVar_Result = TRUE;
+    DoWarp();
+    gFieldCallback = WatchArrival;
+    ResetInitialPlayerAvatarState();
+}
 void Script_ParallelWatchSwitch(struct ScriptContext *ctx)
 {
     struct ParallelWatchAnchor from = CurrentAnchor();
     struct ParallelWatchAnchor target;
     u32 world = ParallelWatch_IsKanto(from.mapGroup, from.mapNum);
+    if (IsVoidMap()) { Script_VoidWatchReturn(ctx); return; }
     gSpecialVar_Result = FALSE;
     if (!CanSwitch())
         return;
@@ -202,5 +260,8 @@ bool32 ParallelWatch_IsOutdoor(u32 group, u32 num) { return FALSE; }
 bool32 ParallelWatch_IsSafeAnchor(const struct ParallelWatchAnchor *a, u32 world) { return FALSE; }
 void Script_ParallelWatchCheck(struct ScriptContext *ctx) { gSpecialVar_Result = FALSE; }
 void Script_ParallelWatchSwitch(struct ScriptContext *ctx) { gSpecialVar_Result = FALSE; }
+void Script_VoidWatchIsHere(struct ScriptContext *ctx) { gSpecialVar_Result = FALSE; }
+void Script_VoidWatchEnter(struct ScriptContext *ctx) { gSpecialVar_Result = FALSE; }
+void Script_VoidWatchReturn(struct ScriptContext *ctx) { gSpecialVar_Result = FALSE; }
 #endif
 

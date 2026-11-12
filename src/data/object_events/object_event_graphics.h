@@ -658,3 +658,5 @@ const u32 gObjectEventPic_CastZuri[] = INCGFX_U32("graphics/object_events/pics/p
 const u16 gObjectEventPal_CastZuri[] = INCGFX_U16("graphics/object_events/palettes/cast_zuri.pal", ".gbapal");
 
 #include "variety_graphics.h"
+
+#include "void_graphics.h"

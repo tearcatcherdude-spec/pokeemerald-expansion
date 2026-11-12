@@ -13,3 +13,5 @@
 #include "data/tilesets/kanto.h"
 
 #include "data/tilesets/venues.h"
+
+#include "data/tilesets/void_oldale.h"

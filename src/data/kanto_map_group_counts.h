@@ -117,3 +117,4 @@
     1, // 115: gMapGroup_KantoCampaignIndoorSevenIslandRoute_Frlg
     0, // 116: gMapGroup_VenuesHoenn
     6, // 117: gMapGroup_VenuesKanto
+    0, // 118: gMapGroup_VoidOldale
