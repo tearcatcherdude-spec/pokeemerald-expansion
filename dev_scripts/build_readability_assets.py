@@ -112,6 +112,8 @@ def compile_exterior(d,candidate,forced_colors=None):
     writepal(d/'palette-00.pal',colors);(d/'palette.gbapal').write_bytes(b''.join(struct.pack('<H',(r>>3)|((g>>3)<<5)|((b>>3)<<10)) for r,g,b in colors))
     (d/'editable_source.json').write_text(json.dumps(s,indent=2)+'\n');(d/'module.json').write_text(json.dumps(m,indent=2)+'\n')
     (d/'metatiles.local.bin').write_bytes(struct.pack('<'+'H'*(len(rows)*8),*sum(rows,[])))
+    (d/'custom-reference-mask.bin').write_bytes(bytes(s['custom_reference_masks']))
+    (d/'custom-palette-mask.bin').write_bytes(bytes(s['custom_palette_masks']))
 
 def buildings():
     source=Image.open(REV/'sources/buildings.png').convert('RGB');cw=source.width/4;ch=source.height/4
