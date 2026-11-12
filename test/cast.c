@@ -1,5 +1,6 @@
 #include "global.h"
 #include "cast.h"
+#include "follower_npc.h"
 #include "data.h"
 #include "event_data.h"
 #include "event_object_movement.h"
@@ -111,5 +112,52 @@ TEST("New cast graphics preserve the released dynamic NPC graphics range")
     VarSet(VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_PIP);
     EXPECT_EQ(GetObjectEventGraphicsInfo(OBJ_EVENT_GFX_VAR_0), GetObjectEventGraphicsInfo(OBJ_EVENT_GFX_PIP));
     VarSet(VAR_OBJ_GFX_ID_0, previous);
+}
+extern const u8 Cast_EventScript_Companion[], Cozy_EventScript_Companion[];
+
+TEST("Saved companion scripts are rebound on first interaction after a ROM upgrade")
+{
+    struct SaveBlock3 previous = *gSaveBlock3Ptr;
+    const u8 *stale = (const u8 *)0x083D9964;
+    bool32 wasMet = FlagGet(FLAG_MET_PIP);
+    Cast_EnsureInitialized();
+    gSaveBlock3Ptr->cast.recruited = 0x3FF;
+    SetFollowerNPCData(FNPC_DATA_IN_PROGRESS, TRUE);
+    for (u32 who = 1; who <= CAST_COUNT; who++)
+    {
+        gSaveBlock3Ptr->cast.active = who;
+        gSaveBlock3Ptr->cast.loreStage[who - 1] = 4;
+        SetFollowerNPCData(FNPC_DATA_EVENT_FLAG, CAST_FLAG_BASE + who - 1);
+        SetFollowerNPCScriptPointer(stale);
+        EXPECT_EQ(GetFollowerNPCScriptPointer(), Cast_EventScript_Companion);
+        EXPECT_EQ(Cast_Active(), who);
+        EXPECT_EQ(gSaveBlock3Ptr->cast.recruited, 0x3FF);
+        EXPECT_EQ(gSaveBlock3Ptr->cast.loreStage[who - 1], 4);
+    }
+    gSaveBlock3Ptr->cast.active = 0;
+    SetFollowerNPCData(FNPC_DATA_EVENT_FLAG, FLAG_HIDE_COZY_COMPANION);
+    SetFollowerNPCScriptPointer(stale);
+    EXPECT_EQ(GetFollowerNPCScriptPointer(), Cozy_EventScript_Companion);
+    EXPECT_EQ(memcmp(&previous.kanto, &gSaveBlock3Ptr->kanto, sizeof(previous.kanto)), 0);
+    EXPECT_EQ(memcmp(previous.pipHeard, gSaveBlock3Ptr->pipHeard, sizeof(previous.pipHeard)), 0);
+    if (!wasMet)
+        FlagClear(FLAG_MET_PIP);
+    *gSaveBlock3Ptr = previous;
+}
+
+TEST("Refreshing a companion script does not replace a story escort script")
+{
+    struct SaveBlock3 previous = *gSaveBlock3Ptr;
+    const u8 *escort = (const u8 *)0x08000001;
+    Cast_EnsureInitialized();
+    gSaveBlock3Ptr->cast.active = 6;
+    SetFollowerNPCData(FNPC_DATA_IN_PROGRESS, TRUE);
+    SetFollowerNPCData(FNPC_DATA_EVENT_FLAG, 0x20);
+    SetFollowerNPCScriptPointer(escort);
+    EXPECT_EQ(GetFollowerNPCScriptPointer(), escort);
+    EXPECT_EQ(gSaveBlock3Ptr->cast.active, 6);
+    SetFollowerNPCData(FNPC_DATA_IN_PROGRESS, FALSE);
+    EXPECT_EQ(GetFollowerNPCScriptPointer(), NULL);
+    *gSaveBlock3Ptr = previous;
 }
 #endif

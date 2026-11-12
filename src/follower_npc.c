@@ -136,7 +136,15 @@ const u8 *GetFollowerNPCScriptPointer(void)
 {
 #if FNPC_ENABLE_NPC_FOLLOWERS
     if (PlayerHasFollowerNPC())
+    {
+        // Continue can restore an existing avatar without recreating it. Its
+        // saved ROM address may belong to an older build, so resolve our
+        // companions by their stable identity before returning a script.
+        // Story escorts keep their own script and state.
+        if (Pip_IsFollowing())
+            Pip_RefreshIdentity();
         return gSaveBlock3Ptr->NPCfollower.script;
+    }
 
 #endif
     return NULL;
