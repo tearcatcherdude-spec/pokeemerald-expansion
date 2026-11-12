@@ -20,8 +20,20 @@ def main():
             if s.get('open_lot') and s.get('replacement_warp') is None and x<=i%l['width']<x+w and y<=i//l['width']<y+h:continue
             assert av&0xFC00==bv&0xFC00,('Collision/elevation changed',s['city'],i)
             am=av&1023;bm=bv&1023
-            assert newattrs[am>=split][am%split if am<split else am-split]==oldattrs[bm>=split][bm%split if bm<split else bm-split],('Native behavior changed',s['city'],i)
+            actual=newattrs[am>=split][am%split if am<split else am-split]
+            expected=oldattrs[bm>=split][bm%split if bm<split else bm-split]
+            if y+h-1==i//l['width'] and x<=i%l['width']<x+w and am!=bm:
+                mask,shift=(0x60000000,29) if split==640 else (0xF000,12)
+                expected=(expected&~mask)|(1<<shift)
+            assert actual==expected,('Native behavior or front-wall layer changed',s['city'],i)
         dx,dy=s['entrance']
+        # Every custom front-wall cell must render behind a south-side actor.
+        for xx in range(x,x+w):
+            mid=a[(y+h-1)*l['width']+xx]&1023
+            oldmid=b[(y+h-1)*l['width']+xx]&1023
+            if mid==oldmid:continue # Native doorway/retained cell.
+            attr=newattrs[mid>=split][mid-split if mid>=split else mid]
+            assert (attr>>(29 if split==640 else 12))&3==1,('Front wall covers actor head',s['city'],xx)
         if not s.get('open_lot') or s.get('replacement_warp') is not None:assert a[dy*l['width']+dx]==b[dy*l['width']+dx]
         else:
             assert a[dy*l['width']+dx]==(0x43D if split==640 else 0x421)

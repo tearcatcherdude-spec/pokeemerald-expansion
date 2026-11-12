@@ -165,6 +165,11 @@ def install(region,theme,city,house,dx,dy):
       assert nexttile<len(free);idx=free[nexttile];nexttile+=1;ts[idx]=tile.copy();patterns[key]=idx
      row.append((freepal[0]<<12)|(split+patterns[key]))
    mts[free_mt[i]]=row;attrs[free_mt[i]]=customattrs[v&1023] if openlot and replacement is None else targetattr
+   # The front wall belongs on BG2, behind actors standing immediately south.
+   # Roofs keep their original occlusion; native animated doors stay untouched.
+   if i//sw == sh-1:
+    layermask,layershift=(0x60000000,29) if frlg else (0xF000,12)
+    attrs[free_mt[i]]=(attrs[free_mt[i]]&~layermask)|(1<<layershift)
    blocks[at]=((v if openlot and replacement is None else oldblocks[at])&0xFC00)|(split+free_mt[i])
   elif openlot:
    blocks[at]=oldblocks[at] if replacement is not None else 0x43D if frlg else 0x421
