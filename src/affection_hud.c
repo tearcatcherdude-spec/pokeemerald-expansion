@@ -16,10 +16,10 @@
 struct HudPending { u16 before, after; u32 order; };
 static EWRAM_DATA struct HudPending sPending[BOND_COUNT] = {0};
 static EWRAM_DATA u32 sOrder = 0;
-static EWRAM_DATA struct AffectionHudState sHud = {.who = BOND_NO_COMPANION};
+static EWRAM_DATA struct AffectionHudState sHud = {0};
 static EWRAM_DATA bool8 sCreated = FALSE;
-static EWRAM_DATA u8 sIds[2] = {MAX_SPRITES, MAX_SPRITES};
-static EWRAM_DATA u16 sTileStart = TAG_NONE;
+static EWRAM_DATA u8 sIds[2] = {0};
+static EWRAM_DATA u16 sTileStart = 0;
 static EWRAM_DATA u8 sPixels[2048] = {0};
 
 static const u16 sPalette[16] = {
@@ -116,6 +116,7 @@ static bool32 UNUSED CreateHud(void)
     if (sTileStart==TAG_NONE) return FALSE;
     if (LoadSpritePalette(&pal)==0xFF) { FreeSpriteTilesByTag(HUD_TAG); return FALSE; }
     sCreated=TRUE;
+    sIds[0]=sIds[1]=MAX_SPRITES;
     for (i=0; i<2; i++)
     {
         sIds[i]=CreateSprite(&sTemplate,88+i*64,22,0);
