@@ -9,6 +9,8 @@
 #include "map_name_popup.h"
 #include "constants/rgb.h"
 
+#include "data/affection_hud_panel.h"
+
 #define HUD_TAG 0x7E50
 #define HUD_WIDTH 128
 #define HUD_BAR_WIDTH 112
@@ -20,7 +22,9 @@ static EWRAM_DATA struct AffectionHudState sHud = {0};
 static EWRAM_DATA bool8 sCreated = FALSE;
 static EWRAM_DATA u8 sIds[2] = {0};
 static EWRAM_DATA u16 sTileStart = 0;
-static EWRAM_DATA u8 sPixels[2048] = {0};
+static EWRAM_DATA u8 ALIGNED(4) sPixels[2048] = {0};
+static EWRAM_DATA struct AffectionHudState sLastDraw = {0};
+static EWRAM_DATA bool8 sDrawValid = FALSE;
 
 static const u16 sPalette[16] = {
     RGB(0,0,0), RGB(5,8,9), RGB(29,30,25), RGB(20,24,22),
@@ -99,7 +103,7 @@ static void ReleaseSprites(void)
         if (sIds[i]<MAX_SPRITES && gSprites[sIds[i]].inUse && gSprites[sIds[i]].callback==HudSpriteCB) DestroySprite(&gSprites[sIds[i]]);
     FreeSpriteTilesByTag(HUD_TAG);
     FreeSpritePaletteByTag(HUD_TAG);
-    sIds[0]=sIds[1]=MAX_SPRITES; sTileStart=TAG_NONE; sCreated=FALSE; sHud.visible=FALSE;
+    sIds[0]=sIds[1]=MAX_SPRITES; sTileStart=TAG_NONE; sCreated=FALSE; sHud.visible=FALSE; sDrawValid=FALSE;
 }
 void AffectionHud_OnSpriteReset(void) { ReleaseSprites(); }
 void AffectionHud_Clear(void)
@@ -134,10 +138,24 @@ static void Pixel(u32 x,u32 y,u32 color)
     at=tile*32+(y%8)*4+(x%8)/2;shift=(x&1)*4;
     sPixels[at]=(sPixels[at]&~(15<<shift))|(color<<shift);
 }
+// Write contiguous packed nibbles within each tile row, instead of calling
+// Pixel for every background/bar pixel on every frame.
 static void Rect(u32 x,u32 y,u32 w,u32 h,u32 color)
 {
-    u32 xx,yy;
-    for (yy=y;yy<y+h;yy++) for (xx=x;xx<x+w;xx++) Pixel(xx,yy,color);
+    u32 yy,xx,end=min(x+w,128),chunk,count,tile;
+    for (yy=y;yy<min(y+h,32);yy++)
+    {
+        xx=x;
+        while (xx<end)
+        {
+            if (xx&1) { Pixel(xx++,yy,color);continue; }
+            chunk=min(8-(xx&7),end-xx);count=chunk/2;
+            tile=(xx/64)*32+(yy/8)*8+(xx%64)/8;
+            if (count) memset(sPixels+tile*32+(yy%8)*4+(xx%8)/2,color*17,count);
+            xx+=count*2;
+            if (chunk&1) Pixel(xx++,yy,color);
+        }
+    }
 }
 static u32 Text(u32 x,u32 y,const char *text,u32 color)
 {
@@ -165,14 +183,17 @@ static void UNUSED Draw(void)
 {
     static const u8 heart[]={0x66,0xFF,0xFF,0xFF,0x7E,0x3C,0x18,0};
     u32 x,y,current,needed,fill,px,scale=sHud.phase==AFFECTION_HUD_LEVEL_UP && sHud.timer%12<6 ? 10:8;
-    memset(sPixels,0,sizeof(sPixels));
-    for (y=0;y<32;y++) for (x=0;x<128;x++)
+    if (sDrawValid && sHud.shownExp==sLastDraw.shownExp && sHud.awarded==sLastDraw.awarded
+     && sHud.level==sLastDraw.level && sHud.who==sLastDraw.who && sHud.phase==sLastDraw.phase
+     && sHud.phase!=AFFECTION_HUD_LEVEL_UP && sHud.phase!=AFFECTION_HUD_EXIT)
+        return;
+    // Fixed artwork is already tiled. Holding/sliding the HUD needs no redraw.
+    memcpy(sPixels,sPanelTiles,sizeof(sPixels));
+    if (sHud.phase==AFFECTION_HUD_LEVEL_UP)
     {
-        if ((x<3 || x>=125) && (y<3 || y>=29)) continue;
-        Pixel(x,y,(x==0 || x==127 || y==0 || y==31) ? 1:2);
+        Rect(4,1,120,1,7);Rect(4,3,10,10,2);
+        for (y=0;y<scale;y++) for (x=0;x<scale;x++) if (heart[y*8/scale]&(1<<(7-x*8/scale))) Pixel(4+x,3+y,7);
     }
-    Rect(4,1,120,1,sHud.phase==AFFECTION_HUD_LEVEL_UP ? 7:9);Rect(4,30,120,1,3);
-    for (y=0;y<scale;y++) for (x=0;x<scale;x++) if (heart[y*8/scale]&(1<<(7-x*8/scale))) Pixel(4+x,3+y,sHud.phase==AFFECTION_HUD_LEVEL_UP ? 7:6);
     Text(17,4,sNames[sHud.who],1);px=Text(62,4,"Lv.",1);Number(px,4,sHud.level,1);
     if (sHud.phase==AFFECTION_HUD_LEVEL_UP) Text(101,4,"UP!",6);
     else { px=Text(94,4,"+",1);Number(px,4,sHud.awarded,1); }
@@ -183,13 +204,30 @@ static void UNUSED Draw(void)
         px=Number(7,14,current,1);px=Text(px,14,"/",1);px=Number(px,14,needed,1);Text(px+4,14,"EXP",1);
     }
     fill=min(HUD_BAR_WIDTH,current*HUD_BAR_WIDTH/max(needed,1));sHud.fillPixels=fill;
-    Rect(6,23,116,6,1);Rect(8,24,HUD_BAR_WIDTH,4,8);Rect(8,24,fill,4,4);Rect(8,24,fill,1,5);
+    Rect(8,24,fill,4,4);Rect(8,24,fill,1,5);
     if (sHud.phase==AFFECTION_HUD_LEVEL_UP)
     {
         x=23+(sHud.timer*5)%95;Pixel(x,21,7);Pixel(x-1,20,7);Pixel(x+1,20,7);Pixel(x,19,7);
     }
     if (sHud.phase==AFFECTION_HUD_EXIT)
-        for (y=0;y<32;y++) for (x=0;x<128;x++) if (((x&3)+((y&3)<<2))<sHud.timer) Pixel(x,y,0);
+    {
+        u32 tile,offset,mask0,mask1;
+        for (y=0;y<8;y++)
+        {
+            mask0=mask1=255;
+            if ((y&3)*4<sHud.timer) mask0&=0xF0;
+            if ((y&3)*4+1<sHud.timer) mask0&=0x0F;
+            if ((y&3)*4+2<sHud.timer) mask1&=0xF0;
+            if ((y&3)*4+3<sHud.timer) mask1&=0x0F;
+            for (tile=0;tile<64;tile++)
+            {
+                offset=tile*32+y*4;
+                sPixels[offset]&=mask0;sPixels[offset+1]&=mask1;
+                sPixels[offset+2]&=mask0;sPixels[offset+3]&=mask1;
+            }
+        }
+    }
+    sLastDraw=sHud;sDrawValid=TRUE;
     RequestSpriteCopy(sPixels,(u8 *)OBJ_VRAM0+sTileStart*32,sizeof(sPixels));
 }
 static bool32 UNUSED BeginNext(void)
