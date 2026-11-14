@@ -1,5 +1,6 @@
 #include "global.h"
 #include "bonds.h"
+#include "affection_hud.h"
 #include "malloc.h"
 #include "pokemon_storage_system.h"
 #include "test/test.h"
@@ -15,6 +16,7 @@ static void End(struct BondProgress *previous)
 {
     *Bonds_GetProgress() = *previous;
     Bonds_CancelMessage();
+    AffectionHud_Clear();
     Free(previous);
 }
 
@@ -102,6 +104,7 @@ TEST("Bond observations award only once after finished text and cancellation awa
     struct BondProgress *previous = Begin();
     Bonds_QueueObservation(0, FALSE);
     Bonds_CancelMessage();
+    AffectionHud_Clear();
     Bonds_MessageFinished();
     EXPECT_EQ(Bonds_GetProgress()->people[0].exp, 0);
     Bonds_QueueObservation(0, FALSE);

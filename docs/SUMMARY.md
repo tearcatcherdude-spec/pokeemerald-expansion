@@ -171,3 +171,4 @@
 - [Expanded Celio emulator build](celio_expanded_build.md)
 - [Desktop build delivery](build_delivery.md)
 - [Readability and species-aware tutor](readability_and_tutor.md)
+- [Companion affection display](affection_hud.md)

@@ -43,6 +43,7 @@ enum MapPopUp_Themes_BW
 
 // static functions
 static void Task_MapNamePopUpWindow(u8 taskId);
+bool32 IsMapNamePopupActive(void) { return FuncIsActiveTask(Task_MapNamePopUpWindow); }
 static void UpdateSecondaryPopUpWindow(u8 secondaryPopUpWindowId);
 static void ShowMapNamePopUpWindow(void);
 static void LoadMapNamePopUpWindowBg(void);
