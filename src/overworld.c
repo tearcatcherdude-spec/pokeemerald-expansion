@@ -1,4 +1,5 @@
 #include "global.h"
+#include "affection_hud.h"
 #include "venues.h"
 #include "bond_journal.h"
 #include "pip.h"
@@ -1863,6 +1864,7 @@ static void OverworldBasic(void)
 {
     ScriptContext_RunScript();
     RunTasks();
+    AffectionHud_Update();
     AnimateSprites();
     CameraUpdate();
     UpdateCameraPanning();

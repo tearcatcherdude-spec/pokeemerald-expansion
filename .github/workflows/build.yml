@@ -289,11 +289,19 @@ jobs:
             tools/mgba-rom-test-hydra/mgba-rom-test-hydra
           key: tools-check-${{ runner.os }}-${{ hashFiles('tools/*/Makefile', 'tools/**/*.c', 'tools/**/*.cpp', 'tools/**/*.h') }}
 
+      - name: Affection HUD progress and queue
+        env:
+          GAME_VERSION: EMERALD
+          TEST: 1
+        run: make -j$(nproc) check TESTS="Affection HUD"
+
       - name: Tutor species mechanics
         env:
           GAME_VERSION: EMERALD
           TEST: 1
-        run: make -j$(nproc) check TESTS="Roaming tutor"
+        run: |
+          rm -f pokeemerald-test.elf
+          make -j$(nproc) check TESTS="Roaming tutor"
 
       - name: Test
         env:

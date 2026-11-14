@@ -1,5 +1,6 @@
 #include "global.h"
 #include "bonds.h"
+#include "affection_hud.h"
 #include "cast.h"
 #include "pip.h"
 #include "pokemon_storage_system.h"
@@ -24,6 +25,7 @@ void Bonds_Reset(void)
     p->magic = BOND_SAVE_MAGIC;
     p->version = BOND_SAVE_VERSION;
     Bonds_CancelMessage();
+    AffectionHud_Clear();
 }
 
 void Bonds_EnsureInitialized(void)
@@ -64,6 +66,7 @@ u32 Bonds_AddExp(u32 who, u32 amount)
         return 0;
     awarded = min(amount, BOND_EXP_CAP - p->exp);
     p->exp += awarded;
+    AffectionHud_Notify(who, p->exp - awarded, p->exp);
     return awarded;
 }
 
